@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MSP Operations//Academic Calendar//EN
+X-WR-CALNAME:MSP BOE deadlines 2026-27
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bsa-infosheet-yearstart-202627@msp-operations
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:[MSP BOE] BSA Infosheet updated version live on intranet
+DESCRIPTION:Katja's remark in the IPO overview: new infosheet up by the start of the academic year (24 Aug) | For: BoE (Katja)\, Gerco\, IPO
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-adoption-202627@msp-operations
+DTSTAMP:20270601T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[MSP BOE] EER 2027-28 adoption deadline (Faculty Board)
+DESCRIPTION:Annual cycle: revision starts Dec\, BoE right of advice Mar\, MT Apr\, Faculty Council May\, effective 1 Sep | For: BoE\, EPC\, Programme Board
+END:VEVENT
+END:VCALENDAR

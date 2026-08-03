@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MSP Operations//Academic Calendar//EN
+X-WR-CALNAME:MSP ESD deadlines 2026-27
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ext-edu-s1-202627@msp-operations
+DTSTAMP:20260719T000000Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260720
+SUMMARY:[MSP ESD] External education registration deadline (S1\, P1\, P1-P2)
+DESCRIPTION:No late admission for external modules | For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:intro-qa-202627@msp-operations
+DTSTAMP:20260813T000000Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:[MSP ESD] Introduction Days live Q&A (Teams)
+DESCRIPTION:15:00-16:00\, not mandatory\; per the MSP1000 manual. Same day as P1 timetable publication | For: incoming students\, ESD\, buddies
+END:VEVENT
+BEGIN:VEVENT
+UID:examiner-gerco-check-fall-202627@msp-operations
+DTSTAMP:20260819T000000Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+SUMMARY:[MSP ESD] Examiner list final check with Gerco (Fall semester)
+DESCRIPTION:Wed 19 Aug 09:30-10:00 per the IPO overview. Flag staff without BKO/UTQ registration\; Gerco decides on appointments | For: IPO (Eva)\, Gerco
+END:VEVENT
+BEGIN:VEVENT
+UID:catalogue-spring-gerco-1-202627@msp-operations
+DTSTAMP:20260907T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:[MSP ESD] Catalogue Spring cycle - first meeting with Gerco (P4+P5 updates)
+DESCRIPTION:Mon 7 Sep 14:00-15:00 per the IPO overview: coordinator changes\, titles\, periods\, pre/corequisites. Coordinator mail list + workbook copy to Gerco afterwards | For: IPO (Eva)\, Gerco
+END:VEVENT
+BEGIN:VEVENT
+UID:ext-edu-p2-202627@msp-operations
+DTSTAMP:20260913T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:[MSP ESD] External education registration deadline (P2)
+DESCRIPTION:For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:catalogue-spring-gerco-final-202627@msp-operations
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:[MSP ESD] Catalogue Spring cycle - final meeting with Gerco
+DESCRIPTION:Mon 19 Oct 14:00-15:00 per the IPO overview. Concept frame schedule vs workbook check (titles\, coordinators\, periods\, pre/co)\; both must end up identical | For: IPO (Eva)\, Gerco
+END:VEVENT
+BEGIN:VEVENT
+UID:ext-edu-p3-202627@msp-operations
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:[MSP ESD] External education registration deadline (P3)
+DESCRIPTION:For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:ext-edu-s2-202627@msp-operations
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[MSP ESD] External education registration deadline (S2\, P4\, P4-P5)
+DESCRIPTION:For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-published-p3-202627@msp-operations
+DTSTAMP:20270201T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[MSP ESD] Project grades published (committee deadline) (P3)
+DESCRIPTION:Supervisor grades to committee within 5 days of period end\; committee publishes within 10 days | For: Project Committee\, supervisors\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:ext-edu-p5-202627@msp-operations
+DTSTAMP:20270221T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:[MSP ESD] External education registration deadline (P5)
+DESCRIPTION:For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:catalogue-publication-202627@msp-operations
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[MSP ESD] Course catalogue publication (hard deadline)
+DESCRIPTION:1 April\, firm - exam planning depends on it | For: coordinators\, BoE\, Scheduling\, Exams\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:ext-edu-p6-202627@msp-operations
+DTSTAMP:20270418T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:[MSP ESD] External education registration deadline (P6)
+DESCRIPTION:For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:sap-mendix-pass-202627@msp-operations
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[MSP ESD] SAP + Mendix new-year pass + intranet forms updated
+DESCRIPTION:UM-wide 1 May deadline\, before the advising period | For: ESD\, Web Admin\, Scheduling
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-published-p6-202627@msp-operations
+DTSTAMP:20270621T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:[MSP ESD] Project grades published (committee deadline) (P6)
+DESCRIPTION:Supervisor grades to committee within 5 days of period end\; committee publishes within 10 days | For: Project Committee\, supervisors\, students
+END:VEVENT
+END:VCALENDAR

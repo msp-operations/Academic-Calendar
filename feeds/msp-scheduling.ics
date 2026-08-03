@@ -1,0 +1,159 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MSP Operations//Academic Calendar//EN
+X-WR-CALNAME:MSP SCHEDULING deadlines 2026-27
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:switch-p1-202627@msp-operations
+DTSTAMP:20260731T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:[MSP SCHEDULING] Course switch deadline
+DESCRIPTION:P1. All switch/withdraw deadlines are Fridays 17:00 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:timetable-pub-p1-202627@msp-operations
+DTSTAMP:20260813T000000Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:[MSP SCHEDULING] Timetable published
+DESCRIPTION:P1. Coordinators: check your draft in the two weeks before publication | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:withdraw-p1-202627@msp-operations
+DTSTAMP:20260904T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:[MSP SCHEDULING] Course withdraw deadline
+DESCRIPTION:P1 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:switch-p2-202627@msp-operations
+DTSTAMP:20260929T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:[MSP SCHEDULING] Course switch deadline
+DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:timetable-pub-p2-202627@msp-operations
+DTSTAMP:20261008T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:[MSP SCHEDULING] Timetable published
+DESCRIPTION:P2 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:withdraw-p2-202627@msp-operations
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[MSP SCHEDULING] Course withdraw deadline
+DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:frame-schedule-spring-deadline-202627@msp-operations
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[MSP SCHEDULING] Frame schedules Spring semester ready (firm deadline)
+DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts | For: Gerco\, Chris Pawley\, Scheduling\, IPO
+END:VEVENT
+BEGIN:VEVENT
+UID:advising-period-spring-start-202627@msp-operations
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[MSP SCHEDULING] Academic Advising period starts (Spring registration)
+DESCRIPTION:Mon 2 Nov per the IPO overview\; runs into course registration week 9-13 Nov | For: students\, academic advisors\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-spring-202627@msp-operations
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[MSP SCHEDULING] Course registration week (Spring 2027 selections)
+DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:waiver-deadline-202627@msp-operations
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[MSP SCHEDULING] Waiver deadline for Spring registration
+DESCRIPTION:Coordinators grant waivers\; some labs have earlier hard cut-offs | For: students\, coordinators\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:timetable-pub-p3-202627@msp-operations
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[MSP SCHEDULING] Timetable published
+DESCRIPTION:P3 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:switch-p4-202627@msp-operations
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:[MSP SCHEDULING] Course switch deadline
+DESCRIPTION:P4 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:timetable-pub-p4-202627@msp-operations
+DTSTAMP:20270114T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:[MSP SCHEDULING] Timetable published
+DESCRIPTION:P4 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:withdraw-p4-202627@msp-operations
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:[MSP SCHEDULING] Course withdraw deadline
+DESCRIPTION:P4 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:switch-p5-202627@msp-operations
+DTSTAMP:20270305T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:[MSP SCHEDULING] Course switch deadline
+DESCRIPTION:P5 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:timetable-pub-p5-202627@msp-operations
+DTSTAMP:20270318T000000Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:[MSP SCHEDULING] Timetable published
+DESCRIPTION:P5 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:withdraw-p5-202627@msp-operations
+DTSTAMP:20270402T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:[MSP SCHEDULING] Course withdraw deadline
+DESCRIPTION:P5 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:timetable-pub-p6-202627@msp-operations
+DTSTAMP:20270512T000000Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:[MSP SCHEDULING] Timetable published
+DESCRIPTION:P6 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-fall-202627@msp-operations
+DTSTAMP:20270517T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
+DESCRIPTION:17-21 May | For: students\, Academic Advising\, ESD
+END:VEVENT
+END:VCALENDAR

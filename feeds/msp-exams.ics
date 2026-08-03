@@ -1,0 +1,359 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MSP Operations//Academic Calendar//EN
+X-WR-CALNAME:MSP EXAMS deadlines 2026-27
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fse-exam-request-p1-202627@msp-operations
+DTSTAMP:20260803T000000Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:[MSP EXAMS] FSE exam requests P1 due (Jesse Laumen / SSC)
+DESCRIPTION:For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:um-sports-signoff-202627@msp-operations
+DTSTAMP:20260803T000000Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:[MSP EXAMS] UM SPORTS toetsgangen sign-off AY26-27
+DESCRIPTION:30 toetsgangen min at 420 EUR/run\; shortfall bill lands end Aug | For: exams office\, FSE\, Linzi
+END:VEVENT
+BEGIN:VEVENT
+UID:assessment-announced-p1-202627@msp-operations
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P1)
+DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:ssc-first-mutations-202627@msp-operations
+DTSTAMP:20260826T000000Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+SUMMARY:[MSP EXAMS] First SSC mutations deadline AY26-27
+DESCRIPTION:For the 16 Sep sitting\; per-exam-week SSC deadlines all 12:00 (Anja Ronken's file) | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:invigilators-p1-202627@msp-operations
+DTSTAMP:20260921T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
+DESCRIPTION:P1. T-4 weeks\; hard floor 3 weeks. Per time slot and location | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-registration-202627@msp-operations
+DTSTAMP:20260921T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:[MSP EXAMS] Exam registration week (students)
+DESCRIPTION:P1: 21-25 Sep | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-submit-p1-202627@msp-operations
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P1. Paper PDF and TestVision test both due\; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:print-order-p1-202627@msp-operations
+DTSTAMP:20260929T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
+DESCRIPTION:P1. Delivery to PHS Tue 6 Oct. NB SOP 15 says 3 weeks before exam week\, manual says 2 - conflict logged | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:grading-sheets-out-p1-202627@msp-operations
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P1)
+DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-week-p1-202627@msp-operations
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[MSP EXAMS] Exam week (P1)
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:assessment-announced-p2-202627@msp-operations
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P2)
+DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-due-p1-202627@msp-operations
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P1)
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-published-p1-202627@msp-operations
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P1)
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:invigilators-p2-202627@msp-operations
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
+DESCRIPTION:P2 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-registration-p2-202627@msp-operations
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[MSP EXAMS] Exam registration week (students)
+DESCRIPTION:P2: 16-20 Nov | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-submit-p2-202627@msp-operations
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P2 (incl. P1 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:print-order-p2-202627@msp-operations
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
+DESCRIPTION:P2. Delivery Tue 1 Dec | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:grading-sheets-out-p2-202627@msp-operations
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P2)
+DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-week-p2-202627@msp-operations
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:[MSP EXAMS] Exam week (P2)
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-due-p2-202627@msp-operations
+DTSTAMP:20261225T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2)
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-published-p2-202627@msp-operations
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P2)
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-registration-p3-202627@msp-operations
+DTSTAMP:20270104T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:[MSP EXAMS] Exam registration week (students)
+DESCRIPTION:P3: 4-8 Jan | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:assessment-announced-p4-202627@msp-operations
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P4)
+DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:invigilators-p4-202627@msp-operations
+DTSTAMP:20270222T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
+DESCRIPTION:P4 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-submit-p4-202627@msp-operations
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P4 (incl. P2/P3 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:grading-sheets-out-p4-202627@msp-operations
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P4)
+DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-registration-p4-202627@msp-operations
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[MSP EXAMS] Exam registration week (students)
+DESCRIPTION:P4: 1-5 Mar | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:print-order-p4-202627@msp-operations
+DTSTAMP:20270302T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
+DESCRIPTION:P4. Delivery Tue 9 Mar | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-week-p4-202627@msp-operations
+DTSTAMP:20270315T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:[MSP EXAMS] Exam week (P4)
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:assessment-announced-p5-202627@msp-operations
+DTSTAMP:20270322T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P5)
+DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-due-p4-202627@msp-operations
+DTSTAMP:20270402T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P4)
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-published-p4-202627@msp-operations
+DTSTAMP:20270409T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:invigilators-p5-202627@msp-operations
+DTSTAMP:20270426T000000Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
+DESCRIPTION:P5 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-registration-p5-202627@msp-operations
+DTSTAMP:20270426T000000Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:[MSP EXAMS] Exam registration week (students)
+DESCRIPTION:P5: 26-30 Apr | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-submit-p5-202627@msp-operations
+DTSTAMP:20270503T000000Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P5 (incl. P4 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:grading-sheets-out-p5-202627@msp-operations
+DTSTAMP:20270503T000000Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P5)
+DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:print-order-p5-202627@msp-operations
+DTSTAMP:20270504T000000Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
+DESCRIPTION:P5. Delivery Tue 11 May | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-week-p5-202627@msp-operations
+DTSTAMP:20270517T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:[MSP EXAMS] Exam week (P5)
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:invigilators-resits-202627@msp-operations
+DTSTAMP:20270524T000000Z
+DTSTART;VALUE=DATE:20270524
+DTEND;VALUE=DATE:20270525
+SUMMARY:[MSP EXAMS] Invigilator request deadline\, P5 resits (InterUM)
+DESCRIPTION:For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-due-p5-202627@msp-operations
+DTSTAMP:20270604T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P5)
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-submit-resits-202627@msp-operations
+DTSTAMP:20270607T000000Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:[MSP EXAMS] Resit exam submission deadline (P5 resits)
+DESCRIPTION:One week before the June resit week | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-registration-p6-202627@msp-operations
+DTSTAMP:20270607T000000Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:[MSP EXAMS] Exam registration week (students)
+DESCRIPTION:P6: 7-11 Jun | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-published-p5-202627@msp-operations
+DTSTAMP:20270611T000000Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P5)
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:resit-week-p5-202627@msp-operations
+DTSTAMP:20270614T000000Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270615
+SUMMARY:[MSP EXAMS] Resit week P5
+DESCRIPTION:14-18 Jun 2027\, standalone resit week | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+END:VCALENDAR

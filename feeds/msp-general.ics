@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MSP Operations//Academic Calendar//EN
+X-WR-CALNAME:MSP GENERAL deadlines 2026-27
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:intranet-canvas-refresh-202627@msp-operations
+DTSTAMP:20260821T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:[MSP GENERAL] Intranet + Canvas full new-year refresh deadline (all sections)
+DESCRIPTION:Triggered mid-July. Named owner per section (Scheduling\, BoE\, ESD\, Exams/BTR\, IRO\, Advising\, Counsellor\, Alumni...). Includes uploading + printing the Academic Calendar in A3 | For: all section owners per the IPO overview\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
+UID:intro-days-202627@msp-operations
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:[MSP GENERAL] INTRO days (Mon 24 - Thu 27 Aug)
+DESCRIPTION:Four days per the MSP1000 manual\; mandatory\, incl. Lab Safety assessment on the final day. Social event Wed 17:30 Tapijn | For: new students\, buddies\, Secretariat\, ESD\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:year-start-202627@msp-operations
+DTSTAMP:20260831T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:[MSP GENERAL] Academic year 2026-27 starts
+DESCRIPTION:For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-break-202627@msp-operations
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[MSP GENERAL] Christmas break begins
+DESCRIPTION:Until 1 Jan\; Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-202627@msp-operations
+DTSTAMP:20270208T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:[MSP GENERAL] Carnival week (no teaching)
+DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:summer-break-202627@msp-operations
+DTSTAMP:20270621T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:[MSP GENERAL] Summer break begins
+DESCRIPTION:After the P5 resit week (14-18 Jun) | For: all staff
+END:VEVENT
+END:VCALENDAR

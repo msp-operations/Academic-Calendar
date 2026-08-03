@@ -1,0 +1,39 @@
+# Academic year structure 2026-27 — THE year config.
+# Source: Calendarium 2026-2027 MSP.pdf via KB "Academic Year Calendar.md" §Part 0 (confirmed).
+# P3 and P6 are three-week Project Periods (no central exam week; they host resit logistics).
+# Resit weeks ride along: P1 resits in P2 exam week · P2/P3 resits in P4 exam week ·
+# P4 resits in P5 exam week · P5 resits in the standalone 14-18 Jun 2027 week (event in events.yaml).
+year: "2026-27"
+
+- id: P1
+  start: 2026-08-31
+  end: 2026-10-16
+  exam_start: 2026-10-12
+  exam_end: 2026-10-16
+  status: confirmed
+- id: P2
+  start: 2026-10-26
+  end: 2026-12-11
+  exam_start: 2026-12-07
+  exam_end: 2026-12-11
+  status: confirmed
+- id: P3
+  start: 2027-01-04
+  end: 2027-01-22
+  status: confirmed
+- id: P4
+  start: 2027-01-25
+  end: 2027-03-19
+  exam_start: 2027-03-15
+  exam_end: 2027-03-19
+  status: confirmed
+- id: P5
+  start: 2027-03-29
+  end: 2027-05-21
+  exam_start: 2027-05-17
+  exam_end: 2027-05-21
+  status: confirmed
+- id: P6
+  start: 2027-05-24
+  end: 2027-06-11
+  status: confirmed

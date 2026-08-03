@@ -1,0 +1,111 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MSP Operations//Academic Calendar//EN
+X-WR-CALNAME:MSP BTR deadlines 2026-27
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:btr-start-sept-202627@msp-operations
+DTSTAMP:20260831T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:[MSP BTR] BTR September cohort starts
+DESCRIPTION:Runs to 22 Jan 2027. External agreements must be fully signed by day 1 | For: students\, supervisors\, IAs\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-proposal-sept-202627@msp-operations
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:[MSP BTR] BTR proposal submission deadline (Sept cohort)
+DESCRIPTION:13:00 via Collent (all BTR deadlines are 13:00\, ignore Collent's 01:00 display) | For: students\, RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-proposal-grades-due-sept-202627@msp-operations
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Sept cohort)
+DESCRIPTION:Friday deadline\; office publishes the Monday after | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-proposal-grades-pub-sept-202627@msp-operations
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:[MSP BTR] BTR proposal grades published (Sept cohort)
+DESCRIPTION:For: students\, RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-midterm-grades-due-sept-202627@msp-operations
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[MSP BTR] BTR midterm practical grade due (Sept cohort)
+DESCRIPTION:For: RS
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-midterm-grades-pub-sept-202627@msp-operations
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[MSP BTR] BTR midterm grades published (Sept cohort)
+DESCRIPTION:For: students\, RS
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-thesis-sept-202627@msp-operations
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:[MSP BTR] BTR thesis submission deadline (Sept cohort)
+DESCRIPTION:Monday 13:00. Research-group presentation should happen within a week either side. NB collides with P2 exam week | For: students\, RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-video-sept-202627@msp-operations
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[MSP BTR] BTR video submission deadline (Sept cohort)
+DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer reviewers
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-due-sept-202627@msp-operations
+DTSTAMP:20270115T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[MSP BTR] BTR final grades due in Collent (Sept cohort)
+DESCRIPTION:Thesis (RS+IA)\, Final Practical (RS)\, Video (IA). Do not submit before the presentation is done | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-pub-sept-202627@msp-operations
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[MSP BTR] BTR final grades published (Sept cohort)
+DESCRIPTION:For: students\, supervisors\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-start-feb-202627@msp-operations
+DTSTAMP:20270125T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:[MSP BTR] BTR February cohort starts
+DESCRIPTION:Runs to 11 Jun 2027\; graduation 30 Jun. Intermediate deadlines not yet published (proposal shifts +1wk for Carnival) | For: students\, supervisors\, IAs\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-graduation-sept-202627@msp-operations
+DTSTAMP:20270131T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:[MSP BTR] BTR September cohort graduation date
+DESCRIPTION:Graduation = last day of the month the last component was fulfilled | For: students\, BoE\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-graduation-feb-202627@msp-operations
+DTSTAMP:20270630T000000Z
+DTSTART;VALUE=DATE:20270630
+DTEND;VALUE=DATE:20270701
+SUMMARY:[MSP BTR] BTR February cohort graduation date
+DESCRIPTION:For: students\, BoE\, ESD
+END:VEVENT
+END:VCALENDAR

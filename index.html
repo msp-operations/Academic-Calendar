@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSP Academic Operations Calendar</title>
+<style>
+  :root {
+    --navy: #16243d; --navy-2: #1f3357; --ink: #1c2333; --paper: #f6f8fb;
+    --card: #ffffff; --line: #dde4ee; --muted: #64748b; --accent: #00a5d9;
+    --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
+    --esd: #0d9488; --alumni: #db2777; --general: #64748b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--paper); color: var(--ink); }
+
+  .accentline { height: 4px; background: var(--navy); border-bottom: 2px solid var(--accent); }
+  header { background: #fff; border-bottom: 1px solid var(--line); }
+  .topbar { display: flex; align-items: center; gap: 18px; padding: 16px 24px 12px; max-width: 1080px; margin: 0 auto; }
+  .topbar img.msp { height: 52px; }
+  .topbar img.um { height: 34px; margin-left: auto; }
+  .topbar h1 { font-size: 1.25rem; font-weight: 650; color: var(--navy); letter-spacing: .2px; }
+  .topbar p { color: var(--muted); font-size: .82rem; margin-top: 2px; }
+
+  .periodband { display: flex; gap: 8px; padding: 6px 24px 16px; max-width: 1080px; margin: 0 auto; }
+  .period { flex: 1; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: .75rem; color: var(--muted); }
+  .period.current { border-color: var(--accent); background: #eaf6fb; }
+  .period b { display: block; color: var(--navy); font-size: .88rem; }
+  .period .exam { color: var(--exams); font-size: .7rem; }
+  .period.unconfirmed b::after { content: " *"; color: #b45309; }
+
+  .toolbar { max-width: 1080px; margin: 18px auto 6px; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 5px 14px; font-size: .82rem; cursor: pointer; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; user-select: none; }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); }
+  .chip.on { color: var(--ink); border-color: var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 8%, white); }
+  .toolbar .spacer { flex: 1; }
+  .subscribe { font-size: .82rem; color: #fff; background: var(--navy); text-decoration: none; font-weight: 600; padding: 6px 16px; border-radius: 999px; }
+  .subscribe:hover { background: var(--navy-2); }
+  .viewtoggle { display: flex; border: 1.5px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .viewtoggle button { border: 0; background: var(--card); padding: 5px 14px; font-size: .82rem; cursor: pointer; color: var(--muted); }
+  .viewtoggle button.on { background: var(--navy); color: #fff; }
+
+  .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+  .dowhead { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); text-align: center; padding: 4px 0 2px; }
+  .day { background: var(--card); border: 1px solid var(--line); border-radius: 8px; min-height: 76px; padding: 4px 5px; font-size: .72rem; overflow: hidden; }
+  .day .num { font-weight: 650; color: var(--muted); }
+  .day.wknd { background: #eef1f7; }
+  .day.exam { background: #e2f3fa; border-color: #bfe3f2; }
+  .day.exam .num::after { content: " · exam wk"; font-weight: 400; font-size: .62rem; color: var(--exams); }
+  .day.out { background: transparent; border-color: transparent; }
+  .day.today { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .day.today .num { color: var(--accent); }
+  .pill { display: block; margin-top: 3px; padding: 2px 5px; border-radius: 5px; border-left: 3px solid var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 11%, white); color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+  .pill.unconfirmed { border: 1px dashed var(--c, var(--general)); border-left-width: 3px; }
+  .pill:hover { background: color-mix(in srgb, var(--c, var(--general)) 22%, white); }
+  .event { cursor: pointer; }
+  .event:hover { border-color: var(--c, var(--general)); }
+
+  .overlay { position: fixed; inset: 0; background: rgba(22, 36, 61, .45); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50; }
+  .card { background: var(--card); border-radius: 14px; max-width: 460px; width: 100%; box-shadow: 0 18px 50px rgba(0,0,0,.3); overflow: hidden; }
+  .card .cardhead { background: var(--navy); color: #fff; padding: 16px 20px; border-left: 6px solid var(--c, var(--general)); }
+  .card .cardhead .when { font-size: .8rem; color: #b8c4d8; }
+  .card .cardhead h3 { font-size: 1.05rem; font-weight: 650; margin-top: 2px; }
+  .card .cardbody { padding: 16px 20px 18px; font-size: .88rem; }
+  .card .row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .card .row .k { min-width: 78px; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; padding-top: 2px; }
+  .card .close { float: right; background: none; border: 0; color: #b8c4d8; font-size: 1.1rem; cursor: pointer; padding: 0 0 0 12px; }
+  .card .close:hover { color: #fff; }
+
+  main { max-width: 1080px; margin: 0 auto 60px; padding: 0 24px; }
+  .month { margin-top: 26px; }
+  .month h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-bottom: 10px; }
+  .event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general)); border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; align-items: baseline; }
+  .event.past { opacity: .5; }
+  .event.unconfirmed { border-style: dashed; }
+  .date { min-width: 86px; font-variant-numeric: tabular-nums; font-weight: 650; font-size: .88rem; color: var(--navy); }
+  .date small { display: block; font-weight: 400; color: var(--muted); }
+  .body { flex: 1; }
+  .body .title { font-weight: 600; font-size: .95rem; }
+  .body .meta { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+  .tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 10%, white); border-radius: 5px; padding: 2px 7px; margin-left: 8px; }
+  .flag { font-size: .68rem; font-weight: 700; color: #b45309; background: #fef3c7; border-radius: 5px; padding: 2px 7px; margin-left: 6px; }
+  .today-rule { border: 0; border-top: 2px solid var(--accent); position: relative; margin: 14px 0; }
+  .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--accent); color: #fff; font-size: .68rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; }
+  .empty { color: var(--muted); font-size: .9rem; padding: 30px 0; text-align: center; }
+  footer { max-width: 1080px; margin: 0 auto 40px; padding: 0 24px; font-size: .8rem; color: var(--muted); }
+  footer code { background: #eef2f8; padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="accentline"></div>
+<header>
+  <div class="topbar">
+    <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
+    <div>
+      <h1>Academic Operations Calendar</h1>
+      <p id="subtitle">Maastricht Science Programme</p>
+    </div>
+    <img class="um" src="um-logo.png" alt="Maastricht University">
+  </div>
+  <div class="periodband" id="periodband"></div>
+</header>
+
+<div class="toolbar" id="toolbar"></div>
+<main id="main"></main>
+<footer>
+  <p><b>Subscribe in Outlook:</b> Add calendar &rarr; Subscribe from web &rarr; paste a feed URL
+  (right-click a feed below and copy the link).
+  Feeds: <a href="feeds/msp-all.ics"><code>msp-all.ics</code></a> (everything),
+  <a href="feeds/msp-academic-staff.ics"><code>msp-academic-staff.ics</code></a> (deadlines academic staff
+  act on: exams, grades, BTR assessment),
+  <a href="feeds/msp-support-staff.ics"><code>msp-support-staff.ics</code></a> (office logistics and processing),
+  or a per-office feed (<a href="feeds/msp-exams.ics"><code>msp-exams.ics</code></a>,
+  <a href="feeds/msp-btr.ics"><code>msp-btr.ics</code></a>,
+  <a href="feeds/msp-boe.ics"><code>msp-boe.ics</code></a>,
+  <a href="feeds/msp-scheduling.ics"><code>msp-scheduling.ics</code></a>,
+  <a href="feeds/msp-esd.ics"><code>msp-esd.ics</code></a>,
+  <a href="feeds/msp-alumni.ics"><code>msp-alumni.ics</code></a>,
+  <a href="feeds/msp-general.ics"><code>msp-general.ics</code></a>). Updates appear automatically.
+  Events marked <i>unconfirmed</i> are pending confirmation for this academic year and are not yet in the feeds.</p>
+</footer>
+
+<script src="events.js"></script>
+<script>
+const OFFICES = {
+  exams: 'Exams', btr: 'BTR', boe: 'BoE', scheduling: 'Scheduling',
+  esd: 'ESD', alumni: 'Alumni', general: 'General',
+};
+const state = { on: new Set(Object.keys(OFFICES)), view: 'timeline', role: 'all' };
+const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
+const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
+let DB = null;
+
+const fmt = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+const dow = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'short' });
+const monthKey = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+const todayIso = new Date().toISOString().slice(0, 10);
+
+function init() {
+  document.getElementById('subtitle').textContent =
+    `Maastricht Science Programme · Academic year ${DB.year} · updated ${DB.generated}`;
+
+  const band = document.getElementById('periodband');
+  for (const p of DB.periods) {
+    const cur = todayIso >= p.start && todayIso <= p.end;
+    const el = document.createElement('div');
+    el.className = 'period' + (cur ? ' current' : '') + (p.status === 'unconfirmed' ? ' unconfirmed' : '');
+    el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} – ${fmt(p.end)}` +
+      (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} – ${fmt(p.exam_end)}</div>` : '');
+    band.appendChild(el);
+  }
+  if (DB.periods.some(p => p.status === 'unconfirmed')) {
+    const note = document.createElement('div');
+    note.className = 'period'; note.style.flex = '0 0 auto';
+    note.innerHTML = '<b>*</b>dates pending confirmation';
+    band.appendChild(note);
+  }
+
+  const bar = document.getElementById('toolbar');
+  for (const [key, label] of Object.entries(OFFICES)) {
+    const c = document.createElement('button');
+    c.className = 'chip on'; c.style.setProperty('--c', `var(--${key})`);
+    c.innerHTML = `<span class="dot"></span>${label}`;
+    c.onclick = () => { state.on.has(key) ? state.on.delete(key) : state.on.add(key); c.classList.toggle('on'); render(); };
+    bar.appendChild(c);
+  }
+  const roleToggle = document.createElement('div'); roleToggle.className = 'viewtoggle';
+  for (const [id, label] of Object.entries(ROLES)) {
+    const b = document.createElement('button');
+    b.textContent = label; b.dataset.role = id;
+    if (state.role === id) b.classList.add('on');
+    b.onclick = () => {
+      state.role = id;
+      roleToggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.role === id));
+      render();
+    };
+    roleToggle.appendChild(b);
+  }
+  bar.appendChild(roleToggle);
+
+  const spacer = document.createElement('div'); spacer.className = 'spacer'; bar.appendChild(spacer);
+
+  const toggle = document.createElement('div'); toggle.className = 'viewtoggle';
+  for (const [id, label] of [['timeline', 'Timeline'], ['grid', 'Month grid']]) {
+    const b = document.createElement('button');
+    b.textContent = label; b.dataset.view = id;
+    if (state.view === id) b.classList.add('on');
+    b.onclick = () => {
+      state.view = id;
+      toggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.view === id));
+      render();
+    };
+    toggle.appendChild(b);
+  }
+  bar.appendChild(toggle);
+
+  const sub = document.createElement('a');
+  sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics'; sub.textContent = 'Subscribe (.ics)';
+  bar.appendChild(sub);
+
+  render();
+}
+
+function render() {
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+  const events = DB.events.filter(e => state.on.has(e.office) &&
+    (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff));
+  if (!events.length) { main.innerHTML = '<p class="empty">No events for this selection.</p>'; return; }
+  if (state.view === 'grid') renderGrid(main, events); else renderTimeline(main, events);
+}
+
+const isExamDay = (iso) => DB.periods.some(p => p.exam_start && iso >= p.exam_start && iso <= p.exam_end);
+
+function renderGrid(main, events) {
+  const byDay = {};
+  for (const e of events) (byDay[e.date] = byDay[e.date] || []).push(e);
+  const first = events[0].date, last = events[events.length - 1].date;
+  let y = +first.slice(0, 4), m = +first.slice(5, 7);
+  const endY = +last.slice(0, 4), endM = +last.slice(5, 7);
+
+  while (y < endY || (y === endY && m <= endM)) {
+    const section = document.createElement('section'); section.className = 'month';
+    const monthName = new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+    section.innerHTML = `<h2>${monthName}</h2>`;
+    const grid = document.createElement('div'); grid.className = 'calgrid';
+    for (const d of ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'])
+      grid.insertAdjacentHTML('beforeend', `<div class="dowhead">${d}</div>`);
+
+    const firstDow = (new Date(Date.UTC(y, m - 1, 1, 12)).getUTCDay() + 6) % 7;
+    for (let i = 0; i < firstDow; i++) grid.insertAdjacentHTML('beforeend', '<div class="day out"></div>');
+    const daysInMonth = new Date(Date.UTC(y, m, 0, 12)).getUTCDate();
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const iso = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+      const dow = (firstDow + d - 1) % 7;
+      const cell = document.createElement('div');
+      cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + (iso === todayIso ? ' today' : '');
+      cell.innerHTML = `<div class="num">${d}</div>`;
+      for (const e of (byDay[iso] || [])) {
+        const pill = document.createElement('span');
+        pill.className = 'pill' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
+        pill.style.setProperty('--c', `var(--${e.office})`);
+        pill.textContent = e.title;
+        pill.title = e.title;
+        pill.onclick = () => showCard(e);
+        cell.appendChild(pill);
+      }
+      grid.appendChild(cell);
+    }
+    section.appendChild(grid);
+    main.appendChild(section);
+    m++; if (m > 12) { m = 1; y++; }
+  }
+}
+
+function renderTimeline(main, events) {
+
+  let currentMonth = null, monthEl = null, todayDrawn = todayIso < events[0].date;
+  for (const e of events) {
+    const mk = monthKey(e.date);
+    if (mk !== currentMonth) {
+      currentMonth = mk;
+      monthEl = document.createElement('section'); monthEl.className = 'month';
+      monthEl.innerHTML = `<h2>${mk}</h2>`;
+      main.appendChild(monthEl);
+    }
+    if (!todayDrawn && e.date >= todayIso) {
+      const hr = document.createElement('hr'); hr.className = 'today-rule';
+      monthEl.appendChild(hr); todayDrawn = true;
+    }
+    const el = document.createElement('div');
+    el.className = 'event' + (e.date < todayIso ? ' past' : '') + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
+    el.style.setProperty('--c', `var(--${e.office})`);
+    el.innerHTML =
+      `<div class="date">${fmt(e.date)}<small>${dow(e.date)}</small></div>` +
+      `<div class="body"><span class="title">${e.title}</span>` +
+      `<span class="tag">${OFFICES[e.office] || e.office}</span>` +
+      (e.status === 'unconfirmed' ? '<span class="flag">unconfirmed</span>' : '') +
+      ((e.notes || e.audience) ? `<div class="meta">${[e.notes, e.audience && 'For: ' + e.audience].filter(Boolean).join(' · ')}</div>` : '') +
+      `</div>`;
+    el.onclick = () => showCard(e);
+    monthEl.appendChild(el);
+  }
+}
+
+function showCard(e) {
+  const old = document.querySelector('.overlay'); if (old) old.remove();
+  const overlay = document.createElement('div'); overlay.className = 'overlay';
+  const full = new Date(e.date + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const card = document.createElement('div'); card.className = 'card';
+  card.style.setProperty('--c', `var(--${e.office})`);
+  card.innerHTML =
+    `<div class="cardhead"><button class="close" title="Close">✕</button>` +
+    `<div class="when">${full}</div><h3>${e.title}</h3></div>` +
+    `<div class="cardbody">` +
+    `<div class="row"><div class="k">Office</div><div><span class="tag" style="margin-left:0">${OFFICES[e.office] || e.office}</span>` +
+    (e.status === 'unconfirmed' ? '<span class="flag">unconfirmed</span>' : '') + `</div></div>` +
+    (e.staff ? `<div class="row"><div class="k">Acts</div><div>${STAFF_LABEL[e.staff] || e.staff}</div></div>` : '') +
+    (e.audience ? `<div class="row"><div class="k">For</div><div>${e.audience}</div></div>` : '') +
+    (e.notes ? `<div class="row"><div class="k">Notes</div><div>${e.notes}</div></div>` : '') +
+    (e.status === 'unconfirmed' ? `<div class="row"><div class="k">Status</div><div>Pending confirmation for this academic year; not yet in the Outlook feeds.</div></div>` : '') +
+    `</div>`;
+  overlay.appendChild(card);
+  overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
+  card.querySelector('.close').onclick = () => overlay.remove();
+  document.body.appendChild(overlay);
+}
+document.addEventListener('keydown', (ev) => {
+  if (ev.key === 'Escape') { const o = document.querySelector('.overlay'); if (o) o.remove(); }
+});
+
+window.onerror = (msg) => {
+  document.getElementById('main').innerHTML = `<p class="empty">Something broke: ${msg}</p>`;
+};
+if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); }
+else fetch('events.json').then(r => r.json()).then(db => { DB = db; init(); })
+  .catch(() => { document.getElementById('main').innerHTML = '<p class="empty">Could not load events - run build.mjs first.</p>'; });
+</script>
+</body>
+</html>
