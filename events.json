@@ -119,6 +119,28 @@
       "status": "confirmed"
     },
     {
+      "id": "intro-esd-presentation",
+      "title": "ESD presentation for Introduction Days refreshed",
+      "office": "esd",
+      "staff": "support",
+      "date": "2026-08-10",
+      "audience": "ESD, Linzi, Heather",
+      "notes": "Late Jul / early Aug per own mailbox (Linzi 31 Jul 2025, 15 Aug 2025); delivery in intro week, staff in office Mon-Wed of intro week. 2026 instance already on the operations to-do",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "dexum-online-aug1",
+      "title": "DexUM online (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-08-11",
+      "audience": "exams office",
+      "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 11 Aug 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "intro-qa",
       "title": "Introduction Days live Q&A (Teams)",
       "office": "esd",
@@ -139,6 +161,28 @@
       "notes": "P1. Coordinators: check your draft in the two weeks before publication",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "ssc-heidag",
+      "title": "SSC toetscoordinatoren hei-dag",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-08-14",
+      "audience": "exams office, SSC Toetsen",
+      "notes": "Announced by SSC Toetsen 12 Jun 2026 (own mailbox); Fri 14 Aug 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "fse-exams-alignment",
+      "title": "FSE exams-organisation alignment session (August, expect)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-08-17",
+      "audience": "exams offices FSE-wide",
+      "notes": "August session before P1 at an external location, per Gerardu 24 Jun 2026 (own mailbox); exact date not yet in the mail. Placeholder",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "examiner-gerco-check-fall",
@@ -218,6 +262,17 @@
       "status": "confirmed"
     },
     {
+      "id": "dexum-online-aug2",
+      "title": "DexUM online (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-08-27",
+      "audience": "exams office",
+      "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 27 Aug 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "examiner-to-katja-fall",
       "title": "Examiner list to Katja (BoE) for Fall appointment letters",
       "office": "boe",
@@ -273,6 +328,39 @@
       "status": "unconfirmed"
     },
     {
+      "id": "esd-team-meeting",
+      "title": "ESD team meeting (weekly rhythm marker)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2026-09-01",
+      "audience": "ESD team",
+      "notes": "Own calendar recurring series 'ESD Team Meeting', weekly since Tue 6 Jan 2026, B1.019, no end date. Single marker at year start; the site cannot render a weekly repeat",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "opening-academic-year",
+      "title": "UM Opening of the Academic Year",
+      "office": "general",
+      "staff": "both",
+      "date": "2026-09-01",
+      "audience": "all staff",
+      "notes": "Translated from own calendar 'Opening Academic Year', Mon 1 Sep 2025 15:30, Theater aan het Vrijthof; UM traditionally opens on 1 Sep",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "swum-student-prize",
+      "title": "SWUM Student Prize nomination (highest BTR grade)",
+      "office": "btr",
+      "staff": "support",
+      "date": "2026-09-03",
+      "audience": "programme director, BTR administrator",
+      "notes": "First week of September per own mailbox: Hanne Dilien via Gerco 3 Sep 2025, 'annually' per the prize rules. MSP answer = top BTR grade + student data",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "withdraw-p1",
       "title": "Course withdraw deadline",
       "office": "scheduling",
@@ -295,6 +383,17 @@
       "status": "confirmed"
     },
     {
+      "id": "dexum-site-sep",
+      "title": "DexUM on site (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-09-10",
+      "audience": "exams office",
+      "notes": "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 10 Sep 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "ext-edu-p2",
       "title": "External education registration deadline (P2)",
       "office": "esd",
@@ -304,6 +403,28 @@
       "notes": "",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "alumni-sept-wave",
+      "title": "Alumni second-wave campaign + new-graduate intake",
+      "office": "alumni",
+      "staff": "support",
+      "date": "2026-09-14",
+      "audience": "Alumni Coordinator",
+      "notes": "Per the mailbox: non-responder wave 14 Sep 2025, CE graduates + master's pilot survey 3-4 Sep 2025. Single year observed, rhythm inferred",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "exam-prep-dacs-p1",
+      "title": "Exam week prep meeting MSP-DACS-FSE-C (logistics + transport) (P1)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-09-14",
+      "audience": "exams office, DACS, FSE-C",
+      "notes": "Joint prep ~4 weeks ahead per own calendar: 'Meeting examweek 1 (+2) and transport' 2 Sep 2025, 'Meeting examweek 2' 11 Nov 2025, 'Voorbereiding P5, samenwerking DACS-MSP-FSE-C' 21 Apr 2026, 'Voorbereiding P6' 8 Jun 2026. Timing drifts between 1 and 6 weeks ahead",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "invigilators-p1",
@@ -328,6 +449,17 @@
       "status": "confirmed"
     },
     {
+      "id": "dexum-online-sep",
+      "title": "DexUM online (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-09-22",
+      "audience": "exams office",
+      "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 22 Sep 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "btr-proposal-sept",
       "title": "BTR proposal submission deadline (Sept cohort)",
       "office": "btr",
@@ -348,6 +480,17 @@
       "notes": "P1. Paper PDF and TestVision test both due; in the inbox by 9:00. Non-compliant exams returned with 24h to fix",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "boe-monthly-meeting",
+      "title": "BoE monthly meeting (cadence marker)",
+      "office": "boe",
+      "staff": "support",
+      "date": "2026-09-29",
+      "audience": "BoE members, BoE secretary",
+      "notes": "Own calendar 2023-24 shows a monthly BoE internal meeting, roughly last Tuesday of the month (26 Sep, 31 Oct, 28 Nov, 19 Dec 2023; 30 Jan, 30 Apr 2024). Evidence is old, verify current cadence with Katja before publishing",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "print-order-p1",
@@ -414,6 +557,28 @@
       "notes": "Week 6 of the running period; empty sheets exported from SAP with instructions + the 10-working-day deadline",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "dexum-site-oct",
+      "title": "DexUM on site (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-10-08",
+      "audience": "exams office",
+      "notes": "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 8 Oct 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "exam-week-instruction-p1",
+      "title": "Exam week instruction briefing (invigilation team) (P1)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-10-08",
+      "audience": "exams office, invigilators, student assistants",
+      "notes": "Thu/Fri before each exam week per own calendar: 'Instructie Examenweek' 8 Dec 2023, 21 Mar 2024, 23 May 2024; 'Instruction Exam Week' 13 Mar 2025. Timing varies a few days, treat as a placeholder",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "timetable-pub-p2",
@@ -493,6 +658,17 @@
       "status": "confirmed"
     },
     {
+      "id": "dexum-online-oct",
+      "title": "DexUM online (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-10-20",
+      "audience": "exams office",
+      "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 20 Oct 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "catalogue-spring-publish",
       "title": "Spring catalogue updates published (Canvas + intranet)",
       "office": "esd",
@@ -522,6 +698,17 @@
       "date": "2026-10-26",
       "audience": "IPO (Eva), students",
       "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "ssc-toetsoverleg-oct",
+      "title": "SSC Hoofdsurveillanten + Toets coordinator overleg",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-10-27",
+      "audience": "exams office, hoofdsurveillanten",
+      "notes": "Translated from the 2025-26 series (Tue 28 Oct 2025, PHS1 C3.015; HS overleg 13:30 then coordinator overleg 15:00). Msp-exams calendar; agenda items to toetsen@. AY26-27 invites should arrive from SSC around Sep",
       "link": "",
       "status": "unconfirmed"
     },
@@ -581,6 +768,17 @@
       "status": "confirmed"
     },
     {
+      "id": "dexum-site-nov",
+      "title": "DexUM on site (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-11-05",
+      "audience": "exams office",
+      "notes": "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 5 Nov 2026",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "btr-midterm-grades-due-sept",
       "title": "BTR midterm practical grade due (Sept cohort)",
       "office": "btr",
@@ -636,6 +834,28 @@
       "status": "unconfirmed"
     },
     {
+      "id": "exam-prep-dacs-p2",
+      "title": "Exam week prep meeting MSP-DACS-FSE-C (logistics + transport) (P2)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-11-09",
+      "audience": "exams office, DACS, FSE-C",
+      "notes": "Joint prep ~4 weeks ahead per own calendar: 'Meeting examweek 1 (+2) and transport' 2 Sep 2025, 'Meeting examweek 2' 11 Nov 2025, 'Voorbereiding P5, samenwerking DACS-MSP-FSE-C' 21 Apr 2026, 'Voorbereiding P6' 8 Jun 2026. Timing drifts between 1 and 6 weeks ahead",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "results-review-p1",
+      "title": "Results review with programme director (flagging odd course results) (P1)",
+      "office": "exams",
+      "staff": "both",
+      "date": "2026-11-09",
+      "audience": "exams office, programme director",
+      "notes": "After grade publication per own calendar: 'Go over P1-3 results' 26 Mar 2026 (cancelled) and 'Discuss P4 results' 13 Apr 2026, both in Linnea's office B2.019; goal is flagging guidelines",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "course-reg-spring",
       "title": "Course registration week (Spring 2027 selections)",
       "office": "scheduling",
@@ -643,6 +863,17 @@
       "date": "2026-11-09",
       "audience": "students, Academic Advising, ESD",
       "notes": "9-13 Nov; advisor meeting required before submitting",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "bachelor-open-day-fall",
+      "title": "Bachelor Open Day, Fall edition",
+      "office": "general",
+      "staff": "support",
+      "date": "2026-11-14",
+      "audience": "MSP staff on stand duty, marketing, alumni volunteers",
+      "notes": "Own calendar, 'Bachelor Open Day, Fall Edition 2026', Sat 14 Nov 2026 09:30, Learning Spaces PHS1 + Common Room ZW4. Alumni volunteer call went out ~5 weeks ahead in 2025",
       "link": "",
       "status": "confirmed"
     },
@@ -665,6 +896,17 @@
       "date": "2026-11-16",
       "audience": "students, ESD",
       "notes": "P2: 16-20 Nov",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "dexum-online-nov",
+      "title": "DexUM online (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-11-17",
+      "audience": "exams office",
+      "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 17 Nov 2026",
       "link": "",
       "status": "confirmed"
     },
@@ -708,7 +950,7 @@
       "staff": "both",
       "date": "2026-11-23",
       "audience": "graduating students, BoE, Secretariat, Alumni",
-      "notes": "Week 48 (23-27 Nov) per the academic calendar; exact day TBC (2025 edition was Fri 28 Nov)",
+      "notes": "Week 48 (23-27 Nov) per the academic calendar; exact day TBC. Pattern per own calendar: FSE Graduation day + ceremony both Fri 28 Nov 2025 at MECC, so expect Fri 27 Nov 2026 at MECC",
       "link": "",
       "status": "unconfirmed"
     },
@@ -722,6 +964,17 @@
       "notes": "P2. Delivery Tue 1 Dec",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "msp-15th-reunion",
+      "title": "MSP 15th anniversary alumni reunion weekend (Nov 2026, date TBD)",
+      "office": "alumni",
+      "staff": "both",
+      "date": "2026-11-27",
+      "audience": "alumni, all staff, Aperture",
+      "notes": "Announced in the Dec 2025 alumni survey mail: MSP turns 15 in Nov 2026, reunion weekend planned. Placeholder on the graduation-weekend Friday; date not set",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "momi-control-list",
@@ -790,6 +1043,28 @@
       "status": "confirmed"
     },
     {
+      "id": "exam-week-instruction-p2",
+      "title": "Exam week instruction briefing (invigilation team) (P2)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-12-03",
+      "audience": "exams office, invigilators, student assistants",
+      "notes": "Thu/Fri before each exam week per own calendar: 'Instructie Examenweek' 8 Dec 2023, 21 Mar 2024, 23 May 2024; 'Instruction Exam Week' 13 Mar 2025. Timing varies a few days, treat as a placeholder",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "fse-faculty-day",
+      "title": "FSE Faculty Day",
+      "office": "general",
+      "staff": "both",
+      "date": "2026-12-03",
+      "audience": "all FSE staff",
+      "notes": "Annual early-December off-site per own calendar: 'FSE Faculty Day 2025' Thu 4 Dec 2025 (Venlo), 2024 edition mid-Dec (Studio Radium). Date TBC via FSE comms",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "ext-edu-s2",
       "title": "External education registration deadline (S2, P4, P4-P5)",
       "office": "esd",
@@ -819,6 +1094,17 @@
       "date": "2026-12-07",
       "audience": "coordinators, invigilators, ESD, students",
       "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "dexum-site-dec",
+      "title": "DexUM on site (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-12-10",
+      "audience": "exams office",
+      "notes": "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 10 Dec 2026",
       "link": "",
       "status": "confirmed"
     },
@@ -863,6 +1149,17 @@
       "date": "2026-12-14",
       "audience": "IPO (Eva), Ton Derikx, coordinators",
       "notes": "Winter round per the IPO overview: per-module archive drive by Ton Derikx, access for all Spring coordinators, empty overviews created",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "alumni-december-survey",
+      "title": "Alumni year-plan survey (December)",
+      "office": "alumni",
+      "staff": "support",
+      "date": "2026-12-21",
+      "audience": "Alumni Coordinator",
+      "notes": "2025 instance: 'MSP Alumni Survey - Help us plan 2026!' sent 21 Dec 2025 (Qualtrics). Single instance, rhythm inferred",
       "link": "",
       "status": "unconfirmed"
     },
@@ -944,6 +1241,17 @@
       "status": "confirmed"
     },
     {
+      "id": "results-review-p2",
+      "title": "Results review with programme director (flagging odd course results) (P2)",
+      "office": "exams",
+      "staff": "both",
+      "date": "2027-01-04",
+      "audience": "exams office, programme director",
+      "notes": "After grade publication per own calendar: 'Go over P1-3 results' 26 Mar 2026 (cancelled) and 'Discuss P4 results' 13 Apr 2026, both in Linnea's office B2.019; goal is flagging guidelines",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "switch-p4",
       "title": "Course switch deadline",
       "office": "scheduling",
@@ -975,6 +1283,17 @@
       "notes": "Three weeks ahead per the IPO overview: SAP Student Reporting Tool lists (deregistered before 1 Oct = no letter), Stick advisor match, datafile, mail-address check, link/EER-article check",
       "link": "",
       "status": "unconfirmed"
+    },
+    {
+      "id": "dexum-online-jan",
+      "title": "DexUM online (digital exams network)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-01-12",
+      "audience": "exams office",
+      "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 12 Jan 2027. Later spring 2027 dates not yet issued by SSC",
+      "link": "",
+      "status": "confirmed"
     },
     {
       "id": "timetable-pub-p4",
@@ -1087,6 +1406,17 @@
       "status": "unconfirmed"
     },
     {
+      "id": "graduation-survey-jan",
+      "title": "Mandatory Graduation Survey to the January class",
+      "office": "alumni",
+      "staff": "support",
+      "date": "2027-01-26",
+      "audience": "Alumni Coordinator, graduating students, ESD",
+      "notes": "Sent a few days before the 31 Jan graduation date (2026 instance: 27 Jan). Intake pipe into the alumni database",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "examiner-to-katja-spring",
       "title": "Examiner list to Katja (BoE) for Spring appointment letters",
       "office": "boe",
@@ -1164,6 +1494,28 @@
       "status": "unconfirmed"
     },
     {
+      "id": "ssc-toetsoverleg-feb",
+      "title": "SSC Hoofdsurveillanten + Toets coordinator overleg",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-02-02",
+      "audience": "exams office, hoofdsurveillanten",
+      "notes": "Translated from Msp-exams calendar 'Hoofdsurveillanten overleg' 10:00 + 'Toets coordinator overleg' 11:30, Tue 3 Feb 2026, PHS1 C3.015",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "bachelor-open-day-spring",
+      "title": "Bachelor Open Day, Spring edition",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-02-06",
+      "audience": "MSP staff on stand duty, marketing",
+      "notes": "Translated from own calendar 'Bachelor's Open Day, Spring edition 2026', Sat 7 Feb 2026; expect first Saturday of February",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "bsa-halfway-archive",
       "title": "BSA halfway letters archived (Corsa D20A + Outlook)",
       "office": "esd",
@@ -1182,6 +1534,28 @@
       "date": "2027-02-08",
       "audience": "all staff",
       "notes": "8-12 Feb 2027, inside P4",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "exam-prep-dacs-p4",
+      "title": "Exam week prep meeting MSP-DACS-FSE-C (logistics + transport) (P4)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-02-15",
+      "audience": "exams office, DACS, FSE-C",
+      "notes": "Joint prep ~4 weeks ahead per own calendar: 'Meeting examweek 1 (+2) and transport' 2 Sep 2025, 'Meeting examweek 2' 11 Nov 2025, 'Voorbereiding P5, samenwerking DACS-MSP-FSE-C' 21 Apr 2026, 'Voorbereiding P6' 8 Jun 2026. Timing drifts between 1 and 6 weeks ahead",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "staff-meeting-feb",
+      "title": "MSP staff meeting (monthly, lunch included)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-02-18",
+      "audience": "all MSP staff",
+      "notes": "Own calendar yearly series 'Staff Meeting - February', occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet; fall dates get set separately, verify with Linzi",
       "link": "",
       "status": "confirmed"
     },
@@ -1226,6 +1600,17 @@
       "date": "2027-02-26",
       "audience": "course coordinators",
       "notes": "End of February (2026 instance was Fri 27 Feb); update letters go out mid-Jan, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "master-open-day-spring",
+      "title": "Master Open Day, Spring edition",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-02-27",
+      "audience": "MSP staff on stand duty, marketing",
+      "notes": "Translated from own calendar 'Master's Open Day, Spring edition 2026', Sat 28 Feb 2026",
       "link": "",
       "status": "unconfirmed"
     },
@@ -1296,6 +1681,17 @@
       "status": "confirmed"
     },
     {
+      "id": "performance-eval-round",
+      "title": "UM performance evaluation round (expect form)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-03-01",
+      "audience": "all staff",
+      "notes": "Per own mailbox: 'Performance Evaluation February 2026' issued 4 Mar, signed form + appendix chased 14 Apr. UM annual cycle inferred",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "print-order-p4",
       "title": "Print order to ANDIDRUK",
       "office": "exams",
@@ -1325,6 +1721,28 @@
       "date": "2027-03-08",
       "audience": "IPO (Eva), exams office",
       "notes": "Week before the exam week per the IPO overview: copy exam + attendance sheets into the archiving overview, note which modules have resits",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "staff-meeting-mar",
+      "title": "MSP staff meeting (monthly, lunch included)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-03-09",
+      "audience": "all MSP staff",
+      "notes": "Own calendar yearly series, occurrence Tue 9 Mar 2027",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "exam-week-instruction-p4",
+      "title": "Exam week instruction briefing (invigilation team) (P4)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-03-11",
+      "audience": "exams office, invigilators, student assistants",
+      "notes": "Thu/Fri before each exam week per own calendar: 'Instructie Examenweek' 8 Dec 2023, 21 Mar 2024, 23 May 2024; 'Instruction Exam Week' 13 Mar 2025. Timing varies a few days, treat as a placeholder",
       "link": "",
       "status": "unconfirmed"
     },
@@ -1373,6 +1791,17 @@
       "status": "confirmed"
     },
     {
+      "id": "um-calendarium-arrives",
+      "title": "UM Calendarium AY27-28 arrives (expect)",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-03-22",
+      "audience": "Operations, Scheduling",
+      "notes": "Approved UM-wide + academic short year versions forwarded by Linzi 24 Mar 2026. This triggers this calendar's own annual refresh: fill year-2027-28.yaml, have each office confirm its layer, rebuild",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "catalogue-gerco-final",
       "title": "Catalogue cycle - final meeting with Gerco (frame schedule check)",
       "office": "esd",
@@ -1380,6 +1809,17 @@
       "date": "2027-03-23",
       "audience": "IPO (Eva), Gerco",
       "notes": "2026 instance: Tue 24 Mar. Concept frame schedule vs workbook must end up identical (titles, coordinators, periods, pre/co, levels); feeds the firm 1 Apr publication",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "surveillanten-training",
+      "title": "Annual invigilator (surveillanten) training",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-03-24",
+      "audience": "exams office, hoofdsurveillanten, invigilators",
+      "notes": "Annual training; 2026 edition was Wed 25 Mar per Msp-exams calendar 'werkgroep Surveillanten training 25 maart' (6 Mar 2026) and 'evaluatie Surveillanten training 2026' (18 May 2026). Werkgroep prep starts ~3 weeks before, evaluation ~8 weeks after",
       "link": "",
       "status": "unconfirmed"
     },
@@ -1428,6 +1868,17 @@
       "status": "confirmed"
     },
     {
+      "id": "staff-meeting-apr",
+      "title": "MSP staff meeting (monthly, lunch included)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-04-08",
+      "audience": "all MSP staff",
+      "notes": "Own calendar yearly series, occurrence Thu 8 Apr 2027",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "grades-published-p4",
       "title": "Grades published on Student Portal (deadline) (P4)",
       "office": "exams",
@@ -1461,6 +1912,17 @@
       "status": "unconfirmed"
     },
     {
+      "id": "results-review-p4",
+      "title": "Results review with programme director (flagging odd course results) (P4)",
+      "office": "exams",
+      "staff": "both",
+      "date": "2027-04-12",
+      "audience": "exams office, programme director",
+      "notes": "After grade publication per own calendar: 'Go over P1-3 results' 26 Mar 2026 (cancelled) and 'Discuss P4 results' 13 Apr 2026, both in Linnea's office B2.019; goal is flagging guidelines",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "canvas-scheduling-uploads-spring",
       "title": "Scheduling docs refreshed on Canvas (Fall registration set)",
       "office": "scheduling",
@@ -1468,6 +1930,28 @@
       "date": "2027-04-12",
       "audience": "Scheduling (Severine), IPO (Eva)",
       "notes": "Mid-April per the IPO overview: course registration form, frame schedules, switch-withdraw deadlines, planning tool, academic calendar",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "ssc-toetsoverleg-apr",
+      "title": "SSC Hoofdsurveillanten + Toets coordinator overleg",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-04-13",
+      "audience": "exams office, hoofdsurveillanten",
+      "notes": "Translated from Msp-exams calendar pair on Tue 14 Apr 2026, PHS1 C3.015",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "alumni-admissions-qa-call",
+      "title": "Admissions online Q&A alumni panellist call (expect)",
+      "office": "alumni",
+      "staff": "support",
+      "date": "2027-04-15",
+      "audience": "Alumni Coordinator, Admissions (Saskia)",
+      "notes": "Per the mailbox: 2026 request landed mid-April with a 1 May deadline for the May online Q&A sessions (12/19/21/27 May 2026). Annual recurrence inferred",
       "link": "",
       "status": "unconfirmed"
     },
@@ -1481,6 +1965,17 @@
       "notes": "",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "exam-prep-dacs-p5",
+      "title": "Exam week prep meeting MSP-DACS-FSE-C (logistics + transport) (P5)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-04-19",
+      "audience": "exams office, DACS, FSE-C",
+      "notes": "Joint prep ~4 weeks ahead per own calendar: 'Meeting examweek 1 (+2) and transport' 2 Sep 2025, 'Meeting examweek 2' 11 Nov 2025, 'Voorbereiding P5, samenwerking DACS-MSP-FSE-C' 21 Apr 2026, 'Voorbereiding P6' 8 Jun 2026. Timing drifts between 1 and 6 weeks ahead",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "accreditation-deadline-p4",
@@ -1555,7 +2050,7 @@
       "staff": "support",
       "date": "2027-04-30",
       "audience": "exams office",
-      "notes": "April per the manual; frame schedule needed from Programme Director by end of March",
+      "notes": "April per the manual; frame schedule needed from Programme Director by end of March. Rhythm confirmed by the 2026 cycle: Msp-exams calendar 'Exam planning 26-27 UMsports' 14 Apr 2026, each faculty's planning ready by Tue 7 Apr",
       "link": "",
       "status": "unconfirmed"
     },
@@ -1648,6 +2143,17 @@
       "status": "unconfirmed"
     },
     {
+      "id": "staff-meeting-may",
+      "title": "MSP staff meeting (monthly, lunch included)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-05-11",
+      "audience": "all MSP staff",
+      "notes": "Own calendar yearly series, occurrence Tue 11 May 2027",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "timetable-pub-p6",
       "title": "Timetable published",
       "office": "scheduling",
@@ -1657,6 +2163,17 @@
       "notes": "P6",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "exam-week-instruction-p5",
+      "title": "Exam week instruction briefing (invigilation team) (P5)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-05-13",
+      "audience": "exams office, invigilators, student assistants",
+      "notes": "Thu/Fri before each exam week per own calendar: 'Instructie Examenweek' 8 Dec 2023, 21 Mar 2024, 23 May 2024; 'Instruction Exam Week' 13 Mar 2025. Timing varies a few days, treat as a placeholder",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "bsa-year-send",
@@ -1791,6 +2308,17 @@
       "status": "confirmed"
     },
     {
+      "id": "msp-graduation-party",
+      "title": "MSP graduation party / BBQ",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-06-13",
+      "audience": "graduating students, staff, alumni",
+      "notes": "Translated from own calendar 'MSP Graduation Party/BBQ', Sun 14 Jun 2026, Castle Vaeshartelt (2024 edition was a dinner on 5 Jul). Feeds alumni onboarding",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "accreditation-ask-p5",
       "title": "Ask coordinators for accreditation material (round opens) (P5)",
       "office": "esd",
@@ -1809,6 +2337,39 @@
       "date": "2027-06-14",
       "audience": "coordinators, invigilators, ESD, students",
       "notes": "14-18 Jun 2027, standalone resit week",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "results-review-p5",
+      "title": "Results review with programme director (flagging odd course results) (P5)",
+      "office": "exams",
+      "staff": "both",
+      "date": "2027-06-14",
+      "audience": "exams office, programme director",
+      "notes": "After grade publication per own calendar: 'Go over P1-3 results' 26 Mar 2026 (cancelled) and 'Discuss P4 results' 13 Apr 2026, both in Linnea's office B2.019; goal is flagging guidelines",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "enci-fieldwork",
+      "title": "ENCI fieldwork period starts (~2 weeks, support crew needed)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-06-14",
+      "audience": "course team, support crew volunteers",
+      "notes": "Per own mailbox (V ENCI folder): Jun-Jul 2026 fieldwork, daily 08:00 starts, availability request went out 22 May. One cycle observed, annual inferred",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "staff-meeting-jun",
+      "title": "MSP staff meeting (monthly, lunch included)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-06-17",
+      "audience": "all MSP staff",
+      "notes": "Own calendar 'Staff Meeting - June 2027', Thu 17 Jun 2027. January edition (12 Jan 2027) exists but its series shows as cancelled, left out",
       "link": "",
       "status": "confirmed"
     },
@@ -1833,6 +2394,50 @@
       "notes": "After the P5 resit week (14-18 Jun)",
       "link": "",
       "status": "confirmed"
+    },
+    {
+      "id": "ssc-toetsoverleg-jun",
+      "title": "SSC Hoofdsurveillanten + Toets coordinator overleg",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-06-22",
+      "audience": "exams office, hoofdsurveillanten",
+      "notes": "Translated from Msp-exams calendar pair on Tue 23 Jun 2026, PHS1 C3.015. The July edition was cancelled both years, treat June as the season closer",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "assessment-logistics-umsport",
+      "title": "Assessment logistics FSE / UM Sports (year-end alignment)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-06-22",
+      "audience": "exams office, UM Sports, FSE",
+      "notes": "Translated from own calendar 'Assessment logistics FSE / UMSPORT', Tue 23 Jun 2026; pairs with the exam year-plan cycle",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "graduation-survey-jun",
+      "title": "Mandatory Graduation Survey to the June class",
+      "office": "alumni",
+      "staff": "support",
+      "date": "2027-06-23",
+      "audience": "Alumni Coordinator, graduating students, ESD",
+      "notes": "Sent a few days before the 30 Jun graduation date (2026 instance: 23 Jun)",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "fse-education-day",
+      "title": "FSE Education Day",
+      "office": "general",
+      "staff": "academic",
+      "date": "2027-06-24",
+      "audience": "teaching staff, education support",
+      "notes": "Translated from own calendar 'FSE Education Day', Thu 25 Jun 2026, Kasteel De Hoogenweerth; single instance, treat as tentative",
+      "link": "",
+      "status": "unconfirmed"
     },
     {
       "id": "accreditation-deadline-p5",
@@ -1879,6 +2484,17 @@
       "status": "confirmed"
     },
     {
+      "id": "norm-hours-finance",
+      "title": "Norm-hours list (BTR supervision) to finance",
+      "office": "btr",
+      "staff": "support",
+      "date": "2027-07-05",
+      "audience": "BTR administrator, finance",
+      "notes": "End of the academic year per own mailbox (statement 14 Jul 2026 + Tasks item); external/MUMC+ supervisors credited via their institution",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
       "id": "archive-drive-summer",
       "title": "Archive drive + accreditation overviews set up for Fall AY27-28",
       "office": "esd",
@@ -1897,6 +2513,17 @@
       "date": "2027-07-05",
       "audience": "IPO (Eva), exams office",
       "notes": "July per the IPO overview: whole-year overview (source: exam coordinator) refreshed for archiving/accreditation and posted on the whiteboard",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "alumni-db-campaign",
+      "title": "Annual alumni database update campaign (mass send)",
+      "office": "alumni",
+      "staff": "support",
+      "date": "2027-07-12",
+      "audience": "Alumni Coordinator, student assistants",
+      "notes": "Mid-July per the mailbox: founding campaign 14 Jul 2025, per-cohort sends, two-stage (contact check, then location + job follow-up ~1 week later). Annual recurrence inferred. Run a dead-address pass on the bounces first",
       "link": "",
       "status": "unconfirmed"
     },
@@ -1930,6 +2557,17 @@
       "date": "2027-07-19",
       "audience": "IPO (Eva), Ton Derikx, Katja",
       "notes": "One week after sending per the IPO overview",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "sap-rule-container",
+      "title": "SAP rule-container changeover for the new AY (team boot camp)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-07-19",
+      "audience": "ESD team volunteers, SAP key user (Michael Hewitt)",
+      "notes": "Summer per own mailbox: 2026 boot camp 20-22 Jul (mails 13 Jul 2026, plan announced by Linzi 4 Feb 2026); new AY rules copied from Excel into SAP",
       "link": "",
       "status": "unconfirmed"
     },

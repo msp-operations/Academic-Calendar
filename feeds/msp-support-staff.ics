@@ -37,6 +37,14 @@ SUMMARY:[MSP EXAMS] UM SPORTS toetsgangen sign-off AY26-27
 DESCRIPTION:30 toetsgangen min at 420 EUR/run\; shortfall bill lands end Aug | For: exams office\, FSE\, Linzi
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-aug1-202627@msp-operations
+DTSTAMP:20260811T000000Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 11 Aug 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:intro-qa-202627@msp-operations
 DTSTAMP:20260813T000000Z
 DTSTART;VALUE=DATE:20260813
@@ -51,6 +59,14 @@ DTSTART;VALUE=DATE:20260813
 DTEND;VALUE=DATE:20260814
 SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P1. Coordinators: check your draft in the two weeks before publication | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:ssc-heidag-202627@msp-operations
+DTSTAMP:20260814T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:[MSP EXAMS] SSC toetscoordinatoren hei-dag
+DESCRIPTION:Announced by SSC Toetsen 12 Jun 2026 (own mailbox)\; Fri 14 Aug 2026 | For: exams office\, SSC Toetsen
 END:VEVENT
 BEGIN:VEVENT
 UID:examiner-gerco-check-fall-202627@msp-operations
@@ -101,6 +117,14 @@ SUMMARY:[MSP EXAMS] First SSC mutations deadline AY26-27
 DESCRIPTION:For the 16 Sep sitting\; per-exam-week SSC deadlines all 12:00 (Anja Ronken's file) | For: exams office
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-aug2-202627@msp-operations
+DTSTAMP:20260827T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 27 Aug 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-start-sept-202627@msp-operations
 DTSTAMP:20260831T000000Z
 DTSTART;VALUE=DATE:20260831
@@ -133,6 +157,14 @@ SUMMARY:[MSP ESD] Catalogue Spring cycle - first meeting with Gerco (P4+P5 updat
 DESCRIPTION:Mon 7 Sep 14:00-15:00 per the IPO overview: coordinator changes\, titles\, periods\, pre/corequisites. Coordinator mail list + workbook copy to Gerco afterwards | For: IPO (Eva)\, Gerco
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-site-sep-202627@msp-operations
+DTSTAMP:20260910T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 10 Sep 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:ext-edu-p2-202627@msp-operations
 DTSTAMP:20260913T000000Z
 DTSTART;VALUE=DATE:20260913
@@ -155,6 +187,14 @@ DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P1: 21-25 Sep | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-online-sep-202627@msp-operations
+DTSTAMP:20260922T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 22 Sep 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-sept-202627@msp-operations
@@ -189,6 +229,14 @@ SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P1)
 DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-site-oct-202627@msp-operations
+DTSTAMP:20261008T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 8 Oct 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p2-202627@msp-operations
 DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261008
@@ -221,6 +269,14 @@ SUMMARY:[MSP ESD] Catalogue Spring cycle - final meeting with Gerco
 DESCRIPTION:Mon 19 Oct 14:00-15:00 per the IPO overview. Concept frame schedule vs workbook check (titles\, coordinators\, periods\, pre/co)\; both must end up identical | For: IPO (Eva)\, Gerco
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-oct-202627@msp-operations
+DTSTAMP:20261020T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 20 Oct 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:withdraw-p2-202627@msp-operations
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
@@ -243,6 +299,14 @@ DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[MSP SCHEDULING] Academic Advising period starts (Spring registration)
 DESCRIPTION:Mon 2 Nov per the IPO overview\; runs into course registration week 9-13 Nov | For: students\, academic advisors\, coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-site-nov-202627@msp-operations
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 5 Nov 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p1-202627@msp-operations
@@ -277,6 +341,14 @@ SUMMARY:[MSP SCHEDULING] Course registration week (Spring 2027 selections)
 DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:bachelor-open-day-fall-202627@msp-operations
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:[MSP GENERAL] Bachelor Open Day\, Fall edition
+DESCRIPTION:Own calendar\, 'Bachelor Open Day\, Fall Edition 2026'\, Sat 14 Nov 2026 09:30\, Learning Spaces PHS1 + Common Room ZW4. Alumni volunteer call went out ~5 weeks ahead in 2025 | For: MSP staff on stand duty\, marketing\, alumni volunteers
+END:VEVENT
+BEGIN:VEVENT
 UID:invigilators-p2-202627@msp-operations
 DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
@@ -291,6 +363,14 @@ DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P2: 16-20 Nov | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-online-nov-202627@msp-operations
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 17 Nov 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:print-order-p2-202627@msp-operations
@@ -331,6 +411,14 @@ DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP EXAMS] Exam week (P2)
 DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-site-dec-202627@msp-operations
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 10 Dec 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p3-202627@msp-operations
@@ -381,6 +469,14 @@ SUMMARY:[MSP SCHEDULING] Course switch deadline
 DESCRIPTION:P4 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-jan-202627@msp-operations
+DTSTAMP:20270112T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 12 Jan 2027. Later spring 2027 dates not yet issued by SSC | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p4-202627@msp-operations
 DTSTAMP:20270114T000000Z
 DTSTART;VALUE=DATE:20270114
@@ -427,6 +523,14 @@ DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:[MSP GENERAL] Carnival week (no teaching)
 DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-feb-202627@msp-operations
+DTSTAMP:20270218T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:ext-edu-p5-202627@msp-operations
@@ -477,6 +581,14 @@ SUMMARY:[MSP SCHEDULING] Course switch deadline
 DESCRIPTION:P5 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:staff-meeting-mar-202627@msp-operations
+DTSTAMP:20270309T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-week-p4-202627@msp-operations
 DTSTAMP:20270315T000000Z
 DTSTART;VALUE=DATE:20270315
@@ -507,6 +619,14 @@ DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270403
 SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P5 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-apr-202627@msp-operations
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p4-202627@msp-operations
@@ -563,6 +683,14 @@ DTSTART;VALUE=DATE:20270504
 DTEND;VALUE=DATE:20270505
 SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
 DESCRIPTION:P5. Delivery Tue 11 May | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-may-202627@msp-operations
+DTSTAMP:20270511T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p6-202627@msp-operations
@@ -627,6 +755,14 @@ DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:[MSP EXAMS] Resit week P5
 DESCRIPTION:14-18 Jun 2027\, standalone resit week | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-jun-202627@msp-operations
+DTSTAMP:20270617T000000Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. January edition (12 Jan 2027) exists but its series shows as cancelled\, left out | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:summer-break-202627@msp-operations

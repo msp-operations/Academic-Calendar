@@ -269,12 +269,28 @@ SUMMARY:[MSP GENERAL] Carnival week (no teaching)
 DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:staff-meeting-feb-202627@msp-operations
+DTSTAMP:20270218T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-submit-p4-202627@msp-operations
 DTSTAMP:20270301T000000Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P4 (incl. P2/P3 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-mar-202627@msp-operations
+DTSTAMP:20270309T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-week-p4-202627@msp-operations
@@ -309,6 +325,14 @@ SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P4)
 DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
+UID:staff-meeting-apr-202627@msp-operations
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-published-p4-202627@msp-operations
 DTSTAMP:20270409T000000Z
 DTSTART;VALUE=DATE:20270409
@@ -323,6 +347,14 @@ DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P5 (incl. P4 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-may-202627@msp-operations
+DTSTAMP:20270511T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p6-202627@msp-operations
@@ -379,6 +411,14 @@ DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:[MSP EXAMS] Resit week P5
 DESCRIPTION:14-18 Jun 2027\, standalone resit week | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:staff-meeting-jun-202627@msp-operations
+DTSTAMP:20270617T000000Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
+DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. January edition (12 Jan 2027) exists but its series shows as cancelled\, left out | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
 UID:project-grades-published-p6-202627@msp-operations

@@ -21,6 +21,22 @@ SUMMARY:[MSP EXAMS] UM SPORTS toetsgangen sign-off AY26-27
 DESCRIPTION:30 toetsgangen min at 420 EUR/run\; shortfall bill lands end Aug | For: exams office\, FSE\, Linzi
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-aug1-202627@msp-operations
+DTSTAMP:20260811T000000Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 11 Aug 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:ssc-heidag-202627@msp-operations
+DTSTAMP:20260814T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:[MSP EXAMS] SSC toetscoordinatoren hei-dag
+DESCRIPTION:Announced by SSC Toetsen 12 Jun 2026 (own mailbox)\; Fri 14 Aug 2026 | For: exams office\, SSC Toetsen
+END:VEVENT
+BEGIN:VEVENT
 UID:assessment-announced-p1-202627@msp-operations
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260824
@@ -37,6 +53,22 @@ SUMMARY:[MSP EXAMS] First SSC mutations deadline AY26-27
 DESCRIPTION:For the 16 Sep sitting\; per-exam-week SSC deadlines all 12:00 (Anja Ronken's file) | For: exams office
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-aug2-202627@msp-operations
+DTSTAMP:20260827T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 27 Aug 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-site-sep-202627@msp-operations
+DTSTAMP:20260910T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 10 Sep 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:invigilators-p1-202627@msp-operations
 DTSTAMP:20260921T000000Z
 DTSTART;VALUE=DATE:20260921
@@ -51,6 +83,14 @@ DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P1: 21-25 Sep | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-online-sep-202627@msp-operations
+DTSTAMP:20260922T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 22 Sep 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p1-202627@msp-operations
@@ -77,6 +117,14 @@ SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P1)
 DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-site-oct-202627@msp-operations
+DTSTAMP:20261008T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 8 Oct 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-week-p1-202627@msp-operations
 DTSTAMP:20261012T000000Z
 DTSTART;VALUE=DATE:20261012
@@ -93,12 +141,28 @@ SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P2)
 DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-online-oct-202627@msp-operations
+DTSTAMP:20261020T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 20 Oct 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-due-p1-202627@msp-operations
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P1)
 DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-site-nov-202627@msp-operations
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 5 Nov 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p1-202627@msp-operations
@@ -123,6 +187,14 @@ DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P2: 16-20 Nov | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-online-nov-202627@msp-operations
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 17 Nov 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p2-202627@msp-operations
@@ -157,6 +229,14 @@ SUMMARY:[MSP EXAMS] Exam week (P2)
 DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
+UID:dexum-site-dec-202627@msp-operations
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
+DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 10 Dec 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-due-p2-202627@msp-operations
 DTSTAMP:20261225T000000Z
 DTSTART;VALUE=DATE:20261225
@@ -179,6 +259,14 @@ DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
 SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P3: 4-8 Jan | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:dexum-online-jan-202627@msp-operations
+DTSTAMP:20270112T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
+DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 12 Jan 2027. Later spring 2027 dates not yet issued by SSC | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p4-202627@msp-operations
