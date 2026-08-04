@@ -19,6 +19,7 @@
     --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
     --esd: #0d9488; --alumni: #db2777; --general: #64748b;
     --p1: #6366f1; --p2: #0891b2; --p3: #64748b; --p4: #d97706; --p5: #be185d; --p6: #059669;
+    --gold: #d4a017;
     --shadow-sm: 0 1px 2px rgba(22,36,61,.06), 0 1px 3px rgba(22,36,61,.08);
     --shadow-md: 0 4px 12px rgba(22,36,61,.08), 0 2px 4px rgba(22,36,61,.05);
     --shadow-lg: 0 24px 60px rgba(22,36,61,.32);
@@ -43,15 +44,15 @@
   .titleblock h1 { font-size: 1.6rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
 
   .periodband { display: flex; gap: 10px; padding: 8px 24px 20px; max-width: var(--pagew); margin: 0 auto; }
-  .period { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px;
+  .period { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 0; padding: 10px 13px;
     font-size: .76rem; color: var(--muted); box-shadow: var(--shadow-sm); transition: transform .15s ease, box-shadow .15s ease; position: relative; }
   .period:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
-  .period.current { border-color: var(--accent); background: #f0faff; }
+  .period.current { outline: 2px solid var(--accent); outline-offset: -1px; }
   .period.current::after { content: "now"; position: absolute; top: 7px; right: 9px; background: var(--accent); color: #fff;
     font-size: .58rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; padding: 2px 7px; border-radius: 999px; }
-  .period b { display: block; color: var(--navy); font-size: .95rem; font-weight: 800; letter-spacing: -.01em; }
-  .period .exam { color: var(--exams); font-size: .7rem; font-weight: 600; margin-top: 1px; }
-  .period .wks { color: var(--muted); font-size: .66rem; }
+  .period b { display: block; color: var(--navy); font-size: .98rem; font-weight: 800; letter-spacing: -.01em; }
+  .period .dates { font-style: italic; }
+  .period .exam { color: var(--exams); font-size: .7rem; font-weight: 600; font-style: italic; margin-top: 2px; }
   .period.unconfirmed b::after { content: " *"; color: #b45309; }
 
   .toolbar { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--paper) 88%, transparent);
@@ -85,6 +86,7 @@
   .legend .swh { background: #e3f5e9; border: 1px solid #c9e9d6; }
   .legend .dotc { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); display: inline-block; }
   .legend .dotu { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--muted); display: inline-block; box-sizing: border-box; }
+  .legend .swdue { width: 16px; height: 4px; background: var(--gold); border-radius: 2px; display: inline-block; }
 
   .yearwrap { overflow-x: auto; margin-top: 12px; padding-bottom: 8px;
     width: min(100vw - 40px, 1880px); position: relative; left: 50%; transform: translateX(-50%); }
@@ -106,6 +108,8 @@
   .yday.p5, .day.p5 { border-top: 3px solid var(--p5); }
   .yday.p6, .day.p6 { border-top: 3px solid var(--p6); }
   .yday.hol, .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
+  /* Gold bar: academic staff must submit something to the office by this day */
+  .yday.due, .day.due { border-bottom: 4px solid var(--gold); }
   .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
   .yday .yhead { font-size: .58rem; color: var(--muted); white-space: nowrap; }
   .yday .yhead b { color: var(--ink); font-size: .68rem; font-weight: 700; }
@@ -285,8 +289,10 @@ function init() {
     const wks = Math.round((new Date(p.end) - new Date(p.start)) / 604800000) + 1;
     const el = document.createElement('div');
     el.className = 'period' + (cur ? ' current' : '') + (p.status === 'unconfirmed' ? ' unconfirmed' : '');
-    el.style.borderTop = `4px solid var(--${p.id.toLowerCase()})`;
-    el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} &ndash; ${fmt(p.end)} <span class="wks">· ${wks} wks</span>` +
+    const pc = `var(--${p.id.toLowerCase()})`;
+    el.style.borderTop = `4px solid ${pc}`;
+    el.style.background = `linear-gradient(180deg, color-mix(in srgb, ${pc} 16%, #fff) 0%, #fff 60%)`;
+    el.innerHTML = `<b>${p.id}</b><span class="dates">${fmt(p.start)} &ndash; ${fmt(p.end)} · ${wks} wks</span>` +
       (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} &ndash; ${fmt(p.exam_end)}</div>` : '');
     band.appendChild(el);
   }
@@ -398,7 +404,8 @@ function renderGrid(main, events) {
       const iso = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
       const dow = (firstDow + d - 1) % 7;
       const cell = document.createElement('div');
-      cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) + (iso === todayIso ? ' today' : '');
+      cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) +
+        ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
       const holG = holidayOf(iso); if (holG) cell.title = holG;
       cell.innerHTML = `<div class="num">${d}</div>`;
       for (const e of (byDay[iso] || [])) {
@@ -436,6 +443,7 @@ function renderYear(main, events) {
     DB.periods.map(p => `<span class="lg"><span class="sw" style="background:var(--${p.id.toLowerCase()})"></span>${p.id}</span>`).join('') +
     '<span class="lg"><span class="sw swx"></span>Exam week</span>' +
     '<span class="lg"><span class="sw swh"></span>Holiday / break</span>' +
+    '<span class="lg"><span class="swdue"></span>Academic submission due</span>' +
     '<span class="lg"><span class="dotc"></span>Confirmed</span>' +
     '<span class="lg"><span class="dotu"></span>Unconfirmed</span>';
   main.appendChild(legend);
@@ -455,7 +463,8 @@ function renderYear(main, events) {
       const dowIdx = new Date(iso + 'T12:00:00Z').getUTCDay();
       const cell = document.createElement('div');
       cell.className = 'yday' + ((dowIdx === 0 || dowIdx === 6) ? ' wknd' : '') +
-        (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) + (iso === todayIso ? ' today' : '');
+        (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) +
+        ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
       const hol = holidayOf(iso); if (hol) cell.title = hol;
       cell.innerHTML = `<div class="yhead">${DOWS[dowIdx]} <b>${d}</b></div>` +
         (marks[iso] ? `<span class="pchip">${marks[iso]} &raquo;</span>` : '');

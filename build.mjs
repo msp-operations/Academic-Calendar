@@ -138,6 +138,7 @@ for (const ev of eventsData.items) {
       audience: ev.audience || '',
       notes: ev.notes || '',
       link: ev.link || '',
+      submit: ev.submit === 'yes' || ev.submit === 'true',
       status: (ev.status === 'unconfirmed' || periodStatus === 'unconfirmed') ? 'unconfirmed' : 'confirmed',
     });
   }

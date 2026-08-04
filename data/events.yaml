@@ -1,4 +1,4 @@
-# MSP staff deadline events — single source of truth. AY 2026-27.
+﻿# MSP staff deadline events - single source of truth. AY 2026-27.
 # One event per "- " block, flat key: value lines only (see build.mjs header for the `when` grammar).
 # offices: exams | btr | boe | scheduling | esd | alumni | general
 # staff:  academic | support | both  (who has to ACT on it; omitted = both)
@@ -110,6 +110,7 @@
   staff: academic
   audience: course coordinators
   notes: "P1. Paper PDF and TestVision test both due; in the inbox by 9:00. Non-compliant exams returned with 24h to fix"
+  submit: yes
   status: confirmed
 - id: exam-submit-p2
   title: Exam submission deadline for coordinators
@@ -118,6 +119,7 @@
   staff: academic
   audience: course coordinators
   notes: "P2 (incl. P1 resit exams)"
+  submit: yes
   status: confirmed
 - id: exam-submit-p4
   title: Exam submission deadline for coordinators
@@ -126,6 +128,7 @@
   staff: academic
   audience: course coordinators
   notes: "P4 (incl. P2/P3 resit exams)"
+  submit: yes
   status: confirmed
 - id: exam-submit-p5
   title: Exam submission deadline for coordinators
@@ -134,6 +137,7 @@
   staff: academic
   audience: course coordinators
   notes: "P5 (incl. P4 resit exams)"
+  submit: yes
   status: confirmed
 - id: exam-submit-resits
   title: Resit exam submission deadline (P5 resits)
@@ -142,6 +146,7 @@
   staff: academic
   audience: course coordinators
   notes: "One week before the June resit week"
+  submit: yes
   status: confirmed
 
 - id: grades-due
@@ -152,6 +157,7 @@
   staff: academic
   audience: course coordinators, examiners
   notes: "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process"
+  submit: yes
   status: confirmed
 
 - id: grading-sheets-out
@@ -555,6 +561,7 @@
   staff: academic
   audience: course coordinators
   notes: "End of February (2026 instance was Fri 27 Feb); update letters go out mid-Jan, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands"
+  submit: yes
   status: unconfirmed
 - id: catalogue-publication
   title: Course catalogue publication (hard deadline)
@@ -606,6 +613,7 @@
   staff: academic
   audience: RS, IA
   notes: "Friday deadline; office publishes the Monday after"
+  submit: yes
   status: confirmed
 - id: btr-proposal-grades-pub-sept
   title: BTR proposal grades published (Sept cohort)
@@ -620,6 +628,7 @@
   when: "2026-11-06"
   staff: academic
   audience: RS
+  submit: yes
   status: confirmed
 - id: btr-midterm-grades-pub-sept
   title: BTR midterm grades published (Sept cohort)
@@ -651,6 +660,7 @@
   staff: academic
   audience: RS, IA
   notes: "Thesis (RS+IA), Final Practical (RS), Video (IA). Do not submit before the presentation is done"
+  submit: yes
   status: confirmed
 - id: btr-final-grades-pub-sept
   title: BTR final grades published (Sept cohort)
@@ -774,7 +784,7 @@
   status: unconfirmed
 
 # ==================================================================================
-# IPO layer — harvested 3 Aug 2026 from "Project IPO Overview.xlsx Eva.xlsx"
+# IPO layer - harvested 3 Aug 2026 from "Project IPO Overview.xlsx Eva.xlsx"
 # (Eva Nelissen-Quaedvlieg's process register, dropped in the project folder by Martijn).
 # Rule: events with an explicit AY26-27 date in Eva's file = confirmed; dates translated
 # from her AY25-26 instances or derived from her stated rules = unconfirmed until Eva
@@ -975,6 +985,7 @@
   staff: academic
   audience: course coordinators, IPO (Eva)
   notes: "End of the 10wd inspection window per the IPO overview; hand in via the archive drive, mail, or at DUB30 (0.233). Reminder goes out the week before"
+  submit: yes
   status: unconfirmed
 
 - id: accreditation-dub30
@@ -1002,6 +1013,7 @@
   when: "2027-07-23"
   staff: academic
   audience: resit coordinators, IPO (Eva)
+  submit: yes
   status: unconfirmed
 
 - id: accreditation-dub30-resits
@@ -1280,7 +1292,7 @@
   status: unconfirmed
 
 # ==================================================================================
-# Calendar-mining layer — harvested 3 Aug 2026 from Martijn's own Outlook calendar +
+# Calendar-mining layer - harvested 3 Aug 2026 from Martijn's own Outlook calendar +
 # the shared "Msp-exams (MSP)" calendar (Mailbox.pst extract). Explicit AY26-27
 # appointments = confirmed; rhythms translated from 2024-2026 instances = unconfirmed.
 # Spring-2027 SSC dates (DexUM online, toetsoverleg) arrive as invites ~Dec 2026: re-mine then.
