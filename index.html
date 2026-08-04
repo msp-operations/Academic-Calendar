@@ -1,131 +1,215 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Every operational deadline and rhythm at the Maastricht Science Programme, in one staff calendar with subscribable Outlook feeds.">
+<meta name="theme-color" content="#16243d">
+<link rel="icon" type="image/png" href="msp-logo.png">
 <title>MSP Academic Operations Calendar</title>
 <style>
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/inter-400.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/inter-600.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/inter-700.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 800; font-display: swap; src: url('fonts/inter-800.woff2') format('woff2'); }
+
   :root {
-    --navy: #16243d; --navy-2: #1f3357; --ink: #1c2333; --paper: #f6f8fb;
-    --card: #ffffff; --line: #dde4ee; --muted: #64748b; --accent: #00a5d9;
+    --navy: #16243d; --navy-2: #1f3357; --ink: #1c2333; --paper: #f4f6fa;
+    --card: #ffffff; --line: #e2e8f2; --muted: #64748b; --accent: #00a5d9;
     --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
     --esd: #0d9488; --alumni: #db2777; --general: #64748b;
     --p1: #6366f1; --p2: #0891b2; --p3: #64748b; --p4: #d97706; --p5: #be185d; --p6: #059669;
+    --shadow-sm: 0 1px 2px rgba(22,36,61,.06), 0 1px 3px rgba(22,36,61,.08);
+    --shadow-md: 0 4px 12px rgba(22,36,61,.08), 0 2px 4px rgba(22,36,61,.05);
+    --shadow-lg: 0 24px 60px rgba(22,36,61,.32);
+    --pagew: 1420px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--paper); color: var(--ink); }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; background: var(--paper); color: var(--ink);
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
-  .accentline { height: 4px; background: var(--navy); border-bottom: 2px solid var(--accent); }
-  header { background: #fff; border-bottom: 1px solid var(--line); }
-  .topbar { display: flex; align-items: center; gap: 18px; padding: 16px 24px 12px; max-width: 1420px; margin: 0 auto; }
-  .topbar img.msp { height: 52px; }
-  .topbar img.um { height: 34px; margin-left: auto; }
-  .topbar h1 { font-size: 1.25rem; font-weight: 650; color: var(--navy); letter-spacing: .2px; }
-  .topbar p { color: var(--muted); font-size: .82rem; margin-top: 2px; }
+  .accentline { height: 4px; background: linear-gradient(90deg, var(--navy) 0%, var(--navy-2) 55%, var(--accent) 100%); }
+  header { background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+  .topbar { display: flex; align-items: center; gap: 20px; padding: 20px 24px 14px; max-width: var(--pagew); margin: 0 auto; }
+  .topbar img.msp { height: 54px; }
+  .topbar img.um { height: 36px; margin-left: auto; }
+  .titleblock h1 { font-size: 1.42rem; font-weight: 800; color: var(--navy); letter-spacing: -.015em; line-height: 1.15; }
+  .titleblock p { color: var(--muted); font-size: .84rem; margin-top: 3px; }
+  .aypill { background: linear-gradient(135deg, var(--navy), var(--navy-2)); color: #fff; font-size: .78rem; font-weight: 700;
+    letter-spacing: .04em; padding: 6px 14px; border-radius: 999px; white-space: nowrap; box-shadow: var(--shadow-sm); }
 
-  .periodband { display: flex; gap: 8px; padding: 6px 24px 16px; max-width: 1420px; margin: 0 auto; }
-  .period { flex: 1; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: .75rem; color: var(--muted); }
-  .period.current { border-color: var(--accent); background: #eaf6fb; }
-  .period b { display: block; color: var(--navy); font-size: .88rem; }
-  .period .exam { color: var(--exams); font-size: .7rem; }
+  .periodband { display: flex; gap: 10px; padding: 8px 24px 20px; max-width: var(--pagew); margin: 0 auto; }
+  .period { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px;
+    font-size: .76rem; color: var(--muted); box-shadow: var(--shadow-sm); transition: transform .15s ease, box-shadow .15s ease; position: relative; }
+  .period:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+  .period.current { border-color: var(--accent); background: #f0faff; }
+  .period.current::after { content: "now"; position: absolute; top: 7px; right: 9px; background: var(--accent); color: #fff;
+    font-size: .58rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; padding: 2px 7px; border-radius: 999px; }
+  .period b { display: block; color: var(--navy); font-size: .95rem; font-weight: 800; letter-spacing: -.01em; }
+  .period .exam { color: var(--exams); font-size: .7rem; font-weight: 600; margin-top: 1px; }
+  .period .wks { color: var(--muted); font-size: .66rem; }
   .period.unconfirmed b::after { content: " *"; color: #b45309; }
 
-  .toolbar { max-width: 1420px; margin: 18px auto 6px; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 5px 14px; font-size: .82rem; cursor: pointer; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; user-select: none; }
-  .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); }
-  .chip.on { color: var(--ink); border-color: var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 8%, white); }
-  .toolbar .spacer { flex: 1; }
-  .subscribe { font-size: .82rem; color: #fff; background: var(--navy); text-decoration: none; font-weight: 600; padding: 6px 16px; border-radius: 999px; }
-  .subscribe:hover { background: var(--navy-2); }
-  .viewtoggle { display: flex; border: 1.5px solid var(--line); border-radius: 999px; overflow: hidden; }
-  .viewtoggle button { border: 0; background: var(--card); padding: 5px 14px; font-size: .82rem; cursor: pointer; color: var(--muted); }
-  .viewtoggle button.on { background: var(--navy); color: #fff; }
+  .toolbar { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent); }
+  .toolbar-inner { max-width: var(--pagew); margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 5px 14px; font-size: .8rem;
+    font-weight: 600; cursor: pointer; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; user-select: none;
+    box-shadow: var(--shadow-sm); transition: all .15s ease; font-family: inherit; }
+  .chip:hover { transform: translateY(-1px); }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); opacity: .35; transition: opacity .15s; }
+  .chip.on { color: var(--ink); border-color: color-mix(in srgb, var(--c, var(--general)) 55%, white); background: color-mix(in srgb, var(--c, var(--general)) 8%, white); }
+  .chip.on .dot { opacity: 1; }
+  .spacer { flex: 1; }
+  .viewtoggle { display: flex; background: #e7ecf4; border-radius: 999px; padding: 3px; gap: 2px; }
+  .viewtoggle button { border: 0; background: transparent; padding: 5px 14px; font-size: .8rem; font-weight: 600; cursor: pointer;
+    color: var(--muted); border-radius: 999px; font-family: inherit; transition: all .15s ease; }
+  .viewtoggle button.on { background: #fff; color: var(--navy); box-shadow: var(--shadow-sm); }
+  .subscribe { font-size: .8rem; color: #fff; background: linear-gradient(135deg, var(--navy), var(--navy-2)); text-decoration: none;
+    font-weight: 700; padding: 7px 18px; border-radius: 999px; display: inline-flex; align-items: center; gap: 7px;
+    box-shadow: var(--shadow-sm); transition: all .15s ease; }
+  .subscribe:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+  .subscribe svg { width: 13px; height: 13px; }
 
-  .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
-  .dowhead { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); text-align: center; padding: 4px 0 2px; }
-  .day { background: var(--card); border: 1px solid var(--line); border-radius: 8px; min-height: 76px; padding: 4px 5px; font-size: .72rem; overflow: hidden; }
-  .day .num { font-weight: 650; color: var(--muted); }
-  .day.wknd { background: #eef1f7; }
-  .day.exam { background: #e2f3fa; border-color: #bfe3f2; }
-  .day.exam .num::after { content: " · exam wk"; font-weight: 400; font-size: .62rem; color: var(--exams); }
-  .day.out { background: transparent; border-color: transparent; }
-  .day.today { outline: 2px solid var(--accent); outline-offset: -2px; }
-  .day.today .num { color: var(--accent); }
-  .pill { display: block; margin-top: 3px; padding: 2px 5px; border-radius: 5px; border-left: 3px solid var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 11%, white); color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
-  .pill.unconfirmed { border: 1px dashed var(--c, var(--general)); border-left-width: 3px; }
-  .pill:hover { background: color-mix(in srgb, var(--c, var(--general)) 22%, white); }
-  .event { cursor: pointer; }
-  .event:hover { border-color: var(--c, var(--general)); }
+  main { max-width: var(--pagew); margin: 0 auto 60px; padding: 0 24px; }
 
-  /* Full-bleed: the planner may use the whole window, not just the page column */
-  .yearwrap { overflow-x: auto; margin-top: 16px; padding-bottom: 6px;
+  /* ---------- Year planner ---------- */
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 18px; font-size: .74rem; color: var(--muted); font-weight: 600; }
+  .legend .lg { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .sw { width: 16px; height: 10px; border-radius: 3px; display: inline-block; }
+  .legend .swx { background: #dcf1fa; border: 1px solid #bfe3f2; }
+  .legend .swh { background: #e3f5e9; border: 1px solid #c9e9d6; }
+  .legend .dotc { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); display: inline-block; }
+  .legend .dotu { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--muted); display: inline-block; box-sizing: border-box; }
+
+  .yearwrap { overflow-x: auto; margin-top: 12px; padding-bottom: 8px;
     width: min(100vw - 40px, 1880px); position: relative; left: 50%; transform: translateX(-50%); }
-  .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 2px; min-width: 1040px; }
-  .ymonth { background: var(--navy); color: #fff; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; font-size: .8rem; letter-spacing: .06em; }
-  .ymonth small { font-weight: 400; color: #b8c4d8; font-size: .62rem; }
-  .yday { background: var(--card); border: 1px solid var(--line); border-radius: 5px; min-height: 48px; padding: 2px 3px; cursor: pointer; }
-  .yday:hover { border-color: var(--accent); }
-  .yday.out { cursor: default; }
-  .yday.out:hover { border-color: transparent; }
-  .yday.out { background: transparent; border-color: transparent; }
-  .yday.wknd { background: #eef1f7; }
-  .yday.exam { background: #e2f3fa; border-color: #bfe3f2; }
-  .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
-  /* Period strip: coloured top edge on every day inside a teaching period */
+  .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 3px; min-width: 1040px; }
+  .ymonth { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #fff; border-radius: 8px; display: flex;
+    flex-direction: column; align-items: center; justify-content: center; font-weight: 800; font-size: .8rem; letter-spacing: .07em;
+    box-shadow: var(--shadow-sm); }
+  .ymonth small { font-weight: 500; color: #b8c4d8; font-size: .62rem; letter-spacing: .02em; }
+  .yday { background: var(--card); border: 1px solid var(--line); border-radius: 6px; min-height: 50px; padding: 3px 4px;
+    cursor: pointer; transition: border-color .12s ease, box-shadow .12s ease; }
+  .yday:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+  .yday.out { background: transparent; border-color: transparent; cursor: default; box-shadow: none; }
+  .yday.wknd { background: #edf0f6; }
+  .yday.exam { background: #dcf1fa; border-color: #bfe3f2; }
   .yday.p1, .day.p1 { border-top: 3px solid var(--p1); }
   .yday.p2, .day.p2 { border-top: 3px solid var(--p2); }
   .yday.p3, .day.p3 { border-top: 3px solid var(--p3); }
   .yday.p4, .day.p4 { border-top: 3px solid var(--p4); }
   .yday.p5, .day.p5 { border-top: 3px solid var(--p5); }
   .yday.p6, .day.p6 { border-top: 3px solid var(--p6); }
-  /* Holidays: green shading (declared after wknd/exam so it wins) */
   .yday.hol, .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
+  .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
   .yday .yhead { font-size: .58rem; color: var(--muted); white-space: nowrap; }
-  .yday .yhead b { color: var(--ink); font-size: .66rem; }
+  .yday .yhead b { color: var(--ink); font-size: .68rem; font-weight: 700; }
   .yday.today .yhead b { color: var(--accent); }
-  .pchip { display: inline-block; background: var(--navy); color: #fff; border-radius: 3px; padding: 0 4px; font-weight: 700; font-size: .58rem; margin-top: 2px; }
+  .pchip { display: inline-block; background: var(--navy); color: #fff; border-radius: 4px; padding: 0 4px; font-weight: 800; font-size: .58rem; margin-top: 2px; letter-spacing: .02em; }
   .ydots { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; }
-  .ydot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); cursor: pointer; box-sizing: border-box; }
+  .ydot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); cursor: pointer; box-sizing: border-box; transition: transform .1s ease; }
   .ydot.unconfirmed { background: transparent; border: 2px solid var(--c, var(--general)); }
-  .ydot:hover { transform: scale(1.35); }
-  .yearnote { font-size: .78rem; color: var(--muted); margin-top: 10px; }
-  .dayev { display: flex; gap: 8px; align-items: baseline; border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general)); border-radius: 8px; padding: 8px 10px; margin-bottom: 6px; cursor: pointer; font-size: .85rem; }
-  .dayev:hover { border-color: var(--c, var(--general)); }
-  .dayev b { font-weight: 600; }
-  .daynone { color: var(--muted); font-size: .85rem; margin-bottom: 4px; }
-  .fact { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink); }
-  .fact .factlabel { display: block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 4px; }
-  .fact .factsrc { color: var(--muted); font-size: .72rem; }
+  .ydot:hover { transform: scale(1.4); }
+  .yearnote { font-size: .78rem; color: var(--muted); margin-top: 12px; }
 
-  .overlay { position: fixed; inset: 0; background: rgba(22, 36, 61, .45); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50; }
-  .card { background: var(--card); border-radius: 14px; max-width: 460px; width: 100%; box-shadow: 0 18px 50px rgba(0,0,0,.3); overflow: hidden; }
-  .card .cardhead { background: var(--navy); color: #fff; padding: 16px 20px; border-left: 6px solid var(--c, var(--general)); }
-  .card .cardhead .when { font-size: .8rem; color: #b8c4d8; }
-  .card .cardhead h3 { font-size: 1.05rem; font-weight: 650; margin-top: 2px; }
-  .card .cardbody { padding: 16px 20px 18px; font-size: .88rem; }
-  .card .row { display: flex; gap: 10px; margin-bottom: 10px; }
-  .card .row .k { min-width: 78px; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; padding-top: 2px; }
-  .card .close { float: right; background: none; border: 0; color: #b8c4d8; font-size: 1.1rem; cursor: pointer; padding: 0 0 0 12px; }
-  .card .close:hover { color: #fff; }
+  /* ---------- Month grid ---------- */
+  .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+  .dowhead { font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 700; text-align: center; padding: 4px 0 2px; }
+  .day { background: var(--card); border: 1px solid var(--line); border-radius: 9px; min-height: 78px; padding: 5px 6px; font-size: .72rem; overflow: hidden; transition: box-shadow .12s ease; }
+  .day:hover { box-shadow: var(--shadow-sm); }
+  .day .num { font-weight: 700; color: var(--muted); }
+  .day.wknd { background: #edf0f6; }
+  .day.exam { background: #dcf1fa; border-color: #bfe3f2; }
+  .day.exam .num::after { content: " · exam wk"; font-weight: 400; font-size: .62rem; color: var(--exams); }
+  .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
+  .day.out { background: transparent; border-color: transparent; box-shadow: none; }
+  .day.today { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .day.today .num { color: var(--accent); }
+  .pill { display: block; margin-top: 3px; padding: 2px 6px; border-radius: 5px; border-left: 3px solid var(--c, var(--general));
+    background: color-mix(in srgb, var(--c, var(--general)) 10%, white); color: var(--ink); white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis; cursor: pointer; transition: background .12s ease; }
+  .pill.unconfirmed { border: 1px dashed var(--c, var(--general)); border-left-width: 3px; }
+  .pill:hover { background: color-mix(in srgb, var(--c, var(--general)) 20%, white); }
 
-  main { max-width: 1420px; margin: 0 auto 60px; padding: 0 24px; }
-  .month { margin-top: 26px; }
-  .month h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-bottom: 10px; }
-  .event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general)); border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; align-items: baseline; }
-  .event.past { opacity: .5; }
-  .event.unconfirmed { border-style: dashed; }
-  .date { min-width: 86px; font-variant-numeric: tabular-nums; font-weight: 650; font-size: .88rem; color: var(--navy); }
-  .date small { display: block; font-weight: 400; color: var(--muted); }
+  /* ---------- Timeline ---------- */
+  .month { margin-top: 30px; }
+  .month h2 { font-size: .92rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); font-weight: 800;
+    border-bottom: 2px solid var(--line); padding-bottom: 7px; margin-bottom: 12px; }
+  .event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
+    border-radius: 11px; padding: 12px 16px; margin-bottom: 8px; align-items: baseline; cursor: pointer;
+    box-shadow: var(--shadow-sm); transition: transform .12s ease, box-shadow .12s ease; }
+  .event:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+  .event.past { opacity: .55; }
+  .event.unconfirmed { border-style: dashed; border-left-style: solid; }
+  .date { min-width: 86px; font-variant-numeric: tabular-nums; font-weight: 700; font-size: .88rem; color: var(--navy); }
+  .date small { display: block; font-weight: 500; color: var(--muted); }
   .body { flex: 1; }
   .body .title { font-weight: 600; font-size: .95rem; }
-  .body .meta { font-size: .8rem; color: var(--muted); margin-top: 2px; }
-  .tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 10%, white); border-radius: 5px; padding: 2px 7px; margin-left: 8px; }
-  .flag { font-size: .68rem; font-weight: 700; color: #b45309; background: #fef3c7; border-radius: 5px; padding: 2px 7px; margin-left: 6px; }
-  .today-rule { border: 0; border-top: 2px solid var(--accent); position: relative; margin: 14px 0; }
-  .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--accent); color: #fff; font-size: .68rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; }
-  .empty { color: var(--muted); font-size: .9rem; padding: 30px 0; text-align: center; }
-  footer { max-width: 1420px; margin: 0 auto 40px; padding: 0 24px; font-size: .8rem; color: var(--muted); }
-  footer code { background: #eef2f8; padding: 1px 5px; border-radius: 4px; }
+  .body .meta { font-size: .8rem; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+  .tag { font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; color: var(--c, var(--general));
+    background: color-mix(in srgb, var(--c, var(--general)) 10%, white); border-radius: 5px; padding: 2px 7px; margin-left: 8px; }
+  .flag { font-size: .66rem; font-weight: 800; color: #b45309; background: #fef3c7; border-radius: 5px; padding: 2px 7px; margin-left: 6px; }
+  .today-rule { border: 0; border-top: 2px solid var(--accent); position: relative; margin: 16px 0; }
+  .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--accent); color: #fff;
+    font-size: .66rem; font-weight: 800; padding: 1px 9px; border-radius: 999px; }
+  .empty { color: var(--muted); font-size: .9rem; padding: 40px 0; text-align: center; }
+
+  /* ---------- Overlay cards ---------- */
+  .overlay { position: fixed; inset: 0; background: rgba(22, 36, 61, .5); display: flex; align-items: center; justify-content: center;
+    padding: 20px; z-index: 50; animation: fadein .15s ease-out; }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes cardin { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
+  .card { background: var(--card); border-radius: 16px; max-width: 480px; width: 100%; box-shadow: var(--shadow-lg);
+    overflow: hidden; animation: cardin .18s ease-out; max-height: 86vh; overflow-y: auto; }
+  .card .cardhead { background: linear-gradient(150deg, var(--navy), var(--navy-2)); color: #fff; padding: 18px 22px;
+    border-left: 6px solid var(--c, var(--general)); position: sticky; top: 0; }
+  .card .cardhead .when { font-size: .78rem; color: #b8c4d8; font-weight: 600; letter-spacing: .02em; }
+  .card .cardhead h3 { font-size: 1.08rem; font-weight: 700; margin-top: 3px; letter-spacing: -.01em; }
+  .card .cardbody { padding: 18px 22px 20px; font-size: .88rem; }
+  .card .row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .card .row .k { min-width: 78px; color: var(--muted); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; padding-top: 2px; }
+  .card .close { float: right; background: rgba(255,255,255,.12); border: 0; color: #d7dfeb; font-size: .95rem; cursor: pointer;
+    width: 28px; height: 28px; border-radius: 50%; line-height: 1; margin-left: 12px; transition: background .12s ease; }
+  .card .close:hover { background: rgba(255,255,255,.24); color: #fff; }
+  .dayev { display: flex; gap: 8px; align-items: baseline; border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
+    border-radius: 9px; padding: 9px 12px; margin-bottom: 7px; cursor: pointer; font-size: .85rem; transition: all .12s ease; }
+  .dayev:hover { border-color: var(--c, var(--general)); box-shadow: var(--shadow-sm); }
+  .dayev b { font-weight: 600; }
+  .daynone { color: var(--muted); font-size: .85rem; margin-bottom: 4px; }
+  .fact { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink); line-height: 1.5; }
+  .fact .factlabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent); margin-bottom: 5px; }
+  .fact .factsrc { color: var(--muted); font-size: .72rem; }
+
+  /* ---------- Footer ---------- */
+  footer { background: #fff; border-top: 1px solid var(--line); margin-top: 20px; }
+  .footgrid { max-width: var(--pagew); margin: 0 auto; padding: 30px 24px 12px; display: grid;
+    grid-template-columns: 1fr 1.4fr; gap: 40px; font-size: .82rem; color: var(--muted); line-height: 1.55; }
+  footer h4 { color: var(--navy); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; margin-bottom: 8px; }
+  .feedlist { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .feed { border: 1.5px solid var(--line); background: var(--paper); border-radius: 999px; padding: 4px 13px; font-size: .76rem;
+    font-weight: 600; color: var(--ink); cursor: pointer; font-family: inherit; transition: all .15s ease; box-shadow: var(--shadow-sm); }
+  .feed:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .feed.done { background: #e3f5e9; border-color: #7bc496; color: #166534; }
+  .footnote { max-width: var(--pagew); margin: 0 auto; padding: 6px 24px 26px; font-size: .74rem; color: #94a3b8; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .periodband { overflow-x: auto; }
+    .period { min-width: 118px; }
+    .footgrid { grid-template-columns: 1fr; gap: 22px; }
+    .aypill { display: none; }
+  }
+
+  /* ---------- Print (A3 landscape wall chart) ---------- */
+  @media print {
+    .toolbar, footer, .subscribe, .yearnote { display: none !important; }
+    header, .accentline { box-shadow: none; }
+    .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
+    body { background: #fff; }
+    @page { size: A3 landscape; margin: 10mm; }
+  }
 </style>
 </head>
 <body>
@@ -133,32 +217,47 @@
 <header>
   <div class="topbar">
     <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
-    <div>
+    <div class="titleblock">
       <h1>Academic Operations Calendar</h1>
       <p id="subtitle">Maastricht Science Programme</p>
     </div>
+    <span class="aypill" id="aypill"></span>
     <img class="um" src="um-logo.png" alt="Maastricht University">
   </div>
   <div class="periodband" id="periodband"></div>
 </header>
 
-<div class="toolbar" id="toolbar"></div>
+<div class="toolbar"><div class="toolbar-inner" id="toolbar"></div></div>
 <main id="main"></main>
+
 <footer>
-  <p><b>Subscribe in Outlook:</b> Add calendar &rarr; Subscribe from web &rarr; paste a feed URL
-  (right-click a feed below and copy the link).
-  Feeds: <a href="feeds/msp-all.ics"><code>msp-all.ics</code></a> (everything),
-  <a href="feeds/msp-academic-staff.ics"><code>msp-academic-staff.ics</code></a> (deadlines academic staff
-  act on: exams, grades, BTR assessment),
-  <a href="feeds/msp-support-staff.ics"><code>msp-support-staff.ics</code></a> (office logistics and processing),
-  or a per-office feed (<a href="feeds/msp-exams.ics"><code>msp-exams.ics</code></a>,
-  <a href="feeds/msp-btr.ics"><code>msp-btr.ics</code></a>,
-  <a href="feeds/msp-boe.ics"><code>msp-boe.ics</code></a>,
-  <a href="feeds/msp-scheduling.ics"><code>msp-scheduling.ics</code></a>,
-  <a href="feeds/msp-esd.ics"><code>msp-esd.ics</code></a>,
-  <a href="feeds/msp-alumni.ics"><code>msp-alumni.ics</code></a>,
-  <a href="feeds/msp-general.ics"><code>msp-general.ics</code></a>). Updates appear automatically.
-  Events marked <i>unconfirmed</i> are pending confirmation for this academic year and are not yet in the feeds.</p>
+  <div class="footgrid">
+    <div>
+      <h4>About this calendar</h4>
+      <p>Every operational deadline and rhythm at the Maastricht Science Programme, in one place:
+      exams, grading, BTR, Board of Examiners, scheduling, ESD and alumni, plus UM holidays and the
+      period structure. Maintained by MSP Operations. Events marked <i>unconfirmed</i> are pending
+      confirmation for this academic year and stay out of the feeds until confirmed.</p>
+    </div>
+    <div>
+      <h4>Subscribe in Outlook</h4>
+      <p>Outlook &rarr; Add calendar &rarr; Subscribe from web &rarr; paste a feed URL. Click a feed
+      below to copy its URL. Updates appear in your calendar automatically, no re-downloading.</p>
+      <div class="feedlist">
+        <button class="feed" data-feed="msp-all.ics">All offices</button>
+        <button class="feed" data-feed="msp-academic-staff.ics">Academic staff</button>
+        <button class="feed" data-feed="msp-support-staff.ics">Support staff</button>
+        <button class="feed" data-feed="msp-exams.ics">Exams</button>
+        <button class="feed" data-feed="msp-btr.ics">BTR</button>
+        <button class="feed" data-feed="msp-boe.ics">BoE</button>
+        <button class="feed" data-feed="msp-scheduling.ics">Scheduling</button>
+        <button class="feed" data-feed="msp-esd.ics">ESD</button>
+        <button class="feed" data-feed="msp-alumni.ics">Alumni</button>
+        <button class="feed" data-feed="msp-general.ics">General</button>
+      </div>
+    </div>
+  </div>
+  <p class="footnote">Static site, no tracking, no cookies. Day facts load from Wikipedia only when you open a day.</p>
 </footer>
 
 <script src="events.js"></script>
@@ -180,14 +279,16 @@ const todayIso = new Date().toISOString().slice(0, 10);
 function init() {
   document.getElementById('subtitle').textContent =
     `Maastricht Science Programme · Academic year ${DB.year} · updated ${DB.generated}`;
+  document.getElementById('aypill').textContent = `AY ${DB.year}`;
 
   const band = document.getElementById('periodband');
   for (const p of DB.periods) {
     const cur = todayIso >= p.start && todayIso <= p.end;
+    const wks = Math.round((new Date(p.end) - new Date(p.start)) / 604800000) + 1;
     const el = document.createElement('div');
     el.className = 'period' + (cur ? ' current' : '') + (p.status === 'unconfirmed' ? ' unconfirmed' : '');
     el.style.borderTop = `4px solid var(--${p.id.toLowerCase()})`;
-    el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} &ndash; ${fmt(p.end)}` +
+    el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} &ndash; ${fmt(p.end)} <span class="wks">· ${wks} wks</span>` +
       (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} &ndash; ${fmt(p.exam_end)}</div>` : '');
     band.appendChild(el);
   }
@@ -237,8 +338,22 @@ function init() {
   bar.appendChild(toggle);
 
   const sub = document.createElement('a');
-  sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics'; sub.textContent = 'Subscribe (.ics)';
+  sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics';
+  sub.innerHTML = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 1v2H2.5A1.5 1.5 0 0 0 1 4.5v9A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 13.5 3H12V1h-1.5v2h-5V1H4Zm-1.5 5h11v7.5h-11V6Z"/></svg>Subscribe';
   bar.appendChild(sub);
+
+  for (const b of document.querySelectorAll('.feed')) {
+    b.onclick = () => {
+      const url = new URL('feeds/' + b.dataset.feed, location.href).href;
+      const orig = b.textContent;
+      if (navigator.clipboard && location.protocol.startsWith('http')) {
+        navigator.clipboard.writeText(url).then(() => {
+          b.textContent = 'Copied!'; b.classList.add('done');
+          setTimeout(() => { b.textContent = orig; b.classList.remove('done'); }, 1400);
+        }).catch(() => { location.href = url; });
+      } else { location.href = url; }
+    };
+  }
 
   render();
 }
@@ -318,6 +433,15 @@ function renderYear(main, events) {
     if (p.exam_start) marks[p.exam_start] = marks[p.exam_start] || 'exams';
   }
 
+  const legend = document.createElement('div'); legend.className = 'legend';
+  legend.innerHTML =
+    DB.periods.map(p => `<span class="lg"><span class="sw" style="background:var(--${p.id.toLowerCase()})"></span>${p.id}</span>`).join('') +
+    '<span class="lg"><span class="sw swx"></span>Exam week</span>' +
+    '<span class="lg"><span class="sw swh"></span>Holiday / break</span>' +
+    '<span class="lg"><span class="dotc"></span>Confirmed</span>' +
+    '<span class="lg"><span class="dotu"></span>Unconfirmed</span>';
+  main.appendChild(legend);
+
   const wrap = document.createElement('div'); wrap.className = 'yearwrap';
   const grid = document.createElement('div'); grid.className = 'yeargrid';
   const DOWS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
@@ -355,10 +479,8 @@ function renderYear(main, events) {
   wrap.appendChild(grid);
   main.appendChild(wrap);
   main.insertAdjacentHTML('beforeend',
-    '<p class="yearnote">Whole year at a glance, one row per month. Filled dots are confirmed events, ' +
-    'outlined dots are pending confirmation. The coloured top edge shows the teaching period (matching ' +
-    'the P1-P6 band above), blue days are exam weeks, green days are holidays and breaks, dark chips ' +
-    'mark period and exam-week starts. Click any day for its events plus a bit of on-this-day history.</p>');
+    '<p class="yearnote">Click any day for its events plus a bit of on-this-day history. ' +
+    'Dark chips mark period and exam-week starts.</p>');
 }
 
 const factCache = {};
@@ -428,7 +550,6 @@ function showDayCard(iso) {
 }
 
 function renderTimeline(main, events) {
-
   let currentMonth = null, monthEl = null, todayDrawn = todayIso < events[0].date;
   for (const e of events) {
     const mk = monthKey(e.date);
