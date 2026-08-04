@@ -6,7 +6,7 @@
 <meta name="description" content="Every operational deadline and rhythm at the Maastricht Science Programme, in one staff calendar with subscribable Outlook feeds.">
 <meta name="theme-color" content="#16243d">
 <link rel="icon" type="image/png" href="msp-logo.png">
-<title>MSP Academic Operations Calendar</title>
+<title>MSP Operations Calendar</title>
 <style>
   @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/inter-400.woff2') format('woff2'); }
   @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/inter-600.woff2') format('woff2'); }
@@ -36,14 +36,11 @@
     border-image: conic-gradient(from 140deg, var(--p1), var(--p2), var(--p6), var(--p4), var(--p5), var(--accent), var(--p1)) 1; }
 
   header { background: linear-gradient(180deg, #e4f0fa 0%, rgba(255,255,255,.96) 85%); border-bottom: 1px solid var(--line); box-shadow: var(--shadow-sm); }
-  .topbar { display: flex; align-items: center; gap: 20px; padding: 24px 24px 14px; max-width: var(--pagew); margin: 0 auto; }
-  .topbar img.msp { height: 54px; }
-  .topbar img.um { height: 36px; margin-left: auto; }
-  .titleblock .kicker { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .16em; color: var(--accent); margin-bottom: 3px; }
-  .titleblock h1 { font-size: 1.5rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
-  .titleblock p { color: var(--muted); font-size: .84rem; margin-top: 4px; }
-  .aypill { background: linear-gradient(135deg, var(--navy), var(--navy-2)); color: #fff; font-size: .78rem; font-weight: 700;
-    letter-spacing: .04em; padding: 6px 14px; border-radius: 999px; white-space: nowrap; box-shadow: var(--shadow-sm); }
+  .topbar { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
+    padding: 26px 24px 16px; max-width: var(--pagew); margin: 0 auto; }
+  .topbar img.msp { height: 62px; }
+  .titleblock .kicker { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .18em; color: var(--accent); margin-bottom: 4px; }
+  .titleblock h1 { font-size: 1.6rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
 
   .periodband { display: flex; gap: 10px; padding: 8px 24px 20px; max-width: var(--pagew); margin: 0 auto; }
   .period { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px;
@@ -205,7 +202,6 @@
     .periodband { overflow-x: auto; }
     .period { min-width: 118px; }
     .footgrid { grid-template-columns: 1fr; gap: 22px; }
-    .aypill { display: none; }
   }
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
@@ -223,12 +219,9 @@
   <div class="topbar">
     <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
     <div class="titleblock">
-      <p class="kicker">Maastricht Science Programme · FSE · Maastricht University</p>
-      <h1>Academic Operations Calendar</h1>
-      <p id="subtitle"></p>
+      <p class="kicker">Maastricht Science Programme</p>
+      <h1>MSP Operations Calendar</h1>
     </div>
-    <span class="aypill" id="aypill"></span>
-    <img class="um" src="um-logo.png" alt="Maastricht University">
   </div>
   <div class="periodband" id="periodband"></div>
 </header>
@@ -263,7 +256,7 @@
       </div>
     </div>
   </div>
-  <p class="footnote">Static site, no tracking, no cookies. Day facts load from Wikipedia only when you open a day.</p>
+  <p class="footnote" id="footnote">Static site, no tracking, no cookies. Day facts load from Wikipedia only when you open a day.</p>
 </footer>
 
 <script src="events.js"></script>
@@ -283,9 +276,8 @@ const monthKey = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB'
 const todayIso = new Date().toISOString().slice(0, 10);
 
 function init() {
-  document.getElementById('subtitle').textContent =
-    `Every operational deadline in one place · Academic year ${DB.year} · updated ${DB.generated}`;
-  document.getElementById('aypill').textContent = `AY ${DB.year}`;
+  const note = document.getElementById('footnote');
+  if (note) note.textContent = `Academic year ${DB.year} · data updated ${DB.generated} · ` + note.textContent;
 
   const band = document.getElementById('periodband');
   for (const p of DB.periods) {
