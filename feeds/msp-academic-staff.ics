@@ -93,6 +93,14 @@ SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P2)
 DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
+UID:prep-week-fall-202627@msp-operations
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:[MSP GENERAL] Prep week after P1 exams (no education)
+DESCRIPTION:Week 43 (19-23 Oct): study\, prepare and reflect\, per the Calendarium | For: students\, all staff
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-due-p1-202627@msp-operations
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
@@ -190,11 +198,11 @@ DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links expi
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
-DTSTAMP:20261221T000000Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
-SUMMARY:[MSP GENERAL] Christmas break begins
-DESCRIPTION:Until 1 Jan\; Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
+DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p2-202627@msp-operations
@@ -317,6 +325,30 @@ SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P5)
 DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
+UID:prep-week-spring-202627@msp-operations
+DTSTAMP:20270322T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:[MSP GENERAL] Prep week after P4 exams (no education)
+DESCRIPTION:Week 12 (22-26 Mar)\, per the Calendarium | For: students\, all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:good-friday-202627@msp-operations
+DTSTAMP:20270326T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:[MSP GENERAL] Good Friday (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:easter-monday-202627@msp-operations
+DTSTAMP:20270329T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:[MSP GENERAL] Easter Monday (holiday)
+DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first teaching day is Tue 30 Mar | For: all staff
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-due-p4-202627@msp-operations
 DTSTAMP:20270402T000000Z
 DTSTART;VALUE=DATE:20270402
@@ -341,12 +373,44 @@ SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
 DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
+UID:kings-day-202627@msp-operations
+DTSTAMP:20270427T000000Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:[MSP GENERAL] King's Day (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-submit-p5-202627@msp-operations
 DTSTAMP:20270503T000000Z
 DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P5 (incl. P4 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:liberation-day-202627@msp-operations
+DTSTAMP:20270505T000000Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:[MSP GENERAL] Liberation Day (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:ascension-day-202627@msp-operations
+DTSTAMP:20270506T000000Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:[MSP GENERAL] Ascension Day (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:bridging-day-202627@msp-operations
+DTSTAMP:20270507T000000Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:[MSP GENERAL] Bridging Day (UM closed)
+DESCRIPTION:Bridging day after Ascension per the Calendarium | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-may-202627@msp-operations
@@ -371,6 +435,14 @@ DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP EXAMS] Exam week (P5)
 DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:whit-monday-202627@msp-operations
+DTSTAMP:20270517T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:[MSP GENERAL] Whit Monday (holiday)
+DESCRIPTION:Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:course-reg-fall-202627@msp-operations
@@ -410,7 +482,7 @@ DTSTAMP:20270614T000000Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:[MSP EXAMS] Resit week P5
-DESCRIPTION:14-18 Jun 2027\, standalone resit week | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:14-18 Jun 2027\, standalone resit week. FSE-wide: same week hosts CE Semester 2\, DACS P5/Semester 2 and Science Masters P4+P5 resits | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-jun-202627@msp-operations
@@ -434,7 +506,7 @@ DTSTAMP:20270621T000000Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
 SUMMARY:[MSP GENERAL] Summer break begins
-DESCRIPTION:After the P5 resit week (14-18 Jun) | For: all staff
+DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-feb-202627@msp-operations

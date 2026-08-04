@@ -37,3 +37,50 @@ year: "2026-27"
   start: 2027-05-24
   end: 2027-06-11
   status: confirmed
+
+# Holidays + breaks (official Calendarium 2026-2027 p.2, verified 4 Aug 2026).
+# kind: holiday entries are NOT periods: the build passes them to the site as green
+# shading ranges + day-card labels. end omitted = single day.
+- id: hol-christmas
+  kind: holiday
+  label: Christmas Break
+  start: 2026-12-14
+  end: 2027-01-01
+- id: hol-carnival
+  kind: holiday
+  label: Carnival
+  start: 2027-02-08
+  end: 2027-02-12
+- id: hol-good-friday
+  kind: holiday
+  label: Good Friday
+  start: 2027-03-26
+- id: hol-easter-monday
+  kind: holiday
+  label: Easter Monday
+  start: 2027-03-29
+- id: hol-kings-day
+  kind: holiday
+  label: King's Day
+  start: 2027-04-27
+- id: hol-liberation-day
+  kind: holiday
+  label: Liberation Day
+  start: 2027-05-05
+- id: hol-ascension
+  kind: holiday
+  label: Ascension Day
+  start: 2027-05-06
+- id: hol-bridging
+  kind: holiday
+  label: Bridging Day
+  start: 2027-05-07
+- id: hol-whit-monday
+  kind: holiday
+  label: Whit Monday
+  start: 2027-05-17
+- id: hol-summer
+  kind: holiday
+  label: Summer Break
+  start: 2027-06-21
+  end: 2027-08-27

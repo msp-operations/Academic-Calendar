@@ -29,6 +29,14 @@ SUMMARY:[MSP GENERAL] Academic year 2026-27 starts
 DESCRIPTION:For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:prep-week-fall-202627@msp-operations
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:[MSP GENERAL] Prep week after P1 exams (no education)
+DESCRIPTION:Week 43 (19-23 Oct): study\, prepare and reflect\, per the Calendarium | For: students\, all staff
+END:VEVENT
+BEGIN:VEVENT
 UID:bachelor-open-day-fall-202627@msp-operations
 DTSTAMP:20261114T000000Z
 DTSTART;VALUE=DATE:20261114
@@ -38,11 +46,19 @@ DESCRIPTION:Own calendar\, 'Bachelor Open Day\, Fall Edition 2026'\, Sat 14 Nov 
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
-DTSTAMP:20261221T000000Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
-SUMMARY:[MSP GENERAL] Christmas break begins
-DESCRIPTION:Until 1 Jan\; Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
+DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:fse-resits-sem1-202627@msp-operations
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[MSP GENERAL] FSE resit weeks Semester 1 (other programmes)
+DESCRIPTION:18-22 Jan: CE + DACS Semester 1 resits\; 25-29 Jan: Science Masters P1+P2 resits\, per the FSE academic calendar. MSP's own P1 resits ride the P2 exam week | For: FSE exam offices\, shared-venue planning
 END:VEVENT
 BEGIN:VEVENT
 UID:carnival-202627@msp-operations
@@ -61,12 +77,44 @@ SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
+UID:fse-ce-yr3-exams-202627@msp-operations
+DTSTAMP:20270222T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:[MSP GENERAL] FSE - CE Year 3 exams P3 (22-26 Feb)
+DESCRIPTION:Week 8 per the FSE academic calendar\; CE Year 3 runs a 7-week P3 (4 Jan - 26 Feb) | For: FSE exam offices\, Circular Engineering
+END:VEVENT
+BEGIN:VEVENT
 UID:staff-meeting-mar-202627@msp-operations
 DTSTAMP:20270309T000000Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-week-spring-202627@msp-operations
+DTSTAMP:20270322T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:[MSP GENERAL] Prep week after P4 exams (no education)
+DESCRIPTION:Week 12 (22-26 Mar)\, per the Calendarium | For: students\, all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:good-friday-202627@msp-operations
+DTSTAMP:20270326T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:[MSP GENERAL] Good Friday (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:easter-monday-202627@msp-operations
+DTSTAMP:20270329T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:[MSP GENERAL] Easter Monday (holiday)
+DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first teaching day is Tue 30 Mar | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-apr-202627@msp-operations
@@ -77,12 +125,52 @@ SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
+UID:kings-day-202627@msp-operations
+DTSTAMP:20270427T000000Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:[MSP GENERAL] King's Day (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:liberation-day-202627@msp-operations
+DTSTAMP:20270505T000000Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:[MSP GENERAL] Liberation Day (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:ascension-day-202627@msp-operations
+DTSTAMP:20270506T000000Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:[MSP GENERAL] Ascension Day (holiday)
+DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:bridging-day-202627@msp-operations
+DTSTAMP:20270507T000000Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:[MSP GENERAL] Bridging Day (UM closed)
+DESCRIPTION:Bridging day after Ascension per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
 UID:staff-meeting-may-202627@msp-operations
 DTSTAMP:20270511T000000Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
+UID:whit-monday-202627@msp-operations
+DTSTAMP:20270517T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:[MSP GENERAL] Whit Monday (holiday)
+DESCRIPTION:Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-jun-202627@msp-operations
@@ -98,6 +186,6 @@ DTSTAMP:20270621T000000Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
 SUMMARY:[MSP GENERAL] Summer break begins
-DESCRIPTION:After the P5 resit week (14-18 Jun) | For: all staff
+DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium | For: all staff
 END:VEVENT
 END:VCALENDAR

@@ -35,12 +35,12 @@
   status: confirmed
 
 - id: christmas-break
-  title: Christmas break begins
+  title: Christmas break begins (14 Dec - 1 Jan)
   office: general
-  when: "2026-12-21"
+  when: "2026-12-14"
   staff: both
   audience: all staff
-  notes: "Until 1 Jan; Collent offline ~23 Dec - 6 Jan for maintenance"
+  notes: "Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance"
   status: confirmed
 
 - id: carnival
@@ -67,7 +67,7 @@
   when: "2027-06-21"
   staff: both
   audience: all staff
-  notes: "After the P5 resit week (14-18 Jun)"
+  notes: "After the P5 resit week (14-18 Jun); official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium"
   status: confirmed
 
 # ---------- Exam weeks & resits (exams) ----------
@@ -88,7 +88,7 @@
   when: "2027-06-14"
   staff: both
   audience: coordinators, invigilators, ESD, students
-  notes: "14-18 Jun 2027, standalone resit week"
+  notes: "14-18 Jun 2027, standalone resit week. FSE-wide: same week hosts CE Semester 2, DACS P5/Semester 2 and Science Masters P4+P5 resits"
   status: confirmed
 
 # ---------- Exams: academic-staff deadlines ----------
@@ -1701,4 +1701,115 @@
   staff: support
   audience: BTR administrator, finance
   notes: "End of the academic year per own mailbox (statement 14 Jul 2026 + Tasks item); external/MUMC+ supervisors credited via their institution"
+  status: unconfirmed
+
+# ---------- Holidays + Calendarium sweep (official Calendarium 2026-2027, verified 4 Aug 2026) ----------
+
+- id: prep-week-fall
+  title: Prep week after P1 exams (no education)
+  office: general
+  when: "2026-10-19"
+  staff: both
+  audience: students, all staff
+  notes: "Week 43 (19-23 Oct): study, prepare and reflect, per the Calendarium"
+  status: confirmed
+- id: prep-week-spring
+  title: Prep week after P4 exams (no education)
+  office: general
+  when: "2027-03-22"
+  staff: both
+  audience: students, all staff
+  notes: "Week 12 (22-26 Mar), per the Calendarium"
+  status: confirmed
+
+- id: good-friday
+  title: Good Friday (holiday)
+  office: general
+  when: "2027-03-26"
+  staff: both
+  audience: all staff
+  notes: "Official UM holiday per the Calendarium"
+  status: confirmed
+- id: easter-monday
+  title: Easter Monday (holiday)
+  office: general
+  when: "2027-03-29"
+  staff: both
+  audience: all staff
+  notes: "Official UM holiday. NB P5 officially starts this date; first teaching day is Tue 30 Mar"
+  status: confirmed
+- id: kings-day
+  title: King's Day (holiday)
+  office: general
+  when: "2027-04-27"
+  staff: both
+  audience: all staff
+  notes: "Official UM holiday per the Calendarium"
+  status: confirmed
+- id: liberation-day
+  title: Liberation Day (holiday)
+  office: general
+  when: "2027-05-05"
+  staff: both
+  audience: all staff
+  notes: "Official UM holiday per the Calendarium"
+  status: confirmed
+- id: ascension-day
+  title: Ascension Day (holiday)
+  office: general
+  when: "2027-05-06"
+  staff: both
+  audience: all staff
+  notes: "Official UM holiday per the Calendarium"
+  status: confirmed
+- id: bridging-day
+  title: Bridging Day (UM closed)
+  office: general
+  when: "2027-05-07"
+  staff: both
+  audience: all staff
+  notes: "Bridging day after Ascension per the Calendarium"
+  status: confirmed
+- id: whit-monday
+  title: Whit Monday (holiday)
+  office: general
+  when: "2027-05-17"
+  staff: both
+  audience: all staff
+  notes: "Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week"
+  status: confirmed
+
+- id: exchange-intro
+  title: Introduction days exchange students (Spring intake)
+  office: general
+  when: "2027-01-18"
+  staff: support
+  audience: incoming exchange students, IRO, ESD
+  notes: "Week 3 per the Calendarium legend (marker in the P3 grid); exact days not stated"
+  status: unconfirmed
+
+- id: fse-resits-sem1
+  title: FSE resit weeks Semester 1 (other programmes)
+  office: general
+  when: "2027-01-18"
+  staff: support
+  audience: FSE exam offices, shared-venue planning
+  notes: "18-22 Jan: CE + DACS Semester 1 resits; 25-29 Jan: Science Masters P1+P2 resits, per the FSE academic calendar. MSP's own P1 resits ride the P2 exam week"
+  status: confirmed
+- id: fse-ce-yr3-exams
+  title: FSE - CE Year 3 exams P3 (22-26 Feb)
+  office: general
+  when: "2027-02-22"
+  staff: support
+  audience: FSE exam offices, Circular Engineering
+  notes: "Week 8 per the FSE academic calendar; CE Year 3 runs a 7-week P3 (4 Jan - 26 Feb)"
+  status: confirmed
+
+- id: ay2728-start
+  title: Academic year 2027-28 starts (preliminary)
+  office: general
+  when: "2027-08-30"
+  staff: both
+  audience: all staff
+  notes: "Preliminary date per the Calendarium 2026-2027 p.2"
   status: unconfirmed

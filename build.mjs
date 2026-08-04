@@ -75,8 +75,13 @@ if (!yearFile) throw new Error('No data/year-*.yaml found');
 const yearData = parseFlatYaml(readFileSync(join(DATA, yearFile), 'utf8'));
 const YEAR = yearData.scalars.year || yearFile.replace(/^year-|\.ya?ml$/g, '');
 const periods = {};
+const holidays = [];
 for (const p of yearData.items) {
   if (!p.id) continue;
+  if (p.kind === 'holiday') {
+    holidays.push({ id: p.id, label: p.label || p.id, start: p.start, end: p.end || p.start });
+    continue;
+  }
   periods[p.id] = {
     id: p.id,
     start: parseDate(p.start), end: parseDate(p.end),
@@ -150,6 +155,7 @@ const payload = {
     exam_end: p.examEnd ? fmtDate(p.examEnd) : null,
     status: p.status,
   })),
+  holidays,
   events: instances,
 };
 writeFileSync(join(SITE, 'events.json'), JSON.stringify(payload, null, 2));

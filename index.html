@@ -10,6 +10,7 @@
     --card: #ffffff; --line: #dde4ee; --muted: #64748b; --accent: #00a5d9;
     --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
     --esd: #0d9488; --alumni: #db2777; --general: #64748b;
+    --p1: #6366f1; --p2: #0891b2; --p3: #64748b; --p4: #d97706; --p5: #be185d; --p6: #059669;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--paper); color: var(--ink); }
@@ -70,6 +71,15 @@
   .yday.wknd { background: #eef1f7; }
   .yday.exam { background: #e2f3fa; border-color: #bfe3f2; }
   .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
+  /* Period strip: coloured top edge on every day inside a teaching period */
+  .yday.p1, .day.p1 { border-top: 3px solid var(--p1); }
+  .yday.p2, .day.p2 { border-top: 3px solid var(--p2); }
+  .yday.p3, .day.p3 { border-top: 3px solid var(--p3); }
+  .yday.p4, .day.p4 { border-top: 3px solid var(--p4); }
+  .yday.p5, .day.p5 { border-top: 3px solid var(--p5); }
+  .yday.p6, .day.p6 { border-top: 3px solid var(--p6); }
+  /* Holidays: green shading (declared after wknd/exam so it wins) */
+  .yday.hol, .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
   .yday .yhead { font-size: .58rem; color: var(--muted); white-space: nowrap; }
   .yday .yhead b { color: var(--ink); font-size: .66rem; }
   .yday.today .yhead b { color: var(--accent); }
@@ -157,7 +167,7 @@ const OFFICES = {
   exams: 'Exams', btr: 'BTR', boe: 'BoE', scheduling: 'Scheduling',
   esd: 'ESD', alumni: 'Alumni', general: 'General',
 };
-const state = { on: new Set(Object.keys(OFFICES)), view: 'timeline', role: 'all' };
+const state = { on: new Set(Object.keys(OFFICES)), view: 'year', role: 'all' };
 const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
 const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
 let DB = null;
@@ -176,6 +186,7 @@ function init() {
     const cur = todayIso >= p.start && todayIso <= p.end;
     const el = document.createElement('div');
     el.className = 'period' + (cur ? ' current' : '') + (p.status === 'unconfirmed' ? ' unconfirmed' : '');
+    el.style.borderTop = `4px solid var(--${p.id.toLowerCase()})`;
     el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} &ndash; ${fmt(p.end)}` +
       (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} &ndash; ${fmt(p.exam_end)}</div>` : '');
     band.appendChild(el);
@@ -212,7 +223,7 @@ function init() {
   const spacer = document.createElement('div'); spacer.className = 'spacer'; bar.appendChild(spacer);
 
   const toggle = document.createElement('div'); toggle.className = 'viewtoggle';
-  for (const [id, label] of [['timeline', 'Timeline'], ['grid', 'Month grid'], ['year', 'Year planner']]) {
+  for (const [id, label] of [['year', 'Year planner'], ['grid', 'Month grid'], ['timeline', 'Timeline']]) {
     const b = document.createElement('button');
     b.textContent = label; b.dataset.view = id;
     if (state.view === id) b.classList.add('on');
@@ -244,6 +255,12 @@ function render() {
 }
 
 const isExamDay = (iso) => DB.periods.some(p => p.exam_start && iso >= p.exam_start && iso <= p.exam_end);
+const periodOf = (iso) => DB.periods.find(p => iso >= p.start && iso <= p.end) || null;
+const holidayOf = (iso) => { const h = (DB.holidays || []).find(h => iso >= h.start && iso <= h.end); return h ? h.label : null; };
+const dayClasses = (iso) => {
+  const per = periodOf(iso), hol = holidayOf(iso);
+  return (per ? ' ' + per.id.toLowerCase() : '') + (hol ? ' hol' : '');
+};
 
 function renderGrid(main, events) {
   const byDay = {};
@@ -268,7 +285,8 @@ function renderGrid(main, events) {
       const iso = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
       const dow = (firstDow + d - 1) % 7;
       const cell = document.createElement('div');
-      cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + (iso === todayIso ? ' today' : '');
+      cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) + (iso === todayIso ? ' today' : '');
+      const holG = holidayOf(iso); if (holG) cell.title = holG;
       cell.innerHTML = `<div class="num">${d}</div>`;
       for (const e of (byDay[iso] || [])) {
         const pill = document.createElement('span');
@@ -315,7 +333,8 @@ function renderYear(main, events) {
       const dowIdx = new Date(iso + 'T12:00:00Z').getUTCDay();
       const cell = document.createElement('div');
       cell.className = 'yday' + ((dowIdx === 0 || dowIdx === 6) ? ' wknd' : '') +
-        (isExamDay(iso) ? ' exam' : '') + (iso === todayIso ? ' today' : '');
+        (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) + (iso === todayIso ? ' today' : '');
+      const hol = holidayOf(iso); if (hol) cell.title = hol;
       cell.innerHTML = `<div class="yhead">${DOWS[dowIdx]} <b>${d}</b></div>` +
         (marks[iso] ? `<span class="pchip">${marks[iso]} &raquo;</span>` : '');
       cell.onclick = () => showDayCard(iso);
@@ -337,8 +356,9 @@ function renderYear(main, events) {
   main.appendChild(wrap);
   main.insertAdjacentHTML('beforeend',
     '<p class="yearnote">Whole year at a glance, one row per month. Filled dots are confirmed events, ' +
-    'outlined dots are pending confirmation. Blue days are exam weeks, dark chips mark period and ' +
-    'exam-week starts. Click any day for its events plus a bit of on-this-day history.</p>');
+    'outlined dots are pending confirmation. The coloured top edge shows the teaching period (matching ' +
+    'the P1-P6 band above), blue days are exam weeks, green days are holidays and breaks, dark chips ' +
+    'mark period and exam-week starts. Click any day for its events plus a bit of on-this-day history.</p>');
 }
 
 const factCache = {};
@@ -377,7 +397,11 @@ function showDayCard(iso) {
   card.style.setProperty('--c', 'var(--accent)');
   card.innerHTML =
     `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
-    `<div class="when">${isExamDay(iso) ? 'Exam week' : 'MSP deadline calendar'}</div><h3>${full}</h3></div>` +
+    `<div class="when">${[
+      (periodOf(iso) || {}).id,
+      isExamDay(iso) ? 'Exam week' : null,
+      holidayOf(iso),
+    ].filter(Boolean).join(' · ') || 'Outside teaching periods'}</div><h3>${full}</h3></div>` +
     `<div class="cardbody"></div>`;
   const body = card.querySelector('.cardbody');
   if (events.length) {

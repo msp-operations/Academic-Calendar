@@ -442,6 +442,6 @@ DTSTAMP:20270614T000000Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:[MSP EXAMS] Resit week P5
-DESCRIPTION:14-18 Jun 2027\, standalone resit week | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:14-18 Jun 2027\, standalone resit week. FSE-wide: same week hosts CE Semester 2\, DACS P5/Semester 2 and Science Masters P4+P5 resits | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 END:VCALENDAR

@@ -1,6 +1,6 @@
 {
   "year": "2026-27",
-  "generated": "2026-08-03",
+  "generated": "2026-08-04",
   "periods": [
     {
       "id": "P1",
@@ -49,6 +49,68 @@
       "exam_start": null,
       "exam_end": null,
       "status": "confirmed"
+    }
+  ],
+  "holidays": [
+    {
+      "id": "hol-christmas",
+      "label": "Christmas Break",
+      "start": "2026-12-14",
+      "end": "2027-01-01"
+    },
+    {
+      "id": "hol-carnival",
+      "label": "Carnival",
+      "start": "2027-02-08",
+      "end": "2027-02-12"
+    },
+    {
+      "id": "hol-good-friday",
+      "label": "Good Friday",
+      "start": "2027-03-26",
+      "end": "2027-03-26"
+    },
+    {
+      "id": "hol-easter-monday",
+      "label": "Easter Monday",
+      "start": "2027-03-29",
+      "end": "2027-03-29"
+    },
+    {
+      "id": "hol-kings-day",
+      "label": "King's Day",
+      "start": "2027-04-27",
+      "end": "2027-04-27"
+    },
+    {
+      "id": "hol-liberation-day",
+      "label": "Liberation Day",
+      "start": "2027-05-05",
+      "end": "2027-05-05"
+    },
+    {
+      "id": "hol-ascension",
+      "label": "Ascension Day",
+      "start": "2027-05-06",
+      "end": "2027-05-06"
+    },
+    {
+      "id": "hol-bridging",
+      "label": "Bridging Day",
+      "start": "2027-05-07",
+      "end": "2027-05-07"
+    },
+    {
+      "id": "hol-whit-monday",
+      "label": "Whit Monday",
+      "start": "2027-05-17",
+      "end": "2027-05-17"
+    },
+    {
+      "id": "hol-summer",
+      "label": "Summer Break",
+      "start": "2027-06-21",
+      "end": "2027-08-27"
     }
   ],
   "events": [
@@ -658,6 +720,17 @@
       "status": "confirmed"
     },
     {
+      "id": "prep-week-fall",
+      "title": "Prep week after P1 exams (no education)",
+      "office": "general",
+      "staff": "both",
+      "date": "2026-10-19",
+      "audience": "students, all staff",
+      "notes": "Week 43 (19-23 Oct): study, prepare and reflect, per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "dexum-online-oct",
       "title": "DexUM online (digital exams network)",
       "office": "exams",
@@ -1153,6 +1226,17 @@
       "status": "unconfirmed"
     },
     {
+      "id": "christmas-break",
+      "title": "Christmas break begins (14 Dec - 1 Jan)",
+      "office": "general",
+      "staff": "both",
+      "date": "2026-12-14",
+      "audience": "all staff",
+      "notes": "Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "alumni-december-survey",
       "title": "Alumni year-plan survey (December)",
       "office": "alumni",
@@ -1162,17 +1246,6 @@
       "notes": "2025 instance: 'MSP Alumni Survey - Help us plan 2026!' sent 21 Dec 2025 (Qualtrics). Single instance, rhythm inferred",
       "link": "",
       "status": "unconfirmed"
-    },
-    {
-      "id": "christmas-break",
-      "title": "Christmas break begins",
-      "office": "general",
-      "staff": "both",
-      "date": "2026-12-21",
-      "audience": "all staff",
-      "notes": "Until 1 Jan; Collent offline ~23 Dec - 6 Jan for maintenance",
-      "link": "",
-      "status": "confirmed"
     },
     {
       "id": "grades-due-p2",
@@ -1380,6 +1453,28 @@
       "date": "2027-01-18",
       "audience": "course coordinators, examiners",
       "notes": "At least 5 working days before the module starts; may not change during the module (R&R 3-6)",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "exchange-intro",
+      "title": "Introduction days exchange students (Spring intake)",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-01-18",
+      "audience": "incoming exchange students, IRO, ESD",
+      "notes": "Week 3 per the Calendarium legend (marker in the P3 grid); exact days not stated",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "fse-resits-sem1",
+      "title": "FSE resit weeks Semester 1 (other programmes)",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-01-18",
+      "audience": "FSE exam offices, shared-venue planning",
+      "notes": "18-22 Jan: CE + DACS Semester 1 resits; 25-29 Jan: Science Masters P1+P2 resits, per the FSE academic calendar. MSP's own P1 resits ride the P2 exam week",
       "link": "",
       "status": "confirmed"
     },
@@ -1593,6 +1688,17 @@
       "status": "confirmed"
     },
     {
+      "id": "fse-ce-yr3-exams",
+      "title": "FSE - CE Year 3 exams P3 (22-26 Feb)",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-02-22",
+      "audience": "FSE exam offices, Circular Engineering",
+      "notes": "Week 8 per the FSE academic calendar; CE Year 3 runs a 7-week P3 (4 Jan - 26 Feb)",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "catalogue-coordinator-updates",
       "title": "Course catalogue - coordinator updates due",
       "office": "esd",
@@ -1802,6 +1908,17 @@
       "status": "unconfirmed"
     },
     {
+      "id": "prep-week-spring",
+      "title": "Prep week after P4 exams (no education)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-03-22",
+      "audience": "students, all staff",
+      "notes": "Week 12 (22-26 Mar), per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "catalogue-gerco-final",
       "title": "Catalogue cycle - final meeting with Gerco (frame schedule check)",
       "office": "esd",
@@ -1824,6 +1941,17 @@
       "status": "unconfirmed"
     },
     {
+      "id": "good-friday",
+      "title": "Good Friday (holiday)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-03-26",
+      "audience": "all staff",
+      "notes": "Official UM holiday per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "course-manuals-download-p5",
       "title": "Course manuals downloaded from Canvas + published (Advising page) (P5)",
       "office": "esd",
@@ -1833,6 +1961,17 @@
       "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101",
       "link": "",
       "status": "unconfirmed"
+    },
+    {
+      "id": "easter-monday",
+      "title": "Easter Monday (holiday)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-03-29",
+      "audience": "all staff",
+      "notes": "Official UM holiday. NB P5 officially starts this date; first teaching day is Tue 30 Mar",
+      "link": "",
+      "status": "confirmed"
     },
     {
       "id": "catalogue-publication",
@@ -2033,6 +2172,17 @@
       "status": "confirmed"
     },
     {
+      "id": "kings-day",
+      "title": "King's Day (holiday)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-04-27",
+      "audience": "all staff",
+      "notes": "Official UM holiday per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "advising-period-fall-start",
       "title": "Academic Advising period starts (Fall AY27-28 registration)",
       "office": "scheduling",
@@ -2132,6 +2282,39 @@
       "status": "confirmed"
     },
     {
+      "id": "liberation-day",
+      "title": "Liberation Day (holiday)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-05-05",
+      "audience": "all staff",
+      "notes": "Official UM holiday per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "ascension-day",
+      "title": "Ascension Day (holiday)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-05-06",
+      "audience": "all staff",
+      "notes": "Official UM holiday per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "bridging-day",
+      "title": "Bridging Day (UM closed)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-05-07",
+      "audience": "all staff",
+      "notes": "Bridging day after Ascension per the Calendarium",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
       "id": "exam-overview-check-p5",
       "title": "Check exam/resit overview + prefill accreditation registers (P5)",
       "office": "esd",
@@ -2194,6 +2377,17 @@
       "date": "2027-05-17",
       "audience": "coordinators, invigilators, ESD, students",
       "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits",
+      "link": "",
+      "status": "confirmed"
+    },
+    {
+      "id": "whit-monday",
+      "title": "Whit Monday (holiday)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-05-17",
+      "audience": "all staff",
+      "notes": "Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week",
       "link": "",
       "status": "confirmed"
     },
@@ -2336,7 +2530,7 @@
       "staff": "both",
       "date": "2027-06-14",
       "audience": "coordinators, invigilators, ESD, students",
-      "notes": "14-18 Jun 2027, standalone resit week",
+      "notes": "14-18 Jun 2027, standalone resit week. FSE-wide: same week hosts CE Semester 2, DACS P5/Semester 2 and Science Masters P4+P5 resits",
       "link": "",
       "status": "confirmed"
     },
@@ -2391,7 +2585,7 @@
       "staff": "both",
       "date": "2027-06-21",
       "audience": "all staff",
-      "notes": "After the P5 resit week (14-18 Jun)",
+      "notes": "After the P5 resit week (14-18 Jun); official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium",
       "link": "",
       "status": "confirmed"
     },
@@ -2612,6 +2806,17 @@
       "date": "2027-08-02",
       "audience": "ESD, Pavel, Werner Engels (norm-not-met cases)",
       "notes": "After 1 Aug per the IPO overview: Marble run, norm-met letters (30 of 60 EC) Jul/Aug; below-norm students first to Pavel/Werner, only then a norm-not-met letter",
+      "link": "",
+      "status": "unconfirmed"
+    },
+    {
+      "id": "ay2728-start",
+      "title": "Academic year 2027-28 starts (preliminary)",
+      "office": "general",
+      "staff": "both",
+      "date": "2027-08-30",
+      "audience": "all staff",
+      "notes": "Preliminary date per the Calendarium 2026-2027 p.2",
       "link": "",
       "status": "unconfirmed"
     }
