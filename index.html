@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -16,20 +16,20 @@
 
   .accentline { height: 4px; background: var(--navy); border-bottom: 2px solid var(--accent); }
   header { background: #fff; border-bottom: 1px solid var(--line); }
-  .topbar { display: flex; align-items: center; gap: 18px; padding: 16px 24px 12px; max-width: 1080px; margin: 0 auto; }
+  .topbar { display: flex; align-items: center; gap: 18px; padding: 16px 24px 12px; max-width: 1420px; margin: 0 auto; }
   .topbar img.msp { height: 52px; }
   .topbar img.um { height: 34px; margin-left: auto; }
   .topbar h1 { font-size: 1.25rem; font-weight: 650; color: var(--navy); letter-spacing: .2px; }
   .topbar p { color: var(--muted); font-size: .82rem; margin-top: 2px; }
 
-  .periodband { display: flex; gap: 8px; padding: 6px 24px 16px; max-width: 1080px; margin: 0 auto; }
+  .periodband { display: flex; gap: 8px; padding: 6px 24px 16px; max-width: 1420px; margin: 0 auto; }
   .period { flex: 1; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: .75rem; color: var(--muted); }
   .period.current { border-color: var(--accent); background: #eaf6fb; }
   .period b { display: block; color: var(--navy); font-size: .88rem; }
   .period .exam { color: var(--exams); font-size: .7rem; }
   .period.unconfirmed b::after { content: " *"; color: #b45309; }
 
-  .toolbar { max-width: 1080px; margin: 18px auto 6px; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .toolbar { max-width: 1420px; margin: 18px auto 6px; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 5px 14px; font-size: .82rem; cursor: pointer; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; user-select: none; }
   .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); }
   .chip.on { color: var(--ink); border-color: var(--c, var(--general)); background: color-mix(in srgb, var(--c, var(--general)) 8%, white); }
@@ -56,7 +56,9 @@
   .event { cursor: pointer; }
   .event:hover { border-color: var(--c, var(--general)); }
 
-  .yearwrap { overflow-x: auto; margin-top: 16px; padding-bottom: 6px; }
+  /* Full-bleed: the planner may use the whole window, not just the page column */
+  .yearwrap { overflow-x: auto; margin-top: 16px; padding-bottom: 6px;
+    width: min(100vw - 40px, 1880px); position: relative; left: 50%; transform: translateX(-50%); }
   .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 2px; min-width: 1040px; }
   .ymonth { background: var(--navy); color: #fff; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; font-size: .8rem; letter-spacing: .06em; }
   .ymonth small { font-weight: 400; color: #b8c4d8; font-size: .62rem; }
@@ -86,7 +88,7 @@
   .card .close { float: right; background: none; border: 0; color: #b8c4d8; font-size: 1.1rem; cursor: pointer; padding: 0 0 0 12px; }
   .card .close:hover { color: #fff; }
 
-  main { max-width: 1080px; margin: 0 auto 60px; padding: 0 24px; }
+  main { max-width: 1420px; margin: 0 auto 60px; padding: 0 24px; }
   .month { margin-top: 26px; }
   .month h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-bottom: 10px; }
   .event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general)); border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; align-items: baseline; }
@@ -102,7 +104,7 @@
   .today-rule { border: 0; border-top: 2px solid var(--accent); position: relative; margin: 14px 0; }
   .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--accent); color: #fff; font-size: .68rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; }
   .empty { color: var(--muted); font-size: .9rem; padding: 30px 0; text-align: center; }
-  footer { max-width: 1080px; margin: 0 auto 40px; padding: 0 24px; font-size: .8rem; color: var(--muted); }
+  footer { max-width: 1420px; margin: 0 auto 40px; padding: 0 24px; font-size: .8rem; color: var(--muted); }
   footer code { background: #eef2f8; padding: 1px 5px; border-radius: 4px; }
 </style>
 </head>
@@ -164,8 +166,8 @@ function init() {
     const cur = todayIso >= p.start && todayIso <= p.end;
     const el = document.createElement('div');
     el.className = 'period' + (cur ? ' current' : '') + (p.status === 'unconfirmed' ? ' unconfirmed' : '');
-    el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} – ${fmt(p.end)}` +
-      (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} – ${fmt(p.exam_end)}</div>` : '');
+    el.innerHTML = `<b>${p.id}</b>${fmt(p.start)} &ndash; ${fmt(p.end)}` +
+      (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} &ndash; ${fmt(p.exam_end)}</div>` : '');
     band.appendChild(el);
   }
   if (DB.periods.some(p => p.status === 'unconfirmed')) {
@@ -365,7 +367,7 @@ function showCard(e) {
   const card = document.createElement('div'); card.className = 'card';
   card.style.setProperty('--c', `var(--${e.office})`);
   card.innerHTML =
-    `<div class="cardhead"><button class="close" title="Close">✕</button>` +
+    `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
     `<div class="when">${full}</div><h3>${e.title}</h3></div>` +
     `<div class="cardbody">` +
     `<div class="row"><div class="k">Office</div><div><span class="tag" style="margin-left:0">${OFFICES[e.office] || e.office}</span>` +
