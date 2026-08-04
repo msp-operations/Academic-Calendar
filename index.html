@@ -62,7 +62,10 @@
   .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 2px; min-width: 1040px; }
   .ymonth { background: var(--navy); color: #fff; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; font-size: .8rem; letter-spacing: .06em; }
   .ymonth small { font-weight: 400; color: #b8c4d8; font-size: .62rem; }
-  .yday { background: var(--card); border: 1px solid var(--line); border-radius: 5px; min-height: 48px; padding: 2px 3px; }
+  .yday { background: var(--card); border: 1px solid var(--line); border-radius: 5px; min-height: 48px; padding: 2px 3px; cursor: pointer; }
+  .yday:hover { border-color: var(--accent); }
+  .yday.out { cursor: default; }
+  .yday.out:hover { border-color: transparent; }
   .yday.out { background: transparent; border-color: transparent; }
   .yday.wknd { background: #eef1f7; }
   .yday.exam { background: #e2f3fa; border-color: #bfe3f2; }
@@ -76,6 +79,13 @@
   .ydot.unconfirmed { background: transparent; border: 2px solid var(--c, var(--general)); }
   .ydot:hover { transform: scale(1.35); }
   .yearnote { font-size: .78rem; color: var(--muted); margin-top: 10px; }
+  .dayev { display: flex; gap: 8px; align-items: baseline; border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general)); border-radius: 8px; padding: 8px 10px; margin-bottom: 6px; cursor: pointer; font-size: .85rem; }
+  .dayev:hover { border-color: var(--c, var(--general)); }
+  .dayev b { font-weight: 600; }
+  .daynone { color: var(--muted); font-size: .85rem; margin-bottom: 4px; }
+  .fact { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink); }
+  .fact .factlabel { display: block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 4px; }
+  .fact .factsrc { color: var(--muted); font-size: .72rem; }
 
   .overlay { position: fixed; inset: 0; background: rgba(22, 36, 61, .45); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50; }
   .card { background: var(--card); border-radius: 14px; max-width: 460px; width: 100%; box-shadow: 0 18px 50px rgba(0,0,0,.3); overflow: hidden; }
@@ -308,13 +318,14 @@ function renderYear(main, events) {
         (isExamDay(iso) ? ' exam' : '') + (iso === todayIso ? ' today' : '');
       cell.innerHTML = `<div class="yhead">${DOWS[dowIdx]} <b>${d}</b></div>` +
         (marks[iso] ? `<span class="pchip">${marks[iso]} &raquo;</span>` : '');
+      cell.onclick = () => showDayCard(iso);
       const dots = document.createElement('div'); dots.className = 'ydots';
       for (const e of (byDay[iso] || [])) {
         const dot = document.createElement('span');
         dot.className = 'ydot' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
         dot.style.setProperty('--c', `var(--${e.office})`);
         dot.title = e.title + (e.status === 'unconfirmed' ? ' (unconfirmed)' : '');
-        dot.onclick = () => showCard(e);
+        dot.onclick = (ev) => { ev.stopPropagation(); showCard(e); };
         dots.appendChild(dot);
       }
       cell.appendChild(dots);
@@ -326,8 +337,70 @@ function renderYear(main, events) {
   main.appendChild(wrap);
   main.insertAdjacentHTML('beforeend',
     '<p class="yearnote">Whole year at a glance, one row per month. Filled dots are confirmed events, ' +
-    'outlined dots are pending confirmation; click a dot for details. Blue days are exam weeks, ' +
-    'dark chips mark period and exam-week starts.</p>');
+    'outlined dots are pending confirmation. Blue days are exam weeks, dark chips mark period and ' +
+    'exam-week starts. Click any day for its events plus a bit of on-this-day history.</p>');
+}
+
+const factCache = {};
+function loadFact(iso, el) {
+  const mm = iso.slice(5, 7), dd = iso.slice(8, 10), key = mm + '-' + dd;
+  const put = (year, text) => {
+    el.innerHTML = '<span class="factlabel">On this day in history</span>';
+    const b = document.createElement('b'); b.textContent = year + ': ';
+    const t = document.createElement('span'); t.textContent = text + ' ';
+    const src = document.createElement('span'); src.className = 'factsrc'; src.textContent = '(via Wikipedia)';
+    el.append(b, t, src);
+  };
+  if (factCache[key]) { put(factCache[key].year, factCache[key].text); return; }
+  fetch(`https://en.wikipedia.org/api/rest_v1/feed/onthisday/selected/${mm}/${dd}`)
+    .then(r => r.json())
+    .then(d => {
+      const list = (d.selected || []).filter(x => x.text && x.year);
+      if (!list.length) throw new Error('empty');
+      const sci = list.filter(x =>
+        /scien|physic|chemi|biolog|astronom|astronaut|mathemat|spacecraft|space station|NASA|invent|Nobel|telescope|DNA|vaccin|eclipse|comet|planet|satellite|geolog|laborator|universit/i.test(x.text));
+      const pool = sci.length ? sci : list;
+      const pick = pool[(+dd + +mm) % pool.length];
+      factCache[key] = { year: pick.year, text: pick.text };
+      put(pick.year, pick.text);
+    })
+    .catch(() => { el.innerHTML = '<span class="factlabel">On this day in history</span><span class="factsrc">No fun fact available right now (needs an internet connection).</span>'; });
+}
+
+function showDayCard(iso) {
+  const old = document.querySelector('.overlay'); if (old) old.remove();
+  const events = DB.events.filter(e => e.date === iso && state.on.has(e.office) &&
+    (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff));
+  const full = new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const overlay = document.createElement('div'); overlay.className = 'overlay';
+  const card = document.createElement('div'); card.className = 'card';
+  card.style.setProperty('--c', 'var(--accent)');
+  card.innerHTML =
+    `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
+    `<div class="when">${isExamDay(iso) ? 'Exam week' : 'MSP deadline calendar'}</div><h3>${full}</h3></div>` +
+    `<div class="cardbody"></div>`;
+  const body = card.querySelector('.cardbody');
+  if (events.length) {
+    for (const e of events) {
+      const row = document.createElement('div');
+      row.className = 'dayev';
+      row.style.setProperty('--c', `var(--${e.office})`);
+      row.innerHTML = `<div><b>${e.title}</b><span class="tag">${OFFICES[e.office] || e.office}</span>` +
+        (e.status === 'unconfirmed' ? '<span class="flag">unconfirmed</span>' : '') + `</div>`;
+      row.onclick = () => showCard(e);
+      body.appendChild(row);
+    }
+  } else {
+    body.insertAdjacentHTML('beforeend', '<p class="daynone">No MSP deadlines or events on this day. Enjoy the quiet.</p>');
+  }
+  const fact = document.createElement('div'); fact.className = 'fact';
+  fact.innerHTML = '<span class="factlabel">On this day in history</span><span class="factsrc">Looking it up...</span>';
+  body.appendChild(fact);
+  overlay.appendChild(card);
+  overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
+  card.querySelector('.close').onclick = () => overlay.remove();
+  document.body.appendChild(overlay);
+  loadFact(iso, fact);
 }
 
 function renderTimeline(main, events) {
