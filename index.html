@@ -26,16 +26,22 @@
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; background: var(--paper); color: var(--ink);
+  body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; color: var(--ink);
+    background: linear-gradient(180deg, #e9f2fa 0px, var(--paper) 380px);
     -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
-  .accentline { height: 4px; background: linear-gradient(90deg, var(--navy) 0%, var(--navy-2) 55%, var(--accent) 100%); }
-  header { background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow-sm); }
-  .topbar { display: flex; align-items: center; gap: 20px; padding: 20px 24px 14px; max-width: var(--pagew); margin: 0 auto; }
+  /* The frame: the year's period colours wrapped around the whole site */
+  body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 100;
+    border: 6px solid transparent;
+    border-image: conic-gradient(from 140deg, var(--p1), var(--p2), var(--p6), var(--p4), var(--p5), var(--accent), var(--p1)) 1; }
+
+  header { background: linear-gradient(180deg, #e4f0fa 0%, rgba(255,255,255,.96) 85%); border-bottom: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+  .topbar { display: flex; align-items: center; gap: 20px; padding: 24px 24px 14px; max-width: var(--pagew); margin: 0 auto; }
   .topbar img.msp { height: 54px; }
   .topbar img.um { height: 36px; margin-left: auto; }
-  .titleblock h1 { font-size: 1.42rem; font-weight: 800; color: var(--navy); letter-spacing: -.015em; line-height: 1.15; }
-  .titleblock p { color: var(--muted); font-size: .84rem; margin-top: 3px; }
+  .titleblock .kicker { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .16em; color: var(--accent); margin-bottom: 3px; }
+  .titleblock h1 { font-size: 1.5rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
+  .titleblock p { color: var(--muted); font-size: .84rem; margin-top: 4px; }
   .aypill { background: linear-gradient(135deg, var(--navy), var(--navy-2)); color: #fff; font-size: .78rem; font-weight: 700;
     letter-spacing: .04em; padding: 6px 14px; border-radius: 999px; white-space: nowrap; box-shadow: var(--shadow-sm); }
 
@@ -204,7 +210,7 @@
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    .toolbar, footer, .subscribe, .yearnote { display: none !important; }
+    .toolbar, footer, .subscribe, .yearnote, body::after { display: none !important; }
     header, .accentline { box-shadow: none; }
     .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
     body { background: #fff; }
@@ -213,13 +219,13 @@
 </style>
 </head>
 <body>
-<div class="accentline"></div>
 <header>
   <div class="topbar">
     <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
     <div class="titleblock">
+      <p class="kicker">Maastricht Science Programme · FSE · Maastricht University</p>
       <h1>Academic Operations Calendar</h1>
-      <p id="subtitle">Maastricht Science Programme</p>
+      <p id="subtitle"></p>
     </div>
     <span class="aypill" id="aypill"></span>
     <img class="um" src="um-logo.png" alt="Maastricht University">
@@ -278,7 +284,7 @@ const todayIso = new Date().toISOString().slice(0, 10);
 
 function init() {
   document.getElementById('subtitle').textContent =
-    `Maastricht Science Programme · Academic year ${DB.year} · updated ${DB.generated}`;
+    `Every operational deadline in one place · Academic year ${DB.year} · updated ${DB.generated}`;
   document.getElementById('aypill').textContent = `AY ${DB.year}`;
 
   const band = document.getElementById('periodband');
