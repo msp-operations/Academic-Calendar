@@ -685,10 +685,10 @@
       "staff": "both",
       "date": "2026-07-17",
       "audience": "students, Academic Advisors, coordinators",
-      "notes": "16 vs 17 Jul conflict across docs - unresolved, tracked in _BTR_TODO. Coordinator approval ~3 weeks after",
+      "notes": "Settled de facto: the Collent RTS window closed 17 Jul (site, Office FAQ, Abroad Handbook agree; the 16-Jul variant in the student handbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "ext-edu-s1",
@@ -701,6 +701,18 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
+    },
+    {
+      "id": "tutor-lists-final-p1",
+      "title": "Tutor lists final (contract lead time) (P1)",
+      "office": "scheduling",
+      "staff": "both",
+      "date": "2026-07-20",
+      "audience": "coordinators, Operations, FSE HR",
+      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. Rule confirmed twice in the mailbox analyses, dates derived",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
     },
     {
       "id": "switch-p1",
@@ -896,12 +908,12 @@
     },
     {
       "id": "ssc-first-mutations",
-      "title": "First SSC mutations deadline AY26-27",
+      "title": "First SSC mutations deadline of AY26-27 (FHML sitting, FYI)",
       "office": "exams",
       "staff": "support",
       "date": "2026-08-26",
       "audience": "exams office",
-      "notes": "For the 16 Sep sitting; per-exam-week SSC deadlines all 12:00 (Anja Ronken's file)",
+      "notes": "Serves FHML's 16 Sep sitting, NOT an MSP deadline: MSP's first binding SSC date is 21 Sep (per the 3 Aug audit). Kept as the marker that Anja's ladder goes live",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1087,13 +1099,25 @@
       "status": "unconfirmed"
     },
     {
+      "id": "tutor-lists-final-p2",
+      "title": "Tutor lists final (contract lead time) (P2)",
+      "office": "scheduling",
+      "staff": "both",
+      "date": "2026-09-14",
+      "audience": "coordinators, Operations, FSE HR",
+      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. Rule confirmed twice in the mailbox analyses, dates derived",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "invigilators-p1",
       "title": "Invigilator request deadline (InterUM)",
       "office": "exams",
       "staff": "support",
       "date": "2026-09-21",
       "audience": "exams office",
-      "notes": "P1. T-4 weeks; hard floor 3 weeks. Per time slot and location",
+      "notes": "P1. T-4 weeks; hard floor 3 weeks. Scope per Anja's ladder: this date also carries exam mutations + hall/Chromebook layouts + invigilator numbers, all to SSC by 12:00",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1118,6 +1142,18 @@
       "date": "2026-09-22",
       "audience": "exams office",
       "notes": "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 22 Sep 2026",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "corsa-migration",
+      "title": "CORSA cloud migration window (23-28 Sep; backup 7-12 Oct)",
+      "office": "btr",
+      "staff": "support",
+      "date": "2026-09-23",
+      "audience": "BTR office, ESD, Exams (Corsa users)",
+      "notes": "Per Collent IT notice 3 Aug 2026. Primary window ends on the Sept proposal deadline day (28 Sep, ~61 students uploading); backup window sits inside proposal grading. Uploads keep working; recently uploaded files may be unpullable during the window",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1148,12 +1184,12 @@
     },
     {
       "id": "boe-monthly-meeting",
-      "title": "BoE monthly meeting (cadence marker)",
+      "title": "BoE board meeting (cadence marker)",
       "office": "boe",
       "staff": "support",
       "date": "2026-09-29",
       "audience": "BoE members, BoE secretary",
-      "notes": "Own calendar 2023-24 shows a monthly BoE internal meeting, roughly last Tuesday of the month (26 Sep, 31 Oct, 28 Nov, 19 Dec 2023; 30 Jan, 30 Apr 2024). Evidence is old, verify current cadence with Katja before publishing",
+      "notes": "The merged MSLAS board meets ~6x per year (3h plenaries) per the Annual Report 2024-25, NOT monthly as the 2023-24 calendar suggested. No 26-27 dates on record anywhere local; only Katja can supply them",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -1189,10 +1225,10 @@
       "staff": "support",
       "date": "2026-10-01",
       "audience": "BoE secretary, BTR students 140-220 ECTS",
-      "notes": "Via ZPIQGRADAUD; also 1 Dec, 1 Feb, 1 Mar, 1 May. Flagged for re-verification",
+      "notes": "Via ZPIQGRADAUD; also 1 Dec, 1 Feb, 1 Mar, 1 May. Confirmed against 'Graduation audit MSP time line.docx'",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "momi-list-arrives",
@@ -1207,6 +1243,30 @@
       "status": "unconfirmed"
     },
     {
+      "id": "admissions-studielink-opens",
+      "title": "Admissions - Studielink opens for AY27-28 + portal texts live",
+      "office": "esd",
+      "staff": "support",
+      "date": "2026-10-01",
+      "audience": "Admissions team (Saskia, Gian), SSC",
+      "notes": "1 Oct: applications open for the next AY; portal task descriptions must be live. Part of the hard SSC chain per the KB",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "deadline-submission-cutoff",
+      "title": "All offices submit their AY deadlines to Operations (cut-off)",
+      "office": "general",
+      "staff": "both",
+      "date": "2026-10-04",
+      "audience": "all offices, Operations",
+      "notes": "Linzi's plan (3 Aug 2026): request out early Sep, reminder mid-Sep, cut-off Sat 4 Oct; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct)",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "exam-overview-check-p1",
       "title": "Check exam/resit overview + prefill accreditation registers (P1)",
       "office": "esd",
@@ -1214,6 +1274,18 @@
       "date": "2026-10-05",
       "audience": "IPO (Eva), exams office",
       "notes": "Week before the exam week per the IPO overview: copy exam + attendance sheets into the archiving overview, note which modules have resits",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "iwio-evaluation-opens-p1",
+      "title": "IWIO course evaluation opens (last tutorial week) (P1)",
+      "office": "esd",
+      "staff": "both",
+      "date": "2026-10-05",
+      "audience": "students, coordinators, EPC",
+      "notes": "Survey opens week 6, reminders through exam week, auto-closes early next period; results published ~3 weeks after the last exam (1 week after grades). Procedure doc is 2022-23 vintage, verify owner/tooling",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -1273,7 +1345,7 @@
       "staff": "both",
       "date": "2026-10-12",
       "audience": "coordinators, invigilators, ESD, students",
-      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits",
+      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday, no Friday sittings)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1289,6 +1361,18 @@
       "link": "",
       "submit": false,
       "status": "unconfirmed"
+    },
+    {
+      "id": "eer-annual-report",
+      "title": "BoE + EPC annual report incl. EER change proposals due",
+      "office": "boe",
+      "staff": "support",
+      "date": "2026-10-15",
+      "audience": "BoE, EPC, programme management",
+      "notes": "15 Oct per FSE Procedure EER.docx",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "btr-proposal-grades-due-sept",
@@ -1417,7 +1501,7 @@
       "staff": "academic",
       "date": "2026-10-30",
       "audience": "course coordinators, examiners",
-      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process",
+      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock)",
       "link": "",
       "submit": true,
       "status": "confirmed"
@@ -1441,10 +1525,22 @@
       "staff": "support",
       "date": "2026-11-01",
       "audience": "BoE secretary, Chris Pawley (STIC)",
-      "notes": "Also 1 May. Delete last year's candidates first. Dates flagged for re-verification in the BoE Deep Dive",
+      "notes": "Also 1 May. Delete last year's candidates first. Confirmed against 'Graduation audit MSP time line.docx' (BoE procedures; 2021-era doc, nod from Katja still polite)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
+    },
+    {
+      "id": "eer-education-plan",
+      "title": "Annual education plan to the Vice-dean",
+      "office": "boe",
+      "staff": "support",
+      "date": "2026-11-01",
+      "audience": "programme management, Vice-dean Education",
+      "notes": "1 Nov per FSE Procedure EER.docx",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "frame-schedule-spring-deadline",
@@ -1501,7 +1597,7 @@
       "staff": "both",
       "date": "2026-11-06",
       "audience": "students, coordinators, BoE, Academic Advising",
-      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after",
+      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after (running update); final bulk update follows the inspection round. P2 has its own dated event",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1579,6 +1675,18 @@
       "status": "confirmed"
     },
     {
+      "id": "transcript-final-update-p1",
+      "title": "Final bulk transcript update (after inspection round) (P1)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-11-13",
+      "audience": "exams office, ESD",
+      "notes": "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "bachelor-open-day-fall",
       "title": "Bachelor Open Day, Fall edition",
       "office": "general",
@@ -1597,7 +1705,7 @@
       "staff": "support",
       "date": "2026-11-16",
       "audience": "exams office",
-      "notes": "P2",
+      "notes": "P2. Mutations + hall layouts also due 16 Nov 12:00; NB the SSC central-hall surveillanten column deviates to Wed 18 Nov per Anja's ladder",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1613,6 +1721,18 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
+    },
+    {
+      "id": "sched-planning-forms-spring",
+      "title": "Course/skills planning forms out to coordinators (P4/P5)",
+      "office": "scheduling",
+      "staff": "academic",
+      "date": "2026-11-16",
+      "audience": "course coordinators, Scheduling (Severine)",
+      "notes": "Rule: Qualtrics planning form + Word course-structure form go out right after the registration round (week ends 13 Nov); return deadline + two reminders follow. Exact dates pending Severine",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
     },
     {
       "id": "dexum-online-nov",
@@ -1723,6 +1843,18 @@
       "status": "unconfirmed"
     },
     {
+      "id": "iwio-evaluation-opens-p2",
+      "title": "IWIO course evaluation opens (last tutorial week) (P2)",
+      "office": "esd",
+      "staff": "both",
+      "date": "2026-11-30",
+      "audience": "students, coordinators, EPC",
+      "notes": "Survey opens week 6, reminders through exam week, auto-closes early next period; results published ~3 weeks after the last exam (1 week after grades). Procedure doc is 2022-23 vintage, verify owner/tooling",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "grading-sheets-out-p2",
       "title": "Grading sheets sent to coordinators (P2)",
       "office": "exams",
@@ -1744,7 +1876,7 @@
       "notes": "",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "momi-signal-return",
@@ -1825,7 +1957,7 @@
       "staff": "both",
       "date": "2026-12-07",
       "audience": "coordinators, invigilators, ESD, students",
-      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits",
+      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday, no Friday sittings)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1873,10 +2005,10 @@
       "staff": "both",
       "date": "2026-12-11",
       "audience": "students, Academic Advisors, coordinators",
-      "notes": "11 vs 12 Dec conflict across docs - settle before publishing. Under-grading RTS flagging also lands here",
+      "notes": "Fri 11 Dec per msp-btr.nl + Q&A deck; the 12-Dec variant (Office FAQ, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after, into the Christmas closure. Under-grading RTS flagging also lands here",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "archive-drive-winter",
@@ -1903,6 +2035,18 @@
       "status": "confirmed"
     },
     {
+      "id": "tutor-lists-final-p4",
+      "title": "Tutor lists final (contract lead time) (P4)",
+      "office": "scheduling",
+      "staff": "both",
+      "date": "2026-12-14",
+      "audience": "coordinators, Operations, FSE HR",
+      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. Rule confirmed twice in the mailbox analyses, dates derived",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "alumni-december-survey",
       "title": "Alumni year-plan survey (December)",
       "office": "alumni",
@@ -1913,30 +2057,6 @@
       "link": "",
       "submit": false,
       "status": "unconfirmed"
-    },
-    {
-      "id": "grades-due-p2",
-      "title": "Grade submission deadline for coordinators (P2)",
-      "office": "exams",
-      "staff": "academic",
-      "date": "2026-12-25",
-      "audience": "course coordinators, examiners",
-      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process",
-      "link": "",
-      "submit": true,
-      "status": "confirmed"
-    },
-    {
-      "id": "grades-published-p2",
-      "title": "Grades published on Student Portal (deadline) (P2)",
-      "office": "exams",
-      "staff": "both",
-      "date": "2027-01-01",
-      "audience": "students, coordinators, BoE, Academic Advising",
-      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after",
-      "link": "",
-      "submit": false,
-      "status": "confirmed"
     },
     {
       "id": "accreditation-ask-p2",
@@ -1972,6 +2092,18 @@
       "notes": "Early Jan per the IPO overview; Gerco check mid Jan",
       "link": "",
       "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "grades-due-p2",
+      "title": "Grade submission deadline for coordinators (P2)",
+      "office": "exams",
+      "staff": "academic",
+      "date": "2027-01-04",
+      "audience": "course coordinators, examiners",
+      "notes": "The 10wd clock pauses over the Christmas closure: AY25-26 precedent set the P2 + P1-resit teacher deadline on the first Monday after the break (5 Jan 2026), so expect Mon 4 Jan 2027. Confirm with the exams office",
+      "link": "",
+      "submit": true,
       "status": "unconfirmed"
     },
     {
@@ -2030,6 +2162,18 @@
       "date": "2027-01-11",
       "audience": "IPO (Eva), BoE, Pavel",
       "notes": "Three weeks ahead per the IPO overview: SAP Student Reporting Tool lists (deregistered before 1 Oct = no letter), Stick advisor match, datafile, mail-address check, link/EER-article check",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "grades-published-p2",
+      "title": "Grades published on Student Portal (P2, deadline)",
+      "office": "exams",
+      "staff": "both",
+      "date": "2027-01-11",
+      "audience": "students, coordinators, BoE, Academic Advising",
+      "notes": "Teacher deadline 4 Jan + 5 working days ESD processing (closure-paused clock; AY25-26 pattern). Confirm with the exams office",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2173,7 +2317,7 @@
       "staff": "both",
       "date": "2027-01-25",
       "audience": "students, supervisors, IAs, coordinators",
-      "notes": "Runs to 11 Jun 2027; graduation 30 Jun. Intermediate deadlines not yet published (proposal shifts +1wk for Carnival)",
+      "notes": "Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 end) vs 18 Jun in the Q&A deck - matters for external agreements, flag to settle. Full timeline live on msp-btr.nl since 16 Jul 2026",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -2248,18 +2392,6 @@
       "notes": "",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "project-grades-published-p3",
-      "title": "Project grades published (committee deadline) (P3)",
-      "office": "esd",
-      "staff": "academic",
-      "date": "2027-02-01",
-      "audience": "Project Committee, supervisors, students",
-      "notes": "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days",
-      "link": "",
-      "submit": false,
       "status": "confirmed"
     },
     {
@@ -2299,6 +2431,18 @@
       "status": "unconfirmed"
     },
     {
+      "id": "project-grades-published-p3",
+      "title": "Project grades published (committee deadline) (P3)",
+      "office": "esd",
+      "staff": "academic",
+      "date": "2027-02-05",
+      "audience": "Project Committee, supervisors, students",
+      "notes": "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days. KB says 10 calendar days but the F1 grading overview ran +10 WORKING days both periods in AY25-26 (P3: 6 Feb; P6: 26 Jun) - working-day reading applied here, settle before P3",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "bsa-halfway-archive",
       "title": "BSA halfway letters archived (Corsa D20A + Outlook)",
       "office": "esd",
@@ -2323,6 +2467,18 @@
       "status": "confirmed"
     },
     {
+      "id": "eer-revision-to-boe",
+      "title": "Revised EER to BoE + EPC for advice",
+      "office": "boe",
+      "staff": "support",
+      "date": "2027-02-15",
+      "audience": "BoE, EPC",
+      "notes": "15 Feb per FSE Procedure EER.docx",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "exam-prep-dacs-p4",
       "title": "Exam week prep meeting MSP-DACS-FSE-C (logistics + transport) (P4)",
       "office": "exams",
@@ -2330,6 +2486,18 @@
       "date": "2027-02-15",
       "audience": "exams office, DACS, FSE-C",
       "notes": "Joint prep ~4 weeks ahead per own calendar: 'Meeting examweek 1 (+2) and transport' 2 Sep 2025, 'Meeting examweek 2' 11 Nov 2025, 'Voorbereiding P5, samenwerking DACS-MSP-FSE-C' 21 Apr 2026, 'Voorbereiding P6' 8 Jun 2026. Timing drifts between 1 and 6 weeks ahead",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "tutor-lists-final-p5",
+      "title": "Tutor lists final (contract lead time) (P5)",
+      "office": "scheduling",
+      "staff": "both",
+      "date": "2027-02-15",
+      "audience": "coordinators, Operations, FSE HR",
+      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. Rule confirmed twice in the mailbox analyses, dates derived",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2428,7 +2596,19 @@
       "notes": "",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
+    },
+    {
+      "id": "btr-proposal-feb",
+      "title": "BTR proposal submission deadline (Feb cohort)",
+      "office": "btr",
+      "staff": "both",
+      "date": "2027-03-01",
+      "audience": "students, RS, IA",
+      "notes": "Mon 13:00 via Collent, per msp-btr.nl timeline (start +4 weeks, +1 week for Carnival 8-12 Feb, exactly the published rule)",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "momi-p3-check",
@@ -2450,6 +2630,18 @@
       "date": "2027-03-01",
       "audience": "IPO (Eva), Gerco",
       "notes": "Early March, right after the coordinator deadline, per the IPO overview: new/skipped modules, coordinator changes; workbook copy to Gerco as base for frame schedules",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "iwio-evaluation-opens-p4",
+      "title": "IWIO course evaluation opens (last tutorial week) (P4)",
+      "office": "esd",
+      "staff": "both",
+      "date": "2027-03-01",
+      "audience": "students, coordinators, EPC",
+      "notes": "Survey opens week 6, reminders through exam week, auto-closes early next period; results published ~3 weeks after the last exam (1 week after grades). Procedure doc is 2022-23 vintage, verify owner/tooling",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2515,6 +2707,18 @@
       "status": "confirmed"
     },
     {
+      "id": "intranet-faq-review",
+      "title": "Annual intranet-FAQ office review round (deadline)",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-03-05",
+      "audience": "all offices",
+      "notes": "2026 instance: ask went out Feb, deadline 6 Mar; each office reviews its own section. Translated, unconfirmed",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "switch-p5",
       "title": "Course switch deadline",
       "office": "scheduling",
@@ -2551,6 +2755,18 @@
       "status": "confirmed"
     },
     {
+      "id": "admissions-kickoff",
+      "title": "Admissions - SSC communications kick-off meeting (expect)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-03-10",
+      "audience": "Admissions team, SSC",
+      "notes": "Approximate; starts the yearly SSC communications update",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "exam-week-instruction-p4",
       "title": "Exam week instruction briefing (invigilation team) (P4)",
       "office": "exams",
@@ -2581,7 +2797,7 @@
       "staff": "both",
       "date": "2027-03-15",
       "audience": "coordinators, invigilators, ESD, students",
-      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits",
+      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday, no Friday sittings)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -2599,6 +2815,18 @@
       "status": "confirmed"
     },
     {
+      "id": "btr-proposal-grades-due-feb",
+      "title": "BTR proposal grades due in Collent (Feb cohort)",
+      "office": "btr",
+      "staff": "academic",
+      "date": "2027-03-19",
+      "audience": "RS, IA",
+      "notes": "Inferred from the Friday-due / Monday-publish convention (site names only the Mon 22 Mar publish date); confirm with the office",
+      "link": "",
+      "submit": true,
+      "status": "unconfirmed"
+    },
+    {
       "id": "master-open-day-spring",
       "title": "Master Open Day, Spring edition",
       "office": "general",
@@ -2606,6 +2834,18 @@
       "date": "2027-03-20",
       "audience": "MSP staff on stand duty, marketing",
       "notes": "Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness)",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "btr-proposal-grades-pub-feb",
+      "title": "BTR proposal grades published (Feb cohort)",
+      "office": "btr",
+      "staff": "support",
+      "date": "2027-03-22",
+      "audience": "students, RS, IA",
+      "notes": "Mon 22 Mar per msp-btr.nl (students receive grades in Canvas)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -2659,13 +2899,25 @@
       "status": "unconfirmed"
     },
     {
+      "id": "assessment-survey",
+      "title": "MSP assessment survey deadline (coordinators, feeds the year exam request)",
+      "office": "exams",
+      "staff": "academic",
+      "date": "2027-03-23",
+      "audience": "course coordinators, exams office",
+      "notes": "Survey goes out Feb; ~23 Mar deadline per the 2026 cycle. Coordinators state assessment formats + exam needs; feeds the April SSC aanvraagformulier",
+      "link": "",
+      "submit": true,
+      "status": "unconfirmed"
+    },
+    {
       "id": "surveillanten-training",
       "title": "Annual invigilator (surveillanten) training",
       "office": "exams",
       "staff": "support",
       "date": "2027-03-24",
       "audience": "exams office, hoofdsurveillanten, invigilators",
-      "notes": "Annual training; 2026 edition was Wed 25 Mar per Msp-exams calendar 'werkgroep Surveillanten training 25 maart' (6 Mar 2026) and 'evaluatie Surveillanten training 2026' (18 May 2026). Werkgroep prep starts ~3 weeks before, evaluation ~8 weeks after",
+      "notes": "Annual training; 2026 edition was Wed 25 Mar. NB may move to October: LAW proposed the shift at the 23 Jun toetscoordinatorenoverleg, Cathelijn investigating - watch the 14 Aug hei-dag outcome",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2707,6 +2959,18 @@
       "status": "confirmed"
     },
     {
+      "id": "eer-to-faculty-board",
+      "title": "EER to the Faculty Board",
+      "office": "boe",
+      "staff": "support",
+      "date": "2027-03-31",
+      "audience": "programme management, Faculty Board",
+      "notes": "31 Mar per FSE Procedure EER.docx; adoption before 1 May, publication in June",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "catalogue-publication",
       "title": "Course catalogue publication (hard deadline)",
       "office": "esd",
@@ -2719,13 +2983,25 @@
       "status": "confirmed"
     },
     {
+      "id": "admissions-deadline-noneu",
+      "title": "Admissions - application deadline non-EU/EEA",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-04-01",
+      "audience": "Admissions team, applicants",
+      "notes": "Fixed annual deadline; reminders end Mar, 5wd repair window then mass rejection in SAP",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "grades-due-p4",
       "title": "Grade submission deadline for coordinators (P4)",
       "office": "exams",
       "staff": "academic",
       "date": "2027-04-02",
       "audience": "course coordinators, examiners",
-      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process",
+      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock)",
       "link": "",
       "submit": true,
       "status": "confirmed"
@@ -2755,16 +3031,40 @@
       "status": "confirmed"
     },
     {
+      "id": "btr-midterm-grades-due-feb",
+      "title": "BTR midterm practical grade due (Feb cohort)",
+      "office": "btr",
+      "staff": "academic",
+      "date": "2027-04-09",
+      "audience": "RS",
+      "notes": "Fri 9 Apr on msp-btr.nl labelled 'assessment deadline' but described as students-receive; per the Sept convention this Friday is the RS due date with publication Mon 12 Apr - confirm the due/publish split",
+      "link": "",
+      "submit": true,
+      "status": "unconfirmed"
+    },
+    {
       "id": "grades-published-p4",
       "title": "Grades published on Student Portal (deadline) (P4)",
       "office": "exams",
       "staff": "both",
       "date": "2027-04-09",
       "audience": "students, coordinators, BoE, Academic Advising",
-      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after",
+      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after (running update); final bulk update follows the inspection round. P2 has its own dated event",
       "link": "",
       "submit": false,
       "status": "confirmed"
+    },
+    {
+      "id": "btr-midterm-grades-pub-feb",
+      "title": "BTR midterm grades published (Feb cohort)",
+      "office": "btr",
+      "staff": "support",
+      "date": "2027-04-12",
+      "audience": "students, RS",
+      "notes": "Inferred Monday publication after the Fri 9 Apr due date; confirm",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
     },
     {
       "id": "accreditation-ask-p4",
@@ -2786,6 +3086,18 @@
       "date": "2027-04-12",
       "audience": "IPO (Eva), Erik Verheij",
       "notes": "Mid April per the IPO overview, deadline 1 May: all forms in one go incl. switch/withdraw deadlines for the new AY, additional-module forms (P1+P2 titles), intranet access for new colleagues",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "exam-request-offweek",
+      "title": "SSC aanvraagformulier deadline - off-week exams AY27-28 (the hardest date)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-04-12",
+      "audience": "exams office",
+      "notes": "Fixes MSP's exam days for the whole next AY (MSP sits outside the central toetsweken). 2026 instance stated in the form itself: Mon 13 Apr. Expect ~Mon 12 Apr 2027",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2834,6 +3146,18 @@
       "date": "2027-04-15",
       "audience": "Alumni Coordinator, Admissions (Saskia)",
       "notes": "Per the mailbox: 2026 request landed mid-April with a 1 May deadline for the May online Q&A sessions (12/19/21/27 May 2026). Annual recurrence inferred",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "transcript-final-update-p4",
+      "title": "Final bulk transcript update (after inspection round) (P4)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-04-16",
+      "audience": "exams office, ESD",
+      "notes": "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2905,7 +3229,7 @@
       "staff": "support",
       "date": "2027-04-26",
       "audience": "exams office",
-      "notes": "P5",
+      "notes": "P5. Anja's ladder says Tue 27 Apr 12:00, which is King's Day (UM closed) - 26 Apr is the safe working-day reading. Settle when MSP files its ladder deviations",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -2947,13 +3271,25 @@
       "status": "unconfirmed"
     },
     {
+      "id": "eer-adoption",
+      "title": "EER 2027-28 adopted by the Faculty Board (before 1 May)",
+      "office": "boe",
+      "staff": "support",
+      "date": "2027-04-30",
+      "audience": "BoE, EPC, Programme Board",
+      "notes": "Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "exam-yearplan-return",
-      "title": "Exam year plan back to SSC (approx deadline)",
+      "title": "UM Sports exam year plan back to SSC (approx deadline)",
       "office": "exams",
       "staff": "support",
       "date": "2027-04-30",
       "audience": "exams office",
-      "notes": "April per the manual; frame schedule needed from Programme Director by end of March. Rhythm confirmed by the 2026 cycle: Msp-exams calendar 'Exam planning 26-27 UMsports' 14 Apr 2026, each faculty's planning ready by Tue 7 Apr",
+      "notes": "April per the manual; frame schedule needed from Programme Director by end of March. Rhythm confirmed by the 2026 cycle: Msp-exams calendar 'Exam planning 26-27 UMsports' 14 Apr 2026, each faculty's planning ready by Tue 7 Apr. NB distinct from the SSC aanvraagformulier (separate event)",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2968,7 +3304,7 @@
       "notes": "",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "boe-grad-audit-notify-may",
@@ -2980,7 +3316,7 @@
       "notes": "",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "sap-mendix-pass",
@@ -2995,6 +3331,18 @@
       "status": "confirmed"
     },
     {
+      "id": "admissions-deadline-eu",
+      "title": "Admissions - application deadline EU/EEA",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-05-01",
+      "audience": "Admissions team, applicants",
+      "notes": "Fixed annual deadline; reminders end Apr",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "bsa-year-gerco",
       "title": "BSA year letter - final version from Gerco",
       "office": "esd",
@@ -3002,6 +3350,18 @@
       "date": "2027-05-03",
       "audience": "Gerco, IPO (Eva)",
       "notes": "",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "iwio-evaluation-opens-p5",
+      "title": "IWIO course evaluation opens (last tutorial week) (P5)",
+      "office": "esd",
+      "staff": "both",
+      "date": "2027-05-03",
+      "audience": "students, coordinators, EPC",
+      "notes": "Survey opens week 6, reminders through exam week, auto-closes early next period; results published ~3 weeks after the last exam (1 week after grades). Procedure doc is 2022-23 vintage, verify owner/tooling",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3127,6 +3487,18 @@
       "status": "unconfirmed"
     },
     {
+      "id": "admissions-webpage-refresh",
+      "title": "Admissions - yearly webpage refresh starts",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-05-15",
+      "audience": "Admissions team",
+      "notes": "Portal back-end access secured before this date; KB lists 15 May in the hard SSC chain",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "bsa-year-send",
       "title": "BSA year letters sent (mail merge)",
       "office": "esd",
@@ -3145,7 +3517,7 @@
       "staff": "both",
       "date": "2027-05-17",
       "audience": "coordinators, invigilators, ESD, students",
-      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits",
+      "notes": "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday, no Friday sittings)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3170,6 +3542,30 @@
       "date": "2027-05-17",
       "audience": "students, Academic Advising, ESD",
       "notes": "17-21 May",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "btr-thesis-feb",
+      "title": "BTR thesis submission deadline (Feb cohort)",
+      "office": "btr",
+      "staff": "both",
+      "date": "2027-05-18",
+      "audience": "students, RS, IA",
+      "notes": "Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collides with the P5 exam week 17-21 May, same collision the Sept thesis has with P2",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "btr-video-feb",
+      "title": "BTR video submission deadline (Feb cohort)",
+      "office": "btr",
+      "staff": "both",
+      "date": "2027-05-21",
+      "audience": "students, IA, peer reviewers",
+      "notes": "Fri 13:00 per msp-btr.nl; peer review same day 23:59. SurfDrive backup mandatory (WeTransfer links expire)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3205,22 +3601,46 @@
       "staff": "support",
       "date": "2027-05-24",
       "audience": "exams office",
-      "notes": "",
+      "notes": "MSP's own InterUM lead-time convention (T-3wk). Anja's SSC ladder says 31 May, but MSP has no central-hall sittings in the 14-18 Jun week (resits at PHS on the own Chromebook cart), so the SSC date does not bind",
       "link": "",
       "submit": false,
       "status": "confirmed"
     },
     {
-      "id": "eer-adoption",
-      "title": "EER 2027-28 adoption deadline (Faculty Board)",
-      "office": "boe",
-      "staff": "support",
-      "date": "2027-06-01",
-      "audience": "BoE, EPC, Programme Board",
-      "notes": "Annual cycle: revision starts Dec, BoE right of advice Mar, MT Apr, Faculty Council May, effective 1 Sep",
+      "id": "sched-planning-forms-fall",
+      "title": "Course/skills planning forms out to coordinators (AY27-28 P1/P2)",
+      "office": "scheduling",
+      "staff": "academic",
+      "date": "2027-05-24",
+      "audience": "course coordinators, Scheduling (Severine)",
+      "notes": "After the fall registration round (week ends 21 May). Exact dates pending Severine",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "admissions-selection-complete",
+      "title": "Admissions - selection incl. interviews complete (17:00 CET)",
+      "office": "esd",
+      "staff": "both",
+      "date": "2027-05-30",
+      "audience": "Admissions team, interviewers",
+      "notes": "Applicant-facing cut-off per the programme webpage",
       "link": "",
       "submit": false,
       "status": "confirmed"
+    },
+    {
+      "id": "btr-final-grades-due-feb",
+      "title": "BTR final grades due in Collent (Feb cohort)",
+      "office": "btr",
+      "staff": "academic",
+      "date": "2027-06-04",
+      "audience": "RS, IA",
+      "notes": "Fri 4 Jun on msp-btr.nl with the same due-vs-publish ambiguity as the midterm; per the Sept convention this is the graders' due date - confirm",
+      "link": "",
+      "submit": true,
+      "status": "unconfirmed"
     },
     {
       "id": "grades-due-p5",
@@ -3229,10 +3649,22 @@
       "staff": "academic",
       "date": "2027-06-04",
       "audience": "course coordinators, examiners",
-      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process",
+      "notes": "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock)",
       "link": "",
       "submit": true,
       "status": "confirmed"
+    },
+    {
+      "id": "btr-final-grades-pub-feb",
+      "title": "BTR final grades published (Feb cohort)",
+      "office": "btr",
+      "staff": "support",
+      "date": "2027-06-07",
+      "audience": "students, supervisors, BoE",
+      "notes": "Inferred Monday publication after the Fri 4 Jun due date; confirm",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
     },
     {
       "id": "bsa-year-followup",
@@ -3277,7 +3709,7 @@
       "staff": "both",
       "date": "2027-06-11",
       "audience": "students, coordinators, BoE, Academic Advising",
-      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after",
+      "notes": "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after (running update); final bulk update follows the inspection round. P2 has its own dated event",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3355,16 +3787,16 @@
       "status": "confirmed"
     },
     {
-      "id": "project-grades-published-p6",
-      "title": "Project grades published (committee deadline) (P6)",
-      "office": "esd",
-      "staff": "academic",
-      "date": "2027-06-21",
-      "audience": "Project Committee, supervisors, students",
-      "notes": "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days",
+      "id": "transcript-final-update-p5",
+      "title": "Final bulk transcript update (after inspection round) (P5)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-06-18",
+      "audience": "exams office, ESD",
+      "notes": "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul",
       "link": "",
       "submit": false,
-      "status": "confirmed"
+      "status": "unconfirmed"
     },
     {
       "id": "summer-break",
@@ -3427,6 +3859,18 @@
       "status": "unconfirmed"
     },
     {
+      "id": "project-grades-published-p6",
+      "title": "Project grades published (committee deadline) (P6)",
+      "office": "esd",
+      "staff": "academic",
+      "date": "2027-06-25",
+      "audience": "Project Committee, supervisors, students",
+      "notes": "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days. KB says 10 calendar days but the F1 grading overview ran +10 WORKING days both periods in AY25-26 (P3: 6 Feb; P6: 26 Jun) - working-day reading applied here, settle before P3",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "accreditation-deadline-p5",
       "title": "Accreditation material hand-in deadline (P5)",
       "office": "esd",
@@ -3475,6 +3919,42 @@
       "status": "confirmed"
     },
     {
+      "id": "admissions-portal-content",
+      "title": "Admissions - portal task-description content deadline",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-07-01",
+      "audience": "Admissions team, SSC",
+      "notes": "Also the date UM files visas with IND. Hard SSC chain per the KB",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "ssc-ladder-arrives",
+      "title": "SSC deadline ladder AY27-28 arrives - review + file MSP deviations",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-07-01",
+      "audience": "exams office",
+      "notes": "2026 instance: Anja's covering mail 1 Jul; dates become definitive only after every faculty responds. MSP's AY26-27 deviations are still unfiled (open action in _EXAMS_TODO)",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "grades-due-resits",
+      "title": "Resit grade submission deadline (June resit week)",
+      "office": "exams",
+      "staff": "academic",
+      "date": "2027-07-02",
+      "audience": "course coordinators, examiners",
+      "notes": "Same 10wd clock from the Friday of the 14-18 Jun resit week (AY25-26 precedent: 3 Jul). The repeat engine only covers P1/P2/P4/P5, so this standalone week gets its own event",
+      "link": "",
+      "submit": true,
+      "status": "unconfirmed"
+    },
+    {
       "id": "norm-hours-finance",
       "title": "Norm-hours list (BTR supervision) to finance",
       "office": "btr",
@@ -3506,6 +3986,18 @@
       "date": "2027-07-05",
       "audience": "IPO (Eva), exams office",
       "notes": "July per the IPO overview: whole-year overview (source: exam coordinator) refreshed for archiving/accreditation and posted on the whiteboard",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "grades-published-resits",
+      "title": "Resit grades published (June resit week)",
+      "office": "exams",
+      "staff": "both",
+      "date": "2027-07-09",
+      "audience": "students, coordinators, BoE",
+      "notes": "+15wd from the resit-week Friday (AY25-26 precedent: 13 Jul SAP processing)",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3545,6 +4037,18 @@
       "link": "",
       "submit": false,
       "status": "unconfirmed"
+    },
+    {
+      "id": "admissions-ssc-handover",
+      "title": "Admissions - everything to SSC (webpage + task descriptions, hard deadline)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-07-15",
+      "audience": "Admissions team, SSC",
+      "notes": "Hard external deadline owned by SSC; one of the KB's five must-not-miss dates",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "bsa-pbsa-archive",
@@ -3626,6 +4130,18 @@
       "date": "2027-08-30",
       "audience": "all staff",
       "notes": "Preliminary date per the Calendarium 2026-2027 p.2",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
+      "id": "admissions-diplomas",
+      "title": "Admissions - certified diplomas in; Studielink closes",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-08-31",
+      "audience": "Admissions team",
+      "notes": "Open-bachelor/NBSA tail; SSC administrative holds follow ~wk 37-39",
       "link": "",
       "submit": false,
       "status": "unconfirmed"

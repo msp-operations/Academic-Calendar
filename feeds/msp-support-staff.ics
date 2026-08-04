@@ -5,6 +5,14 @@ X-WR-CALNAME:MSP support staff deadlines 2026-27
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
+UID:btr-rts-sept-202627@msp-operations
+DTSTAMP:20260717T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Sept cohort)
+DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student handbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after | For: students\, Academic Advisors\, coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:ext-edu-s1-202627@msp-operations
 DTSTAMP:20260719T000000Z
 DTSTART;VALUE=DATE:20260719
@@ -113,8 +121,8 @@ UID:ssc-first-mutations-202627@msp-operations
 DTSTAMP:20260826T000000Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
-SUMMARY:[MSP EXAMS] First SSC mutations deadline AY26-27
-DESCRIPTION:For the 16 Sep sitting\; per-exam-week SSC deadlines all 12:00 (Anja Ronken's file) | For: exams office
+SUMMARY:[MSP EXAMS] First SSC mutations deadline of AY26-27 (FHML sitting\, FYI)
+DESCRIPTION:Serves FHML's 16 Sep sitting\, NOT an MSP deadline: MSP's first binding SSC date is 21 Sep (per the 3 Aug audit). Kept as the marker that Anja's ladder goes live | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:dexum-online-aug2-202627@msp-operations
@@ -178,7 +186,7 @@ DTSTAMP:20260921T000000Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P1. T-4 weeks\; hard floor 3 weeks. Per time slot and location | For: exams office
+DESCRIPTION:P1. T-4 weeks\; hard floor 3 weeks. Scope per Anja's ladder: this date also carries exam mutations + hall/Chromebook layouts + invigilator numbers\, all to SSC by 12:00 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-202627@msp-operations
@@ -195,6 +203,14 @@ DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
 DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 22 Sep 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:corsa-migration-202627@msp-operations
+DTSTAMP:20260923T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:[MSP BTR] CORSA cloud migration window (23-28 Sep\; backup 7-12 Oct)
+DESCRIPTION:Per Collent IT notice 3 Aug 2026. Primary window ends on the Sept proposal deadline day (28 Sep\, ~61 students uploading)\; backup window sits inside proposal grading. Uploads keep working\; recently uploaded files may be unpullable during the window | For: BTR office\, ESD\, Exams (Corsa users)
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-sept-202627@msp-operations
@@ -219,6 +235,30 @@ DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:[MSP SCHEDULING] Course switch deadline
 DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:boe-grad-audit-notify-oct-202627@msp-operations
+DTSTAMP:20261001T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
+DESCRIPTION:Via ZPIQGRADAUD\; also 1 Dec\, 1 Feb\, 1 Mar\, 1 May. Confirmed against 'Graduation audit MSP time line.docx' | For: BoE secretary\, BTR students 140-220 ECTS
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-studielink-opens-202627@msp-operations
+DTSTAMP:20261001T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[MSP ESD] Admissions - Studielink opens for AY27-28 + portal texts live
+DESCRIPTION:1 Oct: applications open for the next AY\; portal task descriptions must be live. Part of the hard SSC chain per the KB | For: Admissions team (Saskia\, Gian)\, SSC
+END:VEVENT
+BEGIN:VEVENT
+UID:deadline-submission-cutoff-202627@msp-operations
+DTSTAMP:20261004T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | For: all offices\, Operations
 END:VEVENT
 BEGIN:VEVENT
 UID:grading-sheets-out-p1-202627@msp-operations
@@ -250,7 +290,15 @@ DTSTAMP:20261012T000000Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:[MSP EXAMS] Exam week (P1)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-annual-report-202627@msp-operations
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:[MSP BOE] BoE + EPC annual report incl. EER change proposals due
+DESCRIPTION:15 Oct per FSE Procedure EER.docx | For: BoE\, EPC\, programme management
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-pub-sept-202627@msp-operations
@@ -293,6 +341,22 @@ SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:boe-grad-audit-candidates-nov-202627@msp-operations
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[MSP BOE] Graduation audit - create graduation candidates (100-220 ECTS)
+DESCRIPTION:Also 1 May. Delete last year's candidates first. Confirmed against 'Graduation audit MSP time line.docx' (BoE procedures\; 2021-era doc\, nod from Katja still polite) | For: BoE secretary\, Chris Pawley (STIC)
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-education-plan-202627@msp-operations
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[MSP BOE] Annual education plan to the Vice-dean
+DESCRIPTION:1 Nov per FSE Procedure EER.docx | For: programme management\, Vice-dean Education
+END:VEVENT
+BEGIN:VEVENT
 UID:frame-schedule-spring-deadline-202627@msp-operations
 DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
@@ -322,7 +386,7 @@ DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P1)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:ext-edu-p3-202627@msp-operations
@@ -362,7 +426,7 @@ DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P2 | For: exams office
+DESCRIPTION:P2. Mutations + hall layouts also due 16 Nov 12:00\; NB the SSC central-hall surveillanten column deviates to Wed 18 Nov per Anja's ladder | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p2-202627@msp-operations
@@ -397,6 +461,14 @@ SUMMARY:[MSP EXAMS] Grading sheets sent to coordinators (P2)
 DESCRIPTION:Week 6 of the running period\; empty sheets exported from SAP with instructions + the 10-working-day deadline | For: exams office\, coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:boe-grad-audit-notify-dec-202627@msp-operations
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
+DESCRIPTION:For: BoE secretary
+END:VEVENT
+BEGIN:VEVENT
 UID:ext-edu-s2-202627@msp-operations
 DTSTAMP:20261206T000000Z
 DTSTART;VALUE=DATE:20261206
@@ -418,7 +490,7 @@ DTSTAMP:20261207T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP EXAMS] Exam week (P2)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:dexum-site-dec-202627@msp-operations
@@ -445,20 +517,20 @@ SUMMARY:[MSP BTR] BTR video submission deadline (Sept cohort)
 DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer reviewers
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-rts-feb-202627@msp-operations
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Feb cohort)
+DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Office FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after\, into the Christmas closure. Under-grading RTS flagging also lands here | For: students\, Academic Advisors\, coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
 DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
 DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
-END:VEVENT
-BEGIN:VEVENT
-UID:grades-published-p2-202627@msp-operations
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P2)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p3-202627@msp-operations
@@ -514,7 +586,7 @@ DTSTAMP:20270125T000000Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:[MSP BTR] BTR February cohort starts
-DESCRIPTION:Runs to 11 Jun 2027\; graduation 30 Jun. Intermediate deadlines not yet published (proposal shifts +1wk for Carnival) | For: students\, supervisors\, IAs\, coordinators
+DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 end) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students\, supervisors\, IAs\, coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:withdraw-p4-202627@msp-operations
@@ -533,12 +605,28 @@ SUMMARY:[MSP BTR] BTR September cohort graduation date
 DESCRIPTION:Graduation = last day of the month the last component was fulfilled | For: students\, BoE\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:boe-grad-audit-notify-feb-202627@msp-operations
+DTSTAMP:20270201T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
+DESCRIPTION:For: BoE secretary
+END:VEVENT
+BEGIN:VEVENT
 UID:carnival-202627@msp-operations
 DTSTAMP:20270208T000000Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:[MSP GENERAL] Carnival week (no teaching)
 DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-revision-to-boe-202627@msp-operations
+DTSTAMP:20270215T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:[MSP BOE] Revised EER to BoE + EPC for advice
+DESCRIPTION:15 Feb per FSE Procedure EER.docx | For: BoE\, EPC
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-feb-202627@msp-operations
@@ -579,6 +667,22 @@ DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 SUMMARY:[MSP GENERAL] Bachelor Open Day\, Spring edition
 DESCRIPTION:Sat 27 Feb 2027 per the UM DEI Academic Calendar 26/27 (supersedes the first-Saturday pattern guess) | For: MSP staff on stand duty\, marketing
+END:VEVENT
+BEGIN:VEVENT
+UID:boe-grad-audit-notify-mar-202627@msp-operations
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
+DESCRIPTION:For: BoE secretary
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-proposal-feb-202627@msp-operations
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[MSP BTR] BTR proposal submission deadline (Feb cohort)
+DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks\, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: students\, RS\, IA
 END:VEVENT
 BEGIN:VEVENT
 UID:grading-sheets-out-p4-202627@msp-operations
@@ -626,7 +730,7 @@ DTSTAMP:20270315T000000Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270316
 SUMMARY:[MSP EXAMS] Exam week (P4)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p5-202627@msp-operations
@@ -643,6 +747,14 @@ DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:[MSP GENERAL] Master Open Day\, Spring edition
 DESCRIPTION:Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness) | For: MSP staff on stand duty\, marketing
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-proposal-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270322T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:[MSP BTR] BTR proposal grades published (Feb cohort)
+DESCRIPTION:Mon 22 Mar per msp-btr.nl (students receive grades in Canvas) | For: students\, RS\, IA
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-spring-202627@msp-operations
@@ -669,12 +781,28 @@ SUMMARY:[MSP GENERAL] Easter Monday (holiday)
 DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first teaching day is Tue 30 Mar | For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:eer-to-faculty-board-202627@msp-operations
+DTSTAMP:20270331T000000Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:[MSP BOE] EER to the Faculty Board
+DESCRIPTION:31 Mar per FSE Procedure EER.docx\; adoption before 1 May\, publication in June | For: programme management\, Faculty Board
+END:VEVENT
+BEGIN:VEVENT
 UID:catalogue-publication-202627@msp-operations
 DTSTAMP:20270401T000000Z
 DTSTART;VALUE=DATE:20270401
 DTEND;VALUE=DATE:20270402
 SUMMARY:[MSP ESD] Course catalogue publication (hard deadline)
 DESCRIPTION:1 April\, firm - exam planning depends on it | For: coordinators\, BoE\, Scheduling\, Exams\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-deadline-noneu-202627@msp-operations
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[MSP ESD] Admissions - application deadline non-EU/EEA
+DESCRIPTION:Fixed annual deadline\; reminders end Mar\, 5wd repair window then mass rejection in SAP | For: Admissions team\, applicants
 END:VEVENT
 BEGIN:VEVENT
 UID:withdraw-p5-202627@msp-operations
@@ -698,7 +826,7 @@ DTSTAMP:20270409T000000Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:ext-edu-p6-202627@msp-operations
@@ -714,7 +842,7 @@ DTSTAMP:20270426T000000Z
 DTSTART;VALUE=DATE:20270426
 DTEND;VALUE=DATE:20270427
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P5 | For: exams office
+DESCRIPTION:P5. Anja's ladder says Tue 27 Apr 12:00\, which is King's Day (UM closed) - 26 Apr is the safe working-day reading. Settle when MSP files its ladder deviations | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p5-202627@msp-operations
@@ -733,12 +861,44 @@ SUMMARY:[MSP GENERAL] King's Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:eer-adoption-202627@msp-operations
+DTSTAMP:20270430T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:[MSP BOE] EER 2027-28 adopted by the Faculty Board (before 1 May)
+DESCRIPTION:Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May\, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep | For: BoE\, EPC\, Programme Board
+END:VEVENT
+BEGIN:VEVENT
+UID:boe-grad-audit-candidates-may-202627@msp-operations
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[MSP BOE] Graduation audit - create graduation candidates (100-220 ECTS)
+DESCRIPTION:For: BoE secretary\, Chris Pawley (STIC)
+END:VEVENT
+BEGIN:VEVENT
+UID:boe-grad-audit-notify-may-202627@msp-operations
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
+DESCRIPTION:For: BoE secretary
+END:VEVENT
+BEGIN:VEVENT
 UID:sap-mendix-pass-202627@msp-operations
 DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:[MSP ESD] SAP + Mendix new-year pass + intranet forms updated
 DESCRIPTION:UM-wide 1 May deadline\, before the advising period | For: ESD\, Web Admin\, Scheduling
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-deadline-eu-202627@msp-operations
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[MSP ESD] Admissions - application deadline EU/EEA
+DESCRIPTION:Fixed annual deadline\; reminders end Apr | For: Admissions team\, applicants
 END:VEVENT
 BEGIN:VEVENT
 UID:grading-sheets-out-p5-202627@msp-operations
@@ -802,7 +962,7 @@ DTSTAMP:20270517T000000Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP EXAMS] Exam week (P5)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:whit-monday-202627@msp-operations
@@ -821,20 +981,36 @@ SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
 DESCRIPTION:17-21 May | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-thesis-feb-202627@msp-operations
+DTSTAMP:20270518T000000Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:[MSP BTR] BTR thesis submission deadline (Feb cohort)
+DESCRIPTION:Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collides with the P5 exam week 17-21 May\, same collision the Sept thesis has with P2 | For: students\, RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-video-feb-202627@msp-operations
+DTSTAMP:20270521T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:[MSP BTR] BTR video submission deadline (Feb cohort)
+DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDrive backup mandatory (WeTransfer links expire) | For: students\, IA\, peer reviewers
+END:VEVENT
+BEGIN:VEVENT
 UID:invigilators-resits-202627@msp-operations
 DTSTAMP:20270524T000000Z
 DTSTART;VALUE=DATE:20270524
 DTEND;VALUE=DATE:20270525
 SUMMARY:[MSP EXAMS] Invigilator request deadline\, P5 resits (InterUM)
-DESCRIPTION:For: exams office
+DESCRIPTION:MSP's own InterUM lead-time convention (T-3wk). Anja's SSC ladder says 31 May\, but MSP has no central-hall sittings in the 14-18 Jun week (resits at PHS on the own Chromebook cart)\, so the SSC date does not bind | For: exams office
 END:VEVENT
 BEGIN:VEVENT
-UID:eer-adoption-202627@msp-operations
-DTSTAMP:20270601T000000Z
-DTSTART;VALUE=DATE:20270601
-DTEND;VALUE=DATE:20270602
-SUMMARY:[MSP BOE] EER 2027-28 adoption deadline (Faculty Board)
-DESCRIPTION:Annual cycle: revision starts Dec\, BoE right of advice Mar\, MT Apr\, Faculty Council May\, effective 1 Sep | For: BoE\, EPC\, Programme Board
+UID:admissions-selection-complete-202627@msp-operations
+DTSTAMP:20270530T000000Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
+DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p6-202627@msp-operations
@@ -850,7 +1026,7 @@ DTSTAMP:20270611T000000Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P5)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:resit-week-p5-202627@msp-operations
@@ -883,5 +1059,21 @@ DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[MSP BTR] BTR February cohort graduation date
 DESCRIPTION:For: students\, BoE\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-portal-content-202627@msp-operations
+DTSTAMP:20270701T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[MSP ESD] Admissions - portal task-description content deadline
+DESCRIPTION:Also the date UM files visas with IND. Hard SSC chain per the KB | For: Admissions team\, SSC
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-ssc-handover-202627@msp-operations
+DTSTAMP:20270715T000000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:[MSP ESD] Admissions - everything to SSC (webpage + task descriptions\, hard deadline)
+DESCRIPTION:Hard external deadline owned by SSC\; one of the KB's five must-not-miss dates | For: Admissions team\, SSC
 END:VEVENT
 END:VCALENDAR

@@ -45,6 +45,14 @@ SUMMARY:[MSP ESD] External education registration deadline (P2)
 DESCRIPTION:For: students\, BoE
 END:VEVENT
 BEGIN:VEVENT
+UID:admissions-studielink-opens-202627@msp-operations
+DTSTAMP:20261001T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[MSP ESD] Admissions - Studielink opens for AY27-28 + portal texts live
+DESCRIPTION:1 Oct: applications open for the next AY\; portal task descriptions must be live. Part of the hard SSC chain per the KB | For: Admissions team (Saskia\, Gian)\, SSC
+END:VEVENT
+BEGIN:VEVENT
 UID:catalogue-spring-gerco-final-202627@msp-operations
 DTSTAMP:20261019T000000Z
 DTSTART;VALUE=DATE:20261019
@@ -69,14 +77,6 @@ SUMMARY:[MSP ESD] External education registration deadline (S2\, P4\, P4-P5)
 DESCRIPTION:For: students\, BoE
 END:VEVENT
 BEGIN:VEVENT
-UID:project-grades-published-p3-202627@msp-operations
-DTSTAMP:20270201T000000Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270202
-SUMMARY:[MSP ESD] Project grades published (committee deadline) (P3)
-DESCRIPTION:Supervisor grades to committee within 5 days of period end\; committee publishes within 10 days | For: Project Committee\, supervisors\, students
-END:VEVENT
-BEGIN:VEVENT
 UID:ext-edu-p5-202627@msp-operations
 DTSTAMP:20270221T000000Z
 DTSTART;VALUE=DATE:20270221
@@ -91,6 +91,14 @@ DTSTART;VALUE=DATE:20270401
 DTEND;VALUE=DATE:20270402
 SUMMARY:[MSP ESD] Course catalogue publication (hard deadline)
 DESCRIPTION:1 April\, firm - exam planning depends on it | For: coordinators\, BoE\, Scheduling\, Exams\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-deadline-noneu-202627@msp-operations
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[MSP ESD] Admissions - application deadline non-EU/EEA
+DESCRIPTION:Fixed annual deadline\; reminders end Mar\, 5wd repair window then mass rejection in SAP | For: Admissions team\, applicants
 END:VEVENT
 BEGIN:VEVENT
 UID:ext-edu-p6-202627@msp-operations
@@ -109,11 +117,35 @@ SUMMARY:[MSP ESD] SAP + Mendix new-year pass + intranet forms updated
 DESCRIPTION:UM-wide 1 May deadline\, before the advising period | For: ESD\, Web Admin\, Scheduling
 END:VEVENT
 BEGIN:VEVENT
-UID:project-grades-published-p6-202627@msp-operations
-DTSTAMP:20270621T000000Z
-DTSTART;VALUE=DATE:20270621
-DTEND;VALUE=DATE:20270622
-SUMMARY:[MSP ESD] Project grades published (committee deadline) (P6)
-DESCRIPTION:Supervisor grades to committee within 5 days of period end\; committee publishes within 10 days | For: Project Committee\, supervisors\, students
+UID:admissions-deadline-eu-202627@msp-operations
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[MSP ESD] Admissions - application deadline EU/EEA
+DESCRIPTION:Fixed annual deadline\; reminders end Apr | For: Admissions team\, applicants
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-selection-complete-202627@msp-operations
+DTSTAMP:20270530T000000Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
+DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-portal-content-202627@msp-operations
+DTSTAMP:20270701T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[MSP ESD] Admissions - portal task-description content deadline
+DESCRIPTION:Also the date UM files visas with IND. Hard SSC chain per the KB | For: Admissions team\, SSC
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-ssc-handover-202627@msp-operations
+DTSTAMP:20270715T000000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:[MSP ESD] Admissions - everything to SSC (webpage + task descriptions\, hard deadline)
+DESCRIPTION:Hard external deadline owned by SSC\; one of the KB's five must-not-miss dates | For: Admissions team\, SSC
 END:VEVENT
 END:VCALENDAR

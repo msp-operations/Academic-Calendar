@@ -29,6 +29,14 @@ SUMMARY:[MSP GENERAL] Academic year 2026-27 starts
 DESCRIPTION:For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:deadline-submission-cutoff-202627@msp-operations
+DTSTAMP:20261004T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | For: all offices\, Operations
+END:VEVENT
+BEGIN:VEVENT
 UID:prep-week-fall-202627@msp-operations
 DTSTAMP:20261019T000000Z
 DTSTART;VALUE=DATE:20261019

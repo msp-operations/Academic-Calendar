@@ -49,8 +49,8 @@ UID:ssc-first-mutations-202627@msp-operations
 DTSTAMP:20260826T000000Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
-SUMMARY:[MSP EXAMS] First SSC mutations deadline AY26-27
-DESCRIPTION:For the 16 Sep sitting\; per-exam-week SSC deadlines all 12:00 (Anja Ronken's file) | For: exams office
+SUMMARY:[MSP EXAMS] First SSC mutations deadline of AY26-27 (FHML sitting\, FYI)
+DESCRIPTION:Serves FHML's 16 Sep sitting\, NOT an MSP deadline: MSP's first binding SSC date is 21 Sep (per the 3 Aug audit). Kept as the marker that Anja's ladder goes live | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:dexum-online-aug2-202627@msp-operations
@@ -74,7 +74,7 @@ DTSTAMP:20260921T000000Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P1. T-4 weeks\; hard floor 3 weeks. Per time slot and location | For: exams office
+DESCRIPTION:P1. T-4 weeks\; hard floor 3 weeks. Scope per Anja's ladder: this date also carries exam mutations + hall/Chromebook layouts + invigilator numbers\, all to SSC by 12:00 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-202627@msp-operations
@@ -130,7 +130,7 @@ DTSTAMP:20261012T000000Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:[MSP EXAMS] Exam week (P1)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p2-202627@msp-operations
@@ -154,7 +154,7 @@ DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P1)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
 UID:dexum-site-nov-202627@msp-operations
@@ -170,7 +170,7 @@ DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P1)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:invigilators-p2-202627@msp-operations
@@ -178,7 +178,7 @@ DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P2 | For: exams office
+DESCRIPTION:P2. Mutations + hall layouts also due 16 Nov 12:00\; NB the SSC central-hall surveillanten column deviates to Wed 18 Nov per Anja's ladder | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p2-202627@msp-operations
@@ -226,7 +226,7 @@ DTSTAMP:20261207T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP EXAMS] Exam week (P2)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:dexum-site-dec-202627@msp-operations
@@ -235,22 +235,6 @@ DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[MSP EXAMS] DexUM on site (digital exams network)
 DESCRIPTION:10:00-12:00\, GL17-0104. Msp-exams calendar\, 'DexUM op locatie'\, 10 Dec 2026 | For: exams office
-END:VEVENT
-BEGIN:VEVENT
-UID:grades-due-p2-202627@msp-operations
-DTSTAMP:20261225T000000Z
-DTSTART;VALUE=DATE:20261225
-DTEND;VALUE=DATE:20261226
-SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
-END:VEVENT
-BEGIN:VEVENT
-UID:grades-published-p2-202627@msp-operations
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P2)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p3-202627@msp-operations
@@ -322,7 +306,7 @@ DTSTAMP:20270315T000000Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270316
 SUMMARY:[MSP EXAMS] Exam week (P4)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p5-202627@msp-operations
@@ -338,7 +322,7 @@ DTSTAMP:20270402T000000Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270403
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P4)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p4-202627@msp-operations
@@ -346,7 +330,7 @@ DTSTAMP:20270409T000000Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:invigilators-p5-202627@msp-operations
@@ -354,7 +338,7 @@ DTSTAMP:20270426T000000Z
 DTSTART;VALUE=DATE:20270426
 DTEND;VALUE=DATE:20270427
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P5 | For: exams office
+DESCRIPTION:P5. Anja's ladder says Tue 27 Apr 12:00\, which is King's Day (UM closed) - 26 Apr is the safe working-day reading. Settle when MSP files its ladder deviations | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p5-202627@msp-operations
@@ -394,7 +378,7 @@ DTSTAMP:20270517T000000Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP EXAMS] Exam week (P5)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:invigilators-resits-202627@msp-operations
@@ -402,7 +386,7 @@ DTSTAMP:20270524T000000Z
 DTSTART;VALUE=DATE:20270524
 DTEND;VALUE=DATE:20270525
 SUMMARY:[MSP EXAMS] Invigilator request deadline\, P5 resits (InterUM)
-DESCRIPTION:For: exams office
+DESCRIPTION:MSP's own InterUM lead-time convention (T-3wk). Anja's SSC ladder says 31 May\, but MSP has no central-hall sittings in the 14-18 Jun week (resits at PHS on the own Chromebook cart)\, so the SSC date does not bind | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p5-202627@msp-operations
@@ -410,7 +394,7 @@ DTSTAMP:20270604T000000Z
 DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P5)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-resits-202627@msp-operations
@@ -434,7 +418,7 @@ DTSTAMP:20270611T000000Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P5)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:resit-week-p5-202627@msp-operations

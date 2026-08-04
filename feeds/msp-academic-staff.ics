@@ -5,6 +5,14 @@ X-WR-CALNAME:MSP academic staff deadlines 2026-27
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
+UID:btr-rts-sept-202627@msp-operations
+DTSTAMP:20260717T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Sept cohort)
+DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student handbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after | For: students\, Academic Advisors\, coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p1-202627@msp-operations
 DTSTAMP:20260813T000000Z
 DTSTART;VALUE=DATE:20260813
@@ -61,6 +69,14 @@ SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P1. Paper PDF and TestVision test both due\; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:deadline-submission-cutoff-202627@msp-operations
+DTSTAMP:20261004T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | For: all offices\, Operations
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p2-202627@msp-operations
 DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261008
@@ -74,7 +90,7 @@ DTSTAMP:20261012T000000Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:[MSP EXAMS] Exam week (P1)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-due-sept-202627@msp-operations
@@ -106,7 +122,7 @@ DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P1)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
 UID:frame-schedule-spring-deadline-202627@msp-operations
@@ -138,7 +154,7 @@ DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P1)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:course-reg-spring-202627@msp-operations
@@ -178,7 +194,7 @@ DTSTAMP:20261207T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP EXAMS] Exam week (P2)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p3-202627@msp-operations
@@ -197,28 +213,20 @@ SUMMARY:[MSP BTR] BTR video submission deadline (Sept cohort)
 DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer reviewers
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-rts-feb-202627@msp-operations
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Feb cohort)
+DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Office FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after\, into the Christmas closure. Under-grading RTS flagging also lands here | For: students\, Academic Advisors\, coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
 DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
 DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
-END:VEVENT
-BEGIN:VEVENT
-UID:grades-due-p2-202627@msp-operations
-DTSTAMP:20261225T000000Z
-DTSTART;VALUE=DATE:20261225
-DTEND;VALUE=DATE:20261226
-SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
-END:VEVENT
-BEGIN:VEVENT
-UID:grades-published-p2-202627@msp-operations
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P2)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p4-202627@msp-operations
@@ -250,7 +258,7 @@ DTSTAMP:20270125T000000Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:[MSP BTR] BTR February cohort starts
-DESCRIPTION:Runs to 11 Jun 2027\; graduation 30 Jun. Intermediate deadlines not yet published (proposal shifts +1wk for Carnival) | For: students\, supervisors\, IAs\, coordinators
+DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 end) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students\, supervisors\, IAs\, coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-sept-202627@msp-operations
@@ -259,14 +267,6 @@ DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:[MSP BTR] BTR September cohort graduation date
 DESCRIPTION:Graduation = last day of the month the last component was fulfilled | For: students\, BoE\, ESD
-END:VEVENT
-BEGIN:VEVENT
-UID:project-grades-published-p3-202627@msp-operations
-DTSTAMP:20270201T000000Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270202
-SUMMARY:[MSP ESD] Project grades published (committee deadline) (P3)
-DESCRIPTION:Supervisor grades to committee within 5 days of period end\; committee publishes within 10 days | For: Project Committee\, supervisors\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:carnival-202627@msp-operations
@@ -283,6 +283,14 @@ DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-proposal-feb-202627@msp-operations
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[MSP BTR] BTR proposal submission deadline (Feb cohort)
+DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks\, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: students\, RS\, IA
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p4-202627@msp-operations
@@ -306,7 +314,7 @@ DTSTAMP:20270315T000000Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270316
 SUMMARY:[MSP EXAMS] Exam week (P4)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p5-202627@msp-operations
@@ -354,7 +362,7 @@ DTSTAMP:20270402T000000Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270403
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P4)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-apr-202627@msp-operations
@@ -370,7 +378,7 @@ DTSTAMP:20270409T000000Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:kings-day-202627@msp-operations
@@ -434,7 +442,7 @@ DTSTAMP:20270517T000000Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP EXAMS] Exam week (P5)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:whit-monday-202627@msp-operations
@@ -453,12 +461,36 @@ SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
 DESCRIPTION:17-21 May | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-thesis-feb-202627@msp-operations
+DTSTAMP:20270518T000000Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:[MSP BTR] BTR thesis submission deadline (Feb cohort)
+DESCRIPTION:Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collides with the P5 exam week 17-21 May\, same collision the Sept thesis has with P2 | For: students\, RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-video-feb-202627@msp-operations
+DTSTAMP:20270521T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:[MSP BTR] BTR video submission deadline (Feb cohort)
+DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDrive backup mandatory (WeTransfer links expire) | For: students\, IA\, peer reviewers
+END:VEVENT
+BEGIN:VEVENT
+UID:admissions-selection-complete-202627@msp-operations
+DTSTAMP:20270530T000000Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
+DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-due-p5-202627@msp-operations
 DTSTAMP:20270604T000000Z
 DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P5)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-resits-202627@msp-operations
@@ -474,7 +506,7 @@ DTSTAMP:20270611T000000Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P5)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
 UID:resit-week-p5-202627@msp-operations
@@ -491,14 +523,6 @@ DTSTART;VALUE=DATE:20270617
 DTEND;VALUE=DATE:20270618
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. January edition (12 Jan 2027) exists but its series shows as cancelled\, left out | For: all MSP staff
-END:VEVENT
-BEGIN:VEVENT
-UID:project-grades-published-p6-202627@msp-operations
-DTSTAMP:20270621T000000Z
-DTSTART;VALUE=DATE:20270621
-DTEND;VALUE=DATE:20270622
-SUMMARY:[MSP ESD] Project grades published (committee deadline) (P6)
-DESCRIPTION:Supervisor grades to committee within 5 days of period end\; committee publishes within 10 days | For: Project Committee\, supervisors\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:summer-break-202627@msp-operations
