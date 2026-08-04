@@ -86,7 +86,16 @@
   .legend .swh { background: #e3f5e9; border: 1px solid #c9e9d6; }
   .legend .dotc { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); display: inline-block; }
   .legend .dotu { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--muted); display: inline-block; box-sizing: border-box; }
-  .legend .swdue { width: 16px; height: 4px; background: var(--gold); border-radius: 2px; display: inline-block; }
+  .legend .swdue { width: 16px; height: 4px; border-radius: 2px; display: inline-block;
+    background: linear-gradient(100deg, #a8730a 0%, #ffd75e 30%, #fff3b0 50%, #ffd75e 70%, #a8730a 100%);
+    background-size: 200% 100%; animation: shine 2.8s linear infinite; box-shadow: 0 0 5px rgba(255, 196, 40, .6); }
+  .dei { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+  .dei .deilabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em;
+    background: linear-gradient(90deg, var(--p1), var(--p5), var(--p4)); -webkit-background-clip: text; background-clip: text;
+    color: transparent; margin-bottom: 6px; }
+  .dei .deichip { display: inline-block; background: var(--paper); border: 1px solid var(--line); border-radius: 999px;
+    padding: 2px 10px; font-size: .76rem; margin: 0 4px 4px 0; }
+  .dei .deimonth { font-size: .72rem; color: var(--muted); font-style: italic; margin-top: 3px; }
 
   .yearwrap { overflow-x: auto; margin-top: 12px; padding-bottom: 8px;
     width: min(100vw - 40px, 1880px); position: relative; left: 50%; transform: translateX(-50%); }
@@ -109,7 +118,12 @@
   .yday.p6, .day.p6 { border-top: 3px solid var(--p6); }
   .yday.hol, .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
   /* Gold bar: academic staff must submit something to the office by this day */
-  .yday.due, .day.due { border-bottom: 4px solid var(--gold); }
+  .yday, .day { position: relative; }
+  .yday.due::after, .day.due::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+    background: linear-gradient(100deg, #a8730a 0%, #ffd75e 25%, #fff3b0 50%, #ffd75e 75%, #a8730a 100%);
+    background-size: 200% 100%; animation: shine 2.8s linear infinite;
+    box-shadow: 0 0 8px rgba(255, 196, 40, .7); border-radius: 0 0 5px 5px; }
+  @keyframes shine { from { background-position: 200% 0; } to { background-position: -200% 0; } }
   .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
   .yday .yhead { font-size: .58rem; color: var(--muted); white-space: nowrap; }
   .yday .yhead b { color: var(--ink); font-size: .68rem; font-weight: 700; }
@@ -506,9 +520,16 @@ function loadFact(iso, el) {
     .then(d => {
       const list = (d.selected || []).filter(x => x.text && x.year);
       if (!list.length) throw new Error('empty');
-      const sci = list.filter(x =>
-        /scien|physic|chemi|biolog|astronom|astronaut|mathemat|spacecraft|space station|NASA|invent|Nobel|telescope|DNA|vaccin|eclipse|comet|planet|satellite|geolog|laborator|universit/i.test(x.text));
-      const pool = sci.length ? sci : list;
+      // Prefer scientific and European facts, steer away from US-centric ones
+      const score = (x) => {
+        let s = 0;
+        if (/scien|physic|chemi|biolog|astronom|astronaut|mathemat|spacecraft|space station|NASA|invent|Nobel|telescope|DNA|vaccin|eclipse|comet|planet|satellite|geolog|laborator|universit/i.test(x.text)) s += 2;
+        if (/Europe|Netherlands|Dutch|Holland|Belgi|German|France|French|Paris|Britain|British|United Kingdom|England|London|Scotland|Wales|Irish|Ireland|Italy|Italian|Rome|Roman|Spain|Spanish|Portug|Poland|Polish|Austria|Vienna|Swiss|Switzerland|Sweden|Swedish|Norway|Norwegian|Denmark|Danish|Finland|Finnish|Greece|Greek|Hungar|Czech|Slovak|Amsterdam|Berlin|Madrid|Maastricht|treaty|Vatican|Napoleon/i.test(x.text)) s += 2;
+        if (/United States|American|U\.S\.|Washington|Congress|New York|California|Texas/i.test(x.text)) s -= 2;
+        return s;
+      };
+      const best = Math.max(...list.map(score));
+      const pool = list.filter(x => score(x) === best);
       const pick = pool[(+dd + +mm) % pool.length];
       factCache[key] = { year: pick.year, text: pick.text };
       put(pick.year, pick.text);
@@ -545,6 +566,15 @@ function showDayCard(iso) {
     }
   } else {
     body.insertAdjacentHTML('beforeend', '<p class="daynone">No MSP deadlines or events on this day. Enjoy the quiet.</p>');
+  }
+  const deiDay = (DB.dei && DB.dei.days && DB.dei.days[iso]) || [];
+  const deiMonth = (DB.dei && DB.dei.months && DB.dei.months[iso.slice(0, 7)]) || [];
+  if (deiDay.length || deiMonth.length) {
+    const dei = document.createElement('div'); dei.className = 'dei';
+    dei.innerHTML = '<span class="deilabel">Diversity, Equity and Inclusion</span>' +
+      deiDay.map(l => `<span class="deichip">${l}</span>`).join('') +
+      (deiMonth.length ? `<div class="deimonth">${deiMonth.join(' · ')}</div>` : '');
+    body.appendChild(dei);
   }
   const fact = document.createElement('div'); fact.className = 'fact';
   fact.innerHTML = '<span class="factlabel">On this day in history</span><span class="factsrc">Looking it up...</span>';

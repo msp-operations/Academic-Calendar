@@ -573,6 +573,14 @@ SUMMARY:[MSP GENERAL] FSE - CE Year 3 exams P3 (22-26 Feb)
 DESCRIPTION:Week 8 per the FSE academic calendar\; CE Year 3 runs a 7-week P3 (4 Jan - 26 Feb) | For: FSE exam offices\, Circular Engineering
 END:VEVENT
 BEGIN:VEVENT
+UID:bachelor-open-day-spring-202627@msp-operations
+DTSTAMP:20270227T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:[MSP GENERAL] Bachelor Open Day\, Spring edition
+DESCRIPTION:Sat 27 Feb 2027 per the UM DEI Academic Calendar 26/27 (supersedes the first-Saturday pattern guess) | For: MSP staff on stand duty\, marketing
+END:VEVENT
+BEGIN:VEVENT
 UID:grading-sheets-out-p4-202627@msp-operations
 DTSTAMP:20270301T000000Z
 DTSTART;VALUE=DATE:20270301
@@ -627,6 +635,14 @@ DTSTART;VALUE=DATE:20270318
 DTEND;VALUE=DATE:20270319
 SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P5 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:master-open-day-spring-202627@msp-operations
+DTSTAMP:20270320T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:[MSP GENERAL] Master Open Day\, Spring edition
+DESCRIPTION:Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness) | For: MSP staff on stand duty\, marketing
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-spring-202627@msp-operations

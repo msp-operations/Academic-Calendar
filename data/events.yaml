@@ -1509,19 +1509,19 @@
 - id: bachelor-open-day-spring
   title: Bachelor Open Day, Spring edition
   office: general
-  when: "2027-02-06"
-  staff: support
-  audience: MSP staff on stand duty, marketing
-  notes: "Translated from own calendar 'Bachelor's Open Day, Spring edition 2026', Sat 7 Feb 2026; expect first Saturday of February"
-  status: unconfirmed
-- id: master-open-day-spring
-  title: Master Open Day, Spring edition
-  office: general
   when: "2027-02-27"
   staff: support
   audience: MSP staff on stand duty, marketing
-  notes: "Translated from own calendar 'Master's Open Day, Spring edition 2026', Sat 28 Feb 2026"
-  status: unconfirmed
+  notes: "Sat 27 Feb 2027 per the UM DEI Academic Calendar 26/27 (supersedes the first-Saturday pattern guess)"
+  status: confirmed
+- id: master-open-day-spring
+  title: Master Open Day, Spring edition
+  office: general
+  when: "2027-03-20"
+  staff: support
+  audience: MSP staff on stand duty, marketing
+  notes: "Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness)"
+  status: confirmed
 
 - id: opening-academic-year
   title: UM Opening of the Academic Year

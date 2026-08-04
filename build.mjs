@@ -91,6 +91,17 @@ for (const p of yearData.items) {
   };
 }
 
+// ---------- load DEI layer (optional) ----------
+const dei = { days: {}, months: {} };
+const deiFile = readdirSync(DATA).filter(f => /^dei-.*\.ya?ml$/.test(f)).sort().pop();
+if (deiFile) {
+  const dd = parseFlatYaml(readFileSync(join(DATA, deiFile), 'utf8'));
+  for (const it of dd.items) {
+    if (it.date && it.label) (dei.days[it.date] = dei.days[it.date] || []).push(it.label);
+    else if (it.month && it.label) (dei.months[it.month] = dei.months[it.month] || []).push(it.label);
+  }
+}
+
 // ---------- resolve `when` expressions ----------
 function resolveAnchor(token, periodId) {
   const t = token.replace('{P}', periodId || '');
@@ -157,6 +168,7 @@ const payload = {
     status: p.status,
   })),
   holidays,
+  dei,
   events: instances,
 };
 writeFileSync(join(SITE, 'events.json'), JSON.stringify(payload, null, 2));

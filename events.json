@@ -113,6 +113,570 @@
       "end": "2027-08-27"
     }
   ],
+  "dei": {
+    "days": {
+      "2026-08-01": [
+        "Lughnasadh"
+      ],
+      "2026-08-02": [
+        "Roma Holocaust Memorial Day"
+      ],
+      "2026-08-09": [
+        "International Day of the World's Indigenous Peoples"
+      ],
+      "2026-08-12": [
+        "International Youth Day"
+      ],
+      "2026-08-15": [
+        "Assumption of Mary",
+        "Commemoration WWII Dutch East Indies"
+      ],
+      "2026-08-17": [
+        "Dia di Tula",
+        "Indonesian Independence Day"
+      ],
+      "2026-08-19": [
+        "World Humanitarian Day"
+      ],
+      "2026-08-23": [
+        "International Day for the Remembrance of the Slave Trade and its Abolition"
+      ],
+      "2026-08-25": [
+        "Eid Milad un-Nabi"
+      ],
+      "2026-08-26": [
+        "Women's Equality Day"
+      ],
+      "2026-08-28": [
+        "Raksha Bandhan"
+      ],
+      "2026-09-04": [
+        "World Sexual Health Day",
+        "Krishna Janmashtami"
+      ],
+      "2026-09-08": [
+        "Start of Paryushana Parvarambha"
+      ],
+      "2026-09-10": [
+        "World Suicide Prevention Day"
+      ],
+      "2026-09-11": [
+        "Start of Rosh Hashanah"
+      ],
+      "2026-09-13": [
+        "End of Rosh Hashanah"
+      ],
+      "2026-09-14": [
+        "Liberation of Maastricht 1944"
+      ],
+      "2026-09-15": [
+        "End of Paryushana Parvarambha"
+      ],
+      "2026-09-16": [
+        "Start of Bisexual Awareness Week"
+      ],
+      "2026-09-18": [
+        "International Equal Pay Day"
+      ],
+      "2026-09-20": [
+        "Start of Yom Kippur"
+      ],
+      "2026-09-21": [
+        "End of Yom Kippur",
+        "International Day of Peace"
+      ],
+      "2026-09-23": [
+        "International Day of Sign Languages",
+        "End of Bisexual Awareness Week",
+        "Bi Visibility Day"
+      ],
+      "2026-09-24": [
+        "Start of Dutch Week Against Loneliness"
+      ],
+      "2026-09-25": [
+        "Chuseok",
+        "Start of Sukkot"
+      ],
+      "2026-09-26": [
+        "Start of Pitru Paksha",
+        "World Contraception Day"
+      ],
+      "2026-09-28": [
+        "International Day for Universal Access to Information",
+        "International Safe Abortion Day"
+      ],
+      "2026-09-30": [
+        "End of Dutch Week Against Loneliness"
+      ],
+      "2026-10-01": [
+        "Living Library (UM50)"
+      ],
+      "2026-10-02": [
+        "End of Sukkot"
+      ],
+      "2026-10-03": [
+        "Start of Simchat Torah"
+      ],
+      "2026-10-04": [
+        "End of Simchat Torah"
+      ],
+      "2026-10-05": [
+        "World Teachers' Day"
+      ],
+      "2026-10-06": [
+        "Diversity Day in NL"
+      ],
+      "2026-10-09": [
+        "Paarse Vrijdag"
+      ],
+      "2026-10-10": [
+        "World Mental Health Day",
+        "End of Pitru Paksha",
+        "Living Library (UM50)"
+      ],
+      "2026-10-11": [
+        "Start of Sharad Navratri",
+        "National Coming Out Day"
+      ],
+      "2026-10-15": [
+        "World Students' Day",
+        "Day of the White Cane"
+      ],
+      "2026-10-18": [
+        "World Menopause Day"
+      ],
+      "2026-10-20": [
+        "End of Sharad Navratri"
+      ],
+      "2026-10-26": [
+        "Intersex Awareness Day"
+      ],
+      "2026-10-28": [
+        "International Creole Day"
+      ],
+      "2026-10-31": [
+        "All Hallows' Eve"
+      ],
+      "2026-11-01": [
+        "All Saints' Day"
+      ],
+      "2026-11-02": [
+        "All Souls' Day",
+        "Start of Master Online Open Week"
+      ],
+      "2026-11-08": [
+        "Diwali"
+      ],
+      "2026-11-10": [
+        "Dag van de Mantelzorger (Caregivers Day)"
+      ],
+      "2026-11-11": [
+        "Sint Maarten",
+        "Elfde van de elfde"
+      ],
+      "2026-11-13": [
+        "Start of Transgender Awareness Week",
+        "World Kindness Day"
+      ],
+      "2026-11-16": [
+        "Sint Eustatius Flag Day"
+      ],
+      "2026-11-17": [
+        "International Students' Day"
+      ],
+      "2026-11-19": [
+        "International Men's Day",
+        "End of Transgender Awareness Week",
+        "World Toilet Day"
+      ],
+      "2026-11-20": [
+        "Transgender Day of Remembrance"
+      ],
+      "2026-11-25": [
+        "Srefidensi Dey",
+        "International Day for the Elimination of Violence against Women",
+        "Start of Orange the World"
+      ],
+      "2026-11-29": [
+        "International Day of Solidarity with the Palestinian People"
+      ],
+      "2026-12-01": [
+        "World AIDS Day"
+      ],
+      "2026-12-02": [
+        "International Day for the Abolition of Slavery"
+      ],
+      "2026-12-03": [
+        "International Day of Persons with Disabilities"
+      ],
+      "2026-12-04": [
+        "Saba Day",
+        "Start of Chanukah"
+      ],
+      "2026-12-05": [
+        "Sinterklaas"
+      ],
+      "2026-12-09": [
+        "International Day of Commemoration and Dignity of the Victims of the Crime of Genocide"
+      ],
+      "2026-12-10": [
+        "International Human Rights Day",
+        "End of Orange the World"
+      ],
+      "2026-12-12": [
+        "End of Chanukah"
+      ],
+      "2026-12-13": [
+        "Saint Lucy's Day"
+      ],
+      "2026-12-18": [
+        "International Migrants Day"
+      ],
+      "2026-12-21": [
+        "Yalda",
+        "Winter Solstice"
+      ],
+      "2026-12-25": [
+        "Christmas Day"
+      ],
+      "2026-12-26": [
+        "Start of Kwanzaa",
+        "Boxing Day"
+      ],
+      "2026-12-31": [
+        "New Year's Eve"
+      ],
+      "2027-01-01": [
+        "New Year's Day",
+        "End of Kwanzaa"
+      ],
+      "2027-01-04": [
+        "World Braille Day"
+      ],
+      "2027-01-05": [
+        "Start of Lailat ul-Miraj"
+      ],
+      "2027-01-06": [
+        "Epiphany",
+        "End of Lailat al-Miraj"
+      ],
+      "2027-01-17": [
+        "World Religion Day"
+      ],
+      "2027-01-18": [
+        "Martin Luther King Jr. Day"
+      ],
+      "2027-01-22": [
+        "Mahayana New Year"
+      ],
+      "2027-01-24": [
+        "International Day of Education"
+      ],
+      "2027-01-27": [
+        "Holocaust Remembrance Day"
+      ],
+      "2027-01-29": [
+        "Dies Natalis (UM)"
+      ],
+      "2027-02-06": [
+        "Sami National Day",
+        "Lunar New Year"
+      ],
+      "2027-02-07": [
+        "Start of Carnival"
+      ],
+      "2027-02-08": [
+        "Start of Ramadan"
+      ],
+      "2027-02-09": [
+        "End of Carnival"
+      ],
+      "2027-02-10": [
+        "Ash Wednesday"
+      ],
+      "2027-02-11": [
+        "International Day of Women and Girls in Science"
+      ],
+      "2027-02-12": [
+        "Sexual and Reproductive Health Day"
+      ],
+      "2027-02-14": [
+        "Valentine's Day"
+      ],
+      "2027-02-15": [
+        "Parinirvana Day"
+      ],
+      "2027-02-20": [
+        "World Day of Social Justice"
+      ],
+      "2027-02-21": [
+        "Magha Puja Day",
+        "International Mother Language Day"
+      ],
+      "2027-03-01": [
+        "Zero Discrimination Day",
+        "International Women of Colour Day",
+        "International Wheelchair Day"
+      ],
+      "2027-03-03": [
+        "World Hearing Day"
+      ],
+      "2027-03-06": [
+        "Maha Shivratri",
+        "Laylat al-Qadr"
+      ],
+      "2027-03-08": [
+        "International Women's Day"
+      ],
+      "2027-03-09": [
+        "Eid al-Fitr"
+      ],
+      "2027-03-13": [
+        "Start of Deaf History Month"
+      ],
+      "2027-03-15": [
+        "Start of Neurodiversity Celebration Week"
+      ],
+      "2027-03-16": [
+        "European-wide Action Week Against Racism"
+      ],
+      "2027-03-17": [
+        "St. Patrick's Day"
+      ],
+      "2027-03-18": [
+        "Aruba National Anthem and Flag Day"
+      ],
+      "2027-03-19": [
+        "End of Neurodiversity Celebration Week"
+      ],
+      "2027-03-20": [
+        "Nowruz",
+        "International Day of Happiness"
+      ],
+      "2027-03-21": [
+        "International Day for the Elimination of Racial Discrimination",
+        "World Down Syndrome Day",
+        "Start of UM Racism Detox"
+      ],
+      "2027-03-22": [
+        "Start of Purim",
+        "World Water Day"
+      ],
+      "2027-03-23": [
+        "Holika Dahan"
+      ],
+      "2027-03-24": [
+        "Holi Phagwa",
+        "End of Purim",
+        "International Day for the Right to the Truth concerning Gross Human Rights Violations"
+      ],
+      "2027-03-25": [
+        "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade"
+      ],
+      "2027-03-28": [
+        "Easter Sunday"
+      ],
+      "2027-03-31": [
+        "International Transgender Day of Visibility"
+      ],
+      "2027-04-02": [
+        "World Autism Awareness Day"
+      ],
+      "2027-04-06": [
+        "International Asexuality Day",
+        "Green Dot Day"
+      ],
+      "2027-04-07": [
+        "Start of Chaitra Navratri",
+        "Rwandan Genocide Remembrance Day",
+        "World Health Day"
+      ],
+      "2027-04-08": [
+        "International Romani Day"
+      ],
+      "2027-04-13": [
+        "Vaisakhi"
+      ],
+      "2027-04-14": [
+        "End of Chaitra Navratri"
+      ],
+      "2027-04-15": [
+        "End of Deaf History Month"
+      ],
+      "2027-04-19": [
+        "Mahavir Jayanti",
+        "National Day against Bullying"
+      ],
+      "2027-04-21": [
+        "Start of Passover",
+        "World Creativity and Innovation Day"
+      ],
+      "2027-04-22": [
+        "Earth Day"
+      ],
+      "2027-04-23": [
+        "World Book Day"
+      ],
+      "2027-04-24": [
+        "Armenian Genocide Remembrance Day"
+      ],
+      "2027-04-26": [
+        "Lesbian Visibility Day"
+      ],
+      "2027-04-28": [
+        "World Day for Safety and Health at Work"
+      ],
+      "2027-04-29": [
+        "End of Passover"
+      ],
+      "2027-05-01": [
+        "Beltane",
+        "International Labour Day"
+      ],
+      "2027-05-03": [
+        "World Press Freedom Day"
+      ],
+      "2027-05-04": [
+        "Remembrance Day (Dodenherdenking)"
+      ],
+      "2027-05-06": [
+        "No Diet Day"
+      ],
+      "2027-05-09": [
+        "Europe Day"
+      ],
+      "2027-05-15": [
+        "Start of Eid al-Adha",
+        "International Day of Families"
+      ],
+      "2027-05-16": [
+        "Whit Sunday",
+        "International Day of Living Together in Peace"
+      ],
+      "2027-05-17": [
+        "International Day Against Homo-, Bi- and Transphobia"
+      ],
+      "2027-05-18": [
+        "End of Eid al-Adha"
+      ],
+      "2027-05-19": [
+        "World Inflammatory Bowel Disease Day"
+      ],
+      "2027-05-20": [
+        "Buddha Day",
+        "Global Accessibility Awareness Day"
+      ],
+      "2027-05-21": [
+        "World Day for Cultural Diversity for Dialogue and Development"
+      ],
+      "2027-05-24": [
+        "Pansexual and Panromantic Awareness and Visibility Day"
+      ],
+      "2027-05-27": [
+        "Corpus Christi"
+      ],
+      "2027-05-28": [
+        "Ascension of Baha'u'llah",
+        "World Menstrual Hygiene Day",
+        "International Day of Action for Women's Health"
+      ],
+      "2027-06-01": [
+        "Global Day of Parents",
+        "Start of Week van de Jonge Mantelzorger"
+      ],
+      "2027-06-05": [
+        "Islamic New Year",
+        "Anniversary of the arrival of Indian Labourers to Suriname"
+      ],
+      "2027-06-07": [
+        "End of Week van de Jonge Mantelzorger"
+      ],
+      "2027-06-10": [
+        "Start of Shavuot"
+      ],
+      "2027-06-12": [
+        "End of Shavuot",
+        "World Day Against Child Labour"
+      ],
+      "2027-06-13": [
+        "St Maarten Flag Day"
+      ],
+      "2027-06-14": [
+        "Start of Learning Disability Week"
+      ],
+      "2027-06-18": [
+        "Autistic Pride Day",
+        "International Day for Countering Hate Speech"
+      ],
+      "2027-06-19": [
+        "Pink Saturday (Roze Zaterdag)",
+        "Juneteenth"
+      ],
+      "2027-06-20": [
+        "World Refugee Day",
+        "End of Learning Disability Week"
+      ],
+      "2027-06-21": [
+        "Summer Solstice"
+      ],
+      "2027-06-26": [
+        "Pride Maastricht"
+      ],
+      "2027-06-28": [
+        "Stonewall Riots Anniversary"
+      ],
+      "2027-07-01": [
+        "Keti Koti"
+      ],
+      "2027-07-02": [
+        "Curacao Flag Day"
+      ],
+      "2027-07-11": [
+        "Srebrenica Remembrance Day",
+        "World Population Day"
+      ],
+      "2027-07-14": [
+        "International Non-Binary People's Day"
+      ],
+      "2027-07-18": [
+        "Nelson Mandela International Day"
+      ],
+      "2027-07-22": [
+        "The Seventeenth of Tammuz",
+        "Start of the Three Weeks"
+      ],
+      "2027-07-30": [
+        "International Day of Friendship"
+      ]
+    },
+    "months": {
+      "2026-09": [
+        "Sexual Health Awareness Month"
+      ],
+      "2026-10": [
+        "ADHD Awareness Month",
+        "Black Achievement Month"
+      ],
+      "2027-03": [
+        "Women's History Month"
+      ],
+      "2027-04": [
+        "Autism Acceptance Month",
+        "Sexual Assault Awareness Month"
+      ],
+      "2027-05": [
+        "Mental Health Awareness Month",
+        "Menstrual Health Month"
+      ],
+      "2027-06": [
+        "Pride Month",
+        "International Men's Health Month"
+      ],
+      "2027-07": [
+        "Disability Pride Month"
+      ]
+    }
+  },
   "events": [
     {
       "id": "btr-rts-sept",
@@ -1735,18 +2299,6 @@
       "status": "unconfirmed"
     },
     {
-      "id": "bachelor-open-day-spring",
-      "title": "Bachelor Open Day, Spring edition",
-      "office": "general",
-      "staff": "support",
-      "date": "2027-02-06",
-      "audience": "MSP staff on stand duty, marketing",
-      "notes": "Translated from own calendar 'Bachelor's Open Day, Spring edition 2026', Sat 7 Feb 2026; expect first Saturday of February",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "bsa-halfway-archive",
       "title": "BSA halfway letters archived (Corsa D20A + Outlook)",
       "office": "esd",
@@ -1855,16 +2407,16 @@
       "status": "unconfirmed"
     },
     {
-      "id": "master-open-day-spring",
-      "title": "Master Open Day, Spring edition",
+      "id": "bachelor-open-day-spring",
+      "title": "Bachelor Open Day, Spring edition",
       "office": "general",
       "staff": "support",
       "date": "2027-02-27",
       "audience": "MSP staff on stand duty, marketing",
-      "notes": "Translated from own calendar 'Master's Open Day, Spring edition 2026', Sat 28 Feb 2026",
+      "notes": "Sat 27 Feb 2027 per the UM DEI Academic Calendar 26/27 (supersedes the first-Saturday pattern guess)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "boe-grad-audit-notify-mar",
@@ -2042,6 +2594,18 @@
       "date": "2027-03-18",
       "audience": "students, coordinators, tutors",
       "notes": "P5",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "master-open-day-spring",
+      "title": "Master Open Day, Spring edition",
+      "office": "general",
+      "staff": "support",
+      "date": "2027-03-20",
+      "audience": "MSP staff on stand duty, marketing",
+      "notes": "Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness)",
       "link": "",
       "submit": false,
       "status": "confirmed"

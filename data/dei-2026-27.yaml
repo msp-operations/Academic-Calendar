@@ -1,0 +1,482 @@
+# UM DEI Academic Calendar 26/27 layer - transcribed 4 Aug 2026 from the official
+# "Diversity, Equity, Inclusion +" wall calendar PDF (UM Diversity Office).
+# Shown in the day detail cards only (no dots on the grids). Two shapes:
+#   - date: YYYY-MM-DD / label: ...   -> listed on that day's card
+#   - month: YYYY-MM / label: ...     -> month-long observance, shown on every card that month
+# Religious observance dates follow the PDF's placement for this specific year.
+
+# ---- August 2026 ----
+- date: 2026-08-01
+  label: Lughnasadh
+- date: 2026-08-02
+  label: Roma Holocaust Memorial Day
+- date: 2026-08-09
+  label: International Day of the World's Indigenous Peoples
+- date: 2026-08-12
+  label: International Youth Day
+- date: 2026-08-15
+  label: Assumption of Mary
+- date: 2026-08-15
+  label: Commemoration WWII Dutch East Indies
+- date: 2026-08-17
+  label: Dia di Tula
+- date: 2026-08-17
+  label: Indonesian Independence Day
+- date: 2026-08-19
+  label: World Humanitarian Day
+- date: 2026-08-23
+  label: International Day for the Remembrance of the Slave Trade and its Abolition
+- date: 2026-08-25
+  label: Eid Milad un-Nabi
+- date: 2026-08-26
+  label: Women's Equality Day
+- date: 2026-08-28
+  label: Raksha Bandhan
+
+# ---- September 2026 ----
+- month: 2026-09
+  label: Sexual Health Awareness Month
+- date: 2026-09-04
+  label: World Sexual Health Day
+- date: 2026-09-04
+  label: Krishna Janmashtami
+- date: 2026-09-08
+  label: Start of Paryushana Parvarambha
+- date: 2026-09-10
+  label: World Suicide Prevention Day
+- date: 2026-09-11
+  label: Start of Rosh Hashanah
+- date: 2026-09-13
+  label: End of Rosh Hashanah
+- date: 2026-09-14
+  label: Liberation of Maastricht 1944
+- date: 2026-09-15
+  label: End of Paryushana Parvarambha
+- date: 2026-09-16
+  label: Start of Bisexual Awareness Week
+- date: 2026-09-18
+  label: International Equal Pay Day
+- date: 2026-09-20
+  label: Start of Yom Kippur
+- date: 2026-09-21
+  label: End of Yom Kippur
+- date: 2026-09-21
+  label: International Day of Peace
+- date: 2026-09-23
+  label: International Day of Sign Languages
+- date: 2026-09-23
+  label: End of Bisexual Awareness Week
+- date: 2026-09-23
+  label: Bi Visibility Day
+- date: 2026-09-24
+  label: Start of Dutch Week Against Loneliness
+- date: 2026-09-25
+  label: Chuseok
+- date: 2026-09-25
+  label: Start of Sukkot
+- date: 2026-09-26
+  label: Start of Pitru Paksha
+- date: 2026-09-26
+  label: World Contraception Day
+- date: 2026-09-28
+  label: International Day for Universal Access to Information
+- date: 2026-09-28
+  label: International Safe Abortion Day
+- date: 2026-09-30
+  label: End of Dutch Week Against Loneliness
+
+# ---- October 2026 ----
+- month: 2026-10
+  label: ADHD Awareness Month
+- month: 2026-10
+  label: Black Achievement Month
+- date: 2026-10-01
+  label: Living Library (UM50)
+- date: 2026-10-02
+  label: End of Sukkot
+- date: 2026-10-03
+  label: Start of Simchat Torah
+- date: 2026-10-04
+  label: End of Simchat Torah
+- date: 2026-10-05
+  label: World Teachers' Day
+- date: 2026-10-06
+  label: Diversity Day in NL
+- date: 2026-10-09
+  label: Paarse Vrijdag
+- date: 2026-10-10
+  label: World Mental Health Day
+- date: 2026-10-10
+  label: End of Pitru Paksha
+- date: 2026-10-10
+  label: Living Library (UM50)
+- date: 2026-10-11
+  label: Start of Sharad Navratri
+- date: 2026-10-11
+  label: National Coming Out Day
+- date: 2026-10-15
+  label: World Students' Day
+- date: 2026-10-15
+  label: Day of the White Cane
+- date: 2026-10-18
+  label: World Menopause Day
+- date: 2026-10-20
+  label: End of Sharad Navratri
+- date: 2026-10-26
+  label: Intersex Awareness Day
+- date: 2026-10-28
+  label: International Creole Day
+- date: 2026-10-31
+  label: All Hallows' Eve
+
+# ---- November 2026 ----
+- date: 2026-11-01
+  label: All Saints' Day
+- date: 2026-11-02
+  label: All Souls' Day
+- date: 2026-11-02
+  label: Start of Master Online Open Week
+- date: 2026-11-08
+  label: Diwali
+- date: 2026-11-10
+  label: Dag van de Mantelzorger (Caregivers Day)
+- date: 2026-11-11
+  label: Sint Maarten
+- date: 2026-11-11
+  label: Elfde van de elfde
+- date: 2026-11-13
+  label: Start of Transgender Awareness Week
+- date: 2026-11-13
+  label: World Kindness Day
+- date: 2026-11-16
+  label: Sint Eustatius Flag Day
+- date: 2026-11-17
+  label: International Students' Day
+- date: 2026-11-19
+  label: International Men's Day
+- date: 2026-11-19
+  label: End of Transgender Awareness Week
+- date: 2026-11-19
+  label: World Toilet Day
+- date: 2026-11-20
+  label: Transgender Day of Remembrance
+- date: 2026-11-25
+  label: Srefidensi Dey
+- date: 2026-11-25
+  label: International Day for the Elimination of Violence against Women
+- date: 2026-11-25
+  label: Start of Orange the World
+- date: 2026-11-29
+  label: International Day of Solidarity with the Palestinian People
+
+# ---- December 2026 ----
+- date: 2026-12-01
+  label: World AIDS Day
+- date: 2026-12-02
+  label: International Day for the Abolition of Slavery
+- date: 2026-12-03
+  label: International Day of Persons with Disabilities
+- date: 2026-12-04
+  label: Saba Day
+- date: 2026-12-04
+  label: Start of Chanukah
+- date: 2026-12-05
+  label: Sinterklaas
+- date: 2026-12-09
+  label: International Day of Commemoration and Dignity of the Victims of the Crime of Genocide
+- date: 2026-12-10
+  label: International Human Rights Day
+- date: 2026-12-10
+  label: End of Orange the World
+- date: 2026-12-12
+  label: End of Chanukah
+- date: 2026-12-13
+  label: Saint Lucy's Day
+- date: 2026-12-18
+  label: International Migrants Day
+- date: 2026-12-21
+  label: Yalda
+- date: 2026-12-21
+  label: Winter Solstice
+- date: 2026-12-25
+  label: Christmas Day
+- date: 2026-12-26
+  label: Start of Kwanzaa
+- date: 2026-12-26
+  label: Boxing Day
+- date: 2026-12-31
+  label: New Year's Eve
+
+# ---- January 2027 ----
+- date: 2027-01-01
+  label: New Year's Day
+- date: 2027-01-01
+  label: End of Kwanzaa
+- date: 2027-01-04
+  label: World Braille Day
+- date: 2027-01-05
+  label: Start of Lailat ul-Miraj
+- date: 2027-01-06
+  label: Epiphany
+- date: 2027-01-06
+  label: End of Lailat al-Miraj
+- date: 2027-01-17
+  label: World Religion Day
+- date: 2027-01-18
+  label: Martin Luther King Jr. Day
+- date: 2027-01-22
+  label: Mahayana New Year
+- date: 2027-01-24
+  label: International Day of Education
+- date: 2027-01-27
+  label: Holocaust Remembrance Day
+- date: 2027-01-29
+  label: Dies Natalis (UM)
+
+# ---- February 2027 ----
+- date: 2027-02-06
+  label: Sami National Day
+- date: 2027-02-06
+  label: Lunar New Year
+- date: 2027-02-07
+  label: Start of Carnival
+- date: 2027-02-08
+  label: Start of Ramadan
+- date: 2027-02-09
+  label: End of Carnival
+- date: 2027-02-10
+  label: Ash Wednesday
+- date: 2027-02-11
+  label: International Day of Women and Girls in Science
+- date: 2027-02-12
+  label: Sexual and Reproductive Health Day
+- date: 2027-02-14
+  label: Valentine's Day
+- date: 2027-02-15
+  label: Parinirvana Day
+- date: 2027-02-20
+  label: World Day of Social Justice
+- date: 2027-02-21
+  label: Magha Puja Day
+- date: 2027-02-21
+  label: International Mother Language Day
+
+# ---- March 2027 ----
+- month: 2027-03
+  label: Women's History Month
+- date: 2027-03-01
+  label: Zero Discrimination Day
+- date: 2027-03-01
+  label: International Women of Colour Day
+- date: 2027-03-01
+  label: International Wheelchair Day
+- date: 2027-03-03
+  label: World Hearing Day
+- date: 2027-03-06
+  label: Maha Shivratri
+- date: 2027-03-06
+  label: Laylat al-Qadr
+- date: 2027-03-08
+  label: International Women's Day
+- date: 2027-03-09
+  label: Eid al-Fitr
+- date: 2027-03-13
+  label: Start of Deaf History Month
+- date: 2027-03-15
+  label: Start of Neurodiversity Celebration Week
+- date: 2027-03-16
+  label: European-wide Action Week Against Racism
+- date: 2027-03-17
+  label: St. Patrick's Day
+- date: 2027-03-18
+  label: Aruba National Anthem and Flag Day
+- date: 2027-03-19
+  label: End of Neurodiversity Celebration Week
+- date: 2027-03-20
+  label: Nowruz
+- date: 2027-03-20
+  label: International Day of Happiness
+- date: 2027-03-21
+  label: International Day for the Elimination of Racial Discrimination
+- date: 2027-03-21
+  label: World Down Syndrome Day
+- date: 2027-03-21
+  label: Start of UM Racism Detox
+- date: 2027-03-22
+  label: Start of Purim
+- date: 2027-03-22
+  label: World Water Day
+- date: 2027-03-23
+  label: Holika Dahan
+- date: 2027-03-24
+  label: Holi Phagwa
+- date: 2027-03-24
+  label: End of Purim
+- date: 2027-03-24
+  label: International Day for the Right to the Truth concerning Gross Human Rights Violations
+- date: 2027-03-25
+  label: International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade
+- date: 2027-03-28
+  label: Easter Sunday
+- date: 2027-03-31
+  label: International Transgender Day of Visibility
+
+# ---- April 2027 ----
+- month: 2027-04
+  label: Autism Acceptance Month
+- month: 2027-04
+  label: Sexual Assault Awareness Month
+- date: 2027-04-02
+  label: World Autism Awareness Day
+- date: 2027-04-06
+  label: International Asexuality Day
+- date: 2027-04-06
+  label: Green Dot Day
+- date: 2027-04-07
+  label: Start of Chaitra Navratri
+- date: 2027-04-07
+  label: Rwandan Genocide Remembrance Day
+- date: 2027-04-07
+  label: World Health Day
+- date: 2027-04-08
+  label: International Romani Day
+- date: 2027-04-13
+  label: Vaisakhi
+- date: 2027-04-14
+  label: End of Chaitra Navratri
+- date: 2027-04-15
+  label: End of Deaf History Month
+- date: 2027-04-19
+  label: Mahavir Jayanti
+- date: 2027-04-19
+  label: National Day against Bullying
+- date: 2027-04-21
+  label: Start of Passover
+- date: 2027-04-21
+  label: World Creativity and Innovation Day
+- date: 2027-04-22
+  label: Earth Day
+- date: 2027-04-23
+  label: World Book Day
+- date: 2027-04-24
+  label: Armenian Genocide Remembrance Day
+- date: 2027-04-26
+  label: Lesbian Visibility Day
+- date: 2027-04-28
+  label: World Day for Safety and Health at Work
+- date: 2027-04-29
+  label: End of Passover
+
+# ---- May 2027 ----
+- month: 2027-05
+  label: Mental Health Awareness Month
+- month: 2027-05
+  label: Menstrual Health Month
+- date: 2027-05-01
+  label: Beltane
+- date: 2027-05-01
+  label: International Labour Day
+- date: 2027-05-03
+  label: World Press Freedom Day
+- date: 2027-05-04
+  label: Remembrance Day (Dodenherdenking)
+- date: 2027-05-06
+  label: No Diet Day
+- date: 2027-05-09
+  label: Europe Day
+- date: 2027-05-15
+  label: Start of Eid al-Adha
+- date: 2027-05-15
+  label: International Day of Families
+- date: 2027-05-16
+  label: Whit Sunday
+- date: 2027-05-16
+  label: International Day of Living Together in Peace
+- date: 2027-05-17
+  label: International Day Against Homo-, Bi- and Transphobia
+- date: 2027-05-18
+  label: End of Eid al-Adha
+- date: 2027-05-19
+  label: World Inflammatory Bowel Disease Day
+- date: 2027-05-20
+  label: Buddha Day
+- date: 2027-05-20
+  label: Global Accessibility Awareness Day
+- date: 2027-05-21
+  label: World Day for Cultural Diversity for Dialogue and Development
+- date: 2027-05-24
+  label: Pansexual and Panromantic Awareness and Visibility Day
+- date: 2027-05-27
+  label: Corpus Christi
+- date: 2027-05-28
+  label: Ascension of Baha'u'llah
+- date: 2027-05-28
+  label: World Menstrual Hygiene Day
+- date: 2027-05-28
+  label: International Day of Action for Women's Health
+
+# ---- June 2027 ----
+- month: 2027-06
+  label: Pride Month
+- month: 2027-06
+  label: International Men's Health Month
+- date: 2027-06-01
+  label: Global Day of Parents
+- date: 2027-06-01
+  label: Start of Week van de Jonge Mantelzorger
+- date: 2027-06-05
+  label: Islamic New Year
+- date: 2027-06-05
+  label: Anniversary of the arrival of Indian Labourers to Suriname
+- date: 2027-06-07
+  label: End of Week van de Jonge Mantelzorger
+- date: 2027-06-10
+  label: Start of Shavuot
+- date: 2027-06-12
+  label: End of Shavuot
+- date: 2027-06-12
+  label: World Day Against Child Labour
+- date: 2027-06-13
+  label: St Maarten Flag Day
+- date: 2027-06-14
+  label: Start of Learning Disability Week
+- date: 2027-06-18
+  label: Autistic Pride Day
+- date: 2027-06-18
+  label: International Day for Countering Hate Speech
+- date: 2027-06-19
+  label: Pink Saturday (Roze Zaterdag)
+- date: 2027-06-19
+  label: Juneteenth
+- date: 2027-06-20
+  label: World Refugee Day
+- date: 2027-06-20
+  label: End of Learning Disability Week
+- date: 2027-06-21
+  label: Summer Solstice
+- date: 2027-06-26
+  label: Pride Maastricht
+- date: 2027-06-28
+  label: Stonewall Riots Anniversary
+
+# ---- July 2027 ----
+- month: 2027-07
+  label: Disability Pride Month
+- date: 2027-07-01
+  label: Keti Koti
+- date: 2027-07-02
+  label: Curacao Flag Day
+- date: 2027-07-11
+  label: Srebrenica Remembrance Day
+- date: 2027-07-11
+  label: World Population Day
+- date: 2027-07-14
+  label: International Non-Binary People's Day
+- date: 2027-07-18
+  label: Nelson Mandela International Day
+- date: 2027-07-22
+  label: The Seventeenth of Tammuz
+- date: 2027-07-22
+  label: Start of the Three Weeks
+- date: 2027-07-30
+  label: International Day of Friendship
