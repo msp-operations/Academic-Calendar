@@ -134,6 +134,28 @@
   .ydot.unconfirmed { background: transparent; border: 2px solid var(--c, var(--general)); }
   .ydot:hover { transform: scale(1.4); }
   .yearnote { font-size: .78rem; color: var(--muted); margin-top: 12px; }
+  .wk { position: absolute; top: 2px; right: 3px; font-size: .54rem; font-weight: 800; color: var(--accent); }
+  .day .wk { font-size: .6rem; top: 4px; right: 5px; }
+
+  /* Coming-up strip */
+  .upwrap { margin-top: 16px; }
+  .uplabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent); margin-bottom: 6px; }
+  .uprow { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; }
+  .upcard { min-width: 190px; flex: 0 0 auto; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
+    border-radius: 9px; padding: 8px 12px; cursor: pointer; box-shadow: var(--shadow-sm); transition: transform .12s ease, box-shadow .12s ease; }
+  .upcard:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+  .upcard.unconfirmed { border-style: dashed; border-left-style: solid; }
+  .upcard .upwhen { display: block; font-size: .7rem; color: var(--muted); font-weight: 600; }
+  .upcard .upwhen b { color: var(--accent); }
+  .upcard .uptitle { display: block; font-size: .8rem; font-weight: 600; margin-top: 2px; }
+
+  /* Subscribe options card */
+  .subrow { display: block; width: 100%; text-align: left; border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 14px;
+    margin-bottom: 8px; cursor: pointer; background: var(--paper); text-decoration: none; color: var(--ink);
+    font-family: inherit; font-size: .88rem; font-weight: 600; transition: all .15s ease; }
+  .subrow:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+  .subrow small { display: block; color: var(--muted); font-weight: 400; font-size: .74rem; margin-top: 1px; }
+  .subrow.primary { border-color: var(--accent); background: #f0faff; }
 
   /* ---------- Month grid ---------- */
   .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
@@ -224,7 +246,7 @@
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    .toolbar, footer, .subscribe, .yearnote, body::after { display: none !important; }
+    .toolbar, footer, .subscribe, .yearnote, .upwrap, body::after { display: none !important; }
     header, .accentline { box-shadow: none; }
     .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
     body { background: #fff; }
@@ -258,8 +280,9 @@
     </div>
     <div>
       <h4>Subscribe in Outlook</h4>
-      <p>Outlook &rarr; Add calendar &rarr; Subscribe from web &rarr; paste a feed URL. Click a feed
-      below to copy its URL. Updates appear in your calendar automatically, no re-downloading.</p>
+      <p>Click a feed and pick how to subscribe: one click for UM Outlook (Microsoft 365), webcal
+      for Apple or desktop clients, or copy the URL. Updates appear in your calendar automatically,
+      no re-downloading.</p>
       <div class="feedlist">
         <button class="feed" data-feed="msp-all.ics">All offices</button>
         <button class="feed" data-feed="msp-academic-staff.ics">Academic staff</button>
@@ -283,15 +306,85 @@ const OFFICES = {
   exams: 'Exams', btr: 'BTR', boe: 'BoE', scheduling: 'Scheduling',
   esd: 'ESD', alumni: 'Alumni', general: 'General',
 };
-const state = { on: new Set(Object.keys(OFFICES)), view: 'year', role: 'all' };
 const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
 const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
+const FEEDS = {
+  'msp-all.ics': 'All offices', 'msp-academic-staff.ics': 'Academic staff', 'msp-support-staff.ics': 'Support staff',
+  'msp-exams.ics': 'Exams', 'msp-btr.ics': 'BTR', 'msp-boe.ics': 'BoE', 'msp-scheduling.ics': 'Scheduling',
+  'msp-esd.ics': 'ESD', 'msp-alumni.ics': 'Alumni', 'msp-general.ics': 'General',
+};
 let DB = null;
+
+// State: URL params win, then localStorage, then defaults. Kept in sync both ways
+// so filtered views are shareable links and returning visitors keep their selection.
+const _params = new URLSearchParams(location.search);
+const _saved = (() => { try { return JSON.parse(localStorage.getItem('mspcal') || '{}'); } catch (_) { return {}; } })();
+const _offParam = _params.get('office');
+const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k])
+  : (Array.isArray(_saved.on) ? _saved.on.filter(k => OFFICES[k]) : []);
+const _pick = (v, allowed, fb) => allowed.includes(v) ? v : fb;
+const state = {
+  on: new Set(_initOn.length ? _initOn : Object.keys(OFFICES)),
+  view: _pick(_params.get('view'), ['year', 'grid', 'timeline'], _pick(_saved.view, ['year', 'grid', 'timeline'], 'year')),
+  role: _pick(_params.get('role'), ['all', 'academic', 'support'], _pick(_saved.role, ['all', 'academic', 'support'], 'all')),
+};
+function syncState() {
+  try { localStorage.setItem('mspcal', JSON.stringify({ on: [...state.on], view: state.view, role: state.role })); } catch (_) {}
+  const p = new URLSearchParams();
+  if (state.on.size < Object.keys(OFFICES).length) p.set('office', [...state.on].join(','));
+  if (state.role !== 'all') p.set('role', state.role);
+  if (state.view !== 'year') p.set('view', state.view);
+  const qs = p.toString();
+  try { history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '')); } catch (_) {}
+}
 
 const fmt = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
 const dow = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'short' });
 const monthKey = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
 const todayIso = new Date().toISOString().slice(0, 10);
+function isoWeek(iso) {
+  const d = new Date(iso + 'T12:00:00Z');
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7) + 3);
+  const firstThu = new Date(Date.UTC(d.getUTCFullYear(), 0, 4, 12));
+  firstThu.setUTCDate(firstThu.getUTCDate() - ((firstThu.getUTCDay() + 6) % 7) + 3);
+  return 1 + Math.round((d - firstThu) / 604800000);
+}
+function scrollToToday() {
+  const el = document.querySelector('.yday.today, .day.today, .today-rule');
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function showSubscribeCard(feed) {
+  const label = FEEDS[feed] || feed;
+  const httpsUrl = new URL('feeds/' + feed, location.href).href;
+  if (!location.protocol.startsWith('http')) { location.href = 'feeds/' + feed; return; }
+  const webcal = httpsUrl.replace(/^https?:/, 'webcal:');
+  const old = document.querySelector('.overlay'); if (old) old.remove();
+  const overlay = document.createElement('div'); overlay.className = 'overlay';
+  const card = document.createElement('div'); card.className = 'card';
+  card.style.setProperty('--c', 'var(--accent)');
+  card.innerHTML =
+    `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
+    `<div class="when">Subscribe · updates arrive automatically</div><h3>MSP deadlines: ${label}</h3></div>` +
+    `<div class="cardbody">` +
+    `<a class="subrow primary" href="https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(webcal)}&name=${encodeURIComponent('MSP ' + label)}" target="_blank" rel="noopener">` +
+    `UM Outlook (Microsoft 365)<small>One click: opens Outlook on the web with this calendar ready to add</small></a>` +
+    `<a class="subrow" href="${webcal}">Apple Calendar / Outlook desktop<small>Opens your default calendar app via webcal</small></a>` +
+    `<a class="subrow" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">` +
+    `Google Calendar<small>For private devices</small></a>` +
+    `<button class="subrow" id="subcopy">Copy the feed URL<small>Paste it into any calendar app's subscribe-from-web option</small></button>` +
+    `</div>`;
+  overlay.appendChild(card);
+  overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
+  card.querySelector('.close').onclick = () => overlay.remove();
+  card.querySelector('#subcopy').onclick = (ev) => {
+    const btn = ev.currentTarget;
+    navigator.clipboard.writeText(httpsUrl).then(() => {
+      btn.firstChild.textContent = 'Copied!';
+      setTimeout(() => { btn.firstChild.textContent = 'Copy the feed URL'; }, 1400);
+    }).catch(() => { prompt('Feed URL:', httpsUrl); });
+  };
+  document.body.appendChild(overlay);
+}
 
 function init() {
   const note = document.getElementById('footnote');
@@ -320,9 +413,9 @@ function init() {
   const bar = document.getElementById('toolbar');
   for (const [key, label] of Object.entries(OFFICES)) {
     const c = document.createElement('button');
-    c.className = 'chip on'; c.style.setProperty('--c', `var(--${key})`);
+    c.className = 'chip' + (state.on.has(key) ? ' on' : ''); c.style.setProperty('--c', `var(--${key})`);
     c.innerHTML = `<span class="dot"></span>${label}`;
-    c.onclick = () => { state.on.has(key) ? state.on.delete(key) : state.on.add(key); c.classList.toggle('on'); render(); };
+    c.onclick = () => { state.on.has(key) ? state.on.delete(key) : state.on.add(key); c.classList.toggle('on'); syncState(); render(); };
     bar.appendChild(c);
   }
   const roleToggle = document.createElement('div'); roleToggle.className = 'viewtoggle';
@@ -333,13 +426,19 @@ function init() {
     b.onclick = () => {
       state.role = id;
       roleToggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.role === id));
-      render();
+      syncState(); render();
     };
     roleToggle.appendChild(b);
   }
   bar.appendChild(roleToggle);
 
   const spacer = document.createElement('div'); spacer.className = 'spacer'; bar.appendChild(spacer);
+
+  const todayBtn = document.createElement('button');
+  todayBtn.className = 'chip'; todayBtn.textContent = 'Today';
+  todayBtn.title = 'Jump to today';
+  todayBtn.onclick = scrollToToday;
+  bar.appendChild(todayBtn);
 
   const toggle = document.createElement('div'); toggle.className = 'viewtoggle';
   for (const [id, label] of [['year', 'Year planner'], ['grid', 'Month grid'], ['timeline', 'Timeline']]) {
@@ -349,7 +448,7 @@ function init() {
     b.onclick = () => {
       state.view = id;
       toggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.view === id));
-      render();
+      syncState(); render();
     };
     toggle.appendChild(b);
   }
@@ -358,22 +457,20 @@ function init() {
   const sub = document.createElement('a');
   sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics';
   sub.innerHTML = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 1v2H2.5A1.5 1.5 0 0 0 1 4.5v9A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 13.5 3H12V1h-1.5v2h-5V1H4Zm-1.5 5h11v7.5h-11V6Z"/></svg>Subscribe';
+  sub.onclick = (ev) => { ev.preventDefault(); showSubscribeCard('msp-all.ics'); };
   bar.appendChild(sub);
 
   for (const b of document.querySelectorAll('.feed')) {
-    b.onclick = () => {
-      const url = new URL('feeds/' + b.dataset.feed, location.href).href;
-      const orig = b.textContent;
-      if (navigator.clipboard && location.protocol.startsWith('http')) {
-        navigator.clipboard.writeText(url).then(() => {
-          b.textContent = 'Copied!'; b.classList.add('done');
-          setTimeout(() => { b.textContent = orig; b.classList.remove('done'); }, 1400);
-        }).catch(() => { location.href = url; });
-      } else { location.href = url; }
-    };
+    b.onclick = () => showSubscribeCard(b.dataset.feed);
   }
 
+  syncState();
   render();
+
+  // First visit lands at the top of the year; bring today into view when it is far down
+  const firstDate = DB.events.length ? DB.events[0].date : todayIso;
+  const monthsIn = (+todayIso.slice(0, 4) - +firstDate.slice(0, 4)) * 12 + (+todayIso.slice(5, 7) - +firstDate.slice(5, 7));
+  if (state.view === 'year' && monthsIn >= 3) setTimeout(scrollToToday, 250);
 }
 
 function render() {
@@ -382,9 +479,31 @@ function render() {
   const events = DB.events.filter(e => state.on.has(e.office) &&
     (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff));
   if (!events.length) { main.innerHTML = '<p class="empty">No events for this selection.</p>'; return; }
+  renderUpcoming(main, events);
   if (state.view === 'grid') renderGrid(main, events);
   else if (state.view === 'year') renderYear(main, events);
   else renderTimeline(main, events);
+}
+
+function renderUpcoming(main, events) {
+  const up = events.filter(e => e.date >= todayIso).slice(0, 5);
+  if (!up.length) return;
+  const dayDiff = (iso) => Math.round((new Date(iso + 'T12:00:00') - new Date(todayIso + 'T12:00:00')) / 86400000);
+  const label = (n) => n === 0 ? 'today' : n === 1 ? 'tomorrow' : 'in ' + n + ' days';
+  const wrap = document.createElement('div'); wrap.className = 'upwrap';
+  wrap.innerHTML = '<span class="uplabel">Coming up</span>';
+  const row = document.createElement('div'); row.className = 'uprow';
+  for (const e of up) {
+    const c = document.createElement('div');
+    c.className = 'upcard' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
+    c.style.setProperty('--c', `var(--${e.office})`);
+    c.innerHTML = `<span class="upwhen">${dow(e.date)} ${fmt(e.date)} · <b>${label(dayDiff(e.date))}</b></span>` +
+      `<span class="uptitle">${e.title}</span>`;
+    c.onclick = () => showCard(e);
+    row.appendChild(c);
+  }
+  wrap.appendChild(row);
+  main.appendChild(wrap);
 }
 
 const isExamDay = (iso) => DB.periods.some(p => p.exam_start && iso >= p.exam_start && iso <= p.exam_end);
@@ -421,7 +540,8 @@ function renderGrid(main, events) {
       cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) +
         ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
       const holG = holidayOf(iso); if (holG) cell.title = holG;
-      cell.innerHTML = `<div class="num">${d}</div>`;
+      cell.innerHTML = `<div class="num">${d}</div>` +
+        (dow === 0 ? `<span class="wk" title="ISO week ${isoWeek(iso)}">wk ${isoWeek(iso)}</span>` : '');
       for (const e of (byDay[iso] || [])) {
         const pill = document.createElement('span');
         pill.className = 'pill' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
@@ -481,6 +601,7 @@ function renderYear(main, events) {
         ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
       const hol = holidayOf(iso); if (hol) cell.title = hol;
       cell.innerHTML = `<div class="yhead">${DOWS[dowIdx]} <b>${d}</b></div>` +
+        (dowIdx === 1 ? `<span class="wk" title="ISO week ${isoWeek(iso)}">${isoWeek(iso)}</span>` : '') +
         (marks[iso] ? `<span class="pchip">${marks[iso]} &raquo;</span>` : '');
       cell.onclick = () => showDayCard(iso);
       const dots = document.createElement('div'); dots.className = 'ydots';
