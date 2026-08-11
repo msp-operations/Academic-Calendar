@@ -213,6 +213,14 @@ SUMMARY:[MSP BTR] CORSA cloud migration window (23-28 Sep\; backup 7-12 Oct)
 DESCRIPTION:Per Collent IT notice 3 Aug 2026. Primary window ends on the Sept proposal deadline day (28 Sep\, ~61 students uploading)\; backup window sits inside proposal grading. Uploads keep working\; recently uploaded files may be unpullable during the window | For: BTR office\, ESD\, Exams (Corsa users)
 END:VEVENT
 BEGIN:VEVENT
+UID:switch-p2-202627@msp-operations
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:[MSP SCHEDULING] Course switch deadline
+DESCRIPTION:P2\, Fri 25 Sep 17:00. NB the official switch/withdraw PDF says 'Friday September 29' but 29 Sep 2026 is a Tuesday - the LAS deadline ladder (Kessels\, Feb 2026) and the Friday rule give Fri 25 Sep. Fix the PDF/intranet form | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-proposal-sept-202627@msp-operations
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20260928
@@ -227,14 +235,6 @@ DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
 DESCRIPTION:P1. Delivery to PHS Tue 6 Oct. NB SOP 15 says 3 weeks before exam week\, manual says 2 - conflict logged | For: exams office
-END:VEVENT
-BEGIN:VEVENT
-UID:switch-p2-202627@msp-operations
-DTSTAMP:20260929T000000Z
-DTSTART;VALUE=DATE:20260929
-DTEND;VALUE=DATE:20260930
-SUMMARY:[MSP SCHEDULING] Course switch deadline
-DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:boe-grad-audit-notify-oct-202627@msp-operations
@@ -362,7 +362,7 @@ DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[MSP SCHEDULING] Frame schedules Spring semester ready (firm deadline)
-DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts | For: Gerco\, Chris Pawley\, Scheduling\, IPO
+DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct\, ~10 days ahead | For: Gerco\, Chris Pawley\, Scheduling\, IPO
 END:VEVENT
 BEGIN:VEVENT
 UID:advising-period-spring-start-202627@msp-operations
@@ -882,7 +882,7 @@ DTSTAMP:20270426T000000Z
 DTSTART;VALUE=DATE:20270426
 DTEND;VALUE=DATE:20270427
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P5. Anja's ladder says Tue 27 Apr 12:00\, which is King's Day (UM closed) - 26 Apr is the safe working-day reading. Settle when MSP files its ladder deviations | For: exams office
+DESCRIPTION:P5. InterUM T-3wk convention. The SSC triple deadline is Wed 28 Apr 12:00 per the updated ladder (10 Aug copy\; the earlier King's Day 27-Apr entry was corrected) | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p5-202627@msp-operations

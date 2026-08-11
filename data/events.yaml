@@ -288,7 +288,7 @@
   when: "2027-04-26"
   staff: support
   audience: exams office
-  notes: "P5. Anja's ladder says Tue 27 Apr 12:00, which is King's Day (UM closed) - 26 Apr is the safe working-day reading. Settle when MSP files its ladder deviations"
+  notes: "P5. InterUM T-3wk convention. The SSC triple deadline is Wed 28 Apr 12:00 per the updated ladder (10 Aug copy; the earlier King's Day 27-Apr entry was corrected)"
   status: confirmed
 - id: invigilators-resits
   title: Invigilator request deadline, P5 resits (InterUM)
@@ -548,10 +548,10 @@
 - id: switch-p2
   title: Course switch deadline
   office: scheduling
-  when: "2026-09-29"
+  when: "2026-09-25"
   staff: support
   audience: students, Academic Advising, ESD
-  notes: "P2"
+  notes: "P2, Fri 25 Sep 17:00. NB the official switch/withdraw PDF says 'Friday September 29' but 29 Sep 2026 is a Tuesday - the LAS deadline ladder (Kessels, Feb 2026) and the Friday rule give Fri 25 Sep. Fix the PDF/intranet form"
   status: confirmed
 - id: switch-p4
   title: Course switch deadline
@@ -1105,7 +1105,7 @@
   when: "2026-11-01"
   staff: both
   audience: Gerco, Chris Pawley, Scheduling, IPO
-  notes: "Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts"
+  notes: "Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct, ~10 days ahead"
   status: confirmed
 
 - id: advising-period-spring-start
@@ -2149,20 +2149,152 @@
 # ---------- Scheduling data-collection rules (procedure-doc rules, dates pending Severine) ----------
 
 - id: sched-planning-forms-spring
-  title: Course/skills planning forms out to coordinators (P4/P5)
+  title: Course/skills planning forms out to coordinators (P4/P5) + student numbers
   office: scheduling
-  when: "2026-11-16"
+  when: "2026-11-19"
   staff: academic
   audience: course coordinators, Scheduling (Severine)
-  notes: "Rule: Qualtrics planning form + Word course-structure form go out right after the registration round (week ends 13 Nov); return deadline + two reminders follow. Exact dates pending Severine"
+  notes: "Pattern per the fse-scheduling mailbox (2025 instance: Thu 20 Nov, the week after reg week): one mail with the registration-numbers overview + P4 and P5 Qualtrics forms with staggered deadlines. Reminder followed Thu 11 Dec"
+  status: unconfirmed
+- id: sched-planning-forms-p4-due
+  title: Course/skill planning forms P4 return deadline
+  office: scheduling
+  when: "2026-12-11"
+  staff: academic
+  audience: course coordinators
+  submit: yes
+  notes: "2025 instance: Mon 15 Dec 17:00. NB the Christmas break starts Mon 14 Dec 2026, so expect the AY26-27 deadline pulled to Fri 11 Dec - confirm with Severine"
+  status: unconfirmed
+- id: sched-planning-forms-p5-due
+  title: Course/skill planning forms P5 return deadline
+  office: scheduling
+  when: "2027-02-12"
+  staff: academic
+  audience: course coordinators
+  submit: yes
+  notes: "2026 instance: Fri 13 Feb. Non-fillers get a final chase in the week before P5 with a hard end-of-week-1 cut-off (2026: chase 25 Mar, cut-off Fri 3 Apr)"
   status: unconfirmed
 - id: sched-planning-forms-fall
-  title: Course/skills planning forms out to coordinators (AY27-28 P1/P2)
+  title: Course/skill planning forms out to coordinators (AY27-28 P1/P2)
   office: scheduling
-  when: "2027-05-24"
+  when: "2027-05-26"
   staff: academic
   audience: course coordinators, Scheduling (Severine)
-  notes: "After the fall registration round (week ends 21 May). Exact dates pending Severine"
+  notes: "Pattern per the fse-scheduling mailbox: sent the week after the fall registration week (2026 instance: Wed 27 May, deadline Fri 3 Jul 17:00, reminder 26 Jun; 2025 instance: Thu 22 May). Non-fillers chased into late July"
+  status: unconfirmed
+- id: sched-planning-forms-fall-due
+  title: Course/skill planning forms P1 AY27-28 return deadline
+  office: scheduling
+  when: "2027-07-02"
+  staff: academic
+  audience: course coordinators
+  submit: yes
+  notes: "17:00 via Qualtrics. 2026 instance: Fri 3 Jul 17:00 stated in the 27 May send. No form = your timetable is not published (Severine enforced this in Aug 2025)"
+  status: unconfirmed
+- id: sched-planning-forms-p2-reminder
+  title: P2 course/skill planning form reminder goes out
+  office: scheduling
+  when: "2026-08-20"
+  staff: support
+  audience: Scheduling (Severine), course coordinators
+  notes: "Pattern: 2025 instance Wed 20 Aug 11:24, reminding coordinators of the P2 forms from the May send"
+  status: unconfirmed
+- id: sched-planning-forms-p2-due
+  title: Course/skill planning forms P2 return deadline
+  office: scheduling
+  when: "2026-09-18"
+  staff: academic
+  audience: course coordinators
+  submit: yes
+  notes: "Pattern: 2025 deadline was Fri 19 Sep, stated in the 20 Aug reminder; feeds the P2 draft schedules (~22 Sep) and P2 publication (8 Oct)"
+  status: unconfirmed
+- id: sched-draft-p1
+  title: P1 schedules in draft in MyTimetable (coordinators check now)
+  office: scheduling
+  when: "2026-08-04"
+  staff: academic
+  audience: course coordinators, tutors
+  notes: "Sent Tue 4 Aug 2026 10:20: drafts live, mid-terms/finals follow, publication Thu 13 Aug. External coordinators: send tutor names now"
+  status: confirmed
+- id: sched-draft-p2
+  title: P2 schedules in draft in MyTimetable (coordinators check now)
+  office: scheduling
+  when: "2026-09-22"
+  staff: academic
+  audience: course coordinators, tutors
+  notes: "Pattern: 2025 instance Tue 23 Sep, ~2 weeks before the Thu 8 Oct publication. Mid-terms/exams follow later; add the course manually in MyTimetable to see unstaffed activities"
+  status: unconfirmed
+- id: sched-draft-p4
+  title: P4 schedules in draft in MyTimetable (coordinators check now)
+  office: scheduling
+  when: "2027-01-04"
+  staff: academic
+  audience: course coordinators, tutors
+  notes: "Pattern: 2026 instance Mon 5 Jan with comments due Fri 17:00 the same week, publication the Thursday after (14 Jan 2027). Reminder to externals: MSP starts one week before the rest of UM"
+  status: unconfirmed
+- id: frame-schedules-draft-ay2728
+  title: Draft frame schedules AY27-28 circulated by the Dean
+  office: scheduling
+  when: "2027-03-12"
+  staff: both
+  audience: Gerco, Scheduling, Exams, BoE, Information Hub
+  notes: "Pattern: 2026 instance Fri 13 Mar (Gerco); Scheduling returns lab-collision feedback within days. Feeds the 1 Apr catalogue and the mid-Apr final"
+  status: unconfirmed
+- id: frame-schedules-final-ay2728
+  title: Final frame schedules AY27-28 (P1-P5) from the Dean
+  office: scheduling
+  when: "2027-04-12"
+  staff: both
+  audience: all offices, UCM/UCV/DACS schedulers, Academic Advising
+  notes: "Pattern: 2026 instance Mon 13 Apr (Gerco to all offices); Scheduling relays to UCM/DACS/UCV/SSC next morning. Precedes the Canvas scheduling uploads and the advising period"
+  status: unconfirmed
+- id: course-reg-form-opens-spring
+  title: Course registration form Spring goes live (08:30)
+  office: scheduling
+  when: "2026-10-30"
+  staff: support
+  audience: Scheduling (Severine), IRO, students
+  notes: "Pattern: 2025 instance live Fri 31 Oct 08:30, link pre-shared with IRO the Tuesday before. Opens with the advising period, ahead of the 9-13 Nov registration week"
+  status: unconfirmed
+- id: course-reg-form-opens-fall
+  title: Course registration form Fall goes live (07:00)
+  office: scheduling
+  when: "2027-04-29"
+  staff: support
+  audience: Scheduling (Severine), IRO, students
+  notes: "Pattern: 2026 instance live Thu 30 Apr 07:00 (same day the advising period opened), link pre-shared with IRO 17 Apr. Ahead of the 17-21 May registration week"
+  status: unconfirmed
+- id: switch-p3
+  title: Course switch / late enrolment deadline (P3)
+  office: scheduling
+  when: "2026-11-27"
+  staff: support
+  audience: students, Academic Advising, ESD
+  notes: "Fri 27 Nov per the LAS MSP/UCM/UCV deadline ladder for 2026-27 (Kessels mail, 26 Feb 2026; phrased as a proposal and absent from the official PDF, so confirm adoption)"
+  status: unconfirmed
+- id: switch-p6
+  title: Course switch / late enrolment deadline (P6)
+  office: scheduling
+  when: "2027-04-30"
+  staff: support
+  audience: students, Academic Advising, ESD
+  notes: "Fri 30 Apr per the LAS deadline ladder for 2026-27 (proposal; confirm adoption)"
+  status: unconfirmed
+- id: withdraw-p3
+  title: Course withdraw deadline (P3)
+  office: scheduling
+  when: "2027-01-08"
+  staff: support
+  audience: students, Academic Advising, ESD
+  notes: "Fri 8 Jan per the LAS deadline ladder for 2026-27 (Friday of the first education week); same day as the P4 late-enrolment deadline. Confirm adoption"
+  status: unconfirmed
+- id: withdraw-p6
+  title: Course withdraw deadline (P6)
+  office: scheduling
+  when: "2027-05-28"
+  staff: support
+  audience: students, Academic Advising, ESD
+  notes: "Fri 28 May per the LAS deadline ladder for 2026-27 (proposal; confirm adoption)"
   status: unconfirmed
 - id: tutor-lists-final
   title: Tutor lists final (contract lead time)
@@ -2171,7 +2303,7 @@
   repeat: P1, P2, P4, P5
   staff: both
   audience: coordinators, Operations, FSE HR
-  notes: "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. Rule confirmed twice in the mailbox analyses, dates derived"
+  notes: "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. NB timetable tutor-allocation continues until ~2 weeks before period start (scheduling mailbox); -6w is the contract floor, not the last scheduling touch"
   status: unconfirmed
 - id: iwio-evaluation-opens
   title: IWIO course evaluation opens (last tutorial week)

@@ -370,7 +370,7 @@ DTSTAMP:20270426T000000Z
 DTSTART;VALUE=DATE:20270426
 DTEND;VALUE=DATE:20270427
 SUMMARY:[MSP EXAMS] Invigilator request deadline (InterUM)
-DESCRIPTION:P5. Anja's ladder says Tue 27 Apr 12:00\, which is King's Day (UM closed) - 26 Apr is the safe working-day reading. Settle when MSP files its ladder deviations | For: exams office
+DESCRIPTION:P5. InterUM T-3wk convention. The SSC triple deadline is Wed 28 Apr 12:00 per the updated ladder (10 Aug copy\; the earlier King's Day 27-Apr entry was corrected) | For: exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p5-202627@msp-operations

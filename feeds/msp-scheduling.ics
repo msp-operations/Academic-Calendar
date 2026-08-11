@@ -13,6 +13,14 @@ SUMMARY:[MSP SCHEDULING] Course switch deadline
 DESCRIPTION:P1. All switch/withdraw deadlines are Fridays 17:00 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-draft-p1-202627@msp-operations
+DTSTAMP:20260804T000000Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:[MSP SCHEDULING] P1 schedules in draft in MyTimetable (coordinators check now)
+DESCRIPTION:Sent Tue 4 Aug 2026 10:20: drafts live\, mid-terms/finals follow\, publication Thu 13 Aug. External coordinators: send tutor names now | For: course coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p1-202627@msp-operations
 DTSTAMP:20260813T000000Z
 DTSTART;VALUE=DATE:20260813
@@ -30,11 +38,11 @@ DESCRIPTION:P1 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:switch-p2-202627@msp-operations
-DTSTAMP:20260929T000000Z
-DTSTART;VALUE=DATE:20260929
-DTEND;VALUE=DATE:20260930
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
 SUMMARY:[MSP SCHEDULING] Course switch deadline
-DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
+DESCRIPTION:P2\, Fri 25 Sep 17:00. NB the official switch/withdraw PDF says 'Friday September 29' but 29 Sep 2026 is a Tuesday - the LAS deadline ladder (Kessels\, Feb 2026) and the Friday rule give Fri 25 Sep. Fix the PDF/intranet form | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p2-202627@msp-operations
@@ -58,7 +66,7 @@ DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[MSP SCHEDULING] Frame schedules Spring semester ready (firm deadline)
-DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts | For: Gerco\, Chris Pawley\, Scheduling\, IPO
+DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct\, ~10 days ahead | For: Gerco\, Chris Pawley\, Scheduling\, IPO
 END:VEVENT
 BEGIN:VEVENT
 UID:advising-period-spring-start-202627@msp-operations

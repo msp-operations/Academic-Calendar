@@ -13,6 +13,14 @@ SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Sept cohort)
 DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student handbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after | For: students\, Academic Advisors\, coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-draft-p1-202627@msp-operations
+DTSTAMP:20260804T000000Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:[MSP SCHEDULING] P1 schedules in draft in MyTimetable (coordinators check now)
+DESCRIPTION:Sent Tue 4 Aug 2026 10:20: drafts live\, mid-terms/finals follow\, publication Thu 13 Aug. External coordinators: send tutor names now | For: course coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p1-202627@msp-operations
 DTSTAMP:20260813T000000Z
 DTSTART;VALUE=DATE:20260813
@@ -130,7 +138,7 @@ DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[MSP SCHEDULING] Frame schedules Spring semester ready (firm deadline)
-DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts | For: Gerco\, Chris Pawley\, Scheduling\, IPO
+DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct\, ~10 days ahead | For: Gerco\, Chris Pawley\, Scheduling\, IPO
 END:VEVENT
 BEGIN:VEVENT
 UID:advising-period-spring-start-202627@msp-operations
