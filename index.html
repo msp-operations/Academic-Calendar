@@ -149,6 +149,25 @@
   .upcard .upwhen b { color: var(--accent); }
   .upcard .uptitle { display: block; font-size: .8rem; font-weight: 600; margin-top: 2px; }
 
+  /* Key-deadlines chain view */
+  .chainsnote { font-size: .8rem; color: var(--muted); margin-top: 16px; }
+  .chains { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; margin-top: 14px; }
+  .chain { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; box-shadow: var(--shadow-sm); }
+  .chain h3 { font-size: .92rem; font-weight: 800; color: var(--navy); letter-spacing: -.01em; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .chain .csw { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
+  .csteps { position: relative; margin-left: 7px; border-left: 2px solid var(--line); padding: 2px 0 2px 18px; }
+  .cstep { position: relative; padding: 7px 0; cursor: pointer; display: flex; gap: 12px; align-items: baseline; }
+  .cstep::before { content: ""; position: absolute; left: -25px; top: 13px; width: 12px; height: 12px; border-radius: 50%;
+    background: var(--navy-2); border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--line); }
+  .cstep.academic::before { background: linear-gradient(135deg, #c98d0d, #ffd75e); box-shadow: 0 0 6px rgba(255, 196, 40, .8); }
+  .cstep:hover .clabel { color: var(--navy); }
+  .cstep.past { opacity: .5; }
+  .cstep .cdate { min-width: 92px; font-weight: 700; font-size: .8rem; color: var(--navy); font-variant-numeric: tabular-nums; }
+  .cstep .clabel { font-size: .84rem; line-height: 1.4; }
+  .cstep .cwho { display: inline-block; font-size: .6rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
+    padding: 1px 7px; border-radius: 4px; margin-right: 7px; background: #e7ecf4; color: var(--navy); }
+  .cstep.academic .cwho { background: #fdf0cd; color: #8a5d05; }
+
   /* Subscribe options card */
   .subrow { display: block; width: 100%; text-align: left; border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 14px;
     margin-bottom: 8px; cursor: pointer; background: var(--paper); text-decoration: none; color: var(--ink);
@@ -325,7 +344,7 @@ const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k])
 const _pick = (v, allowed, fb) => allowed.includes(v) ? v : fb;
 const state = {
   on: new Set(_initOn.length ? _initOn : Object.keys(OFFICES)),
-  view: _pick(_params.get('view'), ['year', 'grid', 'timeline'], _pick(_saved.view, ['year', 'grid', 'timeline'], 'year')),
+  view: _pick(_params.get('view'), ['year', 'grid', 'timeline', 'chains'], _pick(_saved.view, ['year', 'grid', 'timeline', 'chains'], 'year')),
   role: _pick(_params.get('role'), ['all', 'academic', 'support'], _pick(_saved.role, ['all', 'academic', 'support'], 'all')),
 };
 function syncState() {
@@ -441,7 +460,7 @@ function init() {
   bar.appendChild(todayBtn);
 
   const toggle = document.createElement('div'); toggle.className = 'viewtoggle';
-  for (const [id, label] of [['year', 'Year planner'], ['grid', 'Month grid'], ['timeline', 'Timeline']]) {
+  for (const [id, label] of [['year', 'Year planner'], ['chains', 'Key deadlines'], ['grid', 'Month grid'], ['timeline', 'Timeline']]) {
     const b = document.createElement('button');
     b.textContent = label; b.dataset.view = id;
     if (state.view === id) b.classList.add('on');
@@ -482,7 +501,88 @@ function render() {
   renderUpcoming(main, events);
   if (state.view === 'grid') renderGrid(main, events);
   else if (state.view === 'year') renderYear(main, events);
+  else if (state.view === 'chains') renderChains(main);
   else renderTimeline(main, events);
+}
+
+function renderChains(main) {
+  const byId = {};
+  for (const e of DB.events) byId[e.id] = e;
+  const exam = (p) => ({
+    title: `${p.toUpperCase()} exam + grading cycle`, color: `var(--${p})`,
+    steps: [
+      [`invigilators-${p}`, 's', 'We commit halls, invigilators, Chromebooks and mutations to SSC'],
+      [`exam-submit-${p}`, 'a', 'Your exam paper + TestVision test are due'],
+      [`print-order-${p}`, 's', 'We send the print order to ANDI Smart Print'],
+      [`exam-week-${p}`, 's', 'Exam week runs: rooms, transport, invigilation, quarantine cases'],
+      [`grades-due-${p}`, 'a', 'Your filled-in grading sheet is due (10 working days)'],
+      [`grades-published-${p}`, 's', 'We re-key into SAP, chase gaps and publish (5 working days); transcripts follow'],
+      [`accreditation-ask-${p}`, 's', 'Eva requests your accreditation material'],
+      [`accreditation-deadline-${p}`, 'a', 'Accreditation material due at DUB30 (manual, exams, rubrics, attendance)'],
+      [`transcript-final-update-${p}`, 's', 'Final bulk transcript update once inspection closes'],
+    ],
+  });
+  const CHAINS = [
+    exam('p1'), exam('p2'), exam('p4'), exam('p5'),
+    { title: 'June resit week cycle', color: 'var(--exams)', steps: [
+      ['invigilators-resits', 's', 'We book resit invigilation (PHS, own Chromebook cart)'],
+      ['exam-submit-resits', 'a', 'Your resit exam is due'],
+      ['resit-week-p5', 's', 'Resit week runs'],
+      ['grades-due-resits', 'a', 'Your resit grades are due'],
+      ['grades-published-resits', 's', 'We process and publish the resit grades'],
+      ['accreditation-ask-resits', 's', 'Eva requests the resit accreditation material'],
+      ['accreditation-deadline-resits', 'a', 'Resit accreditation material due at DUB30'],
+    ]},
+    { title: 'BTR grading, September cohort', color: 'var(--btr)', steps: [
+      ['btr-proposal-grades-due-sept', 'a', 'Proposal grades due in Collent (RS + IA)'],
+      ['btr-proposal-grades-pub-sept', 's', 'We publish proposal grades to students'],
+      ['btr-midterm-grades-due-sept', 'a', 'Midterm practical grade due (RS)'],
+      ['btr-midterm-grades-pub-sept', 's', 'We publish midterm grades'],
+      ['btr-final-grades-due-sept', 'a', 'Final thesis + video grades due in Collent'],
+      ['btr-final-grades-pub-sept', 's', 'We publish final grades; BoE graduation decision follows'],
+    ]},
+    { title: 'BTR grading, February cohort', color: 'var(--btr)', steps: [
+      ['btr-proposal-grades-due-feb', 'a', 'Proposal grades due in Collent (RS + IA)'],
+      ['btr-proposal-grades-pub-feb', 's', 'We publish proposal grades to students'],
+      ['btr-midterm-grades-due-feb', 'a', 'Midterm practical grade due (RS)'],
+      ['btr-midterm-grades-pub-feb', 's', 'We publish midterm grades'],
+      ['btr-final-grades-due-feb', 'a', 'Final thesis + video grades due in Collent'],
+      ['btr-final-grades-pub-feb', 's', 'We publish final grades; BoE graduation decision follows'],
+    ]},
+    { title: 'New academic year: catalogue + exam planning', color: 'var(--esd)', steps: [
+      ['catalogue-letters-out', 's', 'We send the catalogue update letters'],
+      ['catalogue-coordinator-updates', 'a', 'Your course description updates are due'],
+      ['assessment-survey', 'a', 'Your assessment survey is due (exam formats + needs)'],
+      ['catalogue-publication', 's', 'We publish the course catalogue (hard deadline)'],
+      ['exam-request-offweek', 's', "We fix next year's exam days with SSC"],
+      ['sap-mendix-pass', 's', 'SAP + Mendix new-year pass; intranet forms updated'],
+    ]},
+  ];
+  main.insertAdjacentHTML('beforeend',
+    '<p class="chainsnote">The hand-off chains behind the big deadlines: <b>gold steps are yours</b> ' +
+    '(academic staff), navy steps are what the office does with your input. This view always shows the ' +
+    'full chains, whatever the filters above say. Click a step for details.</p>');
+  const grid = document.createElement('div'); grid.className = 'chains';
+  for (const ch of CHAINS) {
+    const steps = ch.steps.map(([id, who, label]) => ({ e: byId[id], who, label })).filter(x => x.e)
+      .sort((x, y) => x.e.date.localeCompare(y.e.date));
+    if (!steps.length) continue;
+    const sec = document.createElement('section'); sec.className = 'chain';
+    sec.innerHTML = `<h3><span class="csw" style="background:${ch.color}"></span>${ch.title}</h3>`;
+    const list = document.createElement('div'); list.className = 'csteps';
+    for (const s of steps) {
+      const row = document.createElement('div');
+      row.className = 'cstep ' + (s.who === 'a' ? 'academic' : 'support') + (s.e.date < todayIso ? ' past' : '');
+      row.innerHTML = `<span class="cdate">${dow(s.e.date)} ${fmt(s.e.date)}</span>` +
+        `<span class="clabel"><span class="cwho">${s.who === 'a' ? 'You' : 'Office'}</span>${s.label}` +
+        (s.e.status === 'unconfirmed' ? ' <span class="flag">unconfirmed</span>' : '') + `</span>`;
+      row.onclick = () => showCard(s.e);
+      list.appendChild(row);
+    }
+    sec.appendChild(list);
+    grid.appendChild(sec);
+  }
+  main.appendChild(grid);
 }
 
 function renderUpcoming(main, events) {
