@@ -167,6 +167,8 @@
   .cstep .cwho { display: inline-block; font-size: .6rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
     padding: 1px 7px; border-radius: 4px; margin-right: 7px; background: #e7ecf4; color: var(--navy); }
   .cstep.academic .cwho { background: #fdf0cd; color: #8a5d05; }
+  .cstep.week::before { background: var(--exams); }
+  .cstep.week .cwho { background: #dcf1fa; color: #036184; }
   .cgap { position: relative; font-size: .66rem; color: #94a3b8; font-style: italic; padding: 1px 0 1px 2px; }
   .cgap::before { content: "\2193"; position: absolute; left: -22px; color: #b6c2d4; font-style: normal; }
 
@@ -510,26 +512,29 @@ function render() {
 function renderChains(main) {
   const byId = {};
   for (const e of DB.events) byId[e.id] = e;
-  const exam = (p) => ({
+  const exam = (p) => {
+    const per = DB.periods.find(x => x.id === p.toUpperCase());
+    const range = per && per.exam_start ? `${fmt(per.exam_start)} to ${fmt(per.exam_end)}` : '';
+    return {
     title: `${p.toUpperCase()} exam + grading cycle`, color: `var(--${p})`,
     steps: [
       [`invigilators-${p}`, 's', 'We commit halls, invigilators, Chromebooks and mutations to SSC'],
       [`exam-submit-${p}`, 'a', 'Your exam paper + TestVision test are due'],
       [`print-order-${p}`, 's', 'We send the print order to ANDI Smart Print'],
-      [`exam-week-${p}`, 's', 'Exam week runs: rooms, transport, invigilation, quarantine cases'],
+      [`exam-week-${p}`, 'w', `Exam week starts${range ? ' (runs ' + range + ')' : ''}: rooms, transport, invigilation`],
       [`grades-due-${p}`, 'a', 'Your filled-in grading sheet is due (10 working days)'],
       [`grades-published-${p}`, 's', 'We re-key into SAP, chase gaps and publish (5 working days); transcripts follow'],
       [`accreditation-ask-${p}`, 's', 'Eva requests your accreditation material'],
       [`accreditation-deadline-${p}`, 'a', 'Accreditation material due at DUB30 (manual, exams, rubrics, attendance)'],
       [`transcript-final-update-${p}`, 's', 'Final bulk transcript update once inspection closes'],
     ],
-  });
+  }; };
   const CHAINS = [
     exam('p1'), exam('p2'), exam('p4'), exam('p5'),
     { title: 'June resit week cycle', color: 'var(--exams)', steps: [
       ['invigilators-resits', 's', 'We book resit invigilation (PHS, own Chromebook cart)'],
       ['exam-submit-resits', 'a', 'Your resit exam is due'],
-      ['resit-week-p5', 's', 'Resit week runs'],
+      ['resit-week-p5', 'w', 'Resit week starts (runs 14 to 18 Jun)'],
       ['grades-due-resits', 'a', 'Your resit grades are due'],
       ['grades-published-resits', 's', 'We process and publish the resit grades'],
       ['accreditation-ask-resits', 's', 'Eva requests the resit accreditation material'],
@@ -586,9 +591,9 @@ function renderChains(main) {
       }
       prev = s.e.date;
       const row = document.createElement('div');
-      row.className = 'cstep ' + (s.who === 'a' ? 'academic' : 'support') + (s.e.date < todayIso ? ' past' : '');
+      row.className = 'cstep ' + (s.who === 'a' ? 'academic' : s.who === 'w' ? 'week' : 'support') + (s.e.date < todayIso ? ' past' : '');
       row.innerHTML = `<span class="cdate">${dow(s.e.date)} ${fmt(s.e.date)}</span>` +
-        `<span class="clabel"><span class="cwho">${s.who === 'a' ? 'You' : 'Office'}</span>${s.label}` +
+        `<span class="clabel"><span class="cwho">${s.who === 'a' ? 'You' : s.who === 'w' ? 'Exams' : 'Office'}</span>${s.label}` +
         (s.e.status === 'unconfirmed' ? ' <span class="flag">unconfirmed</span>' : '') + `</span>`;
       row.onclick = () => showCard(s.e);
       list.appendChild(row);
