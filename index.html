@@ -66,6 +66,10 @@
   .chip.on { color: var(--ink); border-color: color-mix(in srgb, var(--c, var(--general)) 55%, white); background: color-mix(in srgb, var(--c, var(--general)) 8%, white); }
   .chip.on .dot { opacity: 1; }
   .spacer { flex: 1; }
+  .search { border: 1.5px solid var(--line); border-radius: 999px; padding: 5px 14px; font-size: .8rem; font-family: inherit;
+    color: var(--ink); background: var(--card); box-shadow: var(--shadow-sm); width: 150px; transition: all .15s ease; }
+  .search:focus { outline: none; border-color: var(--accent); width: 210px; }
+  .search::placeholder { color: #9aa7ba; }
   .viewtoggle { display: flex; background: #e7ecf4; border-radius: 999px; padding: 3px; gap: 2px; }
   .viewtoggle button { border: 0; background: transparent; padding: 5px 14px; font-size: .8rem; font-weight: 600; cursor: pointer;
     color: var(--muted); border-radius: 999px; font-family: inherit; transition: all .15s ease; }
@@ -348,8 +352,11 @@ const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k])
 const _pick = (v, allowed, fb) => allowed.includes(v) ? v : fb;
 const state = {
   on: new Set(_initOn.length ? _initOn : Object.keys(OFFICES)),
-  view: _pick(_params.get('view'), ['year', 'grid', 'timeline', 'chains'], _pick(_saved.view, ['year', 'grid', 'timeline', 'chains'], 'year')),
+  // Phones default to the Timeline (the year grid is a desktop shape); explicit choices still win
+  view: _pick(_params.get('view'), ['year', 'grid', 'timeline', 'chains'],
+    _pick(_saved.view, ['year', 'grid', 'timeline', 'chains'], window.innerWidth < 720 ? 'timeline' : 'year')),
   role: _pick(_params.get('role'), ['all', 'academic', 'support'], _pick(_saved.role, ['all', 'academic', 'support'], 'all')),
+  q: '',
 };
 function syncState() {
   try { localStorage.setItem('mspcal', JSON.stringify({ on: [...state.on], view: state.view, role: state.role })); } catch (_) {}
@@ -457,6 +464,24 @@ function init() {
 
   const spacer = document.createElement('div'); spacer.className = 'spacer'; bar.appendChild(spacer);
 
+  const search = document.createElement('input');
+  search.className = 'search'; search.type = 'search'; search.placeholder = 'Search deadlines...';
+  search.oninput = () => { state.q = search.value.trim().toLowerCase(); render(); };
+  bar.appendChild(search);
+
+  const printBtn = document.createElement('button');
+  printBtn.className = 'chip'; printBtn.textContent = 'Print A3';
+  printBtn.title = 'Print the year planner as an A3 landscape wall chart';
+  printBtn.onclick = () => {
+    if (state.view !== 'year') {
+      state.view = 'year';
+      document.querySelectorAll('.viewtoggle button[data-view]').forEach(x => x.classList.toggle('on', x.dataset.view === 'year'));
+      syncState(); render();
+    }
+    setTimeout(() => window.print(), 150);
+  };
+  bar.appendChild(printBtn);
+
   const todayBtn = document.createElement('button');
   todayBtn.className = 'chip'; todayBtn.textContent = 'Today';
   todayBtn.title = 'Jump to today';
@@ -500,9 +525,11 @@ function render() {
   const main = document.getElementById('main');
   main.innerHTML = '';
   const events = DB.events.filter(e => state.on.has(e.office) &&
-    (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff));
-  if (!events.length) { main.innerHTML = '<p class="empty">No events for this selection.</p>'; return; }
+    (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff) &&
+    (!state.q || (e.title + ' ' + (e.notes || '') + ' ' + (e.audience || '')).toLowerCase().includes(state.q)));
+  if (!events.length) { main.innerHTML = '<p class="empty">No events match' + (state.q ? ` "${state.q}"` : ' this selection') + '.</p>'; return; }
   renderUpcoming(main, events);
+  if (state.q) { renderTimeline(main, events); return; }
   if (state.view === 'grid') renderGrid(main, events);
   else if (state.view === 'year') renderYear(main, events);
   else if (state.view === 'chains') renderChains(main);
