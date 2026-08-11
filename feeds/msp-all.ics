@@ -493,6 +493,14 @@ SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
 DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 17 Nov 2026 | For: exams office
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p1-202627@msp-operations
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P1)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-submit-p2-202627@msp-operations
 DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261123
@@ -507,6 +515,14 @@ DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
 DESCRIPTION:P2. Delivery Tue 1 Dec | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-p1-202627@msp-operations
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P1)
+DESCRIPTION:Inspection deadline 20 Nov\, final transcripts 25 Nov\, per the grading overview | For: exams office\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:grading-sheets-out-p2-202627@msp-operations
@@ -605,6 +621,14 @@ SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P3: 4-8 Jan | For: students\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:grades-due-p2-202627@msp-operations
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2 + P1 resits)
+DESCRIPTION:Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview (closure-adjusted\, marked * in the doc)\; P1 resits ride the same clock | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
 UID:switch-p4-202627@msp-operations
 DTSTAMP:20270108T000000Z
 DTSTART;VALUE=DATE:20270108
@@ -637,12 +661,28 @@ SUMMARY:[MSP BTR] BTR final grades due in Collent (Sept cohort)
 DESCRIPTION:Thesis (RS+IA)\, Final Practical (RS)\, Video (IA). Do not submit before the presentation is done | For: RS\, IA
 END:VEVENT
 BEGIN:VEVENT
+UID:grades-published-p2-202627@msp-operations
+DTSTAMP:20270115T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[MSP EXAMS] Grades published on Student Portal (P2\, deadline)
+DESCRIPTION:Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview\; running transcript update 20 Jan\, inspection deadline 29 Jan\, final transcript update 5 Feb | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-final-grades-pub-sept-202627@msp-operations
 DTSTAMP:20270118T000000Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP BTR] BTR final grades published (Sept cohort)
 DESCRIPTION:For: students\, supervisors\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-ask-p2-202627@msp-operations
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[MSP ESD] Ask coordinators for accreditation material (P2 + P1 resits)
+DESCRIPTION:Mon 18 Jan per the GRADING DEADLINES 2026-2027 overview (closure shifts the round\; matches Eva's 2026 practice of 19 Jan) | For: IPO (Eva)\, course coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p4-202627@msp-operations
@@ -669,6 +709,14 @@ SUMMARY:[MSP BTR] BTR February cohort starts
 DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 end) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students\, supervisors\, IAs\, coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p2-202627@msp-operations
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P2 + P1 resits)
+DESCRIPTION:Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline\; closure shifts the whole round) | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:withdraw-p4-202627@msp-operations
 DTSTAMP:20270129T000000Z
 DTSTART;VALUE=DATE:20270129
@@ -693,12 +741,36 @@ SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
 DESCRIPTION:For: BoE secretary
 END:VEVENT
 BEGIN:VEVENT
+UID:project-grades-due-p3-202627@msp-operations
+DTSTAMP:20270205T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:[MSP ESD] Project grades due to ESD (P3 projects)
+DESCRIPTION:Fri 5 Feb per the grading overview (+10 working days from P3 end) | For: project supervisors\, Project Committee
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-p2-202627@msp-operations
+DTSTAMP:20270205T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P2 + P1 resits)
+DESCRIPTION:Inspection deadline 29 Jan\, final transcripts 5 Feb\, per the grading overview | For: exams office\, ESD
+END:VEVENT
+BEGIN:VEVENT
 UID:carnival-202627@msp-operations
 DTSTAMP:20270208T000000Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:[MSP GENERAL] Carnival week (no teaching)
 DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-published-p3-202627@msp-operations
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:[MSP ESD] Project grades published (P3 projects)
+DESCRIPTION:Fri 12 Feb per the grading overview\; transcript update 17 Feb\, inspection deadline 26 Feb\, final transcripts 5 Mar | For: students\, supervisors
 END:VEVENT
 BEGIN:VEVENT
 UID:eer-revision-to-boe-202627@msp-operations
@@ -941,6 +1013,14 @@ SUMMARY:[MSP ESD] External education registration deadline (P6)
 DESCRIPTION:For: students\, BoE
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p4-202627@msp-operations
+DTSTAMP:20270423T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P4)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:invigilators-p5-202627@msp-operations
 DTSTAMP:20270426T000000Z
 DTSTART;VALUE=DATE:20270426
@@ -971,6 +1051,14 @@ DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:[MSP BOE] EER 2027-28 adopted by the Faculty Board (before 1 May)
 DESCRIPTION:Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May\, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep | For: BoE\, EPC\, Programme Board
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-p4-202627@msp-operations
+DTSTAMP:20270430T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P4 + P2/P3 resits)
+DESCRIPTION:Inspection deadline 23 Apr\, final transcripts 30 Apr\, per the grading overview | For: exams office\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:boe-grad-audit-candidates-may-202627@msp-operations
@@ -1181,6 +1269,22 @@ SUMMARY:[MSP GENERAL] Summer break begins
 DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium | For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p5-202627@msp-operations
+DTSTAMP:20270625T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-p5-202627@msp-operations
+DTSTAMP:20270625T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P5 + P4 resits)
+DESCRIPTION:Inspection deadline and final transcripts both 25 Jun (compressed)\, per the grading overview | For: exams office\, ESD
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-graduation-feb-202627@msp-operations
 DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
@@ -1197,11 +1301,67 @@ SUMMARY:[MSP ESD] Admissions - portal task-description content deadline
 DESCRIPTION:Also the date UM files visas with IND. Hard SSC chain per the KB | For: Admissions team\, SSC
 END:VEVENT
 BEGIN:VEVENT
+UID:project-grades-due-p6-202627@msp-operations
+DTSTAMP:20270702T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP ESD] Project grades due to ESD (P6 projects)
+DESCRIPTION:Fri 2 Jul per the grading overview (aligned with the resit-week clock\, not +10wd from P6 end) | For: project supervisors\, Project Committee
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-due-resits-202627@msp-operations
+DTSTAMP:20270702T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP EXAMS] Resit grade submission deadline (June resit week)
+DESCRIPTION:Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday)\; P6 project grades share this date | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-published-p6-202627@msp-operations
+DTSTAMP:20270709T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:[MSP ESD] Project grades published (P6 projects)
+DESCRIPTION:Fri 9 Jul per the grading overview\; transcript update 12 Jul\, inspection + final transcripts 23 Jul | For: students\, supervisors
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-published-resits-202627@msp-operations
+DTSTAMP:20270709T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:[MSP EXAMS] Resit grades published (June resit week)
+DESCRIPTION:Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview\; transcript update 12 Jul\, inspection deadline + final transcript 23 Jul | For: students\, coordinators\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-ask-resits-202627@msp-operations
+DTSTAMP:20270712T000000Z
+DTSTART;VALUE=DATE:20270712
+DTEND;VALUE=DATE:20270713
+SUMMARY:[MSP ESD] Ask coordinators for accreditation material (P5 resit round)
+DESCRIPTION:Mon 12 Jul\, confirmed by the GRADING DEADLINES 2026-2027 overview | For: IPO (Eva)\, resit coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:admissions-ssc-handover-202627@msp-operations
 DTSTAMP:20270715T000000Z
 DTSTART;VALUE=DATE:20270715
 DTEND;VALUE=DATE:20270716
 SUMMARY:[MSP ESD] Admissions - everything to SSC (webpage + task descriptions\, hard deadline)
 DESCRIPTION:Hard external deadline owned by SSC\; one of the KB's five must-not-miss dates | For: Admissions team\, SSC
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-deadline-resits-202627@msp-operations
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5 resit round)
+DESCRIPTION:Fri 23 Jul\, confirmed by the grading overview (also the resit + P6 inspection deadline) | For: resit coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-resits-202627@msp-operations
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P5 resits + P6 projects)
+DESCRIPTION:Inspection deadline and final transcripts both 23 Jul\, per the grading overview | For: exams office\, ESD
 END:VEVENT
 END:VCALENDAR

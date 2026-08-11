@@ -160,14 +160,14 @@
   submit: yes
   status: confirmed
 - id: grades-due-p2
-  title: Grade submission deadline for coordinators (P2)
+  title: Grade submission deadline for coordinators (P2 + P1 resits)
   office: exams
-  when: "2027-01-04"
+  when: "2027-01-08"
   staff: academic
   audience: course coordinators, examiners
   submit: yes
-  notes: "The 10wd clock pauses over the Christmas closure: AY25-26 precedent set the P2 + P1-resit teacher deadline on the first Monday after the break (5 Jan 2026), so expect Mon 4 Jan 2027. Confirm with the exams office"
-  status: unconfirmed
+  notes: "Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview (closure-adjusted, marked * in the doc); P1 resits ride the same clock"
+  status: confirmed
 - id: grades-due-resits
   title: Resit grade submission deadline (June resit week)
   office: exams
@@ -175,8 +175,8 @@
   staff: academic
   audience: course coordinators, examiners
   submit: yes
-  notes: "Same 10wd clock from the Friday of the 14-18 Jun resit week (AY25-26 precedent: 3 Jul). The repeat engine only covers P1/P2/P4/P5, so this standalone week gets its own event"
-  status: unconfirmed
+  notes: "Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday); P6 project grades share this date"
+  status: confirmed
 
 - id: grading-sheets-out
   title: Grading sheets sent to coordinators
@@ -200,28 +200,61 @@
 - id: grades-published-p2
   title: Grades published on Student Portal (P2, deadline)
   office: exams
-  when: "2027-01-11"
+  when: "2027-01-15"
   staff: both
   audience: students, coordinators, BoE, Academic Advising
-  notes: "Teacher deadline 4 Jan + 5 working days ESD processing (closure-paused clock; AY25-26 pattern). Confirm with the exams office"
-  status: unconfirmed
+  notes: "Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview; running transcript update 20 Jan, inspection deadline 29 Jan, final transcript update 5 Feb"
+  status: confirmed
 - id: grades-published-resits
   title: Resit grades published (June resit week)
   office: exams
   when: "2027-07-09"
   staff: both
   audience: students, coordinators, BoE
-  notes: "+15wd from the resit-week Friday (AY25-26 precedent: 13 Jul SAP processing)"
-  status: unconfirmed
-- id: transcript-final-update
-  title: Final bulk transcript update (after inspection round)
+  notes: "Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview; transcript update 12 Jul, inspection deadline + final transcript 23 Jul"
+  status: confirmed
+# Final transcript updates: dated per the GRADING DEADLINES 2026-2027 overview (they follow
+# the inspection close, not a clean working-day offset; P5 compresses to inspection day).
+- id: transcript-final-update-p1
+  title: Final bulk transcript update after inspection (P1)
   office: exams
-  when: "{P}.exam.end +20wd"
-  repeat: P1, P4, P5
+  when: "2026-11-25"
   staff: support
   audience: exams office, ESD
-  notes: "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul"
-  status: unconfirmed
+  notes: "Inspection deadline 20 Nov, final transcripts 25 Nov, per the grading overview"
+  status: confirmed
+- id: transcript-final-update-p2
+  title: Final bulk transcript update after inspection (P2 + P1 resits)
+  office: exams
+  when: "2027-02-05"
+  staff: support
+  audience: exams office, ESD
+  notes: "Inspection deadline 29 Jan, final transcripts 5 Feb, per the grading overview"
+  status: confirmed
+- id: transcript-final-update-p4
+  title: Final bulk transcript update after inspection (P4 + P2/P3 resits)
+  office: exams
+  when: "2027-04-30"
+  staff: support
+  audience: exams office, ESD
+  notes: "Inspection deadline 23 Apr, final transcripts 30 Apr, per the grading overview"
+  status: confirmed
+- id: transcript-final-update-p5
+  title: Final bulk transcript update after inspection (P5 + P4 resits)
+  office: exams
+  when: "2027-06-25"
+  staff: support
+  audience: exams office, ESD
+  notes: "Inspection deadline and final transcripts both 25 Jun (compressed), per the grading overview"
+  status: confirmed
+- id: transcript-final-update-resits
+  title: Final bulk transcript update after inspection (P5 resits + P6 projects)
+  office: exams
+  when: "2027-07-23"
+  staff: support
+  audience: exams office, ESD
+  notes: "Inspection deadline and final transcripts both 23 Jul, per the grading overview"
+  status: confirmed
 
 # ---------- Exams: support-staff logistics ----------
 
@@ -416,15 +449,42 @@
 
 # ---------- Project periods (P3/P6 grading) ----------
 
-- id: project-grades-published
-  title: Project grades published (committee deadline)
+# Project grading: dated per the GRADING DEADLINES 2026-2027 overview. P3 runs the +10wd clock;
+# P6 aligns with the resit-week clock instead (2 Jul, not +10wd) - the old 10-days question is settled.
+- id: project-grades-due-p3
+  title: Project grades due to ESD (P3 projects)
   office: esd
-  when: "{P}.end +10wd"
-  repeat: P3, P6
+  when: "2027-02-05"
   staff: academic
-  audience: Project Committee, supervisors, students
-  notes: "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days. KB says 10 calendar days but the F1 grading overview ran +10 WORKING days both periods in AY25-26 (P3: 6 Feb; P6: 26 Jun) - working-day reading applied here, settle before P3"
-  status: unconfirmed
+  audience: project supervisors, Project Committee
+  submit: yes
+  notes: "Fri 5 Feb per the grading overview (+10 working days from P3 end)"
+  status: confirmed
+- id: project-grades-published-p3
+  title: Project grades published (P3 projects)
+  office: esd
+  when: "2027-02-12"
+  staff: support
+  audience: students, supervisors
+  notes: "Fri 12 Feb per the grading overview; transcript update 17 Feb, inspection deadline 26 Feb, final transcripts 5 Mar"
+  status: confirmed
+- id: project-grades-due-p6
+  title: Project grades due to ESD (P6 projects)
+  office: esd
+  when: "2027-07-02"
+  staff: academic
+  audience: project supervisors, Project Committee
+  submit: yes
+  notes: "Fri 2 Jul per the grading overview (aligned with the resit-week clock, not +10wd from P6 end)"
+  status: confirmed
+- id: project-grades-published-p6
+  title: Project grades published (P6 projects)
+  office: esd
+  when: "2027-07-09"
+  staff: support
+  audience: students, supervisors
+  notes: "Fri 9 Jul per the grading overview; transcript update 12 Jul, inspection + final transcripts 23 Jul"
+  status: confirmed
 
 # ---------- Scheduling ----------
 
@@ -1125,31 +1185,56 @@
   title: Ask coordinators for accreditation material (round opens)
   office: esd
   when: "{P}.exam.end +16wd"
-  repeat: P1, P2, P4, P5
+  repeat: P1, P4, P5
   staff: support
   audience: IPO (Eva), course coordinators of the period + resits
-  notes: "Monday after grade publication per the IPO overview. Material: course manual, assessment plan, attendance (module + exam), exams incl. questions/submissions/rubric, assignments"
+  notes: "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure)"
   status: unconfirmed
+- id: accreditation-ask-p2
+  title: Ask coordinators for accreditation material (P2 + P1 resits)
+  office: esd
+  when: "2027-01-18"
+  staff: support
+  audience: IPO (Eva), course coordinators
+  notes: "Mon 18 Jan per the GRADING DEADLINES 2026-2027 overview (closure shifts the round; matches Eva's 2026 practice of 19 Jan)"
+  status: confirmed
 
 - id: accreditation-deadline
   title: Accreditation material hand-in deadline
   office: esd
   when: "{P}.exam.end +25wd"
-  repeat: P1, P2, P4, P5
+  repeat: P1, P4, P5
   staff: academic
   audience: course coordinators, IPO (Eva)
-  notes: "End of the 10wd inspection window per the IPO overview; hand in via the archive drive, mail, or at DUB30 (0.233). Reminder goes out the week before"
+  notes: "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event"
   submit: yes
-  status: unconfirmed
+  status: confirmed
+- id: accreditation-deadline-p2
+  title: Accreditation material hand-in deadline (P2 + P1 resits)
+  office: esd
+  when: "2027-01-29"
+  staff: academic
+  audience: course coordinators, IPO (Eva)
+  submit: yes
+  notes: "Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline; closure shifts the whole round)"
+  status: confirmed
 
 - id: accreditation-dub30
   title: Eva at DUB30 for archive intake (Mon-Wed)
   office: esd
   when: "{P}.exam.end +26wd"
-  repeat: P1, P2, P4, P5
+  repeat: P1, P4, P5
   staff: support
   audience: IPO (Eva), late coordinators
-  notes: "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round"
+  notes: "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event"
+  status: unconfirmed
+- id: accreditation-dub30-p2
+  title: Eva at DUB30 for archive intake (P2 round)
+  office: esd
+  when: "2027-02-01"
+  staff: support
+  audience: IPO (Eva), late coordinators
+  notes: "Week after the 29 Jan hand-in deadline (matches Eva's 2026 practice: DUB30 2-4 Feb)"
   status: unconfirmed
 
 - id: accreditation-ask-resits
@@ -1158,8 +1243,8 @@
   when: "2027-07-12"
   staff: support
   audience: IPO (Eva), resit coordinators
-  notes: "Translated from the 2026 pattern (ask Mon 13 Jul); resit week ends 18 Jun 2027"
-  status: unconfirmed
+  notes: "Mon 12 Jul, confirmed by the GRADING DEADLINES 2026-2027 overview"
+  status: confirmed
 
 - id: accreditation-deadline-resits
   title: Accreditation material hand-in deadline (P5 resit round)
@@ -1168,7 +1253,8 @@
   staff: academic
   audience: resit coordinators, IPO (Eva)
   submit: yes
-  status: unconfirmed
+  notes: "Fri 23 Jul, confirmed by the grading overview (also the resit + P6 inspection deadline)"
+  status: confirmed
 
 - id: accreditation-dub30-resits
   title: Eva at DUB30 for archive intake (P5 resit round)

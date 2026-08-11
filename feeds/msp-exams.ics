@@ -213,6 +213,14 @@ SUMMARY:[MSP EXAMS] Print order to ANDIDRUK
 DESCRIPTION:P2. Delivery Tue 1 Dec | For: exams office
 END:VEVENT
 BEGIN:VEVENT
+UID:transcript-final-update-p1-202627@msp-operations
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P1)
+DESCRIPTION:Inspection deadline 20 Nov\, final transcripts 25 Nov\, per the grading overview | For: exams office\, ESD
+END:VEVENT
+BEGIN:VEVENT
 UID:grading-sheets-out-p2-202627@msp-operations
 DTSTAMP:20261130T000000Z
 DTSTART;VALUE=DATE:20261130
@@ -245,6 +253,14 @@ SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P3: 4-8 Jan | For: students\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:grades-due-p2-202627@msp-operations
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2 + P1 resits)
+DESCRIPTION:Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview (closure-adjusted\, marked * in the doc)\; P1 resits ride the same clock | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
 UID:dexum-online-jan-202627@msp-operations
 DTSTAMP:20270112T000000Z
 DTSTART;VALUE=DATE:20270112
@@ -253,12 +269,28 @@ SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
 DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 12 Jan 2027. Later spring 2027 dates not yet issued by SSC | For: exams office
 END:VEVENT
 BEGIN:VEVENT
+UID:grades-published-p2-202627@msp-operations
+DTSTAMP:20270115T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[MSP EXAMS] Grades published on Student Portal (P2\, deadline)
+DESCRIPTION:Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview\; running transcript update 20 Jan\, inspection deadline 29 Jan\, final transcript update 5 Feb | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
 UID:assessment-announced-p4-202627@msp-operations
 DTSTAMP:20270118T000000Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P4)
 DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-p2-202627@msp-operations
+DTSTAMP:20270205T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P2 + P1 resits)
+DESCRIPTION:Inspection deadline 29 Jan\, final transcripts 5 Feb\, per the grading overview | For: exams office\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:invigilators-p4-202627@msp-operations
@@ -349,6 +381,14 @@ SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P5: 26-30 Apr | For: students\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:transcript-final-update-p4-202627@msp-operations
+DTSTAMP:20270430T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P4 + P2/P3 resits)
+DESCRIPTION:Inspection deadline 23 Apr\, final transcripts 30 Apr\, per the grading overview | For: exams office\, ESD
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-submit-p5-202627@msp-operations
 DTSTAMP:20270503T000000Z
 DTSTART;VALUE=DATE:20270503
@@ -427,5 +467,37 @@ DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:[MSP EXAMS] Resit week P5
 DESCRIPTION:14-18 Jun 2027\, standalone resit week. FSE-wide: same week hosts CE Semester 2\, DACS P5/Semester 2 and Science Masters P4+P5 resits | For: coordinators\, invigilators\, ESD\, students
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-p5-202627@msp-operations
+DTSTAMP:20270625T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P5 + P4 resits)
+DESCRIPTION:Inspection deadline and final transcripts both 25 Jun (compressed)\, per the grading overview | For: exams office\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-due-resits-202627@msp-operations
+DTSTAMP:20270702T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP EXAMS] Resit grade submission deadline (June resit week)
+DESCRIPTION:Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday)\; P6 project grades share this date | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:grades-published-resits-202627@msp-operations
+DTSTAMP:20270709T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:[MSP EXAMS] Resit grades published (June resit week)
+DESCRIPTION:Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview\; transcript update 12 Jul\, inspection deadline + final transcript 23 Jul | For: students\, coordinators\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-final-update-resits-202627@msp-operations
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:[MSP EXAMS] Final bulk transcript update after inspection (P5 resits + P6 projects)
+DESCRIPTION:Inspection deadline and final transcripts both 23 Jul\, per the grading overview | For: exams office\, ESD
 END:VEVENT
 END:VCALENDAR

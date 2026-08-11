@@ -69,12 +69,52 @@ SUMMARY:[MSP ESD] External education registration deadline (P3)
 DESCRIPTION:For: students\, BoE
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p1-202627@msp-operations
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P1)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:ext-edu-s2-202627@msp-operations
 DTSTAMP:20261206T000000Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:[MSP ESD] External education registration deadline (S2\, P4\, P4-P5)
 DESCRIPTION:For: students\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-ask-p2-202627@msp-operations
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[MSP ESD] Ask coordinators for accreditation material (P2 + P1 resits)
+DESCRIPTION:Mon 18 Jan per the GRADING DEADLINES 2026-2027 overview (closure shifts the round\; matches Eva's 2026 practice of 19 Jan) | For: IPO (Eva)\, course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-deadline-p2-202627@msp-operations
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P2 + P1 resits)
+DESCRIPTION:Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline\; closure shifts the whole round) | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-due-p3-202627@msp-operations
+DTSTAMP:20270205T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:[MSP ESD] Project grades due to ESD (P3 projects)
+DESCRIPTION:Fri 5 Feb per the grading overview (+10 working days from P3 end) | For: project supervisors\, Project Committee
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-published-p3-202627@msp-operations
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:[MSP ESD] Project grades published (P3 projects)
+DESCRIPTION:Fri 12 Feb per the grading overview\; transcript update 17 Feb\, inspection deadline 26 Feb\, final transcripts 5 Mar | For: students\, supervisors
 END:VEVENT
 BEGIN:VEVENT
 UID:ext-edu-p5-202627@msp-operations
@@ -109,6 +149,14 @@ SUMMARY:[MSP ESD] External education registration deadline (P6)
 DESCRIPTION:For: students\, BoE
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p4-202627@msp-operations
+DTSTAMP:20270423T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P4)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:sap-mendix-pass-202627@msp-operations
 DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
@@ -133,6 +181,14 @@ SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
 DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
 END:VEVENT
 BEGIN:VEVENT
+UID:accreditation-deadline-p5-202627@msp-operations
+DTSTAMP:20270625T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:admissions-portal-content-202627@msp-operations
 DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
@@ -141,11 +197,43 @@ SUMMARY:[MSP ESD] Admissions - portal task-description content deadline
 DESCRIPTION:Also the date UM files visas with IND. Hard SSC chain per the KB | For: Admissions team\, SSC
 END:VEVENT
 BEGIN:VEVENT
+UID:project-grades-due-p6-202627@msp-operations
+DTSTAMP:20270702T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP ESD] Project grades due to ESD (P6 projects)
+DESCRIPTION:Fri 2 Jul per the grading overview (aligned with the resit-week clock\, not +10wd from P6 end) | For: project supervisors\, Project Committee
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-published-p6-202627@msp-operations
+DTSTAMP:20270709T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:[MSP ESD] Project grades published (P6 projects)
+DESCRIPTION:Fri 9 Jul per the grading overview\; transcript update 12 Jul\, inspection + final transcripts 23 Jul | For: students\, supervisors
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-ask-resits-202627@msp-operations
+DTSTAMP:20270712T000000Z
+DTSTART;VALUE=DATE:20270712
+DTEND;VALUE=DATE:20270713
+SUMMARY:[MSP ESD] Ask coordinators for accreditation material (P5 resit round)
+DESCRIPTION:Mon 12 Jul\, confirmed by the GRADING DEADLINES 2026-2027 overview | For: IPO (Eva)\, resit coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:admissions-ssc-handover-202627@msp-operations
 DTSTAMP:20270715T000000Z
 DTSTART;VALUE=DATE:20270715
 DTEND;VALUE=DATE:20270716
 SUMMARY:[MSP ESD] Admissions - everything to SSC (webpage + task descriptions\, hard deadline)
 DESCRIPTION:Hard external deadline owned by SSC\; one of the KB's five must-not-miss dates | For: Admissions team\, SSC
+END:VEVENT
+BEGIN:VEVENT
+UID:accreditation-deadline-resits-202627@msp-operations
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5 resit round)
+DESCRIPTION:Fri 23 Jul\, confirmed by the grading overview (also the resit + P6 inspection deadline) | For: resit coordinators\, IPO (Eva)
 END:VEVENT
 END:VCALENDAR

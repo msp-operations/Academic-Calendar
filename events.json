@@ -1,6 +1,6 @@
 {
   "year": "2026-27",
-  "generated": "2026-08-04",
+  "generated": "2026-08-11",
   "periods": [
     {
       "id": "P1",
@@ -1633,7 +1633,7 @@
       "staff": "support",
       "date": "2026-11-09",
       "audience": "IPO (Eva), course coordinators of the period + resits",
-      "notes": "Monday after grade publication per the IPO overview. Material: course manual, assessment plan, attendance (module + exam), exams incl. questions/submissions/rubric, assignments",
+      "notes": "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure)",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -1673,18 +1673,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "transcript-final-update-p1",
-      "title": "Final bulk transcript update (after inspection round) (P1)",
-      "office": "exams",
-      "staff": "support",
-      "date": "2026-11-13",
-      "audience": "exams office, ESD",
-      "notes": "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "bachelor-open-day-fall",
@@ -1753,10 +1741,10 @@
       "staff": "academic",
       "date": "2026-11-20",
       "audience": "course coordinators, IPO (Eva)",
-      "notes": "End of the 10wd inspection window per the IPO overview; hand in via the archive drive, mail, or at DUB30 (0.233). Reminder goes out the week before",
+      "notes": "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "accreditation-dub30-p1",
@@ -1765,7 +1753,7 @@
       "staff": "support",
       "date": "2026-11-23",
       "audience": "IPO (Eva), late coordinators",
-      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round",
+      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -1802,6 +1790,18 @@
       "date": "2026-11-24",
       "audience": "exams office",
       "notes": "P2. Delivery Tue 1 Dec",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "transcript-final-update-p1",
+      "title": "Final bulk transcript update after inspection (P1)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2026-11-25",
+      "audience": "exams office, ESD",
+      "notes": "Inspection deadline 20 Nov, final transcripts 25 Nov, per the grading overview",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -2059,18 +2059,6 @@
       "status": "unconfirmed"
     },
     {
-      "id": "accreditation-ask-p2",
-      "title": "Ask coordinators for accreditation material (round opens) (P2)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-01-04",
-      "audience": "IPO (Eva), course coordinators of the period + resits",
-      "notes": "Monday after grade publication per the IPO overview. Material: course manual, assessment plan, attendance (module + exam), exams incl. questions/submissions/rubric, assignments",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "catalogue-kickoff",
       "title": "Catalogue AY27-28 kickoff - workbooks copied + Gerco letter meeting",
       "office": "esd",
@@ -2092,18 +2080,6 @@
       "notes": "Early Jan per the IPO overview; Gerco check mid Jan",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "grades-due-p2",
-      "title": "Grade submission deadline for coordinators (P2)",
-      "office": "exams",
-      "staff": "academic",
-      "date": "2027-01-04",
-      "audience": "course coordinators, examiners",
-      "notes": "The 10wd clock pauses over the Christmas closure: AY25-26 precedent set the P2 + P1-resit teacher deadline on the first Monday after the break (5 Jan 2026), so expect Mon 4 Jan 2027. Confirm with the exams office",
-      "link": "",
-      "submit": true,
       "status": "unconfirmed"
     },
     {
@@ -2129,6 +2105,18 @@
       "link": "",
       "submit": false,
       "status": "unconfirmed"
+    },
+    {
+      "id": "grades-due-p2",
+      "title": "Grade submission deadline for coordinators (P2 + P1 resits)",
+      "office": "exams",
+      "staff": "academic",
+      "date": "2027-01-08",
+      "audience": "course coordinators, examiners",
+      "notes": "Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview (closure-adjusted, marked * in the doc); P1 resits ride the same clock",
+      "link": "",
+      "submit": true,
+      "status": "confirmed"
     },
     {
       "id": "switch-p4",
@@ -2162,18 +2150,6 @@
       "date": "2027-01-11",
       "audience": "IPO (Eva), BoE, Pavel",
       "notes": "Three weeks ahead per the IPO overview: SAP Student Reporting Tool lists (deregistered before 1 Oct = no letter), Stick advisor match, datafile, mail-address check, link/EER-article check",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "grades-published-p2",
-      "title": "Grades published on Student Portal (P2, deadline)",
-      "office": "exams",
-      "staff": "both",
-      "date": "2027-01-11",
-      "audience": "students, coordinators, BoE, Academic Advising",
-      "notes": "Teacher deadline 4 Jan + 5 working days ESD processing (closure-paused clock; AY25-26 pattern). Confirm with the exams office",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2215,16 +2191,16 @@
       "status": "confirmed"
     },
     {
-      "id": "accreditation-deadline-p2",
-      "title": "Accreditation material hand-in deadline (P2)",
-      "office": "esd",
-      "staff": "academic",
+      "id": "grades-published-p2",
+      "title": "Grades published on Student Portal (P2, deadline)",
+      "office": "exams",
+      "staff": "both",
       "date": "2027-01-15",
-      "audience": "course coordinators, IPO (Eva)",
-      "notes": "End of the 10wd inspection window per the IPO overview; hand in via the archive drive, mail, or at DUB30 (0.233). Reminder goes out the week before",
+      "audience": "students, coordinators, BoE, Academic Advising",
+      "notes": "Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview; running transcript update 20 Jan, inspection deadline 29 Jan, final transcript update 5 Feb",
       "link": "",
-      "submit": true,
-      "status": "unconfirmed"
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "btr-final-grades-pub-sept",
@@ -2239,16 +2215,16 @@
       "status": "confirmed"
     },
     {
-      "id": "accreditation-dub30-p2",
-      "title": "Eva at DUB30 for archive intake (Mon-Wed) (P2)",
+      "id": "accreditation-ask-p2",
+      "title": "Ask coordinators for accreditation material (P2 + P1 resits)",
       "office": "esd",
       "staff": "support",
       "date": "2027-01-18",
-      "audience": "IPO (Eva), late coordinators",
-      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round",
+      "audience": "IPO (Eva), course coordinators",
+      "notes": "Mon 18 Jan per the GRADING DEADLINES 2026-2027 overview (closure shifts the round; matches Eva's 2026 practice of 19 Jan)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "bsa-halfway-gerco",
@@ -2359,6 +2335,18 @@
       "status": "unconfirmed"
     },
     {
+      "id": "accreditation-deadline-p2",
+      "title": "Accreditation material hand-in deadline (P2 + P1 resits)",
+      "office": "esd",
+      "staff": "academic",
+      "date": "2027-01-29",
+      "audience": "course coordinators, IPO (Eva)",
+      "notes": "Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline; closure shifts the whole round)",
+      "link": "",
+      "submit": true,
+      "status": "confirmed"
+    },
+    {
       "id": "withdraw-p4",
       "title": "Course withdraw deadline",
       "office": "scheduling",
@@ -2393,6 +2381,18 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
+    },
+    {
+      "id": "accreditation-dub30-p2",
+      "title": "Eva at DUB30 for archive intake (P2 round)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-02-01",
+      "audience": "IPO (Eva), late coordinators",
+      "notes": "Week after the 29 Jan hand-in deadline (matches Eva's 2026 practice: DUB30 2-4 Feb)",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
     },
     {
       "id": "bsa-halfway-send",
@@ -2431,16 +2431,28 @@
       "status": "unconfirmed"
     },
     {
-      "id": "project-grades-published-p3",
-      "title": "Project grades published (committee deadline) (P3)",
+      "id": "project-grades-due-p3",
+      "title": "Project grades due to ESD (P3 projects)",
       "office": "esd",
       "staff": "academic",
       "date": "2027-02-05",
-      "audience": "Project Committee, supervisors, students",
-      "notes": "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days. KB says 10 calendar days but the F1 grading overview ran +10 WORKING days both periods in AY25-26 (P3: 6 Feb; P6: 26 Jun) - working-day reading applied here, settle before P3",
+      "audience": "project supervisors, Project Committee",
+      "notes": "Fri 5 Feb per the grading overview (+10 working days from P3 end)",
+      "link": "",
+      "submit": true,
+      "status": "confirmed"
+    },
+    {
+      "id": "transcript-final-update-p2",
+      "title": "Final bulk transcript update after inspection (P2 + P1 resits)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-02-05",
+      "audience": "exams office, ESD",
+      "notes": "Inspection deadline 29 Jan, final transcripts 5 Feb, per the grading overview",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "bsa-halfway-archive",
@@ -2462,6 +2474,18 @@
       "date": "2027-02-08",
       "audience": "all staff",
       "notes": "8-12 Feb 2027, inside P4",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "project-grades-published-p3",
+      "title": "Project grades published (P3 projects)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-02-12",
+      "audience": "students, supervisors",
+      "notes": "Fri 12 Feb per the grading overview; transcript update 17 Feb, inspection deadline 26 Feb, final transcripts 5 Mar",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3073,7 +3097,7 @@
       "staff": "support",
       "date": "2027-04-12",
       "audience": "IPO (Eva), course coordinators of the period + resits",
-      "notes": "Monday after grade publication per the IPO overview. Material: course manual, assessment plan, attendance (module + exam), exams incl. questions/submissions/rubric, assignments",
+      "notes": "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure)",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3151,18 +3175,6 @@
       "status": "unconfirmed"
     },
     {
-      "id": "transcript-final-update-p4",
-      "title": "Final bulk transcript update (after inspection round) (P4)",
-      "office": "exams",
-      "staff": "support",
-      "date": "2027-04-16",
-      "audience": "exams office, ESD",
-      "notes": "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "ext-edu-p6",
       "title": "External education registration deadline (P6)",
       "office": "esd",
@@ -3193,10 +3205,10 @@
       "staff": "academic",
       "date": "2027-04-23",
       "audience": "course coordinators, IPO (Eva)",
-      "notes": "End of the 10wd inspection window per the IPO overview; hand in via the archive drive, mail, or at DUB30 (0.233). Reminder goes out the week before",
+      "notes": "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "accreditation-dub30-p4",
@@ -3205,7 +3217,7 @@
       "staff": "support",
       "date": "2027-04-26",
       "audience": "IPO (Eva), late coordinators",
-      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round",
+      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3278,6 +3290,18 @@
       "date": "2027-04-30",
       "audience": "BoE, EPC, Programme Board",
       "notes": "Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "transcript-final-update-p4",
+      "title": "Final bulk transcript update after inspection (P4 + P2/P3 resits)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-04-30",
+      "audience": "exams office, ESD",
+      "notes": "Inspection deadline 23 Apr, final transcripts 30 Apr, per the grading overview",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3733,7 +3757,7 @@
       "staff": "support",
       "date": "2027-06-14",
       "audience": "IPO (Eva), course coordinators of the period + resits",
-      "notes": "Monday after grade publication per the IPO overview. Material: course manual, assessment plan, attendance (module + exam), exams incl. questions/submissions/rubric, assignments",
+      "notes": "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure)",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3785,18 +3809,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "transcript-final-update-p5",
-      "title": "Final bulk transcript update (after inspection round) (P5)",
-      "office": "exams",
-      "staff": "support",
-      "date": "2027-06-18",
-      "audience": "exams office, ESD",
-      "notes": "Second transcript step ~1 week after grade publication, once inspection closes (two-step transcripts rule, F1 grading overview + procedure clarifications Jul 2026). P2 instance shifts with the closure (~mid-Jan), resit-week instance ~16 Jul",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "summer-break",
@@ -3859,28 +3871,28 @@
       "status": "unconfirmed"
     },
     {
-      "id": "project-grades-published-p6",
-      "title": "Project grades published (committee deadline) (P6)",
-      "office": "esd",
-      "staff": "academic",
-      "date": "2027-06-25",
-      "audience": "Project Committee, supervisors, students",
-      "notes": "Supervisor grades to committee within 5 days of period end; committee publishes within 10 days. KB says 10 calendar days but the F1 grading overview ran +10 WORKING days both periods in AY25-26 (P3: 6 Feb; P6: 26 Jun) - working-day reading applied here, settle before P3",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "accreditation-deadline-p5",
       "title": "Accreditation material hand-in deadline (P5)",
       "office": "esd",
       "staff": "academic",
       "date": "2027-06-25",
       "audience": "course coordinators, IPO (Eva)",
-      "notes": "End of the 10wd inspection window per the IPO overview; hand in via the archive drive, mail, or at DUB30 (0.233). Reminder goes out the week before",
+      "notes": "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
+    },
+    {
+      "id": "transcript-final-update-p5",
+      "title": "Final bulk transcript update after inspection (P5 + P4 resits)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-06-25",
+      "audience": "exams office, ESD",
+      "notes": "Inspection deadline and final transcripts both 25 Jun (compressed), per the grading overview",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "bsa-pbsa-datafile",
@@ -3901,7 +3913,7 @@
       "staff": "support",
       "date": "2027-06-28",
       "audience": "IPO (Eva), late coordinators",
-      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round",
+      "notes": "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3943,16 +3955,28 @@
       "status": "unconfirmed"
     },
     {
+      "id": "project-grades-due-p6",
+      "title": "Project grades due to ESD (P6 projects)",
+      "office": "esd",
+      "staff": "academic",
+      "date": "2027-07-02",
+      "audience": "project supervisors, Project Committee",
+      "notes": "Fri 2 Jul per the grading overview (aligned with the resit-week clock, not +10wd from P6 end)",
+      "link": "",
+      "submit": true,
+      "status": "confirmed"
+    },
+    {
       "id": "grades-due-resits",
       "title": "Resit grade submission deadline (June resit week)",
       "office": "exams",
       "staff": "academic",
       "date": "2027-07-02",
       "audience": "course coordinators, examiners",
-      "notes": "Same 10wd clock from the Friday of the 14-18 Jun resit week (AY25-26 precedent: 3 Jul). The repeat engine only covers P1/P2/P4/P5, so this standalone week gets its own event",
+      "notes": "Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday); P6 project grades share this date",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "norm-hours-finance",
@@ -3991,16 +4015,28 @@
       "status": "unconfirmed"
     },
     {
+      "id": "project-grades-published-p6",
+      "title": "Project grades published (P6 projects)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-07-09",
+      "audience": "students, supervisors",
+      "notes": "Fri 9 Jul per the grading overview; transcript update 12 Jul, inspection + final transcripts 23 Jul",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
       "id": "grades-published-resits",
       "title": "Resit grades published (June resit week)",
       "office": "exams",
       "staff": "both",
       "date": "2027-07-09",
       "audience": "students, coordinators, BoE",
-      "notes": "+15wd from the resit-week Friday (AY25-26 precedent: 13 Jul SAP processing)",
+      "notes": "Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview; transcript update 12 Jul, inspection deadline + final transcript 23 Jul",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "alumni-db-campaign",
@@ -4033,10 +4069,10 @@
       "staff": "support",
       "date": "2027-07-12",
       "audience": "IPO (Eva), resit coordinators",
-      "notes": "Translated from the 2026 pattern (ask Mon 13 Jul); resit week ends 18 Jun 2027",
+      "notes": "Mon 12 Jul, confirmed by the GRADING DEADLINES 2026-2027 overview",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "admissions-ssc-handover",
@@ -4081,10 +4117,22 @@
       "staff": "academic",
       "date": "2027-07-23",
       "audience": "resit coordinators, IPO (Eva)",
-      "notes": "",
+      "notes": "Fri 23 Jul, confirmed by the grading overview (also the resit + P6 inspection deadline)",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
+    },
+    {
+      "id": "transcript-final-update-resits",
+      "title": "Final bulk transcript update after inspection (P5 resits + P6 projects)",
+      "office": "exams",
+      "staff": "support",
+      "date": "2027-07-23",
+      "audience": "exams office, ESD",
+      "notes": "Inspection deadline and final transcripts both 23 Jul, per the grading overview",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "accreditation-dub30-resits",
