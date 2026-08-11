@@ -106,7 +106,8 @@
   .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 3px; min-width: 1040px; }
   .ymonth { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #fff; border-radius: 8px; display: flex;
     flex-direction: column; align-items: center; justify-content: center; font-weight: 800; font-size: .8rem; letter-spacing: .07em;
-    box-shadow: var(--shadow-sm); }
+    box-shadow: var(--shadow-sm); cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
+  .ymonth:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); background: linear-gradient(160deg, var(--navy-2), var(--accent)); }
   .ymonth small { font-weight: 500; color: #b8c4d8; font-size: .62rem; letter-spacing: .02em; }
   .yday { background: var(--card); border: 1px solid var(--line); border-radius: 6px; min-height: 50px; padding: 3px 4px;
     cursor: pointer; transition: border-color .12s ease, box-shadow .12s ease; }
@@ -204,7 +205,7 @@
   .pill:hover { background: color-mix(in srgb, var(--c, var(--general)) 20%, white); }
 
   /* ---------- Timeline ---------- */
-  .month { margin-top: 30px; }
+  .month { margin-top: 30px; scroll-margin-top: 64px; }
   .month h2 { font-size: .92rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); font-weight: 800;
     border-bottom: 2px solid var(--line); padding-bottom: 7px; margin-bottom: 12px; }
   .event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
@@ -382,6 +383,13 @@ function isoWeek(iso) {
 function scrollToToday() {
   const el = document.querySelector('.yday.today, .day.today, .today-rule');
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function gotoMonth(y, m) {
+  state.view = 'grid';
+  document.querySelectorAll('.viewtoggle button[data-view]').forEach(x => x.classList.toggle('on', x.dataset.view === 'grid'));
+  syncState(); render();
+  const sec = document.getElementById(`m-${y}-${String(m).padStart(2, '0')}`);
+  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 function showSubscribeCard(feed) {
   const label = FEEDS[feed] || feed;
@@ -670,6 +678,7 @@ function renderGrid(main, events) {
 
   while (y < endY || (y === endY && m <= endM)) {
     const section = document.createElement('section'); section.className = 'month';
+    section.id = `m-${y}-${String(m).padStart(2, '0')}`;
     const monthName = new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
     section.innerHTML = `<h2>${monthName}</h2>`;
     const grid = document.createElement('div'); grid.className = 'calgrid';
@@ -735,7 +744,12 @@ function renderYear(main, events) {
 
   while (y < endY || (y === endY && m <= endM)) {
     const mLabel = new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'short' }).toUpperCase();
-    grid.insertAdjacentHTML('beforeend', `<div class="ymonth">${mLabel}<small>${y}</small></div>`);
+    const mEl = document.createElement('div'); mEl.className = 'ymonth';
+    mEl.innerHTML = `${mLabel}<small>${y}</small>`;
+    mEl.title = 'Open ' + new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' }) + ' in the month view';
+    const gy = y, gm = m;
+    mEl.onclick = () => gotoMonth(gy, gm);
+    grid.appendChild(mEl);
     const daysInMonth = new Date(Date.UTC(y, m, 0, 12)).getUTCDate();
 
     for (let d = 1; d <= 31; d++) {
