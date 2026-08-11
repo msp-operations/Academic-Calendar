@@ -167,6 +167,8 @@
   .cstep .cwho { display: inline-block; font-size: .6rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
     padding: 1px 7px; border-radius: 4px; margin-right: 7px; background: #e7ecf4; color: var(--navy); }
   .cstep.academic .cwho { background: #fdf0cd; color: #8a5d05; }
+  .cgap { position: relative; font-size: .66rem; color: #94a3b8; font-style: italic; padding: 1px 0 1px 2px; }
+  .cgap::before { content: "\2193"; position: absolute; left: -22px; color: #b6c2d4; font-style: normal; }
 
   /* Subscribe options card */
   .subrow { display: block; width: 100%; text-align: left; border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 14px;
@@ -570,7 +572,19 @@ function renderChains(main) {
     const sec = document.createElement('section'); sec.className = 'chain';
     sec.innerHTML = `<h3><span class="csw" style="background:${ch.color}"></span>${ch.title}</h3>`;
     const list = document.createElement('div'); list.className = 'csteps';
+    const gapText = (n) => {
+      if (n === 0) return 'same day';
+      if (n === 1) return 'the next day';
+      if (n % 7 === 0) return (n / 7) + ' weeks later';
+      return n + ' days later';
+    };
+    let prev = null;
     for (const s of steps) {
+      if (prev) {
+        const n = Math.round((new Date(s.e.date + 'T12:00:00') - new Date(prev + 'T12:00:00')) / 86400000);
+        list.insertAdjacentHTML('beforeend', `<div class="cgap">${gapText(n)}</div>`);
+      }
+      prev = s.e.date;
       const row = document.createElement('div');
       row.className = 'cstep ' + (s.who === 'a' ? 'academic' : 'support') + (s.e.date < todayIso ? ' past' : '');
       row.innerHTML = `<span class="cdate">${dow(s.e.date)} ${fmt(s.e.date)}</span>` +
