@@ -40,6 +40,11 @@
   .topbar { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
     padding: 26px 24px 16px; max-width: var(--pagew); margin: 0 auto; }
   .topbar img.msp { height: 62px; }
+  .homelink { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: inherit; cursor: pointer; }
+  .homelink:hover h1 { color: var(--accent); }
+  .homelink:hover img.msp { transform: scale(1.03); }
+  .homelink img.msp { transition: transform .15s ease; }
+  .homelink h1 { transition: color .15s ease; }
   .titleblock .kicker { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .18em; color: var(--accent); margin-bottom: 4px; }
   .titleblock h1 { font-size: 1.6rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
 
@@ -285,11 +290,13 @@
 <body>
 <header>
   <div class="topbar">
-    <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
-    <div class="titleblock">
-      <p class="kicker">Maastricht Science Programme</p>
-      <h1>MSP Operations Calendar</h1>
-    </div>
+    <a class="homelink" id="homelink" href="./" title="Back to the year planner">
+      <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
+      <div class="titleblock">
+        <p class="kicker">Maastricht Science Programme</p>
+        <h1>MSP Operations Calendar</h1>
+      </div>
+    </a>
   </div>
   <div class="periodband" id="periodband"></div>
 </header>
@@ -519,6 +526,15 @@ function init() {
   for (const b of document.querySelectorAll('.feed')) {
     b.onclick = () => showSubscribeCard(b.dataset.feed);
   }
+
+  document.getElementById('homelink').onclick = (ev) => {
+    ev.preventDefault();
+    state.view = 'year'; state.q = '';
+    const s = document.querySelector('.search'); if (s) s.value = '';
+    document.querySelectorAll('.viewtoggle button[data-view]').forEach(x => x.classList.toggle('on', x.dataset.view === 'year'));
+    syncState(); render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   syncState();
   render();
