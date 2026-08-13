@@ -1,6 +1,6 @@
 {
   "year": "2026-27",
-  "generated": "2026-08-11",
+  "generated": "2026-08-13",
   "periods": [
     {
       "id": "P1",
@@ -920,12 +920,12 @@
     },
     {
       "id": "intro-days",
-      "title": "INTRO days (Mon 24 - Thu 27 Aug)",
+      "title": "INTRO days (Mon 24 - Wed 26 Aug)",
       "office": "general",
       "staff": "both",
       "date": "2026-08-24",
       "audience": "new students, buddies, Secretariat, ESD, tutors",
-      "notes": "Four days per the MSP1000 manual; mandatory, incl. Lab Safety assessment on the final day. Social event Wed 17:30 Tapijn",
+      "notes": "Three days, mandatory, per the 2026 Draft Schedule LIVE (Martijn, 13 Aug 2026). Mon: buddy introduction sessions, welcome speech, MSP Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morning. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Safety STAFF training (DUB30) for a student assessment on a fourth day.",
       "link": "",
       "submit": false,
       "status": "confirmed"

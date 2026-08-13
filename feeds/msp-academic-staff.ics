@@ -41,8 +41,8 @@ UID:intro-days-202627@msp-operations
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
-SUMMARY:[MSP GENERAL] INTRO days (Mon 24 - Thu 27 Aug)
-DESCRIPTION:Four days per the MSP1000 manual\; mandatory\, incl. Lab Safety assessment on the final day. Social event Wed 17:30 Tapijn | For: new students\, buddies\, Secretariat\, ESD\, tutors
+SUMMARY:[MSP GENERAL] INTRO days (Mon 24 - Wed 26 Aug)
+DESCRIPTION:Three days\, mandatory\, per the 2026 Draft Schedule LIVE (Martijn\, 13 Aug 2026). Mon: buddy introduction sessions\, welcome speech\, MSP Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morning. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Safety STAFF training (DUB30) for a student assessment on a fourth day. | For: new students\, buddies\, Secretariat\, ESD\, tutors
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-start-sept-202627@msp-operations
