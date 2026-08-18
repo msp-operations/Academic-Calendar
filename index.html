@@ -337,17 +337,48 @@
 
 <script src="events.js"></script>
 <script>
+/* ==========================================================================
+   EDIT HERE - the names and labels shown on the site.
+
+   This is the only block on this page you would normally change. Everything
+   below it is the calendar engine and does not need touching.
+
+   TO ADD OR RENAME AN OFFICE (a filter button + its colour layer):
+     1. Add a line to OFFICES below:  key: 'Label shown on the button',
+     2. Use that same key as the `office:` value in data/events.yaml.
+     3. Add a matching colour in the stylesheet above: search for --off-exams
+        and copy one of those lines for your new key.
+     4. Add its feed file to FEEDS below (build.mjs generates one .ics per
+        office automatically, named msp-<key>.ics).
+     5. Run  node build.mjs  and push.
+
+   TO CHANGE WORDING ONLY: edit the text inside the quotes. Leave the keys
+   (the words before the colon) alone, they must match events.yaml.
+
+   NOT AN EDIT POINT: the events themselves. Those live in
+   data/events.yaml, and the year structure in data/year-2026-27.yaml.
+   Full guide: EDITING-INSTRUCTIONS.md in the repo root.
+   ========================================================================== */
+
+// The office filter buttons. Key must match `office:` in data/events.yaml.
 const OFFICES = {
   exams: 'Exams', btr: 'BTR', boe: 'BoE', scheduling: 'Scheduling',
   esd: 'ESD', alumni: 'Alumni', general: 'General',
 };
+// The "who is this for" filter. Key must match `staff:` in data/events.yaml.
 const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
 const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
+// The subscribe list. One entry per generated feed in feeds/.
 const FEEDS = {
   'msp-all.ics': 'All offices', 'msp-academic-staff.ics': 'Academic staff', 'msp-support-staff.ics': 'Support staff',
   'msp-exams.ics': 'Exams', 'msp-btr.ics': 'BTR', 'msp-boe.ics': 'BoE', 'msp-scheduling.ics': 'Scheduling',
   'msp-esd.ics': 'ESD', 'msp-alumni.ics': 'Alumni', 'msp-general.ics': 'General',
 };
+
+/* ==========================================================================
+   END OF THE EDIT BLOCK. Below is the calendar engine.
+   ========================================================================== */
+
 let DB = null;
 
 // State: URL params win, then localStorage, then defaults. Kept in sync both ways
