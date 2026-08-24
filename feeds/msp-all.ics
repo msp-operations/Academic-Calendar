@@ -709,6 +709,14 @@ SUMMARY:[MSP ESD] IWIO: questionnaire link + open/close dates installed (P2)
 DESCRIPTION:Step 2: link the questionnaires and set the IWIO begin and end dates. Window 23-27 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
+UID:graduation-ceremony-202627@msp-operations
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[MSP GENERAL] Graduation ceremony 2026-27 (evening)
+DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas announcement Details on Graduation\, 13 May 2026: the ceremony will be on 27 November 2026 in the evening\, graduates receive further information around Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expected MECC per the 2025 pattern | For: graduating students\, BoE\, Secretariat\, Alumni
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-overview-check-p2-202627@msp-operations
 DTSTAMP:20261130T000000Z
 DTSTART;VALUE=DATE:20261130

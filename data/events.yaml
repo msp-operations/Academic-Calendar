@@ -53,13 +53,13 @@
   status: confirmed
 
 - id: graduation-ceremony
-  title: Graduation ceremony 2026-27
+  title: Graduation ceremony 2026-27 (evening)
   office: general
-  when: "2026-11-23"
+  when: "2026-11-27"
   staff: both
   audience: graduating students, BoE, Secretariat, Alumni
-  notes: "Week 48 (23-27 Nov) per the academic calendar; exact day TBC. Pattern per own calendar: FSE Graduation day + ceremony both Fri 28 Nov 2025 at MECC, so expect Fri 27 Nov 2026 at MECC"
-  status: unconfirmed
+  notes: "Fri 27 Nov 2026, in the evening. Stated by ESD in the Canvas announcement Details on Graduation, 13 May 2026: the ceremony will be on 27 November 2026 in the evening, graduates receive further information around Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expected MECC per the 2025 pattern"
+  status: confirmed
 
 - id: summer-break
   title: Summer break begins

@@ -53,6 +53,14 @@ SUMMARY:[MSP GENERAL] Bachelor Open Day\, Fall edition
 DESCRIPTION:Own calendar\, 'Bachelor Open Day\, Fall Edition 2026'\, Sat 14 Nov 2026 09:30\, Learning Spaces PHS1 + Common Room ZW4. Alumni volunteer call went out ~5 weeks ahead in 2025 | For: MSP staff on stand duty\, marketing\, alumni volunteers
 END:VEVENT
 BEGIN:VEVENT
+UID:graduation-ceremony-202627@msp-operations
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[MSP GENERAL] Graduation ceremony 2026-27 (evening)
+DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas announcement Details on Graduation\, 13 May 2026: the ceremony will be on 27 November 2026 in the evening\, graduates receive further information around Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expected MECC per the 2025 pattern | For: graduating students\, BoE\, Secretariat\, Alumni
+END:VEVENT
+BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
 DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214

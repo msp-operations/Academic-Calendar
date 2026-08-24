@@ -229,6 +229,14 @@ SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P2 (incl. P1 resit exams) | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:graduation-ceremony-202627@msp-operations
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[MSP GENERAL] Graduation ceremony 2026-27 (evening)
+DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas announcement Details on Graduation\, 13 May 2026: the ceremony will be on 27 November 2026 in the evening\, graduates receive further information around Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expected MECC per the 2025 pattern | For: graduating students\, BoE\, Secretariat\, Alumni
+END:VEVENT
+BEGIN:VEVENT
 UID:iwio-send-p2-202627@msp-operations
 DTSTAMP:20261130T000000Z
 DTSTART;VALUE=DATE:20261130
