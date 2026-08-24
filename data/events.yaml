@@ -106,46 +106,46 @@
 - id: exam-submit-p1
   title: Exam submission deadline for coordinators
   office: exams
-  when: "2026-09-28"
+  when: "2026-09-21"
   staff: academic
   audience: course coordinators
-  notes: "P1. Paper PDF and TestVision test both due; in the inbox by 9:00. Non-compliant exams returned with 24h to fix"
+  notes: "P1. Paper PDF and TestVision test both due; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P1 exams 12-16 Oct"
   submit: yes
   status: confirmed
 - id: exam-submit-p2
   title: Exam submission deadline for coordinators
   office: exams
-  when: "2026-11-23"
+  when: "2026-11-16"
   staff: academic
   audience: course coordinators
-  notes: "P2 (incl. P1 resit exams)"
+  notes: "P2 (incl. P1 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P2 exams 7-11 Dec"
   submit: yes
   status: confirmed
 - id: exam-submit-p4
   title: Exam submission deadline for coordinators
   office: exams
-  when: "2027-03-01"
+  when: "2027-02-22"
   staff: academic
   audience: course coordinators
-  notes: "P4 (incl. P2/P3 resit exams)"
+  notes: "P4 (incl. P2/P3 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P4 exams 15-19 Mar"
   submit: yes
   status: confirmed
 - id: exam-submit-p5
   title: Exam submission deadline for coordinators
   office: exams
-  when: "2027-05-03"
+  when: "2027-04-26"
   staff: academic
   audience: course coordinators
-  notes: "P5 (incl. P4 resit exams)"
+  notes: "P5 (incl. P4 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P5 exams 17-21 May"
   submit: yes
   status: confirmed
 - id: exam-submit-resits
   title: Resit exam submission deadline (P5 resits)
   office: exams
-  when: "2027-06-07"
+  when: "2027-05-31"
   staff: academic
   audience: course coordinators
-  notes: "One week before the June resit week"
+  notes: "One week before the June resit week | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the P5 resit round is a tight turnaround so MSP prints in house and asks for exams 2 weeks ahead rather than the usual 3. P5 resits 14-18 Jun"
   submit: yes
   status: confirmed
 
@@ -242,18 +242,138 @@
 - id: transcript-final-update-p5
   title: Final bulk transcript update after inspection (P5 + P4 resits)
   office: exams
-  when: "2027-06-25"
+  when: "2027-07-02"
   staff: support
   audience: exams office, ESD
-  notes: "Inspection deadline and final transcripts both 25 Jun (compressed), per the grading overview"
+  notes: "Inspection deadline and final transcripts both 25 Jun (compressed), per the grading overview | CORRECTED from 25 Jun per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): 3 days after inspection ends"
   status: confirmed
 - id: transcript-final-update-resits
   title: Final bulk transcript update after inspection (P5 resits + P6 projects)
   office: exams
-  when: "2027-07-23"
+  when: "2027-07-30"
   staff: support
   audience: exams office, ESD
-  notes: "Inspection deadline and final transcripts both 23 Jul, per the grading overview"
+  notes: "Inspection deadline and final transcripts both 23 Jul, per the grading overview | CORRECTED from 23 Jul per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): 3 days after inspection ends. Covers P5 resits and P6 projects"
+  status: confirmed
+- id: exam-inspection-p1
+  title: Exam inspection deadline (P1)
+  office: exams
+  when: "2026-11-20"
+  staff: both
+  audience: students, coordinators, exams office
+  notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: exam-inspection-p2
+  title: Exam inspection deadline (P2 + P1 resits)
+  office: exams
+  when: "2027-01-29"
+  staff: both
+  audience: students, coordinators, exams office
+  notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: exam-inspection-p3
+  title: Exam inspection deadline (P3 projects)
+  office: exams
+  when: "2027-02-26"
+  staff: both
+  audience: students, coordinators, exams office
+  notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: exam-inspection-p4
+  title: Exam inspection deadline (P4 + P2 resits)
+  office: exams
+  when: "2027-04-23"
+  staff: both
+  audience: students, coordinators, exams office
+  notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: exam-inspection-p5
+  title: Exam inspection deadline (P5 + P4 resits)
+  office: exams
+  when: "2027-06-25"
+  staff: both
+  audience: students, coordinators, exams office
+  notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: exam-inspection-resits
+  title: Exam inspection deadline (P5 resits + P6 projects)
+  office: exams
+  when: "2027-07-23"
+  staff: both
+  audience: students, coordinators, exams office
+  notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-p1
+  title: Running transcript update (P1)
+  office: exams
+  when: "2026-11-11"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-p2
+  title: Running transcript update (P2 + P1 resits)
+  office: exams
+  when: "2027-01-20"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-btr-sept
+  title: Running transcript update (BTR September cohort)
+  office: exams
+  when: "2027-01-25"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-p3
+  title: Running transcript update (P3 projects)
+  office: exams
+  when: "2027-02-17"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-p4
+  title: Running transcript update (P4 + P2 resits)
+  office: exams
+  when: "2027-04-16"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-btr-feb
+  title: Running transcript update (BTR February cohort)
+  office: exams
+  when: "2027-06-11"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-p5
+  title: Running transcript update (P5 + P4 resits)
+  office: exams
+  when: "2027-06-14"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-update-resits
+  title: Running transcript update (P5 resits + P6 projects)
+  office: exams
+  when: "2027-07-12"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  status: confirmed
+- id: transcript-final-update-p3
+  title: Final bulk transcript update after inspection (P3 projects)
+  office: exams
+  when: "2027-03-05"
+  staff: support
+  audience: exams office, ESD, students
+  notes: "3 days after inspection ends. P3 was the only round with no final transcript step in our data. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
 
 # ---------- Exams: support-staff logistics ----------

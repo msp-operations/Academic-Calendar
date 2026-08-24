@@ -69,6 +69,14 @@ SUMMARY:[MSP SCHEDULING] Course/skill planning forms P2 return deadline
 DESCRIPTION:2025 deadline stated as before September 19th in the 20 Aug reminder\; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-submit-p1-202627@msp-operations
+DTSTAMP:20260921T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P1. Paper PDF and TestVision test both due\; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P1 exams 12-16 Oct | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:sched-draft-p2-202627@msp-operations
 DTSTAMP:20260922T000000Z
 DTSTART;VALUE=DATE:20260922
@@ -83,14 +91,6 @@ DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:[MSP BTR] BTR proposal submission deadline (Sept cohort)
 DESCRIPTION:13:00 via Collent (all BTR deadlines are 13:00\, ignore Collent's 01:00 display) | For: students\, RS\, IA
-END:VEVENT
-BEGIN:VEVENT
-UID:exam-submit-p1-202627@msp-operations
-DTSTAMP:20260928T000000Z
-DTSTART;VALUE=DATE:20260928
-DTEND;VALUE=DATE:20260929
-SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P1. Paper PDF and TestVision test both due\; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:deadline-submission-cutoff-202627@msp-operations
@@ -205,6 +205,14 @@ SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P1)
 DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 9-13 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-submit-p2-202627@msp-operations
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P2 (incl. P1 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P2 exams 7-11 Dec | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:sched-planning-forms-spring-202627@msp-operations
 DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
@@ -221,12 +229,12 @@ SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P1)
 DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
-UID:exam-submit-p2-202627@msp-operations
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P2 (incl. P1 resit exams) | For: course coordinators
+UID:exam-inspection-p1-202627@msp-operations
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[MSP EXAMS] Exam inspection deadline (P1)
+DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
 END:VEVENT
 BEGIN:VEVENT
 UID:graduation-ceremony-202627@msp-operations
@@ -389,6 +397,14 @@ SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P2 + P1 resits)
 DESCRIPTION:Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline\; closure shifts the whole round) | For: course coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-inspection-p2-202627@msp-operations
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:[MSP EXAMS] Exam inspection deadline (P2 + P1 resits)
+DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-graduation-sept-202627@msp-operations
 DTSTAMP:20270131T000000Z
 DTSTART;VALUE=DATE:20270131
@@ -429,6 +445,14 @@ SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-submit-p4-202627@msp-operations
+DTSTAMP:20270222T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P4 (incl. P2/P3 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P4 exams 15-19 Mar | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:catalogue-coordinator-updates-202627@msp-operations
 DTSTAMP:20270226T000000Z
 DTSTART;VALUE=DATE:20270226
@@ -437,20 +461,20 @@ SUMMARY:[MSP ESD] Course catalogue - coordinator updates due
 DESCRIPTION:End of February (2026 instance was Fri 27 Feb)\; update letters go out mid-Jan\, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): exact date given | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-inspection-p3-202627@msp-operations
+DTSTAMP:20270226T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:[MSP EXAMS] Exam inspection deadline (P3 projects)
+DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-proposal-feb-202627@msp-operations
 DTSTAMP:20270301T000000Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[MSP BTR] BTR proposal submission deadline (Feb cohort)
 DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks\, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: students\, RS\, IA
-END:VEVENT
-BEGIN:VEVENT
-UID:exam-submit-p4-202627@msp-operations
-DTSTAMP:20270301T000000Z
-DTSTART;VALUE=DATE:20270301
-DTEND;VALUE=DATE:20270302
-SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P4 (incl. P2/P3 resit exams) | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-send-p4-202627@msp-operations
@@ -589,6 +613,22 @@ SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P4)
 DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-inspection-p4-202627@msp-operations
+DTSTAMP:20270423T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:[MSP EXAMS] Exam inspection deadline (P4 + P2 resits)
+DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-submit-p5-202627@msp-operations
+DTSTAMP:20270426T000000Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
+DESCRIPTION:P5 (incl. P4 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P5 exams 17-21 May | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:kings-day-202627@msp-operations
 DTSTAMP:20270427T000000Z
 DTSTART;VALUE=DATE:20270427
@@ -603,14 +643,6 @@ DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P5)
 DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 3-7 May per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
-END:VEVENT
-BEGIN:VEVENT
-UID:exam-submit-p5-202627@msp-operations
-DTSTAMP:20270503T000000Z
-DTSTART;VALUE=DATE:20270503
-DTEND;VALUE=DATE:20270504
-SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P5 (incl. P4 resit exams) | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:liberation-day-202627@msp-operations
@@ -709,6 +741,14 @@ SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
 DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-submit-resits-202627@msp-operations
+DTSTAMP:20270531T000000Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:[MSP EXAMS] Resit exam submission deadline (P5 resits)
+DESCRIPTION:One week before the June resit week | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the P5 resit round is a tight turnaround so MSP prints in house and asks for exams 2 weeks ahead rather than the usual 3. P5 resits 14-18 Jun | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-final-grades-due-feb-202627@msp-operations
 DTSTAMP:20270604T000000Z
 DTSTART;VALUE=DATE:20270604
@@ -723,14 +763,6 @@ DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P5)
 DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
-END:VEVENT
-BEGIN:VEVENT
-UID:exam-submit-resits-202627@msp-operations
-DTSTAMP:20270607T000000Z
-DTSTART;VALUE=DATE:20270607
-DTEND;VALUE=DATE:20270608
-SUMMARY:[MSP EXAMS] Resit exam submission deadline (P5 resits)
-DESCRIPTION:One week before the June resit week | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-close-p5-202627@msp-operations
@@ -781,6 +813,14 @@ SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5)
 DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
+UID:exam-inspection-p5-202627@msp-operations
+DTSTAMP:20270625T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[MSP EXAMS] Exam inspection deadline (P5 + P4 resits)
+DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-graduation-feb-202627@msp-operations
 DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
@@ -827,5 +867,13 @@ DTSTART;VALUE=DATE:20270723
 DTEND;VALUE=DATE:20270724
 SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5 resit round)
 DESCRIPTION:Fri 23 Jul\, confirmed by the grading overview (also the resit + P6 inspection deadline) | For: resit coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-inspection-resits-202627@msp-operations
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:[MSP EXAMS] Exam inspection deadline (P5 resits + P6 projects)
+DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
 END:VEVENT
 END:VCALENDAR
