@@ -189,7 +189,7 @@
     box-shadow: var(--shadow-sm); cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
   .ymonth:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); background: linear-gradient(160deg, var(--navy-2), var(--accent)); }
   .ymonth small { font-weight: 500; color: #b8c4d8; font-size: .62rem; letter-spacing: .02em; }
-  .yday { background: var(--card); border: 1px solid var(--line); border-radius: 6px; min-height: 50px; padding: 3px 4px; overflow: hidden;
+  .yday { background: var(--card); border: 1px solid var(--line); border-radius: 6px; min-height: 42px; padding: 3px 4px; overflow: hidden;
     cursor: pointer; transition: border-color .12s ease, box-shadow .12s ease; }
   .yday:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
   .yday.out { background: transparent; border-color: transparent; cursor: default; box-shadow: none; }
@@ -214,10 +214,16 @@
   /* Week number sits on its own line at the foot of the cell. Monday cells reserve the space so
      the event dots can never reach it, which is what used to collide with the day number. */
   .yday { position: relative; }
-  .yday:has(.wk) { padding-bottom: 16px; }
-  .yday .wk { position: absolute; left: 4px; bottom: 5px; top: auto; right: auto;
-    font-size: .55rem; letter-spacing: .02em; }
-  .yday .wk::before { content: "wk "; font-weight: 600; opacity: .75; }
+  /* On Mondays the week number replaces the weekday, because only Mondays carry one.
+     Below ~1500px a day cell is about 26px wide, which cannot hold two numbers at a readable
+     size, so narrow screens fall back to the weekday and lose the week number rather than
+     truncating the day number. */
+  .yday .wk { position: static; font-size: .55rem; font-weight: 700; letter-spacing: 0; }
+  .yday .wk + .dw { display: none; }
+  @media (max-width: 1500px) {
+    .yday .wk { display: none; }
+    .yday .wk + .dw { display: inline; }
+  }
   .yday .yhead b { color: var(--ink); font-size: .68rem; font-weight: 700; }
   .yday.today .yhead b { color: var(--accent-ink); }
   .pchip { display: inline-block; background: var(--navy); color: #fff; border-radius: 4px; padding: 0 4px; font-weight: 800; font-size: .58rem; margin-top: 2px; letter-spacing: .02em; }
@@ -1012,8 +1018,11 @@ function renderYear(main, events) {
         (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) +
         ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
       const hol = holidayOf(iso); if (hol) cell.title = hol;
-      cell.innerHTML = `<div class="yhead">${DOWS[dowIdx]} <b>${d}</b>` +
-        (dowIdx === 1 ? `<span class="wk" title="ISO week ${isoWeek(iso)}">${isoWeek(iso)}</span>` : '') + `</div>` +
+      cell.innerHTML = `<div class="yhead">` +
+        (dowIdx === 1
+          ? `<span class="wk" title="ISO week ${isoWeek(iso)}, Monday">wk${isoWeek(iso)}</span><span class="dw">${DOWS[dowIdx]}</span>`
+          : `<span class="dw">${DOWS[dowIdx]}</span>`) +
+        ` <b>${d}</b></div>` +
         (marks[iso] ? `<span class="pchip">${marks[iso]} &raquo;</span>` : '');
       cell.onclick = () => showDayCard(iso);
       const dots = document.createElement('div'); dots.className = 'ydots';
