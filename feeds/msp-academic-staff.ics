@@ -429,6 +429,14 @@ SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P5 | For: students\, coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-proposal-grades-due-feb-202627@msp-operations
+DTSTAMP:20270319T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Feb cohort)
+DESCRIPTION:Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
 UID:assessment-announced-p5-202627@msp-operations
 DTSTAMP:20270322T000000Z
 DTSTART;VALUE=DATE:20270322
@@ -475,6 +483,14 @@ DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-midterm-grades-due-feb-202627@msp-operations
+DTSTAMP:20270409T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:[MSP BTR] BTR midterm practical grade due (Feb cohort)
+DESCRIPTION:Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p4-202627@msp-operations
@@ -611,6 +627,14 @@ DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
 DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-due-feb-202627@msp-operations
+DTSTAMP:20270604T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:[MSP BTR] BTR final grades due in Collent (Feb cohort)
+DESCRIPTION:Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p5-202627@msp-operations

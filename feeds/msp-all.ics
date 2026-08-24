@@ -1213,6 +1213,14 @@ SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P5 | For: students\, coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-proposal-grades-due-feb-202627@msp-operations
+DTSTAMP:20270319T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Feb cohort)
+DESCRIPTION:Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
 UID:master-open-day-spring-202627@msp-operations
 DTSTAMP:20270320T000000Z
 DTSTART;VALUE=DATE:20270320
@@ -1325,12 +1333,28 @@ SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-midterm-grades-due-feb-202627@msp-operations
+DTSTAMP:20270409T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:[MSP BTR] BTR midterm practical grade due (Feb cohort)
+DESCRIPTION:Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS
+END:VEVENT
+BEGIN:VEVENT
 UID:grades-published-p4-202627@msp-operations
 DTSTAMP:20270409T000000Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
 DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-midterm-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270412T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP BTR] BTR midterm grades published (Feb cohort)
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, RS
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-ask-p4-202627@msp-operations
@@ -1645,6 +1669,14 @@ SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
 DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-final-grades-due-feb-202627@msp-operations
+DTSTAMP:20270604T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:[MSP BTR] BTR final grades due in Collent (Feb cohort)
+DESCRIPTION:Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
 UID:bsa-year-followup-202627@msp-operations
 DTSTAMP:20270604T000000Z
 DTSTART;VALUE=DATE:20270604
@@ -1659,6 +1691,14 @@ DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P5)
 DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270607T000000Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:[MSP BTR] BTR final grades published (Feb cohort)
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, supervisors\, BoE
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-resits-202627@msp-operations

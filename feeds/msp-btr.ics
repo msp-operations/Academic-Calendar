@@ -133,12 +133,36 @@ SUMMARY:[MSP BTR] BTR proposal submission deadline (Feb cohort)
 DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks\, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: students\, RS\, IA
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-proposal-grades-due-feb-202627@msp-operations
+DTSTAMP:20270319T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Feb cohort)
+DESCRIPTION:Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-proposal-grades-pub-feb-202627@msp-operations
 DTSTAMP:20270322T000000Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
 SUMMARY:[MSP BTR] BTR proposal grades published (Feb cohort)
 DESCRIPTION:Mon 22 Mar per msp-btr.nl (students receive grades in Canvas) | For: students\, RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-midterm-grades-due-feb-202627@msp-operations
+DTSTAMP:20270409T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:[MSP BTR] BTR midterm practical grade due (Feb cohort)
+DESCRIPTION:Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-midterm-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270412T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP BTR] BTR midterm grades published (Feb cohort)
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, RS
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-thesis-feb-202627@msp-operations
@@ -155,6 +179,22 @@ DTSTART;VALUE=DATE:20270521
 DTEND;VALUE=DATE:20270522
 SUMMARY:[MSP BTR] BTR video submission deadline (Feb cohort)
 DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDrive backup mandatory (WeTransfer links expire) | For: students\, IA\, peer reviewers
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-due-feb-202627@msp-operations
+DTSTAMP:20270604T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:[MSP BTR] BTR final grades due in Collent (Feb cohort)
+DESCRIPTION:Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270607T000000Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:[MSP BTR] BTR final grades published (Feb cohort)
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, supervisors\, BoE
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-feb-202627@msp-operations

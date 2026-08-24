@@ -831,8 +831,8 @@
   staff: academic
   audience: RS, IA
   submit: yes
-  notes: "Inferred from the Friday-due / Monday-publish convention (site names only the Mon 22 Mar publish date); confirm with the office"
-  status: unconfirmed
+  notes: "Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
+  status: confirmed
 - id: btr-proposal-grades-pub-feb
   title: BTR proposal grades published (Feb cohort)
   office: btr
@@ -848,16 +848,16 @@
   staff: academic
   audience: RS
   submit: yes
-  notes: "Fri 9 Apr on msp-btr.nl labelled 'assessment deadline' but described as students-receive; per the Sept convention this Friday is the RS due date with publication Mon 12 Apr - confirm the due/publish split"
-  status: unconfirmed
+  notes: "Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
+  status: confirmed
 - id: btr-midterm-grades-pub-feb
   title: BTR midterm grades published (Feb cohort)
   office: btr
   when: "2027-04-12"
   staff: support
   audience: students, RS
-  notes: "Inferred Monday publication after the Fri 9 Apr due date; confirm"
-  status: unconfirmed
+  notes: "Published to students by the office, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
+  status: confirmed
 - id: btr-thesis-feb
   title: BTR thesis submission deadline (Feb cohort)
   office: btr
@@ -881,16 +881,16 @@
   staff: academic
   audience: RS, IA
   submit: yes
-  notes: "Fri 4 Jun on msp-btr.nl with the same due-vs-publish ambiguity as the midterm; per the Sept convention this is the graders' due date - confirm"
-  status: unconfirmed
+  notes: "Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
+  status: confirmed
 - id: btr-final-grades-pub-feb
   title: BTR final grades published (Feb cohort)
   office: btr
   when: "2027-06-07"
   staff: support
   audience: students, supervisors, BoE
-  notes: "Inferred Monday publication after the Fri 4 Jun due date; confirm"
-  status: unconfirmed
+  notes: "Published to students by the office, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
+  status: confirmed
 
 - id: corsa-migration
   title: CORSA cloud migration window (23-28 Sep; backup 7-12 Oct)

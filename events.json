@@ -3182,10 +3182,10 @@
       "date": "2027-03-19",
       "end": "2027-03-19",
       "audience": "RS, IA",
-      "notes": "Inferred from the Friday-due / Monday-publish convention (site names only the Mon 22 Mar publish date); confirm with the office",
+      "notes": "Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "master-open-day-spring",
@@ -3429,10 +3429,10 @@
       "date": "2027-04-09",
       "end": "2027-04-09",
       "audience": "RS",
-      "notes": "Fri 9 Apr on msp-btr.nl labelled 'assessment deadline' but described as students-receive; per the Sept convention this Friday is the RS due date with publication Mon 12 Apr - confirm the due/publish split",
+      "notes": "Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "grades-published-p4",
@@ -3455,10 +3455,10 @@
       "date": "2027-04-12",
       "end": "2027-04-12",
       "audience": "students, RS",
-      "notes": "Inferred Monday publication after the Fri 9 Apr due date; confirm",
+      "notes": "Published to students by the office, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "accreditation-ask-p4",
@@ -4170,10 +4170,10 @@
       "date": "2027-06-04",
       "end": "2027-06-04",
       "audience": "RS, IA",
-      "notes": "Fri 4 Jun on msp-btr.nl with the same due-vs-publish ambiguity as the midterm; per the Sept convention this is the graders' due date - confirm",
+      "notes": "Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "bsa-year-followup",
@@ -4209,10 +4209,10 @@
       "date": "2027-06-07",
       "end": "2027-06-07",
       "audience": "students, supervisors, BoE",
-      "notes": "Inferred Monday publication after the Fri 4 Jun due date; confirm",
+      "notes": "Published to students by the office, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "exam-submit-resits",

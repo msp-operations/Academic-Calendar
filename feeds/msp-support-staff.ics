@@ -1173,6 +1173,14 @@ SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
 DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
+UID:btr-midterm-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270412T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP BTR] BTR midterm grades published (Feb cohort)
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, RS
+END:VEVENT
+BEGIN:VEVENT
 UID:accreditation-ask-p4-202627@msp-operations
 DTSTAMP:20270412T000000Z
 DTSTART;VALUE=DATE:20270412
@@ -1475,6 +1483,14 @@ DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP ESD] BSA year follow-up - exemption list + credit report to Pavel/BoE
 DESCRIPTION:Three weeks after sending per the IPO overview | CORRECTED to 2027-06-04 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 31 May - 4 Jun | For: IPO (Eva)\, BoE (Katja)\, Pavel
+END:VEVENT
+BEGIN:VEVENT
+UID:btr-final-grades-pub-feb-202627@msp-operations
+DTSTAMP:20270607T000000Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:[MSP BTR] BTR final grades published (Feb cohort)
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, supervisors\, BoE
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-registration-p6-202627@msp-operations
