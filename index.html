@@ -15,7 +15,9 @@
 
   :root {
     --navy: #16243d; --navy-2: #1f3357; --ink: #1c2333; --paper: #f4f6fa;
-    --card: #ffffff; --line: #e2e8f2; --muted: #64748b; --accent: #00a5d9;
+    --card: #ffffff; --line: #e2e8f2; --muted: #64748b;
+    /* UM Library accessible palette, library.maastrichtuniversity.nl/library-ux-elementen */
+    --accent: #007fad; --accent-ink: #00688d; --um-blue: #001c3d;
     --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
     --esd: #0d9488; --alumni: #db2777; --general: #64748b;
     --p1: #6366f1; --p2: #0891b2; --p3: #64748b; --p4: #d97706; --p5: #be185d; --p6: #059669;
@@ -24,7 +26,7 @@
     --shadow-md: 0 4px 12px rgba(22,36,61,.08), 0 2px 4px rgba(22,36,61,.05);
     --shadow-lg: 0 24px 60px rgba(22,36,61,.32);
     --pagew: 1420px;
-    --rail-w: 236px; --rail-bg: #001e4b; --rail-mut: #8ea4c6;
+    --rail-w: 236px; --rail-bg: var(--um-blue); --rail-mut: #8ea4c6;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -42,11 +44,11 @@
     padding: 26px 24px 16px; max-width: var(--pagew); margin: 0 auto; }
   .topbar img.msp { height: 62px; }
   .homelink { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: inherit; cursor: pointer; }
-  .homelink:hover h1 { color: var(--accent); }
+  .homelink:hover h1 { color: var(--accent-ink); }
   .homelink:hover img.msp { transform: scale(1.03); }
   .homelink img.msp { transition: transform .15s ease; }
   .homelink h1 { transition: color .15s ease; }
-  .titleblock .kicker { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .18em; color: var(--accent); margin-bottom: 4px; }
+  .titleblock .kicker { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .18em; color: var(--accent-ink); margin-bottom: 4px; }
   .titleblock h1 { font-size: 1.6rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
 
   .periodband { display: flex; gap: 10px; padding: 8px 24px 20px; max-width: var(--pagew); margin: 0 auto; }
@@ -75,7 +77,7 @@
   .search { border: 1.5px solid var(--line); border-radius: 999px; padding: 5px 14px; font-size: .8rem; font-family: inherit;
     color: var(--ink); background: var(--card); box-shadow: var(--shadow-sm); width: 150px; transition: all .15s ease; }
   .search:focus { outline: none; border-color: var(--accent); width: 210px; }
-  .search::placeholder { color: #9aa7ba; }
+  .search::placeholder { color: #616f86; }
   .viewtoggle { display: flex; background: #e7ecf4; border-radius: 999px; padding: 3px; gap: 2px; }
   .viewtoggle button { border: 0; background: transparent; padding: 5px 14px; font-size: .8rem; font-weight: 600; cursor: pointer;
     color: var(--muted); border-radius: 999px; font-family: inherit; transition: all .15s ease; }
@@ -144,9 +146,9 @@
 
   .railspring { flex: 1 1 auto; min-height: 14px; }
   .railsub { padding: 0 20px; }
-  .railsub .subscribe { width: 100%; justify-content: center; background: var(--accent); color: var(--rail-bg);
+  .railsub .subscribe { width: 100%; justify-content: center; background: var(--accent); color: #fff;
     border-radius: 5px; font-size: .78rem; padding: 10px 0; box-shadow: none; }
-  .railsub .subscribe:hover { background: #fff; transform: none; }
+  .railsub .subscribe:hover { background: #fff; color: var(--um-blue); transform: none; }
 
   /* Collapsed: still a readable colour key, one click brings it back */
   .rail.mini { cursor: pointer; padding-top: 16px; }
@@ -212,26 +214,26 @@
   .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
   .yday .yhead { font-size: .58rem; color: var(--muted); white-space: nowrap; }
   .yday .yhead b { color: var(--ink); font-size: .68rem; font-weight: 700; }
-  .yday.today .yhead b { color: var(--accent); }
+  .yday.today .yhead b { color: var(--accent-ink); }
   .pchip { display: inline-block; background: var(--navy); color: #fff; border-radius: 4px; padding: 0 4px; font-weight: 800; font-size: .58rem; margin-top: 2px; letter-spacing: .02em; }
   .ydots { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; }
   .ydot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); cursor: pointer; box-sizing: border-box; transition: transform .1s ease; }
   .ydot.unconfirmed { background: transparent; border: 2px solid var(--c, var(--general)); }
   .ydot:hover { transform: scale(1.4); }
   .yearnote { font-size: .78rem; color: var(--muted); margin-top: 12px; }
-  .wk { position: absolute; top: 2px; right: 3px; font-size: .54rem; font-weight: 800; color: var(--accent); }
+  .wk { position: absolute; top: 2px; right: 3px; font-size: .54rem; font-weight: 800; color: var(--accent-ink); }
   .day .wk { font-size: .6rem; top: 4px; right: 5px; }
 
   /* Coming-up strip */
   .upwrap { margin-top: 16px; }
-  .uplabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent); margin-bottom: 6px; }
+  .uplabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent-ink); margin-bottom: 6px; }
   .uprow { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; }
   .upcard { min-width: 190px; flex: 0 0 auto; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
     border-radius: 9px; padding: 8px 12px; cursor: pointer; box-shadow: var(--shadow-sm); transition: transform .12s ease, box-shadow .12s ease; }
   .upcard:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
   .upcard.unconfirmed { border-style: dashed; border-left-style: solid; }
   .upcard .upwhen { display: block; font-size: .7rem; color: var(--muted); font-weight: 600; }
-  .upcard .upwhen b { color: var(--accent); }
+  .upcard .upwhen b { color: var(--accent-ink); }
   .upcard .uptitle { display: block; font-size: .8rem; font-weight: 600; margin-top: 2px; }
 
   /* Key-deadlines chain view */
@@ -254,7 +256,7 @@
   .cstep.academic .cwho { background: #fdf0cd; color: #8a5d05; }
   .cstep.week::before { background: var(--exams); }
   .cstep.week .cwho { background: #dcf1fa; color: #036184; }
-  .cgap { position: relative; font-size: .66rem; color: #94a3b8; font-style: italic; padding: 1px 0 1px 2px; }
+  .cgap { position: relative; font-size: .66rem; color: #616f86; font-style: italic; padding: 1px 0 1px 2px; }
   .cgap::before { content: "\2193"; position: absolute; left: -22px; color: #b6c2d4; font-style: normal; }
 
   /* Subscribe options card */
@@ -277,7 +279,7 @@
   .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
   .day.out { background: transparent; border-color: transparent; box-shadow: none; }
   .day.today { outline: 2px solid var(--accent); outline-offset: -2px; }
-  .day.today .num { color: var(--accent); }
+  .day.today .num { color: var(--accent-ink); }
   .pill { display: block; margin-top: 3px; padding: 2px 6px; border-radius: 5px; border-left: 3px solid var(--c, var(--general));
     background: color-mix(in srgb, var(--c, var(--general)) 10%, white); color: var(--ink); white-space: nowrap; overflow: hidden;
     text-overflow: ellipsis; cursor: pointer; transition: background .12s ease; }
@@ -330,7 +332,7 @@
   .dayev b { font-weight: 600; }
   .daynone { color: var(--muted); font-size: .85rem; margin-bottom: 4px; }
   .fact { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink); line-height: 1.5; }
-  .fact .factlabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent); margin-bottom: 5px; }
+  .fact .factlabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent-ink); margin-bottom: 5px; }
   .fact .factsrc { color: var(--muted); font-size: .72rem; }
 
   /* ---------- Footer ---------- */
@@ -343,7 +345,7 @@
     font-weight: 600; color: var(--ink); cursor: pointer; font-family: inherit; transition: all .15s ease; box-shadow: var(--shadow-sm); }
   .feed:hover { border-color: var(--accent); transform: translateY(-1px); }
   .feed.done { background: #e3f5e9; border-color: #7bc496; color: #166534; }
-  .footnote { max-width: var(--pagew); margin: 0 auto; padding: 6px 24px 26px; font-size: .74rem; color: #94a3b8; }
+  .footnote { max-width: var(--pagew); margin: 0 auto; padding: 6px 24px 26px; font-size: .74rem; color: #616f86; }
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
