@@ -117,6 +117,14 @@ SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Fall appointment letters
 DESCRIPTION:End August per the IPO overview | CORRECTED to 2026-08-20 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug | For: IPO (Eva)\, BoE secretary
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p2-reminder-202627@msp-operations
+DTSTAMP:20260820T000000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:[MSP SCHEDULING] P2 course/skill planning form reminder goes out
+DESCRIPTION:2025 instance Thu 20 Aug 11:25\, recoverable verbatim from the Hermeling reply of 1 Sep 2025: fill out either the course or the skills planning forms of p2 before September 19th. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:alumni-intranet-deadline-202627@msp-operations
 DTSTAMP:20260821T000000Z
 DTSTART;VALUE=DATE:20260821
@@ -237,6 +245,14 @@ SUMMARY:[MSP ESD] External education registration deadline (P2)
 DESCRIPTION:For: students\, BoE
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p2-due-202627@msp-operations
+DTSTAMP:20260918T000000Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P2 return deadline
+DESCRIPTION:2025 deadline stated as before September 19th in the 20 Aug reminder\; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:invigilators-p1-202627@msp-operations
 DTSTAMP:20260921T000000Z
 DTSTART;VALUE=DATE:20260921
@@ -259,6 +275,14 @@ DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
 DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 22 Sep 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-draft-p2-202627@msp-operations
+DTSTAMP:20260922T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:[MSP SCHEDULING] P2 schedules in draft in MyTimetable (coordinators check now)
+DESCRIPTION:2025 instance Tue 23 Sep 10:11. External coordinators who have not yet named tutors get chased in the same mail. Add the course manually in MyTimetable to see unstaffed activities. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
 UID:corsa-migration-202627@msp-operations
@@ -485,6 +509,14 @@ SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:course-reg-form-opens-spring-202627@msp-operations
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[MSP SCHEDULING] Course registration form Spring goes live (08:30)
+DESCRIPTION:2025 instance stated to IRO on 28 Oct: it only starts this Friday at 8:30 am\, meaning Fri 31 Oct. Link pre-shared with IRO 3 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, IRO\, students
+END:VEVENT
+BEGIN:VEVENT
 UID:boe-grad-audit-candidates-nov-202627@msp-operations
 DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
@@ -611,6 +643,14 @@ DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:[MSP EXAMS] DexUM online (digital exams network)
 DESCRIPTION:11:00-12:00 Teams. Msp-exams calendar\, 'DexUM online'\, 17 Nov 2026 | For: exams office
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-spring-202627@msp-operations
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[MSP SCHEDULING] Course/skills planning forms out to coordinators (P4/P5) + student numbers
+DESCRIPTION:One combined mail\, 2025 instance Thu 20 Nov 10:56\, carrying the registration-numbers overview plus the P4 and P5 Qualtrics forms with staggered deadlines. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, Scheduling (Severine)
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-p1-202627@msp-operations
@@ -781,6 +821,14 @@ SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
 DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p4-due-202627@msp-operations
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P4 return deadline
+DESCRIPTION:2025 instance stated verbatim in the spring mail: Deadline for P4\, December 15\, 2025\, 5 pm\, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec\, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan\, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:norm-hours-finance-202627@msp-operations
 DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
@@ -811,6 +859,14 @@ DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
 SUMMARY:[MSP EXAMS] Exam registration week (students)
 DESCRIPTION:P3: 4-8 Jan | For: students\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-draft-p4-202627@msp-operations
+DTSTAMP:20270104T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:[MSP SCHEDULING] P4 schedules in draft in MyTimetable (coordinators check now)
+DESCRIPTION:2026 instance Mon 5 Jan 10:54\, with comments due Fri 9 Jan 17:00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 17:00\; official publication is Thu 14 Jan per the Calendarium. MSP starts a week before the rest of UM. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p2-202627@msp-operations
@@ -1037,6 +1093,14 @@ SUMMARY:[MSP ESD] Project grades published (P3 projects)
 DESCRIPTION:Fri 12 Feb per the grading overview\; transcript update 17 Feb\, inspection deadline 26 Feb\, final transcripts 5 Mar | For: students\, supervisors
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p5-due-202627@msp-operations
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P5 return deadline
+DESCRIPTION:2026 instance stated verbatim in the spring mail: Deadline for P5\, February 13\, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fri 12 Feb. Non-fillers chased in the week before P5. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:eer-revision-to-boe-202627@msp-operations
 DTSTAMP:20270215T000000Z
 DTSTART;VALUE=DATE:20270215
@@ -1203,6 +1267,14 @@ DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
+END:VEVENT
+BEGIN:VEVENT
+UID:frame-schedules-draft-ay2728-202627@msp-operations
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:[MSP SCHEDULING] Draft frame schedules AY27-28 circulated by the Dean
+DESCRIPTION:2026 instance Fri 13 Mar 09:02 from Gerco\, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Gerco\, Scheduling\, Exams\, BoE\, Information Hub
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-sap-modules-202627@msp-operations
@@ -1381,6 +1453,14 @@ SUMMARY:[MSP ESD] Ask coordinators for accreditation material (round opens) (P4)
 DESCRIPTION:Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov\, two days later\; P4/P5 match). Material: course manual\, assessment plan\, attendance\, exams incl. rubric\, assignments. P2 has its own dated event (closure) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Monday of each round | For: IPO (Eva)\, course coordinators of the period + resits
 END:VEVENT
 BEGIN:VEVENT
+UID:frame-schedules-final-ay2728-202627@msp-operations
+DTSTAMP:20270412T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP SCHEDULING] Final frame schedules AY27-28 (P1-P5) from the Dean
+DESCRIPTION:2026 instance Mon 13 Apr 16:26 from Gerco\; Severine relayed to UCM\, DACS\, UCV and Jesse Laumen on Tue 14 Apr 09:58. NB SSC is not on that relay list. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: all offices\, UCM/UCV/DACS schedulers\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
 UID:iwio-close-p4-202627@msp-operations
 DTSTAMP:20270416T000000Z
 DTSTART;VALUE=DATE:20270416
@@ -1451,6 +1531,14 @@ DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:[MSP GENERAL] King's Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-form-opens-fall-202627@msp-operations
+DTSTAMP:20270429T000000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:[MSP SCHEDULING] Course registration form Fall goes live (07:00)
+DESCRIPTION:2026 instance stated to IRO on 17 Apr: the form will only be active from April 30th\, 7 am our time. Link pre-shared with IRO 13 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, IRO\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:eer-adoption-202627@msp-operations
@@ -1677,6 +1765,14 @@ SUMMARY:[MSP EXAMS] Invigilator request deadline\, P5 resits (InterUM)
 DESCRIPTION:MSP's own InterUM lead-time convention (T-3wk). Anja's SSC ladder says 31 May\, but MSP has no central-hall sittings in the 14-18 Jun week (resits at PHS on the own Chromebook cart)\, so the SSC date does not bind | For: exams office
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-fall-202627@msp-operations
+DTSTAMP:20270526T000000Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms out to coordinators (AY27-28 P1/P2)
+DESCRIPTION:2026 instance Wed 27 May 12:22\, reminder 26 Jun. Sent the week after the fall registration week. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, Scheduling (Severine)
+END:VEVENT
+BEGIN:VEVENT
 UID:admissions-selection-complete-202627@msp-operations
 DTSTAMP:20270530T000000Z
 DTSTART;VALUE=DATE:20270530
@@ -1835,6 +1931,14 @@ DTSTART;VALUE=DATE:20270702
 DTEND;VALUE=DATE:20270703
 SUMMARY:[MSP EXAMS] Resit grade submission deadline (June resit week)
 DESCRIPTION:Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday)\; P6 project grades share this date | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-fall-due-202627@msp-operations
+DTSTAMP:20270702T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P1 AY27-28 return deadline
+DESCRIPTION:2026 instance stated verbatim: before July 3rd\, 5 pm. 3 Jul 2027 is a Saturday so the equivalent is Fri 2 Jul 17:00\, via Qualtrics. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
 END:VEVENT
 BEGIN:VEVENT
 UID:project-grades-published-p6-202627@msp-operations

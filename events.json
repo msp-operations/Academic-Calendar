@@ -706,13 +706,13 @@
     },
     {
       "id": "tutor-lists-final-p1",
-      "title": "Tutor lists final (contract lead time) (P1)",
+      "title": "Tutor contract cut-off for a 1st-of-month start (P1)",
       "office": "scheduling",
       "staff": "both",
       "date": "2026-07-20",
       "end": "2026-07-20",
       "audience": "coordinators, Operations, FSE HR",
-      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. NB timetable tutor-allocation continues until ~2 weeks before period start (scheduling mailbox); -6w is the contract floor, not the last scheduling touch",
+      "notes": "CONTRACT floor, not a scheduling floor. FSE tutor contracts via SuccessFactors need 6-8 weeks and a contract always starts on the 1st of a month. Allocation itself demonstrably runs much later: for a P1 starting 31 Aug 2026 Severine was still filling courses on 6, 13, 18 and 20 Aug, so 11 days out, after a tutor cancelled on 13 Aug. The P2 draft mail likewise chases coordinators who have still not named tutors. Real scheduling cut-off is roughly 2 weeks before the period starts. Which of the two binds is the open question for Severine and Linzi",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -881,10 +881,10 @@
       "date": "2026-08-20",
       "end": "2026-08-20",
       "audience": "Scheduling (Severine), course coordinators",
-      "notes": "Pattern: 2025 instance Wed 20 Aug 11:24, reminding coordinators of the P2 forms from the May send",
+      "notes": "2025 instance Thu 20 Aug 11:25, recoverable verbatim from the Hermeling reply of 1 Sep 2025: fill out either the course or the skills planning forms of p2 before September 19th. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "alumni-intranet-deadline",
@@ -1083,13 +1083,13 @@
     },
     {
       "id": "tutor-lists-final-p2",
-      "title": "Tutor lists final (contract lead time) (P2)",
+      "title": "Tutor contract cut-off for a 1st-of-month start (P2)",
       "office": "scheduling",
       "staff": "both",
       "date": "2026-09-14",
       "end": "2026-09-14",
       "audience": "coordinators, Operations, FSE HR",
-      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. NB timetable tutor-allocation continues until ~2 weeks before period start (scheduling mailbox); -6w is the contract floor, not the last scheduling touch",
+      "notes": "CONTRACT floor, not a scheduling floor. FSE tutor contracts via SuccessFactors need 6-8 weeks and a contract always starts on the 1st of a month. Allocation itself demonstrably runs much later: for a P1 starting 31 Aug 2026 Severine was still filling courses on 6, 13, 18 and 20 Aug, so 11 days out, after a tutor cancelled on 13 Aug. The P2 draft mail likewise chases coordinators who have still not named tutors. Real scheduling cut-off is roughly 2 weeks before the period starts. Which of the two binds is the open question for Severine and Linzi",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -1102,10 +1102,10 @@
       "date": "2026-09-18",
       "end": "2026-09-18",
       "audience": "course coordinators",
-      "notes": "Pattern: 2025 deadline was Fri 19 Sep, stated in the 20 Aug reminder; feeds the P2 draft schedules (~22 Sep) and P2 publication (8 Oct)",
+      "notes": "2025 deadline stated as before September 19th in the 20 Aug reminder; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "invigilators-p1",
@@ -1154,10 +1154,10 @@
       "date": "2026-09-22",
       "end": "2026-09-22",
       "audience": "course coordinators, tutors",
-      "notes": "Pattern: 2025 instance Tue 23 Sep, ~2 weeks before the Thu 8 Oct publication. Mid-terms/exams follow later; add the course manually in MyTimetable to see unstaffed activities",
+      "notes": "2025 instance Tue 23 Sep 10:11. External coordinators who have not yet named tutors get chased in the same mail. Add the course manually in MyTimetable to see unstaffed activities. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "corsa-migration",
@@ -1557,10 +1557,10 @@
       "date": "2026-10-30",
       "end": "2026-10-30",
       "audience": "Scheduling (Severine), IRO, students",
-      "notes": "Pattern: 2025 instance live Fri 31 Oct 08:30, link pre-shared with IRO the Tuesday before. Opens with the advising period, ahead of the 9-13 Nov registration week",
+      "notes": "2025 instance stated to IRO on 28 Oct: it only starts this Friday at 8:30 am, meaning Fri 31 Oct. Link pre-shared with IRO 3 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "boe-grad-audit-candidates-nov",
@@ -1791,10 +1791,10 @@
       "date": "2026-11-19",
       "end": "2026-11-19",
       "audience": "course coordinators, Scheduling (Severine)",
-      "notes": "Pattern per the fse-scheduling mailbox (2025 instance: Thu 20 Nov, the week after reg week): one mail with the registration-numbers overview + P4 and P5 Qualtrics forms with staggered deadlines. Reminder followed Thu 11 Dec",
+      "notes": "One combined mail, 2025 instance Thu 20 Nov 10:56, carrying the registration-numbers overview plus the P4 and P5 Qualtrics forms with staggered deadlines. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "accreditation-deadline-p1",
@@ -1908,7 +1908,7 @@
       "date": "2026-11-27",
       "end": "2026-11-27",
       "audience": "students, Academic Advising, ESD",
-      "notes": "Fri 27 Nov per the LAS MSP/UCM/UCV deadline ladder for 2026-27 (Kessels mail, 26 Feb 2026; phrased as a proposal and absent from the official PDF, so confirm adoption)",
+      "notes": "Fri 27 Nov 2026, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2070,19 +2070,6 @@
       "status": "confirmed"
     },
     {
-      "id": "sched-planning-forms-p4-due",
-      "title": "Course/skill planning forms P4 return deadline",
-      "office": "scheduling",
-      "staff": "academic",
-      "date": "2026-12-11",
-      "end": "2026-12-11",
-      "audience": "course coordinators",
-      "notes": "2025 instance: Mon 15 Dec 17:00. NB the Christmas break starts Mon 14 Dec 2026, so expect the AY26-27 deadline pulled to Fri 11 Dec - confirm with Severine",
-      "link": "",
-      "submit": true,
-      "status": "unconfirmed"
-    },
-    {
       "id": "archive-drive-winter",
       "title": "Archive drive + accreditation overviews set up for Spring",
       "office": "esd",
@@ -2109,14 +2096,27 @@
       "status": "confirmed"
     },
     {
+      "id": "sched-planning-forms-p4-due",
+      "title": "Course/skill planning forms P4 return deadline",
+      "office": "scheduling",
+      "staff": "academic",
+      "date": "2026-12-14",
+      "end": "2026-12-14",
+      "audience": "course coordinators",
+      "notes": "2025 instance stated verbatim in the spring mail: Deadline for P4, December 15, 2025, 5 pm, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
+      "link": "",
+      "submit": true,
+      "status": "confirmed"
+    },
+    {
       "id": "tutor-lists-final-p4",
-      "title": "Tutor lists final (contract lead time) (P4)",
+      "title": "Tutor contract cut-off for a 1st-of-month start (P4)",
       "office": "scheduling",
       "staff": "both",
       "date": "2026-12-14",
       "end": "2026-12-14",
       "audience": "coordinators, Operations, FSE HR",
-      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. NB timetable tutor-allocation continues until ~2 weeks before period start (scheduling mailbox); -6w is the contract floor, not the last scheduling touch",
+      "notes": "CONTRACT floor, not a scheduling floor. FSE tutor contracts via SuccessFactors need 6-8 weeks and a contract always starts on the 1st of a month. Allocation itself demonstrably runs much later: for a P1 starting 31 Aug 2026 Severine was still filling courses on 6, 13, 18 and 20 Aug, so 11 days out, after a tutor cancelled on 13 Aug. The P2 draft mail likewise chases coordinators who have still not named tutors. Real scheduling cut-off is roughly 2 weeks before the period starts. Which of the two binds is the open question for Severine and Linzi",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2181,10 +2181,10 @@
       "date": "2027-01-04",
       "end": "2027-01-04",
       "audience": "course coordinators, tutors",
-      "notes": "Pattern: 2026 instance Mon 5 Jan with comments due Fri 17:00 the same week, publication the Thursday after (14 Jan 2027). Reminder to externals: MSP starts one week before the rest of UM",
+      "notes": "2026 instance Mon 5 Jan 10:54, with comments due Fri 9 Jan 17:00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 17:00; official publication is Thu 14 Jan per the Calendarium. MSP starts a week before the rest of UM. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "grades-due-p2",
@@ -2220,7 +2220,7 @@
       "date": "2027-01-08",
       "end": "2027-01-08",
       "audience": "students, Academic Advising, ESD",
-      "notes": "Fri 8 Jan per the LAS deadline ladder for 2026-27 (Friday of the first education week); same day as the P4 late-enrolment deadline. Confirm adoption",
+      "notes": "Fri 8 Jan 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2584,10 +2584,10 @@
       "date": "2027-02-12",
       "end": "2027-02-12",
       "audience": "course coordinators",
-      "notes": "2026 instance: Fri 13 Feb. Non-fillers get a final chase in the week before P5 with a hard end-of-week-1 cut-off (2026: chase 25 Mar, cut-off Fri 3 Apr)",
+      "notes": "2026 instance stated verbatim in the spring mail: Deadline for P5, February 13, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fri 12 Feb. Non-fillers chased in the week before P5. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "eer-revision-to-boe",
@@ -2604,13 +2604,13 @@
     },
     {
       "id": "tutor-lists-final-p5",
-      "title": "Tutor lists final (contract lead time) (P5)",
+      "title": "Tutor contract cut-off for a 1st-of-month start (P5)",
       "office": "scheduling",
       "staff": "both",
       "date": "2027-02-15",
       "end": "2027-02-15",
       "audience": "coordinators, Operations, FSE HR",
-      "notes": "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. NB timetable tutor-allocation continues until ~2 weeks before period start (scheduling mailbox); -6w is the contract floor, not the last scheduling touch",
+      "notes": "CONTRACT floor, not a scheduling floor. FSE tutor contracts via SuccessFactors need 6-8 weeks and a contract always starts on the 1st of a month. Allocation itself demonstrably runs much later: for a P1 starting 31 Aug 2026 Severine was still filling courses on 6, 13, 18 and 20 Aug, so 11 days out, after a tutor cancelled on 13 Aug. The P2 draft mail likewise chases coordinators who have still not named tutors. Real scheduling cut-off is roughly 2 weeks before the period starts. Which of the two binds is the open question for Severine and Linzi",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2909,10 +2909,10 @@
       "date": "2027-03-12",
       "end": "2027-03-12",
       "audience": "Gerco, Scheduling, Exams, BoE, Information Hub",
-      "notes": "Pattern: 2026 instance Fri 13 Mar (Gerco); Scheduling returns lab-collision feedback within days. Feeds the 1 Apr catalogue and the mid-Apr final",
+      "notes": "2026 instance Fri 13 Mar 09:02 from Gerco, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "catalogue-sap-modules",
@@ -3286,10 +3286,10 @@
       "date": "2027-04-12",
       "end": "2027-04-12",
       "audience": "all offices, UCM/UCV/DACS schedulers, Academic Advising",
-      "notes": "Pattern: 2026 instance Mon 13 Apr (Gerco to all offices); Scheduling relays to UCM/DACS/UCV/SSC next morning. Precedes the Canvas scheduling uploads and the advising period",
+      "notes": "2026 instance Mon 13 Apr 16:26 from Gerco; Severine relayed to UCM, DACS, UCV and Jesse Laumen on Tue 14 Apr 09:58. NB SSC is not on that relay list. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "iwio-close-p4",
@@ -3429,10 +3429,10 @@
       "date": "2027-04-29",
       "end": "2027-04-29",
       "audience": "Scheduling (Severine), IRO, students",
-      "notes": "Pattern: 2026 instance live Thu 30 Apr 07:00 (same day the advising period opened), link pre-shared with IRO 17 Apr. Ahead of the 17-21 May registration week",
+      "notes": "2026 instance stated to IRO on 17 Apr: the form will only be active from April 30th, 7 am our time. Link pre-shared with IRO 13 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "eer-adoption",
@@ -3507,7 +3507,7 @@
       "date": "2027-04-30",
       "end": "2027-04-30",
       "audience": "students, Academic Advising, ESD",
-      "notes": "Fri 30 Apr per the LAS deadline ladder for 2026-27 (proposal; confirm adoption)",
+      "notes": "Fri 30 Apr 2027, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -3832,10 +3832,10 @@
       "date": "2027-05-26",
       "end": "2027-05-26",
       "audience": "course coordinators, Scheduling (Severine)",
-      "notes": "Pattern per the fse-scheduling mailbox: sent the week after the fall registration week (2026 instance: Wed 27 May, deadline Fri 3 Jul 17:00, reminder 26 Jun; 2025 instance: Thu 22 May). Non-fillers chased into late July",
+      "notes": "2026 instance Wed 27 May 12:22, reminder 26 Jun. Sent the week after the fall registration week. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "withdraw-p6",
@@ -3845,7 +3845,7 @@
       "date": "2027-05-28",
       "end": "2027-05-28",
       "audience": "students, Academic Advising, ESD",
-      "notes": "Fri 28 May per the LAS deadline ladder for 2026-27 (proposal; confirm adoption)",
+      "notes": "Fri 28 May 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -4157,10 +4157,10 @@
       "date": "2027-07-02",
       "end": "2027-07-02",
       "audience": "course coordinators",
-      "notes": "17:00 via Qualtrics. 2026 instance: Fri 3 Jul 17:00 stated in the 27 May send. No form = your timetable is not published (Severine enforced this in Aug 2025)",
+      "notes": "2026 instance stated verbatim: before July 3rd, 5 pm. 3 Jul 2027 is a Saturday so the equivalent is Fri 2 Jul 17:00, via Qualtrics. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "project-grades-published-p6",

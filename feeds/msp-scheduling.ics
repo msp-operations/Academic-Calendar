@@ -29,12 +29,36 @@ SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P1. Coordinators: check your draft in the two weeks before publication | For: students\, coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p2-reminder-202627@msp-operations
+DTSTAMP:20260820T000000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:[MSP SCHEDULING] P2 course/skill planning form reminder goes out
+DESCRIPTION:2025 instance Thu 20 Aug 11:25\, recoverable verbatim from the Hermeling reply of 1 Sep 2025: fill out either the course or the skills planning forms of p2 before September 19th. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:withdraw-p1-202627@msp-operations
 DTSTAMP:20260904T000000Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P1 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-p2-due-202627@msp-operations
+DTSTAMP:20260918T000000Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P2 return deadline
+DESCRIPTION:2025 deadline stated as before September 19th in the 20 Aug reminder\; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-draft-p2-202627@msp-operations
+DTSTAMP:20260922T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:[MSP SCHEDULING] P2 schedules in draft in MyTimetable (coordinators check now)
+DESCRIPTION:2025 instance Tue 23 Sep 10:11. External coordinators who have not yet named tutors get chased in the same mail. Add the course manually in MyTimetable to see unstaffed activities. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
 UID:switch-p2-202627@msp-operations
@@ -61,6 +85,14 @@ SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:course-reg-form-opens-spring-202627@msp-operations
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[MSP SCHEDULING] Course registration form Spring goes live (08:30)
+DESCRIPTION:2025 instance stated to IRO on 28 Oct: it only starts this Friday at 8:30 am\, meaning Fri 31 Oct. Link pre-shared with IRO 3 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, IRO\, students
+END:VEVENT
+BEGIN:VEVENT
 UID:frame-schedule-spring-deadline-202627@msp-operations
 DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
@@ -85,6 +117,14 @@ SUMMARY:[MSP SCHEDULING] Course registration week (Spring 2027 selections)
 DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-spring-202627@msp-operations
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[MSP SCHEDULING] Course/skills planning forms out to coordinators (P4/P5) + student numbers
+DESCRIPTION:One combined mail\, 2025 instance Thu 20 Nov 10:56\, carrying the registration-numbers overview plus the P4 and P5 Qualtrics forms with staggered deadlines. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, Scheduling (Severine)
+END:VEVENT
+BEGIN:VEVENT
 UID:waiver-deadline-202627@msp-operations
 DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
@@ -99,6 +139,22 @@ DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P3 | For: students\, coordinators\, tutors
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-p4-due-202627@msp-operations
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P4 return deadline
+DESCRIPTION:2025 instance stated verbatim in the spring mail: Deadline for P4\, December 15\, 2025\, 5 pm\, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec\, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan\, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-draft-p4-202627@msp-operations
+DTSTAMP:20270104T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:[MSP SCHEDULING] P4 schedules in draft in MyTimetable (coordinators check now)
+DESCRIPTION:2026 instance Mon 5 Jan 10:54\, with comments due Fri 9 Jan 17:00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 17:00\; official publication is Thu 14 Jan per the Calendarium. MSP starts a week before the rest of UM. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
 UID:switch-p4-202627@msp-operations
@@ -125,12 +181,28 @@ SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P4 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p5-due-202627@msp-operations
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P5 return deadline
+DESCRIPTION:2026 instance stated verbatim in the spring mail: Deadline for P5\, February 13\, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fri 12 Feb. Non-fillers chased in the week before P5. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:switch-p5-202627@msp-operations
 DTSTAMP:20270305T000000Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 SUMMARY:[MSP SCHEDULING] Course switch deadline
 DESCRIPTION:P5 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:frame-schedules-draft-ay2728-202627@msp-operations
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:[MSP SCHEDULING] Draft frame schedules AY27-28 circulated by the Dean
+DESCRIPTION:2026 instance Fri 13 Mar 09:02 from Gerco\, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Gerco\, Scheduling\, Exams\, BoE\, Information Hub
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p5-202627@msp-operations
@@ -149,6 +221,22 @@ SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P5 | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:frame-schedules-final-ay2728-202627@msp-operations
+DTSTAMP:20270412T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP SCHEDULING] Final frame schedules AY27-28 (P1-P5) from the Dean
+DESCRIPTION:2026 instance Mon 13 Apr 16:26 from Gerco\; Severine relayed to UCM\, DACS\, UCV and Jesse Laumen on Tue 14 Apr 09:58. NB SSC is not on that relay list. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: all offices\, UCM/UCV/DACS schedulers\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-form-opens-fall-202627@msp-operations
+DTSTAMP:20270429T000000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:[MSP SCHEDULING] Course registration form Fall goes live (07:00)
+DESCRIPTION:2026 instance stated to IRO on 17 Apr: the form will only be active from April 30th\, 7 am our time. Link pre-shared with IRO 13 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, IRO\, students
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p6-202627@msp-operations
 DTSTAMP:20270512T000000Z
 DTSTART;VALUE=DATE:20270512
@@ -163,5 +251,21 @@ DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
 DESCRIPTION:17-21 May | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-fall-202627@msp-operations
+DTSTAMP:20270526T000000Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms out to coordinators (AY27-28 P1/P2)
+DESCRIPTION:2026 instance Wed 27 May 12:22\, reminder 26 Jun. Sent the week after the fall registration week. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, Scheduling (Severine)
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-fall-due-202627@msp-operations
+DTSTAMP:20270702T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P1 AY27-28 return deadline
+DESCRIPTION:2026 instance stated verbatim: before July 3rd\, 5 pm. 3 Jul 2027 is a Saturday so the equivalent is Fri 2 Jul 17:00\, via Qualtrics. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
 END:VEVENT
 END:VCALENDAR

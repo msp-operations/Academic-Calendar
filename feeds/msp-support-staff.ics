@@ -109,6 +109,14 @@ SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Fall appointment letters
 DESCRIPTION:End August per the IPO overview | CORRECTED to 2026-08-20 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug | For: IPO (Eva)\, BoE secretary
 END:VEVENT
 BEGIN:VEVENT
+UID:sched-planning-forms-p2-reminder-202627@msp-operations
+DTSTAMP:20260820T000000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:[MSP SCHEDULING] P2 course/skill planning form reminder goes out
+DESCRIPTION:2025 instance Thu 20 Aug 11:25\, recoverable verbatim from the Hermeling reply of 1 Sep 2025: fill out either the course or the skills planning forms of p2 before September 19th. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:alumni-intranet-deadline-202627@msp-operations
 DTSTAMP:20260821T000000Z
 DTSTART;VALUE=DATE:20260821
@@ -435,6 +443,14 @@ DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[MSP SCHEDULING] Course withdraw deadline
 DESCRIPTION:P2 | For: students\, Academic Advising\, ESD
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-form-opens-spring-202627@msp-operations
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[MSP SCHEDULING] Course registration form Spring goes live (08:30)
+DESCRIPTION:2025 instance stated to IRO on 28 Oct: it only starts this Friday at 8:30 am\, meaning Fri 31 Oct. Link pre-shared with IRO 3 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, IRO\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:boe-grad-audit-candidates-nov-202627@msp-operations
@@ -1061,6 +1077,14 @@ SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
+UID:frame-schedules-draft-ay2728-202627@msp-operations
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:[MSP SCHEDULING] Draft frame schedules AY27-28 circulated by the Dean
+DESCRIPTION:2026 instance Fri 13 Mar 09:02 from Gerco\, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Gerco\, Scheduling\, Exams\, BoE\, Information Hub
+END:VEVENT
+BEGIN:VEVENT
 UID:catalogue-sap-modules-202627@msp-operations
 DTSTAMP:20270315T000000Z
 DTSTART;VALUE=DATE:20270315
@@ -1205,6 +1229,14 @@ SUMMARY:[MSP ESD] Ask coordinators for accreditation material (round opens) (P4)
 DESCRIPTION:Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov\, two days later\; P4/P5 match). Material: course manual\, assessment plan\, attendance\, exams incl. rubric\, assignments. P2 has its own dated event (closure) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Monday of each round | For: IPO (Eva)\, course coordinators of the period + resits
 END:VEVENT
 BEGIN:VEVENT
+UID:frame-schedules-final-ay2728-202627@msp-operations
+DTSTAMP:20270412T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP SCHEDULING] Final frame schedules AY27-28 (P1-P5) from the Dean
+DESCRIPTION:2026 instance Mon 13 Apr 16:26 from Gerco\; Severine relayed to UCM\, DACS\, UCV and Jesse Laumen on Tue 14 Apr 09:58. NB SSC is not on that relay list. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: all offices\, UCM/UCV/DACS schedulers\, Academic Advising
+END:VEVENT
+BEGIN:VEVENT
 UID:iwio-close-p4-202627@msp-operations
 DTSTAMP:20270416T000000Z
 DTSTART;VALUE=DATE:20270416
@@ -1267,6 +1299,14 @@ DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:[MSP GENERAL] King's Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-form-opens-fall-202627@msp-operations
+DTSTAMP:20270429T000000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:[MSP SCHEDULING] Course registration form Fall goes live (07:00)
+DESCRIPTION:2026 instance stated to IRO on 17 Apr: the form will only be active from April 30th\, 7 am our time. Link pre-shared with IRO 13 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Scheduling (Severine)\, IRO\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:eer-adoption-202627@msp-operations
