@@ -34,15 +34,11 @@
     background: linear-gradient(180deg, #e9f2fa 0px, var(--paper) 380px);
     -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
-  /* The frame: the year's period colours wrapped around the whole site */
-  body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 100;
-    border: 6px solid transparent;
-    border-image: conic-gradient(from 140deg, var(--p1), var(--p2), var(--p6), var(--p4), var(--p5), var(--accent), var(--p1)) 1; }
 
   header { background: linear-gradient(180deg, #e4f0fa 0%, rgba(255,255,255,.96) 85%); border-bottom: 1px solid var(--line); box-shadow: var(--shadow-sm); }
   .topbar { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
     padding: 26px 24px 16px; max-width: var(--pagew); margin: 0 auto; }
-  .topbar img.msp { height: 62px; }
+  .topbar img.msp { height: 132px; width: auto; margin-bottom: -6px; }
   .homelink { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: inherit; cursor: pointer; }
   .homelink:hover h1 { color: var(--accent-ink); }
   .homelink:hover img.msp { transform: scale(1.03); }
@@ -101,8 +97,8 @@
   .rail::-webkit-scrollbar { width: 6px; }
   .rail::-webkit-scrollbar-thumb { background: rgba(255,255,255,.16); border-radius: 3px; }
 
-  .railtop { padding: 0 20px 16px; display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
-  .raillogo { height: 46px; margin: -4px 0 0 -6px; width: auto; filter: brightness(0) invert(1); flex: 0 0 auto; }
+  .railtop { padding: 0 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .raillogo { width: 170px; height: auto; filter: brightness(0) invert(1); flex: 0 1 auto; min-width: 0; }
   .railtoggle { background: transparent; border: 0; color: rgba(255,255,255,.5); cursor: pointer;
     border-radius: 6px; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
     font-family: inherit; flex: 0 0 auto; transition: color .15s ease, background .15s ease; }
@@ -368,7 +364,7 @@
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    .toolbar, footer, .subscribe, .yearnote, .upwrap, body::after, .rail { display: none !important; }
+    .toolbar, footer, .subscribe, .yearnote, .upwrap, .rail { display: none !important; }
     :root { --rail-w: 0px !important; }
     header, .accentline { box-shadow: none; }
     .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
@@ -386,6 +382,7 @@
     <header>
       <div class="topbar">
         <a class="homelink" id="homelink" href="./" title="Back to the year planner">
+          <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
           <div class="titleblock">
             <p class="kicker">Maastricht Science Programme</p>
             <h1>MSP Operations Calendar</h1>
@@ -660,7 +657,7 @@ function buildRail() {
   rail.onclick = () => { if (rail.classList.contains('mini')) setRailManual(false); };
 
   const top = document.createElement('div'); top.className = 'railtop';
-  top.innerHTML = '<img class="raillogo" src="msp-logo.png" alt="Maastricht Science Programme">';
+  top.innerHTML = '<img class="raillogo" src="um-logo.png" alt="Maastricht University">';
   const tg = document.createElement('button');
   tg.className = 'railtoggle'; tg.innerHTML = CHEV;
   tg.setAttribute('aria-label', 'Collapse or open the menu');
