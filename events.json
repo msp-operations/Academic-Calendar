@@ -1030,32 +1030,6 @@
       "status": "confirmed"
     },
     {
-      "id": "mspa-gathering",
-      "title": "MSPA alumni gathering (September, date TBD)",
-      "office": "alumni",
-      "staff": "support",
-      "date": "2026-09-01",
-      "end": "2026-09-01",
-      "audience": "alumni, Operations Coordinator",
-      "notes": "Annual September event; no date set yet with Paolo",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "esd-team-meeting",
-      "title": "ESD team meeting (weekly rhythm marker)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2026-09-01",
-      "end": "2026-09-01",
-      "audience": "ESD team",
-      "notes": "Own calendar recurring series 'ESD Team Meeting', weekly since Tue 6 Jan 2026, B1.019, no end date. Single marker at year start; the site cannot render a weekly repeat",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "opening-academic-year",
       "title": "UM Opening of the Academic Year",
       "office": "general",
@@ -1316,19 +1290,6 @@
       "status": "confirmed"
     },
     {
-      "id": "boe-monthly-meeting",
-      "title": "BoE board meeting (cadence marker)",
-      "office": "boe",
-      "staff": "support",
-      "date": "2026-09-29",
-      "end": "2026-09-29",
-      "audience": "BoE members, BoE secretary",
-      "notes": "The merged MSLAS board meets ~6x per year (3h plenaries) per the Annual Report 2024-25, NOT monthly as the 2023-24 calendar suggested. No 26-27 dates on record anywhere local; only Katja can supply them",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "print-order-p1",
       "title": "Print order to ANDIDRUK",
       "office": "exams",
@@ -1353,19 +1314,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "momi-list-arrives",
-      "title": "MoMi Control list arrives from Visa Office (expect)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2026-10-01",
-      "end": "2026-10-01",
-      "audience": "ESD, Visa Office (Werner Engels)",
-      "notes": "October per the IPO overview. NB MoMi moved out of ESD to a central base per Eva's file (pilot Brigitte Giezenaar) - confirm ownership before relying on this stream",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "admissions-studielink-opens",
@@ -2044,19 +1992,6 @@
       "status": "confirmed"
     },
     {
-      "id": "msp-15th-reunion",
-      "title": "MSP 15th anniversary alumni reunion weekend (Nov 2026, date TBD)",
-      "office": "alumni",
-      "staff": "both",
-      "date": "2026-11-27",
-      "end": "2026-11-27",
-      "audience": "alumni, all staff, Aperture",
-      "notes": "Announced in the Dec 2025 alumni survey mail: MSP turns 15 in Nov 2026, reunion weekend planned. Placeholder on the graduation-weekend Friday; date not set",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "iwio-setup-p2",
       "title": "IWIO: questionnaire link + open/close dates installed (P2)",
       "office": "esd",
@@ -2078,19 +2013,6 @@
       "end": "2026-11-27",
       "audience": "students, Academic Advising, ESD",
       "notes": "Fri 27 Nov per the LAS MSP/UCM/UCV deadline ladder for 2026-27 (Kessels mail, 26 Feb 2026; phrased as a proposal and absent from the official PDF, so confirm adoption)",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "momi-control-list",
-      "title": "MoMi Control list back to Visa Office (hard deadline)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2026-11-30",
-      "end": "2026-11-30",
-      "audience": "ESD, Visa Office, study adviser",
-      "notes": "'Late November' per the KB, corroborated 'deadline normally in November' by the IPO overview; exact date TBC. Warning letters Mar/Apr, final norm letters Jul/Aug. NB IPO overview says MoMi moved to central base (pilot Brigitte Giezenaar)",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -2146,19 +2068,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "momi-signal-return",
-      "title": "MoMi Signal list filtered, signed and returned",
-      "office": "esd",
-      "staff": "support",
-      "date": "2026-12-01",
-      "end": "2026-12-01",
-      "audience": "ESD, Werner Engels, Judith Buddenberg in cc",
-      "notes": "Nov-Jan window per the IPO overview: filter MSP students from the FSE-wide list, reconcile against last year's monitor list, check leavers in SAP, doubts to Pavel",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "waiver-deadline",
@@ -3045,19 +2954,6 @@
       "status": "confirmed"
     },
     {
-      "id": "momi-p3-check",
-      "title": "MoMi progress check after P3 + warning letters",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-03-01",
-      "end": "2027-03-01",
-      "audience": "ESD, Pavel (for students below norm)",
-      "notes": "After 1 Mar per the IPO overview: SAP transcripts + Marble credit run, add to monitor list, halfway warning letters Mar/Apr via msp-educationsupport (subject Required Study Progress)",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "catalogue-gerco-2",
       "title": "Catalogue cycle - second meeting with Gerco (post-deadline)",
       "office": "esd",
@@ -3212,19 +3108,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "admissions-kickoff",
-      "title": "Admissions - SSC communications kick-off meeting (expect)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-03-10",
-      "end": "2027-03-10",
-      "audience": "Admissions team, SSC",
-      "notes": "Approximate; starts the yearly SSC communications update",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "exam-week-instruction-p4",
@@ -4124,19 +4007,6 @@
       "status": "unconfirmed"
     },
     {
-      "id": "admissions-webpage-refresh",
-      "title": "Admissions - yearly webpage refresh starts",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-05-15",
-      "end": "2027-05-15",
-      "audience": "Admissions team",
-      "notes": "Portal back-end access secured before this date; KB lists 15 May in the hard SSC chain",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "bsa-year-send",
       "title": "BSA year letters sent (mail merge)",
       "office": "esd",
@@ -4395,19 +4265,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "msp-graduation-party",
-      "title": "MSP graduation party / BBQ",
-      "office": "general",
-      "staff": "both",
-      "date": "2027-06-13",
-      "end": "2027-06-13",
-      "audience": "graduating students, staff, alumni",
-      "notes": "Translated from own calendar 'MSP Graduation Party/BBQ', Sun 14 Jun 2026, Castle Vaeshartelt (2024 edition was a dinner on 5 Jul). Feeds alumni onboarding",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "accreditation-ask-p5",
@@ -4748,19 +4605,6 @@
       "status": "confirmed"
     },
     {
-      "id": "sap-rule-container",
-      "title": "SAP rule-container changeover for the new AY (team boot camp)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-07-19",
-      "end": "2027-07-19",
-      "audience": "ESD team volunteers, SAP key user (Michael Hewitt)",
-      "notes": "Summer per own mailbox: 2026 boot camp 20-22 Jul (mails 13 Jul 2026, plan announced by Linzi 4 Feb 2026); new AY rules copied from Excel into SAP",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "bsa-pbsa-datafile",
       "title": "pBSA letter - datafile + letter arrive from Katja",
       "office": "boe",
@@ -4852,19 +4696,6 @@
       "status": "confirmed"
     },
     {
-      "id": "momi-p6-check",
-      "title": "MoMi year-end check after P6 + norm letters",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-08-02",
-      "end": "2027-08-02",
-      "audience": "ESD, Pavel, Werner Engels (norm-not-met cases)",
-      "notes": "After 1 Aug per the IPO overview: Marble run, norm-met letters (30 of 60 EC) Jul/Aug; below-norm students first to Pavel/Werner, only then a norm-not-met letter",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
       "id": "ay2728-start",
       "title": "Academic year 2027-28 starts (preliminary)",
       "office": "general",
@@ -4873,19 +4704,6 @@
       "end": "2027-08-30",
       "audience": "all staff",
       "notes": "Preliminary date per the Calendarium 2026-2027 p.2",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "admissions-diplomas",
-      "title": "Admissions - certified diplomas in; Studielink closes",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-08-31",
-      "end": "2027-08-31",
-      "audience": "Admissions team",
-      "notes": "Open-bachelor/NBSA tail; SSC administrative holds follow ~wk 37-39",
       "link": "",
       "submit": false,
       "status": "unconfirmed"

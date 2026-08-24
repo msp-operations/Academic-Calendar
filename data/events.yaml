@@ -674,14 +674,6 @@
   audience: students, BoE
   status: confirmed
 
-- id: momi-control-list
-  title: MoMi Control list back to Visa Office (hard deadline)
-  office: esd
-  when: "2026-11-30"
-  staff: support
-  audience: ESD, Visa Office, study adviser
-  notes: "'Late November' per the KB, corroborated 'deadline normally in November' by the IPO overview; exact date TBC. Warning letters Mar/Apr, final norm letters Jul/Aug. NB IPO overview says MoMi moved to central base (pilot Brigitte Giezenaar)"
-  status: unconfirmed
 
 - id: catalogue-coordinator-updates
   title: Course catalogue - coordinator updates due
@@ -988,14 +980,6 @@
   staff: support
   audience: Martijn (owner of record, IPO register)
   status: confirmed
-- id: mspa-gathering
-  title: MSPA alumni gathering (September, date TBD)
-  office: alumni
-  when: "2026-09-01"
-  staff: support
-  audience: alumni, Operations Coordinator
-  notes: "Annual September event; no date set yet with Paolo"
-  status: unconfirmed
 
 # ==================================================================================
 # IPO layer - harvested 3 Aug 2026 from "Project IPO Overview.xlsx Eva.xlsx"
@@ -1119,41 +1103,9 @@
 
 # ---------- MoMi (study progress monitoring, visa students) ----------
 
-- id: momi-list-arrives
-  title: MoMi Control list arrives from Visa Office (expect)
-  office: esd
-  when: "2026-10-01"
-  staff: support
-  audience: ESD, Visa Office (Werner Engels)
-  notes: "October per the IPO overview. NB MoMi moved out of ESD to a central base per Eva's file (pilot Brigitte Giezenaar) - confirm ownership before relying on this stream"
-  status: unconfirmed
 
-- id: momi-signal-return
-  title: MoMi Signal list filtered, signed and returned
-  office: esd
-  when: "2026-12-01"
-  staff: support
-  audience: ESD, Werner Engels, Judith Buddenberg in cc
-  notes: "Nov-Jan window per the IPO overview: filter MSP students from the FSE-wide list, reconcile against last year's monitor list, check leavers in SAP, doubts to Pavel"
-  status: unconfirmed
 
-- id: momi-p3-check
-  title: MoMi progress check after P3 + warning letters
-  office: esd
-  when: "2027-03-01"
-  staff: support
-  audience: ESD, Pavel (for students below norm)
-  notes: "After 1 Mar per the IPO overview: SAP transcripts + Marble credit run, add to monitor list, halfway warning letters Mar/Apr via msp-educationsupport (subject Required Study Progress)"
-  status: unconfirmed
 
-- id: momi-p6-check
-  title: MoMi year-end check after P6 + norm letters
-  office: esd
-  when: "2027-08-02"
-  staff: support
-  audience: ESD, Pavel, Werner Engels (norm-not-met cases)
-  notes: "After 1 Aug per the IPO overview: Marble run, norm-met letters (30 of 60 EC) Jul/Aug; below-norm students first to Pavel/Werner, only then a norm-not-met letter"
-  status: unconfirmed
 
 # ---------- Accreditation / archiving ladder (per exam week, DUB30 pilot) ----------
 # Eva's stated rule: coordinators asked 15wd after the last exam (= grade publication day),
@@ -1815,31 +1767,7 @@
   audience: teaching staff, education support
   notes: "Translated from own calendar 'FSE Education Day', Thu 25 Jun 2026, Kasteel De Hoogenweerth; single instance, treat as tentative"
   status: unconfirmed
-- id: msp-graduation-party
-  title: MSP graduation party / BBQ
-  office: general
-  when: "2027-06-13"
-  staff: both
-  audience: graduating students, staff, alumni
-  notes: "Translated from own calendar 'MSP Graduation Party/BBQ', Sun 14 Jun 2026, Castle Vaeshartelt (2024 edition was a dinner on 5 Jul). Feeds alumni onboarding"
-  status: unconfirmed
 
-- id: esd-team-meeting
-  title: ESD team meeting (weekly rhythm marker)
-  office: esd
-  when: "2026-09-01"
-  staff: support
-  audience: ESD team
-  notes: "Own calendar recurring series 'ESD Team Meeting', weekly since Tue 6 Jan 2026, B1.019, no end date. Single marker at year start; the site cannot render a weekly repeat"
-  status: unconfirmed
-- id: boe-monthly-meeting
-  title: BoE board meeting (cadence marker)
-  office: boe
-  when: "2026-09-29"
-  staff: support
-  audience: BoE members, BoE secretary
-  notes: "The merged MSLAS board meets ~6x per year (3h plenaries) per the Annual Report 2024-25, NOT monthly as the 2023-24 calendar suggested. No 26-27 dates on record anywhere local; only Katja can supply them"
-  status: unconfirmed
 - id: assessment-logistics-umsport
   title: Assessment logistics FSE / UM Sports (year-end alignment)
   office: exams
@@ -1882,14 +1810,6 @@
   staff: support
   audience: Alumni Coordinator, graduating students, ESD
   notes: "Sent a few days before the 30 Jun graduation date (2026 instance: 23 Jun)"
-  status: unconfirmed
-- id: msp-15th-reunion
-  title: MSP 15th anniversary alumni reunion weekend (Nov 2026, date TBD)
-  office: alumni
-  when: "2026-11-27"
-  staff: both
-  audience: alumni, all staff, Aperture
-  notes: "Announced in the Dec 2025 alumni survey mail: MSP turns 15 in Nov 2026, reunion weekend planned. Placeholder on the graduation-weekend Friday; date not set"
   status: unconfirmed
 - id: alumni-admissions-qa-call
   title: Admissions online Q&A alumni panellist call (expect)
@@ -1965,14 +1885,6 @@
   staff: both
   audience: course team, support crew volunteers
   notes: "Per own mailbox (V ENCI folder): Jun-Jul 2026 fieldwork, daily 08:00 starts, availability request went out 22 May. One cycle observed, annual inferred"
-  status: unconfirmed
-- id: sap-rule-container
-  title: SAP rule-container changeover for the new AY (team boot camp)
-  office: esd
-  when: "2027-07-19"
-  staff: support
-  audience: ESD team volunteers, SAP key user (Michael Hewitt)
-  notes: "Summer per own mailbox: 2026 boot camp 20-22 Jul (mails 13 Jul 2026, plan announced by Linzi 4 Feb 2026); new AY rules copied from Excel into SAP"
   status: unconfirmed
 - id: norm-hours-finance
   title: Norm-hours list (BTR supervision) to finance
@@ -2109,14 +2021,6 @@
   audience: Admissions team (Saskia, Gian), SSC
   notes: "1 Oct: applications open for the next AY; portal task descriptions must be live. Part of the hard SSC chain per the KB"
   status: confirmed
-- id: admissions-kickoff
-  title: Admissions - SSC communications kick-off meeting (expect)
-  office: esd
-  when: "2027-03-10"
-  staff: support
-  audience: Admissions team, SSC
-  notes: "Approximate; starts the yearly SSC communications update"
-  status: unconfirmed
 - id: admissions-deadline-noneu
   title: Admissions - application deadline non-EU/EEA
   office: esd
@@ -2133,14 +2037,6 @@
   audience: Admissions team, applicants
   notes: "Fixed annual deadline; reminders end Apr"
   status: confirmed
-- id: admissions-webpage-refresh
-  title: Admissions - yearly webpage refresh starts
-  office: esd
-  when: "2027-05-15"
-  staff: support
-  audience: Admissions team
-  notes: "Portal back-end access secured before this date; KB lists 15 May in the hard SSC chain"
-  status: unconfirmed
 - id: admissions-selection-complete
   title: Admissions - selection incl. interviews complete (17:00 CET)
   office: esd
@@ -2165,14 +2061,6 @@
   audience: Admissions team, SSC
   notes: "Hard external deadline owned by SSC; one of the KB's five must-not-miss dates"
   status: confirmed
-- id: admissions-diplomas
-  title: Admissions - certified diplomas in; Studielink closes
-  office: esd
-  when: "2027-08-31"
-  staff: support
-  audience: Admissions team
-  notes: "Open-bachelor/NBSA tail; SSC administrative holds follow ~wk 37-39"
-  status: unconfirmed
 
 # ---------- Scheduling data-collection rules (procedure-doc rules, dates pending Severine) ----------
 
