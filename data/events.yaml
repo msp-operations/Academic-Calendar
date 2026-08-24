@@ -1601,38 +1601,6 @@
   notes: "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 12 Jan 2027. Later spring 2027 dates not yet issued by SSC"
   status: confirmed
 
-- id: ssc-toetsoverleg-oct
-  title: SSC Hoofdsurveillanten + Toets coordinator overleg
-  office: exams
-  when: "2026-10-27"
-  staff: support
-  audience: exams office, hoofdsurveillanten
-  notes: "Translated from the 2025-26 series (Tue 28 Oct 2025, PHS1 C3.015; HS overleg 13:30 then coordinator overleg 15:00). Msp-exams calendar; agenda items to toetsen@. AY26-27 invites should arrive from SSC around Sep"
-  status: unconfirmed
-- id: ssc-toetsoverleg-feb
-  title: SSC Hoofdsurveillanten + Toets coordinator overleg
-  office: exams
-  when: "2027-02-02"
-  staff: support
-  audience: exams office, hoofdsurveillanten
-  notes: "Translated from Msp-exams calendar 'Hoofdsurveillanten overleg' 10:00 + 'Toets coordinator overleg' 11:30, Tue 3 Feb 2026, PHS1 C3.015"
-  status: unconfirmed
-- id: ssc-toetsoverleg-apr
-  title: SSC Hoofdsurveillanten + Toets coordinator overleg
-  office: exams
-  when: "2027-04-13"
-  staff: support
-  audience: exams office, hoofdsurveillanten
-  notes: "Translated from Msp-exams calendar pair on Tue 14 Apr 2026, PHS1 C3.015"
-  status: unconfirmed
-- id: ssc-toetsoverleg-jun
-  title: SSC Hoofdsurveillanten + Toets coordinator overleg
-  office: exams
-  when: "2027-06-22"
-  staff: support
-  audience: exams office, hoofdsurveillanten
-  notes: "Translated from Msp-exams calendar pair on Tue 23 Jun 2026, PHS1 C3.015. The July edition was cancelled both years, treat June as the season closer"
-  status: unconfirmed
 
 - id: surveillanten-training
   title: Annual invigilator (surveillanten) training
@@ -1645,35 +1613,8 @@
 
 # ---------- Per-period exam-office rhythms (own calendar patterns) ----------
 
-- id: exam-week-instruction
-  title: Exam week instruction briefing (invigilation team)
-  office: exams
-  when: "{P}.exam.start -2wd"
-  repeat: P1, P2, P4, P5
-  staff: support
-  audience: exams office, invigilators, student assistants
-  notes: "Thu/Fri before each exam week per own calendar: 'Instructie Examenweek' 8 Dec 2023, 21 Mar 2024, 23 May 2024; 'Instruction Exam Week' 13 Mar 2025. Timing varies a few days, treat as a placeholder"
-  status: unconfirmed
 
-- id: exam-prep-dacs
-  title: Exam week prep meeting MSP-DACS-FSE-C (logistics + transport)
-  office: exams
-  when: "{P}.exam.start -20wd"
-  repeat: P1, P2, P4, P5
-  staff: support
-  audience: exams office, DACS, FSE-C
-  notes: "Joint prep ~4 weeks ahead per own calendar: 'Meeting examweek 1 (+2) and transport' 2 Sep 2025, 'Meeting examweek 2' 11 Nov 2025, 'Voorbereiding P5, samenwerking DACS-MSP-FSE-C' 21 Apr 2026, 'Voorbereiding P6' 8 Jun 2026. Timing drifts between 1 and 6 weeks ahead"
-  status: unconfirmed
 
-- id: results-review
-  title: Results review with programme director (flagging odd course results)
-  office: exams
-  when: "{P}.exam.end +16wd"
-  repeat: P1, P2, P4, P5
-  staff: both
-  audience: exams office, programme director
-  notes: "After grade publication per own calendar: 'Go over P1-3 results' 26 Mar 2026 (cancelled) and 'Discuss P4 results' 13 Apr 2026, both in Linnea's office B2.019; goal is flagging guidelines"
-  status: unconfirmed
 
 # ---------- MSP / FSE / UM year rhythm (own calendar) ----------
 
@@ -1743,30 +1684,6 @@
   notes: "Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness)"
   status: confirmed
 
-- id: opening-academic-year
-  title: UM Opening of the Academic Year
-  office: general
-  when: "2026-09-01"
-  staff: both
-  audience: all staff
-  notes: "Translated from own calendar 'Opening Academic Year', Mon 1 Sep 2025 15:30, Theater aan het Vrijthof; UM traditionally opens on 1 Sep"
-  status: unconfirmed
-- id: fse-faculty-day
-  title: FSE Faculty Day
-  office: general
-  when: "2026-12-03"
-  staff: both
-  audience: all FSE staff
-  notes: "Annual early-December off-site per own calendar: 'FSE Faculty Day 2025' Thu 4 Dec 2025 (Venlo), 2024 edition mid-Dec (Studio Radium). Date TBC via FSE comms"
-  status: unconfirmed
-- id: fse-education-day
-  title: FSE Education Day
-  office: general
-  when: "2027-06-24"
-  staff: academic
-  audience: teaching staff, education support
-  notes: "Translated from own calendar 'FSE Education Day', Thu 25 Jun 2026, Kasteel De Hoogenweerth; single instance, treat as tentative"
-  status: unconfirmed
 
 - id: assessment-logistics-umsport
   title: Assessment logistics FSE / UM Sports (year-end alignment)
@@ -1779,54 +1696,6 @@
 
 # ---------- Alumni rhythms (harvested 3 Aug 2026 from the msp-alumni mailbox analysis) ----------
 
-- id: alumni-db-campaign
-  title: Annual alumni database update campaign (mass send)
-  office: alumni
-  when: "2027-07-12"
-  staff: support
-  audience: Alumni Coordinator, student assistants
-  notes: "Mid-July per the mailbox: founding campaign 14 Jul 2025, per-cohort sends, two-stage (contact check, then location + job follow-up ~1 week later). Annual recurrence inferred. Run a dead-address pass on the bounces first"
-  status: unconfirmed
-- id: alumni-sept-wave
-  title: Alumni second-wave campaign + new-graduate intake
-  office: alumni
-  when: "2026-09-14"
-  staff: support
-  audience: Alumni Coordinator
-  notes: "Per the mailbox: non-responder wave 14 Sep 2025, CE graduates + master's pilot survey 3-4 Sep 2025. Single year observed, rhythm inferred"
-  status: unconfirmed
-- id: graduation-survey-jan
-  title: Mandatory Graduation Survey to the January class
-  office: alumni
-  when: "2027-01-26"
-  staff: support
-  audience: Alumni Coordinator, graduating students, ESD
-  notes: "Sent a few days before the 31 Jan graduation date (2026 instance: 27 Jan). Intake pipe into the alumni database"
-  status: unconfirmed
-- id: graduation-survey-jun
-  title: Mandatory Graduation Survey to the June class
-  office: alumni
-  when: "2027-06-23"
-  staff: support
-  audience: Alumni Coordinator, graduating students, ESD
-  notes: "Sent a few days before the 30 Jun graduation date (2026 instance: 23 Jun)"
-  status: unconfirmed
-- id: alumni-admissions-qa-call
-  title: Admissions online Q&A alumni panellist call (expect)
-  office: alumni
-  when: "2027-04-15"
-  staff: support
-  audience: Alumni Coordinator, Admissions (Saskia)
-  notes: "Per the mailbox: 2026 request landed mid-April with a 1 May deadline for the May online Q&A sessions (12/19/21/27 May 2026). Annual recurrence inferred"
-  status: unconfirmed
-- id: alumni-december-survey
-  title: Alumni year-plan survey (December)
-  office: alumni
-  when: "2026-12-21"
-  staff: support
-  audience: Alumni Coordinator
-  notes: "2025 instance: 'MSP Alumni Survey - Help us plan 2026!' sent 21 Dec 2025 (Qualtrics). Single instance, rhythm inferred"
-  status: unconfirmed
 
 # ---------- Mail-side annual rhythms (Martijn mailbox analysis, 3 Aug 2026) ----------
 
@@ -1854,22 +1723,6 @@
   audience: ESD, Linzi, Heather
   notes: "Second week of August, every year (rule set by Martijn 24 Aug 2026). Delivered during intro week; ESD staff in the office Mon-Wed of that week"
   status: confirmed
-- id: performance-eval-round
-  title: UM performance evaluation round (expect form)
-  office: general
-  when: "2027-03-01"
-  staff: both
-  audience: all staff
-  notes: "Per own mailbox: 'Performance Evaluation February 2026' issued 4 Mar, signed form + appendix chased 14 Apr. UM annual cycle inferred"
-  status: unconfirmed
-- id: um-calendarium-arrives
-  title: UM Calendarium AY27-28 arrives (expect)
-  office: general
-  when: "2027-03-22"
-  staff: support
-  audience: Operations, Scheduling
-  notes: "Approved UM-wide + academic short year versions forwarded by Linzi 24 Mar 2026. This triggers this calendar's own annual refresh: fill year-2027-28.yaml, have each office confirm its layer, rebuild"
-  status: unconfirmed
 - id: enci-fieldwork
   title: ENCI fieldwork period starts (~2 weeks, support crew needed)
   office: general
@@ -1963,14 +1816,6 @@
   notes: "Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week"
   status: confirmed
 
-- id: exchange-intro
-  title: Introduction days exchange students (Spring intake)
-  office: general
-  when: "2027-01-18"
-  staff: support
-  audience: incoming exchange students, IRO, ESD
-  notes: "Week 3 per the Calendarium legend (marker in the P3 grid); exact days not stated"
-  status: unconfirmed
 
 - id: fse-resits-sem1
   title: FSE resit weeks Semester 1 (other programmes)
@@ -1989,14 +1834,6 @@
   notes: "Week 8 per the FSE academic calendar; CE Year 3 runs a 7-week P3 (4 Jan - 26 Feb)"
   status: confirmed
 
-- id: ay2728-start
-  title: Academic year 2027-28 starts (preliminary)
-  office: general
-  when: "2027-08-30"
-  staff: both
-  audience: all staff
-  notes: "Preliminary date per the Calendarium 2026-2027 p.2"
-  status: unconfirmed
 
 # ==================================================================================
 # Workspace sweep layer - harvested 4 Aug 2026 (4 agents over c:\dev; findings in the
