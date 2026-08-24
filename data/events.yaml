@@ -689,9 +689,9 @@
   when: "2027-02-26"
   staff: academic
   audience: course coordinators
-  notes: "End of February (2026 instance was Fri 27 Feb); update letters go out mid-Jan, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands"
+  notes: "End of February (2026 instance was Fri 27 Feb); update letters go out mid-Jan, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): exact date given"
   submit: yes
-  status: unconfirmed
+  status: confirmed
 - id: catalogue-publication
   title: Course catalogue publication (hard deadline)
   office: esd
@@ -1013,8 +1013,8 @@
   when: "2026-08-03"
   staff: support
   audience: IPO (Eva), faculty BKO/UTQ contact persons
-  notes: "Early August per the IPO overview; feeds the examiner list for Fall appointment letters"
-  status: unconfirmed
+  notes: "Early August per the IPO overview; feeds the examiner list for Fall appointment letters | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 2-13 Aug"
+  status: confirmed
 
 - id: examiner-gerco-check-fall
   title: Examiner list final check with Gerco (Fall semester)
@@ -1028,11 +1028,11 @@
 - id: examiner-to-katja-fall
   title: Examiner list to Katja (BoE) for Fall appointment letters
   office: boe
-  when: "2026-08-28"
+  when: "2026-08-20"
   staff: support
   audience: IPO (Eva), BoE secretary
-  notes: "End August per the IPO overview"
-  status: unconfirmed
+  notes: "End August per the IPO overview | CORRECTED to 2026-08-20 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug"
+  status: confirmed
 
 - id: intranet-canvas-refresh
   title: Intranet + Canvas full new-year refresh deadline (all sections)
@@ -1084,19 +1084,19 @@
 - id: catalogue-spring-publish
   title: Spring catalogue updates published (Canvas + intranet)
   office: esd
-  when: "2026-10-23"
+  when: "2026-10-30"
   staff: support
   audience: coordinators, students, Gerco, Chris P., Severine, Katja, Saskia, Linzi, UCM/UCV
-  notes: "Mid-Oct per the IPO overview: catalogue + pre/co-requisites overview + SAP/Mendix final check. Sent to UCV (Brigitte Kessels) and UCM student affairs"
-  status: unconfirmed
+  notes: "Mid-Oct per the IPO overview: catalogue + pre/co-requisites overview + SAP/Mendix final check. Sent to UCV (Brigitte Kessels) and UCM student affairs | CORRECTED to 2026-10-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 Oct"
+  status: confirmed
 
 - id: forms-erik-fall
   title: Intranet forms sweep with Erik Verheij (Fall round)
   office: esd
-  when: "2026-10-26"
+  when: "2026-10-23"
   staff: support
   audience: IPO (Eva), Erik Verheij
-  notes: "End Oct per the IPO overview, trigger early Oct: all 14 forms updated in one go (P4/P5 module titles in additional-module and switch-withdraw forms), new colleagues intranet access"
+  notes: "End Oct per the IPO overview, trigger early Oct: all 14 forms updated in one go (P4/P5 module titles in additional-module and switch-withdraw forms), new colleagues intranet access | CORRECTED to 2026-10-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 19-23 Oct"
   status: unconfirmed
 
 - id: frame-schedule-spring-deadline
@@ -1168,8 +1168,8 @@
   repeat: P1, P2, P4, P5
   staff: support
   audience: IPO (Eva), students
-  notes: "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101"
-  status: unconfirmed
+  notes: "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start"
+  status: confirmed
 
 - id: exam-overview-check
   title: Check exam/resit overview + prefill accreditation registers
@@ -1178,8 +1178,8 @@
   staff: support
   repeat: P1, P2, P4, P5
   audience: IPO (Eva), exams office
-  notes: "Week before the exam week per the IPO overview: copy exam + attendance sheets into the archiving overview, note which modules have resits"
-  status: unconfirmed
+  notes: "Week before the exam week per the IPO overview: copy exam + attendance sheets into the archiving overview, note which modules have resits | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): one-week window"
+  status: confirmed
 
 - id: accreditation-ask
   title: Ask coordinators for accreditation material (round opens)
@@ -1188,8 +1188,8 @@
   repeat: P1, P4, P5
   staff: support
   audience: IPO (Eva), course coordinators of the period + resits
-  notes: "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure)"
-  status: unconfirmed
+  notes: "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Monday of each round"
+  status: confirmed
 - id: accreditation-ask-p2
   title: Ask coordinators for accreditation material (P2 + P1 resits)
   office: esd
@@ -1223,19 +1223,21 @@
   title: Eva at DUB30 for archive intake (Mon-Wed)
   office: esd
   when: "{P}.exam.end +26wd"
+  until: "{P}.exam.end +28wd"
   repeat: P1, P4, P5
   staff: support
   audience: IPO (Eva), late coordinators
-  notes: "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event"
-  status: unconfirmed
+  notes: "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Mon-Wed block"
+  status: confirmed
 - id: accreditation-dub30-p2
   title: Eva at DUB30 for archive intake (P2 round)
   office: esd
   when: "2027-02-01"
+  until: "2027-02-03"
   staff: support
   audience: IPO (Eva), late coordinators
-  notes: "Week after the 29 Jan hand-in deadline (matches Eva's 2026 practice: DUB30 2-4 Feb)"
-  status: unconfirmed
+  notes: "Week after the 29 Jan hand-in deadline (matches Eva's 2026 practice: DUB30 2-4 Feb) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Mon-Wed block"
+  status: confirmed
 
 - id: accreditation-ask-resits
   title: Ask coordinators for accreditation material (P5 resit round)
@@ -1260,10 +1262,11 @@
   title: Eva at DUB30 for archive intake (P5 resit round)
   office: esd
   when: "2027-07-26"
+  until: "2027-07-28"
   staff: support
   audience: IPO (Eva)
-  notes: "2026 instance shifted to 3-5 Aug because of painters; normally the week after the resit deadline"
-  status: unconfirmed
+  notes: "2026 instance shifted to 3-5 Aug because of painters; normally the week after the resit deadline | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Mon-Wed block"
+  status: confirmed
 
 - id: archive-drive-winter
   title: Archive drive + accreditation overviews set up for Spring
@@ -1271,26 +1274,26 @@
   when: "2026-12-14"
   staff: support
   audience: IPO (Eva), Ton Derikx, coordinators
-  notes: "Winter round per the IPO overview: per-module archive drive by Ton Derikx, access for all Spring coordinators, empty overviews created"
-  status: unconfirmed
+  notes: "Winter round per the IPO overview: per-module archive drive by Ton Derikx, access for all Spring coordinators, empty overviews created | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 14-24 Dec"
+  status: confirmed
 
 - id: archive-drive-summer
   title: Archive drive + accreditation overviews set up for Fall AY27-28
   office: esd
-  when: "2027-07-05"
+  when: "2027-07-23"
   staff: support
   audience: IPO (Eva), Ton Derikx, coordinators
-  notes: "Summer round per the IPO overview; overview creation at DUB30 in the first week of August"
-  status: unconfirmed
+  notes: "Summer round per the IPO overview; overview creation at DUB30 in the first week of August | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul"
+  status: confirmed
 
 - id: grading-overview-print
   title: Grading Deadlines Overview updated for new AY + printed (B0.005)
   office: esd
-  when: "2027-07-05"
+  when: "2027-07-23"
   staff: support
   audience: IPO (Eva), exams office
-  notes: "July per the IPO overview: whole-year overview (source: exam coordinator) refreshed for archiving/accreditation and posted on the whiteboard"
-  status: unconfirmed
+  notes: "July per the IPO overview: whole-year overview (source: exam coordinator) refreshed for archiving/accreditation and posted on the whiteboard | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul"
+  status: confirmed
 
 # ---------- BSA letter cycle (Eva executes; letters from Gerco/BoE) ----------
 
@@ -1300,8 +1303,8 @@
   when: "2027-01-11"
   staff: support
   audience: BoE (Katja), Gerco, IPO (Eva)
-  notes: "Early Jan (second week of P3) per the IPO overview; announcement links to the infosheet on the intranet"
-  status: unconfirmed
+  notes: "Early Jan (second week of P3) per the IPO overview; announcement links to the infosheet on the intranet | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11-14 Jan"
+  status: confirmed
 
 - id: bsa-halfway-prep
   title: BSA halfway letter - student lists + datafile prep
@@ -1309,8 +1312,8 @@
   when: "2027-01-11"
   staff: support
   audience: IPO (Eva), BoE, Pavel
-  notes: "Three weeks ahead per the IPO overview: SAP Student Reporting Tool lists (deregistered before 1 Oct = no letter), Stick advisor match, datafile, mail-address check, link/EER-article check"
-  status: unconfirmed
+  notes: "Three weeks ahead per the IPO overview: SAP Student Reporting Tool lists (deregistered before 1 Oct = no letter), Stick advisor match, datafile, mail-address check, link/EER-article check | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11-29 Jan"
+  status: confirmed
 
 - id: bsa-halfway-gerco
   title: BSA halfway letter - final version from Gerco
@@ -1318,8 +1321,8 @@
   when: "2027-01-18"
   staff: support
   audience: Gerco, IPO (Eva)
-  notes: "Two weeks ahead per the IPO overview"
-  status: unconfirmed
+  notes: "Two weeks ahead per the IPO overview | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11-29 Jan"
+  status: confirmed
 
 - id: bsa-halfway-send
   title: BSA halfway letters sent (mail merge)
@@ -1327,17 +1330,17 @@
   when: "2027-02-01"
   staff: support
   audience: first-year students, IPO (Eva)
-  notes: "Second week of P4 per the IPO overview (2026 instance: Mon 2 - Thu 5 Feb). Personalized letters via msp-educationsupport, max 50 per go; transcripts refreshed in SAP first"
-  status: unconfirmed
+  notes: "Second week of P4 per the IPO overview (2026 instance: Mon 2 - Thu 5 Feb). Personalized letters via msp-educationsupport, max 50 per go; transcripts refreshed in SAP first | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 1-12 Feb"
+  status: confirmed
 
 - id: bsa-halfway-archive
   title: BSA halfway letters archived (Corsa D20A + Outlook)
   office: esd
-  when: "2027-02-08"
+  when: "2027-02-19"
   staff: support
   audience: IPO (Eva), Ton Derikx, Katja
-  notes: "One week after sending per the IPO overview: bulk save to J-drive/Corsa studentendossier D20A + Katja's Outlook student folder"
-  status: unconfirmed
+  notes: "One week after sending per the IPO overview: bulk save to J-drive/Corsa studentendossier D20A + Katja's Outlook student folder | CORRECTED to 2027-02-19 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 15-19 Feb"
+  status: confirmed
 
 - id: bsa-halfway-followup
   title: BSA halfway follow-up - exemption list + credit report to Pavel/BoE
@@ -1345,8 +1348,8 @@
   when: "2027-02-22"
   staff: support
   audience: IPO (Eva), BoE (Katja), Pavel
-  notes: "Three weeks after sending per the IPO overview: exemption list from BoE + report of credits (22.5 of 45) and 3-of-4 core courses (BIO1101, CHE1191, INT1101, PHY1101)"
-  status: unconfirmed
+  notes: "Three weeks after sending per the IPO overview: exemption list from BoE + report of credits (22.5 of 45) and 3-of-4 core courses (BIO1101, CHE1191, INT1101, PHY1101) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 22-25 Feb"
+  status: confirmed
 
 - id: bsa-year-prep
   title: BSA year letter - updated student list + datafile prep
@@ -1354,8 +1357,8 @@
   when: "2027-04-26"
   staff: support
   audience: IPO (Eva), BoE, Pavel
-  notes: "Three weeks ahead per the IPO overview: one Active Now list, reconcile against the February list (post-1-Feb deregistrations to Pavel/Katja), Stick check, mail-address + EER-link check"
-  status: unconfirmed
+  notes: "Three weeks ahead per the IPO overview: one Active Now list, reconcile against the February list (post-1-Feb deregistrations to Pavel/Katja), Stick check, mail-address + EER-link check | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26 Apr - 14 May"
+  status: confirmed
 
 - id: bsa-year-gerco
   title: BSA year letter - final version from Gerco
@@ -1363,7 +1366,8 @@
   when: "2027-05-03"
   staff: support
   audience: Gerco, IPO (Eva)
-  status: unconfirmed
+  notes: "Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26 Apr - 14 May"
+  status: confirmed
 
 - id: bsa-year-send
   title: BSA year letters sent (mail merge)
@@ -1371,8 +1375,8 @@
   when: "2027-05-17"
   staff: support
   audience: first-year students, IPO (Eva)
-  notes: "Mid May, before P6 starts, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport, max 50 per go"
-  status: unconfirmed
+  notes: "Mid May, before P6 starts, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport, max 50 per go | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 17-21 May (the week BEFORE P6, settles the BSA-doc conflict)"
+  status: confirmed
 
 - id: bsa-infosheet-may
   title: BSA Infosheet refreshed + Canvas announcement (year round)
@@ -1380,8 +1384,8 @@
   when: "2027-05-24"
   staff: support
   audience: BoE (Katja), Gerco, IPO (Eva)
-  notes: "First week of P6 per the IPO overview (trigger early May)"
-  status: unconfirmed
+  notes: "First week of P6 per the IPO overview (trigger early May) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 24-28 May"
+  status: confirmed
 
 - id: bsa-year-archive
   title: BSA year letters archived (Corsa D20A + Outlook)
@@ -1389,26 +1393,26 @@
   when: "2027-05-24"
   staff: support
   audience: IPO (Eva), Ton Derikx, Katja
-  notes: "One week after sending per the IPO overview"
-  status: unconfirmed
+  notes: "One week after sending per the IPO overview | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 24-28 May"
+  status: confirmed
 
 - id: bsa-year-followup
   title: BSA year follow-up - exemption list + credit report to Pavel/BoE
   office: esd
-  when: "2027-06-07"
+  when: "2027-06-04"
   staff: support
   audience: IPO (Eva), BoE (Katja), Pavel
-  notes: "Three weeks after sending per the IPO overview"
-  status: unconfirmed
+  notes: "Three weeks after sending per the IPO overview | CORRECTED to 2027-06-04 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 31 May - 4 Jun"
+  status: confirmed
 
 - id: bsa-pbsa-datafile
   title: pBSA letter - datafile + letter arrive from Katja
   office: boe
-  when: "2027-06-28"
+  when: "2027-07-23"
   staff: support
   audience: BoE (Katja), IPO (Eva)
-  notes: "Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run, transcripts saved)"
-  status: unconfirmed
+  notes: "Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul"
+  status: confirmed
 
 - id: bsa-pbsa-send
   title: pBSA letters sent + SAP status registered (9005 Positive BSA)
@@ -1416,17 +1420,17 @@
   when: "2027-07-12"
   staff: support
   audience: first-year students, IPO (Eva), BoE
-  notes: "Rule per the IPO overview: all results incl. resits in + 15 working days, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox; SAP 9005 right after the merge"
-  status: unconfirmed
+  notes: "Rule per the IPO overview: all results incl. resits in + 15 working days, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul"
+  status: confirmed
 
 - id: bsa-pbsa-archive
   title: pBSA letters archived (Corsa D20A + Outlook)
   office: boe
-  when: "2027-07-19"
+  when: "2027-07-30"
   staff: support
   audience: IPO (Eva), Ton Derikx, Katja
-  notes: "One week after sending per the IPO overview"
-  status: unconfirmed
+  notes: "One week after sending per the IPO overview | CORRECTED to 2027-07-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 Jul"
+  status: confirmed
 
 # ---------- Course catalogue: Fall AY27-28 cycle (spring 2027) ----------
 # Existing events catalogue-coordinator-updates (26 Feb), catalogue-publication (1 Apr)
@@ -1438,8 +1442,32 @@
   when: "2027-01-04"
   staff: support
   audience: IPO (Eva), Gerco
-  notes: "Early Jan per the IPO overview: copy catalogue/workbook/coordinator overviews/examiner list to the new AY; first Gerco meeting preps the coordinator letters"
-  status: unconfirmed
+  notes: "Early Jan per the IPO overview: copy catalogue/workbook/coordinator overviews/examiner list to the new AY; first Gerco meeting preps the coordinator letters | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 4-8 Jan"
+  status: confirmed
+- id: catalogue-kickoff-spring
+  title: Catalogue Spring 26/27 update - kick-off
+  office: esd
+  when: "2026-09-07"
+  staff: support
+  audience: IPO (Eva), Gerco
+  notes: "Kick-off of the Spring 26-27 catalogue update round. Window 7-18 Sep per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: catalogue-overviews-spring
+  title: All catalogue overviews updated (Spring 26/27)
+  office: esd
+  when: "2026-10-30"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Workbook, internal + external course-coordinator lists, Intranet and Canvas access. Window 26-30 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: catalogue-overviews-fall
+  title: All catalogue overviews updated (Fall 27/28)
+  office: esd
+  when: "2027-04-30"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Workbook, internal + external course-coordinator lists, Intranet and Canvas access. Window 27-30 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
 
 - id: examiner-bko-ask-spring
   title: Ask faculty BKO/UTQ contacts for registration updates (Spring)
@@ -1447,8 +1475,8 @@
   when: "2027-01-04"
   staff: support
   audience: IPO (Eva), faculty BKO/UTQ contact persons
-  notes: "Early Jan per the IPO overview; Gerco check mid Jan"
-  status: unconfirmed
+  notes: "Early Jan per the IPO overview; Gerco check mid Jan | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 4-15 Jan"
+  status: confirmed
 
 - id: catalogue-letters-out
   title: Catalogue update letters to all course coordinators
@@ -1456,17 +1484,17 @@
   when: "2027-01-18"
   staff: academic
   audience: course coordinators, education coordinators, IPO (Eva)
-  notes: "Mid Jan per the IPO overview; response window ~6 weeks to end Feb. Separate letters for dropped modules and new modules (new coordinators get until mid/end March)"
-  status: unconfirmed
+  notes: "Mid Jan per the IPO overview; response window ~6 weeks to end Feb. Separate letters for dropped modules and new modules (new coordinators get until mid/end March) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11 Jan - 26 Feb"
+  status: confirmed
 
 - id: examiner-to-katja-spring
   title: Examiner list to Katja (BoE) for Spring appointment letters
   office: boe
-  when: "2027-01-29"
+  when: "2027-01-22"
   staff: support
   audience: IPO (Eva), BoE secretary
-  notes: "End Jan per the IPO overview, after Gerco's mid-Jan check"
-  status: unconfirmed
+  notes: "End Jan per the IPO overview, after Gerco's mid-Jan check | CORRECTED to 2027-01-22 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 18-22 Jan"
+  status: confirmed
 
 - id: catalogue-gerco-2
   title: Catalogue cycle - second meeting with Gerco (post-deadline)
@@ -1483,8 +1511,8 @@
   when: "2027-03-15"
   staff: support
   audience: IPO (Eva)
-  notes: "Mid March per the IPO overview; catalogue filled with descriptions + overviews per level/semester"
-  status: unconfirmed
+  notes: "Mid March per the IPO overview; catalogue filled with descriptions + overviews per level/semester | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 8-19 Mar"
+  status: confirmed
 
 - id: catalogue-gerco-final
   title: Catalogue cycle - final meeting with Gerco (frame schedule check)
@@ -1525,11 +1553,11 @@
 - id: catalogue-intranet-publish
   title: Final catalogue on intranet + additional-assignment forms updated
   office: esd
-  when: "2027-07-26"
+  when: "2027-04-02"
   staff: support
   audience: IPO (Eva), Erik Verheij
-  notes: "End July, after P6, per the IPO overview - only then does the update not affect the running year (one publishable version on the intranet page)"
-  status: unconfirmed
+  notes: "End July, after P6, per the IPO overview - only then does the update not affect the running year (one publishable version on the intranet page) | CORRECTED to 2027-04-02 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 29 Mar - 2 Apr"
+  status: confirmed
 
 # ==================================================================================
 # Calendar-mining layer - harvested 3 Aug 2026 from Martijn's own Outlook calendar +
@@ -2305,15 +2333,134 @@
   audience: coordinators, Operations, FSE HR
   notes: "FSE tutor contracts via SuccessFactors need 6-8 weeks; contract start is always the 1st of a month; tutors must be in the timetable to be paid. NB timetable tutor-allocation continues until ~2 weeks before period start (scheduling mailbox); -6w is the contract floor, not the last scheduling touch"
   status: unconfirmed
-- id: iwio-evaluation-opens
-  title: IWIO course evaluation opens (last tutorial week)
+- id: iwio-import-p1
+  title: IWIO: SAP data imported + errors cleared (P1)
   office: esd
-  when: "{P}.start +5w"
-  repeat: P1, P2, P4, P5
+  when: "2026-09-25"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 21-25 Sep per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-import-p2
+  title: IWIO: SAP data imported + errors cleared (P2)
+  office: esd
+  when: "2026-11-20"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 16-20 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-import-p4
+  title: IWIO: SAP data imported + errors cleared (P4)
+  office: esd
+  when: "2027-02-26"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 22-26 Feb per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-import-p5
+  title: IWIO: SAP data imported + errors cleared (P5)
+  office: esd
+  when: "2027-04-23"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 19-23 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-setup-p1
+  title: IWIO: questionnaire link + open/close dates installed (P1)
+  office: esd
+  when: "2026-10-02"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 28 Sep - 2 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-setup-p2
+  title: IWIO: questionnaire link + open/close dates installed (P2)
+  office: esd
+  when: "2026-11-27"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 23-27 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-setup-p4
+  title: IWIO: questionnaire link + open/close dates installed (P4)
+  office: esd
+  when: "2027-03-05"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 1-5 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-setup-p5
+  title: IWIO: questionnaire link + open/close dates installed (P5)
+  office: esd
+  when: "2027-04-30"
+  staff: support
+  audience: IPO (Eva)
+  notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 26-30 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-send-p1
+  title: IWIO opens: invitations sent (3 reminders follow) (P1)
+  office: esd
+  when: "2026-10-05"
   staff: both
-  audience: students, coordinators, EPC
-  notes: "Survey opens week 6, reminders through exam week, auto-closes early next period; results published ~3 weeks after the last exam (1 week after grades). Procedure doc is 2022-23 vintage, verify owner/tooling"
-  status: unconfirmed
+  audience: students, coordinators, IPO (Eva)
+  notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 5-9 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-send-p2
+  title: IWIO opens: invitations sent (3 reminders follow) (P2)
+  office: esd
+  when: "2026-11-30"
+  staff: both
+  audience: students, coordinators, IPO (Eva)
+  notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 30 Nov - 4 Dec per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-send-p4
+  title: IWIO opens: invitations sent (3 reminders follow) (P4)
+  office: esd
+  when: "2027-03-08"
+  staff: both
+  audience: students, coordinators, IPO (Eva)
+  notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 8-12 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-send-p5
+  title: IWIO opens: invitations sent (3 reminders follow) (P5)
+  office: esd
+  when: "2027-05-03"
+  staff: both
+  audience: students, coordinators, IPO (Eva)
+  notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 3-7 May per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-close-p1
+  title: IWIO closed + coordinators and EPC informed (P1)
+  office: esd
+  when: "2026-11-13"
+  staff: both
+  audience: coordinators, EPC, IPO (Eva)
+  notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 9-13 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-close-p2
+  title: IWIO closed + coordinators and EPC informed (P2)
+  office: esd
+  when: "2027-01-22"
+  staff: both
+  audience: coordinators, EPC, IPO (Eva)
+  notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 18-22 Jan per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-close-p4
+  title: IWIO closed + coordinators and EPC informed (P4)
+  office: esd
+  when: "2027-04-16"
+  staff: both
+  audience: coordinators, EPC, IPO (Eva)
+  notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 12-16 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
+- id: iwio-close-p5
+  title: IWIO closed + coordinators and EPC informed (P5)
+  office: esd
+  when: "2027-06-11"
+  staff: both
+  audience: coordinators, EPC, IPO (Eva)
+  notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 7-11 Jun per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
+  status: confirmed
 
 # ---------- Operations layer (Linzi's plan + annual rounds) ----------
 

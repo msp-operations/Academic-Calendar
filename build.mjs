@@ -4,6 +4,8 @@
 //
 // Data format (constrained YAML subset, parsed here — keep files flat):
 //   - list items start with "- ", fields are "key: value", one per line, no nesting.
+//   - optional `until:` uses the same grammar as `when` and makes the event span
+//     that range (multi-day banner in the ics feeds, range label on the site).
 //   - events `when` grammar:  "2026-10-05"                       absolute date
 //                             "P1.end +10wd"                     anchor + offset
 //                             "{P}.exam.end +15wd" + repeat      one instance per listed period
@@ -139,6 +141,12 @@ for (const ev of eventsData.items) {
   for (const p of reps) {
     const date = resolveWhen(ev.when, p);
     if (!date) { problems.push(`Cannot resolve "${ev.when}" (period ${p ?? '-'}) for ${ev.id}`); continue; }
+    let endDate = null;
+    if (ev.until) {
+      endDate = resolveWhen(ev.until, p);
+      if (!endDate) problems.push(`Cannot resolve until "${ev.until}" (period ${p ?? '-'}) for ${ev.id}`);
+      else if (endDate < date) { problems.push(`until precedes when for ${ev.id}`); endDate = null; }
+    }
     const periodStatus = p && periods[p] ? periods[p].status : 'confirmed';
     instances.push({
       id: p ? `${ev.id}-${p.toLowerCase()}` : ev.id,
@@ -146,6 +154,7 @@ for (const ev of eventsData.items) {
       office: ev.office || 'general',
       staff: (ev.staff === 'academic' || ev.staff === 'support') ? ev.staff : 'both',
       date: fmtDate(date),
+      end: fmtDate(endDate || date),
       audience: ev.audience || '',
       notes: ev.notes || '',
       link: ev.link || '',
@@ -185,7 +194,7 @@ function writeIcs(name, calName, evs) {
   ];
   for (const e of evs) {
     const d = e.date.replace(/-/g, '');
-    const dEnd = fmtDate(addDays(parseDate(e.date), 1)).replace(/-/g, '');
+    const dEnd = fmtDate(addDays(parseDate(e.end || e.date), 1)).replace(/-/g, '');
     lines.push(
       'BEGIN:VEVENT',
       `UID:${e.id}-${YEAR.replace(/\W/g, '')}@msp-operations`,

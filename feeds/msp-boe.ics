@@ -5,6 +5,14 @@ X-WR-CALNAME:MSP BOE deadlines 2026-27
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
+UID:examiner-to-katja-fall-202627@msp-operations
+DTSTAMP:20260820T000000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Fall appointment letters
+DESCRIPTION:End August per the IPO overview | CORRECTED to 2026-08-20 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug | For: IPO (Eva)\, BoE secretary
+END:VEVENT
+BEGIN:VEVENT
 UID:bsa-infosheet-yearstart-202627@msp-operations
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260824
@@ -51,6 +59,14 @@ DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
 DESCRIPTION:For: BoE secretary
+END:VEVENT
+BEGIN:VEVENT
+UID:examiner-to-katja-spring-202627@msp-operations
+DTSTAMP:20270122T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Spring appointment letters
+DESCRIPTION:End Jan per the IPO overview\, after Gerco's mid-Jan check | CORRECTED to 2027-01-22 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 18-22 Jan | For: IPO (Eva)\, BoE secretary
 END:VEVENT
 BEGIN:VEVENT
 UID:boe-grad-audit-notify-feb-202627@msp-operations
@@ -107,5 +123,29 @@ DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
 DESCRIPTION:For: BoE secretary
+END:VEVENT
+BEGIN:VEVENT
+UID:bsa-pbsa-send-202627@msp-operations
+DTSTAMP:20270712T000000Z
+DTSTART;VALUE=DATE:20270712
+DTEND;VALUE=DATE:20270713
+SUMMARY:[MSP BOE] pBSA letters sent + SAP status registered (9005 Positive BSA)
+DESCRIPTION:Rule per the IPO overview: all results incl. resits in + 15 working days\, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox\; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | For: first-year students\, IPO (Eva)\, BoE
+END:VEVENT
+BEGIN:VEVENT
+UID:bsa-pbsa-datafile-202627@msp-operations
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:[MSP BOE] pBSA letter - datafile + letter arrive from Katja
+DESCRIPTION:Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run\, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | For: BoE (Katja)\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
+UID:bsa-pbsa-archive-202627@msp-operations
+DTSTAMP:20270730T000000Z
+DTSTART;VALUE=DATE:20270730
+DTEND;VALUE=DATE:20270731
+SUMMARY:[MSP BOE] pBSA letters archived (Corsa D20A + Outlook)
+DESCRIPTION:One week after sending per the IPO overview | CORRECTED to 2027-07-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 Jul | For: IPO (Eva)\, Ton Derikx\, Katja
 END:VEVENT
 END:VCALENDAR

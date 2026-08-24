@@ -85,6 +85,14 @@ SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-o
 DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | For: all offices\, Operations
 END:VEVENT
 BEGIN:VEVENT
+UID:iwio-send-p1-202627@msp-operations
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P1)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 5-9 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:timetable-pub-p2-202627@msp-operations
 DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261008
@@ -173,6 +181,14 @@ SUMMARY:[MSP SCHEDULING] Course registration week (Spring 2027 selections)
 DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
+UID:iwio-close-p1-202627@msp-operations
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P1)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 9-13 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:accreditation-deadline-p1-202627@msp-operations
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
@@ -187,6 +203,14 @@ DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P2 (incl. P1 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:iwio-send-p2-202627@msp-operations
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P2)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 30 Nov - 4 Dec per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
 UID:waiver-deadline-202627@msp-operations
@@ -277,12 +301,28 @@ SUMMARY:[MSP EXAMS] Grades published on Student Portal (P2\, deadline)
 DESCRIPTION:Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview\; running transcript update 20 Jan\, inspection deadline 29 Jan\, final transcript update 5 Feb | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
+UID:catalogue-letters-out-202627@msp-operations
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[MSP ESD] Catalogue update letters to all course coordinators
+DESCRIPTION:Mid Jan per the IPO overview\; response window ~6 weeks to end Feb. Separate letters for dropped modules and new modules (new coordinators get until mid/end March) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11 Jan - 26 Feb | For: course coordinators\, education coordinators\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:assessment-announced-p4-202627@msp-operations
 DTSTAMP:20270118T000000Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P4)
 DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+END:VEVENT
+BEGIN:VEVENT
+UID:iwio-close-p2-202627@msp-operations
+DTSTAMP:20270122T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P2)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 18-22 Jan per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-start-feb-202627@msp-operations
@@ -333,6 +373,14 @@ SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
 DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
 END:VEVENT
 BEGIN:VEVENT
+UID:catalogue-coordinator-updates-202627@msp-operations
+DTSTAMP:20270226T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:[MSP ESD] Course catalogue - coordinator updates due
+DESCRIPTION:End of February (2026 instance was Fri 27 Feb)\; update letters go out mid-Jan\, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): exact date given | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-proposal-feb-202627@msp-operations
 DTSTAMP:20270301T000000Z
 DTSTART;VALUE=DATE:20270301
@@ -347,6 +395,14 @@ DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
 DESCRIPTION:P4 (incl. P2/P3 resit exams) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:iwio-send-p4-202627@msp-operations
+DTSTAMP:20270308T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P4)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 8-12 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-mar-202627@msp-operations
@@ -429,6 +485,14 @@ SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
 DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
 END:VEVENT
 BEGIN:VEVENT
+UID:iwio-close-p4-202627@msp-operations
+DTSTAMP:20270416T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P4)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 12-16 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+END:VEVENT
+BEGIN:VEVENT
 UID:accreditation-deadline-p4-202627@msp-operations
 DTSTAMP:20270423T000000Z
 DTSTART;VALUE=DATE:20270423
@@ -443,6 +507,14 @@ DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:[MSP GENERAL] King's Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:iwio-send-p5-202627@msp-operations
+DTSTAMP:20270503T000000Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P5)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 3-7 May per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p5-202627@msp-operations
@@ -555,6 +627,14 @@ DTSTART;VALUE=DATE:20270607
 DTEND;VALUE=DATE:20270608
 SUMMARY:[MSP EXAMS] Resit exam submission deadline (P5 resits)
 DESCRIPTION:One week before the June resit week | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:iwio-close-p5-202627@msp-operations
+DTSTAMP:20270611T000000Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P5)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 7-11 Jun per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p5-202627@msp-operations
