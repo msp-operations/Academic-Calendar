@@ -21,6 +21,14 @@ SUMMARY:[MSP ESD] Ask faculty BKO/UTQ contacts for registration updates (Fall)
 DESCRIPTION:Early August per the IPO overview\; feeds the examiner list for Fall appointment letters | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 2-13 Aug | For: IPO (Eva)\, faculty BKO/UTQ contact persons
 END:VEVENT
 BEGIN:VEVENT
+UID:intro-esd-presentation-202627@msp-operations
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:[MSP ESD] ESD presentation for Introduction Days refreshed
+DESCRIPTION:Second week of August\, every year (rule set by Martijn 24 Aug 2026). Delivered during intro week\; ESD staff in the office Mon-Wed of that week | For: ESD\, Linzi\, Heather
+END:VEVENT
+BEGIN:VEVENT
 UID:intro-qa-202627@msp-operations
 DTSTAMP:20260813T000000Z
 DTSTART;VALUE=DATE:20260813

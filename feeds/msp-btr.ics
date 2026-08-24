@@ -93,6 +93,14 @@ SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Feb cohort)
 DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Office FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after\, into the Christmas closure. Under-grading RTS flagging also lands here | For: students\, Academic Advisors\, coordinators
 END:VEVENT
 BEGIN:VEVENT
+UID:norm-hours-finance-202627@msp-operations
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:[MSP BTR] Norm-hours list (BTR supervision) to finance
+DESCRIPTION:Officially 31.12 per Linzi Hall (Teams\, 24 Aug 2026)\, asked directly. Goes to finance / BROS. External and MUMC+ supervisors are credited via their own institution. CORRECTED from an inferred 5 Jul 2027 end-of-year date | For: BTR administrator\, finance
+END:VEVENT
+BEGIN:VEVENT
 UID:btr-final-grades-due-sept-202627@msp-operations
 DTSTAMP:20270115T000000Z
 DTSTART;VALUE=DATE:20270115

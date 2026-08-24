@@ -790,10 +790,10 @@
       "date": "2026-08-10",
       "end": "2026-08-10",
       "audience": "ESD, Linzi, Heather",
-      "notes": "Late Jul / early Aug per own mailbox (Linzi 31 Jul 2025, 15 Aug 2025); delivery in intro week, staff in office Mon-Wed of intro week. 2026 instance already on the operations to-do",
+      "notes": "Second week of August, every year (rule set by Martijn 24 Aug 2026). Delivered during intro week; ESD staff in the office Mon-Wed of that week",
       "link": "",
       "submit": false,
-      "status": "unconfirmed"
+      "status": "confirmed"
     },
     {
       "id": "dexum-online-aug1",
@@ -846,19 +846,6 @@
       "link": "",
       "submit": false,
       "status": "confirmed"
-    },
-    {
-      "id": "fse-exams-alignment",
-      "title": "FSE exams-organisation alignment session (August, expect)",
-      "office": "exams",
-      "staff": "support",
-      "date": "2026-08-17",
-      "end": "2026-08-17",
-      "audience": "exams offices FSE-wide",
-      "notes": "August session before P1 at an external location, per Gerardu 24 Jun 2026 (own mailbox); exact date not yet in the mail. Placeholder",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
     },
     {
       "id": "examiner-gerco-check-fall",
@@ -1038,19 +1025,6 @@
       "end": "2026-09-01",
       "audience": "all staff",
       "notes": "Translated from own calendar 'Opening Academic Year', Mon 1 Sep 2025 15:30, Theater aan het Vrijthof; UM traditionally opens on 1 Sep",
-      "link": "",
-      "submit": false,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "swum-student-prize",
-      "title": "SWUM Student Prize nomination (highest BTR grade)",
-      "office": "btr",
-      "staff": "support",
-      "date": "2026-09-03",
-      "end": "2026-09-03",
-      "audience": "programme director, BTR administrator",
-      "notes": "First week of September per own mailbox: Hanne Dilien via Gerco 3 Sep 2025, 'annually' per the prize rules. MSP answer = top BTR grade + student data",
       "link": "",
       "submit": false,
       "status": "unconfirmed"
@@ -1706,6 +1680,19 @@
       "status": "confirmed"
     },
     {
+      "id": "swum-student-prize",
+      "title": "SWUM Student Prize nomination due to FSE (highest BTR grade)",
+      "office": "btr",
+      "staff": "support",
+      "date": "2026-11-05",
+      "end": "2026-11-05",
+      "audience": "programme director, BTR administrator",
+      "notes": "Ladder from the 2024-25 round: request arrives from Griffie-cvb via the vice-dean in early Oct (3 Oct 2024), MSP identifies the highest BTR grade of the past AY and supplies the student data, FSE deadline was 5 Nov, SWUM board deadline 1 Dec per the 2017 prize rules, awarded at the Dies Natalis in January. MSP has also run the data-gathering as early as 3 Sep (2025 round). Date is the FSE deadline because that is the binding one; MOVED from an inferred 3 Sep",
+      "link": "",
+      "submit": false,
+      "status": "unconfirmed"
+    },
+    {
       "id": "dexum-site-nov",
       "title": "DexUM on site (digital exams network)",
       "office": "exams",
@@ -2263,6 +2250,19 @@
       "link": "",
       "submit": false,
       "status": "unconfirmed"
+    },
+    {
+      "id": "norm-hours-finance",
+      "title": "Norm-hours list (BTR supervision) to finance",
+      "office": "btr",
+      "staff": "support",
+      "date": "2026-12-31",
+      "end": "2026-12-31",
+      "audience": "BTR administrator, finance",
+      "notes": "Officially 31.12 per Linzi Hall (Teams, 24 Aug 2026), asked directly. Goes to finance / BROS. External and MUMC+ supervisors are credited via their own institution. CORRECTED from an inferred 5 Jul 2027 end-of-year date",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "catalogue-kickoff",
@@ -4511,19 +4511,6 @@
       "notes": "17:00 via Qualtrics. 2026 instance: Fri 3 Jul 17:00 stated in the 27 May send. No form = your timetable is not published (Severine enforced this in Aug 2025)",
       "link": "",
       "submit": true,
-      "status": "unconfirmed"
-    },
-    {
-      "id": "norm-hours-finance",
-      "title": "Norm-hours list (BTR supervision) to finance",
-      "office": "btr",
-      "staff": "support",
-      "date": "2027-07-05",
-      "end": "2027-07-05",
-      "audience": "BTR administrator, finance",
-      "notes": "End of the academic year per own mailbox (statement 14 Jul 2026 + Tasks item); external/MUMC+ supervisors credited via their institution",
-      "link": "",
-      "submit": false,
       "status": "unconfirmed"
     },
     {

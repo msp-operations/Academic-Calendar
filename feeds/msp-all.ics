@@ -61,6 +61,14 @@ SUMMARY:[MSP SCHEDULING] P1 schedules in draft in MyTimetable (coordinators chec
 DESCRIPTION:Sent Tue 4 Aug 2026 10:20: drafts live\, mid-terms/finals follow\, publication Thu 13 Aug. External coordinators: send tutor names now | For: course coordinators\, tutors
 END:VEVENT
 BEGIN:VEVENT
+UID:intro-esd-presentation-202627@msp-operations
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:[MSP ESD] ESD presentation for Introduction Days refreshed
+DESCRIPTION:Second week of August\, every year (rule set by Martijn 24 Aug 2026). Delivered during intro week\; ESD staff in the office Mon-Wed of that week | For: ESD\, Linzi\, Heather
+END:VEVENT
+BEGIN:VEVENT
 UID:dexum-online-aug1-202627@msp-operations
 DTSTAMP:20260811T000000Z
 DTSTART;VALUE=DATE:20260811
@@ -771,6 +779,14 @@ DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
 DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
+END:VEVENT
+BEGIN:VEVENT
+UID:norm-hours-finance-202627@msp-operations
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:[MSP BTR] Norm-hours list (BTR supervision) to finance
+DESCRIPTION:Officially 31.12 per Linzi Hall (Teams\, 24 Aug 2026)\, asked directly. Goes to finance / BROS. External and MUMC+ supervisors are credited via their own institution. CORRECTED from an inferred 5 Jul 2027 end-of-year date | For: BTR administrator\, finance
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-kickoff-202627@msp-operations
