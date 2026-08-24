@@ -24,6 +24,7 @@
     --shadow-md: 0 4px 12px rgba(22,36,61,.08), 0 2px 4px rgba(22,36,61,.05);
     --shadow-lg: 0 24px 60px rgba(22,36,61,.32);
     --pagew: 1420px;
+    --rail-w: 210px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -87,6 +88,53 @@
 
   main { max-width: var(--pagew); margin: 0 auto 60px; padding: 0 24px; }
 
+  /* ---------- Left rail: navigation, filters and the colour key in one place ---------- */
+  .layout { display: flex; align-items: flex-start; }
+  .content { flex: 1 1 auto; min-width: 0; }
+  .rail { flex: 0 0 var(--rail-w); width: var(--rail-w); position: sticky; top: 0; align-self: flex-start;
+    max-height: 100vh; overflow-y: auto; overflow-x: hidden; z-index: 45;
+    background: linear-gradient(170deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff;
+    padding: 14px 0 20px; transition: flex-basis .2s ease, width .2s ease; }
+  .rail::-webkit-scrollbar { width: 6px; }
+  .rail::-webkit-scrollbar-thumb { background: rgba(255,255,255,.18); border-radius: 3px; }
+  .railhead { display: flex; align-items: center; justify-content: space-between; padding: 0 14px 12px; }
+  .railhead .rl { font-size: .68rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+  .railtoggle { background: rgba(255,255,255,.1); border: 0; color: #fff; cursor: pointer; border-radius: 7px;
+    width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-family: inherit;
+    transition: background .15s ease; flex: 0 0 auto; }
+  .railtoggle:hover { background: rgba(255,255,255,.22); }
+  .railtoggle svg { width: 13px; height: 13px; transition: transform .2s ease; }
+  .railgroup { padding: 0 10px; margin-bottom: 16px; }
+  .railgroup > h5 { font-size: .64rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: rgba(255,255,255,.45); padding: 0 6px 6px; }
+  .railbtn { display: flex; align-items: center; gap: 9px; width: 100%; border: 0; background: transparent;
+    color: rgba(255,255,255,.78); font-family: inherit; font-size: .8rem; font-weight: 600; text-align: left;
+    padding: 7px 8px; border-radius: 8px; cursor: pointer; transition: background .13s ease, color .13s ease; }
+  .railbtn:hover { background: rgba(255,255,255,.09); color: #fff; }
+  .railbtn.on { background: rgba(255,255,255,.15); color: #fff; }
+  .railbtn .sw { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto;
+    background: var(--c, rgba(255,255,255,.5)); opacity: .4; transition: opacity .13s ease;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.12); }
+  .railbtn.on .sw { opacity: 1; }
+  .railbtn .lb { flex: 1 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .railbtn .ct { font-size: .68rem; font-weight: 700; color: rgba(255,255,255,.42); flex: 0 0 auto; }
+  .railbtn.on .ct { color: rgba(255,255,255,.75); }
+  .railsub { margin: 4px 10px 0; padding: 0 8px; }
+  .railsub .subscribe { width: 100%; justify-content: center; background: var(--accent); color: var(--navy); }
+  .railsub .subscribe:hover { background: #fff; }
+
+  /* Collapsed: a colour key you can still read, and one click brings it back */
+  .rail.mini { cursor: pointer; }
+  .rail.mini .railgroup > h5, .rail.mini .railbtn .lb, .rail.mini .railbtn .ct,
+  .rail.mini .railhead .rl, .rail.mini .railsub .subscribe span { display: none; }
+  .rail.mini .railbtn { justify-content: center; padding: 8px 0; }
+  .rail.mini .railgroup { padding: 0 6px; margin-bottom: 10px; }
+  .rail.mini .railhead { justify-content: center; padding: 0 0 10px; }
+  .rail.mini .railsub { margin: 4px 6px 0; padding: 0; }
+  .rail.mini .railsub .subscribe { padding: 8px 0; }
+  .rail.mini .railtoggle svg { transform: rotate(180deg); }
+  .rail.mini .railgroup.viewgroup .railbtn.on { background: var(--accent); color: var(--navy); }
+
   /* ---------- Year planner ---------- */
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 18px; font-size: .74rem; color: var(--muted); font-weight: 600; }
   .legend .lg { display: inline-flex; align-items: center; gap: 6px; }
@@ -107,7 +155,8 @@
   .dei .deimonth { font-size: .72rem; color: var(--muted); font-style: italic; margin-top: 3px; }
 
   .yearwrap { overflow-x: auto; margin-top: 12px; padding-bottom: 8px;
-    width: min(100vw - 40px, 1880px); position: relative; left: 50%; transform: translateX(-50%); }
+    width: min(calc(100vw - 40px - var(--rail-w)), 1880px); position: relative; left: 50%; transform: translateX(-50%);
+    transition: width .2s ease; }
   .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 3px; min-width: 1040px; }
   .ymonth { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #fff; border-radius: 8px; display: flex;
     flex-direction: column; align-items: center; justify-content: center; font-weight: 800; font-size: .8rem; letter-spacing: .07em;
@@ -272,6 +321,14 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
+    :root { --rail-w: 54px !important; }
+    .rail { padding: 10px 0 14px; }
+    .rail .railgroup > h5, .rail .railbtn .lb, .rail .railbtn .ct, .rail .railhead .rl { display: none; }
+    .rail .railbtn { justify-content: center; padding: 8px 0; }
+    .rail .railtoggle { display: none; }
+    .rail .railsub { margin: 4px 5px 0; padding: 0; }
+    .rail .railsub .subscribe { padding: 9px 0; }
+    .rail .railsub .subscribe span { display: none; }
     .periodband { overflow-x: auto; }
     .period { min-width: 118px; }
     .footgrid { grid-template-columns: 1fr; gap: 22px; }
@@ -279,7 +336,8 @@
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    .toolbar, footer, .subscribe, .yearnote, .upwrap, body::after { display: none !important; }
+    .toolbar, footer, .subscribe, .yearnote, .upwrap, body::after, .rail { display: none !important; }
+    :root { --rail-w: 0px !important; }
     header, .accentline { box-shadow: none; }
     .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
     body { background: #fff; }
@@ -301,8 +359,13 @@
   <div class="periodband" id="periodband"></div>
 </header>
 
-<div class="toolbar"><div class="toolbar-inner" id="toolbar"></div></div>
-<main id="main"></main>
+<div class="layout">
+  <aside class="rail" id="rail"></aside>
+  <div class="content">
+    <div class="toolbar"><div class="toolbar-inner" id="toolbar"></div></div>
+    <main id="main"></main>
+  </div>
+</div>
 
 <footer>
   <div class="footgrid">
@@ -423,9 +486,7 @@ function scrollToToday() {
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 function gotoMonth(y, m) {
-  state.view = 'grid';
-  document.querySelectorAll('.viewtoggle button[data-view]').forEach(x => x.classList.toggle('on', x.dataset.view === 'grid'));
-  syncState(); render();
+  setViewUI('grid');
   const sec = document.getElementById(`m-${y}-${String(m).padStart(2, '0')}`);
   if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -487,27 +548,6 @@ function init() {
   }
 
   const bar = document.getElementById('toolbar');
-  for (const [key, label] of Object.entries(OFFICES)) {
-    const c = document.createElement('button');
-    c.className = 'chip' + (state.on.has(key) ? ' on' : ''); c.style.setProperty('--c', `var(--${key})`);
-    c.innerHTML = `<span class="dot"></span>${label}`;
-    c.onclick = () => { state.on.has(key) ? state.on.delete(key) : state.on.add(key); c.classList.toggle('on'); syncState(); render(); };
-    bar.appendChild(c);
-  }
-  const roleToggle = document.createElement('div'); roleToggle.className = 'viewtoggle';
-  for (const [id, label] of Object.entries(ROLES)) {
-    const b = document.createElement('button');
-    b.textContent = label; b.dataset.role = id;
-    if (state.role === id) b.classList.add('on');
-    b.onclick = () => {
-      state.role = id;
-      roleToggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.role === id));
-      syncState(); render();
-    };
-    roleToggle.appendChild(b);
-  }
-  bar.appendChild(roleToggle);
-
   const spacer = document.createElement('div'); spacer.className = 'spacer'; bar.appendChild(spacer);
 
   const search = document.createElement('input');
@@ -515,44 +555,19 @@ function init() {
   search.oninput = () => { state.q = search.value.trim().toLowerCase(); render(); };
   bar.appendChild(search);
 
-  const printBtn = document.createElement('button');
-  printBtn.className = 'chip'; printBtn.textContent = 'Print A3';
-  printBtn.title = 'Print the year planner as an A3 landscape wall chart';
-  printBtn.onclick = () => {
-    if (state.view !== 'year') {
-      state.view = 'year';
-      document.querySelectorAll('.viewtoggle button[data-view]').forEach(x => x.classList.toggle('on', x.dataset.view === 'year'));
-      syncState(); render();
-    }
-    setTimeout(() => window.print(), 150);
-  };
-  bar.appendChild(printBtn);
-
   const todayBtn = document.createElement('button');
   todayBtn.className = 'chip'; todayBtn.textContent = 'Today';
   todayBtn.title = 'Jump to today';
   todayBtn.onclick = scrollToToday;
   bar.appendChild(todayBtn);
 
-  const toggle = document.createElement('div'); toggle.className = 'viewtoggle';
-  for (const [id, label] of [['year', 'Year planner'], ['chains', 'Key deadlines'], ['grid', 'Month grid'], ['timeline', 'Timeline']]) {
-    const b = document.createElement('button');
-    b.textContent = label; b.dataset.view = id;
-    if (state.view === id) b.classList.add('on');
-    b.onclick = () => {
-      state.view = id;
-      toggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.view === id));
-      syncState(); render();
-    };
-    toggle.appendChild(b);
-  }
-  bar.appendChild(toggle);
+  const printBtn = document.createElement('button');
+  printBtn.className = 'chip'; printBtn.textContent = 'Print A3';
+  printBtn.title = 'Print the year planner as an A3 landscape wall chart';
+  printBtn.onclick = () => { setViewUI('year'); setTimeout(() => window.print(), 150); };
+  bar.appendChild(printBtn);
 
-  const sub = document.createElement('a');
-  sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics';
-  sub.innerHTML = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 1v2H2.5A1.5 1.5 0 0 0 1 4.5v9A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 13.5 3H12V1h-1.5v2h-5V1H4Zm-1.5 5h11v7.5h-11V6Z"/></svg>Subscribe';
-  sub.onclick = (ev) => { ev.preventDefault(); showSubscribeCard('msp-all.ics'); };
-  bar.appendChild(sub);
+  buildRail();
 
   for (const b of document.querySelectorAll('.feed')) {
     b.onclick = () => showSubscribeCard(b.dataset.feed);
@@ -560,9 +575,9 @@ function init() {
 
   document.getElementById('homelink').onclick = (ev) => {
     ev.preventDefault();
-    state.view = 'year'; state.q = '';
+    state.q = '';
+    setViewUI('year');
     const s = document.querySelector('.search'); if (s) s.value = '';
-    document.querySelectorAll('.viewtoggle button[data-view]').forEach(x => x.classList.toggle('on', x.dataset.view === 'year'));
     syncState(); render();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -574,6 +589,127 @@ function init() {
   const firstDate = DB.events.length ? DB.events[0].date : todayIso;
   const monthsIn = (+todayIso.slice(0, 4) - +firstDate.slice(0, 4)) * 12 + (+todayIso.slice(5, 7) - +firstDate.slice(5, 7));
   if (state.view === 'year' && monthsIn >= 3) setTimeout(scrollToToday, 250);
+}
+
+
+/* ---------- Left rail: view, office filter (doubles as the colour key), role, subscribe ---------- */
+const VIEWS = [['year', 'Year planner'], ['chains', 'Key deadlines'], ['grid', 'Month grid'], ['timeline', 'Timeline']];
+let railManual = false, railInit = false;
+
+function setRail(mini) {
+  const r = document.getElementById('rail');
+  if (!r) return;
+  r.classList.toggle('mini', !!mini);
+  document.documentElement.style.setProperty('--rail-w', mini ? '54px' : '210px');
+  r.title = mini ? 'Click to expand the menu' : '';
+}
+function setRailManual(mini) {
+  railManual = true; setRail(mini);
+  try { localStorage.setItem('mspcal_rail', mini ? 'mini' : 'full'); } catch (_) {}
+}
+
+/* The year planner is a wall chart and wants the width, so it collapses the rail by default.
+   A manual toggle wins for the rest of the session. */
+function autoRail() {
+  if (railManual) return;
+  setRail(state.view === 'year');
+}
+
+function setViewUI(id) {
+  if (state.view !== id) { state.view = id; syncState(); render(); }
+  document.querySelectorAll('.railgroup.viewgroup .railbtn').forEach(b => b.classList.toggle('on', b.dataset.view === id));
+  autoRail();
+}
+
+function buildRail() {
+  const rail = document.getElementById('rail');
+  rail.innerHTML = '';
+
+  const head = document.createElement('div'); head.className = 'railhead';
+  head.innerHTML = `<span class="rl">Menu</span>`;
+  const tg = document.createElement('button'); tg.className = 'railtoggle';
+  tg.setAttribute('aria-label', 'Collapse or expand the menu');
+  tg.innerHTML = `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M10.3 3.3 5.6 8l4.7 4.7 1.1-1.1L7.8 8l3.6-3.6z"/></svg>`;
+  tg.onclick = (ev) => { ev.stopPropagation(); setRailManual(!rail.classList.contains('mini')); };
+  head.appendChild(tg); rail.appendChild(head);
+
+  /* clicking anywhere on the collapsed rail brings it back */
+  rail.onclick = () => { if (rail.classList.contains('mini')) setRailManual(false); };
+
+  const group = (title, cls) => {
+    const g = document.createElement('div'); g.className = 'railgroup' + (cls ? ' ' + cls : '');
+    const h = document.createElement('h5'); h.textContent = title; g.appendChild(h);
+    rail.appendChild(g); return g;
+  };
+
+  const gv = group('View', 'viewgroup');
+  for (const [id, label] of VIEWS) {
+    const b = document.createElement('button');
+    b.className = 'railbtn' + (state.view === id ? ' on' : ''); b.dataset.view = id; b.title = label;
+    b.innerHTML = `<span class="sw" style="background:rgba(255,255,255,.7)"></span><span class="lb">${label}</span>`;
+    b.onclick = (ev) => { ev.stopPropagation(); setViewUI(id); };
+    gv.appendChild(b);
+  }
+
+  const counts = {};
+  for (const e of DB.events) counts[e.office] = (counts[e.office] || 0) + 1;
+
+  const go = group('Office');
+  const all = document.createElement('button');
+  all.className = 'railbtn'; all.title = 'Show every office';
+  const paintAll = () => {
+    const every = Object.keys(OFFICES).every(k => state.on.has(k));
+    all.classList.toggle('on', every);
+    all.innerHTML = `<span class="sw" style="background:rgba(255,255,255,.85)"></span><span class="lb">${every ? 'All offices' : 'Select all'}</span><span class="ct">${DB.events.length}</span>`;
+  };
+  all.onclick = (ev) => {
+    ev.stopPropagation();
+    const every = Object.keys(OFFICES).every(k => state.on.has(k));
+    if (every) { state.on.clear(); } else { Object.keys(OFFICES).forEach(k => state.on.add(k)); }
+    buildRail(); syncState(); render();
+  };
+  paintAll(); go.appendChild(all);
+
+  for (const [key, label] of Object.entries(OFFICES)) {
+    const b = document.createElement('button');
+    b.className = 'railbtn' + (state.on.has(key) ? ' on' : '');
+    b.style.setProperty('--c', `var(--${key})`); b.title = label;
+    b.innerHTML = `<span class="sw"></span><span class="lb">${label}</span><span class="ct">${counts[key] || 0}</span>`;
+    b.onclick = (ev) => {
+      ev.stopPropagation();
+      state.on.has(key) ? state.on.delete(key) : state.on.add(key);
+      b.classList.toggle('on', state.on.has(key));
+      paintAll(); syncState(); render();
+    };
+    go.appendChild(b);
+  }
+
+  const gr = group('Who are you');
+  for (const [id, label] of Object.entries(ROLES)) {
+    const b = document.createElement('button');
+    b.className = 'railbtn' + (state.role === id ? ' on' : ''); b.dataset.role = id; b.title = label;
+    b.innerHTML = `<span class="sw" style="background:rgba(255,255,255,.7)"></span><span class="lb">${label}</span>`;
+    b.onclick = (ev) => {
+      ev.stopPropagation(); state.role = id;
+      gr.querySelectorAll('.railbtn').forEach(x => x.classList.toggle('on', x.dataset.role === id));
+      syncState(); render();
+    };
+    gr.appendChild(b);
+  }
+
+  const sw = document.createElement('div'); sw.className = 'railsub';
+  const sub = document.createElement('a');
+  sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics'; sub.title = 'Subscribe in Outlook';
+  sub.innerHTML = `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 1v2H2.5A1.5 1.5 0 0 0 1 4.5v9A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 13.5 3H12V1h-1.5v2h-5V1H4Zm-1.5 5h11v7.5h-11V6Z"/></svg><span>Subscribe</span>`;
+  sub.onclick = (ev) => { ev.preventDefault(); ev.stopPropagation(); showSubscribeCard(state.role === 'academic' ? 'msp-academic-staff.ics' : state.role === 'support' ? 'msp-support-staff.ics' : 'msp-all.ics'); };
+  sw.appendChild(sub); rail.appendChild(sw);
+
+  if (!railInit) {
+    railInit = true;
+    const saved = (() => { try { return localStorage.getItem('mspcal_rail'); } catch (_) { return null; } })();
+    if (saved) { railManual = true; setRail(saved === 'mini'); return; }
+  }
+  autoRail();
 }
 
 function render() {
