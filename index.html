@@ -42,35 +42,42 @@
     -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
 
-  header { background: #fff; border-bottom: 1px solid var(--um-n50); }
-  .topbar { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
-    padding: 26px 24px 16px; max-width: var(--pagew); margin: 0 auto; }
-  .topbar img.msp { height: 132px; width: auto; margin-bottom: -6px; }
-  .homelink { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: inherit; cursor: pointer; }
-  .homelink:hover h1 { color: var(--accent-ink); }
-  .homelink:hover img.msp { transform: scale(1.03); }
-  .homelink img.msp { transition: transform .15s ease; }
+  header { background: #fff; border-bottom: 1px solid var(--um-n50); position: sticky; top: 0; z-index: 40; }
+  .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 24px;
+    padding: 10px 24px; max-width: var(--pagew); margin: 0 auto; }
+  /* the source PNG carries a lot of transparent padding, so crop to the mark itself */
+  /* msp-logo.png is a 472x478 mark centred in a 1290x730 canvas, so it is mostly transparent
+     padding. Render at 76px and pull the padding back in, leaving a 50px mark on a 50px footprint. */
+  .topbar img.msp { height: 76px; width: auto; margin: -13px -42px; flex: 0 0 auto; }
+  .homelink { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; cursor: pointer; flex: 0 1 auto; min-width: 0; }
+  .homelink:hover h1 { color: var(--um-sky-500); }
   .homelink h1 { transition: color .15s ease; }
-  .titleblock .kicker { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .18em; color: var(--accent-ink); margin-bottom: 4px; }
-  .titleblock h1 { font-size: 1.6rem; font-weight: 800; color: var(--navy); letter-spacing: -.02em; line-height: 1.12; }
+  .titleblock { text-align: left; min-width: 0; }
+  .titleblock .kicker { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--um-n500); margin-bottom: 1px; white-space: nowrap; }
+  .titleblock h1 { font-size: 1.22rem; font-weight: 700; color: var(--um-blue); letter-spacing: 0; line-height: 1.15; white-space: nowrap; }
 
-  .periodband { display: flex; gap: 10px; padding: 8px 24px 20px; max-width: var(--pagew); margin: 0 auto; }
-  .period { flex: 1; background: #fff; border: 1px solid var(--um-n50); border-radius: var(--um-r);
-    padding: 11px 14px 12px; font-size: .78rem; color: var(--um-n500); position: relative;
-    transition: border-color .15s ease; }
-  .period:hover { border-color: var(--um-n100); }
-  .period.current { border-color: var(--um-sky-500); background: var(--um-sky-980); }
-  .period.current::after { content: "NOW"; position: absolute; top: 9px; right: 10px;
-    background: var(--um-sky-500); color: #fff; font-size: .56rem; font-weight: 700;
-    letter-spacing: .07em; padding: 2px 6px; border-radius: var(--um-r-s); }
-  .period b { display: block; color: var(--um-blue); font-size: 1rem; font-weight: 700;
-    letter-spacing: 0; margin-bottom: 4px; }
-  .period .dates { display: block; }
-  .period .exam { color: var(--um-sky-500); font-size: .72rem; font-weight: 600; margin-top: 5px; }
-  .period.unconfirmed b::after { content: " *"; color: #b45309; }
+  .periodband { max-width: var(--pagew); margin: 0 auto; padding: 12px 24px 10px; }
+  .ybstrip { position: relative; display: flex; height: 30px; border-radius: var(--um-r-s); overflow: hidden;
+    border: 1px solid var(--um-n50); background: var(--um-n25); }
+  .ybgap { background: repeating-linear-gradient(90deg, #f2f4f6 0 6px, #eceff2 6px 12px); }
+  .ybseg { position: relative; background: var(--c); display: flex; align-items: center; justify-content: center;
+    cursor: pointer; min-width: 14px; transition: filter .15s ease; }
+  .ybseg:hover { filter: brightness(1.12); }
+  .ybseg .yblab { position: relative; z-index: 2; color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .02em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25); pointer-events: none; }
+  .ybseg .ybexam { position: absolute; top: 0; bottom: 0; z-index: 1; background: rgba(0,28,61,.42);
+    border-left: 1px solid rgba(255,255,255,.5); border-right: 1px solid rgba(255,255,255,.5); }
+  .ybseg.unconfirmed { background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.28) 0 4px, transparent 4px 8px); }
+  .ybtoday { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--um-blue); z-index: 3; }
+  .ybtoday::after { content: ""; position: absolute; top: -3px; left: -3px; width: 8px; height: 8px;
+    border-radius: 50%; background: var(--um-blue); }
+  .ybfoot { display: flex; align-items: baseline; justify-content: space-between; gap: 18px;
+    margin-top: 6px; font-size: .72rem; color: var(--um-n500); }
+  .ybfoot .ybnow b { color: var(--um-blue); font-weight: 700; }
+  .ybfoot .ybkey { display: inline-flex; align-items: center; gap: 6px; font-size: .68rem; white-space: nowrap; }
+  .ybfoot .ybkey .kx { width: 14px; height: 9px; background: rgba(0,28,61,.42); border-radius: 1px; display: inline-block; }
 
-  .toolbar { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid var(--um-n50); }
-  .toolbar-inner { max-width: var(--pagew); margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .toolbar-inner { display: flex; flex-wrap: nowrap; gap: 8px; align-items: center; flex: 0 0 auto; }
   .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: var(--um-r); padding: 5px 14px; font-size: .8rem;
     font-weight: 600; cursor: pointer; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; user-select: none;
     box-shadow: var(--shadow-sm); transition: all .15s ease; font-family: inherit; }
@@ -405,13 +412,13 @@
           <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
           <div class="titleblock">
             <p class="kicker">Maastricht Science Programme</p>
-            <h1>MSP Operations Calendar</h1>
+            <h1>Operations Calendar</h1>
           </div>
         </a>
+        <div class="toolbar-inner" id="toolbar"></div>
       </div>
-      <div class="periodband" id="periodband"></div>
     </header>
-    <div class="toolbar"><div class="toolbar-inner" id="toolbar"></div></div>
+    <div class="periodband" id="periodband"></div>
     <main id="main"></main>
   </div>
 </div>
@@ -576,23 +583,74 @@ function init() {
   const note = document.getElementById('footnote');
   if (note) note.textContent = `Academic year ${DB.year} · data updated ${DB.generated} · ` + note.textContent;
 
+  /* ---------- Year bar: the whole academic year as one proportional strip ----------
+     Replaces six equal cards, which said nothing about how long anything actually is.
+     Segments are sized by real duration, exam weeks sit inside their period, the gaps
+     between periods are the breaks, and today is marked. */
   const band = document.getElementById('periodband');
-  for (const p of DB.periods) {
-    const cur = todayIso >= p.start && todayIso <= p.end;
-    const wks = Math.round((new Date(p.end) - new Date(p.start)) / 604800000) + 1;
-    const el = document.createElement('div');
-    el.className = 'period' + (cur ? ' current' : '') + (p.status === 'unconfirmed' ? ' unconfirmed' : '');
-    const pc = `var(--${p.id.toLowerCase()})`;
-    el.style.borderTop = `4px solid ${pc}`;
-    el.innerHTML = `<b>${p.id}</b><span class="dates">${fmt(p.start)} &ndash; ${fmt(p.end)} · ${wks} wks</span>` +
-      (p.exam_start ? `<div class="exam">exams ${fmt(p.exam_start)} &ndash; ${fmt(p.exam_end)}</div>` : '');
-    band.appendChild(el);
-  }
-  if (DB.periods.some(p => p.status === 'unconfirmed')) {
-    const note = document.createElement('div');
-    note.className = 'period'; note.style.flex = '0 0 auto';
-    note.innerHTML = '<b>*</b>dates pending confirmation';
-    band.appendChild(note);
+  const ps = DB.periods.slice().sort((a, b) => a.start.localeCompare(b.start));
+  if (ps.length) {
+    const D = (s) => new Date(s + 'T00:00:00');
+    const days = (a, b) => Math.max(1, Math.round((D(b) - D(a)) / 864e5) + 1);
+    const yStart = ps[0].start, yEnd = ps[ps.length - 1].end;
+    const total = days(yStart, yEnd);
+
+    const strip = document.createElement('div');
+    strip.className = 'ybstrip';
+    let cursor = yStart;
+
+    const gap = (from, to) => {
+      const n = Math.round((D(to) - D(from)) / 864e5);
+      if (n <= 0) return;
+      const g = document.createElement('div');
+      g.className = 'ybgap'; g.style.flexGrow = n;
+      g.title = 'No teaching, ' + fmt(from) + ' to ' + fmt(to);
+      strip.appendChild(g);
+    };
+
+    for (const p of ps) {
+      gap(cursor, p.start);
+      const len = days(p.start, p.end);
+      const seg = document.createElement('div');
+      seg.className = 'ybseg' + (todayIso >= p.start && todayIso <= p.end ? ' now' : '') +
+        (p.status === 'unconfirmed' ? ' unconfirmed' : '');
+      seg.style.flexGrow = len;
+      seg.style.setProperty('--c', `var(--${p.id.toLowerCase()})`);
+      seg.title = p.id + ': ' + fmt(p.start) + ' to ' + fmt(p.end) + ', ' +
+        Math.round(len / 7) + ' weeks' + (p.exam_start ? ' · exams ' + fmt(p.exam_start) + ' to ' + fmt(p.exam_end) : '');
+      seg.innerHTML = `<span class="yblab">${p.id}</span>`;
+      if (p.exam_start) {
+        const off = Math.round((D(p.exam_start) - D(p.start)) / 864e5) / len * 100;
+        const wid = days(p.exam_start, p.exam_end) / len * 100;
+        const ex = document.createElement('i');
+        ex.className = 'ybexam';
+        ex.style.left = off + '%'; ex.style.width = wid + '%';
+        seg.appendChild(ex);
+      }
+      seg.onclick = () => { const s = document.getElementById('m-' + p.start.slice(0, 7)); if (s) gotoMonth(+p.start.slice(0, 4), +p.start.slice(5, 7)); };
+      strip.appendChild(seg);
+      cursor = p.end;
+    }
+
+    if (todayIso >= yStart && todayIso <= yEnd) {
+      const mark = document.createElement('div');
+      mark.className = 'ybtoday';
+      mark.style.left = (Math.round((D(todayIso) - D(yStart)) / 864e5) / total * 100) + '%';
+      mark.title = 'Today, ' + fmt(todayIso);
+      strip.appendChild(mark);
+    }
+    band.appendChild(strip);
+
+    const cur = ps.find(p => todayIso >= p.start && todayIso <= p.end);
+    const foot = document.createElement('div');
+    foot.className = 'ybfoot';
+    foot.innerHTML =
+      `<span class="ybnow">${cur ? `<b>${cur.id}</b> ${fmt(cur.start)} &ndash; ${fmt(cur.end)}` +
+        (cur.exam_start ? ` · exams ${fmt(cur.exam_start)} &ndash; ${fmt(cur.exam_end)}` : '') : 'Between teaching periods'}</span>` +
+      `<span class="ybkey"><i class="kx"></i>exam week` +
+      (ps.some(p => p.status === 'unconfirmed') ? ' &nbsp;·&nbsp; hatched = dates pending confirmation' : '') +
+      `</span>`;
+    band.appendChild(foot);
   }
 
   const bar = document.getElementById('toolbar');
