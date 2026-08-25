@@ -53,9 +53,15 @@
   ],
   "holidays": [
     {
+      "id": "hol-noeducation-dec",
+      "label": "No education (week 51)",
+      "start": "2026-12-14",
+      "end": "2026-12-18"
+    },
+    {
       "id": "hol-christmas",
       "label": "Christmas Break",
-      "start": "2026-12-14",
+      "start": "2026-12-21",
       "end": "2027-01-01"
     },
     {
@@ -998,7 +1004,7 @@
       "date": "2026-08-31",
       "end": "2026-08-31",
       "audience": "IPO (Eva), students",
-      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start",
+      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027, which is Easter Monday, so that round starts the Tuesday",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1284,7 +1290,7 @@
       "date": "2026-10-04",
       "end": "2026-10-04",
       "audience": "all offices, Operations",
-      "notes": "Linzi's plan (3 Aug 2026): request out early Sep, reminder mid-Sep, cut-off Sat 4 Oct; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct)",
+      "notes": "Linzi's plan (3 Aug 2026): request out early Sep, reminder mid-Sep, cut-off Sat 4 Oct; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | NB Linzi plan says \"Sat 4 Oct\" but 4 Oct 2026 is a Sunday, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with Linzi (flagged by the four-review audit, 25 Aug 2026)",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -1492,7 +1498,7 @@
       "date": "2026-10-26",
       "end": "2026-10-26",
       "audience": "IPO (Eva), students",
-      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start",
+      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027, which is Easter Monday, so that round starts the Tuesday",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -2109,19 +2115,6 @@
       "status": "confirmed"
     },
     {
-      "id": "christmas-break",
-      "title": "Christmas break begins (14 Dec - 1 Jan)",
-      "office": "general",
-      "staff": "both",
-      "date": "2026-12-14",
-      "end": "2026-12-14",
-      "audience": "all staff",
-      "notes": "Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance",
-      "link": "",
-      "submit": false,
-      "status": "confirmed"
-    },
-    {
       "id": "sched-planning-forms-p4-due",
       "title": "Course/skill planning forms P4 return deadline",
       "office": "scheduling",
@@ -2146,6 +2139,19 @@
       "link": "",
       "submit": false,
       "status": "unconfirmed"
+    },
+    {
+      "id": "christmas-break",
+      "title": "Christmas closure begins (21 Dec - 1 Jan)",
+      "office": "general",
+      "staff": "both",
+      "date": "2026-12-21",
+      "end": "2026-12-21",
+      "audience": "all staff",
+      "notes": "Week 51 (14-18 Dec) is no education but a normal working week; the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. CORRECTED per the four-review audit, 25 Aug 2026: the shading previously covered both and three working deadlines sat inside it. Collent offline ~23 Dec to 6 Jan for maintenance",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
     },
     {
       "id": "norm-hours-finance",
@@ -2467,7 +2473,7 @@
       "date": "2027-01-25",
       "end": "2027-01-25",
       "audience": "IPO (Eva), students",
-      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start",
+      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027, which is Easter Monday, so that round starts the Tuesday",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3182,7 +3188,7 @@
       "date": "2027-03-29",
       "end": "2027-03-29",
       "audience": "IPO (Eva), students",
-      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start",
+      "notes": "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027, which is Easter Monday, so that round starts the Tuesday",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3838,19 +3844,6 @@
       "status": "confirmed"
     },
     {
-      "id": "bsa-year-send",
-      "title": "BSA year letters sent (mail merge)",
-      "office": "esd",
-      "staff": "support",
-      "date": "2027-05-17",
-      "end": "2027-05-17",
-      "audience": "first-year students, IPO (Eva)",
-      "notes": "Mid May, before P6 starts, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport, max 50 per go | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 17-21 May (the week BEFORE P6, settles the BSA-doc conflict)",
-      "link": "",
-      "submit": false,
-      "status": "confirmed"
-    },
-    {
       "id": "exam-week-p5",
       "title": "Exam week (P5)",
       "office": "exams",
@@ -3884,7 +3877,7 @@
       "date": "2027-05-17",
       "end": "2027-05-17",
       "audience": "students, Academic Advising, ESD",
-      "notes": "17-21 May",
+      "notes": "17-21 May | NB week 1 is Whit Monday 17 May 2027 and UM is closed, but the form is online and 17-21 May is the published week",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -3898,6 +3891,19 @@
       "end": "2027-05-18",
       "audience": "students, RS, IA",
       "notes": "Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collides with the P5 exam week 17-21 May, same collision the Sept thesis has with P2",
+      "link": "",
+      "submit": false,
+      "status": "confirmed"
+    },
+    {
+      "id": "bsa-year-send",
+      "title": "BSA year letters sent (mail merge)",
+      "office": "esd",
+      "staff": "support",
+      "date": "2027-05-18",
+      "end": "2027-05-18",
+      "audience": "first-year students, IPO (Eva)",
+      "notes": "Mid May, before P6 starts, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport, max 50 per go | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 17-21 May (the week BEFORE P6, settles the BSA-doc conflict) | CORRECTED per the four-review audit, 25 Aug 2026: 17 May 2027 is Whit Monday and UM is closed. Moved to Tue 18 May, still inside Eva window 17-21 May and matching the 2026 instance which ran Mon 18 to Thu 21",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -4358,14 +4364,14 @@
       "status": "confirmed"
     },
     {
-      "id": "bsa-pbsa-send",
-      "title": "pBSA letters sent + SAP status registered (9005 Positive BSA)",
+      "id": "bsa-pbsa-datafile",
+      "title": "pBSA letter - datafile + letter arrive from Katja",
       "office": "boe",
       "staff": "support",
       "date": "2027-07-12",
       "end": "2027-07-12",
-      "audience": "first-year students, IPO (Eva), BoE",
-      "notes": "Rule per the IPO overview: all results incl. resits in + 15 working days, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul",
+      "audience": "BoE (Katja), IPO (Eva)",
+      "notes": "Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit, 25 Aug 2026: this was dated 23 Jul while the letters went out 12 Jul, so the send preceded the material by 11 days. Both steps share Eva window 12-23 Jul; the arrival is now the start of it",
       "link": "",
       "submit": false,
       "status": "confirmed"
@@ -4410,14 +4416,14 @@
       "status": "confirmed"
     },
     {
-      "id": "bsa-pbsa-datafile",
-      "title": "pBSA letter - datafile + letter arrive from Katja",
+      "id": "bsa-pbsa-send",
+      "title": "pBSA letters sent + SAP status registered (9005 Positive BSA)",
       "office": "boe",
       "staff": "support",
-      "date": "2027-07-23",
-      "end": "2027-07-23",
-      "audience": "BoE (Katja), IPO (Eva)",
-      "notes": "Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul",
+      "date": "2027-07-16",
+      "end": "2027-07-16",
+      "audience": "first-year students, IPO (Eva), BoE",
+      "notes": "Rule per the IPO overview: all results incl. resits in + 15 working days, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit, 25 Aug 2026: moved after the datafile arrives, matching the 2026 instance which ran Mon 13 to Thu 16 Jul",
       "link": "",
       "submit": false,
       "status": "confirmed"

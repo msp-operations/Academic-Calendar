@@ -28,7 +28,7 @@
     --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
     --esd: #0d9488; --alumni: #db2777; --general: #64748b;
     --p1: #6366f1; --p2: #0891b2; --p3: #64748b; --p4: #d97706; --p5: #be185d; --p6: #059669;
-    --gold: #d4a017;
+    --gold: #af6500;   /* UM sunset-orange-500, 4.48:1. Was #d4a017 at 2.38:1 */
     --shadow-sm: none;
     --shadow-md: 0 1px 3px rgba(0,28,61,.10);
     --shadow-lg: 0 24px 60px rgba(22,36,61,.32);
@@ -56,6 +56,8 @@
   .titleblock .kicker { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--um-n500); margin-bottom: 1px; white-space: nowrap; }
   .titleblock h1 { font-size: 1.22rem; font-weight: 700; color: var(--um-blue); letter-spacing: 0; line-height: 1.15; white-space: nowrap; }
 
+  #printstamp { display: none; max-width: var(--pagew); margin: 0 auto; padding: 4px 24px 0;
+    font-size: .78rem; font-weight: 700; color: var(--um-blue); }
   .periodband { max-width: var(--pagew); margin: 0 auto; padding: 12px 24px 10px; }
   .ybstrip { position: relative; display: flex; height: 30px; border-radius: var(--um-r-s); overflow: hidden;
     border: 1px solid var(--um-n50); background: var(--um-n25); }
@@ -167,6 +169,7 @@
   .rail.mini .railtitle, .rail.mini .railyear, .rail.mini .railsechead,
   .rail.mini .railitem .lb, .rail.mini .railitem .ct, .rail.mini .railsub .subscribe span { display: none; }
   .rail.mini .railtop { padding: 0 0 14px; justify-content: center; }
+  .rail.mini .railtoggle { background: rgba(255,255,255,.14); }
   .rail.mini .raillogo { display: none; }
   .rail.mini .railtoggle svg { transform: rotate(180deg); }
   .rail.mini .railsec { margin-bottom: 14px; }
@@ -187,8 +190,7 @@
     background: var(--gold); }
   .dei { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
   .dei .deilabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em;
-    background: none; -webkit-background-clip: initial; background-clip: initial; color: var(--um-blue);
-    color: transparent; margin-bottom: 6px; }
+    color: var(--um-blue); margin-bottom: 6px; }
   .dei .deichip { display: inline-block; background: var(--paper); border: 1px solid var(--line); border-radius: var(--um-r-s);
     padding: 2px 10px; font-size: .76rem; margin: 0 4px 4px 0; }
   .dei .deimonth { font-size: .72rem; color: var(--muted); margin-top: 3px; }
@@ -217,7 +219,7 @@
   .yday.hol, .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
   /* Gold bar: academic staff must submit something to the office by this day */
   .yday, .day { position: relative; }
-  .yday.due::after, .day.due::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+  .yday.due::after, .day.due::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; box-shadow: none;
     background: var(--gold);
     box-shadow: 0 0 8px rgba(255, 196, 40, .7); border-radius: 0 0 5px 5px; }
   @keyframes shine { from { background-position: 200% 0; } to { background-position: -200% 0; } }
@@ -261,19 +263,19 @@
 
   /* Key-deadlines chain view */
   .chainsnote { font-size: .8rem; color: var(--muted); margin-top: 16px; }
-  .chains { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; margin-top: 14px; }
-  .chain { background: var(--card); border: 1px solid var(--line); border-radius: var(--um-r); padding: 16px 20px; box-shadow: var(--shadow-sm); }
+  .chains { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 16px; margin-top: 14px; }
+  .chain { background: var(--card); border: 1px solid var(--line); border-radius: var(--um-r); padding: 16px 20px; min-width: 0; overflow-wrap: anywhere; box-shadow: var(--shadow-sm); }
   .chain h3 { font-size: .92rem; font-weight: 800; color: var(--navy); letter-spacing: -.01em; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
   .chain .csw { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
   .csteps { position: relative; margin-left: 7px; border-left: 2px solid var(--line); padding: 2px 0 2px 18px; }
-  .cstep { position: relative; padding: 7px 0; cursor: pointer; display: flex; gap: 12px; align-items: baseline; }
+  .cstep { position: relative; padding: 7px 0; cursor: pointer; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
   .cstep::before { content: ""; position: absolute; left: -25px; top: 13px; width: 12px; height: 12px; border-radius: 50%;
     background: var(--navy-2); border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--line); }
   .cstep.academic::before { background: var(--gold); }
   .cstep:hover .clabel { color: var(--navy); }
   .cstep.past { opacity: .5; }
-  .cstep .cdate { min-width: 92px; font-weight: 700; font-size: .8rem; color: var(--navy); font-variant-numeric: tabular-nums; }
-  .cstep .clabel { font-size: .84rem; line-height: 1.4; }
+  .cstep .cdate { min-width: 92px; flex: 0 0 auto; font-weight: 700; font-size: .8rem; color: var(--navy); font-variant-numeric: tabular-nums; }
+  .cstep .clabel { font-size: .84rem; line-height: 1.4; flex: 1 1 190px; min-width: 0; }
   .cstep .cwho { display: inline-block; font-size: .6rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
     padding: 1px 7px; border-radius: 4px; margin-right: 7px; background: #e7ecf4; color: var(--navy); }
   .cstep.academic .cwho { background: #fdf0cd; color: #8a5d05; }
@@ -331,6 +333,8 @@
   .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--accent); color: #fff;
     font-size: .66rem; font-weight: 800; padding: 1px 8px; border-radius: var(--um-r-s); }
   .empty { color: var(--muted); font-size: .9rem; padding: 40px 0; text-align: center; }
+  .emptyhint { display: inline-block; margin-top: 8px; font-size: .84rem; }
+  .empty a, footer a[href^="mailto"] { color: var(--accent-ink); }
 
   /* ---------- Overlay cards ---------- */
   .overlay { position: fixed; inset: 0; background: rgba(22, 36, 61, .5); display: flex; align-items: center; justify-content: center;
@@ -372,18 +376,27 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
-    /* Phones get the icon strip permanently: same treatment as the collapsed rail */
-    :root { --rail-w: 56px !important; }
+    /* Phones start collapsed via the .mini class, not via CSS, so the toggle still works and the
+       rail can actually be opened. Collapsing in CSS alone left it permanently unreadable. */
     .rail { padding: 14px 0 16px; }
-    .rail .railtitle, .rail .railyear, .rail .railsechead, .rail .raillogo,
-    .rail .railitem .lb, .rail .railitem .ct, .rail .railsub .subscribe span { display: none; }
-    .rail .railtop { padding: 0 0 12px; justify-content: center; }
-    .rail .railtoggle { display: none; }
-    .rail .railsec { margin-bottom: 14px; }
-    .rail .railsec.closed .railseclist { display: block; }
-    .rail .railitem { justify-content: center; padding: 7px 0; }
-    .rail .railsub { padding: 0 8px; }
-    .rail .railsub .subscribe { padding: 9px 0; }
+    main { padding: 0 12px; }
+    /* The three masthead controls could not wrap, so they forced the whole content column wider
+       than the viewport and every view overflowed sideways. */
+    .toolbar-inner { flex-wrap: wrap; justify-content: flex-end; }
+    .topbar { padding: 8px 12px; gap: 8px 12px; }
+    .topbar img.msp { height: 60px; margin: -10px -33px; }
+    .titleblock h1 { font-size: 1.05rem; }
+    .search { width: 120px; }
+    .search:focus { width: 150px; }
+    #toolbar .chip[title*="A3"] { display: none; }
+    .periodband { padding: 10px 12px 8px; }
+    .chains { grid-template-columns: 1fr; }
+    .chain { padding: 14px 12px; }
+    .cstep .cdate { min-width: 74px; font-size: .76rem; }
+    .cstep .clabel { flex: 1 1 140px; font-size: .8rem; }
+    .csteps { padding-left: 12px; margin-left: 4px; }
+    .rail.mini .railtoggle { display: inline-flex; }
+    .railtop { padding-top: 2px; }
     .periodband { overflow-x: auto; }
     .period { min-width: 118px; }
     .footgrid { grid-template-columns: 1fr; gap: 22px; }
@@ -391,8 +404,17 @@
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    .toolbar, footer, .subscribe, .yearnote, .upwrap, .rail { display: none !important; }
+    #toolbar, footer, .subscribe, .yearnote, .upwrap, .rail { display: none !important; }
     :root { --rail-w: 0px !important; }
+    /* Every encoding in the grid is a background, and browsers drop backgrounds when printing.
+       Without this the wall chart prints inside out: confirmed dots vanish and only unconfirmed
+       ones survive, as rings. */
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    main { max-width: none; margin-bottom: 0; }
+    .month, .chain { break-inside: avoid; }
+    .yday .wk { display: inline !important; }
+    .yday .wk + .dw { display: none !important; }
+    #printstamp { display: block !important; }
     header, .accentline { box-shadow: none; }
     .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
     body { background: #fff; }
@@ -418,6 +440,7 @@
         <div class="toolbar-inner" id="toolbar"></div>
       </div>
     </header>
+    <p id="printstamp"></p>
     <div class="periodband" id="periodband"></div>
     <main id="main"></main>
   </div>
@@ -429,7 +452,7 @@
       <h4>About this calendar</h4>
       <p>Every operational deadline and rhythm at the Maastricht Science Programme, in one place:
       exams, grading, BTR, Board of Examiners, scheduling, ESD and alumni, plus UM holidays and the
-      period structure. Maintained by MSP Operations. Events marked <i>unconfirmed</i> are pending
+      period structure. Maintained by MSP Operations. <b>Spotted a wrong date, or one that is missing? <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Tell us</a> and we fix it at the source, so it corrects for everyone at once.</b> Events marked <i>unconfirmed</i> are pending
       confirmation for this academic year and stay out of the feeds until confirmed.</p>
     </div>
     <div>
@@ -581,6 +604,8 @@ function showSubscribeCard(feed) {
 
 function init() {
   const note = document.getElementById('footnote');
+  const stamp = document.getElementById('printstamp');
+  if (stamp) stamp.textContent = 'MSP Operations Calendar · academic year ' + DB.year + ' · printed from data updated ' + DB.generated;
   if (note) note.textContent = `Academic year ${DB.year} · data updated ${DB.generated} · ` + note.textContent;
 
   /* ---------- Year bar: the whole academic year as one proportional strip ----------
@@ -720,7 +745,11 @@ function setRailManual(mini) {
 }
 /* The year planner is a wall chart and wants the width, so it collapses the rail by default.
    A manual choice wins from then on. */
-function autoRail() { if (!railManual) setRail(state.view === 'year'); }
+/* Small screens start collapsed because there is no room, but the toggle stays reachable so it can
+   be opened. Desktops always start open: a first visit has no saved preference, and hiding every
+   label behind an unsignposted click is how nobody finds the filters or the subscribe button. */
+function isNarrow() { return window.matchMedia('(max-width: 860px)').matches; }
+function autoRail() { if (!railManual) setRail(isNarrow()); }
 
 function setViewUI(id) {
   if (state.view !== id) { state.view = id; syncState(); render(); }
@@ -854,7 +883,11 @@ function render() {
   const events = DB.events.filter(e => state.on.has(e.office) &&
     (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff) &&
     (!state.q || (e.title + ' ' + (e.notes || '') + ' ' + (e.audience || '')).toLowerCase().includes(state.q)));
-  if (!events.length) { main.innerHTML = '<p class="empty">No events match' + (state.q ? ` "${state.q}"` : ' this selection') + '.</p>'; return; }
+  if (!events.length) { const q = document.createElement('p'); q.className = 'empty';
+    q.textContent = state.q ? `No events match "${state.q}".` : 'No events match this selection.';
+    q.innerHTML += '<br><span class="emptyhint">Try turning an office back on in the menu, or clearing the search. ' +
+      'If you expected something here, <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">tell us</a>.</span>';
+    main.innerHTML = ''; main.appendChild(q); return; }
   renderUpcoming(main, events);
   if (state.q) { renderTimeline(main, events); return; }
   if (state.view === 'grid') renderGrid(main, events);
@@ -872,44 +905,47 @@ function renderChains(main) {
     return {
     title: `${p.toUpperCase()} exam + grading cycle`, color: `var(--${p})`,
     steps: [
-      [`invigilators-${p}`, 's', 'We commit halls, invigilators, Chromebooks and mutations to SSC'],
-      [`exam-submit-${p}`, 'a', 'Your exam paper + TestVision test are due'],
-      [`print-order-${p}`, 's', 'We send the print order to ANDI Smart Print'],
+      [`assessment-announced-${p}`, 'a', 'Your assessment format has to be in the syllabus'],
+      [`invigilators-${p}`, 's', 'We book the halls, the invigilators and the equipment'],
+      [`exam-submit-${p}`, 'a', 'Your exam paper and your digital test are due'],
+      [`print-order-${p}`, 's', 'We send your exam to be printed'],
       [`exam-week-${p}`, 'w', `Exam week starts${range ? ' (runs ' + range + ')' : ''}: rooms, transport, invigilation`],
-      [`grades-due-${p}`, 'a', 'Your filled-in grading sheet is due (10 working days)'],
-      [`grades-published-${p}`, 's', 'We re-key into SAP, chase gaps and publish (5 working days); transcripts follow'],
-      [`accreditation-ask-${p}`, 's', 'Eva requests your accreditation material'],
-      [`accreditation-deadline-${p}`, 'a', 'Accreditation material due at DUB30 (manual, exams, rubrics, attendance)'],
-      [`transcript-final-update-${p}`, 's', 'Final bulk transcript update once inspection closes'],
+      [`grades-due-${p}`, 'a', 'Your filled-in grading sheet is due, 10 working days after the exam'],
+      [`grades-published-${p}`, 's', 'We process the grades and publish them to students. We get 5 working days'],
+      [`accreditation-ask-${p}`, 's', 'We ask you for the exam material we have to archive'],
+      [`exam-inspection-${p}`, 'w', 'Students may inspect their exam up to this date. This is why our 5 days cannot move'],
+      [`accreditation-deadline-${p}`, 'a', 'Your exam material is due: manual, exam, rubrics, attendance'],
+      [`transcript-final-update-${p}`, 's', 'Final transcripts, once the inspection window closes'],
     ],
   }; };
   const CHAINS = [
     exam('p1'), exam('p2'), exam('p4'), exam('p5'),
     { title: 'June resit week cycle', color: 'var(--exams)', steps: [
-      ['invigilators-resits', 's', 'We book resit invigilation (PHS, own Chromebook cart)'],
-      ['exam-submit-resits', 'a', 'Your resit exam is due'],
+      ['invigilators-resits', 's', 'We book the resit invigilation and the equipment'],
+      ['exam-submit-resits', 'a', 'Your resit exam is due. This round is 2 weeks, not 3, because we print in house'],
       ['resit-week-p5', 'w', 'Resit week starts (runs 14 to 18 Jun)'],
       ['grades-due-resits', 'a', 'Your resit grades are due'],
       ['grades-published-resits', 's', 'We process and publish the resit grades'],
-      ['accreditation-ask-resits', 's', 'Eva requests the resit accreditation material'],
-      ['accreditation-deadline-resits', 'a', 'Resit accreditation material due at DUB30'],
-      ['transcript-final-update-resits', 's', 'Final transcripts once inspection closes'],
+      ['accreditation-ask-resits', 's', 'We ask you for the resit material we have to archive'],
+      ['exam-inspection-resits', 'w', 'Students may inspect their resit up to this date'],
+      ['accreditation-deadline-resits', 'a', 'Your resit material is due'],
+      ['transcript-final-update-resits', 's', 'Final transcripts, once the inspection window closes'],
     ]},
     { title: 'BTR grading, September cohort', color: 'var(--btr)', steps: [
-      ['btr-proposal-grades-due-sept', 'a', 'Proposal grades due in Collent (RS + IA)'],
+      ['btr-proposal-grades-due-sept', 'a', 'Proposal grades due from you and the second assessor'],
       ['btr-proposal-grades-pub-sept', 's', 'We publish proposal grades to students'],
-      ['btr-midterm-grades-due-sept', 'a', 'Midterm practical grade due (RS)'],
+      ['btr-midterm-grades-due-sept', 'a', 'Midterm practical grade due from the supervisor'],
       ['btr-midterm-grades-pub-sept', 's', 'We publish midterm grades'],
-      ['btr-final-grades-due-sept', 'a', 'Final thesis + video grades due in Collent'],
-      ['btr-final-grades-pub-sept', 's', 'We publish final grades; BoE graduation decision follows'],
+      ['btr-final-grades-due-sept', 'a', 'Final thesis and video grades due'],
+      ['btr-final-grades-pub-sept', 's', 'We publish the final grades; the graduation decision follows'],
     ]},
     { title: 'BTR grading, February cohort', color: 'var(--btr)', steps: [
-      ['btr-proposal-grades-due-feb', 'a', 'Proposal grades due in Collent (RS + IA)'],
+      ['btr-proposal-grades-due-feb', 'a', 'Proposal grades due from you and the second assessor'],
       ['btr-proposal-grades-pub-feb', 's', 'We publish proposal grades to students'],
-      ['btr-midterm-grades-due-feb', 'a', 'Midterm practical grade due (RS)'],
+      ['btr-midterm-grades-due-feb', 'a', 'Midterm practical grade due from the supervisor'],
       ['btr-midterm-grades-pub-feb', 's', 'We publish midterm grades'],
-      ['btr-final-grades-due-feb', 'a', 'Final thesis + video grades due in Collent'],
-      ['btr-final-grades-pub-feb', 's', 'We publish final grades; BoE graduation decision follows'],
+      ['btr-final-grades-due-feb', 'a', 'Final thesis and video grades due'],
+      ['btr-final-grades-pub-feb', 's', 'We publish the final grades; the graduation decision follows'],
     ]},
     { title: 'New academic year: catalogue + exam planning', color: 'var(--esd)', steps: [
       ['catalogue-letters-out', 's', 'We send the catalogue update letters'],
@@ -923,7 +959,7 @@ function renderChains(main) {
   main.insertAdjacentHTML('beforeend',
     '<p class="chainsnote">The hand-off chains behind the big deadlines: <b>gold steps are yours</b> ' +
     '(academic staff), navy steps are what the office does with your input. This view always shows the ' +
-    'full chains, whatever the filters above say. Click a step for details.</p>');
+    'full chains, whatever the office filters are set to. Click a step for details.</p>');
   const grid = document.createElement('div'); grid.className = 'chains';
   for (const ch of CHAINS) {
     const steps = ch.steps.map(([id, who, label]) => ({ e: byId[id], who, label })).filter(x => x.e)
@@ -935,6 +971,7 @@ function renderChains(main) {
     const gapText = (n) => {
       if (n === 0) return 'same day';
       if (n === 1) return 'the next day';
+      if (n === 7) return 'a week later';
       if (n % 7 === 0) return (n / 7) + ' weeks later';
       return n + ' days later';
     };
@@ -1234,7 +1271,7 @@ function showCard(e) {
     (e.staff ? `<div class="row"><div class="k">Acts</div><div>${STAFF_LABEL[e.staff] || e.staff}</div></div>` : '') +
     (e.audience ? `<div class="row"><div class="k">For</div><div>${e.audience}</div></div>` : '') +
     (e.notes ? `<div class="row"><div class="k">Notes</div><div>${e.notes}</div></div>` : '') +
-    (e.status === 'unconfirmed' ? `<div class="row"><div class="k">Status</div><div>Pending confirmation for this academic year; not yet in the Outlook feeds.</div></div>` : '') +
+    (e.status === 'unconfirmed' ? `<div class="row"><div class="k">Status</div><div>Pending confirmation for this academic year, so it is not in the Outlook feeds yet. <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Know the real date?</a></div></div>` : '') +
     `</div>`;
   overlay.appendChild(card);
   overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
@@ -1246,11 +1283,12 @@ document.addEventListener('keydown', (ev) => {
 });
 
 window.onerror = (msg) => {
-  document.getElementById('main').innerHTML = `<p class="empty">Something broke: ${msg}</p>`;
+  document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${msg}</p>`;
 };
+window.addEventListener('resize', () => { if (!railManual) autoRail(); });
 if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); }
 else fetch('events.json').then(r => r.json()).then(db => { DB = db; init(); })
-  .catch(() => { document.getElementById('main').innerHTML = '<p class="empty">Could not load events - run build.mjs first.</p>'; });
+  .catch(() => { document.getElementById('main').innerHTML = '<p class="empty">The calendar data could not be loaded. Please refresh, and tell us if it keeps happening.</p>'; });
 </script>
 </body>
 </html>

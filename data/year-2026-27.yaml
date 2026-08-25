@@ -41,10 +41,17 @@ year: "2026-27"
 # Holidays + breaks (official Calendarium 2026-2027 p.2, verified 4 Aug 2026).
 # kind: holiday entries are NOT periods: the build passes them to the site as green
 # shading ranges + day-card labels. end omitted = single day.
+# Week 51 is "No education" and weeks 52-53 are the actual closure (Calendarium p.1). Shading the
+# whole span as break was wrong: three working deadlines fall in week 51.
+- id: hol-noeducation-dec
+  kind: holiday
+  label: No education (week 51)
+  start: 2026-12-14
+  end: 2026-12-18
 - id: hol-christmas
   kind: holiday
   label: Christmas Break
-  start: 2026-12-14
+  start: 2026-12-21
   end: 2027-01-01
 - id: hol-carnival
   kind: holiday

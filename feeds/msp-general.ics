@@ -34,7 +34,7 @@ DTSTAMP:20261004T000000Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
-DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | For: all offices\, Operations
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | NB Linzi plan says "Sat 4 Oct" but 4 Oct 2026 is a Sunday\, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with Linzi (flagged by the four-review audit\, 25 Aug 2026) | For: all offices\, Operations
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-fall-202627@msp-operations
@@ -62,11 +62,11 @@ DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas announ
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
-DTSTAMP:20261214T000000Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
-SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
-DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[MSP GENERAL] Christmas closure begins (21 Dec - 1 Jan)
+DESCRIPTION:Week 51 (14-18 Dec) is no education but a normal working week\; the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. CORRECTED per the four-review audit\, 25 Aug 2026: the shading previously covered both and three working deadlines sat inside it. Collent offline ~23 Dec to 6 Jan for maintenance | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:fse-resits-sem1-202627@msp-operations

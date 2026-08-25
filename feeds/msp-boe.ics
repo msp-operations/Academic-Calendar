@@ -125,20 +125,20 @@ SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
 DESCRIPTION:For: BoE secretary
 END:VEVENT
 BEGIN:VEVENT
-UID:bsa-pbsa-send-202627@msp-operations
+UID:bsa-pbsa-datafile-202627@msp-operations
 DTSTAMP:20270712T000000Z
 DTSTART;VALUE=DATE:20270712
 DTEND;VALUE=DATE:20270713
-SUMMARY:[MSP BOE] pBSA letters sent + SAP status registered (9005 Positive BSA)
-DESCRIPTION:Rule per the IPO overview: all results incl. resits in + 15 working days\, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox\; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | For: first-year students\, IPO (Eva)\, BoE
+SUMMARY:[MSP BOE] pBSA letter - datafile + letter arrive from Katja
+DESCRIPTION:Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run\, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit\, 25 Aug 2026: this was dated 23 Jul while the letters went out 12 Jul\, so the send preceded the material by 11 days. Both steps share Eva window 12-23 Jul\; the arrival is now the start of it | For: BoE (Katja)\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
-UID:bsa-pbsa-datafile-202627@msp-operations
-DTSTAMP:20270723T000000Z
-DTSTART;VALUE=DATE:20270723
-DTEND;VALUE=DATE:20270724
-SUMMARY:[MSP BOE] pBSA letter - datafile + letter arrive from Katja
-DESCRIPTION:Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run\, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | For: BoE (Katja)\, IPO (Eva)
+UID:bsa-pbsa-send-202627@msp-operations
+DTSTAMP:20270716T000000Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:[MSP BOE] pBSA letters sent + SAP status registered (9005 Positive BSA)
+DESCRIPTION:Rule per the IPO overview: all results incl. resits in + 15 working days\, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox\; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit\, 25 Aug 2026: moved after the datafile arrives\, matching the 2026 instance which ran Mon 13 to Thu 16 Jul | For: first-year students\, IPO (Eva)\, BoE
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-pbsa-archive-202627@msp-operations

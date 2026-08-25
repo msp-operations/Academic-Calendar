@@ -250,7 +250,7 @@ DTSTAMP:20270517T000000Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
-DESCRIPTION:17-21 May | For: students\, Academic Advising\, ESD
+DESCRIPTION:17-21 May | NB week 1 is Whit Monday 17 May 2027 and UM is closed\, but the form is online and 17-21 May is the published week | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-planning-forms-fall-202627@msp-operations

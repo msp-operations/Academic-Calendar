@@ -98,7 +98,7 @@ DTSTAMP:20261004T000000Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
-DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | For: all offices\, Operations
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | NB Linzi plan says "Sat 4 Oct" but 4 Oct 2026 is a Sunday\, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with Linzi (flagged by the four-review audit\, 25 Aug 2026) | For: all offices\, Operations
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-send-p1-202627@msp-operations
@@ -301,20 +301,20 @@ SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Feb cohort)
 DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Office FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after\, into the Christmas closure. Under-grading RTS flagging also lands here | For: students\, Academic Advisors\, coordinators
 END:VEVENT
 BEGIN:VEVENT
-UID:christmas-break-202627@msp-operations
-DTSTAMP:20261214T000000Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
-SUMMARY:[MSP GENERAL] Christmas break begins (14 Dec - 1 Jan)
-DESCRIPTION:Official break 14 Dec 2026 - 1 Jan 2027 per the Calendarium p.2 (week 51 is no-education\, weeks 52-53 Christmas Holiday). Collent offline ~23 Dec - 6 Jan for maintenance | For: all staff
-END:VEVENT
-BEGIN:VEVENT
 UID:sched-planning-forms-p4-due-202627@msp-operations
 DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[MSP SCHEDULING] Course/skill planning forms P4 return deadline
 DESCRIPTION:2025 instance stated verbatim in the spring mail: Deadline for P4\, December 15\, 2025\, 5 pm\, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec\, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan\, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-break-202627@msp-operations
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[MSP GENERAL] Christmas closure begins (21 Dec - 1 Jan)
+DESCRIPTION:Week 51 (14-18 Dec) is no education but a normal working week\; the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. CORRECTED per the four-review audit\, 25 Aug 2026: the shading previously covered both and three working deadlines sat inside it. Collent offline ~23 Dec to 6 Jan for maintenance | For: all staff
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-draft-p4-202627@msp-operations
@@ -706,7 +706,7 @@ DTSTAMP:20270517T000000Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
-DESCRIPTION:17-21 May | For: students\, Academic Advising\, ESD
+DESCRIPTION:17-21 May | NB week 1 is Whit Monday 17 May 2027 and UM is closed\, but the form is online and 17-21 May is the published week | For: students\, Academic Advising\, ESD
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-thesis-feb-202627@msp-operations

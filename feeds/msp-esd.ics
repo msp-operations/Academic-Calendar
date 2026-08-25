@@ -50,7 +50,7 @@ DTSTAMP:20260831T000000Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[MSP ESD] Course manuals downloaded from Canvas + published (Advising page) (P1)
-DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | For: IPO (Eva)\, students
+DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027\, which is Easter Monday\, so that round starts the Tuesday | For: IPO (Eva)\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-spring-gerco-1-202627@msp-operations
@@ -130,7 +130,7 @@ DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:[MSP ESD] Course manuals downloaded from Canvas + published (Advising page) (P2)
-DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | For: IPO (Eva)\, students
+DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027\, which is Easter Monday\, so that round starts the Tuesday | For: IPO (Eva)\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-spring-publish-202627@msp-operations
@@ -306,7 +306,7 @@ DTSTAMP:20270125T000000Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:[MSP ESD] Course manuals downloaded from Canvas + published (Advising page) (P4)
-DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | For: IPO (Eva)\, students
+DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027\, which is Easter Monday\, so that round starts the Tuesday | For: IPO (Eva)\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-p2-202627@msp-operations
@@ -426,7 +426,7 @@ DTSTAMP:20270329T000000Z
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270330
 SUMMARY:[MSP ESD] Course manuals downloaded from Canvas + published (Advising page) (P5)
-DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | For: IPO (Eva)\, students
+DESCRIPTION:During weeks 1-2 of the period per the IPO overview\; old ones removed\, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027\, which is Easter Monday\, so that round starts the Tuesday | For: IPO (Eva)\, students
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-publication-202627@msp-operations
@@ -566,11 +566,11 @@ DESCRIPTION:Week before the exam week per the IPO overview: copy exam + attendan
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-year-send-202627@msp-operations
-DTSTAMP:20270517T000000Z
-DTSTART;VALUE=DATE:20270517
-DTEND;VALUE=DATE:20270518
+DTSTAMP:20270518T000000Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
 SUMMARY:[MSP ESD] BSA year letters sent (mail merge)
-DESCRIPTION:Mid May\, before P6 starts\, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport\, max 50 per go | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 17-21 May (the week BEFORE P6\, settles the BSA-doc conflict) | For: first-year students\, IPO (Eva)
+DESCRIPTION:Mid May\, before P6 starts\, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport\, max 50 per go | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 17-21 May (the week BEFORE P6\, settles the BSA-doc conflict) | CORRECTED per the four-review audit\, 25 Aug 2026: 17 May 2027 is Whit Monday and UM is closed. Moved to Tue 18 May\, still inside Eva window 17-21 May and matching the 2026 instance which ran Mon 18 to Thu 21 | For: first-year students\, IPO (Eva)
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-infosheet-may-202627@msp-operations
