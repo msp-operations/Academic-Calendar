@@ -121,6 +121,9 @@
   .ybseg .bar { position: relative; height: 8px; border-radius: 1px; background: var(--c, var(--gap)); overflow: hidden; }
   .ybseg .bar i { position: absolute; top: 0; bottom: 0; background: var(--sky); }
   .ybseg .lab { font-size: 11px; font-weight: 700; color: var(--navy); }
+  .ybseg[role=button] { cursor: pointer; } .ybseg[role=button]:hover .bar { filter: brightness(1.15); }
+  .ybseg.dim .bar { opacity: .3; } .ybseg.dim .lab { color: var(--faint-3); }
+  .ybseg.sel .lab::after { content: ' · only'; font-weight: 400; color: var(--muted); }
   .ybtoday { position: absolute; top: -6px; height: 20px; width: 3px; background: var(--gold); }
   .ybtoday b { position: absolute; top: -27px; left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
   .ybtoday.late b { left: auto; right: 6px; }
@@ -434,19 +437,22 @@ const _params = new URLSearchParams(location.search);
 const _saved = (() => { try { return JSON.parse(localStorage.getItem('mspcal') || '{}'); } catch (_) { return {}; } })();
 const _pick = (v, allowed, fb) => allowed.includes(v) ? v : fb;
 const VIEW_KEYS = Object.keys(VIEWS);
+const PERIODS = ['', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6'];
 const _offParam = _params.get('office');
 const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k]) : (Array.isArray(_saved.on) ? _saved.on.filter(k => OFFICES[k]) : []);
 const state = {
   on: new Set(_initOn.length ? _initOn : Object.keys(OFFICES)),
   view: _pick(_params.get('view'), VIEW_KEYS, _pick(_saved.view, VIEW_KEYS, window.innerWidth < 720 ? 'timeline' : 'year')),
   role: _pick(_params.get('role'), Object.keys(ROLES), _pick(_saved.role, Object.keys(ROLES), 'all')),
+  period: _pick((_params.get('period') || '').toUpperCase(), PERIODS, _pick(_saved.period, PERIODS, '')),
   q: '', panel: null, mineOnly: false,
 };
 function syncState() {
-  try { localStorage.setItem('mspcal', JSON.stringify({ on: [...state.on], view: state.view, role: state.role })); } catch (_) {}
+  try { localStorage.setItem('mspcal', JSON.stringify({ on: [...state.on], view: state.view, role: state.role, period: state.period })); } catch (_) {}
   const p = new URLSearchParams();
   if (state.on.size < Object.keys(OFFICES).length) p.set('office', [...state.on].join(','));
   if (state.role !== 'all') p.set('role', state.role);
+  if (state.period) p.set('period', state.period);
   if (state.view !== 'year') p.set('view', state.view);
   if (state.panel && state.panel.kind === 'event') p.set('event', state.panel.id);
   const qs = p.toString();
@@ -478,7 +484,9 @@ const perOf = (iso) => periods.find(p => iso >= p.start && iso <= p.end) || null
 const holOf = (iso) => hols.find(h => iso >= h.start && iso <= (h.end || h.start)) || null;
 const isExam = (iso) => { const p = perOf(iso); return !!(p && p.exam_start && iso >= p.exam_start && iso <= p.exam_end); };
 const isDue = (e) => e.submit || e.staff === 'academic';
+const periodTag = (e) => { const m = /(?:^|-)p([1-6])(?:-|$)/.exec(e.id); return m ? 'P' + m[1] : ''; };
 const ok = (e) => state.on.has(e.office) && (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff) &&
+  (!state.period || periodTag(e) === state.period) &&
   (!state.q || (e.title + ' ' + (e.notes || '') + ' ' + (e.audience || '')).toLowerCase().includes(state.q));
 const filtered = () => DB.events.filter(ok).sort((a, b) => a.date.localeCompare(b.date));
 
@@ -544,6 +552,15 @@ function buildRail() {
     lr.appendChild(b);
   }
   rail.appendChild(lr);
+  rail.appendChild(el('div', 'raillabel', '<span>Period</span>'));
+  const lp = el('div', 'railsec');
+  for (const id of PERIODS) {
+    const b = el('button', 'railitem sub' + (state.period === id ? ' on' : ''), `<span class="ring"></span><span class="lb">${id || 'All periods'}</span>`);
+    b.title = id ? 'Only the deadlines that belong to ' + id + ', wherever they fall in the year' : 'Every period';
+    b.onclick = (ev) => { ev.stopPropagation(); setPeriod(id); };
+    lp.appendChild(b);
+  }
+  rail.appendChild(lp);
   rail.appendChild(el('div', 'railspring'));
   const sw = el('div', 'railsub');
   const sub = el('button', 'subscribe', 'Subscribe in Outlook');
@@ -552,6 +569,7 @@ function buildRail() {
   rail.appendChild(sw);
 }
 
+function setPeriod(id) { state.period = PERIODS.includes(id) ? id : ''; syncState(); buildRail(); buildYearBar(); render(); }
 function setView(id) {
   if (!VIEWS[id]) return;
   state.view = id; state.panel = null; closePanel();
@@ -578,7 +596,10 @@ function buildYearBar() {
     const exL = p.exam_start ? diff(p.start, p.exam_start) / len * 100 : 0;
     const exW = p.exam_start ? (diff(p.exam_start, p.exam_end) + 1) / len * 100 : 0;
     const s = seg(len, PC[p.id] || '#001c3d', p.id, p.id + ': ' + fmt(p.start) + ' to ' + fmt(p.end) + (p.exam_start ? ' · exams ' + fmt(p.exam_start) + ' to ' + fmt(p.exam_end) : ''), exL, exW);
-    clickable(s, () => { state.view = 'grid'; syncState(); buildRail(); render(); gotoMonth(p.start.slice(0, 7)); });
+    if (state.period && state.period !== p.id) s.classList.add('dim');
+    if (state.period === p.id) s.classList.add('sel');
+    s.title += state.period === p.id ? ' · click to show all periods again' : ' · click to show only ' + p.id;
+    clickable(s, () => setPeriod(state.period === p.id ? '' : p.id));
     row.appendChild(s);
     cur = p.end;
   }
@@ -600,12 +621,12 @@ function render() {
   main.innerHTML = ''; main.className = state.view;
   document.getElementById('crumbview').textContent = VIEWS[state.view];
   document.getElementById('viewtitle').textContent = VIEWS[state.view];
-  document.getElementById('viewdesc').textContent = VIEW_DESC[state.view];
+  document.getElementById('viewdesc').textContent = VIEW_DESC[state.view] + (state.period ? ' Showing ' + state.period + ' only.' : '');
   document.title = VIEWS[state.view] + ' · MSP Operations Calendar';
   const evs = filtered();
   if (!evs.length && state.view !== 'lanes') {
     main.appendChild(el('p', 'empty', (state.q ? `No deadlines match "${esc(state.q)}".` : 'No deadlines match this selection.') +
-      `<br>Try turning an office back on, or clearing the search. If you expected something here, <a href="mailto:${CONTACT}?subject=MSP%20Operations%20Calendar">tell us</a>.`));
+      `<br>Try turning an office back on, choosing All periods, or clearing the search. If you expected something here, <a href="mailto:${CONTACT}?subject=MSP%20Operations%20Calendar">tell us</a>.`));
     return;
   }
   if (state.view === 'year') renderYear(main, evs);
@@ -733,6 +754,7 @@ function renderChains(main) {
   for (const ch of chainDefs()) {
     let steps = ch.steps.map(([id, who, label]) => ({ e: byId[id], who, label, id })).filter(x => x.e).sort((a, b) => a.e.date.localeCompare(b.e.date));
     if (!steps.length) continue;
+    if (state.period && !steps.some(s => periodTag(s.e) === state.period)) continue;
     const all = steps.length, past = steps.filter(s => s.e.date < today).length;
     for (const s of steps) if (s.who === 'a' && s.e.date >= today) mine.push({ s, chain: ch.title });
     if (past === all) { done.push(ch.title); continue; }
