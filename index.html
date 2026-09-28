@@ -283,7 +283,12 @@
   .pnotes { margin: 0; font-size: 13px; line-height: 1.55; color: var(--body-2); text-wrap: pretty; }
   .pfeed { border: 1px solid var(--sky); border-radius: var(--r); padding: 10px 0; text-align: center; font-size: 13px; font-weight: 600; color: var(--sky); text-decoration: none; transition: background .12s ease, color .12s ease; }
   .pfeed:hover { background: var(--sky); color: #fff; }
-  .preport { font-size: 12px; color: var(--muted); }
+  .report { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+  .report textarea { width: 100%; min-height: 72px; border: 1px solid var(--line-in); border-radius: var(--r); padding: 8px 10px; font: inherit; font-size: 13px; color: var(--ink); resize: vertical; background: #fff; }
+  .report textarea:focus { outline: none; border-color: var(--sky); box-shadow: 0 0 0 3px var(--sky-ring); }
+  .report .btn { height: 34px; align-self: flex-start; }
+  .report small { font-size: 11px; line-height: 1.5; color: var(--muted); }
+  footer .report { padding-top: 8px; } footer .report textarea { min-height: 56px; }
   .plist { padding: 16px 24px; display: flex; flex-direction: column; gap: 8px; }
   .pitem { display: flex; flex-direction: column; gap: 3px; border: 1px solid var(--line-2); border-radius: var(--r); padding: 10px 12px; cursor: pointer; box-shadow: inset 3px 0 0 var(--c); background: #fff; text-align: left; transition: border-color .12s ease; }
   .pitem:hover { border-color: var(--faint-3); } .pitem .m { font-size: 12px; color: var(--muted); } .pitem .m b { color: var(--navy); } .pitem .t { font-size: 13px; font-weight: 600; line-height: 1.4; text-wrap: pretty; }
@@ -357,7 +362,8 @@
     <main id="main"></main>
     <footer>
       <div class="col"><b>MSP Operations</b><span id="footline"></span></div>
-      <div class="col"><b>Spotted a wrong date?</b><span><a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Tell us</a> and it is fixed at the source, so it corrects in everyone's calendar.</span></div>
+      <div class="col"><b>Spotted a wrong date, or have a comment?</b><span>Tell us and it is fixed at the source, so it corrects in everyone's calendar.</span>
+        <div class="report"><textarea id="foot-txt" rows="2" placeholder="Which deadline, what should it be, or what would help you" aria-label="Your comment"></textarea><button class="btn" id="foot-send" type="button">Send by email</button></div></div>
       <div class="col"><b>Maastricht University</b><span>Faculty of Science and Engineering · Static site, no tracking, no cookies.</span></div>
       <div class="feeds" id="feeds"><span>Feeds:</span></div>
     </footer>
@@ -856,6 +862,10 @@ function renderTimeline(main, evs) {
 }
 
 // ---------- detail panel ----------
+function sendReport(subject, text, footer) {
+  const body = (text.trim() || '(no comment typed)') + '\n\n' + footer;
+  location.href = 'mailto:' + CONTACT + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
 function closePanel() {
   for (const s of document.querySelectorAll('.scrim, .panel')) s.remove();
   if (state.panel) { state.panel = null; syncState(); }
@@ -877,7 +887,10 @@ function openPanel(pn) {
       `<div class="pbody"><div>${rows.map(r => `<div class="prow"><b>${r[0]}</b><span>${esc(r[1])}</span></div>`).join('')}</div>` +
       (e.notes ? `<p class="pnotes">${esc(e.notes)}</p>` : '') +
       `<a class="pfeed" href="https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(webcal)}&name=${encodeURIComponent('MSP ' + (OFFICES[e.office] || e.office))}" target="_blank" rel="noopener">Subscribe to ${OFFICES[e.office] || e.office} in Outlook</a>` +
-      `<a class="preport" href="mailto:${CONTACT}?subject=${encodeURIComponent('Date check: ' + e.title + ' (' + e.date + ')')}">Report a wrong date</a></div>`;
+      `<div class="report"><label class="eyebrow" for="rep-txt">Spotted a wrong date, or have a comment?</label><textarea id="rep-txt" rows="3" placeholder="What should it be, and how do you know?"></textarea>` +
+      `<button class="btn" id="rep-send" type="button">Send by email</button><small>Opens in your mail app, addressed to the Operations desk, with this deadline already in the subject.</small></div></div>`;
+    panel.querySelector('#rep-send').onclick = () => sendReport('Date check: ' + e.title + ' (' + e.date + ')', panel.querySelector('#rep-txt').value,
+      'Deadline: ' + e.title + ' (' + e.date + ', id ' + e.id + ')\nPage: ' + location.origin + location.pathname + '?event=' + encodeURIComponent(e.id));
   } else if (pn.kind === 'day') {
     const list = DB.events.filter(e => e.date === pn.iso && ok(e)), h = holOf(pn.iso), p = perOf(pn.iso);
     panel.innerHTML = head('#0e71bb', 'Week ' + isoWeek(pn.iso) + (p ? ' · ' + p.id : '') + (isExam(pn.iso) ? ' · exam week' : ''), fmtLong(pn.iso), esc(h ? h.label : (list.length ? list.length + ' deadline' + (list.length > 1 ? 's' : '') : 'No deadlines')));
@@ -935,6 +948,7 @@ function init() {
   document.getElementById('printstamp').textContent = 'MSP Operations Calendar · academic year ' + DB.year + ' · printed from data updated ' + DB.generated;
   document.getElementById('footline').textContent = 'Academic year ' + DB.year + ' · data updated ' + fmt(DB.generated, { day: 'numeric', month: 'long', year: 'numeric' }) +
     ' · ' + DB.events.length + ' deadlines, ' + DB.events.filter(e => e.status !== 'confirmed').length + ' awaiting confirmation';
+  document.getElementById('foot-send').onclick = () => sendReport('MSP Operations Calendar: comment', document.getElementById('foot-txt').value, 'Page: ' + location.origin + location.pathname + location.search);
   const feeds = document.getElementById('feeds');
   for (const [f, l] of Object.entries(FEEDS)) { const b = el('button', '', l); b.onclick = () => showSubscribeCard(f); feeds.appendChild(b); }
   const search = document.getElementById('search');
