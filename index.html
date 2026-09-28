@@ -97,6 +97,10 @@
   /* ---------- Page header ---------- */
   .pagehead { display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: flex-end; justify-content: space-between;
     padding: 26px 32px 20px; border-bottom: 1px solid var(--line); }
+  .phbrand { display: flex; align-items: center; gap: 16px; min-width: 0; }
+  /* msp-logo.png is a 472x478 mark on a 1290x730 transparent canvas; crop the padding away */
+  .mspmark { width: 52px; height: 52px; overflow: hidden; flex: 0 0 auto; display: block; }
+  .mspmark img { display: block; height: 79px; margin: -13.5px -44px; }
   .phleft { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
   .crumb { font-size: 12px; color: var(--muted); } .crumb i { font-style: normal; color: var(--faint-3); margin: 0 6px; }
   .crumb a { color: var(--muted); text-decoration: none; } .crumb a:hover { color: var(--navy); }
@@ -320,6 +324,7 @@
   @media (max-width: 860px) {
     .pagehead { padding: 16px 16px 14px; } .ybar { padding: 14px 16px 0; } main { padding: 16px 16px 40px; } footer { padding: 18px 16px; }
     .search { width: 150px; } .phright .btn.print { display: none; }
+    .mspmark { width: 40px; height: 40px; } .mspmark img { height: 61px; margin: -10.5px -34px; }
     .chaingrid { grid-template-columns: 1fr; } .cstep, .cgap { grid-template-columns: 74px 14px minmax(0, 1fr); }
     .panel { width: 100vw; }
     .railtoggle { display: inline-flex; }
@@ -347,10 +352,13 @@
   <aside class="rail" id="rail"></aside>
   <div class="content">
     <header class="pagehead">
-      <div class="phleft">
-        <div class="crumb"><a href="./" id="homelink">Operations Calendar</a><i>/</i><span id="crumbview"></span></div>
-        <h1 id="viewtitle">Year planner</h1>
-        <div class="viewdesc" id="viewdesc"></div>
+      <div class="phbrand">
+        <a class="mspmark" href="./" title="Maastricht Science Programme"><img src="msp-logo.png" alt="Maastricht Science Programme"></a>
+        <div class="phleft">
+          <div class="crumb"><a href="./" id="homelink">Operations Calendar</a><i>/</i><span id="crumbview"></span></div>
+          <h1 id="viewtitle">Year planner</h1>
+          <div class="viewdesc" id="viewdesc"></div>
+        </div>
       </div>
       <div class="phright">
         <input class="search" id="search" type="search" placeholder="Search deadlines" aria-label="Search deadlines">
@@ -954,7 +962,7 @@ function init() {
   const search = document.getElementById('search');
   search.oninput = () => { state.q = search.value.trim().toLowerCase(); render(); };
   document.getElementById('printbtn').onclick = () => { if (state.view !== 'year') setView('year'); setTimeout(() => window.print(), 150); };
-  document.getElementById('homelink').onclick = (ev) => { ev.preventDefault(); state.q = ''; search.value = ''; setView('year'); };
+  for (const a of [document.getElementById('homelink'), document.querySelector('.mspmark')]) a.onclick = (ev) => { ev.preventDefault(); state.q = ''; search.value = ''; setView('year'); };
   const savedRail = (() => { try { return localStorage.getItem('mspcal_rail'); } catch (_) { return null; } })();
   buildRail(); buildYearBar();
   if (savedRail) { railManual = true; setRail(savedRail === 'mini'); } else autoRail();
