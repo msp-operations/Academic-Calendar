@@ -99,8 +99,8 @@
     padding: 26px 32px 20px; border-bottom: 1px solid var(--line); }
   .phbrand { display: flex; align-items: center; gap: 16px; min-width: 0; }
   /* msp-logo.png is a 472x478 mark on a 1290x730 transparent canvas; crop the padding away */
-  .mspmark { width: 52px; height: 52px; overflow: hidden; flex: 0 0 auto; display: block; }
-  .mspmark img { display: block; height: 79px; margin: -13.5px -44px; }
+  .mspmark { width: 56px; height: 56px; overflow: hidden; flex: 0 0 auto; display: block; }
+  .mspmark img { display: block; height: 79px; margin: -11.5px -42px; }
   .phleft { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
   .crumb { font-size: 12px; color: var(--muted); } .crumb i { font-style: normal; color: var(--faint-3); margin: 0 6px; }
   .crumb a { color: var(--muted); text-decoration: none; } .crumb a:hover { color: var(--navy); }
@@ -115,14 +115,14 @@
   .btn:hover { border-color: var(--navy); }
 
   /* ---------- Year bar ---------- */
-  .ybar { padding: 20px 32px 0; display: flex; flex-direction: column; gap: 8px; }
+  .ybar { padding: 28px 32px 0; display: flex; flex-direction: column; gap: 8px; }
   .ybrow { position: relative; display: flex; gap: 2px; }
   .ybseg { flex-basis: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
   .ybseg .bar { position: relative; height: 8px; border-radius: 1px; background: var(--c, var(--gap)); overflow: hidden; }
   .ybseg .bar i { position: absolute; top: 0; bottom: 0; background: var(--sky); }
   .ybseg .lab { font-size: 11px; font-weight: 700; color: var(--navy); }
   .ybtoday { position: absolute; top: -6px; height: 20px; width: 3px; background: var(--gold); }
-  .ybtoday b { position: absolute; top: -17px; left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
+  .ybtoday b { position: absolute; top: -24px; left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
   .ybtoday.late b { left: auto; right: 6px; }
   .ybticks { position: relative; height: 14px; margin-top: -2px; }
   .ybticks span { position: absolute; top: 0; font-size: 10px; color: var(--faint); padding-left: 4px; border-left: 1px solid var(--line-in); line-height: 14px; }
@@ -326,9 +326,9 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
-    .pagehead { padding: 16px 16px 14px; } .ybar { padding: 14px 16px 0; } main { padding: 16px 16px 40px; } footer { padding: 18px 16px; }
+    .pagehead { padding: 16px 16px 14px; } .ybar { padding: 22px 16px 0; } main { padding: 16px 16px 40px; } footer { padding: 18px 16px; }
     .search { width: 150px; } .phright .btn.print { display: none; }
-    .mspmark { width: 40px; height: 40px; } .mspmark img { height: 61px; margin: -10.5px -34px; }
+    .mspmark { width: 44px; height: 44px; } .mspmark img { height: 61px; margin: -8.5px -32px; }
     .chaingrid { grid-template-columns: 1fr; } .cstep, .cgap { grid-template-columns: 74px 14px minmax(0, 1fr); }
     .panel { width: 100vw; }
     .railtoggle { display: inline-flex; }
