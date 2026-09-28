@@ -974,7 +974,7 @@
     },
     {
       "id": "assessment-announced-p1",
-      "title": "Assessment format must be in the syllabus (P1)",
+      "title": "Assessment format must be in the course manual (P1)",
       "office": "exams",
       "staff": "academic",
       "date": "2026-08-24",
@@ -1502,7 +1502,7 @@
     },
     {
       "id": "assessment-announced-p2",
-      "title": "Assessment format must be in the syllabus (P2)",
+      "title": "Assessment format must be in the course manual (P2)",
       "office": "exams",
       "staff": "academic",
       "date": "2026-10-19",
@@ -2542,7 +2542,7 @@
     },
     {
       "id": "assessment-announced-p4",
-      "title": "Assessment format must be in the syllabus (P4)",
+      "title": "Assessment format must be in the course manual (P4)",
       "office": "exams",
       "staff": "academic",
       "date": "2027-01-18",
@@ -3374,7 +3374,7 @@
     },
     {
       "id": "assessment-announced-p5",
-      "title": "Assessment format must be in the syllabus (P5)",
+      "title": "Assessment format must be in the course manual (P5)",
       "office": "exams",
       "staff": "academic",
       "date": "2027-03-22",

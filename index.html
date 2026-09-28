@@ -683,7 +683,7 @@ function chainDefs() {
     const per = periods.find(x => x.id === p.toUpperCase());
     const range = per && per.exam_start ? fmt(per.exam_start) + ' to ' + fmt(per.exam_end) : '';
     return { title: p.toUpperCase() + ' exam + grading cycle', c: PC[p.toUpperCase()], steps: [
-      [`assessment-announced-${p}`, 'a', 'Your assessment format has to be in the syllabus'],
+      [`assessment-announced-${p}`, 'a', 'Your assessment format has to be in the course manual'],
       [`invigilators-${p}`, 's', 'We book the halls, the invigilators and the equipment'],
       [`exam-submit-${p}`, 'a', 'Your exam paper and your digital test are due'],
       [`print-order-${p}`, 's', 'We send your exam to be printed'],

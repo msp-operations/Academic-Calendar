@@ -99,7 +99,7 @@
 # ---------- Exams: academic-staff deadlines ----------
 
 - id: assessment-announced
-  title: Assessment format must be in the syllabus
+  title: Assessment format must be in the course manual
   office: exams
   when: "{P}.start -5wd"
   repeat: P1, P2, P4, P5
