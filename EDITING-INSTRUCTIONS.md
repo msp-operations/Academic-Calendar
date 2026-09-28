@@ -108,8 +108,8 @@ That produces four events, one per listed period, each on its own correct date.
 Four steps, all small, in this order:
 
 1. `index.html`, in the `EDIT HERE` block: add your key and label to `OFFICES`.
-2. The stylesheet in the same file: search for `--off-exams` and copy that line for your key,
-   so the new layer has a colour.
+2. Same block: add your key and a colour to `OC`, and in the stylesheet add a `--yourkey` variable
+   next to `--exams`, so the new layer has a colour.
 3. `index.html` again: add `'msp-<yourkey>.ics': 'Your label',` to `FEEDS`.
 4. Start using `office: yourkey` in `events.yaml`.
 

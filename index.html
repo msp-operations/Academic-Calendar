@@ -4,518 +4,403 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Every operational deadline and rhythm at the Maastricht Science Programme, in one staff calendar with subscribable Outlook feeds.">
-<meta name="theme-color" content="#16243d">
+<meta name="theme-color" content="#001c3d">
 <link rel="icon" type="image/png" href="msp-logo.png">
 <title>MSP Operations Calendar</title>
 <style>
-  /* Open Sans, variable, self-hosted. UM Library uses it as the web stand-in for Thesis Sans.
-     SIL Open Font Licence, so serving it is fine. Two files cover every weight we use. */
-  @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300 800; font-display: swap;
-    src: url('fonts/opensans-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-  @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300 800; font-display: swap;
-    src: url('fonts/opensans-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  /* Source Sans 3, variable, self-hosted (SIL Open Font Licence). Two files cover latin and latin-ext. */
+  @font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 400 700; font-display: swap;
+    src: url('fonts/sourcesans3-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 400 700; font-display: swap;
+    src: url('fonts/sourcesans3-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
+  /* ---------- Tokens (design handoff, 28 Sep 2026) ---------- */
   :root {
-    --navy: #16243d; --navy-2: #1f3357; --ink: #1c2333; --paper: #f4f6fa;
-    --card: #ffffff; --line: #e2e8f2; --muted: #64748b;
-    /* UM Library accessible palette, library.maastrichtuniversity.nl/library-ux-elementen */
-    --accent: #007fad; --accent-ink: #00688d; --um-blue: #001c3d;
-    /* UM tokens, read off the live um_base theme: sky-blue + neutrals scales,
-       4px default radius, and essentially no shadow on cards. */
-    --um-sky-500: #0e71bb; --um-sky-900: #c5e7ff; --um-sky-950: #e4f3ff; --um-sky-980: #f5faff;
-    --um-n25: #f5f5f5; --um-n50: #ebedef; --um-n100: #b2bbc5; --um-n500: #66778b; --um-n700: #334964;
-    --um-r: 4px; --um-r-s: 2px;
-    --exams: #0284c7; --btr: #059669; --boe: #7c3aed; --scheduling: #d97706;
-    --esd: #0d9488; --alumni: #db2777; --general: #64748b;
-    --p1: #6366f1; --p2: #0891b2; --p3: #64748b; --p4: #d97706; --p5: #be185d; --p6: #059669;
-    --gold: #af6500;   /* UM sunset-orange-500, 4.48:1. Was #d4a017 at 2.38:1 */
-    --shadow-sm: none;
-    --shadow-md: 0 1px 3px rgba(0,28,61,.10);
-    --shadow-lg: 0 24px 60px rgba(22,36,61,.32);
-    --pagew: 1420px;
-    --rail-w: 236px; --rail-bg: var(--um-blue); --rail-mut: #8ea4c6;
+    --navy: #001c3d; --navy-2: #2d5a8a; --navy-3: #9aabbf;
+    --sky: #0e71bb; --sky-tint: #e8f3fb; --sky-ring: #e4f3ff; --sky-sel: #c5e7ff; --sky-next: #f2f8fd; --sky-week: #eaf2fa;
+    --ink: #1c2333; --body-2: #334964; --body-3: #4a5b70; --muted: #66778b; --faint: #8593a6; --faint-2: #9aa6b5; --faint-3: #b2bbc5;
+    --line: #ebedef; --line-2: #e3e7ec; --line-3: #eceff2; --line-4: #eef0f3; --line-in: #d5dbe2;
+    --surface: #f5f7f9; --holiday: #eef6f0; --gap: #e9ecf0;
+    --rail-w: 220px; --rail-txt: #b9c6d9; --rail-lab: #8ea4c6; --rail-div: rgba(255,255,255,.12); --rail-hover: rgba(255,255,255,.06);
+    --gold: #af6500; --gold-txt: #8a4f00; --gold-bg: #fffaf1; --gold-bd: #ecd9b8; --gold-cell: #fdefd6; --gold-tag: #fbeed6;
+    --p1: #001c3d; --p2: #2d5a8a; --p3: #9aabbf; --p4: #001c3d; --p5: #2d5a8a; --p6: #9aabbf;
+    --exams: #0e71bb; --esd: #15817e; --scheduling: #b8741a; --btr: #2e7d5b; --boe: #6a50a7; --alumni: #b03f6e; --general: #66778b;
+    --scrim: rgba(0,28,61,.18); --panel-shadow: 0 0 40px rgba(0,28,61,.18);
+    --r: 4px; --r-s: 3px;
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'TheSans', 'Open Sans', 'Segoe UI', system-ui, sans-serif; color: var(--ink);
-    background: #fff;
-    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body { margin: 0; background: #fff; color: var(--ink); font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 14px;
+    line-height: 1.45; -webkit-font-smoothing: antialiased; font-variant-numeric: tabular-nums; }
+  a { color: var(--sky); } a:hover { color: var(--navy); }
+  ::selection { background: var(--sky-sel); }
+  input::placeholder { color: #7a889a; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid #df362f; outline-offset: 2px; }
+  [role="button"] { cursor: pointer; }
 
+  .layout { display: flex; min-height: 100vh; }
+  .content { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
 
-  header { background: #fff; border-bottom: 1px solid var(--um-n50); position: sticky; top: 0; z-index: 40; }
-  .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 24px;
-    padding: 10px 24px; max-width: var(--pagew); margin: 0 auto; }
-  /* the source PNG carries a lot of transparent padding, so crop to the mark itself */
-  /* msp-logo.png is a 472x478 mark centred in a 1290x730 canvas, so it is mostly transparent
-     padding. Render at 76px and pull the padding back in, leaving a 50px mark on a 50px footprint. */
-  .topbar img.msp { height: 76px; width: auto; margin: -13px -42px; flex: 0 0 auto; }
-  .homelink { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; cursor: pointer; flex: 0 1 auto; min-width: 0; }
-  .homelink:hover h1 { color: var(--um-sky-500); }
-  .homelink h1 { transition: color .15s ease; }
-  .titleblock { text-align: left; min-width: 0; }
-  .titleblock .kicker { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--um-n500); margin-bottom: 1px; white-space: nowrap; }
-  .titleblock h1 { font-size: 1.22rem; font-weight: 700; color: var(--um-blue); letter-spacing: 0; line-height: 1.15; white-space: nowrap; }
-
-  #printstamp { display: none; max-width: var(--pagew); margin: 0 auto; padding: 4px 24px 0;
-    font-size: .78rem; font-weight: 700; color: var(--um-blue); }
-  .periodband { max-width: var(--pagew); margin: 0 auto; padding: 12px 24px 10px; }
-  .ybstrip { position: relative; display: flex; height: 30px; border-radius: var(--um-r-s); overflow: hidden;
-    border: 1px solid var(--um-n50); background: var(--um-n25); }
-  .ybgap { background: repeating-linear-gradient(90deg, #f2f4f6 0 6px, #eceff2 6px 12px); }
-  .ybseg { position: relative; background: var(--c); display: flex; align-items: center; justify-content: center;
-    cursor: pointer; min-width: 14px; transition: filter .15s ease; }
-  .ybseg:hover { filter: brightness(1.12); }
-  .ybseg .yblab { position: relative; z-index: 2; color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .02em;
-    text-shadow: 0 1px 1px rgba(0,0,0,.25); pointer-events: none; }
-  .ybseg .ybexam { position: absolute; top: 0; bottom: 0; z-index: 1; background: rgba(0,28,61,.42);
-    border-left: 1px solid rgba(255,255,255,.5); border-right: 1px solid rgba(255,255,255,.5); }
-  .ybseg.unconfirmed { background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.28) 0 4px, transparent 4px 8px); }
-  .ybtoday { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--um-blue); z-index: 3; }
-  .ybtoday::after { content: ""; position: absolute; top: -3px; left: -3px; width: 8px; height: 8px;
-    border-radius: 50%; background: var(--um-blue); }
-  .ybfoot { display: flex; align-items: baseline; justify-content: space-between; gap: 18px;
-    margin-top: 6px; font-size: .72rem; color: var(--um-n500); }
-  .ybfoot .ybnow b { color: var(--um-blue); font-weight: 700; }
-  .ybfoot .ybkey { display: inline-flex; align-items: center; gap: 6px; font-size: .68rem; white-space: nowrap; }
-  .ybfoot .ybkey .kx { width: 14px; height: 9px; background: rgba(0,28,61,.42); border-radius: 1px; display: inline-block; }
-
-  .toolbar-inner { display: flex; flex-wrap: nowrap; gap: 8px; align-items: center; flex: 0 0 auto; }
-  .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: var(--um-r); padding: 5px 14px; font-size: .8rem;
-    font-weight: 600; cursor: pointer; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; user-select: none;
-    box-shadow: var(--shadow-sm); transition: all .15s ease; font-family: inherit; }
-  .chip:hover { border-color: var(--um-n100); }
-  .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); opacity: .35; transition: opacity .15s; }
-  .chip.on { color: var(--ink); border-color: color-mix(in srgb, var(--c, var(--general)) 55%, white); background: color-mix(in srgb, var(--c, var(--general)) 8%, white); }
-  .chip.on .dot { opacity: 1; }
-  .spacer { flex: 1; }
-  .search { border: 1.5px solid var(--line); border-radius: var(--um-r); padding: 5px 14px; font-size: .8rem; font-family: inherit;
-    color: var(--ink); background: var(--card); box-shadow: var(--shadow-sm); width: 150px; transition: all .15s ease; }
-  .search:focus { outline: none; border-color: var(--accent); width: 210px; }
-  .search::placeholder { color: #616f86; }
-  .viewtoggle { display: flex; background: #e7ecf4; border-radius: var(--um-r); padding: 3px; gap: 2px; }
-  .viewtoggle button { border: 0; background: transparent; padding: 5px 14px; font-size: .8rem; font-weight: 600; cursor: pointer;
-    color: var(--muted); border-radius: var(--um-r-s); font-family: inherit; transition: all .15s ease; }
-  .viewtoggle button.on { background: #fff; color: var(--navy); box-shadow: var(--shadow-sm); }
-  .subscribe { font-size: .8rem; color: #fff; background: var(--um-sky-500); text-decoration: none;
-    font-weight: 700; padding: 8px 18px; border-radius: var(--um-r); display: inline-flex; align-items: center; gap: 7px;
-    box-shadow: var(--shadow-sm); transition: all .15s ease; }
-  .subscribe:hover { filter: brightness(1.08); }
-  .subscribe svg { width: 13px; height: 13px; }
-
-  main { max-width: var(--pagew); margin: 0 auto 60px; padding: 0 24px; }
-
-  /* ---------- Left rail, modelled on the UM MyApplication portal ---------- */
-  .layout { display: flex; align-items: flex-start; }
-  .content { flex: 1 1 auto; min-width: 0; }
-  .rail { flex: 0 0 var(--rail-w); width: var(--rail-w); position: sticky; top: 0; align-self: flex-start;
-    height: 100vh; overflow-y: auto; overflow-x: hidden; z-index: 45;
-    background: var(--rail-bg); color: #fff; padding: 22px 0 26px;
-    display: flex; flex-direction: column;
-    transition: flex-basis .2s ease, width .2s ease; }
-  .rail::-webkit-scrollbar { width: 6px; }
-  .rail::-webkit-scrollbar-thumb { background: rgba(255,255,255,.16); border-radius: 3px; }
-
-  .railtop { padding: 0 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-  .raillogo { width: 170px; height: auto; filter: brightness(0) invert(1); flex: 0 1 auto; min-width: 0; }
-  .railtoggle { background: transparent; border: 0; color: rgba(255,255,255,.5); cursor: pointer;
-    border-radius: var(--um-r); width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
-    font-family: inherit; flex: 0 0 auto; transition: color .15s ease, background .15s ease; }
-  .railtoggle:hover { color: #fff; background: rgba(255,255,255,.12); }
-  .railtoggle svg { width: 12px; height: 12px; transition: transform .2s ease; }
-  .railtitle { padding: 0 20px 16px; font-size: 1.06rem; font-weight: 700; letter-spacing: -.015em; line-height: 1.2; }
-
-  .railyear { margin: 0 20px 26px; background: #fff; color: var(--rail-bg); border-radius: var(--um-r);
-    display: flex; align-items: center; padding: 10px 12px; font-size: .715rem; font-weight: 600; gap: 10px; }
-  .railyear .ry1 { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .railyear .rydiv { width: 1px; align-self: stretch; background: #c3cede; flex: 0 0 auto; }
-  .railyear .ry2 { flex: 0 0 auto; color: #3d4d68; }
-
-  .railsec { margin-bottom: 24px; }
-  .railsechead { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px;
-    background: transparent; border: 0; color: #fff; font-family: inherit; font-size: .84rem; font-weight: 700;
-    padding: 0 20px 11px; cursor: pointer; text-align: left; }
-  .railsechead svg { width: 13px; height: 13px; opacity: .8; flex: 0 0 auto; transition: transform .2s ease; }
-  .railsec.closed .railsechead svg { transform: rotate(-90deg); }
-  .railsec.closed .railseclist { display: none; }
-
-  .railitem { width: 100%; display: flex; align-items: center; gap: 12px; background: transparent; border: 0;
-    color: #fff; font-family: inherit; font-size: .815rem; font-weight: 700; text-align: left; line-height: 1.3;
-    padding: 8px 20px; cursor: pointer; transition: background .12s ease, color .12s ease; }
-  .railitem:hover { background: rgba(255,255,255,.08); }
-  .railitem .lb { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .railitem .ct { flex: 0 0 auto; font-size: .68rem; font-weight: 700; color: var(--rail-mut); }
-  .railitem.on .ct { color: rgba(255,255,255,.68); }
-  .railitem.nav:not(.on) { color: var(--rail-mut); }
-
-  /* State lives in the box, the way the portal does it */
-  .railbox { width: 17px; height: 17px; flex: 0 0 auto; box-sizing: border-box; display: inline-flex;
-    align-items: center; justify-content: center; transition: background .13s ease, border-color .13s ease; }
-  .railbox svg { width: 11px; height: 11px; opacity: 0; transition: opacity .13s ease; }
-  .railbox.sq { border-radius: 3px; background: #fff; border: 2px solid var(--c, #fff); }
-  .railitem.on .railbox.sq { background: var(--c, #fff); border-color: var(--c, #fff); color: #fff; }
-  .railitem.on .railbox.sq svg { opacity: 1; }
-  .railbox.ci { border-radius: 50%; background: transparent; border: 2px solid var(--rail-mut); }
-  .railitem.on .railbox.ci { background: #fff; border-color: #fff; }
-  .railitem.on .railbox.ci::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--rail-bg); }
-
-  .railspring { flex: 1 1 auto; min-height: 14px; }
-  .railsub { padding: 0 20px; }
-  .railsub .subscribe { width: 100%; justify-content: center; background: var(--accent); color: #fff;
-    border-radius: var(--um-r); font-size: .78rem; padding: 10px 0; box-shadow: none; }
-  .railsub .subscribe:hover { background: #fff; color: var(--um-blue); transform: none; }
-
-  /* Collapsed: still a readable colour key, one click brings it back */
-  .rail.mini { cursor: pointer; padding-top: 16px; }
-  .rail.mini .railtitle, .rail.mini .railyear, .rail.mini .railsechead,
-  .rail.mini .railitem .lb, .rail.mini .railitem .ct, .rail.mini .railsub .subscribe span { display: none; }
-  .rail.mini .railtop { padding: 0 0 14px; justify-content: center; }
-  .rail.mini .railtoggle { background: rgba(255,255,255,.14); }
-  .rail.mini .raillogo { display: none; }
-  .rail.mini .railtoggle svg { transform: rotate(180deg); }
-  .rail.mini .railsec { margin-bottom: 14px; }
-  .rail.mini .railsec.closed .railseclist { display: block; }
+  /* ---------- Sidebar ---------- */
+  .rail { width: var(--rail-w); flex: 0 0 var(--rail-w); background: var(--navy); color: #fff; display: flex; flex-direction: column;
+    padding: 26px 0 24px; position: sticky; top: 0; height: 100vh; overflow-y: auto; overflow-x: hidden; z-index: 30;
+    transition: width .2s ease, flex-basis .2s ease; }
+  .rail::-webkit-scrollbar { width: 6px; } .rail::-webkit-scrollbar-thumb { background: rgba(255,255,255,.16); border-radius: 3px; }
+  .railtop { display: flex; align-items: flex-start; justify-content: space-between; padding: 0 22px; margin-bottom: 24px; gap: 8px; }
+  .raillogo { width: 148px; height: auto; filter: brightness(0) invert(1); display: block; }
+  .railtoggle { display: none; background: transparent; border: 1px solid var(--rail-div); color: var(--rail-lab); width: 26px; height: 26px;
+    border-radius: var(--r); cursor: pointer; align-items: center; justify-content: center; flex: 0 0 auto; padding: 0; font-size: 12px; }
+  .railtoggle:hover { color: #fff; background: var(--rail-hover); }
+  .brand { padding: 0 22px 22px; margin-bottom: 22px; border-bottom: 1px solid var(--rail-div); display: flex; flex-direction: column; gap: 3px; }
+  .brand .eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--rail-lab); }
+  .brand .name { font-size: 17px; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; }
+  .brand .yr { margin-top: 8px; font-size: 12px; color: var(--rail-txt); }
+  .raillabel { display: flex; justify-content: space-between; align-items: baseline; padding: 0 22px 8px;
+    font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--rail-lab); }
+  .raillabel button { background: transparent; border: 0; padding: 0; font-size: 11px; color: var(--rail-lab); cursor: pointer; letter-spacing: 0; text-transform: none; }
+  .raillabel button:hover { color: #fff; }
+  .railsec { display: flex; flex-direction: column; margin-bottom: 24px; }
+  .railitem { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; background: transparent; border: 0;
+    padding: 8px 22px; font-size: 14px; color: var(--rail-txt); cursor: pointer; transition: background .12s ease, color .12s ease; }
+  .railitem:hover { background: var(--rail-hover); }
+  .railitem.nav.on { color: #fff; font-weight: 600; background: rgba(255,255,255,.07); box-shadow: inset 3px 0 0 #fff; }
+  .railitem.sub { font-size: 13px; padding: 6px 22px; color: var(--rail-lab); }
+  .railitem.sub.on { color: #fff; font-weight: 600; }
+  .railitem .lb { flex: 1 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .railitem .ct { font-size: 12px; color: var(--rail-lab); }
+  .railitem .odot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; border: 2px solid var(--c); background: transparent; }
+  .railitem.on .odot { background: var(--c); }
+  .railitem .ring { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--rail-lab); display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+  .railitem .ring::after { content: ""; width: 4px; height: 4px; border-radius: 50%; background: transparent; }
+  .railitem.on .ring { border-color: #fff; } .railitem.on .ring::after { background: #fff; }
+  .railspring { flex: 1 1 auto; min-height: 24px; }
+  .railsub { margin: 0 22px; padding-top: 20px; border-top: 1px solid var(--rail-div); display: flex; flex-direction: column; gap: 10px; }
+  .subscribe { display: block; background: var(--sky); border-radius: var(--r); padding: 10px 0; text-align: center; font-size: 13px; font-weight: 600;
+    color: #fff; text-decoration: none; border: 0; cursor: pointer; width: 100%; transition: background .15s ease, color .15s ease; }
+  .subscribe:hover { background: #fff; color: var(--navy); }
+  .railsub small { font-size: 11px; line-height: 1.5; color: var(--rail-lab); }
+  /* Collapsed rail: phones, and a manual choice anywhere */
+  .rail.mini { --rail-w: 56px; padding: 14px 0 16px; cursor: pointer; }
+  .rail.mini .raillogo, .rail.mini .brand, .rail.mini .raillabel, .rail.mini .railitem .lb, .rail.mini .railitem .ct,
+  .rail.mini .railsub small, .rail.mini .railitem.nav, .rail.mini .railitem.sub .ring { display: none; }
+  .rail.mini .railtop { padding: 0; justify-content: center; margin-bottom: 14px; }
+  .rail.mini .railtoggle { display: inline-flex; }
   .rail.mini .railitem { justify-content: center; padding: 7px 0; }
-  .rail.mini .railsub { padding: 0 8px; }
-  .rail.mini .railsub .subscribe { padding: 9px 0; }
+  .rail.mini .railsec { margin-bottom: 12px; }
+  .rail.mini .railsub { margin: 0 8px; padding-top: 12px; }
+  .rail.mini .subscribe { font-size: 0; padding: 9px 0; }
+  .rail.mini .subscribe::before { content: "\2709"; font-size: 14px; }
 
-  /* ---------- Year planner ---------- */
-  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 18px; font-size: .74rem; color: var(--muted); font-weight: 600; }
-  .legend .lg { display: inline-flex; align-items: center; gap: 6px; }
-  .legend .sw { width: 16px; height: 10px; border-radius: 3px; display: inline-block; }
-  .legend .swx { background: #dcf1fa; border: 1px solid #bfe3f2; }
-  .legend .swh { background: #e3f5e9; border: 1px solid #c9e9d6; }
-  .legend .dotc { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); display: inline-block; }
-  .legend .dotu { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--muted); display: inline-block; box-sizing: border-box; }
-  .legend .swdue { width: 16px; height: 4px; border-radius: 2px; display: inline-block;
-    background: var(--gold); }
-  .dei { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
-  .dei .deilabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em;
-    color: var(--um-blue); margin-bottom: 6px; }
-  .dei .deichip { display: inline-block; background: var(--paper); border: 1px solid var(--line); border-radius: var(--um-r-s);
-    padding: 2px 10px; font-size: .76rem; margin: 0 4px 4px 0; }
-  .dei .deimonth { font-size: .72rem; color: var(--muted); margin-top: 3px; }
+  /* ---------- Page header ---------- */
+  .pagehead { display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: flex-end; justify-content: space-between;
+    padding: 26px 32px 20px; border-bottom: 1px solid var(--line); }
+  .phleft { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .crumb { font-size: 12px; color: var(--muted); } .crumb i { font-style: normal; color: var(--faint-3); margin: 0 6px; }
+  .crumb a { color: var(--muted); text-decoration: none; } .crumb a:hover { color: var(--navy); }
+  .pagehead h1 { margin: 0; font-size: 26px; line-height: 1.2; font-weight: 700; letter-spacing: -.015em; color: var(--navy); }
+  .viewdesc { font-size: 14px; color: var(--body-3); text-wrap: pretty; }
+  .phright { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+  .search { width: 240px; height: 36px; border: 1px solid var(--line-in); border-radius: var(--r); padding: 0 12px; font: inherit; font-size: 13px;
+    color: var(--ink); outline: none; background: #fff; transition: border-color .12s ease, box-shadow .12s ease; }
+  .search:focus { border-color: var(--sky); box-shadow: 0 0 0 3px var(--sky-ring); }
+  .btn { height: 36px; display: inline-flex; align-items: center; padding: 0 14px; border: 1px solid var(--line-in); border-radius: var(--r);
+    font-weight: 600; color: var(--navy); background: #fff; cursor: pointer; transition: border-color .12s ease; }
+  .btn:hover { border-color: var(--navy); }
 
-  .yearwrap { overflow-x: auto; margin-top: 12px; padding-bottom: 8px;
-    width: min(calc(100vw - 40px - var(--rail-w)), 1880px); position: relative; left: 50%; transform: translateX(-50%);
-    transition: width .2s ease; }
-  .yeargrid { display: grid; grid-template-columns: 58px repeat(31, minmax(31px, 1fr)); gap: 3px; min-width: 1040px; }
-  .ymonth { background: var(--um-blue); color: #fff; border-radius: var(--um-r); display: flex;
-    flex-direction: column; align-items: center; justify-content: center; font-weight: 800; font-size: .8rem; letter-spacing: .07em;
-    box-shadow: var(--shadow-sm); cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
-  .ymonth:hover { background: var(--um-sky-300, #00497d); }
-  .ymonth small { font-weight: 500; color: #b8c4d8; font-size: .62rem; letter-spacing: .02em; }
-  .yday { background: var(--card); border: 1px solid var(--line); border-radius: var(--um-r); min-height: 42px; padding: 3px 4px; overflow: hidden;
-    cursor: pointer; transition: border-color .12s ease, box-shadow .12s ease; }
-  .yday:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
-  .yday.out { background: transparent; border-color: transparent; cursor: default; box-shadow: none; }
-  .yday.wknd { background: #edf0f6; }
-  .yday.exam { background: #dcf1fa; border-color: #bfe3f2; }
-  .yday.p1, .day.p1 { border-top: 3px solid var(--p1); }
-  .yday.p2, .day.p2 { border-top: 3px solid var(--p2); }
-  .yday.p3, .day.p3 { border-top: 3px solid var(--p3); }
-  .yday.p4, .day.p4 { border-top: 3px solid var(--p4); }
-  .yday.p5, .day.p5 { border-top: 3px solid var(--p5); }
-  .yday.p6, .day.p6 { border-top: 3px solid var(--p6); }
-  .yday.hol, .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
-  /* Gold bar: academic staff must submit something to the office by this day */
-  .yday, .day { position: relative; }
-  .yday.due::after, .day.due::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; box-shadow: none;
-    background: var(--gold);
-    box-shadow: 0 0 8px rgba(255, 196, 40, .7); border-radius: 0 0 5px 5px; }
-  @keyframes shine { from { background-position: 200% 0; } to { background-position: -200% 0; } }
-  .yday.today { outline: 2px solid var(--accent); outline-offset: -2px; }
-  .yday .yhead { font-size: .56rem; color: var(--muted); white-space: nowrap; }
-  /* Week number sits on its own line at the foot of the cell. Monday cells reserve the space so
-     the event dots can never reach it, which is what used to collide with the day number. */
-  .yday { position: relative; }
-  /* On Mondays the week number replaces the weekday, because only Mondays carry one.
-     Below ~1500px a day cell is about 26px wide, which cannot hold two numbers at a readable
-     size, so narrow screens fall back to the weekday and lose the week number rather than
-     truncating the day number. */
-  .yday .wk { position: static; font-size: .55rem; font-weight: 700; letter-spacing: 0; }
-  .yday .wk + .dw { display: none; }
-  @media (max-width: 1500px) {
-    .yday .wk { display: none; }
-    .yday .wk + .dw { display: inline; }
-  }
-  .yday .yhead b { color: var(--ink); font-size: .68rem; font-weight: 700; }
-  .yday.today .yhead b { color: var(--accent-ink); }
-  .pchip { display: inline-block; background: var(--navy); color: #fff; border-radius: 4px; padding: 0 4px; font-weight: 800; font-size: .58rem; margin-top: 2px; letter-spacing: .02em; }
-  .ydots { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; }
-  .ydot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, var(--general)); cursor: pointer; box-sizing: border-box; transition: transform .1s ease; }
-  .ydot.unconfirmed { background: transparent; border: 2px solid var(--c, var(--general)); }
-  .ydot:hover { transform: scale(1.4); }
-  .yearnote { font-size: .78rem; color: var(--muted); margin-top: 12px; }
-  .wk { position: absolute; top: 2px; right: 3px; font-size: .54rem; font-weight: 800; color: var(--accent-ink); }
-  .day .wk { font-size: .6rem; top: 4px; right: 5px; }
+  /* ---------- Year bar ---------- */
+  .ybar { padding: 20px 32px 0; display: flex; flex-direction: column; gap: 8px; }
+  .ybrow { position: relative; display: flex; gap: 2px; }
+  .ybseg { flex-basis: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .ybseg .bar { position: relative; height: 8px; border-radius: 1px; background: var(--c, var(--gap)); overflow: hidden; }
+  .ybseg .bar i { position: absolute; top: 0; bottom: 0; background: var(--sky); }
+  .ybseg .lab { font-size: 11px; font-weight: 700; color: var(--navy); }
+  .ybtoday { position: absolute; top: -4px; height: 16px; width: 2px; background: var(--gold); }
+  .ybticks { position: relative; height: 14px; margin-top: -2px; }
+  .ybticks span { position: absolute; top: 0; font-size: 10px; color: var(--faint); padding-left: 4px; border-left: 1px solid var(--line-in); line-height: 14px; }
+  .ybstatus { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; font-size: 12px; color: var(--muted); }
+  .ybstatus .lgs { display: flex; gap: 16px; }
+  .lg { display: inline-flex; align-items: center; gap: 6px; }
+  .lg i { display: inline-block; }
 
-  /* Coming-up strip */
-  .upwrap { margin-top: 16px; }
-  .uplabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent-ink); margin-bottom: 6px; }
-  .uprow { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; }
-  .upcard { min-width: 190px; flex: 0 0 auto; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
-    border-radius: var(--um-r); padding: 8px 12px; cursor: pointer; box-shadow: var(--shadow-sm); transition: transform .12s ease, box-shadow .12s ease; }
-  .upcard:hover { border-color: var(--um-n100); }
-  .upcard.unconfirmed { border-style: dashed; border-left-style: solid; }
-  .upcard .upwhen { display: block; font-size: .7rem; color: var(--muted); font-weight: 600; }
-  .upcard .upwhen b { color: var(--accent-ink); }
-  .upcard .uptitle { display: block; font-size: .8rem; font-weight: 600; margin-top: 2px; }
+  /* ---------- Main ---------- */
+  main { padding: 22px 32px 48px; display: flex; flex-direction: column; }
+  main.chains { padding-top: 26px; gap: 26px; max-width: 1240px; }
+  main.lanes { gap: 14px; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .eyebrow.gold { color: var(--gold-txt); }
+  .empty { color: var(--muted); font-size: 14px; padding: 40px 0; text-align: center; }
+  #printstamp { display: none; padding: 4px 32px 0; font-size: 12px; font-weight: 700; color: var(--navy); }
 
-  /* Key-deadlines chain view */
-  .chainsnote { font-size: .8rem; color: var(--muted); margin-top: 16px; }
-  .chains { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 16px; margin-top: 14px; }
-  .chain { background: var(--card); border: 1px solid var(--line); border-radius: var(--um-r); padding: 16px 20px; min-width: 0; overflow-wrap: anywhere; box-shadow: var(--shadow-sm); }
-  .chain h3 { font-size: .92rem; font-weight: 800; color: var(--navy); letter-spacing: -.01em; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
-  .chain .csw { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
-  .csteps { position: relative; margin-left: 7px; border-left: 2px solid var(--line); padding: 2px 0 2px 18px; }
-  .cstep { position: relative; padding: 7px 0; cursor: pointer; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-  .cstep::before { content: ""; position: absolute; left: -25px; top: 13px; width: 12px; height: 12px; border-radius: 50%;
-    background: var(--navy-2); border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--line); }
-  .cstep.academic::before { background: var(--gold); }
-  .cstep:hover .clabel { color: var(--navy); }
-  .cstep.past { opacity: .5; }
-  .cstep .cdate { min-width: 92px; flex: 0 0 auto; font-weight: 700; font-size: .8rem; color: var(--navy); font-variant-numeric: tabular-nums; }
-  .cstep .clabel { font-size: .84rem; line-height: 1.4; flex: 1 1 190px; min-width: 0; }
-  .cstep .cwho { display: inline-block; font-size: .6rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
-    padding: 1px 7px; border-radius: 4px; margin-right: 7px; background: #e7ecf4; color: var(--navy); }
-  .cstep.academic .cwho { background: #fdf0cd; color: #8a5d05; }
-  .cstep.week::before { background: var(--exams); }
-  .cstep.week .cwho { background: #dcf1fa; color: #036184; }
-  .cgap { position: relative; font-size: .66rem; color: #616f86; padding: 1px 0 1px 2px; }
-  .cgap::before { content: "\2193"; position: absolute; left: -22px; color: #b6c2d4; font-style: normal; }
+  /* Key deadline cards */
+  .keyblock { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
+  .keygrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .keycard { border: 1px solid var(--gold-bd); background: var(--gold-bg); border-radius: var(--r); padding: 14px 16px 14px 18px; display: flex; flex-direction: column;
+    gap: 6px; cursor: pointer; box-shadow: inset 4px 0 0 var(--gold); transition: border-color .12s ease; text-align: left; }
+  .keycard:hover { border-color: var(--gold); }
+  .keycard .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .keycard .when { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .keycard .rel { font-size: 12px; font-weight: 700; white-space: nowrap; padding: 2px 8px; border-radius: var(--r-s); color: var(--gold-txt); }
+  .keycard .rel.soon { background: var(--gold); color: #fff; }
+  .keycard .kind { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-txt); }
+  .keycard .title { font-size: 13px; line-height: 1.4; color: var(--body-2); text-wrap: pretty; }
 
-  /* Subscribe options card */
-  .subrow { display: block; width: 100%; text-align: left; border: 1.5px solid var(--line); border-radius: var(--um-r); padding: 10px 14px;
-    margin-bottom: 8px; cursor: pointer; background: var(--paper); text-decoration: none; color: var(--ink);
-    font-family: inherit; font-size: .88rem; font-weight: 600; transition: all .15s ease; }
-  .subrow:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
-  .subrow small { display: block; color: var(--muted); font-weight: 400; font-size: .74rem; margin-top: 1px; }
-  .subrow.primary { border-color: var(--accent); background: #f0faff; }
+  /* Year grid */
+  .ywrap { overflow-x: auto; }
+  .ygrid { min-width: 1040px; display: flex; flex-direction: column; gap: 1px; background: var(--line-2); border: 1px solid var(--line-2); }
+  .yrow { display: grid; grid-template-columns: 56px repeat(31, minmax(0, 1fr)); gap: 1px; }
+  .ymonth { background: var(--surface); display: flex; flex-direction: column; justify-content: center; padding-left: 10px; cursor: pointer; }
+  .ymonth b { font-size: 13px; font-weight: 700; color: var(--navy); } .ymonth small { font-size: 10px; color: var(--muted); }
+  .ycell { position: relative; height: 54px; padding: 4px 4px 0; background: #fff; display: flex; flex-direction: column; gap: 1px; cursor: pointer;
+    box-shadow: inset 0 2px 0 var(--top, transparent), inset 0 0 0 2px var(--ring, transparent); transition: box-shadow .12s ease; }
+  .ycell:hover { box-shadow: inset 0 0 0 1px var(--sky); }
+  .ycell.out { background: transparent; cursor: default; box-shadow: none; } .ycell.out:hover { box-shadow: none; }
+  .ycell.wknd { background: var(--surface); } .ycell.hol { background: var(--holiday); } .ycell.exam { background: var(--sky-tint); } .ycell.key { background: var(--gold-cell); }
+  .ycell .n { flex-shrink: 0; align-self: flex-start; font-size: 12px; font-weight: 700; line-height: 1.1; padding: 1px 3px; margin: -1px -3px 0; border-radius: 2px; color: var(--ink); }
+  .ycell.wknd .n { color: var(--faint-2); } .ycell.today .n { color: var(--sky); } .ycell.key .n { color: #fff; background: var(--gold); }
+  .ycell .dw { flex-shrink: 0; font-size: 9px; line-height: 1.2; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; overflow: hidden; margin: 0 -4px; padding: 0 2px 0 4px; color: var(--faint-2); }
+  .ycell .dw.mon { color: var(--sky); } .ycell .dw.key { color: var(--gold-txt); }
+  .ycell .dots { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; max-height: 16px; overflow: hidden; }
+  .ycell .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--c); border: 1.5px solid var(--c); }
+  .ycell .dots i.unc { background: transparent; }
+  .ycell .due { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--gold); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-top: 12px; font-size: 12px; color: var(--muted); }
+  .legend .key { color: var(--gold-txt); font-weight: 600; }
 
-  /* ---------- Month grid ---------- */
-  .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
-  .dowhead { font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 700; text-align: center; padding: 4px 0 2px; }
-  .day { background: var(--card); border: 1px solid var(--line); border-radius: var(--um-r); min-height: 78px; padding: 5px 6px; font-size: .72rem; overflow: hidden; transition: box-shadow .12s ease; }
-  .day:hover { box-shadow: var(--shadow-sm); }
-  .day .num { font-weight: 700; color: var(--muted); }
-  .day.wknd { background: #edf0f6; }
-  .day.exam { background: #dcf1fa; border-color: #bfe3f2; }
-  .day.exam .num::after { content: " · exam wk"; font-weight: 400; font-size: .62rem; color: var(--exams); }
-  .day.hol { background: #e3f5e9; border-color: #c9e9d6; }
-  .day.out { background: transparent; border-color: transparent; box-shadow: none; }
-  .day.today { outline: 2px solid var(--accent); outline-offset: -2px; }
-  .day.today .num { color: var(--accent-ink); }
-  .pill { display: block; margin-top: 3px; padding: 2px 6px; border-radius: var(--um-r); border-left: 3px solid var(--c, var(--general));
-    background: color-mix(in srgb, var(--c, var(--general)) 10%, white); color: var(--ink); white-space: nowrap; overflow: hidden;
-    text-overflow: ellipsis; cursor: pointer; transition: background .12s ease; }
-  .pill.unconfirmed { border: 1px dashed var(--c, var(--general)); border-left-width: 3px; }
-  .pill:hover { background: color-mix(in srgb, var(--c, var(--general)) 20%, white); }
+  /* Coming up */
+  .up { padding-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .upgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .upcard { border: 1px solid var(--line-2); border-radius: var(--r); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; cursor: pointer;
+    background: #fff; text-align: left; transition: border-color .12s ease; }
+  .upcard:hover { border-color: var(--faint-3); }
+  .upcard .meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+  .upcard .meta i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+  .upcard .meta b { color: var(--navy); }
+  .upcard .title { font-size: 13px; font-weight: 600; line-height: 1.35; text-wrap: pretty; }
 
-  /* ---------- Timeline ---------- */
-  .month { margin-top: 30px; scroll-margin-top: 64px; }
-  .month h2 { font-size: .92rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); font-weight: 800;
-    border-bottom: 2px solid var(--line); padding-bottom: 7px; margin-bottom: 12px; }
-  .event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
-    border-radius: var(--um-r); padding: 12px 16px; margin-bottom: 8px; align-items: baseline; cursor: pointer;
-    box-shadow: var(--shadow-sm); transition: transform .12s ease, box-shadow .12s ease; }
-  .event:hover { border-color: var(--um-n100); }
-  .event.past { opacity: .55; }
-  .event.unconfirmed { border-style: dashed; border-left-style: solid; }
-  .date { min-width: 86px; font-variant-numeric: tabular-nums; font-weight: 700; font-size: .88rem; color: var(--navy); }
-  .date small { display: block; font-weight: 500; color: var(--muted); }
-  .body { flex: 1; }
-  .body .title { font-weight: 600; font-size: .95rem; }
-  .body .meta { font-size: .8rem; color: var(--muted); margin-top: 3px; line-height: 1.45; }
-  .tag { font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; color: var(--c, var(--general));
-    background: color-mix(in srgb, var(--c, var(--general)) 10%, white); border-radius: var(--um-r); padding: 2px 7px; margin-left: 8px; }
-  .flag { font-size: .66rem; font-weight: 800; color: #b45309; background: #fef3c7; border-radius: var(--um-r); padding: 2px 7px; margin-left: 6px; }
-  .today-rule { border: 0; border-top: 2px solid var(--accent); position: relative; margin: 16px 0; }
-  .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--accent); color: #fff;
-    font-size: .66rem; font-weight: 800; padding: 1px 8px; border-radius: var(--um-r-s); }
-  .empty { color: var(--muted); font-size: .9rem; padding: 40px 0; text-align: center; }
-  .emptyhint { display: inline-block; margin-top: 8px; font-size: .84rem; }
-  .empty a, footer a[href^="mailto"] { color: var(--accent-ink); }
+  /* ---------- Key deadlines (chains) ---------- */
+  .mine { display: flex; flex-direction: column; gap: 12px; }
+  .minegrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .minecard { border: 1px solid var(--gold-bd); background: var(--gold-bg); border-radius: var(--r); padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; cursor: pointer; text-align: left; transition: border-color .12s ease; }
+  .minecard:hover { border-color: var(--gold); }
+  .minecard .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .minecard .when { font-size: 22px; font-weight: 700; color: var(--navy); } .minecard .rel { font-size: 13px; font-weight: 600; color: var(--gold-txt); }
+  .minecard .label { font-size: 14px; font-weight: 600; line-height: 1.4; text-wrap: pretty; } .minecard .chainname { font-size: 12px; color: var(--muted); }
+  .chainintro { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 22px; }
+  .chainintro p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--body-2); max-width: 640px; text-wrap: pretty; }
+  .seg { display: flex; background: #eef1f5; border-radius: var(--r); padding: 3px; gap: 2px; font-size: 13px; font-weight: 600; }
+  .seg button { padding: 6px 14px; border-radius: 2px; cursor: pointer; background: transparent; color: var(--muted); border: 0; }
+  .seg button.on { background: #fff; color: var(--navy); }
+  .chaingrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(460px, 100%), 1fr)); gap: 16px; align-items: start; }
+  .chain { border: 1px solid var(--line-2); border-radius: var(--r); padding: 18px 20px 12px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .chain .head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .chain .head h3 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: var(--navy); }
+  .chain .head h3 i { width: 12px; height: 12px; border-radius: var(--r-s); background: var(--c); }
+  .chain .head span { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .chain .prog { height: 3px; background: #eef1f5; border-radius: 2px; overflow: hidden; } .chain .prog i { display: block; height: 100%; background: var(--navy); }
+  .csteps { display: flex; flex-direction: column; }
+  .cgap { display: grid; grid-template-columns: 84px 14px minmax(0, 1fr); gap: 0 12px; }
+  .cgap i { justify-self: center; width: 2px; min-height: 14px; background: var(--line-2); } .cgap span { font-size: 11px; color: var(--faint); padding: 2px 0; }
+  .cstep { display: grid; grid-template-columns: 84px 14px minmax(0, 1fr); gap: 0 12px; align-items: start; padding: 6px 8px; margin: 0 -8px; border-radius: var(--r);
+    cursor: pointer; background: transparent; border: 0; text-align: left; width: calc(100% + 16px); transition: background .12s ease; }
+  .cstep:hover { background: var(--surface); }
+  .cstep.past { opacity: .5; } .cstep.next { background: var(--sky-next); } .cstep.key { background: var(--gold-bg); }
+  .cstep .when { font-size: 13px; font-weight: 700; color: var(--navy); padding-top: 1px; }
+  .cstep .dot { justify-self: center; width: 12px; height: 12px; margin-top: 3px; border-radius: 50%; background: var(--dc); box-shadow: 0 0 0 3px #fff, 0 0 0 4.5px transparent; }
+  .cstep.key .dot { width: 14px; height: 14px; } .cstep.next .dot { box-shadow: 0 0 0 3px #fff, 0 0 0 4.5px var(--sky); } .cstep.past .dot { background: #c5ccd6; }
+  .cstep .label { font-size: 13px; line-height: 1.45; text-wrap: pretty; } .cstep.key .label { font-weight: 700; }
+  .tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 1px 7px; border-radius: var(--r-s); margin-right: 8px; }
+  .tag.you { background: var(--gold-tag); color: var(--gold-txt); } .tag.office { background: #e9eef5; color: var(--navy); } .tag.exams { background: var(--sky-tint); color: #0b5d9c; } .tag.keyyou { background: var(--gold); color: #fff; }
+  .pill { display: inline-block; white-space: nowrap; margin-left: 8px; font-size: 11px; font-weight: 700; border-radius: var(--r-s); padding: 1px 7px; }
+  .pill.next { color: #fff; background: var(--sky); } .pill.unc { color: var(--gold-txt); background: var(--gold-tag); }
+  .done { font-size: 13px; color: var(--muted); }
 
-  /* ---------- Overlay cards ---------- */
-  .overlay { position: fixed; inset: 0; background: rgba(22, 36, 61, .5); display: flex; align-items: center; justify-content: center;
-    padding: 20px; z-index: 50; animation: fadein .15s ease-out; }
-  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
-  @keyframes cardin { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
-  .card { background: var(--card); border-radius: var(--um-r); max-width: 480px; width: 100%; box-shadow: var(--shadow-lg);
-    overflow: hidden; animation: cardin .18s ease-out; max-height: 86vh; overflow-y: auto; }
-  .card .cardhead { background: var(--um-blue); color: #fff; padding: 18px 22px;
-    border-left: 6px solid var(--c, var(--general)); position: sticky; top: 0; }
-  .card .cardhead .when { font-size: .78rem; color: #b8c4d8; font-weight: 600; letter-spacing: .02em; }
-  .card .cardhead h3 { font-size: 1.08rem; font-weight: 700; margin-top: 3px; letter-spacing: -.01em; }
-  .card .cardbody { padding: 18px 22px 20px; font-size: .88rem; }
-  .card .row { display: flex; gap: 10px; margin-bottom: 10px; }
-  .card .row .k { min-width: 78px; color: var(--muted); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; padding-top: 2px; }
-  .card .close { float: right; background: rgba(255,255,255,.12); border: 0; color: #d7dfeb; font-size: .95rem; cursor: pointer;
-    width: 28px; height: 28px; border-radius: 50%; line-height: 1; margin-left: 12px; transition: background .12s ease; }
-  .card .close:hover { background: rgba(255,255,255,.24); color: #fff; }
-  .dayev { display: flex; gap: 8px; align-items: baseline; border: 1px solid var(--line); border-left: 4px solid var(--c, var(--general));
-    border-radius: var(--um-r); padding: 9px 12px; margin-bottom: 7px; cursor: pointer; font-size: .85rem; transition: all .12s ease; }
-  .dayev:hover { border-color: var(--c, var(--general)); box-shadow: var(--shadow-sm); }
-  .dayev b { font-weight: 600; }
-  .daynone { color: var(--muted); font-size: .85rem; margin-bottom: 4px; }
-  .fact { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink); line-height: 1.5; }
-  .fact .factlabel { display: block; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; color: var(--accent-ink); margin-bottom: 5px; }
-  .fact .factsrc { color: var(--muted); font-size: .72rem; }
+  /* ---------- By office (lanes) ---------- */
+  .lanehead { display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; align-items: center; font-size: 13px; color: var(--body-2); }
+  .lanehead .lgs { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 12px; color: var(--muted); }
+  .lanewrap { overflow-x: auto; }
+  .lanes { min-width: 1180px; display: flex; flex-direction: column; --cols: 44; }
+  .lrow { display: grid; grid-template-columns: 140px repeat(var(--cols), minmax(0, 1fr)); }
+  .lrow.months > div { font-size: 12px; font-weight: 600; color: var(--navy); padding: 0 0 6px 4px; border-left: 1px solid var(--line-in); }
+  .lrow.months > div:first-child, .lrow.period > div:first-child, .lrow.weeks > div:first-child { border: 0; padding-left: 0; font-size: 11px; color: var(--faint); font-weight: 400; }
+  .lrow.period { gap: 0 1px; margin-bottom: 2px; }
+  .lrow.period .pw { height: 20px; color: #fff; font-size: 11px; font-weight: 700; display: flex; align-items: center; padding-left: 4px; overflow: hidden; background: var(--pc, var(--gap)); }
+  .lrow.weeks .wn { font-size: 10px; padding: 3px 0; text-align: center; color: var(--muted); }
+  .lane { border-top: 1px solid var(--line-3); }
+  .lane .ll { display: flex; align-items: center; gap: 10px; height: 50px; font-size: 14px; font-weight: 600; }
+  .lane .ll i { width: 4px; height: 22px; border-radius: 2px; background: var(--c); } .lane .ll small { font-size: 12px; color: var(--faint); font-weight: 400; }
+  .lane .wc { display: flex; align-items: center; justify-content: center; border-left: 1px solid #f1f3f5; background: transparent; border-top: 0; border-right: 0; border-bottom: 0; padding: 0; cursor: default; transition: background .12s ease; }
+  .lane .wc.cur { background: var(--sky-week); } .lane .wc.hol { background: #f2f6f1; } .lane .wc.has { cursor: pointer; } .lane .wc.has:hover { background: #f0f4f8; }
+  .lane .wc b { width: var(--sz); height: var(--sz); border-radius: 50%; background: var(--fill); box-shadow: 0 0 0 2px var(--ringc, transparent); color: #fff; font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .lanes .end { border-top: 1px solid var(--line-3); }
+
+  /* ---------- Month grid (kept, restyled) ---------- */
+  .month { margin-top: 26px; scroll-margin-top: 16px; } main.grid .month:first-child, main.timeline .month:first-child { margin-top: 0; }
+  .month h2 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--navy); font-weight: 700; border-bottom: 1px solid var(--line); padding-bottom: 7px; }
+  .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--line-2); border: 1px solid var(--line-2); }
+  .dowhead { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 600; text-align: center; padding: 6px 0; background: var(--surface); }
+  .day { position: relative; background: #fff; min-height: 84px; padding: 6px 6px 8px; font-size: 12px; overflow: hidden; cursor: pointer;
+    box-shadow: inset 0 2px 0 var(--top, transparent); transition: box-shadow .12s ease; }
+  .day:hover { box-shadow: inset 0 0 0 1px var(--sky); }
+  .day.out { background: var(--surface); cursor: default; box-shadow: none; }
+  .day.wknd { background: var(--surface); } .day.hol { background: var(--holiday); } .day.exam { background: var(--sky-tint); } .day.key { background: var(--gold-cell); }
+  .day.today { box-shadow: inset 0 2px 0 var(--top, transparent), inset 0 0 0 2px var(--sky); }
+  .day .num { font-weight: 700; color: var(--ink); display: flex; justify-content: space-between; gap: 6px; }
+  .day.wknd .num { color: var(--faint-2); } .day.today .num { color: var(--sky); }
+  .day .num small { font-size: 10px; font-weight: 700; color: var(--sky); }
+  .day .ev { display: block; margin-top: 4px; padding: 2px 6px; border-radius: var(--r-s); box-shadow: inset 3px 0 0 var(--c); background: var(--surface); color: var(--ink);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; font-size: 12px; border: 0; width: 100%; text-align: left; }
+  .day .ev.unc { background: transparent; outline: 1px dashed var(--c); outline-offset: -1px; }
+  .day .ev:hover { background: #eef1f5; }
+  .day .due { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--gold); }
+
+  /* ---------- Timeline (kept, restyled) ---------- */
+  .event { display: flex; gap: 14px; background: #fff; border: 1px solid var(--line-2); border-radius: var(--r); padding: 12px 16px; margin-bottom: 8px; align-items: baseline;
+    cursor: pointer; box-shadow: inset 4px 0 0 var(--c); text-align: left; width: 100%; transition: border-color .12s ease; }
+  .event:hover { border-color: var(--faint-3); } .event.past { opacity: .55; } .event.unc { border-style: dashed; }
+  .event .date { min-width: 86px; font-weight: 700; font-size: 14px; color: var(--navy); } .event .date small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+  .event .body { flex: 1; min-width: 0; } .event .title { font-weight: 600; font-size: 14px; }
+  .event .meta { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+  .otag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--c); background: color-mix(in srgb, var(--c) 10%, white); border-radius: var(--r-s); padding: 2px 7px; margin-left: 8px; }
+  .today-rule { border: 0; border-top: 2px solid var(--sky); position: relative; margin: 16px 0; }
+  .today-rule::after { content: "today"; position: absolute; right: 0; top: -10px; background: var(--sky); color: #fff; font-size: 10px; font-weight: 700; padding: 1px 8px; border-radius: var(--r-s); }
+
+  /* ---------- Detail panel ---------- */
+  .scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 40; }
+  .panel { position: fixed; top: 0; right: 0; bottom: 0; width: 400px; max-width: 100vw; background: #fff; z-index: 50; box-shadow: var(--panel-shadow);
+    display: flex; flex-direction: column; overflow-y: auto; animation: slidein .18s ease-out; }
+  @keyframes slidein { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+  .phead { background: var(--navy); color: #fff; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; box-shadow: inset 5px 0 0 var(--c, var(--sky)); }
+  .phead .kick { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: #b8c4d8; }
+  .phead .close { width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.12); border: 0; color: #fff; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; flex: 0 0 auto; }
+  .phead .close:hover { background: rgba(255,255,255,.24); }
+  .phead h2 { margin: 0; font-size: 19px; font-weight: 700; line-height: 1.3; text-wrap: pretty; } .phead .sub { font-size: 13px; color: #b8c4d8; }
+  .pbody { padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; }
+  .prow { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line-4); font-size: 13px; line-height: 1.45; }
+  .prow b { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding-top: 2px; }
+  .pnotes { margin: 0; font-size: 13px; line-height: 1.55; color: var(--body-2); text-wrap: pretty; }
+  .pfeed { border: 1px solid var(--sky); border-radius: var(--r); padding: 10px 0; text-align: center; font-size: 13px; font-weight: 600; color: var(--sky); text-decoration: none; transition: background .12s ease, color .12s ease; }
+  .pfeed:hover { background: var(--sky); color: #fff; }
+  .preport { font-size: 12px; color: var(--muted); }
+  .plist { padding: 16px 24px; display: flex; flex-direction: column; gap: 8px; }
+  .pitem { display: flex; flex-direction: column; gap: 3px; border: 1px solid var(--line-2); border-radius: var(--r); padding: 10px 12px; cursor: pointer; box-shadow: inset 3px 0 0 var(--c); background: #fff; text-align: left; transition: border-color .12s ease; }
+  .pitem:hover { border-color: var(--faint-3); } .pitem .m { font-size: 12px; color: var(--muted); } .pitem .m b { color: var(--navy); } .pitem .t { font-size: 13px; font-weight: 600; line-height: 1.4; text-wrap: pretty; }
+  .pempty { font-size: 13px; color: var(--muted); padding: 8px 0; }
+  .dei { margin-top: 8px; padding-top: 12px; border-top: 1px solid var(--line-4); }
+  .dei .eyebrow { display: block; margin-bottom: 6px; }
+  .dei span.chip { display: inline-block; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-s); padding: 2px 10px; font-size: 12px; margin: 0 4px 4px 0; }
+  .dei .mo { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  /* ---------- Subscribe dialog (kept) ---------- */
+  .overlay { position: fixed; inset: 0; background: var(--scrim); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 60; }
+  .card { background: #fff; border-radius: var(--r); max-width: 480px; width: 100%; box-shadow: var(--panel-shadow); overflow: hidden; max-height: 86vh; overflow-y: auto; }
+  .card .phead { box-shadow: inset 5px 0 0 var(--sky); }
+  .card .cbody { padding: 18px 22px 20px; }
+  .subrow { display: block; width: 100%; text-align: left; border: 1px solid var(--line-2); border-radius: var(--r); padding: 10px 14px; margin-bottom: 8px; cursor: pointer;
+    background: var(--surface); text-decoration: none; color: var(--ink); font-family: inherit; font-size: 14px; font-weight: 600; transition: border-color .12s ease; }
+  .subrow:hover { border-color: var(--sky); } .subrow small { display: block; color: var(--muted); font-weight: 400; font-size: 12px; margin-top: 1px; }
+  .subrow.primary { border-color: var(--sky); background: #f0faff; }
 
   /* ---------- Footer ---------- */
-  footer { background: #fff; border-top: 1px solid var(--line); margin-top: 20px; }
-  .footgrid { max-width: var(--pagew); margin: 0 auto; padding: 30px 24px 12px; display: grid;
-    grid-template-columns: 1fr 1.4fr; gap: 40px; font-size: .82rem; color: var(--muted); line-height: 1.55; }
-  footer h4 { color: var(--navy); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; margin-bottom: 8px; }
-  .feedlist { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .feed { border: 1.5px solid var(--line); background: var(--paper); border-radius: var(--um-r); padding: 5px 13px; font-size: .76rem;
-    font-weight: 600; color: var(--ink); cursor: pointer; font-family: inherit; transition: all .15s ease; box-shadow: var(--shadow-sm); }
-  .feed:hover { border-color: var(--accent); }
-  .feed.done { background: #e3f5e9; border-color: #7bc496; color: #166534; }
-  .footnote { max-width: var(--pagew); margin: 0 auto; padding: 6px 24px 26px; font-size: .74rem; color: #616f86; }
+  footer { margin-top: auto; background: var(--surface); border-top: 1px solid var(--line); padding: 22px 32px; font-size: 12px; line-height: 1.6; color: var(--muted);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px 40px; }
+  footer .col { display: flex; flex-direction: column; gap: 2px; } footer .col b { color: var(--navy); font-size: 12px; }
+  footer .feeds { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 14px; padding-top: 6px; border-top: 1px solid var(--line); }
+  footer .feeds button { background: transparent; border: 0; padding: 0; font-size: 12px; color: var(--sky); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+  footer .feeds button:hover { color: var(--navy); }
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
-    /* Phones start collapsed via the .mini class, not via CSS, so the toggle still works and the
-       rail can actually be opened. Collapsing in CSS alone left it permanently unreadable. */
-    .rail { padding: 14px 0 16px; }
-    main { padding: 0 12px; }
-    /* The three masthead controls could not wrap, so they forced the whole content column wider
-       than the viewport and every view overflowed sideways. */
-    .toolbar-inner { flex-wrap: wrap; justify-content: flex-end; }
-    .topbar { padding: 8px 12px; gap: 8px 12px; }
-    .topbar img.msp { height: 60px; margin: -10px -33px; }
-    .titleblock h1 { font-size: 1.05rem; }
-    .search { width: 120px; }
-    .search:focus { width: 150px; }
-    #toolbar .chip[title*="A3"] { display: none; }
-    .periodband { padding: 10px 12px 8px; }
-    .chains { grid-template-columns: 1fr; }
-    .chain { padding: 14px 12px; }
-    .cstep .cdate { min-width: 74px; font-size: .76rem; }
-    .cstep .clabel { flex: 1 1 140px; font-size: .8rem; }
-    .csteps { padding-left: 12px; margin-left: 4px; }
-    .rail.mini .railtoggle { display: inline-flex; }
-    .railtop { padding-top: 2px; }
-    .periodband { overflow-x: auto; }
-    .period { min-width: 118px; }
-    .footgrid { grid-template-columns: 1fr; gap: 22px; }
+    .pagehead { padding: 16px 16px 14px; } .ybar { padding: 14px 16px 0; } main { padding: 16px 16px 40px; } footer { padding: 18px 16px; }
+    .search { width: 150px; } .phright .btn.print { display: none; }
+    .chaingrid { grid-template-columns: 1fr; } .cstep, .cgap { grid-template-columns: 74px 14px minmax(0, 1fr); }
+    .panel { width: 100vw; }
+    .railtoggle { display: inline-flex; }
+    .rail { position: fixed; left: 0; top: 0; bottom: 0; z-index: 45; }
+    .rail:not(.mini) { box-shadow: var(--panel-shadow); }
+    .content { margin-left: 56px; }
+    .railscrim { position: fixed; inset: 0; background: var(--scrim); z-index: 44; }
   }
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    #toolbar, footer, .subscribe, .yearnote, .upwrap, .rail { display: none !important; }
-    :root { --rail-w: 0px !important; }
-    /* Every encoding in the grid is a background, and browsers drop backgrounds when printing.
-       Without this the wall chart prints inside out: confirmed dots vanish and only unconfirmed
-       ones survive, as rings. */
+    .rail, .panel, .scrim, .overlay, .phright, footer, .up, .keys, .lanehead { display: none !important; }
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    main { max-width: none; margin-bottom: 0; }
+    body { background: #fff; } .content { display: block; }
+    main { padding: 8px 10px; } .ywrap, .lanewrap { overflow: visible; } .ygrid, .lanes { min-width: 0; }
     .month, .chain { break-inside: avoid; }
-    .yday .wk { display: inline !important; }
-    .yday .wk + .dw { display: none !important; }
     #printstamp { display: block !important; }
-    header, .accentline { box-shadow: none; }
-    .yearwrap { width: 100%; left: 0; transform: none; overflow: visible; }
-    body { background: #fff; }
     @page { size: A3 landscape; margin: 10mm; }
   }
 </style>
 </head>
 <body>
 
-
 <div class="layout">
   <aside class="rail" id="rail"></aside>
   <div class="content">
-    <header>
-      <div class="topbar">
-        <a class="homelink" id="homelink" href="./" title="Back to the year planner">
-          <img class="msp" src="msp-logo.png" alt="Maastricht Science Programme">
-          <div class="titleblock">
-            <p class="kicker">Maastricht Science Programme</p>
-            <h1>Operations Calendar</h1>
-          </div>
-        </a>
-        <div class="toolbar-inner" id="toolbar"></div>
+    <header class="pagehead">
+      <div class="phleft">
+        <div class="crumb"><a href="./" id="homelink">Operations Calendar</a><i>/</i><span id="crumbview"></span></div>
+        <h1 id="viewtitle">Year planner</h1>
+        <div class="viewdesc" id="viewdesc"></div>
+      </div>
+      <div class="phright">
+        <input class="search" id="search" type="search" placeholder="Search deadlines" aria-label="Search deadlines">
+        <button class="btn print" id="printbtn" title="Print the year planner as an A3 landscape wall chart">Print A3</button>
       </div>
     </header>
     <p id="printstamp"></p>
-    <div class="periodband" id="periodband"></div>
+    <div class="ybar" id="ybar"></div>
     <main id="main"></main>
+    <footer>
+      <div class="col"><b>MSP Operations</b><span id="footline"></span></div>
+      <div class="col"><b>Spotted a wrong date?</b><span><a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Tell us</a> and it is fixed at the source, so it corrects in everyone's calendar.</span></div>
+      <div class="col"><b>Maastricht University</b><span>Faculty of Science and Engineering · Static site, no tracking, no cookies.</span></div>
+      <div class="feeds" id="feeds"><span>Feeds:</span></div>
+    </footer>
   </div>
 </div>
-
-<footer>
-  <div class="footgrid">
-    <div>
-      <h4>About this calendar</h4>
-      <p>Every operational deadline and rhythm at the Maastricht Science Programme, in one place:
-      exams, grading, BTR, Board of Examiners, scheduling, ESD and alumni, plus UM holidays and the
-      period structure. Maintained by MSP Operations. <b>Spotted a wrong date, or one that is missing? <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Tell us</a> and we fix it at the source, so it corrects for everyone at once.</b> Events marked <i>unconfirmed</i> are pending
-      confirmation for this academic year and stay out of the feeds until confirmed.</p>
-    </div>
-    <div>
-      <h4>Subscribe in Outlook</h4>
-      <p>Click a feed and pick how to subscribe: one click for UM Outlook (Microsoft 365), webcal
-      for Apple or desktop clients, or copy the URL. Updates appear in your calendar automatically,
-      no re-downloading.</p>
-      <div class="feedlist">
-        <button class="feed" data-feed="msp-all.ics">All offices</button>
-        <button class="feed" data-feed="msp-academic-staff.ics">Academic staff</button>
-        <button class="feed" data-feed="msp-support-staff.ics">Support staff</button>
-        <button class="feed" data-feed="msp-exams.ics">Exams</button>
-        <button class="feed" data-feed="msp-btr.ics">BTR</button>
-        <button class="feed" data-feed="msp-boe.ics">BoE</button>
-        <button class="feed" data-feed="msp-scheduling.ics">Scheduling</button>
-        <button class="feed" data-feed="msp-esd.ics">ESD</button>
-        <button class="feed" data-feed="msp-alumni.ics">Alumni</button>
-        <button class="feed" data-feed="msp-general.ics">General</button>
-      </div>
-    </div>
-  </div>
-  <p class="footnote" id="footnote">Static site, no tracking, no cookies. Day facts load from Wikipedia only when you open a day.</p>
-</footer>
 
 <script src="events.js"></script>
 <script>
 /* ==========================================================================
    EDIT HERE - the names and labels shown on the site.
 
-   This is the only block on this page you would normally change. Everything
-   below it is the calendar engine and does not need touching.
-
-   TO ADD OR RENAME AN OFFICE (a filter button + its colour layer):
-     1. Add a line to OFFICES below:  key: 'Label shown on the button',
+   TO ADD OR RENAME AN OFFICE (a filter row + its colour layer):
+     1. Add a line to OFFICES below:  key: 'Label shown in the sidebar',
      2. Use that same key as the `office:` value in data/events.yaml.
-     3. Add a matching colour in the stylesheet above: search for --off-exams
-        and copy one of those lines for your new key.
-     4. Add its feed file to FEEDS below (build.mjs generates one .ics per
-        office automatically, named msp-<key>.ics).
+     3. Add a matching colour: OC below, and a --key variable in the stylesheet.
+     4. Add its feed file to FEEDS (build.mjs generates msp-<key>.ics).
      5. Run  node build.mjs  and push.
 
-   TO CHANGE WORDING ONLY: edit the text inside the quotes. Leave the keys
-   (the words before the colon) alone, they must match events.yaml.
-
-   NOT AN EDIT POINT: the events themselves. Those live in
-   data/events.yaml, and the year structure in data/year-2026-27.yaml.
-   Full guide: EDITING-INSTRUCTIONS.md in the repo root.
+   KEY DEADLINES: the three hand-ins that get the gold treatment are matched on
+   the event id in KEY() below. Full guide: EDITING-INSTRUCTIONS.md.
    ========================================================================== */
-
-// The office filter buttons. Key must match `office:` in data/events.yaml.
-const OFFICES = {
-  exams: 'Exams', btr: 'BTR', boe: 'BoE', scheduling: 'Scheduling',
-  esd: 'ESD', alumni: 'Alumni', general: 'General',
-};
-// The "who is this for" filter. Key must match `staff:` in data/events.yaml.
+const OFFICES = { exams: 'Exams', esd: 'ESD', scheduling: 'Scheduling', btr: 'BTR', boe: 'BoE', alumni: 'Alumni', general: 'General' };
+const OC = { exams: '#0e71bb', esd: '#15817e', scheduling: '#b8741a', btr: '#2e7d5b', boe: '#6a50a7', alumni: '#b03f6e', general: '#66778b' };
+const PC = { P1: '#001c3d', P2: '#2d5a8a', P3: '#9aabbf', P4: '#001c3d', P5: '#2d5a8a', P6: '#9aabbf' };
 const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
 const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
-// The subscribe list. One entry per generated feed in feeds/.
+const VIEWS = { year: 'Year planner', chains: 'Key deadlines', lanes: 'By office', grid: 'Month grid', timeline: 'Timeline' };
+const VIEW_DESC = {
+  year: 'The full academic year at a glance. Click any day for its deadlines.',
+  chains: 'What you hand in, and what happens to it after.',
+  lanes: 'What each office owes and waits on, week by week.',
+  grid: 'One month at a time, every deadline in its day.',
+  timeline: 'Every deadline in date order.',
+};
 const FEEDS = {
   'msp-all.ics': 'All offices', 'msp-academic-staff.ics': 'Academic staff', 'msp-support-staff.ics': 'Support staff',
-  'msp-exams.ics': 'Exams', 'msp-btr.ics': 'BTR', 'msp-boe.ics': 'BoE', 'msp-scheduling.ics': 'Scheduling',
-  'msp-esd.ics': 'ESD', 'msp-alumni.ics': 'Alumni', 'msp-general.ics': 'General',
+  'msp-exams.ics': 'Exams', 'msp-esd.ics': 'ESD', 'msp-scheduling.ics': 'Scheduling', 'msp-btr.ics': 'BTR',
+  'msp-boe.ics': 'BoE', 'msp-alumni.ics': 'Alumni', 'msp-general.ics': 'General',
 };
+const KEY = (e) => e.key ? (e.key.charAt(0).toUpperCase() + e.key.slice(1)) :
+  /^exam-submit-/.test(e.id) ? 'Exam' : /^(project-)?grades-due-/.test(e.id) ? 'Grade' : /^sched-planning-forms-.+-due$/.test(e.id) ? 'Plan' : '';
+const KEYL = { Exam: 'Exam to the Exams office', Grade: 'Grades to the Exams office', Plan: 'Planning form to Scheduling' };
+const CONTACT = 'msp-exams@maastrichtuniversity.nl';
 
 /* ==========================================================================
    END OF THE EDIT BLOCK. Below is the calendar engine.
@@ -523,21 +408,18 @@ const FEEDS = {
 
 let DB = null;
 
-// State: URL params win, then localStorage, then defaults. Kept in sync both ways
-// so filtered views are shareable links and returning visitors keep their selection.
+// ---------- state: URL params win, then localStorage, then defaults ----------
 const _params = new URLSearchParams(location.search);
 const _saved = (() => { try { return JSON.parse(localStorage.getItem('mspcal') || '{}'); } catch (_) { return {}; } })();
-const _offParam = _params.get('office');
-const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k])
-  : (Array.isArray(_saved.on) ? _saved.on.filter(k => OFFICES[k]) : []);
 const _pick = (v, allowed, fb) => allowed.includes(v) ? v : fb;
+const VIEW_KEYS = Object.keys(VIEWS);
+const _offParam = _params.get('office');
+const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k]) : (Array.isArray(_saved.on) ? _saved.on.filter(k => OFFICES[k]) : []);
 const state = {
   on: new Set(_initOn.length ? _initOn : Object.keys(OFFICES)),
-  // Phones default to the Timeline (the year grid is a desktop shape); explicit choices still win
-  view: _pick(_params.get('view'), ['year', 'grid', 'timeline', 'chains'],
-    _pick(_saved.view, ['year', 'grid', 'timeline', 'chains'], window.innerWidth < 720 ? 'timeline' : 'year')),
-  role: _pick(_params.get('role'), ['all', 'academic', 'support'], _pick(_saved.role, ['all', 'academic', 'support'], 'all')),
-  q: '',
+  view: _pick(_params.get('view'), VIEW_KEYS, _pick(_saved.view, VIEW_KEYS, window.innerWidth < 720 ? 'timeline' : 'year')),
+  role: _pick(_params.get('role'), Object.keys(ROLES), _pick(_saved.role, Object.keys(ROLES), 'all')),
+  q: '', panel: null, mineOnly: false,
 };
 function syncState() {
   try { localStorage.setItem('mspcal', JSON.stringify({ on: [...state.on], view: state.view, role: state.role })); } catch (_) {}
@@ -545,366 +427,241 @@ function syncState() {
   if (state.on.size < Object.keys(OFFICES).length) p.set('office', [...state.on].join(','));
   if (state.role !== 'all') p.set('role', state.role);
   if (state.view !== 'year') p.set('view', state.view);
+  if (state.panel && state.panel.kind === 'event') p.set('event', state.panel.id);
   const qs = p.toString();
   try { history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '')); } catch (_) {}
 }
 
-const fmt = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-const dow = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'short' });
-const monthKey = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
-const todayIso = new Date().toISOString().slice(0, 10);
+// ---------- dates (UTC throughout, so DST never moves a day) ----------
+const D = (s) => new Date(s + 'T00:00:00Z');
+const I = (d) => d.toISOString().slice(0, 10);
+const add = (s, n) => { const d = D(s); d.setUTCDate(d.getUTCDate() + n); return I(d); };
+const diff = (a, b) => Math.round((D(b) - D(a)) / 864e5);
+const fmt = (s, o) => D(s).toLocaleDateString('en-GB', Object.assign({ timeZone: 'UTC' }, o || { day: 'numeric', month: 'short' }));
+const fmtDw = (s) => fmt(s, { weekday: 'short' }) + ' ' + fmt(s);
+const fmtLong = (s) => fmt(s, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+const monthKey = (s) => fmt(s, { month: 'long', year: 'numeric' });
 function isoWeek(iso) {
-  const d = new Date(iso + 'T12:00:00Z');
-  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7) + 3);
-  const firstThu = new Date(Date.UTC(d.getUTCFullYear(), 0, 4, 12));
-  firstThu.setUTCDate(firstThu.getUTCDate() - ((firstThu.getUTCDay() + 6) % 7) + 3);
-  return 1 + Math.round((d - firstThu) / 604800000);
+  const d = D(iso); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7) + 3);
+  const f = new Date(Date.UTC(d.getUTCFullYear(), 0, 4)); f.setUTCDate(f.getUTCDate() - ((f.getUTCDay() + 6) % 7) + 3);
+  return 1 + Math.round((d - f) / 6048e5);
 }
-function scrollToToday() {
-  const el = document.querySelector('.yday.today, .day.today, .today-rule');
-  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+const rel = (n) => n === 0 ? 'today' : n === 1 ? 'tomorrow' : n < 0 ? (-n) + ' days ago' : n < 14 ? 'in ' + n + ' days' : 'in ' + Math.round(n / 7) + ' weeks';
+const gapText = (n) => n === 0 ? 'same day' : n === 1 ? 'the next day' : n === 7 ? 'a week later' : n % 7 === 0 ? (n / 7) + ' weeks later' : n + ' days later';
+const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const today = I(new Date());
+
+// ---------- derived from the data ----------
+let periods = [], hols = [], byId = {}, yS = '', yE = '', total = 1;
+const perOf = (iso) => periods.find(p => iso >= p.start && iso <= p.end) || null;
+const holOf = (iso) => hols.find(h => iso >= h.start && iso <= (h.end || h.start)) || null;
+const isExam = (iso) => { const p = perOf(iso); return !!(p && p.exam_start && iso >= p.exam_start && iso <= p.exam_end); };
+const isDue = (e) => e.submit || e.staff === 'academic';
+const ok = (e) => state.on.has(e.office) && (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff) &&
+  (!state.q || (e.title + ' ' + (e.notes || '') + ' ' + (e.audience || '')).toLowerCase().includes(state.q));
+const filtered = () => DB.events.filter(ok).sort((a, b) => a.date.localeCompare(b.date));
+
+// ---------- clickable elements: mouse and keyboard alike ----------
+function clickable(el, fn) {
+  el.setAttribute('role', 'button'); el.tabIndex = 0;
+  el.addEventListener('click', fn);
+  el.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); fn(ev); } });
+  return el;
 }
-function gotoMonth(y, m) {
-  setViewUI('grid');
-  const sec = document.getElementById(`m-${y}-${String(m).padStart(2, '0')}`);
-  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-function showSubscribeCard(feed) {
-  const label = FEEDS[feed] || feed;
-  const httpsUrl = new URL('feeds/' + feed, location.href).href;
-  if (!location.protocol.startsWith('http')) { location.href = 'feeds/' + feed; return; }
-  const webcal = httpsUrl.replace(/^https?:/, 'webcal:');
-  const old = document.querySelector('.overlay'); if (old) old.remove();
-  const overlay = document.createElement('div'); overlay.className = 'overlay';
-  const card = document.createElement('div'); card.className = 'card';
-  card.style.setProperty('--c', 'var(--accent)');
-  card.innerHTML =
-    `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
-    `<div class="when">Subscribe · updates arrive automatically</div><h3>MSP deadlines: ${label}</h3></div>` +
-    `<div class="cardbody">` +
-    `<a class="subrow primary" href="https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(webcal)}&name=${encodeURIComponent('MSP ' + label)}" target="_blank" rel="noopener">` +
-    `UM Outlook (Microsoft 365)<small>One click: opens Outlook on the web with this calendar ready to add</small></a>` +
-    `<a class="subrow" href="${webcal}">Apple Calendar / Outlook desktop<small>Opens your default calendar app via webcal</small></a>` +
-    `<a class="subrow" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">` +
-    `Google Calendar<small>For private devices</small></a>` +
-    `<button class="subrow" id="subcopy">Copy the feed URL<small>Paste it into any calendar app's subscribe-from-web option</small></button>` +
-    `</div>`;
-  overlay.appendChild(card);
-  overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
-  card.querySelector('.close').onclick = () => overlay.remove();
-  card.querySelector('#subcopy').onclick = (ev) => {
-    const btn = ev.currentTarget;
-    navigator.clipboard.writeText(httpsUrl).then(() => {
-      btn.firstChild.textContent = 'Copied!';
-      setTimeout(() => { btn.firstChild.textContent = 'Copy the feed URL'; }, 1400);
-    }).catch(() => { prompt('Feed URL:', httpsUrl); });
-  };
-  document.body.appendChild(overlay);
-}
+const el = (tag, cls, html) => { const n = document.createElement(tag); if (cls) n.className = cls; if (html != null) n.innerHTML = html; return n; };
 
-function init() {
-  const note = document.getElementById('footnote');
-  const stamp = document.getElementById('printstamp');
-  if (stamp) stamp.textContent = 'MSP Operations Calendar · academic year ' + DB.year + ' · printed from data updated ' + DB.generated;
-  if (note) note.textContent = `Academic year ${DB.year} · data updated ${DB.generated} · ` + note.textContent;
-
-  /* ---------- Year bar: the whole academic year as one proportional strip ----------
-     Replaces six equal cards, which said nothing about how long anything actually is.
-     Segments are sized by real duration, exam weeks sit inside their period, the gaps
-     between periods are the breaks, and today is marked. */
-  const band = document.getElementById('periodband');
-  const ps = DB.periods.slice().sort((a, b) => a.start.localeCompare(b.start));
-  if (ps.length) {
-    const D = (s) => new Date(s + 'T00:00:00');
-    const days = (a, b) => Math.max(1, Math.round((D(b) - D(a)) / 864e5) + 1);
-    const yStart = ps[0].start, yEnd = ps[ps.length - 1].end;
-    const total = days(yStart, yEnd);
-
-    const strip = document.createElement('div');
-    strip.className = 'ybstrip';
-    let cursor = yStart;
-
-    const gap = (from, to) => {
-      const n = Math.round((D(to) - D(from)) / 864e5);
-      if (n <= 0) return;
-      const g = document.createElement('div');
-      g.className = 'ybgap'; g.style.flexGrow = n;
-      g.title = 'No teaching, ' + fmt(from) + ' to ' + fmt(to);
-      strip.appendChild(g);
-    };
-
-    for (const p of ps) {
-      gap(cursor, p.start);
-      const len = days(p.start, p.end);
-      const seg = document.createElement('div');
-      seg.className = 'ybseg' + (todayIso >= p.start && todayIso <= p.end ? ' now' : '') +
-        (p.status === 'unconfirmed' ? ' unconfirmed' : '');
-      seg.style.flexGrow = len;
-      seg.style.setProperty('--c', `var(--${p.id.toLowerCase()})`);
-      seg.title = p.id + ': ' + fmt(p.start) + ' to ' + fmt(p.end) + ', ' +
-        Math.round(len / 7) + ' weeks' + (p.exam_start ? ' · exams ' + fmt(p.exam_start) + ' to ' + fmt(p.exam_end) : '');
-      seg.innerHTML = `<span class="yblab">${p.id}</span>`;
-      if (p.exam_start) {
-        const off = Math.round((D(p.exam_start) - D(p.start)) / 864e5) / len * 100;
-        const wid = days(p.exam_start, p.exam_end) / len * 100;
-        const ex = document.createElement('i');
-        ex.className = 'ybexam';
-        ex.style.left = off + '%'; ex.style.width = wid + '%';
-        seg.appendChild(ex);
-      }
-      seg.onclick = () => { const s = document.getElementById('m-' + p.start.slice(0, 7)); if (s) gotoMonth(+p.start.slice(0, 4), +p.start.slice(5, 7)); };
-      strip.appendChild(seg);
-      cursor = p.end;
-    }
-
-    if (todayIso >= yStart && todayIso <= yEnd) {
-      const mark = document.createElement('div');
-      mark.className = 'ybtoday';
-      mark.style.left = (Math.round((D(todayIso) - D(yStart)) / 864e5) / total * 100) + '%';
-      mark.title = 'Today, ' + fmt(todayIso);
-      strip.appendChild(mark);
-    }
-    band.appendChild(strip);
-
-    const cur = ps.find(p => todayIso >= p.start && todayIso <= p.end);
-    const foot = document.createElement('div');
-    foot.className = 'ybfoot';
-    foot.innerHTML =
-      `<span class="ybnow">${cur ? `<b>${cur.id}</b> ${fmt(cur.start)} &ndash; ${fmt(cur.end)}` +
-        (cur.exam_start ? ` · exams ${fmt(cur.exam_start)} &ndash; ${fmt(cur.exam_end)}` : '') : 'Between teaching periods'}</span>` +
-      `<span class="ybkey"><i class="kx"></i>exam week` +
-      (ps.some(p => p.status === 'unconfirmed') ? ' &nbsp;·&nbsp; hatched = dates pending confirmation' : '') +
-      `</span>`;
-    band.appendChild(foot);
-  }
-
-  const bar = document.getElementById('toolbar');
-  const spacer = document.createElement('div'); spacer.className = 'spacer'; bar.appendChild(spacer);
-
-  const search = document.createElement('input');
-  search.className = 'search'; search.type = 'search'; search.placeholder = 'Search deadlines...';
-  search.oninput = () => { state.q = search.value.trim().toLowerCase(); render(); };
-  bar.appendChild(search);
-
-  const todayBtn = document.createElement('button');
-  todayBtn.className = 'chip'; todayBtn.textContent = 'Today';
-  todayBtn.title = 'Jump to today';
-  todayBtn.onclick = scrollToToday;
-  bar.appendChild(todayBtn);
-
-  const printBtn = document.createElement('button');
-  printBtn.className = 'chip'; printBtn.textContent = 'Print A3';
-  printBtn.title = 'Print the year planner as an A3 landscape wall chart';
-  printBtn.onclick = () => { setViewUI('year'); setTimeout(() => window.print(), 150); };
-  bar.appendChild(printBtn);
-
-  buildRail();
-
-  for (const b of document.querySelectorAll('.feed')) {
-    b.onclick = () => showSubscribeCard(b.dataset.feed);
-  }
-
-  document.getElementById('homelink').onclick = (ev) => {
-    ev.preventDefault();
-    state.q = '';
-    setViewUI('year');
-    const s = document.querySelector('.search'); if (s) s.value = '';
-    syncState(); render();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  syncState();
-  render();
-
-  // First visit lands at the top of the year; bring today into view when it is far down
-  const firstDate = DB.events.length ? DB.events[0].date : todayIso;
-  const monthsIn = (+todayIso.slice(0, 4) - +firstDate.slice(0, 4)) * 12 + (+todayIso.slice(5, 7) - +firstDate.slice(5, 7));
-  if (state.view === 'year' && monthsIn >= 3) setTimeout(scrollToToday, 250);
-}
-
-
-/* ---------- Left rail: view, offices (which double as the colour key), role, subscribe ----------
-   Modelled on the UM MyApplication portal: flat navy, bold white labels, state carried by the
-   box rather than by a highlight. Offices are multi-select so they get squares, view and role
-   are single-select so they get circles. */
-const VIEWS = [['year', 'Year planner'], ['chains', 'Key deadlines'], ['grid', 'Month grid'], ['timeline', 'Timeline']];
-const TICK = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1.6 6.3 4.4 9l6-6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const CHEV = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 10.8 3.6 6.4l1.1-1.1L8 8.6l3.3-3.3 1.1 1.1z"/></svg>';
-let railManual = false, railInit = false;
-
+// ---------- sidebar ----------
+let railManual = false;
+const isNarrow = () => window.matchMedia('(max-width: 860px)').matches;
 function setRail(mini) {
-  const r = document.getElementById('rail');
-  if (!r) return;
-  r.classList.toggle('mini', !!mini);
-  document.documentElement.style.setProperty('--rail-w', mini ? '58px' : '236px');
-  r.title = mini ? 'Click to open the menu' : '';
+  const r = document.getElementById('rail'); r.classList.toggle('mini', !!mini); r.title = mini ? 'Open the menu' : '';
+  const old = document.querySelector('.railscrim'); if (old) old.remove();
+  if (!mini && isNarrow()) { const s = el('div', 'railscrim'); s.onclick = () => setRailManual(true); document.body.appendChild(s); }
 }
-function setRailManual(mini) {
-  railManual = true; setRail(mini);
-  try { localStorage.setItem('mspcal_rail', mini ? 'mini' : 'full'); } catch (_) {}
-}
-/* The year planner is a wall chart and wants the width, so it collapses the rail by default.
-   A manual choice wins from then on. */
-/* Small screens start collapsed because there is no room, but the toggle stays reachable so it can
-   be opened. Desktops always start open: a first visit has no saved preference, and hiding every
-   label behind an unsignposted click is how nobody finds the filters or the subscribe button. */
-function isNarrow() { return window.matchMedia('(max-width: 860px)').matches; }
+function setRailManual(mini) { railManual = true; setRail(mini); try { localStorage.setItem('mspcal_rail', mini ? 'mini' : 'full'); } catch (_) {} }
 function autoRail() { if (!railManual) setRail(isNarrow()); }
-
-function setViewUI(id) {
-  if (state.view !== id) { state.view = id; syncState(); render(); }
-  document.querySelectorAll('#rail .railitem[data-view]').forEach(b => b.classList.toggle('on', b.dataset.view === id));
-  autoRail();
-}
 
 function buildRail() {
   const rail = document.getElementById('rail');
   rail.innerHTML = '';
   rail.onclick = () => { if (rail.classList.contains('mini')) setRailManual(false); };
-
-  const top = document.createElement('div'); top.className = 'railtop';
-  top.innerHTML = '<img class="raillogo" src="um-logo.png" alt="Maastricht University">';
-  const tg = document.createElement('button');
-  tg.className = 'railtoggle'; tg.innerHTML = CHEV;
-  tg.setAttribute('aria-label', 'Collapse or open the menu');
-  tg.style.transform = 'rotate(90deg)';
+  const top = el('div', 'railtop', '<img class="raillogo" src="um-logo.png" alt="Maastricht University">');
+  const tg = el('button', 'railtoggle', '&#9776;'); tg.setAttribute('aria-label', 'Open or collapse the menu');
   tg.onclick = (ev) => { ev.stopPropagation(); setRailManual(!rail.classList.contains('mini')); };
   top.appendChild(tg); rail.appendChild(top);
+  const yr = (DB.year || '').replace(/^(\d{4})-(\d{2})$/, '$1–$2');
+  rail.appendChild(el('div', 'brand', `<span class="eyebrow">Maastricht Science Programme</span><span class="name">Operations Calendar</span><span class="yr">Academic year ${esc(yr)}</span>`));
 
-  const title = document.createElement('div');
-  title.className = 'railtitle'; title.textContent = 'Operations Calendar';
-  rail.appendChild(title);
-
-  const yr = document.createElement('div'); yr.className = 'railyear';
-  yr.innerHTML = '<span class="ry1">Academic year</span><span class="rydiv"></span>' +
-    '<span class="ry2">' + (DB.year || '2026-27').replace('-', '-20').replace('-20-', '-') + '</span>';
-  yr.title = 'Academic year shown in this calendar';
-  rail.appendChild(yr);
-
-  const section = (label, key, open) => {
-    const sec = document.createElement('div');
-    sec.className = 'railsec' + (open ? '' : ' closed');
-    const h = document.createElement('button');
-    h.className = 'railsechead'; h.innerHTML = '<span>' + label + '</span>' + CHEV;
-    h.onclick = (ev) => {
-      ev.stopPropagation();
-      if (rail.classList.contains('mini')) { setRailManual(false); return; }
-      sec.classList.toggle('closed');
-      try { localStorage.setItem('mspcal_sec_' + key, sec.classList.contains('closed') ? 'shut' : 'open'); } catch (_) {}
-    };
-    const list = document.createElement('div'); list.className = 'railseclist';
-    sec.appendChild(h); sec.appendChild(list); rail.appendChild(sec);
-    return list;
-  };
-  const secOpen = (key) => { try { return localStorage.getItem('mspcal_sec_' + key) !== 'shut'; } catch (_) { return true; } };
-
-  const item = (opts) => {
-    const b = document.createElement('button');
-    b.className = 'railitem ' + opts.kind + (opts.on ? ' on' : '');
-    b.title = opts.title || opts.label;
-    if (opts.colour) b.style.setProperty('--c', opts.colour);
-    b.innerHTML = '<span class="railbox ' + (opts.kind === 'chk' ? 'sq' : 'ci') + '">' +
-      (opts.kind === 'chk' ? TICK : '') + '</span><span class="lb">' + opts.label + '</span>' +
-      (opts.count !== undefined ? '<span class="ct">' + opts.count + '</span>' : '');
-    b.onclick = (ev) => { ev.stopPropagation(); opts.act(b); };
-    return b;
-  };
-
-  /* View */
-  const lv = section('View', 'view', secOpen('view'));
-  for (const [id, label] of VIEWS) {
-    const b = item({ kind: 'nav', label, on: state.view === id, act: () => setViewUI(id) });
-    b.dataset.view = id; lv.appendChild(b);
+  rail.appendChild(el('div', 'raillabel', '<span>View</span>'));
+  const lv = el('div', 'railsec');
+  for (const [id, label] of Object.entries(VIEWS)) {
+    const b = el('button', 'railitem nav' + (state.view === id ? ' on' : ''), `<span class="lb">${label}</span>`);
+    b.dataset.view = id; b.onclick = (ev) => { ev.stopPropagation(); setView(id); };
+    lv.appendChild(b);
   }
+  rail.appendChild(lv);
 
-  /* Offices, multi-select, and the colour key */
-  const counts = {};
-  for (const e of DB.events) counts[e.office] = (counts[e.office] || 0) + 1;
-  const lo = section('Offices', 'office', secOpen('office'));
-  const every = () => Object.keys(OFFICES).every(k => state.on.has(k));
-  const allBtn = item({
-    kind: 'chk', label: every() ? 'All offices' : 'Select all', on: every(),
-    colour: '#ffffff', count: DB.events.length, title: 'Show or hide every office at once',
-    act: () => { if (every()) state.on.clear(); else Object.keys(OFFICES).forEach(k => state.on.add(k)); buildRail(); syncState(); render(); },
-  });
-  allBtn.style.setProperty('--c', '#ffffff');
-  if (every()) allBtn.querySelector('.railbox').style.color = 'var(--rail-bg)';
-  lo.appendChild(allBtn);
-  for (const [key, label] of Object.entries(OFFICES)) {
-    lo.appendChild(item({
-      kind: 'chk', label, on: state.on.has(key), colour: 'var(--' + key + ')', count: counts[key] || 0,
-      act: (b) => {
-        state.on.has(key) ? state.on.delete(key) : state.on.add(key);
-        b.classList.toggle('on', state.on.has(key));
-        buildRail(); syncState(); render();
-      },
-    }));
+  const counts = {}; for (const e of DB.events) counts[e.office] = (counts[e.office] || 0) + 1;
+  const lab = el('div', 'raillabel', '<span>Offices</span>');
+  const all = el('button', '', 'All'); all.title = 'Show every office';
+  all.onclick = (ev) => { ev.stopPropagation(); Object.keys(OFFICES).forEach(k => state.on.add(k)); buildRail(); syncState(); render(); };
+  lab.appendChild(all); rail.appendChild(lab);
+  const lo = el('div', 'railsec');
+  for (const [k, label] of Object.entries(OFFICES)) {
+    const b = el('button', 'railitem sub' + (state.on.has(k) ? ' on' : ''), `<span class="odot"></span><span class="lb">${label}</span><span class="ct">${counts[k] || 0}</span>`);
+    b.style.setProperty('--c', OC[k]); b.title = label + ': ' + (counts[k] || 0) + ' deadlines';
+    b.onclick = (ev) => { ev.stopPropagation(); state.on.has(k) ? state.on.delete(k) : state.on.add(k); buildRail(); syncState(); render(); };
+    lo.appendChild(b);
   }
+  rail.appendChild(lo);
 
-  /* Role */
-  const lr = section('Who are you', 'role', secOpen('role'));
+  rail.appendChild(el('div', 'raillabel', '<span>For</span>'));
+  const lr = el('div', 'railsec');
   for (const [id, label] of Object.entries(ROLES)) {
-    const b = item({
-      kind: 'nav', label, on: state.role === id,
-      act: () => {
-        state.role = id;
-        lr.querySelectorAll('.railitem').forEach(x => x.classList.toggle('on', x.dataset.role === id));
-        const s = rail.querySelector('.railsub .subscribe');
-        if (s) s.title = 'Subscribe to the ' + (id === 'all' ? 'full' : label.toLowerCase()) + ' feed';
-        syncState(); render();
-      },
-    });
-    b.dataset.role = id; lr.appendChild(b);
+    const b = el('button', 'railitem sub' + (state.role === id ? ' on' : ''), `<span class="ring"></span><span class="lb">${label}</span>`);
+    b.onclick = (ev) => { ev.stopPropagation(); state.role = id; buildRail(); syncState(); render(); };
+    lr.appendChild(b);
   }
-
-  rail.appendChild(Object.assign(document.createElement('div'), { className: 'railspring' }));
-
-  const sw = document.createElement('div'); sw.className = 'railsub';
-  const sub = document.createElement('a');
-  sub.className = 'subscribe'; sub.href = 'feeds/msp-all.ics';
-  sub.title = 'Subscribe in Outlook';
-  sub.innerHTML = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 1v2H2.5A1.5 1.5 0 0 0 1 4.5v9A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 13.5 3H12V1h-1.5v2h-5V1H4Zm-1.5 5h11v7.5h-11V6Z"/></svg><span>Subscribe</span>';
-  sub.onclick = (ev) => {
-    ev.preventDefault(); ev.stopPropagation();
-    showSubscribeCard(state.role === 'academic' ? 'msp-academic-staff.ics' : state.role === 'support' ? 'msp-support-staff.ics' : 'msp-all.ics');
-  };
-  sw.appendChild(sub); rail.appendChild(sw);
-
-  if (!railInit) {
-    railInit = true;
-    const saved = (() => { try { return localStorage.getItem('mspcal_rail'); } catch (_) { return null; } })();
-    if (saved) { railManual = true; setRail(saved === 'mini'); return; }
-  }
-  autoRail();
+  rail.appendChild(lr);
+  rail.appendChild(el('div', 'railspring'));
+  const sw = el('div', 'railsub');
+  const sub = el('button', 'subscribe', 'Subscribe in Outlook');
+  sub.onclick = (ev) => { ev.stopPropagation(); showSubscribeCard(state.role === 'academic' ? 'msp-academic-staff.ics' : state.role === 'support' ? 'msp-support-staff.ics' : 'msp-all.ics'); };
+  sw.appendChild(sub); sw.appendChild(el('small', '', 'Updates reach your calendar automatically.'));
+  rail.appendChild(sw);
 }
+
+function setView(id) {
+  if (!VIEWS[id]) return;
+  state.view = id; state.panel = null; closePanel();
+  syncState(); buildRail(); render();
+  window.scrollTo({ top: 0 });
+}
+
+// ---------- year bar ----------
+function buildYearBar() {
+  const bar = document.getElementById('ybar'); bar.innerHTML = '';
+  if (!periods.length) return;
+  const row = el('div', 'ybrow');
+  let cur = yS;
+  const seg = (grow, colour, label, tip, exL, exW) => {
+    const s = el('div', 'ybseg'); s.style.flexGrow = grow; s.title = tip;
+    if (colour) s.style.setProperty('--c', colour);
+    s.innerHTML = `<div class="bar">${exW ? `<i style="left:${exL}%;width:${exW}%"></i>` : ''}</div><span class="lab">${label}</span>`;
+    return s;
+  };
+  for (const p of periods) {
+    const g = diff(cur, p.start);
+    if (g > 1) row.appendChild(seg(g, null, '', 'No teaching'));
+    const len = diff(p.start, p.end) + 1;
+    const exL = p.exam_start ? diff(p.start, p.exam_start) / len * 100 : 0;
+    const exW = p.exam_start ? (diff(p.exam_start, p.exam_end) + 1) / len * 100 : 0;
+    const s = seg(len, PC[p.id] || '#001c3d', p.id, p.id + ': ' + fmt(p.start) + ' to ' + fmt(p.end) + (p.exam_start ? ' · exams ' + fmt(p.exam_start) + ' to ' + fmt(p.exam_end) : ''), exL, exW);
+    clickable(s, () => { state.view = 'grid'; syncState(); buildRail(); render(); gotoMonth(p.start.slice(0, 7)); });
+    row.appendChild(s);
+    cur = p.end;
+  }
+  if (today >= yS && today <= yE) { const t = el('span', 'ybtoday'); t.style.left = (diff(yS, today) / total * 100) + '%'; t.title = 'Today, ' + fmtDw(today); row.appendChild(t); }
+  bar.appendChild(row);
+  const ticks = el('div', 'ybticks');
+  let m = new Date(Date.UTC(+yS.slice(0, 4), +yS.slice(5, 7), 1));
+  while (I(m) <= yE) { const off = diff(yS, I(m)); if (off >= 0 && off < total) { const t = el('span', '', fmt(I(m), { month: 'short' })); t.style.left = (off / total * 100) + '%'; ticks.appendChild(t); } m = new Date(Date.UTC(m.getUTCFullYear(), m.getUTCMonth() + 1, 1)); }
+  bar.appendChild(ticks);
+  const cp = perOf(today);
+  const now = cp ? `${cp.id} · ${fmt(cp.start)} – ${fmt(cp.end)}${cp.exam_start ? ' · exams ' + fmt(cp.exam_start) + ' – ' + fmt(cp.exam_end) : ''} · today is ${fmtDw(today)}, week ${isoWeek(today)}`
+    : `Between teaching periods · today is ${fmtDw(today)}, week ${isoWeek(today)}`;
+  bar.appendChild(el('div', 'ybstatus', `<span>${now}</span><span class="lgs"><span class="lg"><i style="width:14px;height:6px;background:var(--sky)"></i>Exam week</span><span class="lg"><i style="width:2px;height:12px;background:var(--gold)"></i>Today</span></span>`));
+}
+
+// ---------- render ----------
 function render() {
   const main = document.getElementById('main');
-  main.innerHTML = '';
-  const events = DB.events.filter(e => state.on.has(e.office) &&
-    (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff) &&
-    (!state.q || (e.title + ' ' + (e.notes || '') + ' ' + (e.audience || '')).toLowerCase().includes(state.q)));
-  if (!events.length) { const q = document.createElement('p'); q.className = 'empty';
-    q.textContent = state.q ? `No events match "${state.q}".` : 'No events match this selection.';
-    q.innerHTML += '<br><span class="emptyhint">Try turning an office back on in the menu, or clearing the search. ' +
-      'If you expected something here, <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">tell us</a>.</span>';
-    main.innerHTML = ''; main.appendChild(q); return; }
-  renderUpcoming(main, events);
-  if (state.q) { renderTimeline(main, events); return; }
-  if (state.view === 'grid') renderGrid(main, events);
-  else if (state.view === 'year') renderYear(main, events);
-  else if (state.view === 'chains') renderChains(main);
-  else renderTimeline(main, events);
+  main.innerHTML = ''; main.className = state.view;
+  document.getElementById('crumbview').textContent = VIEWS[state.view];
+  document.getElementById('viewtitle').textContent = VIEWS[state.view];
+  document.getElementById('viewdesc').textContent = VIEW_DESC[state.view];
+  document.title = VIEWS[state.view] + ' · MSP Operations Calendar';
+  const evs = filtered();
+  if (!evs.length && state.view !== 'lanes') {
+    main.appendChild(el('p', 'empty', (state.q ? `No deadlines match "${esc(state.q)}".` : 'No deadlines match this selection.') +
+      `<br>Try turning an office back on, or clearing the search. If you expected something here, <a href="mailto:${CONTACT}?subject=MSP%20Operations%20Calendar">tell us</a>.`));
+    return;
+  }
+  if (state.view === 'year') renderYear(main, evs);
+  else if (state.view === 'chains') renderChains(main, evs);
+  else if (state.view === 'lanes') renderLanes(main, evs);
+  else if (state.view === 'grid') renderGrid(main, evs);
+  else renderTimeline(main, evs);
 }
 
-function renderChains(main) {
-  const byId = {};
-  for (const e of DB.events) byId[e.id] = e;
+function keyCard(e, cls) {
+  const n = diff(today, e.date), k = KEY(e);
+  const c = el('button', cls, `<div class="top"><span class="when">${fmt(e.date, { weekday: 'short', day: 'numeric', month: 'short' })}</span><span class="rel${n <= 14 ? ' soon' : ''}">${rel(n)}</span></div>` +
+    `<div class="kind">${KEYL[k] || 'Key deadline'}</div><div class="title">${esc(e.title)}</div>`);
+  c.onclick = () => openPanel({ kind: 'event', id: e.id });
+  return c;
+}
+
+function renderYear(main, evs) {
+  const byDate = {}; for (const e of evs) (byDate[e.date] = byDate[e.date] || []).push(e);
+  const keys = evs.filter(e => e.date >= today && KEY(e)).slice(0, 4);
+  if (keys.length) {
+    const wrap = el('div', 'keyblock', '<div class="eyebrow gold">Key deadlines ahead</div>');
+    const g = el('div', 'keygrid'); for (const e of keys) g.appendChild(keyCard(e, 'keycard'));
+    wrap.appendChild(g); main.appendChild(wrap);
+  }
+  const wrap = el('div', 'ywrap'), grid = el('div', 'ygrid');
+  let y = +yS.slice(0, 4), mo = +yS.slice(5, 7) - 1;
+  for (let k = 0; k < 12; k++) {
+    const first = I(new Date(Date.UTC(y, mo, 1))), n = new Date(Date.UTC(y, mo + 1, 0)).getUTCDate();
+    const row = el('div', 'yrow');
+    const ml = el('div', 'ymonth', `<b>${fmt(first, { month: 'short' })}</b><small>${y}</small>`);
+    ml.title = 'Open ' + monthKey(first) + ' in the month grid';
+    clickable(ml, () => { state.view = 'grid'; syncState(); buildRail(); render(); gotoMonth(first.slice(0, 7)); });
+    row.appendChild(ml);
+    for (let i = 0; i < 31; i++) {
+      if (i >= n) { row.appendChild(el('div', 'ycell out')); continue; }
+      const iso = add(first, i), wd = D(iso).getUTCDay(), we = wd === 0 || wd === 6;
+      const p = perOf(iso), ex = isExam(iso), h = holOf(iso), de = byDate[iso] || [], isT = iso === today;
+      const kl = (de.map(KEY).find(Boolean)) || '';
+      const c = el('div', 'ycell' + (kl ? ' key' : ex ? ' exam' : h ? ' hol' : we ? ' wknd' : '') + (isT ? ' today' : ''));
+      if (p) c.style.setProperty('--top', PC[p.id]);
+      if (isT) c.style.setProperty('--ring', '#0e71bb'); else if (kl) c.style.setProperty('--ring', '#af6500');
+      c.title = fmtDw(iso) + (h ? ' · ' + h.label : '') + (de.length ? ' · ' + de.length + ' deadline' + (de.length > 1 ? 's' : '') : '');
+      c.innerHTML = `<span class="n">${i + 1}</span><span class="dw${kl ? ' key' : wd === 1 ? ' mon' : ''}">${kl || (wd === 1 ? 'W' + isoWeek(iso) : 'SMTWTFS'[wd])}</span>` +
+        `<div class="dots">${de.slice(0, 6).map(e => `<i class="${e.status === 'unconfirmed' ? 'unc' : ''}" style="--c:${OC[e.office]}"></i>`).join('')}</div>` +
+        (de.some(isDue) ? '<span class="due"></span>' : '');
+      clickable(c, () => openPanel({ kind: 'day', iso }));
+      row.appendChild(c);
+    }
+    grid.appendChild(row);
+    mo++; if (mo > 11) { mo = 0; y++; }
+  }
+  wrap.appendChild(grid); main.appendChild(wrap);
+  main.appendChild(el('div', 'legend',
+    `<span class="lg"><i style="width:14px;height:10px;background:var(--sky-tint);border:1px solid #cfe3f3"></i>Exam week</span>` +
+    `<span class="lg"><i style="width:14px;height:10px;background:var(--holiday);border:1px solid #d7eadc"></i>Holiday or break</span>` +
+    `<span class="lg key"><i style="width:14px;height:12px;background:var(--gold-cell);box-shadow:inset 0 0 0 2px var(--gold)"></i>Key deadline: planning form, exam or grades</span>` +
+    `<span class="lg"><i style="width:14px;height:3px;background:var(--gold)"></i>Academic staff hand something in</span>` +
+    `<span class="lg"><i style="width:7px;height:7px;border-radius:50%;border:1.5px solid var(--muted)"></i>Unconfirmed</span>`));
+  const up = evs.filter(e => e.date >= today && !KEY(e)).slice(0, 6);
+  if (up.length) {
+    const w = el('div', 'up', '<div class="eyebrow">Coming up</div>');
+    const g = el('div', 'upgrid');
+    for (const e of up) {
+      const c = el('button', 'upcard', `<div class="meta"><i style="--c:${OC[e.office]}"></i><b>${fmtDw(e.date)}</b><span>${rel(diff(today, e.date))}</span></div><div class="title">${esc(e.title)}</div>`);
+      c.onclick = () => openPanel({ kind: 'event', id: e.id });
+      g.appendChild(c);
+    }
+    w.appendChild(g); main.appendChild(w);
+  }
+}
+
+function chainDefs() {
   const exam = (p) => {
-    const per = DB.periods.find(x => x.id === p.toUpperCase());
-    const range = per && per.exam_start ? `${fmt(per.exam_start)} to ${fmt(per.exam_end)}` : '';
-    return {
-    title: `${p.toUpperCase()} exam + grading cycle`, color: `var(--${p})`,
-    steps: [
+    const per = periods.find(x => x.id === p.toUpperCase());
+    const range = per && per.exam_start ? fmt(per.exam_start) + ' to ' + fmt(per.exam_end) : '';
+    return { title: p.toUpperCase() + ' exam + grading cycle', c: PC[p.toUpperCase()], steps: [
       [`assessment-announced-${p}`, 'a', 'Your assessment format has to be in the syllabus'],
       [`invigilators-${p}`, 's', 'We book the halls, the invigilators and the equipment'],
       [`exam-submit-${p}`, 'a', 'Your exam paper and your digital test are due'],
@@ -916,11 +673,18 @@ function renderChains(main) {
       [`exam-inspection-${p}`, 'w', 'Students may inspect their exam up to this date. This is why our 5 days cannot move'],
       [`accreditation-deadline-${p}`, 'a', 'Your exam material is due: manual, exam, rubrics, attendance'],
       [`transcript-final-update-${p}`, 's', 'Final transcripts, once the inspection window closes'],
-    ],
-  }; };
-  const CHAINS = [
-    exam('p1'), exam('p2'), exam('p4'), exam('p5'),
-    { title: 'June resit week cycle', color: 'var(--exams)', steps: [
+    ] };
+  };
+  const btr = (k, l) => ({ title: 'BTR grading, ' + l + ' cohort', c: OC.btr, steps: [
+    [`btr-proposal-grades-due-${k}`, 'a', 'Proposal grades due from you and the second assessor'],
+    [`btr-proposal-grades-pub-${k}`, 's', 'We publish proposal grades to students'],
+    [`btr-midterm-grades-due-${k}`, 'a', 'Midterm practical grade due from the supervisor'],
+    [`btr-midterm-grades-pub-${k}`, 's', 'We publish midterm grades'],
+    [`btr-final-grades-due-${k}`, 'a', 'Final thesis and video grades due'],
+    [`btr-final-grades-pub-${k}`, 's', 'We publish the final grades; the graduation decision follows'],
+  ] });
+  return [exam('p1'), exam('p2'), exam('p4'), exam('p5'),
+    { title: 'June resit week cycle', c: OC.exams, steps: [
       ['invigilators-resits', 's', 'We book the resit invigilation and the equipment'],
       ['exam-submit-resits', 'a', 'Your resit exam is due. This round is 2 weeks, not 3, because we print in house'],
       ['resit-week-p5', 'w', 'Resit week starts (runs 14 to 18 Jun)'],
@@ -930,372 +694,265 @@ function renderChains(main) {
       ['exam-inspection-resits', 'w', 'Students may inspect their resit up to this date'],
       ['accreditation-deadline-resits', 'a', 'Your resit material is due'],
       ['transcript-final-update-resits', 's', 'Final transcripts, once the inspection window closes'],
-    ]},
-    { title: 'BTR grading, September cohort', color: 'var(--btr)', steps: [
-      ['btr-proposal-grades-due-sept', 'a', 'Proposal grades due from you and the second assessor'],
-      ['btr-proposal-grades-pub-sept', 's', 'We publish proposal grades to students'],
-      ['btr-midterm-grades-due-sept', 'a', 'Midterm practical grade due from the supervisor'],
-      ['btr-midterm-grades-pub-sept', 's', 'We publish midterm grades'],
-      ['btr-final-grades-due-sept', 'a', 'Final thesis and video grades due'],
-      ['btr-final-grades-pub-sept', 's', 'We publish the final grades; the graduation decision follows'],
-    ]},
-    { title: 'BTR grading, February cohort', color: 'var(--btr)', steps: [
-      ['btr-proposal-grades-due-feb', 'a', 'Proposal grades due from you and the second assessor'],
-      ['btr-proposal-grades-pub-feb', 's', 'We publish proposal grades to students'],
-      ['btr-midterm-grades-due-feb', 'a', 'Midterm practical grade due from the supervisor'],
-      ['btr-midterm-grades-pub-feb', 's', 'We publish midterm grades'],
-      ['btr-final-grades-due-feb', 'a', 'Final thesis and video grades due'],
-      ['btr-final-grades-pub-feb', 's', 'We publish the final grades; the graduation decision follows'],
-    ]},
-    { title: 'New academic year: catalogue + exam planning', color: 'var(--esd)', steps: [
+    ] },
+    btr('sept', 'September'), btr('feb', 'February'),
+    { title: 'New academic year: catalogue + exam planning', c: OC.esd, steps: [
       ['catalogue-letters-out', 's', 'We send the catalogue update letters'],
       ['catalogue-coordinator-updates', 'a', 'Your course description updates are due'],
       ['assessment-survey', 'a', 'Your assessment survey is due (exam formats + needs)'],
       ['catalogue-publication', 's', 'We publish the course catalogue (hard deadline)'],
       ['exam-request-offweek', 's', "We fix next year's exam days with SSC"],
       ['sap-mendix-pass', 's', 'SAP + Mendix new-year pass; intranet forms updated'],
-    ]},
+    ] },
   ];
-  main.insertAdjacentHTML('beforeend',
-    '<p class="chainsnote">The hand-off chains behind the big deadlines: <b>gold steps are yours</b> ' +
-    '(academic staff), navy steps are what the office does with your input. This view always shows the ' +
-    'full chains, whatever the office filters are set to. Click a step for details.</p>');
-  const grid = document.createElement('div'); grid.className = 'chains';
-  for (const ch of CHAINS) {
-    const steps = ch.steps.map(([id, who, label]) => ({ e: byId[id], who, label })).filter(x => x.e)
-      .sort((x, y) => x.e.date.localeCompare(y.e.date));
+}
+
+function renderChains(main) {
+  const mine = [], chains = [], done = [];
+  for (const ch of chainDefs()) {
+    let steps = ch.steps.map(([id, who, label]) => ({ e: byId[id], who, label, id })).filter(x => x.e).sort((a, b) => a.e.date.localeCompare(b.e.date));
     if (!steps.length) continue;
-    const sec = document.createElement('section'); sec.className = 'chain';
-    sec.innerHTML = `<h3><span class="csw" style="background:${ch.color}"></span>${ch.title}</h3>`;
-    const list = document.createElement('div'); list.className = 'csteps';
-    const gapText = (n) => {
-      if (n === 0) return 'same day';
-      if (n === 1) return 'the next day';
-      if (n === 7) return 'a week later';
-      if (n % 7 === 0) return (n / 7) + ' weeks later';
-      return n + ' days later';
-    };
+    const all = steps.length, past = steps.filter(s => s.e.date < today).length;
+    for (const s of steps) if (s.who === 'a' && s.e.date >= today) mine.push({ s, chain: ch.title });
+    if (past === all) { done.push(ch.title); continue; }
+    const nextDate = steps.find(s => s.e.date >= today).e.date;
+    if (state.mineOnly) steps = steps.filter(s => s.who === 'a');
+    const nextId = (steps.find(s => s.e.date >= today) || {}).id;
+    chains.push({ ch, steps, all, past, nextId, sort: nextDate });
+  }
+  chains.sort((a, b) => a.sort.localeCompare(b.sort));
+  mine.sort((a, b) => a.s.e.date.localeCompare(b.s.e.date));
+
+  const mw = el('div', 'mine', '<div class="eyebrow gold">Your next deadlines</div>');
+  const mg = el('div', 'minegrid');
+  for (const { s, chain } of mine.slice(0, 3)) {
+    const c = el('button', 'minecard', `<div class="top"><span class="when">${fmt(s.e.date, { weekday: 'short', day: 'numeric', month: 'short' })}</span><span class="rel">${rel(diff(today, s.e.date))}</span></div>` +
+      `<div class="label">${esc(s.label)}</div><div class="chainname">${esc(chain)}</div>`);
+    c.onclick = () => openPanel({ kind: 'event', id: s.e.id });
+    mg.appendChild(c);
+  }
+  if (mine.length) { mw.appendChild(mg); main.appendChild(mw); }
+
+  const intro = el('div', 'chainintro', `<p>The hand-off chains behind the big deadlines. <b style="color:var(--gold-txt)">Gold steps are yours</b> (academic staff), navy steps are what the office does with your input. Click a step for details.</p>`);
+  const sg = el('div', 'seg', `<button class="${state.mineOnly ? '' : 'on'}">Full chain</button><button class="${state.mineOnly ? 'on' : ''}">My steps only</button>`);
+  const [bf, bm] = sg.querySelectorAll('button');
+  bf.onclick = () => { state.mineOnly = false; render(); }; bm.onclick = () => { state.mineOnly = true; render(); };
+  intro.appendChild(sg); main.appendChild(intro);
+
+  const grid = el('div', 'chaingrid');
+  for (const { ch, steps, all, past, nextId } of chains) {
+    const sec = el('section', 'chain');
+    sec.innerHTML = `<div class="head"><h3><i style="--c:${ch.c}"></i>${esc(ch.title)}</h3><span>${past} of ${all} done</span></div><div class="prog"><i style="width:${past / all * 100}%"></i></div>`;
+    const list = el('div', 'csteps');
     let prev = null;
     for (const s of steps) {
-      if (prev) {
-        const n = Math.round((new Date(s.e.date + 'T12:00:00') - new Date(prev + 'T12:00:00')) / 86400000);
-        list.insertAdjacentHTML('beforeend', `<div class="cgap">${gapText(n)}</div>`);
-      }
+      if (prev) list.appendChild(el('div', 'cgap', `<span></span><i></i><span>${gapText(diff(prev, s.e.date))}</span>`));
       prev = s.e.date;
-      const row = document.createElement('div');
-      row.className = 'cstep ' + (s.who === 'a' ? 'academic' : s.who === 'w' ? 'week' : 'support') + (s.e.date < todayIso ? ' past' : '');
-      row.innerHTML = `<span class="cdate">${dow(s.e.date)} ${fmt(s.e.date)}</span>` +
-        `<span class="clabel"><span class="cwho">${s.who === 'a' ? 'You' : s.who === 'w' ? 'Exams' : 'Office'}</span>${s.label}` +
-        (s.e.status === 'unconfirmed' ? ' <span class="flag">unconfirmed</span>' : '') + `</span>`;
-      row.onclick = () => showCard(s.e);
+      const isPast = s.e.date < today, isNext = s.id === nextId, isKey = !!KEY(s.e);
+      const T = isKey ? ['Key · You', 'keyyou', '#af6500'] : s.who === 'a' ? ['You', 'you', '#af6500'] : s.who === 'w' ? ['Exams', 'exams', '#0e71bb'] : ['Office', 'office', '#2d5a8a'];
+      const row = el('button', 'cstep' + (isPast ? ' past' : '') + (isNext ? ' next' : '') + (isKey ? ' key' : ''));
+      row.style.setProperty('--dc', T[2]);
+      row.innerHTML = `<span class="when">${fmtDw(s.e.date)}</span><span class="dot"></span><span class="label"><span class="tag ${T[1]}">${T[0]}</span>${esc(s.label)}` +
+        (isNext ? `<span class="pill next">Next · ${rel(diff(today, s.e.date))}</span>` : '') + (s.e.status === 'unconfirmed' ? '<span class="pill unc">Unconfirmed</span>' : '') + '</span>';
+      row.onclick = () => openPanel({ kind: 'event', id: s.e.id });
       list.appendChild(row);
     }
-    sec.appendChild(list);
-    grid.appendChild(sec);
+    sec.appendChild(list); grid.appendChild(sec);
   }
   main.appendChild(grid);
+  if (done.length) main.appendChild(el('div', 'done', 'Completed this year: ' + esc(done.join(', '))));
 }
 
-function renderUpcoming(main, events) {
-  const up = events.filter(e => e.date >= todayIso).slice(0, 5);
-  if (!up.length) return;
-  const dayDiff = (iso) => Math.round((new Date(iso + 'T12:00:00') - new Date(todayIso + 'T12:00:00')) / 86400000);
-  const label = (n) => n === 0 ? 'today' : n === 1 ? 'tomorrow' : 'in ' + n + ' days';
-  const wrap = document.createElement('div'); wrap.className = 'upwrap';
-  wrap.innerHTML = '<span class="uplabel">Coming up</span>';
-  const row = document.createElement('div'); row.className = 'uprow';
-  for (const e of up) {
-    const c = document.createElement('div');
-    c.className = 'upcard' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
-    c.style.setProperty('--c', `var(--${e.office})`);
-    c.innerHTML = `<span class="upwhen">${dow(e.date)} ${fmt(e.date)} · <b>${label(dayDiff(e.date))}</b></span>` +
-      `<span class="uptitle">${e.title}</span>`;
-    c.onclick = () => showCard(e);
-    row.appendChild(c);
+function renderLanes(main, evs) {
+  const start = add(yS, -((D(yS).getUTCDay() + 6) % 7));
+  const lastEv = DB.events.length ? DB.events[DB.events.length - 1].date : yE;
+  const nWeeks = Math.max(44, Math.ceil((diff(start, lastEv > yE ? lastEv : yE) + 1) / 7));
+  const weeks = [];
+  for (let i = 0; i < nWeeks; i++) {
+    const s = add(start, 7 * i), e = add(s, 6), p = perOf(s), ex = isExam(s), h = holOf(s), cur = today >= s && today <= e;
+    weeks.push({ s, e, wk: isoWeek(s), thu: add(s, 3), p, ex, h, cur, tip: 'Week ' + isoWeek(s) + ' · ' + fmt(s) + ' – ' + fmt(e) + (h ? ' · ' + h.label : '') });
   }
-  wrap.appendChild(row);
-  main.appendChild(wrap);
+  main.appendChild(el('div', 'lanehead', `<div>Click a week for its deadlines.</div><div class="lgs">` +
+    `<span class="lg"><i style="width:10px;height:10px;border-radius:50%;background:var(--body-2)"></i>Deadlines that week</span>` +
+    `<span class="lg" style="color:var(--gold-txt);font-weight:600"><i style="width:10px;height:10px;border-radius:50%;background:var(--gold)"></i>Key deadline that week</span>` +
+    `<span class="lg"><i style="width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid var(--gold)"></i>Includes academic staff hand-in</span>` +
+    `<span class="lg"><i style="width:14px;height:10px;background:var(--sky-week)"></i>This week</span></div>`));
+  const wrap = el('div', 'lanewrap'), lanes = el('div', 'lanes'); lanes.style.setProperty('--cols', nWeeks);
+  const mh = []; for (const w of weeks) { const l = fmt(w.thu, { month: 'short' }); const last = mh[mh.length - 1]; if (last && last.l === l) last.span++; else mh.push({ l, span: 1 }); }
+  lanes.appendChild(el('div', 'lrow months', '<div></div>' + mh.map(m => `<div style="grid-column:span ${m.span}">${m.l}</div>`).join('')));
+  lanes.appendChild(el('div', 'lrow period', '<div>Period</div>' + weeks.map(w => `<div class="pw" title="${esc(w.tip)}" style="--pc:${w.p ? (w.ex ? '#0e71bb' : PC[w.p.id]) : 'var(--gap)'}">${w.p ? (w.ex ? 'Ex' : (w.p.start >= w.s && w.p.start <= w.e ? w.p.id : '')) : ''}</div>`).join('')));
+  lanes.appendChild(el('div', 'lrow weeks', '<div>Week</div>' + weeks.map(w => `<div class="wn" style="background:${w.cur ? 'var(--sky-week)' : w.h ? '#f2f6f1' : 'transparent'}">${w.wk}</div>`).join('')));
+  for (const k of Object.keys(OFFICES).filter(k => state.on.has(k))) {
+    const mine = evs.filter(e => e.office === k);
+    const row = el('div', 'lrow lane', `<div class="ll"><i style="--c:${OC[k]}"></i>${OFFICES[k]}<small>${mine.length}</small></div>`);
+    for (const w of weeks) {
+      const list = mine.filter(e => e.date >= w.s && e.date <= w.e), n = list.length;
+      const cell = el('button', 'wc' + (w.cur ? ' cur' : w.h ? ' hol' : '') + (n ? ' has' : ''));
+      cell.title = n ? n + ' deadline' + (n > 1 ? 's' : '') + ', week ' + w.wk : w.tip;
+      cell.style.setProperty('--sz', n ? Math.min(8 + n * 3, 20) + 'px' : '0px');
+      cell.style.setProperty('--fill', list.some(KEY) ? '#af6500' : n ? OC[k] : 'transparent');
+      cell.style.setProperty('--ringc', n && list.some(isDue) ? '#af6500' : 'transparent');
+      cell.innerHTML = `<b>${n > 1 ? n : ''}</b>`;
+      if (n) cell.onclick = () => openPanel({ kind: 'week', office: k, s: w.s }); else cell.tabIndex = -1;
+      row.appendChild(cell);
+    }
+    lanes.appendChild(row);
+  }
+  lanes.appendChild(el('div', 'end'));
+  wrap.appendChild(lanes); main.appendChild(wrap);
 }
 
-const isExamDay = (iso) => DB.periods.some(p => p.exam_start && iso >= p.exam_start && iso <= p.exam_end);
-const periodOf = (iso) => DB.periods.find(p => iso >= p.start && iso <= p.end) || null;
-const holidayOf = (iso) => { const h = (DB.holidays || []).find(h => iso >= h.start && iso <= h.end); return h ? h.label : null; };
-const dayClasses = (iso) => {
-  const per = periodOf(iso), hol = holidayOf(iso);
-  return (per ? ' ' + per.id.toLowerCase() : '') + (hol ? ' hol' : '');
-};
+function gotoMonth(ym) { const sec = document.getElementById('m-' + ym); if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 
-function renderGrid(main, events) {
-  const byDay = {};
-  for (const e of events) (byDay[e.date] = byDay[e.date] || []).push(e);
-  const first = events[0].date, last = events[events.length - 1].date;
+function renderGrid(main, evs) {
+  const byDay = {}; for (const e of evs) (byDay[e.date] = byDay[e.date] || []).push(e);
+  const first = evs[0].date < yS ? evs[0].date : yS, last = evs[evs.length - 1].date > yE ? evs[evs.length - 1].date : yE;
   let y = +first.slice(0, 4), m = +first.slice(5, 7);
   const endY = +last.slice(0, 4), endM = +last.slice(5, 7);
-
   while (y < endY || (y === endY && m <= endM)) {
-    const section = document.createElement('section'); section.className = 'month';
-    section.id = `m-${y}-${String(m).padStart(2, '0')}`;
-    const monthName = new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
-    section.innerHTML = `<h2>${monthName}</h2>`;
-    const grid = document.createElement('div'); grid.className = 'calgrid';
-    for (const d of ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'])
-      grid.insertAdjacentHTML('beforeend', `<div class="dowhead">${d}</div>`);
-
-    const firstDow = (new Date(Date.UTC(y, m - 1, 1, 12)).getUTCDay() + 6) % 7;
-    for (let i = 0; i < firstDow; i++) grid.insertAdjacentHTML('beforeend', '<div class="day out"></div>');
-    const daysInMonth = new Date(Date.UTC(y, m, 0, 12)).getUTCDate();
-
-    for (let d = 1; d <= daysInMonth; d++) {
-      const iso = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-      const dow = (firstDow + d - 1) % 7;
-      const cell = document.createElement('div');
-      cell.className = 'day' + (dow >= 5 ? ' wknd' : '') + (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) +
-        ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
-      const holG = holidayOf(iso); if (holG) cell.title = holG;
-      cell.innerHTML = `<div class="num">${d}</div>` +
-        (dow === 0 ? `<span class="wk" title="ISO week ${isoWeek(iso)}">wk ${isoWeek(iso)}</span>` : '');
-      for (const e of (byDay[iso] || [])) {
-        const pill = document.createElement('span');
-        pill.className = 'pill' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
-        pill.style.setProperty('--c', `var(--${e.office})`);
-        pill.textContent = e.title;
-        pill.title = e.title;
-        pill.onclick = () => showCard(e);
-        cell.appendChild(pill);
+    const ym = `${y}-${String(m).padStart(2, '0')}`;
+    const section = el('section', 'month', `<h2>${monthKey(ym + '-01')}</h2>`); section.id = 'm-' + ym;
+    const grid = el('div', 'calgrid');
+    for (const d of ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']) grid.appendChild(el('div', 'dowhead', d));
+    const firstDow = (D(ym + '-01').getUTCDay() + 6) % 7;
+    for (let i = 0; i < firstDow; i++) grid.appendChild(el('div', 'day out'));
+    const n = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    for (let d = 1; d <= n; d++) {
+      const iso = `${ym}-${String(d).padStart(2, '0')}`, dow = (firstDow + d - 1) % 7, de = byDay[iso] || [];
+      const p = perOf(iso), h = holOf(iso), kl = de.map(KEY).find(Boolean);
+      const cell = el('div', 'day' + (kl ? ' key' : isExam(iso) ? ' exam' : h ? ' hol' : dow >= 5 ? ' wknd' : '') + (iso === today ? ' today' : ''));
+      if (p) cell.style.setProperty('--top', PC[p.id]);
+      if (h) cell.title = h.label;
+      cell.innerHTML = `<div class="num"><span>${d}</span>${dow === 0 ? `<small title="ISO week ${isoWeek(iso)}">W${isoWeek(iso)}</small>` : ''}</div>`;
+      for (const e of de) {
+        const b = el('button', 'ev' + (e.status === 'unconfirmed' ? ' unc' : ''), esc(e.title));
+        b.style.setProperty('--c', OC[e.office]); b.title = e.title;
+        b.onclick = (ev) => { ev.stopPropagation(); openPanel({ kind: 'event', id: e.id }); };
+        cell.appendChild(b);
       }
+      if (de.some(isDue)) cell.appendChild(el('span', 'due'));
+      clickable(cell, () => openPanel({ kind: 'day', iso }));
       grid.appendChild(cell);
     }
-    section.appendChild(grid);
-    main.appendChild(section);
+    section.appendChild(grid); main.appendChild(section);
     m++; if (m > 12) { m = 1; y++; }
   }
 }
 
-function renderYear(main, events) {
-  const byDay = {};
-  for (const e of events) (byDay[e.date] = byDay[e.date] || []).push(e);
-  const first = events[0].date, last = events[events.length - 1].date;
-  let y = +first.slice(0, 4), m = +first.slice(5, 7);
-  const endY = +last.slice(0, 4), endM = +last.slice(5, 7);
-
-  const marks = {};
-  for (const p of DB.periods) {
-    marks[p.start] = p.id;
-    if (p.exam_start) marks[p.exam_start] = marks[p.exam_start] || 'exams';
-  }
-
-  const legend = document.createElement('div'); legend.className = 'legend';
-  legend.innerHTML =
-    DB.periods.map(p => `<span class="lg"><span class="sw" style="background:var(--${p.id.toLowerCase()})"></span>${p.id}</span>`).join('') +
-    '<span class="lg"><span class="sw swx"></span>Exam week</span>' +
-    '<span class="lg"><span class="sw swh"></span>Holiday / break</span>' +
-    '<span class="lg"><span class="swdue"></span>Academic submission due</span>' +
-    '<span class="lg"><span class="dotc"></span>Confirmed</span>' +
-    '<span class="lg"><span class="dotu"></span>Unconfirmed</span>';
-  main.appendChild(legend);
-
-  const wrap = document.createElement('div'); wrap.className = 'yearwrap';
-  const grid = document.createElement('div'); grid.className = 'yeargrid';
-  const DOWS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
-
-  while (y < endY || (y === endY && m <= endM)) {
-    const mLabel = new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'short' }).toUpperCase();
-    const mEl = document.createElement('div'); mEl.className = 'ymonth';
-    mEl.innerHTML = `${mLabel}<small>${y}</small>`;
-    mEl.title = 'Open ' + new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' }) + ' in the month view';
-    const gy = y, gm = m;
-    mEl.onclick = () => gotoMonth(gy, gm);
-    grid.appendChild(mEl);
-    const daysInMonth = new Date(Date.UTC(y, m, 0, 12)).getUTCDate();
-
-    for (let d = 1; d <= 31; d++) {
-      if (d > daysInMonth) { grid.insertAdjacentHTML('beforeend', '<div class="yday out"></div>'); continue; }
-      const iso = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-      const dowIdx = new Date(iso + 'T12:00:00Z').getUTCDay();
-      const cell = document.createElement('div');
-      cell.className = 'yday' + ((dowIdx === 0 || dowIdx === 6) ? ' wknd' : '') +
-        (isExamDay(iso) ? ' exam' : '') + dayClasses(iso) +
-        ((byDay[iso] || []).some(e => e.submit) ? ' due' : '') + (iso === todayIso ? ' today' : '');
-      const hol = holidayOf(iso); if (hol) cell.title = hol;
-      cell.innerHTML = `<div class="yhead">` +
-        (dowIdx === 1
-          ? `<span class="wk" title="ISO week ${isoWeek(iso)}, Monday">wk${isoWeek(iso)}</span><span class="dw">${DOWS[dowIdx]}</span>`
-          : `<span class="dw">${DOWS[dowIdx]}</span>`) +
-        ` <b>${d}</b></div>` +
-        (marks[iso] ? `<span class="pchip">${marks[iso]} &raquo;</span>` : '');
-      cell.onclick = () => showDayCard(iso);
-      const dots = document.createElement('div'); dots.className = 'ydots';
-      for (const e of (byDay[iso] || [])) {
-        const dot = document.createElement('span');
-        dot.className = 'ydot' + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
-        dot.style.setProperty('--c', `var(--${e.office})`);
-        dot.title = e.title + (e.status === 'unconfirmed' ? ' (unconfirmed)' : '');
-        dot.onclick = (ev) => { ev.stopPropagation(); showCard(e); };
-        dots.appendChild(dot);
-      }
-      cell.appendChild(dots);
-      grid.appendChild(cell);
-    }
-    m++; if (m > 12) { m = 1; y++; }
-  }
-  wrap.appendChild(grid);
-  main.appendChild(wrap);
-  main.insertAdjacentHTML('beforeend',
-    '<p class="yearnote">Click any day for its events plus a bit of on-this-day history. ' +
-    'Dark chips mark period and exam-week starts.</p>');
-}
-
-const factCache = {};
-function loadFact(iso, el) {
-  const mm = iso.slice(5, 7), dd = iso.slice(8, 10), key = mm + '-' + dd;
-  const put = (year, text) => {
-    el.innerHTML = '<span class="factlabel">On this day in history</span>';
-    const b = document.createElement('b'); b.textContent = year + ': ';
-    const t = document.createElement('span'); t.textContent = text + ' ';
-    const src = document.createElement('span'); src.className = 'factsrc'; src.textContent = '(via Wikipedia)';
-    el.append(b, t, src);
-  };
-  if (factCache[key]) { put(factCache[key].year, factCache[key].text); return; }
-  fetch(`https://en.wikipedia.org/api/rest_v1/feed/onthisday/selected/${mm}/${dd}`)
-    .then(r => r.json())
-    .then(d => {
-      const list = (d.selected || []).filter(x => x.text && x.year);
-      if (!list.length) throw new Error('empty');
-      // Prefer scientific and European facts, steer away from US-centric ones
-      const score = (x) => {
-        let s = 0;
-        if (/scien|physic|chemi|biolog|astronom|astronaut|mathemat|spacecraft|space station|NASA|invent|Nobel|telescope|DNA|vaccin|eclipse|comet|planet|satellite|geolog|laborator|universit/i.test(x.text)) s += 2;
-        if (/Europe|Netherlands|Dutch|Holland|Belgi|German|France|French|Paris|Britain|British|United Kingdom|England|London|Scotland|Wales|Irish|Ireland|Italy|Italian|Rome|Roman|Spain|Spanish|Portug|Poland|Polish|Austria|Vienna|Swiss|Switzerland|Sweden|Swedish|Norway|Norwegian|Denmark|Danish|Finland|Finnish|Greece|Greek|Hungar|Czech|Slovak|Amsterdam|Berlin|Madrid|Maastricht|treaty|Vatican|Napoleon/i.test(x.text)) s += 2;
-        if (/United States|American|U\.S\.|Washington|Congress|New York|California|Texas/i.test(x.text)) s -= 2;
-        return s;
-      };
-      const best = Math.max(...list.map(score));
-      const pool = list.filter(x => score(x) === best);
-      const pick = pool[(+dd + +mm) % pool.length];
-      factCache[key] = { year: pick.year, text: pick.text };
-      put(pick.year, pick.text);
-    })
-    .catch(() => { el.innerHTML = '<span class="factlabel">On this day in history</span><span class="factsrc">No fun fact available right now (needs an internet connection).</span>'; });
-}
-
-function showDayCard(iso) {
-  const old = document.querySelector('.overlay'); if (old) old.remove();
-  const events = DB.events.filter(e => e.date === iso && state.on.has(e.office) &&
-    (state.role === 'all' || e.staff === state.role || e.staff === 'both' || !e.staff));
-  const full = new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-  const overlay = document.createElement('div'); overlay.className = 'overlay';
-  const card = document.createElement('div'); card.className = 'card';
-  card.style.setProperty('--c', 'var(--accent)');
-  card.innerHTML =
-    `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
-    `<div class="when">${[
-      (periodOf(iso) || {}).id,
-      isExamDay(iso) ? 'Exam week' : null,
-      holidayOf(iso),
-    ].filter(Boolean).join(' · ') || 'Outside teaching periods'}</div><h3>${full}</h3></div>` +
-    `<div class="cardbody"></div>`;
-  const body = card.querySelector('.cardbody');
-  if (events.length) {
-    for (const e of events) {
-      const row = document.createElement('div');
-      row.className = 'dayev';
-      row.style.setProperty('--c', `var(--${e.office})`);
-      row.innerHTML = `<div><b>${e.title}</b><span class="tag">${OFFICES[e.office] || e.office}</span>` +
-        (e.status === 'unconfirmed' ? '<span class="flag">unconfirmed</span>' : '') + `</div>`;
-      row.onclick = () => showCard(e);
-      body.appendChild(row);
-    }
-  } else {
-    body.insertAdjacentHTML('beforeend', '<p class="daynone">No MSP deadlines or events on this day. Enjoy the quiet.</p>');
-  }
-  const deiDay = (DB.dei && DB.dei.days && DB.dei.days[iso]) || [];
-  const deiMonth = (DB.dei && DB.dei.months && DB.dei.months[iso.slice(0, 7)]) || [];
-  if (deiDay.length || deiMonth.length) {
-    const dei = document.createElement('div'); dei.className = 'dei';
-    dei.innerHTML = '<span class="deilabel">Diversity, Equity and Inclusion</span>' +
-      deiDay.map(l => `<span class="deichip">${l}</span>`).join('') +
-      (deiMonth.length ? `<div class="deimonth">${deiMonth.join(' · ')}</div>` : '');
-    body.appendChild(dei);
-  }
-  const fact = document.createElement('div'); fact.className = 'fact';
-  fact.innerHTML = '<span class="factlabel">On this day in history</span><span class="factsrc">Looking it up...</span>';
-  body.appendChild(fact);
-  overlay.appendChild(card);
-  overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
-  card.querySelector('.close').onclick = () => overlay.remove();
-  document.body.appendChild(overlay);
-  loadFact(iso, fact);
-}
-
-function renderTimeline(main, events) {
-  let currentMonth = null, monthEl = null, todayDrawn = todayIso < events[0].date;
-  for (const e of events) {
+function renderTimeline(main, evs) {
+  let cur = null, sec = null, todayDrawn = today < evs[0].date;
+  for (const e of evs) {
     const mk = monthKey(e.date);
-    if (mk !== currentMonth) {
-      currentMonth = mk;
-      monthEl = document.createElement('section'); monthEl.className = 'month';
-      monthEl.innerHTML = `<h2>${mk}</h2>`;
-      main.appendChild(monthEl);
-    }
-    if (!todayDrawn && e.date >= todayIso) {
-      const hr = document.createElement('hr'); hr.className = 'today-rule';
-      monthEl.appendChild(hr); todayDrawn = true;
-    }
-    const el = document.createElement('div');
-    el.className = 'event' + (e.date < todayIso ? ' past' : '') + (e.status === 'unconfirmed' ? ' unconfirmed' : '');
-    el.style.setProperty('--c', `var(--${e.office})`);
-    el.innerHTML =
-      `<div class="date">${fmt(e.date)}<small>${dow(e.date)}</small></div>` +
-      `<div class="body"><span class="title">${e.title}</span>` +
-      `<span class="tag">${OFFICES[e.office] || e.office}</span>` +
-      (e.status === 'unconfirmed' ? '<span class="flag">unconfirmed</span>' : '') +
-      ((e.notes || e.audience) ? `<div class="meta">${[e.notes, e.audience && 'For: ' + e.audience].filter(Boolean).join(' · ')}</div>` : '') +
-      `</div>`;
-    el.onclick = () => showCard(e);
-    monthEl.appendChild(el);
+    if (mk !== cur) { cur = mk; sec = el('section', 'month', `<h2>${mk}</h2>`); sec.id = 'm-' + e.date.slice(0, 7); main.appendChild(sec); }
+    if (!todayDrawn && e.date >= today) { sec.appendChild(el('hr', 'today-rule')); todayDrawn = true; }
+    const b = el('button', 'event' + (e.date < today ? ' past' : '') + (e.status === 'unconfirmed' ? ' unc' : ''));
+    b.style.setProperty('--c', OC[e.office]);
+    b.innerHTML = `<div class="date">${fmt(e.date)}<small>${fmt(e.date, { weekday: 'short' })}</small></div><div class="body"><span class="title">${esc(e.title)}</span>` +
+      `<span class="otag">${OFFICES[e.office] || e.office}</span>${e.status === 'unconfirmed' ? '<span class="pill unc">Unconfirmed</span>' : ''}` +
+      ((e.notes || e.audience) ? `<div class="meta">${esc([e.notes, e.audience && 'For: ' + e.audience].filter(Boolean).join(' · '))}</div>` : '') + '</div>';
+    b.onclick = () => openPanel({ kind: 'event', id: e.id });
+    sec.appendChild(b);
   }
 }
 
-function showCard(e) {
+// ---------- detail panel ----------
+function closePanel() {
+  for (const s of document.querySelectorAll('.scrim, .panel')) s.remove();
+  if (state.panel) { state.panel = null; syncState(); }
+}
+function openPanel(pn) {
+  closePanel(); state.panel = pn; syncState();
+  const scrim = el('div', 'scrim'); scrim.onclick = closePanel;
+  const panel = el('aside', 'panel'); panel.setAttribute('aria-modal', 'true'); panel.setAttribute('role', 'dialog');
+  const head = (c, kicker, title, sub) => `<div class="phead" style="--c:${c}"><div class="kick"><span>${kicker}</span><button class="close" aria-label="Close">✕</button></div><h2>${title}</h2><div class="sub">${sub}</div></div>`;
+  const item = (e) => { const b = el('button', 'pitem', `<span class="m"><b>${fmtDw(e.date)}</b> · ${OFFICES[e.office] || e.office}</span><span class="t">${esc(e.title)}</span>`); b.style.setProperty('--c', OC[e.office]); b.onclick = () => openPanel({ kind: 'event', id: e.id }); return b; };
+  if (pn.kind === 'event') {
+    const e = byId[pn.id]; if (!e) { state.panel = null; return; }
+    const p = perOf(e.date), k = KEY(e);
+    const webcal = new URL('feeds/msp-' + e.office + '.ics', location.href).href.replace(/^https?:/, 'webcal:');
+    const rows = [['For', STAFF_LABEL[e.staff] || e.staff], ['Audience', e.audience], ['In', rel(diff(today, e.date))],
+      ['Status', e.status === 'confirmed' ? 'Confirmed' + (e.confirmedBy ? ' by ' + e.confirmedBy + (e.confirmedOn ? ' (' + e.confirmedOn + ')' : '') : '') : 'Awaiting confirmation for this academic year, so not in the Outlook feeds yet'], ['Owner', e.owner]].filter(r => r[1]);
+    panel.innerHTML = head(k ? '#af6500' : OC[e.office], esc((k ? 'Key deadline · ' + KEYL[k] + ' · ' : '') + (OFFICES[e.office] || e.office) + (e.status === 'unconfirmed' ? ' · unconfirmed' : '')), esc(e.title),
+      esc(fmtLong(e.date) + (e.end && e.end !== e.date ? ' – ' + fmtLong(e.end) : '') + ' · week ' + isoWeek(e.date) + (p ? ' · ' + p.id : ''))) +
+      `<div class="pbody"><div>${rows.map(r => `<div class="prow"><b>${r[0]}</b><span>${esc(r[1])}</span></div>`).join('')}</div>` +
+      (e.notes ? `<p class="pnotes">${esc(e.notes)}</p>` : '') +
+      `<a class="pfeed" href="https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(webcal)}&name=${encodeURIComponent('MSP ' + (OFFICES[e.office] || e.office))}" target="_blank" rel="noopener">Subscribe to ${OFFICES[e.office] || e.office} in Outlook</a>` +
+      `<a class="preport" href="mailto:${CONTACT}?subject=${encodeURIComponent('Date check: ' + e.title + ' (' + e.date + ')')}">Report a wrong date</a></div>`;
+  } else if (pn.kind === 'day') {
+    const list = DB.events.filter(e => e.date === pn.iso && ok(e)), h = holOf(pn.iso), p = perOf(pn.iso);
+    panel.innerHTML = head('#0e71bb', 'Week ' + isoWeek(pn.iso) + (p ? ' · ' + p.id : '') + (isExam(pn.iso) ? ' · exam week' : ''), fmtLong(pn.iso), esc(h ? h.label : (list.length ? list.length + ' deadline' + (list.length > 1 ? 's' : '') : 'No deadlines')));
+    const body = el('div', 'plist');
+    if (!list.length) body.appendChild(el('div', 'pempty', 'No deadlines match the current filters.'));
+    for (const e of list) body.appendChild(item(e));
+    const deiDay = (DB.dei && DB.dei.days && DB.dei.days[pn.iso]) || [], deiMonth = (DB.dei && DB.dei.months && DB.dei.months[pn.iso.slice(0, 7)]) || [];
+    if (deiDay.length || deiMonth.length) body.appendChild(el('div', 'dei', '<span class="eyebrow">Diversity, Equity and Inclusion</span>' + deiDay.map(l => `<span class="chip">${esc(l)}</span>`).join('') + (deiMonth.length ? `<div class="mo">${esc(deiMonth.join(' · '))}</div>` : '')));
+    panel.appendChild(body);
+  } else {
+    const e = add(pn.s, 6), list = filtered().filter(x => x.office === pn.office && x.date >= pn.s && x.date <= e);
+    panel.innerHTML = head(OC[pn.office], OFFICES[pn.office], 'Week ' + isoWeek(pn.s), fmt(pn.s) + ' – ' + fmt(e, { day: 'numeric', month: 'short', year: 'numeric' }));
+    const body = el('div', 'plist');
+    if (!list.length) body.appendChild(el('div', 'pempty', 'No deadlines match the current filters.'));
+    for (const x of list) body.appendChild(item(x));
+    panel.appendChild(body);
+  }
+  panel.querySelector('.close').onclick = closePanel;
+  document.body.appendChild(scrim); document.body.appendChild(panel);
+  panel.querySelector('.close').focus();
+}
+document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') { closePanel(); const o = document.querySelector('.overlay'); if (o) o.remove(); } });
+
+// ---------- subscribe dialog (unchanged flow: one click for UM Outlook, webcal, Google, copy) ----------
+function showSubscribeCard(feed) {
+  const label = FEEDS[feed] || feed;
+  const httpsUrl = new URL('feeds/' + feed, location.href).href;
+  if (!location.protocol.startsWith('http')) { location.href = 'feeds/' + feed; return; }
+  const webcal = httpsUrl.replace(/^https?:/, 'webcal:');
   const old = document.querySelector('.overlay'); if (old) old.remove();
-  const overlay = document.createElement('div'); overlay.className = 'overlay';
-  const full = new Date(e.date + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-  const card = document.createElement('div'); card.className = 'card';
-  card.style.setProperty('--c', `var(--${e.office})`);
-  card.innerHTML =
-    `<div class="cardhead"><button class="close" title="Close">&#10005;</button>` +
-    `<div class="when">${full}</div><h3>${e.title}</h3></div>` +
-    `<div class="cardbody">` +
-    `<div class="row"><div class="k">Office</div><div><span class="tag" style="margin-left:0">${OFFICES[e.office] || e.office}</span>` +
-    (e.status === 'unconfirmed' ? '<span class="flag">unconfirmed</span>' : '') + `</div></div>` +
-    (e.staff ? `<div class="row"><div class="k">Acts</div><div>${STAFF_LABEL[e.staff] || e.staff}</div></div>` : '') +
-    (e.audience ? `<div class="row"><div class="k">For</div><div>${e.audience}</div></div>` : '') +
-    (e.notes ? `<div class="row"><div class="k">Notes</div><div>${e.notes}</div></div>` : '') +
-    (e.confirmedBy ? `<div class="row"><div class="k">Confirmed by</div><div>${e.confirmedBy}${e.confirmedOn ? ' (' + e.confirmedOn + ')' : ''}</div></div>` : '') +
-    (e.status === 'unconfirmed' ? `<div class="row"><div class="k">Status</div><div>Pending confirmation for this academic year, so it is not in the Outlook feeds yet. <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Know the real date?</a></div></div>` : '') +
-    `</div>`;
+  const overlay = el('div', 'overlay'), card = el('div', 'card');
+  card.innerHTML = `<div class="phead"><div class="kick"><span>Subscribe · updates arrive automatically</span><button class="close" aria-label="Close">✕</button></div><h2>MSP deadlines: ${esc(label)}</h2></div>` +
+    `<div class="cbody">` +
+    `<a class="subrow primary" href="https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(webcal)}&name=${encodeURIComponent('MSP ' + label)}" target="_blank" rel="noopener">UM Outlook (Microsoft 365)<small>One click: opens Outlook on the web with this calendar ready to add</small></a>` +
+    `<a class="subrow" href="${webcal}">Apple Calendar / Outlook desktop<small>Opens your default calendar app via webcal</small></a>` +
+    `<a class="subrow" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google Calendar<small>For private devices</small></a>` +
+    `<button class="subrow" id="subcopy">Copy the feed URL<small>Paste it into any calendar app's subscribe-from-web option</small></button></div>`;
   overlay.appendChild(card);
   overlay.onclick = (ev) => { if (ev.target === overlay) overlay.remove(); };
   card.querySelector('.close').onclick = () => overlay.remove();
+  card.querySelector('#subcopy').onclick = (ev) => {
+    const btn = ev.currentTarget;
+    navigator.clipboard.writeText(httpsUrl).then(() => { btn.firstChild.textContent = 'Copied!'; setTimeout(() => { btn.firstChild.textContent = 'Copy the feed URL'; }, 1400); })
+      .catch(() => { prompt('Feed URL:', httpsUrl); });
+  };
   document.body.appendChild(overlay);
 }
-document.addEventListener('keydown', (ev) => {
-  if (ev.key === 'Escape') { const o = document.querySelector('.overlay'); if (o) o.remove(); }
-});
 
-window.onerror = (msg) => {
-  document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${msg}</p>`;
-};
-window.addEventListener('resize', () => { if (!railManual) autoRail(); });
-// ?event=<id> (the URL carried by every feed entry) opens that event's card after load.
-function openEventFromUrl() {
-  const id = _params.get('event');
-  if (!id || !DB) return;
-  const e = DB.events.find(x => x.id === id);
-  if (e) showCard(e);
+// ---------- boot ----------
+function init() {
+  periods = DB.periods.slice().sort((a, b) => a.start.localeCompare(b.start));
+  hols = DB.holidays || [];
+  for (const e of DB.events) byId[e.id] = e;
+  yS = periods[0].start; yE = periods[periods.length - 1].end; total = diff(yS, yE) + 1;
+  document.getElementById('printstamp').textContent = 'MSP Operations Calendar · academic year ' + DB.year + ' · printed from data updated ' + DB.generated;
+  document.getElementById('footline').textContent = 'Academic year ' + DB.year + ' · data updated ' + fmt(DB.generated, { day: 'numeric', month: 'long', year: 'numeric' }) +
+    ' · ' + DB.events.length + ' deadlines, ' + DB.events.filter(e => e.status !== 'confirmed').length + ' awaiting confirmation';
+  const feeds = document.getElementById('feeds');
+  for (const [f, l] of Object.entries(FEEDS)) { const b = el('button', '', l); b.onclick = () => showSubscribeCard(f); feeds.appendChild(b); }
+  const search = document.getElementById('search');
+  search.oninput = () => { state.q = search.value.trim().toLowerCase(); render(); };
+  document.getElementById('printbtn').onclick = () => { if (state.view !== 'year') setView('year'); setTimeout(() => window.print(), 150); };
+  document.getElementById('homelink').onclick = (ev) => { ev.preventDefault(); state.q = ''; search.value = ''; setView('year'); };
+  const savedRail = (() => { try { return localStorage.getItem('mspcal_rail'); } catch (_) { return null; } })();
+  buildRail(); buildYearBar();
+  if (savedRail) { railManual = true; setRail(savedRail === 'mini'); } else autoRail();
+  window.addEventListener('resize', autoRail);
+  syncState(); render();
+  const evId = _params.get('event');
+  if (evId && byId[evId]) openPanel({ kind: 'event', id: evId });
+  if ((state.view === 'timeline' || state.view === 'grid') && today > yS) setTimeout(() => { const t = document.querySelector('.today-rule, .day.today'); if (t) t.scrollIntoView({ block: 'center', behavior: 'auto' }); }, 200);
 }
-if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); openEventFromUrl(); }
-else fetch('events.json').then(r => r.json()).then(db => { DB = db; init(); openEventFromUrl(); })
+window.onerror = (msg) => { document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${esc(msg)}</p>`; };
+if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); }
+else fetch('events.json').then(r => r.json()).then(db => { DB = db; init(); })
   .catch(() => { document.getElementById('main').innerHTML = '<p class="empty">The calendar data could not be loaded. Please refresh, and tell us if it keeps happening.</p>'; });
 </script>
 </body>
