@@ -309,6 +309,26 @@
   .dei span.chip { display: inline-block; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-s); padding: 2px 10px; font-size: 12px; margin: 0 4px 4px 0; }
   .dei .mo { font-size: 12px; color: var(--muted); margin-top: 3px; }
 
+  /* ---------- Landing: who are you (first visit only) ---------- */
+  .landing:focus { outline: none; }
+  .landing { position: fixed; inset: 0; z-index: 70; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; padding: 24px; overflow-y: auto; }
+  .landing .box { max-width: 520px; width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+  .landing .mark { width: 124px; height: 124px; overflow: hidden; margin-bottom: 8px; animation: spin 1.4s cubic-bezier(.2,.7,.2,1) 1 both; }
+  .landing .mark img { display: block; height: 184px; margin: -30px -100px; filter: brightness(0) invert(1); }
+  @keyframes spin { from { transform: rotate(-360deg); opacity: 0; } to { transform: none; opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .landing .mark { animation: none; } }
+  .landing .eyebrow { color: var(--rail-lab); }
+  .landing h1 { margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -.015em; line-height: 1.15; }
+  .landing p { margin: 0 0 10px; font-size: 15px; line-height: 1.5; color: var(--rail-txt); max-width: 440px; text-wrap: pretty; }
+  .landing .choices { display: grid; gap: 10px; width: 100%; }
+  .landing .choice { background: transparent; border: 1px solid rgba(255,255,255,.35); color: #fff; border-radius: var(--r); padding: 14px 18px; text-align: left; cursor: pointer;
+    display: flex; flex-direction: column; gap: 3px; transition: background .12s ease, border-color .12s ease, color .12s ease; }
+  .landing .choice:hover { background: rgba(255,255,255,.08); border-color: #fff; }
+  .landing .choice b { font-size: 15px; } .landing .choice small { font-size: 12px; line-height: 1.4; color: var(--rail-txt); }
+  .landing .choice.primary { background: var(--sky); border-color: var(--sky); } .landing .choice.primary small { color: #fff; opacity: .85; }
+  .landing .choice.primary:hover { background: #fff; border-color: #fff; color: var(--navy); } .landing .choice.primary:hover small { color: var(--navy); }
+  .landing .foot { font-size: 12px; color: var(--rail-lab); margin-top: 8px; }
+
   /* ---------- Subscribe dialog (kept) ---------- */
   .overlay { position: fixed; inset: 0; background: var(--scrim); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 60; }
   .card { background: #fff; border-radius: var(--r); max-width: 480px; width: 100%; box-shadow: var(--panel-shadow); overflow: hidden; max-height: 86vh; overflow-y: auto; }
@@ -343,7 +363,7 @@
 
   /* ---------- Print (A3 landscape wall chart) ---------- */
   @media print {
-    .rail, .panel, .scrim, .overlay, .phright, footer, .up, .keys, .lanehead { display: none !important; }
+    .rail, .panel, .scrim, .overlay, .landing, .phright, footer, .up, .keyblock, .lanehead { display: none !important; }
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
     body { background: #fff; } .content { display: block; }
     main { padding: 8px 10px; } .ywrap, .lanewrap { overflow: visible; } .ygrid, .lanes { min-width: 0; }
@@ -976,6 +996,28 @@ function showSubscribeCard(feed) {
   document.body.appendChild(overlay);
 }
 
+// ---------- landing: the audience choice, once ----------
+function showLanding() {
+  const l = el('div', 'landing');
+  l.setAttribute('role', 'dialog'); l.setAttribute('aria-label', 'Who are you');
+  l.innerHTML = `<div class="box"><span class="mark"><img src="msp-logo.png" alt=""></span>` +
+    `<span class="eyebrow">Maastricht Science Programme</span><h1>Operations Calendar</h1>` +
+    `<p>Every operational deadline at MSP, in one place. Tell us who you are and the calendar shows only what concerns you.</p>` +
+    `<div class="choices">` +
+    `<button class="choice primary" data-role="academic"><b>Academic staff</b><small>Course coordinators, tutors and supervisors: what you hand in, and when.</small></button>` +
+    `<button class="choice" data-role="support"><b>Support staff</b><small>Exams, ESD, Scheduling, BTR and BoE: what the offices owe and wait on.</small></button>` +
+    `<button class="choice" data-role="all"><b>Both</b><small>Everything: all ${DB.events.length} deadlines, every office, every role.</small></button>` +
+    `</div><span class="foot">You can change this any time under For, in the menu.</span></div>`;
+  for (const b of l.querySelectorAll('.choice')) b.onclick = () => {
+    state.role = b.dataset.role;
+    try { localStorage.setItem('mspcal_entered', '1'); } catch (_) {}
+    l.remove(); syncState(); buildRail(); render();
+  };
+  l.tabIndex = -1;
+  document.body.appendChild(l);
+  l.focus({ preventScroll: true });
+}
+
 // ---------- boot ----------
 function init() {
   periods = DB.periods.slice().sort((a, b) => a.start.localeCompare(b.start));
@@ -999,6 +1041,10 @@ function init() {
   syncState(); render();
   const evId = _params.get('event');
   if (evId && byId[evId]) openPanel({ kind: 'event', id: evId });
+  // First visit with no link that already says where to go: ask who they are. A shared link skips it.
+  const entered = (() => { try { return localStorage.getItem('mspcal_entered'); } catch (_) { return null; } })();
+  const deepLink = ['role', 'event', 'view', 'office', 'period'].some(k => _params.has(k));
+  if (!entered && !deepLink) showLanding();
   if ((state.view === 'timeline' || state.view === 'grid') && today > yS) setTimeout(() => { const t = document.querySelector('.today-rule, .day.today'); if (t) t.scrollIntoView({ block: 'center', behavior: 'instant' }); }, 200);
 }
 window.onerror = (msg) => { document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${esc(msg)}</p>`; };
