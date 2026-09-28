@@ -871,7 +871,7 @@ function openPanel(pn) {
     const p = perOf(e.date), k = KEY(e);
     const webcal = new URL('feeds/msp-' + e.office + '.ics', location.href).href.replace(/^https?:/, 'webcal:');
     const rows = [['For', STAFF_LABEL[e.staff] || e.staff], ['Audience', e.audience], ['In', rel(diff(today, e.date))],
-      ['Status', e.status === 'confirmed' ? 'Confirmed' + (e.confirmedBy ? ' by ' + e.confirmedBy + (e.confirmedOn ? ' (' + e.confirmedOn + ')' : '') : '') : 'Awaiting confirmation for this academic year, so not in the Outlook feeds yet'], ['Owner', e.owner]].filter(r => r[1]);
+      ['Owner', e.owner]].filter(r => r[1]);
     panel.innerHTML = head(k ? '#af6500' : OC[e.office], esc((k ? 'Key deadline · ' + KEYL[k] + ' · ' : '') + (OFFICES[e.office] || e.office) + (e.status === 'unconfirmed' ? ' · unconfirmed' : '')), esc(e.title),
       esc(fmtLong(e.date) + (e.end && e.end !== e.date ? ' – ' + fmtLong(e.end) : '') + ' · week ' + isoWeek(e.date) + (p ? ' · ' + p.id : ''))) +
       `<div class="pbody"><div>${rows.map(r => `<div class="prow"><b>${r[0]}</b><span>${esc(r[1])}</span></div>`).join('')}</div>` +
