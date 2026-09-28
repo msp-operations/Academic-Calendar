@@ -2,878 +2,1632 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//MSP Operations//Academic Calendar//EN
 X-WR-CALNAME:MSP academic staff deadlines 2026-27
+X-WR-CALDESC:MSP staff deadlines 2026-27. Spotted a wrong date\, or know on
+ e that is missing? Tell us at msp-exams@maastrichtuniversity.nl and we fix
+  it at the source. Web view: https://msp-operations.github.io/Academic-Cal
+ endar/
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:btr-rts-sept-202627@msp-operations
-DTSTAMP:20260717T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260718
 SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Sept cohort)
-DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student handbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after | For: students\, Academic Advisors\, coordinators
+DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, 
+ Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student han
+ dbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after 
+ | For: students\, Academic Advisors\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-rts-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-draft-p1-202627@msp-operations
-DTSTAMP:20260804T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260804
 DTEND;VALUE=DATE:20260805
-SUMMARY:[MSP SCHEDULING] P1 schedules in draft in MyTimetable (coordinators check now)
-DESCRIPTION:Sent Tue 4 Aug 2026 10:20: drafts live\, mid-terms/finals follow\, publication Thu 13 Aug. External coordinators: send tutor names now | For: course coordinators\, tutors
+SUMMARY:[MSP SCHEDULING] P1 schedules in draft in MyTimetable (coordinators
+  check now)
+DESCRIPTION:Sent Tue 4 Aug 2026 10:20: drafts live\, mid-terms/finals follo
+ w\, publication Thu 13 Aug. External coordinators: send tutor names now | 
+ For: course coordinators\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-draft-p
+ 1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p1-202627@msp-operations
-DTSTAMP:20260813T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260813
 DTEND;VALUE=DATE:20260814
 SUMMARY:[MSP SCHEDULING] Timetable published
-DESCRIPTION:P1. Coordinators: check your draft in the two weeks before publication | For: students\, coordinators\, tutors
+DESCRIPTION:P1. Coordinators: check your draft in the two weeks before publ
+ ication | For: students\, coordinators\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=timetable-pub
+ -p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p1-202627@msp-operations
-DTSTAMP:20260824T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
 SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P1)
-DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+DESCRIPTION:At least 5 working days before the module starts\; may not chan
+ ge during the module (R&R 3-6) | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=assessment-an
+ nounced-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:intro-days-202627@msp-operations
-DTSTAMP:20260824T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
 SUMMARY:[MSP GENERAL] INTRO days (Mon 24 - Wed 26 Aug)
-DESCRIPTION:Three days\, mandatory\, per the 2026 Draft Schedule LIVE (Martijn\, 13 Aug 2026). Mon: buddy introduction sessions\, welcome speech\, MSP Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morning. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Safety STAFF training (DUB30) for a student assessment on a fourth day. | For: new students\, buddies\, Secretariat\, ESD\, tutors
+DESCRIPTION:Three days\, mandatory\, per the 2026 Draft Schedule LIVE (Mart
+ ijn\, 13 Aug 2026). Mon: buddy introduction sessions\, welcome speech\, MS
+ P Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morn
+ ing. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Saf
+ ety STAFF training (DUB30) for a student assessment on a fourth day. | For
+ : new students\, buddies\, Secretariat\, ESD\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=intro-days
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-start-sept-202627@msp-operations
-DTSTAMP:20260831T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[MSP BTR] BTR September cohort starts
-DESCRIPTION:Runs to 22 Jan 2027. External agreements must be fully signed by day 1 | For: students\, supervisors\, IAs\, coordinators
+DESCRIPTION:Runs to 22 Jan 2027. External agreements must be fully signed b
+ y day 1 | For: students\, supervisors\, IAs\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-start-sep
+ t
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:year-start-202627@msp-operations
-DTSTAMP:20260831T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[MSP GENERAL] Academic year 2026-27 starts
 DESCRIPTION:For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=year-start
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-planning-forms-p2-due-202627@msp-operations
-DTSTAMP:20260918T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:[MSP SCHEDULING] Course/skill planning forms P2 return deadline
-DESCRIPTION:2025 deadline stated as before September 19th in the 20 Aug reminder\; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+DESCRIPTION:2025 deadline stated as before September 19th in the 20 Aug rem
+ inder\; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form
+  = your timetable is not published. | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-plannin
+ g-forms-p2-due
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p1-202627@msp-operations
-DTSTAMP:20260921T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P1. Paper PDF and TestVision test both due\; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P1 exams 12-16 Oct | For: course coordinators
+DESCRIPTION:P1. Paper PDF and TestVision test both due\; in the inbox by 9:
+ 00. Non-compliant exams returned with 24h to fix | CORRECTED one week earl
+ ier per Exam Submission and Grading Deadlines AY2026-2027 (final version\,
+  24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This als
+ o settles the 2-vs-3-week conflict logged between SOP 15 and the course ma
+ nual. P1 exams 12-16 Oct | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-submit-p
+ 1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-draft-p2-202627@msp-operations
-DTSTAMP:20260922T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
-SUMMARY:[MSP SCHEDULING] P2 schedules in draft in MyTimetable (coordinators check now)
-DESCRIPTION:2025 instance Tue 23 Sep 10:11. External coordinators who have not yet named tutors get chased in the same mail. Add the course manually in MyTimetable to see unstaffed activities. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, tutors
+SUMMARY:[MSP SCHEDULING] P2 schedules in draft in MyTimetable (coordinators
+  check now)
+DESCRIPTION:2025 instance Tue 23 Sep 10:11. External coordinators who have 
+ not yet named tutors get chased in the same mail. Add the course manually 
+ in MyTimetable to see unstaffed activities. | For: course coordinators\, t
+ utors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-draft-p
+ 2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-sept-202627@msp-operations
-DTSTAMP:20260928T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:[MSP BTR] BTR proposal submission deadline (Sept cohort)
-DESCRIPTION:13:00 via Collent (all BTR deadlines are 13:00\, ignore Collent's 01:00 display) | For: students\, RS\, IA
+DESCRIPTION:13:00 via Collent (all BTR deadlines are 13:00\, ignore Collent
+ 's 01:00 display) | For: students\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:deadline-submission-cutoff-202627@msp-operations
-DTSTAMP:20261004T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
-SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
-DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | NB Linzi plan says "Sat 4 Oct" but 4 Oct 2026 is a Sunday\, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with Linzi (flagged by the four-review audit\, 25 Aug 2026) | For: all offices\, Operations
+SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (
+ cut-off)
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid
+ -Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of re
+ flection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs p
+ rep week 19-23 Oct) | NB Linzi plan says "Sat 4 Oct" but 4 Oct 2026 is a S
+ unday\, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with L
+ inzi (flagged by the four-review audit\, 25 Aug 2026) | For: all offices\,
+  Operations
+URL:https://msp-operations.github.io/Academic-Calendar/?event=deadline-subm
+ ission-cutoff
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-send-p1-202627@msp-operations
-DTSTAMP:20261005T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
 SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P1)
-DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 5-9 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Dat
+ e is the START of the window because this is when students first see it. W
+ indow 5-9 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: s
+ tudents\, coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-send-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p2-202627@msp-operations
-DTSTAMP:20261008T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P2 | For: students\, coordinators\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=timetable-pub
+ -p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-week-p1-202627@msp-operations
-DTSTAMP:20261012T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:[MSP EXAMS] Exam week (P1)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 
+ week hosts P4 resits. MSP sits the week before the central toetsweek at US
+ C. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings
+ ) | For: coordinators\, invigilators\, ESD\, students
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-week-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-due-sept-202627@msp-operations
-DTSTAMP:20261016T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Sept cohort)
-DESCRIPTION:Friday deadline\; office publishes the Monday after | For: RS\, IA
+DESCRIPTION:Friday deadline\; office publishes the Monday after | For: RS\,
+  IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ grades-due-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p2-202627@msp-operations
-DTSTAMP:20261019T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P2)
-DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+DESCRIPTION:At least 5 working days before the module starts\; may not chan
+ ge during the module (R&R 3-6) | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=assessment-an
+ nounced-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-fall-202627@msp-operations
-DTSTAMP:20261019T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:[MSP GENERAL] Prep week after P1 exams (no education)
-DESCRIPTION:Week 43 (19-23 Oct): study\, prepare and reflect\, per the Calendarium | For: students\, all staff
+DESCRIPTION:Week 43 (19-23 Oct): study\, prepare and reflect\, per the Cale
+ ndarium | For: students\, all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=prep-week-fal
+ l
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p1-202627@msp-operations
-DTSTAMP:20261030T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P1)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)
+ \; resits in that week ride the same clock. ESD then has 5 working days to
+  process. P2 has its own dated event (Christmas closure pauses the clock) 
+ | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-due-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:frame-schedule-spring-deadline-202627@msp-operations
-DTSTAMP:20261101T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
-SUMMARY:[MSP SCHEDULING] Frame schedules Spring semester ready (firm deadline)
-DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct\, ~10 days ahead | For: Gerco\, Chris Pawley\, Scheduling\, IPO
+SUMMARY:[MSP GENERAL] Frame schedules Spring semester ready (firm deadline)
+DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready 
+ before the Academic Advising period starts. 2025 instance: Gerco's finals 
+ landed Tue 21 Oct\, ~10 days ahead | Severine 26 Sep 2026: Management's da
+ te\, not Scheduling's | For: Gerco Onderwater (owner)\, Chris Pawley\, Sch
+ eduling\, IPO
+URL:https://msp-operations.github.io/Academic-Calendar/?event=frame-schedul
+ e-spring-deadline
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:advising-period-spring-start-202627@msp-operations
-DTSTAMP:20261102T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
-SUMMARY:[MSP SCHEDULING] Academic Advising period starts (Spring registration)
-DESCRIPTION:Mon 2 Nov per the IPO overview\; runs into course registration week 9-13 Nov | For: students\, academic advisors\, coordinators
+SUMMARY:[MSP GENERAL] Academic Advising period starts (Spring registration)
+DESCRIPTION:Mon 2 Nov per the IPO overview\; runs into course registration 
+ week 9-13 Nov | Severine 26 Sep 2026: owned by the Office of Academic Advi
+ sing\, not Scheduling | For: Office of Academic Advising (owner)\, student
+ s\, academic advisors\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=advising-peri
+ od-spring-start
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-midterm-grades-due-sept-202627@msp-operations
-DTSTAMP:20261106T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[MSP BTR] BTR midterm practical grade due (Sept cohort)
 DESCRIPTION:For: RS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-midterm-g
+ rades-due-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p1-202627@msp-operations
-DTSTAMP:20261106T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P1)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the e
+ xaminer\, 5 for ESD processing. Transcripts updated within 1 working day a
+ fter (running update)\; final bulk update follows the inspection round. P2
+  has its own dated event | For: students\, coordinators\, BoE\, Academic A
+ dvising
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-publis
+ hed-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:course-reg-spring-202627@msp-operations
-DTSTAMP:20261109T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-SUMMARY:[MSP SCHEDULING] Course registration week (Spring 2027 selections)
-DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | For: students\, Academic Advising\, ESD
+SUMMARY:[MSP GENERAL] Course registration week (Spring 2027 selections)
+DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | Severin
+ e 26 Sep 2026: owned by the Office of Academic Advising\, not Scheduling |
+  For: Office of Academic Advising (owner)\, students\, Academic Advising\,
+  ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=course-reg-sp
+ ring
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-close-p1-202627@msp-operations
-DTSTAMP:20261113T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P1)
-DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 9-13 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and 
+ the EPC of the results. Window 9-13 Nov per Eva's Jaaroverzicht IPO 2026-2
+ 027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-close-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p2-202627@msp-operations
-DTSTAMP:20261116T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P2 (incl. P1 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P2 exams 7-11 Dec | For: course coordinators
-END:VEVENT
-BEGIN:VEVENT
-UID:sched-planning-forms-spring-202627@msp-operations
-DTSTAMP:20261119T000000Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
-SUMMARY:[MSP SCHEDULING] Course/skills planning forms out to coordinators (P4/P5) + student numbers
-DESCRIPTION:One combined mail\, 2025 instance Thu 20 Nov 10:56\, carrying the registration-numbers overview plus the P4 and P5 Qualtrics forms with staggered deadlines. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, Scheduling (Severine)
+DESCRIPTION:P2 (incl. P1 resit exams) | CORRECTED one week earlier per Exam
+  Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026
+ ): the rule is 3 weeks before the first exam\, not 2. This also settles th
+ e 2-vs-3-week conflict logged between SOP 15 and the course manual. P2 exa
+ ms 7-11 Dec | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-submit-p
+ 2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-p1-202627@msp-operations
-DTSTAMP:20261120T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P1)
-DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-
+ inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun -
+  all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (
+ 0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=accreditation
+ -deadline-p1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-inspection-p1-202627@msp-operations
-DTSTAMP:20261120T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:[MSP EXAMS] Exam inspection deadline (P1)
-DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+DESCRIPTION:10 working days after the grades are processed. Students may in
+ spect their exam up to this date\; the coordinator runs the session. Per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026) | For: students\, coordinators\, exams office
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-inspecti
+ on-p1
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-spring-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[MSP SCHEDULING] Course/skills planning forms out to coordinators (
+ P4/P5) + student numbers
+DESCRIPTION:One combined mail\, 2025 instance Thu 20 Nov 10:56\, carrying t
+ he registration-numbers overview plus the P4 and P5 Qualtrics forms with s
+ taggered deadlines. | Fri 20 Nov 2026 per Severine (26 Sep 2026) | For: co
+ urse coordinators\, Scheduling (Severine)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-plannin
+ g-forms-spring
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:graduation-ceremony-202627@msp-operations
-DTSTAMP:20261127T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:[MSP GENERAL] Graduation ceremony 2026-27 (evening)
-DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas announcement Details on Graduation\, 13 May 2026: the ceremony will be on 27 November 2026 in the evening\, graduates receive further information around Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expected MECC per the 2025 pattern | For: graduating students\, BoE\, Secretariat\, Alumni
+DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas a
+ nnouncement Details on Graduation\, 13 May 2026: the ceremony will be on 2
+ 7 November 2026 in the evening\, graduates receive further information aro
+ und Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expect
+ ed MECC per the 2025 pattern | For: graduating students\, BoE\, Secretaria
+ t\, Alumni
+URL:https://msp-operations.github.io/Academic-Calendar/?event=graduation-ce
+ remony
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-send-p2-202627@msp-operations
-DTSTAMP:20261130T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P2)
-DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 30 Nov - 4 Dec per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Dat
+ e is the START of the window because this is when students first see it. W
+ indow 30 Nov - 4 Dec per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) |
+  For: students\, coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-send-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:waiver-deadline-202627@msp-operations
-DTSTAMP:20261201T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[MSP SCHEDULING] Waiver deadline for Spring registration
-DESCRIPTION:Coordinators grant waivers\; some labs have earlier hard cut-offs | For: students\, coordinators\, ESD
+DESCRIPTION:Coordinators grant waivers\; some labs have earlier hard cut-of
+ fs | For: students\, coordinators\, ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=waiver-deadli
+ ne
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-thesis-sept-202627@msp-operations
-DTSTAMP:20261207T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP BTR] BTR thesis submission deadline (Sept cohort)
-DESCRIPTION:Monday 13:00. Research-group presentation should happen within a week either side. NB collides with P2 exam week | For: students\, RS\, IA
+DESCRIPTION:Monday 13:00. Research-group presentation should happen within 
+ a week either side. NB collides with P2 exam week | For: students\, RS\, I
+ A
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-thesis-se
+ pt
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-week-p2-202627@msp-operations
-DTSTAMP:20261207T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP EXAMS] Exam week (P2)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
-END:VEVENT
-BEGIN:VEVENT
-UID:timetable-pub-p3-202627@msp-operations
-DTSTAMP:20261210T000000Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
-SUMMARY:[MSP SCHEDULING] Timetable published
-DESCRIPTION:P3 | For: students\, coordinators\, tutors
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 
+ week hosts P4 resits. MSP sits the week before the central toetsweek at US
+ C. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings
+ ) | For: coordinators\, invigilators\, ESD\, students
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-week-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-video-sept-202627@msp-operations
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:[MSP BTR] BTR video submission deadline (Sept cohort)
-DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer reviewers
+DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links
+  expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer
+  reviewers
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-video-sep
+ t
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-rts-feb-202627@msp-operations
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Feb cohort)
-DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Office FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after\, into the Christmas closure. Under-grading RTS flagging also lands here | For: students\, Academic Advisors\, coordinators
+DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Offi
+ ce FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two do
+ cs. Coordinator approvals run ~3 weeks after\, into the Christmas closure.
+  Under-grading RTS flagging also lands here | For: students\, Academic Adv
+ isors\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-rts-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-planning-forms-p4-due-202627@msp-operations
-DTSTAMP:20261214T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[MSP SCHEDULING] Course/skill planning forms P4 return deadline
-DESCRIPTION:2025 instance stated verbatim in the spring mail: Deadline for P4\, December 15\, 2025\, 5 pm\, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec\, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan\, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+DESCRIPTION:2025 instance stated verbatim in the spring mail: Deadline for 
+ P4\, December 15\, 2025\, 5 pm\, which was a Monday. CORRECTED from an inf
+ erred Fri 11 Dec: we pulled it forward believing the Christmas break start
+ s 14 Dec\, but the Calendarium marks that week as no education and the clo
+ sure is 21 Dec to 1 Jan\, so the reasoning never applied. Clean projection
+  is Mon 14 Dec 2026 17:00. | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-plannin
+ g-forms-p4-due
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
-DTSTAMP:20261221T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:[MSP GENERAL] Christmas closure begins (21 Dec - 1 Jan)
-DESCRIPTION:Week 51 (14-18 Dec) is no education but a normal working week\; the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. CORRECTED per the four-review audit\, 25 Aug 2026: the shading previously covered both and three working deadlines sat inside it. Collent offline ~23 Dec to 6 Jan for maintenance | For: all staff
+DESCRIPTION:Week 51 (14-18 Dec) is no education but a normal working week\;
+  the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. 
+ CORRECTED per the four-review audit\, 25 Aug 2026: the shading previously 
+ covered both and three working deadlines sat inside it. Collent offline ~2
+ 3 Dec to 6 Jan for maintenance | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=christmas-bre
+ ak
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-draft-p4-202627@msp-operations
-DTSTAMP:20270104T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
-SUMMARY:[MSP SCHEDULING] P4 schedules in draft in MyTimetable (coordinators check now)
-DESCRIPTION:2026 instance Mon 5 Jan 10:54\, with comments due Fri 9 Jan 17:00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 17:00\; official publication is Thu 14 Jan per the Calendarium. MSP starts a week before the rest of UM. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, tutors
+SUMMARY:[MSP SCHEDULING] P4 schedules in draft in MyTimetable (coordinators
+  check now)
+DESCRIPTION:2026 instance Mon 5 Jan 10:54\, with comments due Fri 9 Jan 17:
+ 00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 1
+ 7:00\; official publication is Thu 14 Jan per the Calendarium. MSP starts 
+ a week before the rest of UM. | For: course coordinators\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-draft-p
+ 4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p2-202627@msp-operations
-DTSTAMP:20270108T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
-SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2 + P1 resits)
-DESCRIPTION:Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview (closure-adjusted\, marked * in the doc)\; P1 resits ride the same clock | For: course coordinators\, examiners
+SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P2 + P1 res
+ its)
+DESCRIPTION:Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview
+  (closure-adjusted\, marked * in the doc)\; P1 resits ride the same clock 
+ | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-due-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p4-202627@msp-operations
-DTSTAMP:20270114T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P4 | For: students\, coordinators\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=timetable-pub
+ -p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-final-grades-due-sept-202627@msp-operations
-DTSTAMP:20270115T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:[MSP BTR] BTR final grades due in Collent (Sept cohort)
-DESCRIPTION:Thesis (RS+IA)\, Final Practical (RS)\, Video (IA). Do not submit before the presentation is done | For: RS\, IA
+DESCRIPTION:Thesis (RS+IA)\, Final Practical (RS)\, Video (IA). Do not subm
+ it before the presentation is done | For: RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-final-gra
+ des-due-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p2-202627@msp-operations
-DTSTAMP:20270115T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (P2\, deadline)
-DESCRIPTION:Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview\; running transcript update 20 Jan\, inspection deadline 29 Jan\, final transcript update 5 Feb | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview\; runni
+ ng transcript update 20 Jan\, inspection deadline 29 Jan\, final transcrip
+ t update 5 Feb | For: students\, coordinators\, BoE\, Academic Advising
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-publis
+ hed-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-letters-out-202627@msp-operations
-DTSTAMP:20270118T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP ESD] Catalogue update letters to all course coordinators
-DESCRIPTION:Mid Jan per the IPO overview\; response window ~6 weeks to end Feb. Separate letters for dropped modules and new modules (new coordinators get until mid/end March) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11 Jan - 26 Feb | For: course coordinators\, education coordinators\, IPO (Eva)
+DESCRIPTION:Mid Jan per the IPO overview\; response window ~6 weeks to end 
+ Feb. Separate letters for dropped modules and new modules (new coordinator
+ s get until mid/end March) | Confirmed by Eva's Jaaroverzicht IPO 2026-202
+ 7 (24 Aug 2026): window 11 Jan - 26 Feb | For: course coordinators\, educa
+ tion coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=catalogue-let
+ ters-out
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p4-202627@msp-operations
-DTSTAMP:20270118T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P4)
-DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+DESCRIPTION:At least 5 working days before the module starts\; may not chan
+ ge during the module (R&R 3-6) | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=assessment-an
+ nounced-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-close-p2-202627@msp-operations
-DTSTAMP:20270122T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270122
 DTEND;VALUE=DATE:20270123
 SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P2)
-DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 18-22 Jan per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and 
+ the EPC of the results. Window 18-22 Jan per Eva's Jaaroverzicht IPO 2026-
+ 2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-close-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-start-feb-202627@msp-operations
-DTSTAMP:20270125T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:[MSP BTR] BTR February cohort starts
-DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 end) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students\, supervisors\, IAs\, coordinators
+DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 e
+ nd) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to 
+ settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students
+ \, supervisors\, IAs\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-start-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-p2-202627@msp-operations
-DTSTAMP:20270129T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P2 + P1 resits)
-DESCRIPTION:Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline\; closure shifts the whole round) | For: course coordinators\, IPO (Eva)
+DESCRIPTION:Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also t
+ he P2 exam-inspection deadline\; closure shifts the whole round) | For: co
+ urse coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=accreditation
+ -deadline-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-inspection-p2-202627@msp-operations
-DTSTAMP:20270129T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:[MSP EXAMS] Exam inspection deadline (P2 + P1 resits)
-DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+DESCRIPTION:10 working days after the grades are processed. Students may in
+ spect their exam up to this date\; the coordinator runs the session. Per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026) | For: students\, coordinators\, exams office
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-inspecti
+ on-p2
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-sept-202627@msp-operations
-DTSTAMP:20270131T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:[MSP BTR] BTR September cohort graduation date
-DESCRIPTION:Graduation = last day of the month the last component was fulfilled | For: students\, BoE\, ESD
+DESCRIPTION:Graduation = last day of the month the last component was fulfi
+ lled | For: students\, BoE\, ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-graduatio
+ n-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:project-grades-due-p3-202627@msp-operations
-DTSTAMP:20270205T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
-SUMMARY:[MSP ESD] Project grades due to ESD (P3 projects)
-DESCRIPTION:Fri 5 Feb per the grading overview (+10 working days from P3 end) | For: project supervisors\, Project Committee
+SUMMARY:[MSP EXAMS] Project grades due to Exams\, ESD in cc (P3 projects)
+DESCRIPTION:Fri 5 Feb per the grading overview (+10 working days from P3 en
+ d) | Heather Obmann 26 Sep 2026: hand in to msp-exams with Education Suppo
+ rt in cc\; this is the exam coordinator's deadline | For: project supervis
+ ors\, Project Committee
+URL:https://msp-operations.github.io/Academic-Calendar/?event=project-grade
+ s-due-p3
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:carnival-202627@msp-operations
-DTSTAMP:20270208T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:[MSP GENERAL] Carnival week (no teaching)
 DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=carnival
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-planning-forms-p5-due-202627@msp-operations
-DTSTAMP:20270212T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:[MSP SCHEDULING] Course/skill planning forms P5 return deadline
-DESCRIPTION:2026 instance stated verbatim in the spring mail: Deadline for P5\, February 13\, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fri 12 Feb. Non-fillers chased in the week before P5. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+DESCRIPTION:2026 instance stated verbatim in the spring mail: Deadline for 
+ P5\, February 13\, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fr
+ i 12 Feb. Non-fillers chased in the week before P5. | For: course coordina
+ tors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-plannin
+ g-forms-p5-due
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-feb-202627@msp-operations
-DTSTAMP:20270218T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
+DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurre
+ nce Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates
+  get set separately\, verify with Linzi | For: all MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p4-202627@msp-operations
-DTSTAMP:20270222T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270222
 DTEND;VALUE=DATE:20270223
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P4 (incl. P2/P3 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P4 exams 15-19 Mar | For: course coordinators
+DESCRIPTION:P4 (incl. P2/P3 resit exams) | CORRECTED one week earlier per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026): the rule is 3 weeks before the first exam\, not 2. This also settles
+  the 2-vs-3-week conflict logged between SOP 15 and the course manual. P4 
+ exams 15-19 Mar | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-submit-p
+ 4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:catalogue-coordinator-updates-202627@msp-operations
-DTSTAMP:20270226T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270227
 SUMMARY:[MSP ESD] Course catalogue - coordinator updates due
-DESCRIPTION:End of February (2026 instance was Fri 27 Feb)\; update letters go out mid-Jan\, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): exact date given | For: course coordinators
+DESCRIPTION:End of February (2026 instance was Fri 27 Feb)\; update letters
+  go out mid-Jan\, reminder the Monday before (IPO overview: Mon 23 Feb 09:
+ 00). No reaction = last year's description is copied and stands | Confirme
+ d by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): exact date given | F
+ or: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=catalogue-coo
+ rdinator-updates
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-inspection-p3-202627@msp-operations
-DTSTAMP:20270226T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270227
 SUMMARY:[MSP EXAMS] Exam inspection deadline (P3 projects)
-DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+DESCRIPTION:10 working days after the grades are processed. Students may in
+ spect their exam up to this date\; the coordinator runs the session. Per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026) | For: students\, coordinators\, exams office
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-inspecti
+ on-p3
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-feb-202627@msp-operations
-DTSTAMP:20270301T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[MSP BTR] BTR proposal submission deadline (Feb cohort)
-DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks\, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: students\, RS\, IA
+DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks
+ \, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: stud
+ ents\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-send-p4-202627@msp-operations
-DTSTAMP:20270308T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270308
 DTEND;VALUE=DATE:20270309
 SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P4)
-DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 8-12 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Dat
+ e is the START of the window because this is when students first see it. W
+ indow 8-12 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: 
+ students\, coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-send-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-mar-202627@msp-operations
-DTSTAMP:20270309T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: a
+ ll MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -mar
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:frame-schedules-draft-ay2728-202627@msp-operations
-DTSTAMP:20270312T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
-SUMMARY:[MSP SCHEDULING] Draft frame schedules AY27-28 circulated by the Dean
-DESCRIPTION:2026 instance Fri 13 Mar 09:02 from Gerco\, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: Gerco\, Scheduling\, Exams\, BoE\, Information Hub
+SUMMARY:[MSP GENERAL] Draft frame schedules AY27-28 circulated by the Dean
+DESCRIPTION:2026 instance Fri 13 Mar 09:02 from Gerco\, feedback due noon M
+ on 23 Mar. A corrected version followed on 15 Apr fixing period dates and 
+ Pentecost. | Severine 26 Sep 2026: the Dean's dates\, not Scheduling's | F
+ or: Gerco\, Scheduling\, Exams\, BoE\, Information Hub
+URL:https://msp-operations.github.io/Academic-Calendar/?event=frame-schedul
+ es-draft-ay2728
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-week-p4-202627@msp-operations
-DTSTAMP:20270315T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270316
 SUMMARY:[MSP EXAMS] Exam week (P4)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 
+ week hosts P4 resits. MSP sits the week before the central toetsweek at US
+ C. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings
+ ) | For: coordinators\, invigilators\, ESD\, students
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-week-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:timetable-pub-p5-202627@msp-operations
-DTSTAMP:20270318T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270318
 DTEND;VALUE=DATE:20270319
 SUMMARY:[MSP SCHEDULING] Timetable published
 DESCRIPTION:P5 | For: students\, coordinators\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=timetable-pub
+ -p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-due-feb-202627@msp-operations
-DTSTAMP:20270319T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Feb cohort)
-DESCRIPTION:Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+DESCRIPTION:Grades due in Collent from academic staff. Published to student
+ s Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Frid
+ ay is the staff hand-in deadline\, the Monday is publication\, same conven
+ tion as the September cohort | For: RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ grades-due-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:assessment-announced-p5-202627@msp-operations
-DTSTAMP:20270322T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
 SUMMARY:[MSP EXAMS] Assessment format must be in the syllabus (P5)
-DESCRIPTION:At least 5 working days before the module starts\; may not change during the module (R&R 3-6) | For: course coordinators\, examiners
+DESCRIPTION:At least 5 working days before the module starts\; may not chan
+ ge during the module (R&R 3-6) | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=assessment-an
+ nounced-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-spring-202627@msp-operations
-DTSTAMP:20270322T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
 SUMMARY:[MSP GENERAL] Prep week after P4 exams (no education)
-DESCRIPTION:Week 12 (22-26 Mar)\, per the Calendarium | For: students\, all staff
+DESCRIPTION:Week 12 (22-26 Mar)\, per the Calendarium | For: students\, all
+  staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=prep-week-spr
+ ing
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:good-friday-202627@msp-operations
-DTSTAMP:20270326T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
 SUMMARY:[MSP GENERAL] Good Friday (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=good-friday
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:easter-monday-202627@msp-operations
-DTSTAMP:20270329T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270330
 SUMMARY:[MSP GENERAL] Easter Monday (holiday)
-DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first teaching day is Tue 30 Mar | For: all staff
+DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first 
+ teaching day is Tue 30 Mar | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=easter-monday
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p4-202627@msp-operations
-DTSTAMP:20270402T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270403
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P4)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)
+ \; resits in that week ride the same clock. ESD then has 5 working days to
+  process. P2 has its own dated event (Christmas closure pauses the clock) 
+ | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-due-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-apr-202627@msp-operations
-DTSTAMP:20270408T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
+DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: a
+ ll MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -apr
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-midterm-grades-due-feb-202627@msp-operations
-DTSTAMP:20270409T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP BTR] BTR midterm practical grade due (Feb cohort)
-DESCRIPTION:Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS
+DESCRIPTION:Midterm grades due in Collent from academic staff. Published to
+  students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: 
+ the Friday is the staff hand-in deadline\, the Monday is publication\, sam
+ e convention as the September cohort | For: RS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-midterm-g
+ rades-due-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p4-202627@msp-operations
-DTSTAMP:20270409T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P4)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the e
+ xaminer\, 5 for ESD processing. Transcripts updated within 1 working day a
+ fter (running update)\; final bulk update follows the inspection round. P2
+  has its own dated event | For: students\, coordinators\, BoE\, Academic A
+ dvising
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-publis
+ hed-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:frame-schedules-final-ay2728-202627@msp-operations
-DTSTAMP:20270412T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270412
 DTEND;VALUE=DATE:20270413
-SUMMARY:[MSP SCHEDULING] Final frame schedules AY27-28 (P1-P5) from the Dean
-DESCRIPTION:2026 instance Mon 13 Apr 16:26 from Gerco\; Severine relayed to UCM\, DACS\, UCV and Jesse Laumen on Tue 14 Apr 09:58. NB SSC is not on that relay list. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: all offices\, UCM/UCV/DACS schedulers\, Academic Advising
+SUMMARY:[MSP GENERAL] Final frame schedules AY27-28 (P1-P5) from the Dean
+DESCRIPTION:2026 instance Mon 13 Apr 16:26 from Gerco\; Severine relayed to
+  UCM\, DACS\, UCV and Jesse Laumen on Tue 14 Apr 09:58. | Severine 26 Sep 
+ 2026: the Dean's dates\, not Scheduling's | For: all offices\, UCM/UCV/DAC
+ S schedulers\, Academic Advising
+URL:https://msp-operations.github.io/Academic-Calendar/?event=frame-schedul
+ es-final-ay2728
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-close-p4-202627@msp-operations
-DTSTAMP:20270416T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270417
 SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P4)
-DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 12-16 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and 
+ the EPC of the results. Window 12-16 Apr per Eva's Jaaroverzicht IPO 2026-
+ 2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-close-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-p4-202627@msp-operations
-DTSTAMP:20270423T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270424
-SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P4)
-DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P4 + P2 resits)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-
+ inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun -
+  all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (
+ 0.233). P2 has its own dated event | Eva 26 Sep 2026: includes the P2 resi
+ t material | For: course coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=accreditation
+ -deadline-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-inspection-p4-202627@msp-operations
-DTSTAMP:20270423T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270424
 SUMMARY:[MSP EXAMS] Exam inspection deadline (P4 + P2 resits)
-DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+DESCRIPTION:10 working days after the grades are processed. Students may in
+ spect their exam up to this date\; the coordinator runs the session. Per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026) | For: students\, coordinators\, exams office
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-inspecti
+ on-p4
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-p5-202627@msp-operations
-DTSTAMP:20270426T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270426
 DTEND;VALUE=DATE:20270427
 SUMMARY:[MSP EXAMS] Exam submission deadline for coordinators
-DESCRIPTION:P5 (incl. P4 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the rule is 3 weeks before the first exam\, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P5 exams 17-21 May | For: course coordinators
+DESCRIPTION:P5 (incl. P4 resit exams) | CORRECTED one week earlier per Exam
+  Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026
+ ): the rule is 3 weeks before the first exam\, not 2. This also settles th
+ e 2-vs-3-week conflict logged between SOP 15 and the course manual. P5 exa
+ ms 17-21 May | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-submit-p
+ 5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:kings-day-202627@msp-operations
-DTSTAMP:20270427T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:[MSP GENERAL] King's Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=kings-day
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-send-p5-202627@msp-operations
-DTSTAMP:20270503T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:[MSP ESD] IWIO opens: invitations sent (3 reminders follow) (P5)
-DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Date is the START of the window because this is when students first see it. Window 3-7 May per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: students\, coordinators\, IPO (Eva)
+DESCRIPTION:Step 3: invitation mail to students\, then three reminders. Dat
+ e is the START of the window because this is when students first see it. W
+ indow 3-7 May per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: s
+ tudents\, coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-send-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:liberation-day-202627@msp-operations
-DTSTAMP:20270505T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:[MSP GENERAL] Liberation Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=liberation-da
+ y
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ascension-day-202627@msp-operations
-DTSTAMP:20270506T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270506
 DTEND;VALUE=DATE:20270507
 SUMMARY:[MSP GENERAL] Ascension Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=ascension-day
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bridging-day-202627@msp-operations
-DTSTAMP:20270507T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270507
 DTEND;VALUE=DATE:20270508
 SUMMARY:[MSP GENERAL] Bridging Day (UM closed)
-DESCRIPTION:Bridging day after Ascension per the Calendarium | For: all staff
+DESCRIPTION:Bridging day after Ascension per the Calendarium | For: all sta
+ ff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bridging-day
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-may-202627@msp-operations
-DTSTAMP:20270511T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: all MSP staff
-END:VEVENT
-BEGIN:VEVENT
-UID:timetable-pub-p6-202627@msp-operations
-DTSTAMP:20270512T000000Z
-DTSTART;VALUE=DATE:20270512
-DTEND;VALUE=DATE:20270513
-SUMMARY:[MSP SCHEDULING] Timetable published
-DESCRIPTION:P6 | For: students\, coordinators\, tutors
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: 
+ all MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -may
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-week-p5-202627@msp-operations
-DTSTAMP:20270517T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP EXAMS] Exam week (P5)
-DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings) | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:P2 week also hosts P1 resits\; P4 week hosts P2/P3 resits\; P5 
+ week hosts P4 resits. MSP sits the week before the central toetsweek at US
+ C. P5: sittings Tue 18 - Thu 20 May only (Whit Monday\, no Friday sittings
+ ) | For: coordinators\, invigilators\, ESD\, students
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-week-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:whit-monday-202627@msp-operations
-DTSTAMP:20270517T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP GENERAL] Whit Monday (holiday)
-DESCRIPTION:Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week | For: all staff
-END:VEVENT
-BEGIN:VEVENT
-UID:course-reg-fall-202627@msp-operations
-DTSTAMP:20270517T000000Z
-DTSTART;VALUE=DATE:20270517
-DTEND;VALUE=DATE:20270518
-SUMMARY:[MSP SCHEDULING] Course registration week (Fall 2027 selections)
-DESCRIPTION:17-21 May | NB week 1 is Whit Monday 17 May 2027 and UM is closed\, but the form is online and 17-21 May is the published week | For: students\, Academic Advising\, ESD
+DESCRIPTION:Official UM holiday. NB this is day one of the P5 exam week: ex
+ ams run Tue-Fri that week | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=whit-monday
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-thesis-feb-202627@msp-operations
-DTSTAMP:20270518T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270518
 DTEND;VALUE=DATE:20270519
 SUMMARY:[MSP BTR] BTR thesis submission deadline (Feb cohort)
-DESCRIPTION:Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collides with the P5 exam week 17-21 May\, same collision the Sept thesis has with P2 | For: students\, RS\, IA
+DESCRIPTION:Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collid
+ es with the P5 exam week 17-21 May\, same collision the Sept thesis has wi
+ th P2 | For: students\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-thesis-fe
+ b
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-fall-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:[MSP SCHEDULING] Course registration deadline (Fall 2027 selections
+ )
+DESCRIPTION:Tue 18 May 2027 per Severine (26 Sep 2026)\; Mon 17 May is Whit
+  Monday and UM is closed\, so the deadline moves to the Tuesday | For: stu
+ dents\, Academic Advising\, ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=course-reg-fa
+ ll
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-video-feb-202627@msp-operations
-DTSTAMP:20270521T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270521
 DTEND;VALUE=DATE:20270522
 SUMMARY:[MSP BTR] BTR video submission deadline (Feb cohort)
-DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDrive backup mandatory (WeTransfer links expire) | For: students\, IA\, peer reviewers
-END:VEVENT
-BEGIN:VEVENT
-UID:sched-planning-forms-fall-202627@msp-operations
-DTSTAMP:20270526T000000Z
-DTSTART;VALUE=DATE:20270526
-DTEND;VALUE=DATE:20270527
-SUMMARY:[MSP SCHEDULING] Course/skill planning forms out to coordinators (AY27-28 P1/P2)
-DESCRIPTION:2026 instance Wed 27 May 12:22\, reminder 26 Jun. Sent the week after the fall registration week. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators\, Scheduling (Severine)
+DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDriv
+ e backup mandatory (WeTransfer links expire) | For: students\, IA\, peer r
+ eviewers
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-video-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:admissions-selection-complete-202627@msp-operations
-DTSTAMP:20270530T000000Z
-DTSTART;VALUE=DATE:20270530
-DTEND;VALUE=DATE:20270531
-SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 CET)
-DESCRIPTION:Applicant-facing cut-off per the programme webpage | For: Admissions team\, interviewers
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:[MSP ESD] Admissions - selection incl. interviews complete (17:00 C
+ ET)
+DESCRIPTION:Fri 28 May 2027\, 17:00 CET\, per Gianfranco Grillo (26 Sep 202
+ 6)\; applicant-facing cut-off on the programme webpage | For: Admissions t
+ eam\, interviewers
+URL:https://msp-operations.github.io/Academic-Calendar/?event=admissions-se
+ lection-complete
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sched-planning-forms-fall-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms out to coordinators (A
+ Y27-28 P1/P2)
+DESCRIPTION:2026 instance Wed 27 May 12:22\, reminder 26 Jun. Sent the week
+  after the fall registration week. | Fri 28 May 2027 per Severine (26 Sep 
+ 2026) | For: course coordinators\, Scheduling (Severine)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-plannin
+ g-forms-fall
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-submit-resits-202627@msp-operations
-DTSTAMP:20270531T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270531
 DTEND;VALUE=DATE:20270601
 SUMMARY:[MSP EXAMS] Resit exam submission deadline (P5 resits)
-DESCRIPTION:One week before the June resit week | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026): the P5 resit round is a tight turnaround so MSP prints in house and asks for exams 2 weeks ahead rather than the usual 3. P5 resits 14-18 Jun | For: course coordinators
+DESCRIPTION:One week before the June resit week | CORRECTED one week earlie
+ r per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 2
+ 4 Aug 2026): the P5 resit round is a tight turnaround so MSP prints in hou
+ se and asks for exams 2 weeks ahead rather than the usual 3. P5 resits 14-
+ 18 Jun | For: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-submit-r
+ esits
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-final-grades-due-feb-202627@msp-operations
-DTSTAMP:20270604T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP BTR] BTR final grades due in Collent (Feb cohort)
-DESCRIPTION:Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+DESCRIPTION:Final assessment grades due in Collent from academic staff. Pub
+ lished to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Au
+ g 2026: the Friday is the staff hand-in deadline\, the Monday is publicati
+ on\, same convention as the September cohort | For: RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-final-gra
+ des-due-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-p5-202627@msp-operations
-DTSTAMP:20270604T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP EXAMS] Grade submission deadline for coordinators (P5)
-DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)\; resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock) | For: course coordinators\, examiners
+DESCRIPTION:10 working days from the Friday of exam week (EER 5.8 / R&R 17)
+ \; resits in that week ride the same clock. ESD then has 5 working days to
+  process. P2 has its own dated event (Christmas closure pauses the clock) 
+ | For: course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-due-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:iwio-close-p5-202627@msp-operations
-DTSTAMP:20270611T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:[MSP ESD] IWIO closed + coordinators and EPC informed (P5)
-DESCRIPTION:Step 4: close the round and inform the course coordinators and the EPC of the results. Window 7-11 Jun per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+DESCRIPTION:Step 4: close the round and inform the course coordinators and 
+ the EPC of the results. Window 7-11 Jun per Eva's Jaaroverzicht IPO 2026-2
+ 027 (24 Aug 2026) | For: coordinators\, EPC\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=iwio-close-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-p5-202627@msp-operations
-DTSTAMP:20270611T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:[MSP EXAMS] Grades published on Student Portal (deadline) (P5)
-DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the examiner\, 5 for ESD processing. Transcripts updated within 1 working day after (running update)\; final bulk update follows the inspection round. P2 has its own dated event | For: students\, coordinators\, BoE\, Academic Advising
+DESCRIPTION:15 working days from the last exam date (EER 5.8): 10 for the e
+ xaminer\, 5 for ESD processing. Transcripts updated within 1 working day a
+ fter (running update)\; final bulk update follows the inspection round. P2
+  has its own dated event | For: students\, coordinators\, BoE\, Academic A
+ dvising
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-publis
+ hed-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:resit-week-p5-202627@msp-operations
-DTSTAMP:20270614T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:[MSP EXAMS] Resit week P5
-DESCRIPTION:14-18 Jun 2027\, standalone resit week. FSE-wide: same week hosts CE Semester 2\, DACS P5/Semester 2 and Science Masters P4+P5 resits | For: coordinators\, invigilators\, ESD\, students
+DESCRIPTION:14-18 Jun 2027\, standalone resit week. FSE-wide: same week hos
+ ts CE Semester 2\, DACS P5/Semester 2 and Science Masters P4+P5 resits | F
+ or: coordinators\, invigilators\, ESD\, students
+URL:https://msp-operations.github.io/Academic-Calendar/?event=resit-week-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-jun-202627@msp-operations
-DTSTAMP:20270617T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270617
 DTEND;VALUE=DATE:20270618
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. January edition (12 Jan 2027) exists but its series shows as cancelled\, left out | For: all MSP staff
+DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. Jan
+ uary edition (12 Jan 2027) exists but its series shows as cancelled\, left
+  out | For: all MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -jun
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer-break-202627@msp-operations
-DTSTAMP:20270621T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
 SUMMARY:[MSP GENERAL] Summer break begins
-DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium | For: all staff
+DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 
+ Jun - 27 Aug 2027 per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=summer-break
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-p5-202627@msp-operations
-DTSTAMP:20270625T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270625
 DTEND;VALUE=DATE:20270626
-SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5)
-DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun - all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (0.233). P2 has its own dated event | For: course coordinators\, IPO (Eva)
+SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5 + P4 resits)
+DESCRIPTION:End of the 10wd inspection window\; this date is also the exam-
+ inspection deadline (grading overview: P1 20 Nov\, P4 23 Apr\, P5 25 Jun -
+  all match the rule). Hand in via the archive drive\, mail\, or at DUB30 (
+ 0.233). P2 has its own dated event | Eva 26 Sep 2026: includes the P4 resi
+ t material | For: course coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=accreditation
+ -deadline-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-inspection-p5-202627@msp-operations
-DTSTAMP:20270625T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270625
 DTEND;VALUE=DATE:20270626
 SUMMARY:[MSP EXAMS] Exam inspection deadline (P5 + P4 resits)
-DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+DESCRIPTION:10 working days after the grades are processed. Students may in
+ spect their exam up to this date\; the coordinator runs the session. Per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026) | For: students\, coordinators\, exams office
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-inspecti
+ on-p5
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-feb-202627@msp-operations
-DTSTAMP:20270630T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[MSP BTR] BTR February cohort graduation date
 DESCRIPTION:For: students\, BoE\, ESD
-END:VEVENT
-BEGIN:VEVENT
-UID:project-grades-due-p6-202627@msp-operations
-DTSTAMP:20270702T000000Z
-DTSTART;VALUE=DATE:20270702
-DTEND;VALUE=DATE:20270703
-SUMMARY:[MSP ESD] Project grades due to ESD (P6 projects)
-DESCRIPTION:Fri 2 Jul per the grading overview (aligned with the resit-week clock\, not +10wd from P6 end) | For: project supervisors\, Project Committee
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-graduatio
+ n-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-due-resits-202627@msp-operations
-DTSTAMP:20270702T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270702
 DTEND;VALUE=DATE:20270703
 SUMMARY:[MSP EXAMS] Resit grade submission deadline (June resit week)
-DESCRIPTION:Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday)\; P6 project grades share this date | For: course coordinators\, examiners
+DESCRIPTION:Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd cl
+ ock from the resit-week Friday)\; P6 project grades share this date | For:
+  course coordinators\, examiners
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-due-re
+ sits
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:project-grades-due-p6-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:[MSP EXAMS] Project grades due to Exams\, ESD in cc (P6 projects)
+DESCRIPTION:Fri 2 Jul per the grading overview (aligned with the resit-week
+  clock\, not +10wd from P6 end) | Heather Obmann 26 Sep 2026: not ESD's\, 
+ the exam coordinator should decide. She has never heard of aligning it wit
+ h the resit week and has always asked for grades 10 working days after the
+  period. The 2 Jul date stands on the final grading overview until Exams s
+ ays otherwise | For: project supervisors\, Project Committee
+URL:https://msp-operations.github.io/Academic-Calendar/?event=project-grade
+ s-due-p6
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sched-planning-forms-fall-due-202627@msp-operations
-DTSTAMP:20270702T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270702
 DTEND;VALUE=DATE:20270703
-SUMMARY:[MSP SCHEDULING] Course/skill planning forms P1 AY27-28 return deadline
-DESCRIPTION:2026 instance stated verbatim: before July 3rd\, 5 pm. 3 Jul 2027 is a Saturday so the equivalent is Fri 2 Jul 17:00\, via Qualtrics. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026) | For: course coordinators
+SUMMARY:[MSP SCHEDULING] Course/skill planning forms P1 AY27-28 return dead
+ line
+DESCRIPTION:2026 instance stated verbatim: before July 3rd\, 5 pm. 3 Jul 20
+ 27 is a Saturday so the equivalent is Fri 2 Jul 17:00\, via Qualtrics. | F
+ or: course coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=sched-plannin
+ g-forms-fall-due
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:grades-published-resits-202627@msp-operations
-DTSTAMP:20270709T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270709
 DTEND;VALUE=DATE:20270710
 SUMMARY:[MSP EXAMS] Resit grades published (June resit week)
-DESCRIPTION:Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview\; transcript update 12 Jul\, inspection deadline + final transcript 23 Jul | For: students\, coordinators\, BoE
+DESCRIPTION:Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview\; transc
+ ript update 12 Jul\, inspection deadline + final transcript 23 Jul | For: 
+ students\, coordinators\, BoE
+URL:https://msp-operations.github.io/Academic-Calendar/?event=grades-publis
+ hed-resits
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:accreditation-deadline-resits-202627@msp-operations
-DTSTAMP:20270723T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270723
 DTEND;VALUE=DATE:20270724
 SUMMARY:[MSP ESD] Accreditation material hand-in deadline (P5 resit round)
-DESCRIPTION:Fri 23 Jul\, confirmed by the grading overview (also the resit + P6 inspection deadline) | For: resit coordinators\, IPO (Eva)
+DESCRIPTION:Fri 23 Jul\, confirmed by the grading overview (also the resit 
+ + P6 inspection deadline) | For: resit coordinators\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=accreditation
+ -deadline-resits
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exam-inspection-resits-202627@msp-operations
-DTSTAMP:20270723T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270723
 DTEND;VALUE=DATE:20270724
 SUMMARY:[MSP EXAMS] Exam inspection deadline (P5 resits + P6 projects)
-DESCRIPTION:10 working days after the grades are processed. Students may inspect their exam up to this date\; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2026) | For: students\, coordinators\, exams office
+DESCRIPTION:10 working days after the grades are processed. Students may in
+ spect their exam up to this date\; the coordinator runs the session. Per E
+ xam Submission and Grading Deadlines AY2026-2027 (final version\, 24 Aug 2
+ 026) | For: students\, coordinators\, exams office
+URL:https://msp-operations.github.io/Academic-Calendar/?event=exam-inspecti
+ on-resits
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

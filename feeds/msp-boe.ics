@@ -2,150 +2,173 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//MSP Operations//Academic Calendar//EN
 X-WR-CALNAME:MSP BOE deadlines 2026-27
+X-WR-CALDESC:MSP staff deadlines 2026-27. Spotted a wrong date\, or know on
+ e that is missing? Tell us at msp-exams@maastrichtuniversity.nl and we fix
+  it at the source. Web view: https://msp-operations.github.io/Academic-Cal
+ endar/
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:examiner-to-katja-fall-202627@msp-operations
-DTSTAMP:20260820T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260820
 DTEND;VALUE=DATE:20260821
 SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Fall appointment letters
-DESCRIPTION:End August per the IPO overview | CORRECTED to 2026-08-20 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug | For: IPO (Eva)\, BoE secretary
+DESCRIPTION:End August per the IPO overview | CORRECTED to 2026-08-20 per E
+ va's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug | For: IP
+ O (Eva)\, BoE secretary
+URL:https://msp-operations.github.io/Academic-Calendar/?event=examiner-to-k
+ atja-fall
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-infosheet-yearstart-202627@msp-operations
-DTSTAMP:20260824T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
 SUMMARY:[MSP BOE] BSA Infosheet updated version live on intranet
-DESCRIPTION:Katja's remark in the IPO overview: new infosheet up by the start of the academic year (24 Aug) | For: BoE (Katja)\, Gerco\, IPO
+DESCRIPTION:Katja's remark in the IPO overview: new infosheet up by the sta
+ rt of the academic year (24 Aug) | For: BoE (Katja)\, Gerco\, IPO
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bsa-infosheet
+ -yearstart
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:boe-grad-audit-notify-oct-202627@msp-operations
-DTSTAMP:20261001T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
-DESCRIPTION:Via ZPIQGRADAUD\; also 1 Dec\, 1 Feb\, 1 Mar\, 1 May. Confirmed against 'Graduation audit MSP time line.docx' | For: BoE secretary\, BTR students 140-220 ECTS
+DESCRIPTION:Via ZPIQGRADAUD\; also 1 Mar. The Dec\, Feb and May rounds ende
+ d when BTR starts became September and February only (Katja Zambib-Otten\,
+  26 Sep 2026\, who updated the Graduation audit time line document accordi
+ ngly) | For: BoE secretary\, BTR students 140-220 ECTS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=boe-grad-audi
+ t-notify-oct
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:eer-annual-report-202627@msp-operations
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[MSP BOE] BoE + EPC annual report incl. EER change proposals due
-DESCRIPTION:15 Oct per FSE Procedure EER.docx | For: BoE\, EPC\, programme management
-END:VEVENT
-BEGIN:VEVENT
-UID:boe-grad-audit-candidates-nov-202627@msp-operations
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[MSP BOE] Graduation audit - create graduation candidates (100-220 ECTS)
-DESCRIPTION:Also 1 May. Delete last year's candidates first. Confirmed against 'Graduation audit MSP time line.docx' (BoE procedures\; 2021-era doc\, nod from Katja still polite) | For: BoE secretary\, Chris Pawley (STIC)
-END:VEVENT
-BEGIN:VEVENT
-UID:eer-education-plan-202627@msp-operations
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[MSP BOE] Annual education plan to the Vice-dean
-DESCRIPTION:1 Nov per FSE Procedure EER.docx | For: programme management\, Vice-dean Education
-END:VEVENT
-BEGIN:VEVENT
-UID:boe-grad-audit-notify-dec-202627@msp-operations
-DTSTAMP:20261201T000000Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
-DESCRIPTION:For: BoE secretary
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[MSP BOE] BoE annual report incl. EER change proposals due (start o
+ f October)
+DESCRIPTION:Start of October per Katja Zambib-Otten (26 Sep 2026)\; FSE Pro
+ cedure EER.docx says 15 Oct. Katja was not certain of the exact day | For:
+  BoE\, EPC\, programme management
+URL:https://msp-operations.github.io/Academic-Calendar/?event=eer-annual-re
+ port
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:examiner-to-katja-spring-202627@msp-operations
-DTSTAMP:20270122T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270122
 DTEND;VALUE=DATE:20270123
-SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Spring appointment letters
-DESCRIPTION:End Jan per the IPO overview\, after Gerco's mid-Jan check | CORRECTED to 2027-01-22 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 18-22 Jan | For: IPO (Eva)\, BoE secretary
-END:VEVENT
-BEGIN:VEVENT
-UID:boe-grad-audit-notify-feb-202627@msp-operations
-DTSTAMP:20270201T000000Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270202
-SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
-DESCRIPTION:For: BoE secretary
+SUMMARY:[MSP BOE] Examiner list to Katja (BoE) for Spring appointment lette
+ rs
+DESCRIPTION:End Jan per the IPO overview\, after Gerco's mid-Jan check | CO
+ RRECTED to 2027-01-22 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026):
+  window 18-22 Jan | Katja 26 Sep 2026: confirmed\, and would prefer examin
+ ers appointed for the whole academic year at the start of the year instead
+  of per semester | For: IPO (Eva)\, BoE secretary
+URL:https://msp-operations.github.io/Academic-Calendar/?event=examiner-to-k
+ atja-spring
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:eer-revision-to-boe-202627@msp-operations
-DTSTAMP:20270215T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270215
 DTEND;VALUE=DATE:20270216
 SUMMARY:[MSP BOE] Revised EER to BoE + EPC for advice
-DESCRIPTION:15 Feb per FSE Procedure EER.docx | For: BoE\, EPC
+DESCRIPTION:15 Feb per FSE Procedure EER.docx | Katja 26 Sep 2026: confirme
+ d\; Management owns the EER and can confirm the date\, BoE is only consult
+ ed (BoE owns the R&R that follow from it) | For: Management\, BoE\, EPC
+URL:https://msp-operations.github.io/Academic-Calendar/?event=eer-revision-
+ to-boe
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:boe-grad-audit-notify-mar-202627@msp-operations
-DTSTAMP:20270301T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
-DESCRIPTION:For: BoE secretary
-END:VEVENT
-BEGIN:VEVENT
-UID:eer-to-faculty-board-202627@msp-operations
-DTSTAMP:20270331T000000Z
-DTSTART;VALUE=DATE:20270331
-DTEND;VALUE=DATE:20270401
-SUMMARY:[MSP BOE] EER to the Faculty Board
-DESCRIPTION:31 Mar per FSE Procedure EER.docx\; adoption before 1 May\, publication in June | For: programme management\, Faculty Board
-END:VEVENT
-BEGIN:VEVENT
-UID:eer-adoption-202627@msp-operations
-DTSTAMP:20270430T000000Z
-DTSTART;VALUE=DATE:20270430
-DTEND;VALUE=DATE:20270501
-SUMMARY:[MSP BOE] EER 2027-28 adopted by the Faculty Board (before 1 May)
-DESCRIPTION:Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May\, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep | For: BoE\, EPC\, Programme Board
-END:VEVENT
-BEGIN:VEVENT
-UID:boe-grad-audit-candidates-may-202627@msp-operations
-DTSTAMP:20270501T000000Z
-DTSTART;VALUE=DATE:20270501
-DTEND;VALUE=DATE:20270502
-SUMMARY:[MSP BOE] Graduation audit - create graduation candidates (100-220 ECTS)
-DESCRIPTION:For: BoE secretary\, Chris Pawley (STIC)
-END:VEVENT
-BEGIN:VEVENT
-UID:boe-grad-audit-notify-may-202627@msp-operations
-DTSTAMP:20270501T000000Z
-DTSTART;VALUE=DATE:20270501
-DTEND;VALUE=DATE:20270502
-SUMMARY:[MSP BOE] Graduation audit - first notification to BTR starters
-DESCRIPTION:For: BoE secretary
+DESCRIPTION:Via ZPIQGRADAUD\, second notification round of the year (Katja 
+ Zambib-Otten\, 26 Sep 2026) | For: BoE secretary
+URL:https://msp-operations.github.io/Academic-Calendar/?event=boe-grad-audi
+ t-notify-mar
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-pbsa-datafile-202627@msp-operations
-DTSTAMP:20270712T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270712
 DTEND;VALUE=DATE:20270713
 SUMMARY:[MSP BOE] pBSA letter - datafile + letter arrive from Katja
-DESCRIPTION:Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run\, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit\, 25 Aug 2026: this was dated 23 Jul while the letters went out 12 Jul\, so the send preceded the material by 11 days. Both steps share Eva window 12-23 Jul\; the arrival is now the start of it | For: BoE (Katja)\, IPO (Eva)
+DESCRIPTION:Two weeks ahead per the IPO overview. First: credits to BoE/Pav
+ el once all results incl. resits are in (Marble run\, transcripts saved) |
+  CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 202
+ 6): window 12-23 Jul | CORRECTED per the four-review audit\, 25 Aug 2026: 
+ this was dated 23 Jul while the letters went out 12 Jul\, so the send prec
+ eded the material by 11 days. Both steps share Eva window 12-23 Jul\; the 
+ arrival is now the start of it | For: BoE (Katja)\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bsa-pbsa-data
+ file
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-pbsa-send-202627@msp-operations
-DTSTAMP:20270716T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270716
 DTEND;VALUE=DATE:20270717
-SUMMARY:[MSP BOE] pBSA letters sent + SAP status registered (9005 Positive BSA)
-DESCRIPTION:Rule per the IPO overview: all results incl. resits in + 15 working days\, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox\; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit\, 25 Aug 2026: moved after the datafile arrives\, matching the 2026 instance which ran Mon 13 to Thu 16 Jul | For: first-year students\, IPO (Eva)\, BoE
+SUMMARY:[MSP BOE] pBSA letters sent + SAP status registered (9005 Positive 
+ BSA)
+DESCRIPTION:Rule per the IPO overview: all results incl. resits in + 15 wor
+ king days\, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sen
+ t via the msp-boe mailbox\; SAP 9005 right after the merge | Confirmed by 
+ Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORREC
+ TED per the four-review audit\, 25 Aug 2026: moved after the datafile arri
+ ves\, matching the 2026 instance which ran Mon 13 to Thu 16 Jul | For: fir
+ st-year students\, IPO (Eva)\, BoE
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bsa-pbsa-send
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bsa-pbsa-archive-202627@msp-operations
-DTSTAMP:20270730T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270730
 DTEND;VALUE=DATE:20270731
 SUMMARY:[MSP BOE] pBSA letters archived (Corsa D20A + Outlook)
-DESCRIPTION:One week after sending per the IPO overview | CORRECTED to 2027-07-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 Jul | For: IPO (Eva)\, Ton Derikx\, Katja
+DESCRIPTION:One week after sending per the IPO overview | CORRECTED to 2027
+ -07-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 J
+ ul | For: IPO (Eva)\, Ton Derikx\, Katja
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bsa-pbsa-arch
+ ive
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

@@ -1271,6 +1271,7 @@ function showCard(e) {
     (e.staff ? `<div class="row"><div class="k">Acts</div><div>${STAFF_LABEL[e.staff] || e.staff}</div></div>` : '') +
     (e.audience ? `<div class="row"><div class="k">For</div><div>${e.audience}</div></div>` : '') +
     (e.notes ? `<div class="row"><div class="k">Notes</div><div>${e.notes}</div></div>` : '') +
+    (e.confirmedBy ? `<div class="row"><div class="k">Confirmed by</div><div>${e.confirmedBy}${e.confirmedOn ? ' (' + e.confirmedOn + ')' : ''}</div></div>` : '') +
     (e.status === 'unconfirmed' ? `<div class="row"><div class="k">Status</div><div>Pending confirmation for this academic year, so it is not in the Outlook feeds yet. <a href="mailto:msp-exams@maastrichtuniversity.nl?subject=MSP%20Operations%20Calendar">Know the real date?</a></div></div>` : '') +
     `</div>`;
   overlay.appendChild(card);
@@ -1286,8 +1287,15 @@ window.onerror = (msg) => {
   document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${msg}</p>`;
 };
 window.addEventListener('resize', () => { if (!railManual) autoRail(); });
-if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); }
-else fetch('events.json').then(r => r.json()).then(db => { DB = db; init(); })
+// ?event=<id> (the URL carried by every feed entry) opens that event's card after load.
+function openEventFromUrl() {
+  const id = _params.get('event');
+  if (!id || !DB) return;
+  const e = DB.events.find(x => x.id === id);
+  if (e) showCard(e);
+}
+if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); openEventFromUrl(); }
+else fetch('events.json').then(r => r.json()).then(db => { DB = db; init(); openEventFromUrl(); })
   .catch(() => { document.getElementById('main').innerHTML = '<p class="empty">The calendar data could not be loaded. Please refresh, and tell us if it keeps happening.</p>'; });
 </script>
 </body>

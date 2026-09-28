@@ -2,14 +2,25 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//MSP Operations//Academic Calendar//EN
 X-WR-CALNAME:MSP ALUMNI deadlines 2026-27
+X-WR-CALDESC:MSP staff deadlines 2026-27. Spotted a wrong date\, or know on
+ e that is missing? Tell us at msp-exams@maastrichtuniversity.nl and we fix
+  it at the source. Web view: https://msp-operations.github.io/Academic-Cal
+ endar/
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:alumni-intranet-deadline-202627@msp-operations
-DTSTAMP:20260821T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:[MSP ALUMNI] Intranet Alumni / After-MSP pages refresh deadline
 DESCRIPTION:For: Martijn (owner of record\, IPO register)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=alumni-intran
+ et-deadline
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

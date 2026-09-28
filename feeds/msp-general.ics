@@ -2,222 +2,532 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//MSP Operations//Academic Calendar//EN
 X-WR-CALNAME:MSP GENERAL deadlines 2026-27
+X-WR-CALDESC:MSP staff deadlines 2026-27. Spotted a wrong date\, or know on
+ e that is missing? Tell us at msp-exams@maastrichtuniversity.nl and we fix
+  it at the source. Web view: https://msp-operations.github.io/Academic-Cal
+ endar/
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:intranet-canvas-refresh-202627@msp-operations
-DTSTAMP:20260821T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
-SUMMARY:[MSP GENERAL] Intranet + Canvas full new-year refresh deadline (all sections)
-DESCRIPTION:Triggered mid-July. Named owner per section (Scheduling\, BoE\, ESD\, Exams/BTR\, IRO\, Advising\, Counsellor\, Alumni...). Includes uploading + printing the Academic Calendar in A3 | For: all section owners per the IPO overview\, IPO (Eva)
+SUMMARY:[MSP GENERAL] Intranet + Canvas full new-year refresh deadline (all
+  sections)
+DESCRIPTION:Triggered mid-July. Named owner per section (Scheduling\, BoE\,
+  ESD\, Exams/BTR\, IRO\, Advising\, Counsellor\, Alumni...). Includes uplo
+ ading + printing the Academic Calendar in A3 | For: all section owners per
+  the IPO overview\, IPO (Eva)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=intranet-canv
+ as-refresh
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:intro-days-202627@msp-operations
-DTSTAMP:20260824T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
 SUMMARY:[MSP GENERAL] INTRO days (Mon 24 - Wed 26 Aug)
-DESCRIPTION:Three days\, mandatory\, per the 2026 Draft Schedule LIVE (Martijn\, 13 Aug 2026). Mon: buddy introduction sessions\, welcome speech\, MSP Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morning. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Safety STAFF training (DUB30) for a student assessment on a fourth day. | For: new students\, buddies\, Secretariat\, ESD\, tutors
+DESCRIPTION:Three days\, mandatory\, per the 2026 Draft Schedule LIVE (Mart
+ ijn\, 13 Aug 2026). Mon: buddy introduction sessions\, welcome speech\, MS
+ P Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morn
+ ing. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Saf
+ ety STAFF training (DUB30) for a student assessment on a fourth day. | For
+ : new students\, buddies\, Secretariat\, ESD\, tutors
+URL:https://msp-operations.github.io/Academic-Calendar/?event=intro-days
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:year-start-202627@msp-operations
-DTSTAMP:20260831T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[MSP GENERAL] Academic year 2026-27 starts
 DESCRIPTION:For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=year-start
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:deadline-submission-cutoff-202627@msp-operations
-DTSTAMP:20261004T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
-SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (cut-off)
-DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid-Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of reflection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs prep week 19-23 Oct) | NB Linzi plan says "Sat 4 Oct" but 4 Oct 2026 is a Sunday\, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with Linzi (flagged by the four-review audit\, 25 Aug 2026) | For: all offices\, Operations
+SUMMARY:[MSP GENERAL] All offices submit their AY deadlines to Operations (
+ cut-off)
+DESCRIPTION:Linzi's plan (3 Aug 2026): request out early Sep\, reminder mid
+ -Sep\, cut-off Sat 4 Oct\; feeds the year Deadline Calendar due 'end of re
+ flection week P1' (delivery-date reading to settle with Linzi: ~9 Oct vs p
+ rep week 19-23 Oct) | NB Linzi plan says "Sat 4 Oct" but 4 Oct 2026 is a S
+ unday\, so the working cut-off is Fri 2 Oct or Mon 5 Oct. To settle with L
+ inzi (flagged by the four-review audit\, 25 Aug 2026) | For: all offices\,
+  Operations
+URL:https://msp-operations.github.io/Academic-Calendar/?event=deadline-subm
+ ission-cutoff
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-fall-202627@msp-operations
-DTSTAMP:20261019T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:[MSP GENERAL] Prep week after P1 exams (no education)
-DESCRIPTION:Week 43 (19-23 Oct): study\, prepare and reflect\, per the Calendarium | For: students\, all staff
+DESCRIPTION:Week 43 (19-23 Oct): study\, prepare and reflect\, per the Cale
+ ndarium | For: students\, all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=prep-week-fal
+ l
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:frame-schedule-spring-deadline-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[MSP GENERAL] Frame schedules Spring semester ready (firm deadline)
+DESCRIPTION:Firm 1 Nov per the IPO overview: frame schedules must be ready 
+ before the Academic Advising period starts. 2025 instance: Gerco's finals 
+ landed Tue 21 Oct\, ~10 days ahead | Severine 26 Sep 2026: Management's da
+ te\, not Scheduling's | For: Gerco Onderwater (owner)\, Chris Pawley\, Sch
+ eduling\, IPO
+URL:https://msp-operations.github.io/Academic-Calendar/?event=frame-schedul
+ e-spring-deadline
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-education-plan-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[MSP GENERAL] Annual education plan to the Vice-dean
+DESCRIPTION:1 Nov per FSE Procedure EER.docx | Katja 26 Sep 2026: not BoE's
+ . The education plan concerns the EPC (education)\, the BoE looks at asses
+ sment. Confirmation owed by Management | For: programme management\, EPC\,
+  Vice-dean Education
+URL:https://msp-operations.github.io/Academic-Calendar/?event=eer-education
+ -plan
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:advising-period-spring-start-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[MSP GENERAL] Academic Advising period starts (Spring registration)
+DESCRIPTION:Mon 2 Nov per the IPO overview\; runs into course registration 
+ week 9-13 Nov | Severine 26 Sep 2026: owned by the Office of Academic Advi
+ sing\, not Scheduling | For: Office of Academic Advising (owner)\, student
+ s\, academic advisors\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=advising-peri
+ od-spring-start
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:course-reg-spring-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[MSP GENERAL] Course registration week (Spring 2027 selections)
+DESCRIPTION:9-13 Nov\; advisor meeting required before submitting | Severin
+ e 26 Sep 2026: owned by the Office of Academic Advising\, not Scheduling |
+  For: Office of Academic Advising (owner)\, students\, Academic Advising\,
+  ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=course-reg-sp
+ ring
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bachelor-open-day-fall-202627@msp-operations
-DTSTAMP:20261114T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:[MSP GENERAL] Bachelor Open Day\, Fall edition
-DESCRIPTION:Own calendar\, 'Bachelor Open Day\, Fall Edition 2026'\, Sat 14 Nov 2026 09:30\, Learning Spaces PHS1 + Common Room ZW4. Alumni volunteer call went out ~5 weeks ahead in 2025 | For: MSP staff on stand duty\, marketing\, alumni volunteers
+DESCRIPTION:Own calendar\, 'Bachelor Open Day\, Fall Edition 2026'\, Sat 14
+  Nov 2026 09:30\, Learning Spaces PHS1 + Common Room ZW4. Alumni volunteer
+  call went out ~5 weeks ahead in 2025 | For: MSP staff on stand duty\, mar
+ keting\, alumni volunteers
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bachelor-open
+ -day-fall
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:graduation-ceremony-202627@msp-operations
-DTSTAMP:20261127T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:[MSP GENERAL] Graduation ceremony 2026-27 (evening)
-DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas announcement Details on Graduation\, 13 May 2026: the ceremony will be on 27 November 2026 in the evening\, graduates receive further information around Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expected MECC per the 2025 pattern | For: graduating students\, BoE\, Secretariat\, Alumni
+DESCRIPTION:Fri 27 Nov 2026\, in the evening. Stated by ESD in the Canvas a
+ nnouncement Details on Graduation\, 13 May 2026: the ceremony will be on 2
+ 7 November 2026 in the evening\, graduates receive further information aro
+ und Aug/Sep. CORRECTED from a Mon 23 Nov week-48 placeholder. Venue expect
+ ed MECC per the 2025 pattern | For: graduating students\, BoE\, Secretaria
+ t\, Alumni
+URL:https://msp-operations.github.io/Academic-Calendar/?event=graduation-ce
+ remony
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-break-202627@msp-operations
-DTSTAMP:20261221T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:[MSP GENERAL] Christmas closure begins (21 Dec - 1 Jan)
-DESCRIPTION:Week 51 (14-18 Dec) is no education but a normal working week\; the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. CORRECTED per the four-review audit\, 25 Aug 2026: the shading previously covered both and three working deadlines sat inside it. Collent offline ~23 Dec to 6 Jan for maintenance | For: all staff
+DESCRIPTION:Week 51 (14-18 Dec) is no education but a normal working week\;
+  the actual closure is 21 Dec 2026 to 1 Jan 2027 per the Calendarium p.1. 
+ CORRECTED per the four-review audit\, 25 Aug 2026: the shading previously 
+ covered both and three working deadlines sat inside it. Collent offline ~2
+ 3 Dec to 6 Jan for maintenance | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=christmas-bre
+ ak
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fse-resits-sem1-202627@msp-operations
-DTSTAMP:20270118T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP GENERAL] FSE resit weeks Semester 1 (other programmes)
-DESCRIPTION:18-22 Jan: CE + DACS Semester 1 resits\; 25-29 Jan: Science Masters P1+P2 resits\, per the FSE academic calendar. MSP's own P1 resits ride the P2 exam week | For: FSE exam offices\, shared-venue planning
+DESCRIPTION:18-22 Jan: CE + DACS Semester 1 resits\; 25-29 Jan: Science Mas
+ ters P1+P2 resits\, per the FSE academic calendar. MSP's own P1 resits rid
+ e the P2 exam week | For: FSE exam offices\, shared-venue planning
+URL:https://msp-operations.github.io/Academic-Calendar/?event=fse-resits-se
+ m1
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:carnival-202627@msp-operations
-DTSTAMP:20270208T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:[MSP GENERAL] Carnival week (no teaching)
 DESCRIPTION:8-12 Feb 2027\, inside P4 | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=carnival
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-feb-202627@msp-operations
-DTSTAMP:20270218T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurrence Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates get set separately\, verify with Linzi | For: all MSP staff
+DESCRIPTION:Own calendar yearly series 'Staff Meeting - February'\, occurre
+ nce Thu 18 Feb 2027. NB no Sep-Dec 2026 occurrences exist yet\; fall dates
+  get set separately\, verify with Linzi | For: all MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fse-ce-yr3-exams-202627@msp-operations
-DTSTAMP:20270222T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270222
 DTEND;VALUE=DATE:20270223
 SUMMARY:[MSP GENERAL] FSE - CE Year 3 exams P3 (22-26 Feb)
-DESCRIPTION:Week 8 per the FSE academic calendar\; CE Year 3 runs a 7-week P3 (4 Jan - 26 Feb) | For: FSE exam offices\, Circular Engineering
+DESCRIPTION:Week 8 per the FSE academic calendar\; CE Year 3 runs a 7-week 
+ P3 (4 Jan - 26 Feb) | For: FSE exam offices\, Circular Engineering
+URL:https://msp-operations.github.io/Academic-Calendar/?event=fse-ce-yr3-ex
+ ams
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bachelor-open-day-spring-202627@msp-operations
-DTSTAMP:20270227T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 SUMMARY:[MSP GENERAL] Bachelor Open Day\, Spring edition
-DESCRIPTION:Sat 27 Feb 2027 per the UM DEI Academic Calendar 26/27 (supersedes the first-Saturday pattern guess) | For: MSP staff on stand duty\, marketing
+DESCRIPTION:Sat 27 Feb 2027 per the UM DEI Academic Calendar 26/27 (superse
+ des the first-Saturday pattern guess) | For: MSP staff on stand duty\, mar
+ keting
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bachelor-open
+ -day-spring
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-mar-202627@msp-operations
-DTSTAMP:20270309T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: all MSP staff
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 9 Mar 2027 | For: a
+ ll MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -mar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:frame-schedules-draft-ay2728-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:[MSP GENERAL] Draft frame schedules AY27-28 circulated by the Dean
+DESCRIPTION:2026 instance Fri 13 Mar 09:02 from Gerco\, feedback due noon M
+ on 23 Mar. A corrected version followed on 15 Apr fixing period dates and 
+ Pentecost. | Severine 26 Sep 2026: the Dean's dates\, not Scheduling's | F
+ or: Gerco\, Scheduling\, Exams\, BoE\, Information Hub
+URL:https://msp-operations.github.io/Academic-Calendar/?event=frame-schedul
+ es-draft-ay2728
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:master-open-day-spring-202627@msp-operations
-DTSTAMP:20270320T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:[MSP GENERAL] Master Open Day\, Spring edition
-DESCRIPTION:Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same day as Nowruz and Int. Day of Happiness) | For: MSP staff on stand duty\, marketing
+DESCRIPTION:Sat 20 Mar 2027 per the UM DEI Academic Calendar 26/27 (same da
+ y as Nowruz and Int. Day of Happiness) | For: MSP staff on stand duty\, ma
+ rketing
+URL:https://msp-operations.github.io/Academic-Calendar/?event=master-open-d
+ ay-spring
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-week-spring-202627@msp-operations
-DTSTAMP:20270322T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
 SUMMARY:[MSP GENERAL] Prep week after P4 exams (no education)
-DESCRIPTION:Week 12 (22-26 Mar)\, per the Calendarium | For: students\, all staff
+DESCRIPTION:Week 12 (22-26 Mar)\, per the Calendarium | For: students\, all
+  staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=prep-week-spr
+ ing
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:good-friday-202627@msp-operations
-DTSTAMP:20270326T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
 SUMMARY:[MSP GENERAL] Good Friday (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=good-friday
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:easter-monday-202627@msp-operations
-DTSTAMP:20270329T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270330
 SUMMARY:[MSP GENERAL] Easter Monday (holiday)
-DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first teaching day is Tue 30 Mar | For: all staff
+DESCRIPTION:Official UM holiday. NB P5 officially starts this date\; first 
+ teaching day is Tue 30 Mar | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=easter-monday
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-to-faculty-board-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:[MSP GENERAL] EER to the Faculty Board
+DESCRIPTION:31 Mar per FSE Procedure EER.docx\; adoption before 1 May\, pub
+ lication in June | Katja 26 Sep 2026: the EER is a Management document. Bo
+ E and EPC give input\; Management may set BoE's aside but needs EPC's cons
+ ent. Confirmation owed by Management | For: programme management\, Faculty
+  Board\, EPC (consent)\, BoE (input)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=eer-to-facult
+ y-board
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-apr-202627@msp-operations
-DTSTAMP:20270408T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: all MSP staff
+DESCRIPTION:Own calendar yearly series\, occurrence Thu 8 Apr 2027 | For: a
+ ll MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -apr
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:frame-schedules-final-ay2728-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:[MSP GENERAL] Final frame schedules AY27-28 (P1-P5) from the Dean
+DESCRIPTION:2026 instance Mon 13 Apr 16:26 from Gerco\; Severine relayed to
+  UCM\, DACS\, UCV and Jesse Laumen on Tue 14 Apr 09:58. | Severine 26 Sep 
+ 2026: the Dean's dates\, not Scheduling's | For: all offices\, UCM/UCV/DAC
+ S schedulers\, Academic Advising
+URL:https://msp-operations.github.io/Academic-Calendar/?event=frame-schedul
+ es-final-ay2728
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:kings-day-202627@msp-operations
-DTSTAMP:20270427T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:[MSP GENERAL] King's Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=kings-day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eer-adoption-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:[MSP GENERAL] EER 2027-28 adopted by the Faculty Board (before 1 Ma
+ y)
+DESCRIPTION:Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May\, p
+ ublication in June (the earlier 1-Jun reading conflated the two). Effectiv
+ e 1 Sep | Katja 26 Sep 2026: Management's\, BoE only needs to be informed 
+ of the new EER. Confirmation owed by Management | For: programme managemen
+ t\, Faculty Board\, BoE (to be informed)\, EPC
+URL:https://msp-operations.github.io/Academic-Calendar/?event=eer-adoption
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:liberation-day-202627@msp-operations
-DTSTAMP:20270505T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:[MSP GENERAL] Liberation Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=liberation-da
+ y
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ascension-day-202627@msp-operations
-DTSTAMP:20270506T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270506
 DTEND;VALUE=DATE:20270507
 SUMMARY:[MSP GENERAL] Ascension Day (holiday)
 DESCRIPTION:Official UM holiday per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=ascension-day
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:bridging-day-202627@msp-operations
-DTSTAMP:20270507T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270507
 DTEND;VALUE=DATE:20270508
 SUMMARY:[MSP GENERAL] Bridging Day (UM closed)
-DESCRIPTION:Bridging day after Ascension per the Calendarium | For: all staff
+DESCRIPTION:Bridging day after Ascension per the Calendarium | For: all sta
+ ff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=bridging-day
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-may-202627@msp-operations
-DTSTAMP:20270511T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: all MSP staff
+DESCRIPTION:Own calendar yearly series\, occurrence Tue 11 May 2027 | For: 
+ all MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -may
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:whit-monday-202627@msp-operations
-DTSTAMP:20270517T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270517
 DTEND;VALUE=DATE:20270518
 SUMMARY:[MSP GENERAL] Whit Monday (holiday)
-DESCRIPTION:Official UM holiday. NB this is day one of the P5 exam week: exams run Tue-Fri that week | For: all staff
+DESCRIPTION:Official UM holiday. NB this is day one of the P5 exam week: ex
+ ams run Tue-Fri that week | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=whit-monday
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:staff-meeting-jun-202627@msp-operations
-DTSTAMP:20270617T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270617
 DTEND;VALUE=DATE:20270618
 SUMMARY:[MSP GENERAL] MSP staff meeting (monthly\, lunch included)
-DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. January edition (12 Jan 2027) exists but its series shows as cancelled\, left out | For: all MSP staff
+DESCRIPTION:Own calendar 'Staff Meeting - June 2027'\, Thu 17 Jun 2027. Jan
+ uary edition (12 Jan 2027) exists but its series shows as cancelled\, left
+  out | For: all MSP staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=staff-meeting
+ -jun
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer-break-202627@msp-operations
-DTSTAMP:20270621T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
 SUMMARY:[MSP GENERAL] Summer break begins
-DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 Jun - 27 Aug 2027 per the Calendarium | For: all staff
+DESCRIPTION:After the P5 resit week (14-18 Jun)\; official Summer Break 21 
+ Jun - 27 Aug 2027 per the Calendarium | For: all staff
+URL:https://msp-operations.github.io/Academic-Calendar/?event=summer-break
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

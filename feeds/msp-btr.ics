@@ -2,214 +2,413 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//MSP Operations//Academic Calendar//EN
 X-WR-CALNAME:MSP BTR deadlines 2026-27
+X-WR-CALDESC:MSP staff deadlines 2026-27. Spotted a wrong date\, or know on
+ e that is missing? Tell us at msp-exams@maastrichtuniversity.nl and we fix
+  it at the source. Web view: https://msp-operations.github.io/Academic-Cal
+ endar/
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:btr-rts-sept-202627@msp-operations
-DTSTAMP:20260717T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260718
 SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Sept cohort)
-DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student handbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after | For: students\, Academic Advisors\, coordinators
+DESCRIPTION:Settled de facto: the Collent RTS window closed 17 Jul (site\, 
+ Office FAQ\, Abroad Handbook agree\; the 16-Jul variant in the student han
+ dbook + Q&A deck still needs fixing). Coordinator approval ~3 weeks after 
+ | For: students\, Academic Advisors\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-rts-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-start-sept-202627@msp-operations
-DTSTAMP:20260831T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[MSP BTR] BTR September cohort starts
-DESCRIPTION:Runs to 22 Jan 2027. External agreements must be fully signed by day 1 | For: students\, supervisors\, IAs\, coordinators
+DESCRIPTION:Runs to 22 Jan 2027. External agreements must be fully signed b
+ y day 1 | For: students\, supervisors\, IAs\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-start-sep
+ t
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:corsa-migration-202627@msp-operations
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
-SUMMARY:[MSP BTR] CORSA cloud migration window (23-28 Sep\; backup 7-12 Oct)
-DESCRIPTION:Per Collent IT notice 3 Aug 2026. Primary window ends on the Sept proposal deadline day (28 Sep\, ~61 students uploading)\; backup window sits inside proposal grading. Uploads keep working\; recently uploaded files may be unpullable during the window | For: BTR office\, ESD\, Exams (Corsa users)
+SUMMARY:[MSP BTR] CORSA cloud migration window (23-28 Sep\; backup 7-12 Oct
+ )
+DESCRIPTION:Per Collent IT notice 3 Aug 2026. Primary window ends on the Se
+ pt proposal deadline day (28 Sep\, ~61 students uploading)\; backup window
+  sits inside proposal grading. Uploads keep working\; recently uploaded fi
+ les may be unpullable during the window | For: BTR office\, ESD\, Exams (C
+ orsa users)
+URL:https://msp-operations.github.io/Academic-Calendar/?event=corsa-migrati
+ on
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-sept-202627@msp-operations
-DTSTAMP:20260928T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:[MSP BTR] BTR proposal submission deadline (Sept cohort)
-DESCRIPTION:13:00 via Collent (all BTR deadlines are 13:00\, ignore Collent's 01:00 display) | For: students\, RS\, IA
+DESCRIPTION:13:00 via Collent (all BTR deadlines are 13:00\, ignore Collent
+ 's 01:00 display) | For: students\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-due-sept-202627@msp-operations
-DTSTAMP:20261016T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Sept cohort)
-DESCRIPTION:Friday deadline\; office publishes the Monday after | For: RS\, IA
+DESCRIPTION:Friday deadline\; office publishes the Monday after | For: RS\,
+  IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ grades-due-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-pub-sept-202627@msp-operations
-DTSTAMP:20261019T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:[MSP BTR] BTR proposal grades published (Sept cohort)
 DESCRIPTION:For: students\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ grades-pub-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-midterm-grades-due-sept-202627@msp-operations
-DTSTAMP:20261106T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[MSP BTR] BTR midterm practical grade due (Sept cohort)
 DESCRIPTION:For: RS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-midterm-g
+ rades-due-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-midterm-grades-pub-sept-202627@msp-operations
-DTSTAMP:20261109T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:[MSP BTR] BTR midterm grades published (Sept cohort)
 DESCRIPTION:For: students\, RS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-midterm-g
+ rades-pub-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-thesis-sept-202627@msp-operations
-DTSTAMP:20261207T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[MSP BTR] BTR thesis submission deadline (Sept cohort)
-DESCRIPTION:Monday 13:00. Research-group presentation should happen within a week either side. NB collides with P2 exam week | For: students\, RS\, IA
+DESCRIPTION:Monday 13:00. Research-group presentation should happen within 
+ a week either side. NB collides with P2 exam week | For: students\, RS\, I
+ A
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-thesis-se
+ pt
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-video-sept-202627@msp-operations
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:[MSP BTR] BTR video submission deadline (Sept cohort)
-DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer reviewers
+DESCRIPTION:Friday 13:00\; peer review due same day 23:59. WeTransfer links
+  expire in 7 days - SurfDrive backup mandatory | For: students\, IA\, peer
+  reviewers
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-video-sep
+ t
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-rts-feb-202627@msp-operations
-DTSTAMP:20261211T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:[MSP BTR] BTR Request-to-Start deadline (Feb cohort)
-DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Office FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two docs. Coordinator approvals run ~3 weeks after\, into the Christmas closure. Under-grading RTS flagging also lands here | For: students\, Academic Advisors\, coordinators
+DESCRIPTION:Fri 11 Dec per msp-btr.nl + Q&A deck\; the 12-Dec variant (Offi
+ ce FAQ\, Abroad Handbook) is a Saturday and implausible - fix those two do
+ cs. Coordinator approvals run ~3 weeks after\, into the Christmas closure.
+  Under-grading RTS flagging also lands here | For: students\, Academic Adv
+ isors\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-rts-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:norm-hours-finance-202627@msp-operations
-DTSTAMP:20261231T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:[MSP BTR] Norm-hours list (BTR supervision) to finance
-DESCRIPTION:Officially 31.12 per Linzi Hall (Teams\, 24 Aug 2026)\, asked directly. Goes to finance / BROS. External and MUMC+ supervisors are credited via their own institution. CORRECTED from an inferred 5 Jul 2027 end-of-year date | For: BTR administrator\, finance
+DESCRIPTION:Officially 31.12 per Linzi Hall (Teams\, 24 Aug 2026)\, asked d
+ irectly. Goes to finance / BROS. External and MUMC+ supervisors are credit
+ ed via their own institution. CORRECTED from an inferred 5 Jul 2027 end-of
+ -year date | For: BTR administrator\, finance
+URL:https://msp-operations.github.io/Academic-Calendar/?event=norm-hours-fi
+ nance
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-final-grades-due-sept-202627@msp-operations
-DTSTAMP:20270115T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:[MSP BTR] BTR final grades due in Collent (Sept cohort)
-DESCRIPTION:Thesis (RS+IA)\, Final Practical (RS)\, Video (IA). Do not submit before the presentation is done | For: RS\, IA
+DESCRIPTION:Thesis (RS+IA)\, Final Practical (RS)\, Video (IA). Do not subm
+ it before the presentation is done | For: RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-final-gra
+ des-due-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-final-grades-pub-sept-202627@msp-operations
-DTSTAMP:20270118T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:[MSP BTR] BTR final grades published (Sept cohort)
 DESCRIPTION:For: students\, supervisors\, BoE
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-final-gra
+ des-pub-sept
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:transcript-update-btr-sept-202627@msp-operations
+DTSTAMP:20260928T091313Z
+SEQUENCE:1
+LAST-MODIFIED:20260928T091313Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:[MSP BTR] Running transcript update (BTR September cohort)
+DESCRIPTION:3 days after the grade processing deadline\, ahead of the inspe
+ ction window. Distinct from the final transcript update that follows inspe
+ ction. Per Exam Submission and Grading Deadlines AY2026-2027 (final versio
+ n\, 24 Aug 2026) | Exams office 26 Sep 2026: the BTR office does this\, no
+ t Exams. Martijn to confirm | For: BTR office (Martijn Jeurissen)\, ESD\, 
+ students
+URL:https://msp-operations.github.io/Academic-Calendar/?event=transcript-up
+ date-btr-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-start-feb-202627@msp-operations
-DTSTAMP:20270125T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:[MSP BTR] BTR February cohort starts
-DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 end) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students\, supervisors\, IAs\, coordinators
+DESCRIPTION:Graduation 30 Jun. End-date discrepancy on record: 11 Jun (P6 e
+ nd) vs 18 Jun in the Q&A deck - matters for external agreements\, flag to 
+ settle. Full timeline live on msp-btr.nl since 16 Jul 2026 | For: students
+ \, supervisors\, IAs\, coordinators
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-start-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-sept-202627@msp-operations
-DTSTAMP:20270131T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:[MSP BTR] BTR September cohort graduation date
-DESCRIPTION:Graduation = last day of the month the last component was fulfilled | For: students\, BoE\, ESD
+DESCRIPTION:Graduation = last day of the month the last component was fulfi
+ lled | For: students\, BoE\, ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-graduatio
+ n-sept
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-feb-202627@msp-operations
-DTSTAMP:20270301T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[MSP BTR] BTR proposal submission deadline (Feb cohort)
-DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks\, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: students\, RS\, IA
+DESCRIPTION:Mon 13:00 via Collent\, per msp-btr.nl timeline (start +4 weeks
+ \, +1 week for Carnival 8-12 Feb\, exactly the published rule) | For: stud
+ ents\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-due-feb-202627@msp-operations
-DTSTAMP:20270319T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:[MSP BTR] BTR proposal grades due in Collent (Feb cohort)
-DESCRIPTION:Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+DESCRIPTION:Grades due in Collent from academic staff. Published to student
+ s Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Frid
+ ay is the staff hand-in deadline\, the Monday is publication\, same conven
+ tion as the September cohort | For: RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ grades-due-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-proposal-grades-pub-feb-202627@msp-operations
-DTSTAMP:20270322T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
 SUMMARY:[MSP BTR] BTR proposal grades published (Feb cohort)
-DESCRIPTION:Mon 22 Mar per msp-btr.nl (students receive grades in Canvas) | For: students\, RS\, IA
+DESCRIPTION:Mon 22 Mar per msp-btr.nl (students receive grades in Canvas) |
+  For: students\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-proposal-
+ grades-pub-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-midterm-grades-due-feb-202627@msp-operations
-DTSTAMP:20270409T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:[MSP BTR] BTR midterm practical grade due (Feb cohort)
-DESCRIPTION:Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS
+DESCRIPTION:Midterm grades due in Collent from academic staff. Published to
+  students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: 
+ the Friday is the staff hand-in deadline\, the Monday is publication\, sam
+ e convention as the September cohort | For: RS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-midterm-g
+ rades-due-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-midterm-grades-pub-feb-202627@msp-operations
-DTSTAMP:20270412T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270412
 DTEND;VALUE=DATE:20270413
 SUMMARY:[MSP BTR] BTR midterm grades published (Feb cohort)
-DESCRIPTION:Published to students by the office\, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, RS
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 
+ 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: 
+ the Friday is the staff hand-in deadline\, the Monday is publication\, sam
+ e convention as the September cohort | For: students\, RS
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-midterm-g
+ rades-pub-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-thesis-feb-202627@msp-operations
-DTSTAMP:20270518T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270518
 DTEND;VALUE=DATE:20270519
 SUMMARY:[MSP BTR] BTR thesis submission deadline (Feb cohort)
-DESCRIPTION:Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collides with the P5 exam week 17-21 May\, same collision the Sept thesis has with P2 | For: students\, RS\, IA
+DESCRIPTION:Tue 13:00 per msp-btr.nl (Mon 17 May is Whit Monday). NB collid
+ es with the P5 exam week 17-21 May\, same collision the Sept thesis has wi
+ th P2 | For: students\, RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-thesis-fe
+ b
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-video-feb-202627@msp-operations
-DTSTAMP:20270521T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270521
 DTEND;VALUE=DATE:20270522
 SUMMARY:[MSP BTR] BTR video submission deadline (Feb cohort)
-DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDrive backup mandatory (WeTransfer links expire) | For: students\, IA\, peer reviewers
+DESCRIPTION:Fri 13:00 per msp-btr.nl\; peer review same day 23:59. SurfDriv
+ e backup mandatory (WeTransfer links expire) | For: students\, IA\, peer r
+ eviewers
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-video-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-final-grades-due-feb-202627@msp-operations
-DTSTAMP:20270604T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 SUMMARY:[MSP BTR] BTR final grades due in Collent (Feb cohort)
-DESCRIPTION:Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: RS\, IA
+DESCRIPTION:Final assessment grades due in Collent from academic staff. Pub
+ lished to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Au
+ g 2026: the Friday is the staff hand-in deadline\, the Monday is publicati
+ on\, same convention as the September cohort | For: RS\, IA
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-final-gra
+ des-due-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-final-grades-pub-feb-202627@msp-operations
-DTSTAMP:20270607T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270607
 DTEND;VALUE=DATE:20270608
 SUMMARY:[MSP BTR] BTR final grades published (Feb cohort)
-DESCRIPTION:Published to students by the office\, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline\, the Monday is publication\, same convention as the September cohort | For: students\, supervisors\, BoE
+DESCRIPTION:Published to students by the office\, the Monday after the Fri 
+ 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: 
+ the Friday is the staff hand-in deadline\, the Monday is publication\, sam
+ e convention as the September cohort | For: students\, supervisors\, BoE
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-final-gra
+ des-pub-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:btr-graduation-feb-202627@msp-operations
-DTSTAMP:20270630T000000Z
+DTSTAMP:20260928T091313Z
+SEQUENCE:0
+LAST-MODIFIED:20260928T091313Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[MSP BTR] BTR February cohort graduation date
 DESCRIPTION:For: students\, BoE\, ESD
+URL:https://msp-operations.github.io/Academic-Calendar/?event=btr-graduatio
+ n-feb
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

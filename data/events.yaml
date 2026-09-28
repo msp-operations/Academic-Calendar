@@ -25,6 +25,7 @@
   audience: new students, buddies, Secretariat, ESD, tutors
   notes: "Three days, mandatory, per the 2026 Draft Schedule LIVE (Martijn, 13 Aug 2026). Mon: buddy introduction sessions, welcome speech, MSP Fair. Tue: Dean's speech 12:00. Wed: student Safety sessions in the morning. Corrects an earlier four-day entry that mistook the Wed 16:00 Lab Safety STAFF training (DUB30) for a student assessment on a fourth day."
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 
 - id: year-start
   title: Academic year 2026-27 starts
@@ -81,6 +82,8 @@
   audience: coordinators, invigilators, ESD, students
   notes: "P2 week also hosts P1 resits; P4 week hosts P2/P3 resits; P5 week hosts P4 resits. MSP sits the week before the central toetsweek at USC. P5: sittings Tue 18 - Thu 20 May only (Whit Monday, no Friday sittings)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: resit-week-p5
   title: Resit week P5
@@ -90,6 +93,8 @@
   audience: coordinators, invigilators, ESD, students
   notes: "14-18 Jun 2027, standalone resit week. FSE-wide: same week hosts CE Semester 2, DACS P5/Semester 2 and Science Masters P4+P5 resits"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 # ---------- Exams: academic-staff deadlines ----------
 
@@ -102,6 +107,8 @@
   audience: course coordinators, examiners
   notes: "At least 5 working days before the module starts; may not change during the module (R&R 3-6)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: exam-submit-p1
   title: Exam submission deadline for coordinators
@@ -112,6 +119,8 @@
   notes: "P1. Paper PDF and TestVision test both due; in the inbox by 9:00. Non-compliant exams returned with 24h to fix | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P1 exams 12-16 Oct"
   submit: yes
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-submit-p2
   title: Exam submission deadline for coordinators
   office: exams
@@ -121,6 +130,8 @@
   notes: "P2 (incl. P1 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P2 exams 7-11 Dec"
   submit: yes
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-submit-p4
   title: Exam submission deadline for coordinators
   office: exams
@@ -130,6 +141,8 @@
   notes: "P4 (incl. P2/P3 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P4 exams 15-19 Mar"
   submit: yes
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-submit-p5
   title: Exam submission deadline for coordinators
   office: exams
@@ -139,6 +152,8 @@
   notes: "P5 (incl. P4 resit exams) | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the rule is 3 weeks before the first exam, not 2. This also settles the 2-vs-3-week conflict logged between SOP 15 and the course manual. P5 exams 17-21 May"
   submit: yes
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-submit-resits
   title: Resit exam submission deadline (P5 resits)
   office: exams
@@ -148,6 +163,8 @@
   notes: "One week before the June resit week | CORRECTED one week earlier per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): the P5 resit round is a tight turnaround so MSP prints in house and asks for exams 2 weeks ahead rather than the usual 3. P5 resits 14-18 Jun"
   submit: yes
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: grades-due
   title: Grade submission deadline for coordinators
@@ -159,6 +176,8 @@
   notes: "10 working days from the Friday of exam week (EER 5.8 / R&R 17); resits in that week ride the same clock. ESD then has 5 working days to process. P2 has its own dated event (Christmas closure pauses the clock)"
   submit: yes
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: grades-due-p2
   title: Grade submission deadline for coordinators (P2 + P1 resits)
   office: exams
@@ -168,6 +187,8 @@
   submit: yes
   notes: "Fri 8 Jan per the official GRADING DEADLINES 2026-2027 overview (closure-adjusted, marked * in the doc); P1 resits ride the same clock"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: grades-due-resits
   title: Resit grade submission deadline (June resit week)
   office: exams
@@ -177,16 +198,20 @@
   submit: yes
   notes: "Fri 2 Jul per the GRADING DEADLINES 2026-2027 overview (10wd clock from the resit-week Friday); P6 project grades share this date"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: grading-sheets-out
   title: Grading sheets sent to coordinators
   office: exams
-  when: "{P}.start +35d"
+  when: "{P}.exam.start -7d"
   repeat: P1, P2, P4, P5
   staff: support
   audience: exams office, coordinators
-  notes: "Week 6 of the running period; empty sheets exported from SAP with instructions + the 10-working-day deadline"
+  notes: "One week before the exam week starts, per the Exams office (26 Sep 2026): any earlier and the mail gets lost in coordinators' inboxes. Empty sheets exported from SAP with instructions + the 10-working-day deadline"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: grades-published
   title: Grades published on Student Portal (deadline)
@@ -197,6 +222,8 @@
   audience: students, coordinators, BoE, Academic Advising
   notes: "15 working days from the last exam date (EER 5.8): 10 for the examiner, 5 for ESD processing. Transcripts updated within 1 working day after (running update); final bulk update follows the inspection round. P2 has its own dated event"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: grades-published-p2
   title: Grades published on Student Portal (P2, deadline)
   office: exams
@@ -205,6 +232,8 @@
   audience: students, coordinators, BoE, Academic Advising
   notes: "Fri 15 Jan per the GRADING DEADLINES 2026-2027 overview; running transcript update 20 Jan, inspection deadline 29 Jan, final transcript update 5 Feb"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: grades-published-resits
   title: Resit grades published (June resit week)
   office: exams
@@ -213,6 +242,8 @@
   audience: students, coordinators, BoE
   notes: "Fri 9 Jul per the GRADING DEADLINES 2026-2027 overview; transcript update 12 Jul, inspection deadline + final transcript 23 Jul"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 # Final transcript updates: dated per the GRADING DEADLINES 2026-2027 overview (they follow
 # the inspection close, not a clean working-day offset; P5 compresses to inspection day).
 - id: transcript-final-update-p1
@@ -223,6 +254,8 @@
   audience: exams office, ESD
   notes: "Inspection deadline 20 Nov, final transcripts 25 Nov, per the grading overview"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-final-update-p2
   title: Final bulk transcript update after inspection (P2 + P1 resits)
   office: exams
@@ -231,6 +264,8 @@
   audience: exams office, ESD
   notes: "Inspection deadline 29 Jan, final transcripts 5 Feb, per the grading overview"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-final-update-p4
   title: Final bulk transcript update after inspection (P4 + P2/P3 resits)
   office: exams
@@ -239,6 +274,8 @@
   audience: exams office, ESD
   notes: "Inspection deadline 23 Apr, final transcripts 30 Apr, per the grading overview"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-final-update-p5
   title: Final bulk transcript update after inspection (P5 + P4 resits)
   office: exams
@@ -247,6 +284,8 @@
   audience: exams office, ESD
   notes: "Inspection deadline and final transcripts both 25 Jun (compressed), per the grading overview | CORRECTED from 25 Jun per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): 3 days after inspection ends"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-final-update-resits
   title: Final bulk transcript update after inspection (P5 resits + P6 projects)
   office: exams
@@ -255,6 +294,8 @@
   audience: exams office, ESD
   notes: "Inspection deadline and final transcripts both 23 Jul, per the grading overview | CORRECTED from 23 Jul per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026): 3 days after inspection ends. Covers P5 resits and P6 projects"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-inspection-p1
   title: Exam inspection deadline (P1)
   office: exams
@@ -263,6 +304,8 @@
   audience: students, coordinators, exams office
   notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-inspection-p2
   title: Exam inspection deadline (P2 + P1 resits)
   office: exams
@@ -271,6 +314,8 @@
   audience: students, coordinators, exams office
   notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-inspection-p3
   title: Exam inspection deadline (P3 projects)
   office: exams
@@ -279,6 +324,8 @@
   audience: students, coordinators, exams office
   notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-inspection-p4
   title: Exam inspection deadline (P4 + P2 resits)
   office: exams
@@ -287,6 +334,8 @@
   audience: students, coordinators, exams office
   notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-inspection-p5
   title: Exam inspection deadline (P5 + P4 resits)
   office: exams
@@ -295,6 +344,8 @@
   audience: students, coordinators, exams office
   notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-inspection-resits
   title: Exam inspection deadline (P5 resits + P6 projects)
   office: exams
@@ -303,6 +354,8 @@
   audience: students, coordinators, exams office
   notes: "10 working days after the grades are processed. Students may inspect their exam up to this date; the coordinator runs the session. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-p1
   title: Running transcript update (P1)
   office: exams
@@ -311,6 +364,8 @@
   audience: exams office, ESD, students
   notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-p2
   title: Running transcript update (P2 + P1 resits)
   office: exams
@@ -319,14 +374,17 @@
   audience: exams office, ESD, students
   notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-btr-sept
   title: Running transcript update (BTR September cohort)
-  office: exams
+  office: btr
   when: "2027-01-25"
   staff: support
-  audience: exams office, ESD, students
-  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  audience: BTR office (Martijn Jeurissen), ESD, students
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026) | Exams office 26 Sep 2026: the BTR office does this, not Exams. Martijn to confirm"
   status: confirmed
+  owner: BTR office (Martijn Jeurissen)
 - id: transcript-update-p3
   title: Running transcript update (P3 projects)
   office: exams
@@ -335,6 +393,8 @@
   audience: exams office, ESD, students
   notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-p4
   title: Running transcript update (P4 + P2 resits)
   office: exams
@@ -343,14 +403,18 @@
   audience: exams office, ESD, students
   notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-btr-feb
   title: Running transcript update (BTR February cohort)
   office: exams
   when: "2027-06-11"
   staff: support
   audience: exams office, ESD, students
-  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
+  notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026) | Exams office 26 Sep 2026: confirmed, with the remark 'for students, not BTR'"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-p5
   title: Running transcript update (P5 + P4 resits)
   office: exams
@@ -359,6 +423,8 @@
   audience: exams office, ESD, students
   notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-update-resits
   title: Running transcript update (P5 resits + P6 projects)
   office: exams
@@ -367,6 +433,8 @@
   audience: exams office, ESD, students
   notes: "3 days after the grade processing deadline, ahead of the inspection window. Distinct from the final transcript update that follows inspection. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: transcript-final-update-p3
   title: Final bulk transcript update after inspection (P3 projects)
   office: exams
@@ -375,6 +443,8 @@
   audience: exams office, ESD, students
   notes: "3 days after inspection ends. P3 was the only round with no final transcript step in our data. Per Exam Submission and Grading Deadlines AY2026-2027 (final version, 24 Aug 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 # ---------- Exams: support-staff logistics ----------
 
@@ -384,122 +454,91 @@
   when: "2026-09-21"
   staff: support
   audience: exams office
-  notes: "P1. T-4 weeks; hard floor 3 weeks. Scope per Anja's ladder: this date also carries exam mutations + hall/Chromebook layouts + invigilator numbers, all to SSC by 12:00"
+  notes: "P1. T-4 weeks; hard floor 3 weeks. Scope per Anja's ladder: this date also carries exam mutations + hall/Chromebook layouts + invigilator numbers, all to SSC by 12:00 | Exams office 26 Sep 2026: InterUM request only for SPAR and resits; coordinated with DACS, UCM and FSE-C"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: invigilators-p2
   title: Invigilator request deadline (InterUM)
   office: exams
   when: "2026-11-16"
   staff: support
   audience: exams office
-  notes: "P2. Mutations + hall layouts also due 16 Nov 12:00; NB the SSC central-hall surveillanten column deviates to Wed 18 Nov per Anja's ladder"
+  notes: "P2. Mutations + hall layouts also due 16 Nov 12:00; NB the SSC central-hall surveillanten column deviates to Wed 18 Nov per Anja's ladder | Exams office 26 Sep 2026: InterUM request only for SPAR and resits; coordinated with DACS, UCM and FSE-C"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: invigilators-p4
   title: Invigilator request deadline (InterUM)
   office: exams
   when: "2027-02-22"
   staff: support
   audience: exams office
-  notes: "P4"
+  notes: "P4 | Exams office 26 Sep 2026: InterUM request only for SPAR and resits; coordinated with DACS, UCM and FSE-C"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: invigilators-p5
   title: Invigilator request deadline (InterUM)
   office: exams
   when: "2027-04-26"
   staff: support
   audience: exams office
-  notes: "P5. InterUM T-3wk convention. The SSC triple deadline is Wed 28 Apr 12:00 per the updated ladder (10 Aug copy; the earlier King's Day 27-Apr entry was corrected)"
+  notes: "P5. InterUM T-3wk convention. The SSC triple deadline is Wed 28 Apr 12:00 per the updated ladder (10 Aug copy; the earlier King's Day 27-Apr entry was corrected) | Exams office 26 Sep 2026: InterUM request only for SPAR and resits; coordinated with DACS, UCM and FSE-C"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: invigilators-resits
   title: Invigilator request deadline, P5 resits (InterUM)
   office: exams
   when: "2027-05-24"
   staff: support
   audience: exams office
-  notes: "MSP's own InterUM lead-time convention (T-3wk). Anja's SSC ladder says 31 May, but MSP has no central-hall sittings in the 14-18 Jun week (resits at PHS on the own Chromebook cart), so the SSC date does not bind"
+  notes: "MSP's own InterUM lead-time convention (T-3wk). Anja's SSC ladder says 31 May, but MSP has no central-hall sittings in the 14-18 Jun week (resits at PHS on the own Chromebook cart), so the SSC date does not bind | Exams office 26 Sep 2026: InterUM request only for SPAR and resits; coordinated with DACS, UCM and FSE-C"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: print-order-p1
   title: Print order to ANDIDRUK
   office: exams
-  when: "2026-09-29"
+  when: "2026-09-25"
   staff: support
   audience: exams office
-  notes: "P1. Delivery to PHS Tue 6 Oct. NB SOP 15 says 3 weeks before exam week, manual says 2 - conflict logged"
+  notes: "P1. The Friday two weeks before the exam week starts, per the Exams office (26 Sep 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: print-order-p2
   title: Print order to ANDIDRUK
   office: exams
-  when: "2026-11-24"
+  when: "2026-11-20"
   staff: support
   audience: exams office
-  notes: "P2. Delivery Tue 1 Dec"
+  notes: "P2. The Friday two weeks before the exam week starts, per the Exams office (26 Sep 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: print-order-p4
   title: Print order to ANDIDRUK
   office: exams
-  when: "2027-03-02"
+  when: "2027-02-26"
   staff: support
   audience: exams office
-  notes: "P4. Delivery Tue 9 Mar"
+  notes: "P4. The Friday two weeks before the exam week starts, per the Exams office (26 Sep 2026)"
   status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: print-order-p5
   title: Print order to ANDIDRUK
   office: exams
-  when: "2027-05-04"
+  when: "2027-04-30"
   staff: support
   audience: exams office
-  notes: "P5. Delivery Tue 11 May"
+  notes: "P5. The Friday two weeks before the exam week starts, per the Exams office (26 Sep 2026)"
   status: confirmed
-
-- id: exam-registration
-  title: Exam registration week (students)
-  office: exams
-  when: "2026-09-21"
-  staff: support
-  audience: students, ESD
-  notes: "P1: 21-25 Sep"
-  status: confirmed
-- id: exam-registration-p2
-  title: Exam registration week (students)
-  office: exams
-  when: "2026-11-16"
-  staff: support
-  audience: students, ESD
-  notes: "P2: 16-20 Nov"
-  status: confirmed
-- id: exam-registration-p3
-  title: Exam registration week (students)
-  office: exams
-  when: "2027-01-04"
-  staff: support
-  audience: students, ESD
-  notes: "P3: 4-8 Jan"
-  status: confirmed
-- id: exam-registration-p4
-  title: Exam registration week (students)
-  office: exams
-  when: "2027-03-01"
-  staff: support
-  audience: students, ESD
-  notes: "P4: 1-5 Mar"
-  status: confirmed
-- id: exam-registration-p5
-  title: Exam registration week (students)
-  office: exams
-  when: "2027-04-26"
-  staff: support
-  audience: students, ESD
-  notes: "P5: 26-30 Apr"
-  status: confirmed
-- id: exam-registration-p6
-  title: Exam registration week (students)
-  office: exams
-  when: "2027-06-07"
-  staff: support
-  audience: students, ESD
-  notes: "P6: 7-11 Jun"
-  status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: fse-exam-request-p1
   title: FSE exam requests P1 due (Jesse Laumen / SSC)
@@ -531,8 +570,10 @@
   when: "2027-02-01"
   staff: support
   audience: exams office
-  notes: "February; return deadline April. Drives UM Sports + MECC bookings for the whole year"
-  status: unconfirmed
+  notes: "February; return deadline April. Drives UM Sports + MECC bookings for the whole year | Exams office 26 Sep 2026: we do not control this, it comes from Anja and we work from it when it arrives"
+  status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-yearplan-return
   title: UM Sports exam year plan back to SSC (approx deadline)
   office: exams
@@ -540,7 +581,9 @@
   staff: support
   audience: exams office
   notes: "April per the manual; frame schedule needed from Programme Director by end of March. Rhythm confirmed by the 2026 cycle: Msp-exams calendar 'Exam planning 26-27 UMsports' 14 Apr 2026, each faculty's planning ready by Tue 7 Apr. NB distinct from the SSC aanvraagformulier (separate event)"
-  status: unconfirmed
+  status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: exam-request-offweek
   title: SSC aanvraagformulier deadline - off-week exams AY27-28 (the hardest date)
   office: exams
@@ -548,16 +591,19 @@
   staff: support
   audience: exams office
   notes: "Fixes MSP's exam days for the whole next AY (MSP sits outside the central toetsweken). 2026 instance stated in the form itself: Mon 13 Apr. Expect ~Mon 12 Apr 2027"
-  status: unconfirmed
+  status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 - id: assessment-survey
   title: MSP assessment survey deadline (coordinators, feeds the year exam request)
-  office: exams
+  office: scheduling
   when: "2027-03-23"
   staff: academic
-  audience: course coordinators, exams office
+  audience: course coordinators, Scheduling (Severine), exams office
   submit: yes
-  notes: "Survey goes out Feb; ~23 Mar deadline per the 2026 cycle. Coordinators state assessment formats + exam needs; feeds the April SSC aanvraagformulier"
+  notes: "Survey goes out Feb; ~23 Mar deadline per the 2026 cycle. Coordinators state assessment formats + exam needs; feeds the April SSC aanvraagformulier | Exams office 26 Sep 2026: this is Severine's Qualtrics survey, used to plan midterms and final formats; check the date with Severine"
   status: unconfirmed
+  owner: Scheduling (Severine Dufour)
 - id: ssc-ladder-arrives
   title: SSC deadline ladder AY27-28 arrives - review + file MSP deviations
   office: exams
@@ -565,46 +611,56 @@
   staff: support
   audience: exams office
   notes: "2026 instance: Anja's covering mail 1 Jul; dates become definitive only after every faculty responds. MSP's AY26-27 deviations are still unfiled (open action in _EXAMS_TODO)"
-  status: unconfirmed
+  status: confirmed
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 # ---------- Project periods (P3/P6 grading) ----------
 
 # Project grading: dated per the GRADING DEADLINES 2026-2027 overview. P3 runs the +10wd clock;
 # P6 aligns with the resit-week clock instead (2 Jul, not +10wd) - the old 10-days question is settled.
 - id: project-grades-due-p3
-  title: Project grades due to ESD (P3 projects)
-  office: esd
+  title: Project grades due to Exams, ESD in cc (P3 projects)
+  office: exams
   when: "2027-02-05"
   staff: academic
   audience: project supervisors, Project Committee
   submit: yes
-  notes: "Fri 5 Feb per the grading overview (+10 working days from P3 end)"
+  notes: "Fri 5 Feb per the grading overview (+10 working days from P3 end) | Heather Obmann 26 Sep 2026: hand in to msp-exams with Education Support in cc; this is the exam coordinator's deadline"
   status: confirmed
+  owner: Exams office
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: project-grades-published-p3
   title: Project grades published (P3 projects)
-  office: esd
+  office: exams
   when: "2027-02-12"
   staff: support
   audience: students, supervisors
-  notes: "Fri 12 Feb per the grading overview; transcript update 17 Feb, inspection deadline 26 Feb, final transcripts 5 Mar"
+  notes: "Fri 12 Feb per the grading overview; transcript update 17 Feb, inspection deadline 26 Feb, final transcripts 5 Mar | Heather Obmann 26 Sep 2026: deadline for the exam coordinator"
   status: confirmed
+  owner: Exams office
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: project-grades-due-p6
-  title: Project grades due to ESD (P6 projects)
-  office: esd
+  title: Project grades due to Exams, ESD in cc (P6 projects)
+  office: exams
   when: "2027-07-02"
   staff: academic
   audience: project supervisors, Project Committee
   submit: yes
-  notes: "Fri 2 Jul per the grading overview (aligned with the resit-week clock, not +10wd from P6 end)"
+  notes: "Fri 2 Jul per the grading overview (aligned with the resit-week clock, not +10wd from P6 end) | Heather Obmann 26 Sep 2026: not ESD's, the exam coordinator should decide. She has never heard of aligning it with the resit week and has always asked for grades 10 working days after the period. The 2 Jul date stands on the final grading overview until Exams says otherwise"
   status: confirmed
+  owner: Exams office
 - id: project-grades-published-p6
   title: Project grades published (P6 projects)
-  office: esd
+  office: exams
   when: "2027-07-09"
   staff: support
   audience: students, supervisors
-  notes: "Fri 9 Jul per the grading overview; transcript update 12 Jul, inspection + final transcripts 23 Jul"
+  notes: "Fri 9 Jul per the grading overview; transcript update 12 Jul, inspection + final transcripts 23 Jul | Heather Obmann 26 Sep 2026: not ESD's, see the due date. Exams office to confirm the resit-clock alignment"
   status: confirmed
+  owner: Exams office
 
 # ---------- Scheduling ----------
 
@@ -624,14 +680,8 @@
   audience: students, coordinators, tutors
   notes: "P2"
   status: confirmed
-- id: timetable-pub-p3
-  title: Timetable published
-  office: scheduling
-  when: "2026-12-10"
-  staff: both
-  audience: students, coordinators, tutors
-  notes: "P3"
-  status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: timetable-pub-p4
   title: Timetable published
   office: scheduling
@@ -640,6 +690,8 @@
   audience: students, coordinators, tutors
   notes: "P4"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: timetable-pub-p5
   title: Timetable published
   office: scheduling
@@ -648,15 +700,8 @@
   audience: students, coordinators, tutors
   notes: "P5"
   status: confirmed
-- id: timetable-pub-p6
-  title: Timetable published
-  office: scheduling
-  when: "2027-05-12"
-  staff: both
-  audience: students, coordinators, tutors
-  notes: "P6"
-  status: confirmed
-
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: switch-p1
   title: Course switch deadline
   office: scheduling
@@ -671,8 +716,8 @@
   when: "2026-09-25"
   staff: support
   audience: students, Academic Advising, ESD
-  notes: "P2, Fri 25 Sep 17:00. NB the official switch/withdraw PDF says 'Friday September 29' but 29 Sep 2026 is a Tuesday - the LAS deadline ladder (Kessels, Feb 2026) and the Friday rule give Fri 25 Sep. Fix the PDF/intranet form"
-  status: confirmed
+  notes: "P2, Fri 25 Sep 17:00. NB the official switch/withdraw PDF says 'Friday September 29' but 29 Sep 2026 is a Tuesday - the LAS deadline ladder (Kessels, Feb 2026) and the Friday rule give Fri 25 Sep. Fix the PDF/intranet form | Severine 26 Sep 2026 marked the date wrong and entered '1 Sep 2029', which reads as 29-9 typed into Excel, i.e. Tue 29 Sep as printed in the PDF. So 25 Sep (LAS ladder) vs 29 Sep (PDF, Severine). Settle with Severine and Linzi before AY27-28"
+  status: unconfirmed
 - id: switch-p4
   title: Course switch deadline
   office: scheduling
@@ -681,6 +726,8 @@
   audience: students, Academic Advising, ESD
   notes: "P4"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: switch-p5
   title: Course switch deadline
   office: scheduling
@@ -689,6 +736,8 @@
   audience: students, Academic Advising, ESD
   notes: "P5"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 
 - id: withdraw-p1
   title: Course withdraw deadline
@@ -698,6 +747,8 @@
   audience: students, Academic Advising, ESD
   notes: "P1"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: withdraw-p2
   title: Course withdraw deadline
   office: scheduling
@@ -706,6 +757,8 @@
   audience: students, Academic Advising, ESD
   notes: "P2"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: withdraw-p4
   title: Course withdraw deadline
   office: scheduling
@@ -714,6 +767,8 @@
   audience: students, Academic Advising, ESD
   notes: "P4"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: withdraw-p5
   title: Course withdraw deadline
   office: scheduling
@@ -722,23 +777,28 @@
   audience: students, Academic Advising, ESD
   notes: "P5"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 
 - id: course-reg-spring
   title: Course registration week (Spring 2027 selections)
-  office: scheduling
+  office: general
   when: "2026-11-09"
   staff: both
-  audience: students, Academic Advising, ESD
-  notes: "9-13 Nov; advisor meeting required before submitting"
+  audience: Office of Academic Advising (owner), students, Academic Advising, ESD
+  notes: "9-13 Nov; advisor meeting required before submitting | Severine 26 Sep 2026: owned by the Office of Academic Advising, not Scheduling"
   status: confirmed
+  owner: Office of Academic Advising
 - id: course-reg-fall
-  title: Course registration week (Fall 2027 selections)
+  title: Course registration deadline (Fall 2027 selections)
   office: scheduling
-  when: "2027-05-17"
+  when: "2027-05-18"
   staff: both
   audience: students, Academic Advising, ESD
-  notes: "17-21 May | NB week 1 is Whit Monday 17 May 2027 and UM is closed, but the form is online and 17-21 May is the published week"
+  notes: "Tue 18 May 2027 per Severine (26 Sep 2026); Mon 17 May is Whit Monday and UM is closed, so the deadline moves to the Tuesday"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: waiver-deadline
   title: Waiver deadline for Spring registration
   office: scheduling
@@ -747,6 +807,8 @@
   audience: students, coordinators, ESD
   notes: "Coordinators grant waivers; some labs have earlier hard cut-offs"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 
 # ---------- ESD ----------
 
@@ -756,8 +818,10 @@
   when: "2026-07-19"
   staff: support
   audience: students, BoE
-  notes: "No late admission for external modules"
+  notes: "No late admission for external modules | Per the Calendarium (Heather Obmann, 26 Sep 2026)"
   status: confirmed
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: ext-edu-p2
   title: External education registration deadline (P2)
   office: esd
@@ -765,6 +829,9 @@
   staff: support
   audience: students, BoE
   status: confirmed
+  notes: "Per the Calendarium (Heather Obmann, 26 Sep 2026)"
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: ext-edu-p3
   title: External education registration deadline (P3)
   office: esd
@@ -772,6 +839,9 @@
   staff: support
   audience: students, BoE
   status: confirmed
+  notes: "Per the Calendarium (Heather Obmann, 26 Sep 2026)"
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: ext-edu-s2
   title: External education registration deadline (S2, P4, P4-P5)
   office: esd
@@ -779,6 +849,9 @@
   staff: support
   audience: students, BoE
   status: confirmed
+  notes: "Per the Calendarium (Heather Obmann, 26 Sep 2026)"
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: ext-edu-p5
   title: External education registration deadline (P5)
   office: esd
@@ -786,6 +859,9 @@
   staff: support
   audience: students, BoE
   status: confirmed
+  notes: "Per the Calendarium (Heather Obmann, 26 Sep 2026)"
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 - id: ext-edu-p6
   title: External education registration deadline (P6)
   office: esd
@@ -793,6 +869,9 @@
   staff: support
   audience: students, BoE
   status: confirmed
+  notes: "Per the Calendarium (Heather Obmann, 26 Sep 2026)"
+  confirmed_by: Heather Obmann
+  confirmed_on: 2026-09-26
 
 
 - id: catalogue-coordinator-updates
@@ -804,6 +883,8 @@
   notes: "End of February (2026 instance was Fri 27 Feb); update letters go out mid-Jan, reminder the Monday before (IPO overview: Mon 23 Feb 09:00). No reaction = last year's description is copied and stands | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): exact date given"
   submit: yes
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: catalogue-publication
   title: Course catalogue publication (hard deadline)
   office: esd
@@ -812,6 +893,8 @@
   audience: coordinators, BoE, Scheduling, Exams, Academic Advising
   notes: "1 April, firm - exam planning depends on it"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 - id: sap-mendix-pass
   title: SAP + Mendix new-year pass + intranet forms updated
   office: esd
@@ -820,6 +903,8 @@
   audience: ESD, Web Admin, Scheduling
   notes: "UM-wide 1 May deadline, before the advising period"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 
 # ---------- BTR (September 2026 cohort - dated from the Sept-2026 handbooks) ----------
 
@@ -953,6 +1038,7 @@
   submit: yes
   notes: "Grades due in Collent from academic staff. Published to students Mon 22 Mar. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 - id: btr-proposal-grades-pub-feb
   title: BTR proposal grades published (Feb cohort)
   office: btr
@@ -970,6 +1056,7 @@
   submit: yes
   notes: "Midterm grades due in Collent from academic staff. Published to students Mon 12 Apr. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 - id: btr-midterm-grades-pub-feb
   title: BTR midterm grades published (Feb cohort)
   office: btr
@@ -978,6 +1065,7 @@
   audience: students, RS
   notes: "Published to students by the office, the Monday after the Fri 9 Apr staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 - id: btr-thesis-feb
   title: BTR thesis submission deadline (Feb cohort)
   office: btr
@@ -1003,6 +1091,7 @@
   submit: yes
   notes: "Final assessment grades due in Collent from academic staff. Published to students Mon 7 Jun. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 - id: btr-final-grades-pub-feb
   title: BTR final grades published (Feb cohort)
   office: btr
@@ -1011,6 +1100,7 @@
   audience: students, supervisors, BoE
   notes: "Published to students by the office, the Monday after the Fri 4 Jun staff deadline. Confirmed by Martijn (BTR coordinator) 24 Aug 2026: the Friday is the staff hand-in deadline, the Monday is publication, same convention as the September cohort"
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 
 - id: corsa-migration
   title: CORSA cloud migration window (23-28 Sep; backup 7-12 Oct)
@@ -1036,37 +1126,18 @@
   when: "2026-11-01"
   staff: support
   audience: BoE secretary, Chris Pawley (STIC)
-  notes: "Also 1 May. Delete last year's candidates first. Confirmed against 'Graduation audit MSP time line.docx' (BoE procedures; 2021-era doc, nod from Katja still polite)"
-  status: confirmed
-- id: boe-grad-audit-candidates-may
-  title: Graduation audit - create graduation candidates (100-220 ECTS)
-  office: boe
-  when: "2027-05-01"
-  staff: support
-  audience: BoE secretary, Chris Pawley (STIC)
-  status: confirmed
+  notes: "Delete last year's candidates first. Katja (26 Sep 2026) marked the 1 Nov date wrong without giving a new one and pointed to her updated Graduation audit time line; the 1 May twin no longer exists. Ask Katja for the date"
+  status: unconfirmed
 - id: boe-grad-audit-notify-oct
   title: Graduation audit - first notification to BTR starters
   office: boe
   when: "2026-10-01"
   staff: support
   audience: BoE secretary, BTR students 140-220 ECTS
-  notes: "Via ZPIQGRADAUD; also 1 Dec, 1 Feb, 1 Mar, 1 May. Confirmed against 'Graduation audit MSP time line.docx'"
+  notes: "Via ZPIQGRADAUD; also 1 Mar. The Dec, Feb and May rounds ended when BTR starts became September and February only (Katja Zambib-Otten, 26 Sep 2026, who updated the Graduation audit time line document accordingly)"
   status: confirmed
-- id: boe-grad-audit-notify-dec
-  title: Graduation audit - first notification to BTR starters
-  office: boe
-  when: "2026-12-01"
-  staff: support
-  audience: BoE secretary
-  status: confirmed
-- id: boe-grad-audit-notify-feb
-  title: Graduation audit - first notification to BTR starters
-  office: boe
-  when: "2027-02-01"
-  staff: support
-  audience: BoE secretary
-  status: confirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 - id: boe-grad-audit-notify-mar
   title: Graduation audit - first notification to BTR starters
   office: boe
@@ -1074,22 +1145,18 @@
   staff: support
   audience: BoE secretary
   status: confirmed
-- id: boe-grad-audit-notify-may
-  title: Graduation audit - first notification to BTR starters
-  office: boe
-  when: "2027-05-01"
-  staff: support
-  audience: BoE secretary
-  status: confirmed
-
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
+  notes: "Via ZPIQGRADAUD, second notification round of the year (Katja Zambib-Otten, 26 Sep 2026)"
 - id: eer-adoption
   title: EER 2027-28 adopted by the Faculty Board (before 1 May)
-  office: boe
+  office: general
   when: "2027-04-30"
   staff: support
-  audience: BoE, EPC, Programme Board
-  notes: "Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep"
+  audience: programme management, Faculty Board, BoE (to be informed), EPC
+  notes: "Corrected per FSE Procedure EER.docx: adoption BEFORE 1 May, publication in June (the earlier 1-Jun reading conflated the two). Effective 1 Sep | Katja 26 Sep 2026: Management's, BoE only needs to be informed of the new EER. Confirmation owed by Management"
   status: confirmed
+  owner: Management (Linzi Hall, Gerco Onderwater)
 
 # ---------- Alumni ----------
 
@@ -1119,6 +1186,8 @@
   audience: IPO (Eva), faculty BKO/UTQ contact persons
   notes: "Early August per the IPO overview; feeds the examiner list for Fall appointment letters | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 2-13 Aug"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: examiner-gerco-check-fall
   title: Examiner list final check with Gerco (Fall semester)
@@ -1126,7 +1195,7 @@
   when: "2026-08-19"
   staff: support
   audience: IPO (Eva), Gerco
-  notes: "Wed 19 Aug 09:30-10:00 per the IPO overview. Flag staff without BKO/UTQ registration; Gerco decides on appointments"
+  notes: "Wed 19 Aug 09:30-10:00 per the IPO overview: final check of the examiner list before the appointment letters go out"
   status: confirmed
 
 - id: examiner-to-katja-fall
@@ -1137,6 +1206,8 @@
   audience: IPO (Eva), BoE secretary
   notes: "End August per the IPO overview | CORRECTED to 2026-08-20 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 16-20 Aug"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: intranet-canvas-refresh
   title: Intranet + Canvas full new-year refresh deadline (all sections)
@@ -1158,32 +1229,16 @@
 
 # ---------- Course catalogue: Spring semester AY26-27 cycle (fall 2026) ----------
 
-- id: catalogue-spring-gerco-1
-  title: Catalogue Spring cycle - first meeting with Gerco (P4+P5 updates)
-  office: esd
-  when: "2026-09-07"
-  staff: support
-  audience: IPO (Eva), Gerco
-  notes: "Mon 7 Sep 14:00-15:00 per the IPO overview: coordinator changes, titles, periods, pre/corequisites. Coordinator mail list + workbook copy to Gerco afterwards"
-  status: confirmed
-
 - id: canvas-scheduling-uploads-fall
   title: Scheduling docs refreshed on Canvas (Spring registration set)
   office: scheduling
-  when: "2026-10-12"
+  when: "2026-10-26"
   staff: support
   audience: Scheduling (Severine), IPO (Eva)
-  notes: "Mid-Oct per the IPO overview: course registration form, frame schedules MSP/UCM/UCV, switch-withdraw deadlines on front page, planning tool, academic calendar"
-  status: unconfirmed
-
-- id: catalogue-spring-gerco-final
-  title: Catalogue Spring cycle - final meeting with Gerco
-  office: esd
-  when: "2026-10-19"
-  staff: support
-  audience: IPO (Eva), Gerco
-  notes: "Mon 19 Oct 14:00-15:00 per the IPO overview. Concept frame schedule vs workbook check (titles, coordinators, periods, pre/co); both must end up identical"
+  notes: "In the week of 26 Oct 2026, before Academic Advising starts on 2 Nov (Severine, 26 Sep 2026): course registration form, frame schedules MSP/UCM/UCV, planning tool. Switch/withdraw deadlines and the academic calendar are on Canvas for the whole year from the start"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 
 - id: catalogue-spring-publish
   title: Spring catalogue updates published (Canvas + intranet)
@@ -1193,6 +1248,8 @@
   audience: coordinators, students, Gerco, Chris P., Severine, Katja, Saskia, Linzi, UCM/UCV
   notes: "Mid-Oct per the IPO overview: catalogue + pre/co-requisites overview + SAP/Mendix final check. Sent to UCV (Brigitte Kessels) and UCM student affairs | CORRECTED to 2026-10-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 Oct"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: forms-erik-fall
   title: Intranet forms sweep with Erik Verheij (Fall round)
@@ -1200,26 +1257,30 @@
   when: "2026-10-23"
   staff: support
   audience: IPO (Eva), Erik Verheij
-  notes: "End Oct per the IPO overview, trigger early Oct: all 14 forms updated in one go (P4/P5 module titles in additional-module and switch-withdraw forms), new colleagues intranet access | CORRECTED to 2026-10-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 19-23 Oct"
-  status: unconfirmed
+  notes: "Window 19-23 Oct per Eva's Jaaroverzicht IPO 2026-2027. The Fall sweep acts on the Spring round: all 14 forms updated in one go (P4/P5 module titles in the additional-module and switch-withdraw forms), new colleagues' intranet access (Eva, 26 Sep 2026)"
+  status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 
 - id: frame-schedule-spring-deadline
   title: Frame schedules Spring semester ready (firm deadline)
-  office: scheduling
+  office: general
   when: "2026-11-01"
   staff: both
-  audience: Gerco, Chris Pawley, Scheduling, IPO
-  notes: "Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct, ~10 days ahead"
+  audience: Gerco Onderwater (owner), Chris Pawley, Scheduling, IPO
+  notes: "Firm 1 Nov per the IPO overview: frame schedules must be ready before the Academic Advising period starts. 2025 instance: Gerco's finals landed Tue 21 Oct, ~10 days ahead | Severine 26 Sep 2026: Management's date, not Scheduling's"
   status: confirmed
+  owner: Management (Gerco Onderwater)
 
 - id: advising-period-spring-start
   title: Academic Advising period starts (Spring registration)
-  office: scheduling
+  office: general
   when: "2026-11-02"
   staff: both
-  audience: students, academic advisors, coordinators
-  notes: "Mon 2 Nov per the IPO overview; runs into course registration week 9-13 Nov"
+  audience: Office of Academic Advising (owner), students, academic advisors, coordinators
+  notes: "Mon 2 Nov per the IPO overview; runs into course registration week 9-13 Nov | Severine 26 Sep 2026: owned by the Office of Academic Advising, not Scheduling"
   status: confirmed
+  owner: Office of Academic Advising
 
 # ---------- MoMi (study progress monitoring, visa students) ----------
 
@@ -1242,6 +1303,8 @@
   audience: IPO (Eva), students
   notes: "During weeks 1-2 of the period per the IPO overview; old ones removed, copies archived + logged in the accreditation overviews. P3: only PRO1101 | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): two-week window from period start | NB the P5 window opens Mon 29 Mar 2027, which is Easter Monday, so that round starts the Tuesday"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: exam-overview-check
   title: Check exam/resit overview + prefill accreditation registers
@@ -1252,16 +1315,41 @@
   audience: IPO (Eva), exams office
   notes: "Week before the exam week per the IPO overview: copy exam + attendance sheets into the archiving overview, note which modules have resits | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): one-week window"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
-- id: accreditation-ask
-  title: Ask coordinators for accreditation material (round opens)
+- id: accreditation-ask-p1
+  title: Ask coordinators for accreditation material (P1)
   office: esd
-  when: "{P}.exam.end +16wd"
-  repeat: P1, P4, P5
+  when: "P1.exam.end +16wd"
   staff: support
   audience: IPO (Eva), course coordinators of the period + resits
   notes: "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Monday of each round"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
+
+- id: accreditation-ask-p4
+  title: Ask coordinators for accreditation material (P4 + P2 resits)
+  office: esd
+  when: "P4.exam.end +16wd"
+  staff: support
+  audience: IPO (Eva), course coordinators of the period + resits
+  notes: "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Monday of each round | Eva 26 Sep 2026: the P4 round also collects the P2 resit material"
+  status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
+
+- id: accreditation-ask-p5
+  title: Ask coordinators for accreditation material (P5 + P4 resits)
+  office: esd
+  when: "P5.exam.end +16wd"
+  staff: support
+  audience: IPO (Eva), course coordinators of the period + resits
+  notes: "Monday after grade publication per the IPO overview (grading overview lists P1 as 11 Nov, two days later; P4/P5 match). Material: course manual, assessment plan, attendance, exams incl. rubric, assignments. P2 has its own dated event (closure) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Monday of each round | Eva 26 Sep 2026: the P5 round also collects the P4 resit material"
+  status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 - id: accreditation-ask-p2
   title: Ask coordinators for accreditation material (P2 + P1 resits)
   office: esd
@@ -1270,17 +1358,44 @@
   audience: IPO (Eva), course coordinators
   notes: "Mon 18 Jan per the GRADING DEADLINES 2026-2027 overview (closure shifts the round; matches Eva's 2026 practice of 19 Jan)"
   status: confirmed
+  confirmed_by: ESD (Eva Nelissen-Quaedvlieg, unsigned row)
+  confirmed_on: 2026-09-26
 
-- id: accreditation-deadline
-  title: Accreditation material hand-in deadline
+- id: accreditation-deadline-p1
+  title: Accreditation material hand-in deadline (P1)
   office: esd
-  when: "{P}.exam.end +25wd"
-  repeat: P1, P4, P5
+  when: "P1.exam.end +25wd"
   staff: academic
   audience: course coordinators, IPO (Eva)
   notes: "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event"
   submit: yes
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
+
+- id: accreditation-deadline-p4
+  title: Accreditation material hand-in deadline (P4 + P2 resits)
+  office: esd
+  when: "P4.exam.end +25wd"
+  staff: academic
+  audience: course coordinators, IPO (Eva)
+  notes: "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event | Eva 26 Sep 2026: includes the P2 resit material"
+  submit: yes
+  status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
+
+- id: accreditation-deadline-p5
+  title: Accreditation material hand-in deadline (P5 + P4 resits)
+  office: esd
+  when: "P5.exam.end +25wd"
+  staff: academic
+  audience: course coordinators, IPO (Eva)
+  notes: "End of the 10wd inspection window; this date is also the exam-inspection deadline (grading overview: P1 20 Nov, P4 23 Apr, P5 25 Jun - all match the rule). Hand in via the archive drive, mail, or at DUB30 (0.233). P2 has its own dated event | Eva 26 Sep 2026: includes the P4 resit material"
+  submit: yes
+  status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 - id: accreditation-deadline-p2
   title: Accreditation material hand-in deadline (P2 + P1 resits)
   office: esd
@@ -1290,6 +1405,8 @@
   submit: yes
   notes: "Fri 29 Jan per the GRADING DEADLINES 2026-2027 overview (also the P2 exam-inspection deadline; closure shifts the whole round)"
   status: confirmed
+  confirmed_by: ESD (Eva Nelissen-Quaedvlieg, unsigned row)
+  confirmed_on: 2026-09-26
 
 - id: accreditation-dub30
   title: Eva at DUB30 for archive intake (Mon-Wed)
@@ -1301,6 +1418,8 @@
   audience: IPO (Eva), late coordinators
   notes: "Intake week per the IPO overview: register everything in the overviews immediately, thank + chase, latecomers roll to the next round. P2 has its own dated event | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Mon-Wed block"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: accreditation-dub30-p2
   title: Eva at DUB30 for archive intake (P2 round)
   office: esd
@@ -1310,6 +1429,8 @@
   audience: IPO (Eva), late coordinators
   notes: "Week after the 29 Jan hand-in deadline (matches Eva's 2026 practice: DUB30 2-4 Feb) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Mon-Wed block"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: accreditation-ask-resits
   title: Ask coordinators for accreditation material (P5 resit round)
@@ -1319,6 +1440,8 @@
   audience: IPO (Eva), resit coordinators
   notes: "Mon 12 Jul, confirmed by the GRADING DEADLINES 2026-2027 overview"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 
 - id: accreditation-deadline-resits
   title: Accreditation material hand-in deadline (P5 resit round)
@@ -1329,6 +1452,8 @@
   submit: yes
   notes: "Fri 23 Jul, confirmed by the grading overview (also the resit + P6 inspection deadline)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 
 - id: accreditation-dub30-resits
   title: Eva at DUB30 for archive intake (P5 resit round)
@@ -1339,6 +1464,8 @@
   audience: IPO (Eva)
   notes: "2026 instance shifted to 3-5 Aug because of painters; normally the week after the resit deadline | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): Mon-Wed block"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: archive-drive-winter
   title: Archive drive + accreditation overviews set up for Spring
@@ -1348,6 +1475,8 @@
   audience: IPO (Eva), Ton Derikx, coordinators
   notes: "Winter round per the IPO overview: per-module archive drive by Ton Derikx, access for all Spring coordinators, empty overviews created | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 14-24 Dec"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: archive-drive-summer
   title: Archive drive + accreditation overviews set up for Fall AY27-28
@@ -1357,6 +1486,8 @@
   audience: IPO (Eva), Ton Derikx, coordinators
   notes: "Summer round per the IPO overview; overview creation at DUB30 in the first week of August | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: grading-overview-print
   title: Grading Deadlines Overview updated for new AY + printed (B0.005)
@@ -1366,6 +1497,8 @@
   audience: IPO (Eva), exams office
   notes: "July per the IPO overview: whole-year overview (source: exam coordinator) refreshed for archiving/accreditation and posted on the whiteboard | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 # ---------- BSA letter cycle (Eva executes; letters from Gerco/BoE) ----------
 
@@ -1377,6 +1510,8 @@
   audience: BoE (Katja), Gerco, IPO (Eva)
   notes: "Early Jan (second week of P3) per the IPO overview; announcement links to the infosheet on the intranet | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11-14 Jan"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-halfway-prep
   title: BSA halfway letter - student lists + datafile prep
@@ -1386,6 +1521,8 @@
   audience: IPO (Eva), BoE, Pavel
   notes: "Three weeks ahead per the IPO overview: SAP Student Reporting Tool lists (deregistered before 1 Oct = no letter), Stick advisor match, datafile, mail-address check, link/EER-article check | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11-29 Jan"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-halfway-gerco
   title: BSA halfway letter - final version from Gerco
@@ -1395,6 +1532,8 @@
   audience: Gerco, IPO (Eva)
   notes: "Two weeks ahead per the IPO overview | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11-29 Jan"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-halfway-send
   title: BSA halfway letters sent (mail merge)
@@ -1404,6 +1543,8 @@
   audience: first-year students, IPO (Eva)
   notes: "Second week of P4 per the IPO overview (2026 instance: Mon 2 - Thu 5 Feb). Personalized letters via msp-educationsupport, max 50 per go; transcripts refreshed in SAP first | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 1-12 Feb"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-halfway-archive
   title: BSA halfway letters archived (Corsa D20A + Outlook)
@@ -1413,6 +1554,8 @@
   audience: IPO (Eva), Ton Derikx, Katja
   notes: "One week after sending per the IPO overview: bulk save to J-drive/Corsa studentendossier D20A + Katja's Outlook student folder | CORRECTED to 2027-02-19 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 15-19 Feb"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-halfway-followup
   title: BSA halfway follow-up - exemption list + credit report to Pavel/BoE
@@ -1422,6 +1565,8 @@
   audience: IPO (Eva), BoE (Katja), Pavel
   notes: "Three weeks after sending per the IPO overview: exemption list from BoE + report of credits (22.5 of 45) and 3-of-4 core courses (BIO1101, CHE1191, INT1101, PHY1101) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 22-25 Feb"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-year-prep
   title: BSA year letter - updated student list + datafile prep
@@ -1431,6 +1576,8 @@
   audience: IPO (Eva), BoE, Pavel
   notes: "Three weeks ahead per the IPO overview: one Active Now list, reconcile against the February list (post-1-Feb deregistrations to Pavel/Katja), Stick check, mail-address + EER-link check | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26 Apr - 14 May"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-year-gerco
   title: BSA year letter - final version from Gerco
@@ -1440,6 +1587,8 @@
   audience: Gerco, IPO (Eva)
   notes: "Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26 Apr - 14 May"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-year-send
   title: BSA year letters sent (mail merge)
@@ -1449,6 +1598,8 @@
   audience: first-year students, IPO (Eva)
   notes: "Mid May, before P6 starts, per the IPO overview (2026 instance: Mon 18 - Thu 21 May). Via msp-educationsupport, max 50 per go | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 17-21 May (the week BEFORE P6, settles the BSA-doc conflict) | CORRECTED per the four-review audit, 25 Aug 2026: 17 May 2027 is Whit Monday and UM is closed. Moved to Tue 18 May, still inside Eva window 17-21 May and matching the 2026 instance which ran Mon 18 to Thu 21"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-infosheet-may
   title: BSA Infosheet refreshed + Canvas announcement (year round)
@@ -1458,6 +1609,8 @@
   audience: BoE (Katja), Gerco, IPO (Eva)
   notes: "First week of P6 per the IPO overview (trigger early May) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 24-28 May"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-year-archive
   title: BSA year letters archived (Corsa D20A + Outlook)
@@ -1467,6 +1620,8 @@
   audience: IPO (Eva), Ton Derikx, Katja
   notes: "One week after sending per the IPO overview | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 24-28 May"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-year-followup
   title: BSA year follow-up - exemption list + credit report to Pavel/BoE
@@ -1476,6 +1631,8 @@
   audience: IPO (Eva), BoE (Katja), Pavel
   notes: "Three weeks after sending per the IPO overview | CORRECTED to 2027-06-04 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 31 May - 4 Jun"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: bsa-pbsa-datafile
   title: pBSA letter - datafile + letter arrive from Katja
@@ -1485,6 +1642,8 @@
   audience: BoE (Katja), IPO (Eva)
   notes: "Two weeks ahead per the IPO overview. First: credits to BoE/Pavel once all results incl. resits are in (Marble run, transcripts saved) | CORRECTED to 2027-07-23 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit, 25 Aug 2026: this was dated 23 Jul while the letters went out 12 Jul, so the send preceded the material by 11 days. Both steps share Eva window 12-23 Jul; the arrival is now the start of it"
   status: confirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 
 - id: bsa-pbsa-send
   title: pBSA letters sent + SAP status registered (9005 Positive BSA)
@@ -1494,6 +1653,8 @@
   audience: first-year students, IPO (Eva), BoE
   notes: "Rule per the IPO overview: all results incl. resits in + 15 working days, third week of summer (2026 instance: Mon 13 - Thu 16 Jul). Sent via the msp-boe mailbox; SAP 9005 right after the merge | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 12-23 Jul | CORRECTED per the four-review audit, 25 Aug 2026: moved after the datafile arrives, matching the 2026 instance which ran Mon 13 to Thu 16 Jul"
   status: confirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 
 - id: bsa-pbsa-archive
   title: pBSA letters archived (Corsa D20A + Outlook)
@@ -1503,6 +1664,8 @@
   audience: IPO (Eva), Ton Derikx, Katja
   notes: "One week after sending per the IPO overview | CORRECTED to 2027-07-30 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 26-30 Jul"
   status: confirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 
 # ---------- Course catalogue: Fall AY27-28 cycle (spring 2027) ----------
 # Existing events catalogue-coordinator-updates (26 Feb), catalogue-publication (1 Apr)
@@ -1516,6 +1679,8 @@
   audience: IPO (Eva), Gerco
   notes: "Early Jan per the IPO overview: copy catalogue/workbook/coordinator overviews/examiner list to the new AY; first Gerco meeting preps the coordinator letters | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 4-8 Jan"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: catalogue-kickoff-spring
   title: Catalogue Spring 26/27 update - kick-off
   office: esd
@@ -1524,6 +1689,8 @@
   audience: IPO (Eva), Gerco
   notes: "Kick-off of the Spring 26-27 catalogue update round. Window 7-18 Sep per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: catalogue-overviews-spring
   title: All catalogue overviews updated (Spring 26/27)
   office: esd
@@ -1532,6 +1699,8 @@
   audience: IPO (Eva)
   notes: "Workbook, internal + external course-coordinator lists, Intranet and Canvas access. Window 26-30 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: catalogue-overviews-fall
   title: All catalogue overviews updated (Fall 27/28)
   office: esd
@@ -1540,6 +1709,8 @@
   audience: IPO (Eva)
   notes: "Workbook, internal + external course-coordinator lists, Intranet and Canvas access. Window 27-30 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: examiner-bko-ask-spring
   title: Ask faculty BKO/UTQ contacts for registration updates (Spring)
@@ -1549,6 +1720,8 @@
   audience: IPO (Eva), faculty BKO/UTQ contact persons
   notes: "Early Jan per the IPO overview; Gerco check mid Jan | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 4-15 Jan"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: catalogue-letters-out
   title: Catalogue update letters to all course coordinators
@@ -1558,6 +1731,8 @@
   audience: course coordinators, education coordinators, IPO (Eva)
   notes: "Mid Jan per the IPO overview; response window ~6 weeks to end Feb. Separate letters for dropped modules and new modules (new coordinators get until mid/end March) | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 11 Jan - 26 Feb"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: examiner-to-katja-spring
   title: Examiner list to Katja (BoE) for Spring appointment letters
@@ -1565,17 +1740,10 @@
   when: "2027-01-22"
   staff: support
   audience: IPO (Eva), BoE secretary
-  notes: "End Jan per the IPO overview, after Gerco's mid-Jan check | CORRECTED to 2027-01-22 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 18-22 Jan"
+  notes: "End Jan per the IPO overview, after Gerco's mid-Jan check | CORRECTED to 2027-01-22 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 18-22 Jan | Katja 26 Sep 2026: confirmed, and would prefer examiners appointed for the whole academic year at the start of the year instead of per semester"
   status: confirmed
-
-- id: catalogue-gerco-2
-  title: Catalogue cycle - second meeting with Gerco (post-deadline)
-  office: esd
-  when: "2027-03-01"
-  staff: support
-  audience: IPO (Eva), Gerco
-  notes: "Early March, right after the coordinator deadline, per the IPO overview: new/skipped modules, coordinator changes; workbook copy to Gerco as base for frame schedules"
-  status: unconfirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 
 - id: catalogue-sap-modules
   title: New modules created in SAP + Mendix visibility check
@@ -1585,15 +1753,8 @@
   audience: IPO (Eva)
   notes: "Mid March per the IPO overview; catalogue filled with descriptions + overviews per level/semester | Confirmed by Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 8-19 Mar"
   status: confirmed
-
-- id: catalogue-gerco-final
-  title: Catalogue cycle - final meeting with Gerco (frame schedule check)
-  office: esd
-  when: "2027-03-23"
-  staff: support
-  audience: IPO (Eva), Gerco
-  notes: "2026 instance: Tue 24 Mar. Concept frame schedule vs workbook must end up identical (titles, coordinators, periods, pre/co, levels); feeds the firm 1 Apr publication"
-  status: unconfirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 - id: forms-erik-spring
   title: Intranet forms sweep with Erik Verheij (Spring round)
@@ -1601,26 +1762,31 @@
   when: "2027-04-12"
   staff: support
   audience: IPO (Eva), Erik Verheij
-  notes: "Mid April per the IPO overview, deadline 1 May: all forms in one go incl. switch/withdraw deadlines for the new AY, additional-module forms (P1+P2 titles), intranet access for new colleagues"
-  status: unconfirmed
+  notes: "Mid April per the IPO overview, deadline 1 May. The Spring sweep acts on the Fall round: all forms in one go incl. switch/withdraw deadlines for the new AY, additional-module forms (P1+P2 titles), intranet access for new colleagues (Eva, 26 Sep 2026)"
+  status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-09-26
 
 - id: canvas-scheduling-uploads-spring
   title: Scheduling docs refreshed on Canvas (Fall registration set)
   office: scheduling
-  when: "2027-04-12"
+  when: "2027-04-23"
   staff: support
   audience: Scheduling (Severine), IPO (Eva)
-  notes: "Mid-April per the IPO overview: course registration form, frame schedules, switch-withdraw deadlines, planning tool, academic calendar"
-  status: unconfirmed
+  notes: "Severine (26 Sep 2026) gave 'Friday April 24'; 24 Apr 2027 is a Saturday, so Fri 23 Apr taken. Academic Advising starts 29 Apr. Course registration form, frame schedules, planning tool"
+  status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 
 - id: advising-period-fall-start
   title: Academic Advising period starts (Fall AY27-28 registration)
-  office: scheduling
+  office: general
   when: "2027-04-29"
   staff: both
-  audience: students, academic advisors, coordinators
-  notes: "2026 instance: Thu 30 Apr; exact 2027 date TBC. Runs into course registration week 17-21 May"
+  audience: Office of Academic Advising (owner), students, academic advisors, coordinators
+  notes: "2026 instance: Thu 30 Apr; exact 2027 date TBC. Runs into course registration week 17-21 May | Severine 26 Sep 2026: owned by the Office of Academic Advising, not Scheduling"
   status: unconfirmed
+  owner: Office of Academic Advising
 
 - id: catalogue-intranet-publish
   title: Final catalogue on intranet + additional-assignment forms updated
@@ -1630,6 +1796,8 @@
   audience: IPO (Eva), Erik Verheij
   notes: "End July, after P6, per the IPO overview - only then does the update not affect the running year (one publishable version on the intranet page) | CORRECTED to 2027-04-02 per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026): window 29 Mar - 2 Apr"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 # ==================================================================================
 # Calendar-mining layer - harvested 3 Aug 2026 from Martijn's own Outlook calendar +
@@ -1656,80 +1824,26 @@
   audience: exams office
   notes: "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 27 Aug 2026"
   status: confirmed
-- id: dexum-site-sep
-  title: DexUM on site (digital exams network)
-  office: exams
-  when: "2026-09-10"
-  staff: support
-  audience: exams office
-  notes: "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 10 Sep 2026"
-  status: confirmed
-- id: dexum-online-sep
-  title: DexUM online (digital exams network)
-  office: exams
-  when: "2026-09-22"
-  staff: support
-  audience: exams office
-  notes: "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 22 Sep 2026"
-  status: confirmed
 - id: dexum-site-oct
-  title: DexUM on site (digital exams network)
+  title: DexUM checks the TestVision exams on site (P1)
   office: exams
   when: "2026-10-08"
   staff: support
   audience: exams office
-  notes: "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 8 Oct 2026"
+  notes: "10:00-12:00, GL17-0104. Not an MSP deadline but handy to have: DexUM checks the TestVision exams before the P1 exam week (Exams office, 26 Sep 2026)"
   status: confirmed
-- id: dexum-online-oct
-  title: DexUM online (digital exams network)
-  office: exams
-  when: "2026-10-20"
-  staff: support
-  audience: exams office
-  notes: "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 20 Oct 2026"
-  status: confirmed
-- id: dexum-site-nov
-  title: DexUM on site (digital exams network)
-  office: exams
-  when: "2026-11-05"
-  staff: support
-  audience: exams office
-  notes: "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 5 Nov 2026"
-  status: confirmed
-- id: dexum-online-nov
-  title: DexUM online (digital exams network)
-  office: exams
-  when: "2026-11-17"
-  staff: support
-  audience: exams office
-  notes: "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 17 Nov 2026"
-  status: confirmed
-- id: dexum-site-dec
-  title: DexUM on site (digital exams network)
-  office: exams
-  when: "2026-12-10"
-  staff: support
-  audience: exams office
-  notes: "10:00-12:00, GL17-0104. Msp-exams calendar, 'DexUM op locatie', 10 Dec 2026"
-  status: confirmed
-- id: dexum-online-jan
-  title: DexUM online (digital exams network)
-  office: exams
-  when: "2027-01-12"
-  staff: support
-  audience: exams office
-  notes: "11:00-12:00 Teams. Msp-exams calendar, 'DexUM online', 12 Jan 2027. Later spring 2027 dates not yet issued by SSC"
-  status: confirmed
-
+  confirmed_by: Exams office (Mary-Martha Bahn), via Federico Di Palma
+  confirmed_on: 2026-09-26
 
 - id: surveillanten-training
   title: Annual invigilator (surveillanten) training
-  office: exams
+  office: general
   when: "2027-03-24"
   staff: support
-  audience: exams office, hoofdsurveillanten, invigilators
-  notes: "Annual training; 2026 edition was Wed 25 Mar. NB may move to October: LAW proposed the shift at the 23 Jun toetscoordinatorenoverleg, Cathelijn investigating - watch the 14 Aug hei-dag outcome"
+  audience: SSC (owner), exams office, hoofdsurveillanten, invigilators
+  notes: "Annual training; 2026 edition was Wed 25 Mar. NB may move to October: LAW proposed the shift at the 23 Jun toetscoordinatorenoverleg, Cathelijn investigating - watch the 14 Aug hei-dag outcome | Exams office 26 Sep 2026: SSC handles this, not MSP"
   status: unconfirmed
+  owner: SSC
 
 # ---------- Per-period exam-office rhythms (own calendar patterns) ----------
 
@@ -1811,7 +1925,7 @@
   when: "2027-06-22"
   staff: support
   audience: exams office, UM Sports, FSE
-  notes: "Translated from own calendar 'Assessment logistics FSE / UMSPORT', Tue 23 Jun 2026; pairs with the exam year-plan cycle"
+  notes: "Translated from own calendar 'Assessment logistics FSE / UMSPORT', Tue 23 Jun 2026; pairs with the exam year-plan cycle | Exams office 26 Sep 2026: stuck, need clarity from Martijn"
   status: unconfirmed
 
 # ---------- Alumni rhythms (harvested 3 Aug 2026 from the msp-alumni mailbox analysis) ----------
@@ -1843,6 +1957,7 @@
   audience: ESD, Linzi, Heather
   notes: "Second week of August, every year (rule set by Martijn 24 Aug 2026). Delivered during intro week; ESD staff in the office Mon-Wed of that week"
   status: confirmed
+  confirmed_by: Martijn Jeurissen
 - id: enci-fieldwork
   title: ENCI fieldwork period starts (~2 weeks, support crew needed)
   office: general
@@ -1859,6 +1974,8 @@
   audience: BTR administrator, finance
   notes: "Officially 31.12 per Linzi Hall (Teams, 24 Aug 2026), asked directly. Goes to finance / BROS. External and MUMC+ supervisors are credited via their own institution. CORRECTED from an inferred 5 Jul 2027 end-of-year date"
   status: confirmed
+  confirmed_by: Linzi Hall
+  confirmed_on: 2026-08-24
 
 # ---------- Holidays + Calendarium sweep (official Calendarium 2026-2027, verified 4 Aug 2026) ----------
 
@@ -1970,30 +2087,38 @@
   audience: Admissions team (Saskia, Gian), SSC
   notes: "1 Oct: applications open for the next AY; portal task descriptions must be live. Part of the hard SSC chain per the KB"
   status: confirmed
+  confirmed_by: Gianfranco Grillo
+  confirmed_on: 2026-09-26
 - id: admissions-deadline-noneu
   title: Admissions - application deadline non-EU/EEA
   office: esd
   when: "2027-04-01"
   staff: support
   audience: Admissions team, applicants
-  notes: "Fixed annual deadline; reminders end Mar, 5wd repair window then mass rejection in SAP"
+  notes: "Fixed annual deadline; reminders end Mar, 5wd repair window then mass rejection in SAP | 1 April 2027, 23:59 CET (Gianfranco Grillo, 26 Sep 2026)"
   status: confirmed
+  confirmed_by: Gianfranco Grillo
+  confirmed_on: 2026-09-26
 - id: admissions-deadline-eu
   title: Admissions - application deadline EU/EEA
   office: esd
   when: "2027-05-01"
   staff: support
   audience: Admissions team, applicants
-  notes: "Fixed annual deadline; reminders end Apr"
+  notes: "Fixed annual deadline; reminders end Apr | 1 May 2027, 23:59 CET (26 Sep 2026 return)"
   status: confirmed
+  confirmed_by: ESD (Gianfranco Grillo, unsigned row)
+  confirmed_on: 2026-09-26
 - id: admissions-selection-complete
   title: Admissions - selection incl. interviews complete (17:00 CET)
   office: esd
-  when: "2027-05-30"
+  when: "2027-05-28"
   staff: both
   audience: Admissions team, interviewers
-  notes: "Applicant-facing cut-off per the programme webpage"
+  notes: "Fri 28 May 2027, 17:00 CET, per Gianfranco Grillo (26 Sep 2026); applicant-facing cut-off on the programme webpage"
   status: confirmed
+  confirmed_by: Gianfranco Grillo
+  confirmed_on: 2026-09-26
 - id: admissions-portal-content
   title: Admissions - portal task-description content deadline
   office: esd
@@ -2002,6 +2127,8 @@
   audience: Admissions team, SSC
   notes: "Also the date UM files visas with IND. Hard SSC chain per the KB"
   status: confirmed
+  confirmed_by: Gianfranco Grillo
+  confirmed_on: 2026-09-26
 - id: admissions-ssc-handover
   title: Admissions - everything to SSC (webpage + task descriptions, hard deadline)
   office: esd
@@ -2010,17 +2137,21 @@
   audience: Admissions team, SSC
   notes: "Hard external deadline owned by SSC; one of the KB's five must-not-miss dates"
   status: confirmed
+  confirmed_by: Gianfranco Grillo
+  confirmed_on: 2026-09-26
 
 # ---------- Scheduling data-collection rules (procedure-doc rules, dates pending Severine) ----------
 
 - id: sched-planning-forms-spring
   title: Course/skills planning forms out to coordinators (P4/P5) + student numbers
   office: scheduling
-  when: "2026-11-19"
+  when: "2026-11-20"
   staff: academic
   audience: course coordinators, Scheduling (Severine)
-  notes: "One combined mail, 2025 instance Thu 20 Nov 10:56, carrying the registration-numbers overview plus the P4 and P5 Qualtrics forms with staggered deadlines. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "One combined mail, 2025 instance Thu 20 Nov 10:56, carrying the registration-numbers overview plus the P4 and P5 Qualtrics forms with staggered deadlines. | Fri 20 Nov 2026 per Severine (26 Sep 2026)"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-planning-forms-p4-due
   title: Course/skill planning forms P4 return deadline
   office: scheduling
@@ -2028,8 +2159,10 @@
   staff: academic
   audience: course coordinators
   submit: yes
-  notes: "2025 instance stated verbatim in the spring mail: Deadline for P4, December 15, 2025, 5 pm, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2025 instance stated verbatim in the spring mail: Deadline for P4, December 15, 2025, 5 pm, which was a Monday. CORRECTED from an inferred Fri 11 Dec: we pulled it forward believing the Christmas break starts 14 Dec, but the Calendarium marks that week as no education and the closure is 21 Dec to 1 Jan, so the reasoning never applied. Clean projection is Mon 14 Dec 2026 17:00."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-planning-forms-p5-due
   title: Course/skill planning forms P5 return deadline
   office: scheduling
@@ -2037,16 +2170,20 @@
   staff: academic
   audience: course coordinators
   submit: yes
-  notes: "2026 instance stated verbatim in the spring mail: Deadline for P5, February 13, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fri 12 Feb. Non-fillers chased in the week before P5. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance stated verbatim in the spring mail: Deadline for P5, February 13, 2026. 13 Feb 2027 is a Saturday so the equivalent is Fri 12 Feb. Non-fillers chased in the week before P5."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-planning-forms-fall
   title: Course/skill planning forms out to coordinators (AY27-28 P1/P2)
   office: scheduling
-  when: "2027-05-26"
+  when: "2027-05-28"
   staff: academic
   audience: course coordinators, Scheduling (Severine)
-  notes: "2026 instance Wed 27 May 12:22, reminder 26 Jun. Sent the week after the fall registration week. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance Wed 27 May 12:22, reminder 26 Jun. Sent the week after the fall registration week. | Fri 28 May 2027 per Severine (26 Sep 2026)"
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-planning-forms-fall-due
   title: Course/skill planning forms P1 AY27-28 return deadline
   office: scheduling
@@ -2054,15 +2191,17 @@
   staff: academic
   audience: course coordinators
   submit: yes
-  notes: "2026 instance stated verbatim: before July 3rd, 5 pm. 3 Jul 2027 is a Saturday so the equivalent is Fri 2 Jul 17:00, via Qualtrics. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance stated verbatim: before July 3rd, 5 pm. 3 Jul 2027 is a Saturday so the equivalent is Fri 2 Jul 17:00, via Qualtrics."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-planning-forms-p2-reminder
   title: P2 course/skill planning form reminder goes out
   office: scheduling
   when: "2026-08-20"
   staff: support
   audience: Scheduling (Severine), course coordinators
-  notes: "2025 instance Thu 20 Aug 11:25, recoverable verbatim from the Hermeling reply of 1 Sep 2025: fill out either the course or the skills planning forms of p2 before September 19th. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2025 instance Thu 20 Aug 11:25, recoverable verbatim from the Hermeling reply of 1 Sep 2025: fill out either the course or the skills planning forms of p2 before September 19th."
   status: confirmed
 - id: sched-planning-forms-p2-due
   title: Course/skill planning forms P2 return deadline
@@ -2071,8 +2210,10 @@
   staff: academic
   audience: course coordinators
   submit: yes
-  notes: "2025 deadline stated as before September 19th in the 20 Aug reminder; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2025 deadline stated as before September 19th in the 20 Aug reminder; 19 Sep 2026 is a Saturday so the equivalent is Fri 18 Sep. No form = your timetable is not published."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-draft-p1
   title: P1 schedules in draft in MyTimetable (coordinators check now)
   office: scheduling
@@ -2087,89 +2228,104 @@
   when: "2026-09-22"
   staff: academic
   audience: course coordinators, tutors
-  notes: "2025 instance Tue 23 Sep 10:11. External coordinators who have not yet named tutors get chased in the same mail. Add the course manually in MyTimetable to see unstaffed activities. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2025 instance Tue 23 Sep 10:11. External coordinators who have not yet named tutors get chased in the same mail. Add the course manually in MyTimetable to see unstaffed activities."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: sched-draft-p4
   title: P4 schedules in draft in MyTimetable (coordinators check now)
   office: scheduling
   when: "2027-01-04"
   staff: academic
   audience: course coordinators, tutors
-  notes: "2026 instance Mon 5 Jan 10:54, with comments due Fri 9 Jan 17:00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 17:00; official publication is Thu 14 Jan per the Calendarium. MSP starts a week before the rest of UM. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance Mon 5 Jan 10:54, with comments due Fri 9 Jan 17:00 and publication Thu 16 Jan. For 2027 that puts comments due Fri 8 Jan 17:00; official publication is Thu 14 Jan per the Calendarium. MSP starts a week before the rest of UM."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: frame-schedules-draft-ay2728
   title: Draft frame schedules AY27-28 circulated by the Dean
-  office: scheduling
+  office: general
   when: "2027-03-12"
   staff: both
   audience: Gerco, Scheduling, Exams, BoE, Information Hub
-  notes: "2026 instance Fri 13 Mar 09:02 from Gerco, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance Fri 13 Mar 09:02 from Gerco, feedback due noon Mon 23 Mar. A corrected version followed on 15 Apr fixing period dates and Pentecost. | Severine 26 Sep 2026: the Dean's dates, not Scheduling's"
   status: confirmed
+  owner: Management (Gerco Onderwater)
 - id: frame-schedules-final-ay2728
   title: Final frame schedules AY27-28 (P1-P5) from the Dean
-  office: scheduling
+  office: general
   when: "2027-04-12"
   staff: both
   audience: all offices, UCM/UCV/DACS schedulers, Academic Advising
-  notes: "2026 instance Mon 13 Apr 16:26 from Gerco; Severine relayed to UCM, DACS, UCV and Jesse Laumen on Tue 14 Apr 09:58. NB SSC is not on that relay list. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance Mon 13 Apr 16:26 from Gerco; Severine relayed to UCM, DACS, UCV and Jesse Laumen on Tue 14 Apr 09:58. | Severine 26 Sep 2026: the Dean's dates, not Scheduling's"
   status: confirmed
+  owner: Management (Gerco Onderwater)
 - id: course-reg-form-opens-spring
   title: Course registration form Spring goes live (08:30)
   office: scheduling
   when: "2026-10-30"
   staff: support
   audience: Scheduling (Severine), IRO, students
-  notes: "2025 instance stated to IRO on 28 Oct: it only starts this Friday at 8:30 am, meaning Fri 31 Oct. Link pre-shared with IRO 3 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2025 instance stated to IRO on 28 Oct: it only starts this Friday at 8:30 am, meaning Fri 31 Oct. Link pre-shared with IRO 3 days ahead."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: course-reg-form-opens-fall
   title: Course registration form Fall goes live (07:00)
   office: scheduling
   when: "2027-04-29"
   staff: support
   audience: Scheduling (Severine), IRO, students
-  notes: "2026 instance stated to IRO on 17 Apr: the form will only be active from April 30th, 7 am our time. Link pre-shared with IRO 13 days ahead. Confirmed from fse-scheduling sent items (analysis 24 Aug 2026)"
+  notes: "2026 instance stated to IRO on 17 Apr: the form will only be active from April 30th, 7 am our time. Link pre-shared with IRO 13 days ahead."
   status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-15
 - id: switch-p3
   title: Course switch / late enrolment deadline (P3)
-  office: scheduling
+  office: general
   when: "2026-11-27"
   staff: support
-  audience: students, Academic Advising, ESD
-  notes: "Fri 27 Nov 2026, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026"
+  audience: students, Academic Advising, ESD, Linzi Hall (adoption)
+  notes: "Fri 27 Nov 2026, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Management/Linzi, not Scheduling"
   status: unconfirmed
+  owner: Management (Linzi Hall)
 - id: switch-p6
   title: Course switch / late enrolment deadline (P6)
-  office: scheduling
+  office: general
   when: "2027-04-30"
   staff: support
-  audience: students, Academic Advising, ESD
-  notes: "Fri 30 Apr 2027, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026"
+  audience: students, Academic Advising, ESD, Linzi Hall (adoption)
+  notes: "Fri 30 Apr 2027, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Management/Linzi, not Scheduling"
   status: unconfirmed
+  owner: Management (Linzi Hall)
 - id: withdraw-p3
   title: Course withdraw deadline (P3)
-  office: scheduling
+  office: esd
   when: "2027-01-08"
   staff: support
-  audience: students, Academic Advising, ESD
-  notes: "Fri 8 Jan 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026"
+  audience: Project Committee (Heather Obmann), students, Academic Advising
+  notes: "Fri 8 Jan 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Project Committee/Heather, not Scheduling"
   status: unconfirmed
+  owner: Project Committee (Heather Obmann)
 - id: withdraw-p6
   title: Course withdraw deadline (P6)
-  office: scheduling
+  office: esd
   when: "2027-05-28"
   staff: support
-  audience: students, Academic Advising, ESD
-  notes: "Fri 28 May 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026"
+  audience: Project Committee (Heather Obmann), students, Academic Advising
+  notes: "Fri 28 May 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Project Committee/Heather, not Scheduling"
   status: unconfirmed
+  owner: Project Committee (Heather Obmann)
 - id: tutor-lists-final
   title: Tutor contract cut-off for a 1st-of-month start
-  office: scheduling
+  office: general
   when: "{P}.start -6w"
   repeat: P1, P2, P4, P5
   staff: both
-  audience: coordinators, Operations, FSE HR
-  notes: "CONTRACT floor, not a scheduling floor. FSE tutor contracts via SuccessFactors need 6-8 weeks and a contract always starts on the 1st of a month. Allocation itself demonstrably runs much later: for a P1 starting 31 Aug 2026 Severine was still filling courses on 6, 13, 18 and 20 Aug, so 11 days out, after a tutor cancelled on 13 Aug. The P2 draft mail likewise chases coordinators who have still not named tutors. Real scheduling cut-off is roughly 2 weeks before the period starts. Which of the two binds is the open question for Severine and Linzi"
+  audience: Secretariat (Romy), Linzi Hall, coordinators, FSE HR
+  notes: "CONTRACT floor, not a scheduling floor. FSE tutor contracts via SuccessFactors need 6-8 weeks and a contract always starts on the 1st of a month. Allocation itself demonstrably runs much later: for a P1 starting 31 Aug 2026 Severine was still filling courses on 6, 13, 18 and 20 Aug, so 11 days out, after a tutor cancelled on 13 Aug. The P2 draft mail likewise chases coordinators who have still not named tutors. Real scheduling cut-off is roughly 2 weeks before the period starts. Which of the two binds is the open question for Severine and Linzi | Severine 26 Sep 2026: not Scheduling's; check with Romy and Linzi. She staffs courses as soon as tutors are found, without a deadline, because finding them is hard enough"
   status: unconfirmed
+  owner: Management (Linzi Hall) and Secretariat (Romy)
 - id: iwio-import-p1
   title: IWIO: SAP data imported + errors cleared (P1)
   office: esd
@@ -2178,6 +2334,8 @@
   audience: IPO (Eva)
   notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 21-25 Sep per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-import-p2
   title: IWIO: SAP data imported + errors cleared (P2)
   office: esd
@@ -2186,6 +2344,8 @@
   audience: IPO (Eva)
   notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 16-20 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-import-p4
   title: IWIO: SAP data imported + errors cleared (P4)
   office: esd
@@ -2194,6 +2354,8 @@
   audience: IPO (Eva)
   notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 22-26 Feb per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-import-p5
   title: IWIO: SAP data imported + errors cleared (P5)
   office: esd
@@ -2202,6 +2364,8 @@
   audience: IPO (Eva)
   notes: "Step 1 of the IWIO round: import the SAP data and strip the errors before the questionnaire is built. Window 19-23 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-setup-p1
   title: IWIO: questionnaire link + open/close dates installed (P1)
   office: esd
@@ -2210,6 +2374,8 @@
   audience: IPO (Eva)
   notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 28 Sep - 2 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-setup-p2
   title: IWIO: questionnaire link + open/close dates installed (P2)
   office: esd
@@ -2218,6 +2384,8 @@
   audience: IPO (Eva)
   notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 23-27 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-setup-p4
   title: IWIO: questionnaire link + open/close dates installed (P4)
   office: esd
@@ -2226,6 +2394,8 @@
   audience: IPO (Eva)
   notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 1-5 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-setup-p5
   title: IWIO: questionnaire link + open/close dates installed (P5)
   office: esd
@@ -2234,6 +2404,8 @@
   audience: IPO (Eva)
   notes: "Step 2: link the questionnaires and set the IWIO begin and end dates. Window 26-30 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-send-p1
   title: IWIO opens: invitations sent (3 reminders follow) (P1)
   office: esd
@@ -2242,6 +2414,8 @@
   audience: students, coordinators, IPO (Eva)
   notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 5-9 Oct per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-send-p2
   title: IWIO opens: invitations sent (3 reminders follow) (P2)
   office: esd
@@ -2250,6 +2424,8 @@
   audience: students, coordinators, IPO (Eva)
   notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 30 Nov - 4 Dec per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-send-p4
   title: IWIO opens: invitations sent (3 reminders follow) (P4)
   office: esd
@@ -2258,6 +2434,8 @@
   audience: students, coordinators, IPO (Eva)
   notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 8-12 Mar per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-send-p5
   title: IWIO opens: invitations sent (3 reminders follow) (P5)
   office: esd
@@ -2266,6 +2444,8 @@
   audience: students, coordinators, IPO (Eva)
   notes: "Step 3: invitation mail to students, then three reminders. Date is the START of the window because this is when students first see it. Window 3-7 May per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-close-p1
   title: IWIO closed + coordinators and EPC informed (P1)
   office: esd
@@ -2274,6 +2454,8 @@
   audience: coordinators, EPC, IPO (Eva)
   notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 9-13 Nov per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-close-p2
   title: IWIO closed + coordinators and EPC informed (P2)
   office: esd
@@ -2282,6 +2464,8 @@
   audience: coordinators, EPC, IPO (Eva)
   notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 18-22 Jan per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-close-p4
   title: IWIO closed + coordinators and EPC informed (P4)
   office: esd
@@ -2290,6 +2474,8 @@
   audience: coordinators, EPC, IPO (Eva)
   notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 12-16 Apr per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 - id: iwio-close-p5
   title: IWIO closed + coordinators and EPC informed (P5)
   office: esd
@@ -2298,6 +2484,8 @@
   audience: coordinators, EPC, IPO (Eva)
   notes: "Step 4: close the round and inform the course coordinators and the EPC of the results. Window 7-11 Jun per Eva's Jaaroverzicht IPO 2026-2027 (24 Aug 2026)"
   status: confirmed
+  confirmed_by: Eva Nelissen-Quaedvlieg
+  confirmed_on: 2026-08-24
 
 # ---------- Operations layer (Linzi's plan + annual rounds) ----------
 
@@ -2321,34 +2509,40 @@
 # ---------- EER / governance milestones (FSE Procedure EER doc) ----------
 
 - id: eer-annual-report
-  title: BoE + EPC annual report incl. EER change proposals due
+  title: BoE annual report incl. EER change proposals due (start of October)
   office: boe
-  when: "2026-10-15"
+  when: "2026-10-01"
   staff: support
   audience: BoE, EPC, programme management
-  notes: "15 Oct per FSE Procedure EER.docx"
+  notes: "Start of October per Katja Zambib-Otten (26 Sep 2026); FSE Procedure EER.docx says 15 Oct. Katja was not certain of the exact day"
   status: confirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 - id: eer-education-plan
   title: Annual education plan to the Vice-dean
-  office: boe
+  office: general
   when: "2026-11-01"
   staff: support
-  audience: programme management, Vice-dean Education
-  notes: "1 Nov per FSE Procedure EER.docx"
+  audience: programme management, EPC, Vice-dean Education
+  notes: "1 Nov per FSE Procedure EER.docx | Katja 26 Sep 2026: not BoE's. The education plan concerns the EPC (education), the BoE looks at assessment. Confirmation owed by Management"
   status: confirmed
+  owner: Management / EPC
 - id: eer-revision-to-boe
   title: Revised EER to BoE + EPC for advice
   office: boe
   when: "2027-02-15"
   staff: support
-  audience: BoE, EPC
-  notes: "15 Feb per FSE Procedure EER.docx"
+  audience: Management, BoE, EPC
+  notes: "15 Feb per FSE Procedure EER.docx | Katja 26 Sep 2026: confirmed; Management owns the EER and can confirm the date, BoE is only consulted (BoE owns the R&R that follow from it)"
   status: confirmed
+  confirmed_by: Katja Zambib-Otten
+  confirmed_on: 2026-09-26
 - id: eer-to-faculty-board
   title: EER to the Faculty Board
-  office: boe
+  office: general
   when: "2027-03-31"
   staff: support
-  audience: programme management, Faculty Board
-  notes: "31 Mar per FSE Procedure EER.docx; adoption before 1 May, publication in June"
+  audience: programme management, Faculty Board, EPC (consent), BoE (input)
+  notes: "31 Mar per FSE Procedure EER.docx; adoption before 1 May, publication in June | Katja 26 Sep 2026: the EER is a Management document. BoE and EPC give input; Management may set BoE's aside but needs EPC's consent. Confirmation owed by Management"
   status: confirmed
+  owner: Management (Linzi Hall, Gerco Onderwater)

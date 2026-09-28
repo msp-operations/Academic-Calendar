@@ -15,6 +15,8 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DATA = join(ROOT, 'data');
@@ -160,6 +162,9 @@ for (const ev of eventsData.items) {
       link: ev.link || '',
       submit: ev.submit === 'yes' || ev.submit === 'true',
       status: (ev.status === 'unconfirmed' || periodStatus === 'unconfirmed') ? 'unconfirmed' : 'confirmed',
+      confirmedBy: ev.confirmed_by || '',
+      confirmedOn: ev.confirmed_on || '',
+      owner: ev.owner || '',
     });
   }
 }
@@ -184,30 +189,104 @@ writeFileSync(join(SITE, 'events.json'), JSON.stringify(payload, null, 2));
 writeFileSync(join(SITE, 'events.js'), 'window.MSP_EVENTS = ' + JSON.stringify(payload) + ';\n');
 
 // ---------- write feeds/*.ics (confirmed events only) ----------
+// Feed hygiene (28 Sep 2026): RFC 5545 line folding, DTSTAMP = build time, SEQUENCE and
+// LAST-MODIFIED carried forward from the last committed master feed and bumped only for events
+// whose date, title or description changed (so subscribers' clients pick up corrections),
+// refresh hints, a calendar description with the contact line, a URL back to the event on the
+// site, and TRANSP:TRANSPARENT so imported copies do not block anyone's free/busy.
 mkdirSync(FEEDS, { recursive: true });
+const SITE_URL = 'https://msp-operations.github.io/Academic-Calendar/';
+const CONTACT = 'msp-exams@maastrichtuniversity.nl';
 const icsEscape = (s) => String(s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+const nowStamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+const hashOf = (...parts) => createHash('sha1').update(parts.join('\u0001')).digest('hex').slice(0, 12);
+
+// RFC 5545 §3.1: content lines are folded at 75 octets; never split inside a UTF-8 sequence.
+function fold(line) {
+  const out = [];
+  let buf = Buffer.from(line, 'utf8');
+  let first = true;
+  while (buf.length > (first ? 75 : 74)) {
+    let cut = first ? 75 : 74;
+    while (cut > 0 && (buf[cut] & 0xC0) === 0x80) cut--;
+    out.push((first ? '' : ' ') + buf.subarray(0, cut).toString('utf8'));
+    buf = buf.subarray(cut);
+    first = false;
+  }
+  out.push((first ? '' : ' ') + buf.toString('utf8'));
+  return out;
+}
+
+// The last committed master feed is the memory for SEQUENCE / LAST-MODIFIED (git is the state).
+function loadPrevious() {
+  let txt = '';
+  try {
+    txt = execSync('git show HEAD:feeds/msp-all.ics', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+  } catch { return {}; }
+  const unfolded = txt.replace(/\r?\n[ \t]/g, '');
+  const prev = {};
+  for (const block of unfolded.split('BEGIN:VEVENT').slice(1)) {
+    const get = (k) => { const m = block.match(new RegExp('^' + k + '(?:;[^:\\r\\n]*)?:(.*)$', 'm')); return m ? m[1].trim() : ''; };
+    const uid = get('UID');
+    if (!uid) continue;
+    prev[uid] = {
+      seq: parseInt(get('SEQUENCE') || '0', 10) || 0,
+      lastMod: get('LAST-MODIFIED'),
+      hash: hashOf(get('DTSTART'), get('DTEND'), get('SUMMARY'), get('DESCRIPTION')),
+    };
+  }
+  return prev;
+}
+const previous = loadPrevious();
+const feedChanges = { same: 0, bumped: 0, added: 0, bumpedIds: [] };
+const eventProps = new Map();
+function propsFor(uid, d, dEnd, summary, description) {
+  if (eventProps.has(uid)) return eventProps.get(uid);
+  const h = hashOf(d, dEnd, summary, description);
+  const p = previous[uid];
+  let r;
+  if (!p) { r = { seq: 0, lastMod: nowStamp }; feedChanges.added++; }
+  else if (p.hash === h) { r = { seq: p.seq, lastMod: p.lastMod || nowStamp }; feedChanges.same++; }
+  else { r = { seq: p.seq + 1, lastMod: nowStamp }; feedChanges.bumped++; feedChanges.bumpedIds.push(uid.split('-2026')[0]); }
+  eventProps.set(uid, r);
+  return r;
+}
+
 function writeIcs(name, calName, evs) {
   const lines = [
     'BEGIN:VCALENDAR', 'VERSION:2.0',
     'PRODID:-//MSP Operations//Academic Calendar//EN',
-    `X-WR-CALNAME:${icsEscape(calName)}`, 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+    `X-WR-CALNAME:${icsEscape(calName)}`,
+    `X-WR-CALDESC:${icsEscape(`MSP staff deadlines ${YEAR}. Spotted a wrong date, or know one that is missing? Tell us at ${CONTACT} and we fix it at the source. Web view: ${SITE_URL}`)}`,
+    'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+    'REFRESH-INTERVAL;VALUE=DURATION:PT1H',
+    'X-PUBLISHED-TTL:PT1H',
   ];
   for (const e of evs) {
     const d = e.date.replace(/-/g, '');
     const dEnd = fmtDate(addDays(parseDate(e.end || e.date), 1)).replace(/-/g, '');
+    const uid = `${e.id}-${YEAR.replace(/\W/g, '')}@msp-operations`;
+    const summary = icsEscape(`[MSP ${e.office.toUpperCase()}] ${e.title}`);
+    const description = (e.notes || e.audience)
+      ? icsEscape([e.notes, e.audience && `For: ${e.audience}`].filter(Boolean).join(' | ')) : '';
+    const p = propsFor(uid, d, dEnd, summary, description);
     lines.push(
       'BEGIN:VEVENT',
-      `UID:${e.id}-${YEAR.replace(/\W/g, '')}@msp-operations`,
-      `DTSTAMP:${d}T000000Z`,
+      `UID:${uid}`,
+      `DTSTAMP:${nowStamp}`,
+      `SEQUENCE:${p.seq}`,
+      `LAST-MODIFIED:${p.lastMod}`,
       `DTSTART;VALUE=DATE:${d}`,
       `DTEND;VALUE=DATE:${dEnd}`,
-      `SUMMARY:${icsEscape(`[MSP ${e.office.toUpperCase()}] ${e.title}`)}`,
-      ...(e.notes || e.audience ? [`DESCRIPTION:${icsEscape([e.notes, e.audience && `For: ${e.audience}`].filter(Boolean).join(' | '))}`] : []),
+      `SUMMARY:${summary}`,
+      ...(description ? [`DESCRIPTION:${description}`] : []),
+      `URL:${SITE_URL}?event=${encodeURIComponent(e.id)}`,
+      'TRANSP:TRANSPARENT',
       'END:VEVENT',
     );
   }
   lines.push('END:VCALENDAR');
-  writeFileSync(join(FEEDS, name), lines.join('\r\n') + '\r\n');
+  writeFileSync(join(FEEDS, name), lines.flatMap(fold).join('\r\n') + '\r\n');
 }
 const confirmed = instances.filter(e => e.status === 'confirmed');
 writeIcs('msp-all.ics', `MSP Deadlines ${YEAR} (all offices)`, confirmed);
@@ -219,6 +298,8 @@ for (const office of [...new Set(confirmed.map(e => e.office))]) {
 
 // ---------- report ----------
 console.log(`Year ${YEAR}: ${Object.keys(periods).length} periods, ${instances.length} event instances (${confirmed.length} confirmed -> ics).`);
+console.log(`Feeds vs last commit: ${feedChanges.same} unchanged, ${feedChanges.bumped} changed (SEQUENCE bumped), ${feedChanges.added} new.`);
+if (feedChanges.bumpedIds.length) console.log('  changed: ' + feedChanges.bumpedIds.join(', '));
 if (problems.length) {
   console.log(`\n${problems.length} problem(s):`);
   for (const p of problems) console.log('  ! ' + p);
