@@ -115,14 +115,14 @@
   .btn:hover { border-color: var(--navy); }
 
   /* ---------- Year bar ---------- */
-  .ybar { padding: 28px 32px 0; display: flex; flex-direction: column; gap: 8px; }
+  .ybar { padding: 40px 32px 0; display: flex; flex-direction: column; gap: 8px; }
   .ybrow { position: relative; display: flex; gap: 2px; }
   .ybseg { flex-basis: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
   .ybseg .bar { position: relative; height: 8px; border-radius: 1px; background: var(--c, var(--gap)); overflow: hidden; }
   .ybseg .bar i { position: absolute; top: 0; bottom: 0; background: var(--sky); }
   .ybseg .lab { font-size: 11px; font-weight: 700; color: var(--navy); }
   .ybtoday { position: absolute; top: -6px; height: 20px; width: 3px; background: var(--gold); }
-  .ybtoday b { position: absolute; top: -24px; left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
+  .ybtoday b { position: absolute; top: -27px; left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
   .ybtoday.late b { left: auto; right: 6px; }
   .ybticks { position: relative; height: 14px; margin-top: -2px; }
   .ybticks span { position: absolute; top: 0; font-size: 10px; color: var(--faint); padding-left: 4px; border-left: 1px solid var(--line-in); line-height: 14px; }
@@ -326,7 +326,7 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
-    .pagehead { padding: 16px 16px 14px; } .ybar { padding: 22px 16px 0; } main { padding: 16px 16px 40px; } footer { padding: 18px 16px; }
+    .pagehead { padding: 16px 16px 14px; } .ybar { padding: 34px 16px 0; } main { padding: 16px 16px 40px; } footer { padding: 18px 16px; }
     .search { width: 150px; } .phright .btn.print { display: none; }
     .mspmark { width: 44px; height: 44px; } .mspmark img { height: 61px; margin: -8.5px -32px; }
     .chaingrid { grid-template-columns: 1fr; } .cstep, .cgap { grid-template-columns: 74px 14px minmax(0, 1fr); }
