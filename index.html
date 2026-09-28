@@ -19,7 +19,7 @@
   /* ---------- Tokens (design handoff, 28 Sep 2026) ---------- */
   :root {
     --navy: #001c3d; --navy-2: #2d5a8a; --navy-3: #9aabbf;
-    --sky: #0e71bb; --sky-tint: #e8f3fb; --sky-ring: #e4f3ff; --sky-sel: #c5e7ff; --sky-next: #f2f8fd; --sky-week: #eaf2fa;
+    --sky: #0e71bb; --sky-tint: #e8f3fb; --exam-tint: #d4e7f7; --sky-ring: #e4f3ff; --sky-sel: #c5e7ff; --sky-next: #f2f8fd; --sky-week: #eaf2fa;
     --ink: #1c2333; --body-2: #334964; --body-3: #4a5b70; --muted: #66778b; --faint: #8593a6; --faint-2: #9aa6b5; --faint-3: #b2bbc5;
     --line: #ebedef; --line-2: #e3e7ec; --line-3: #eceff2; --line-4: #eef0f3; --line-in: #d5dbe2;
     --surface: #f5f7f9; --holiday: #eef6f0; --gap: #e9ecf0;
@@ -168,12 +168,12 @@
     box-shadow: inset 0 2px 0 var(--top, transparent), inset 0 0 0 2px var(--ring, transparent); transition: box-shadow .12s ease; }
   .ycell:hover { box-shadow: inset 0 0 0 1px var(--sky); }
   .ycell.out { background: transparent; cursor: default; box-shadow: none; } .ycell.out:hover { box-shadow: none; }
-  .ycell.wknd { background: var(--surface); } .ycell.hol { background: var(--holiday); } .ycell.exam { background: var(--sky-tint); } .ycell.key { background: var(--gold-cell); }
+  .ycell.wknd { background: var(--surface); } .ycell.hol { background: var(--holiday); } .ycell.exam { background: var(--exam-tint); --top: var(--sky); } .ycell.key { background: var(--gold-cell); }
   .ycell .n { flex-shrink: 0; align-self: flex-start; font-size: 12px; font-weight: 700; line-height: 1.1; padding: 1px 3px; margin: -1px -3px 0; border-radius: 2px; color: var(--ink); }
   .ycell.wknd .n { color: var(--faint-2); } .ycell.key .n { color: #fff; background: var(--gold); }
   .ycell.today:not(.key) { background: var(--sky-week); } .ycell.today:not(.key) .n { color: #fff; background: var(--sky); }
   .ycell .dw { flex-shrink: 0; font-size: 9px; line-height: 1.2; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; overflow: hidden; margin: 0 -4px; padding: 0 2px 0 4px; color: var(--faint-2); }
-  .ycell .dw.mon, .ycell .dw.today { color: var(--sky); } .ycell .dw.today { font-weight: 700; } .ycell .dw.key { color: var(--gold-txt); }
+  .ycell .dw.mon, .ycell .dw.today, .ycell .dw.exam { color: var(--sky); } .ycell .dw.today { font-weight: 700; } .ycell .dw.key { color: var(--gold-txt); }
   .ycell .dots { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; max-height: 16px; overflow: hidden; }
   .ycell .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--c); border: 1.5px solid var(--c); }
   .ycell .dots i.unc { background: transparent; }
@@ -244,7 +244,7 @@
   .lane .ll { display: flex; align-items: center; gap: 10px; height: 50px; font-size: 14px; font-weight: 600; }
   .lane .ll i { width: 4px; height: 22px; border-radius: 2px; background: var(--c); } .lane .ll small { font-size: 12px; color: var(--faint); font-weight: 400; }
   .lane .wc { display: flex; align-items: center; justify-content: center; border-left: 1px solid #f1f3f5; background: transparent; border-top: 0; border-right: 0; border-bottom: 0; padding: 0; cursor: default; transition: background .12s ease; }
-  .lane .wc.cur { background: var(--sky-week); } .lane .wc.hol { background: #f2f6f1; } .lane .wc.has { cursor: pointer; } .lane .wc.has:hover { background: #f0f4f8; }
+  .lane .wc.cur { background: var(--sky-week); } .lane .wc.hol { background: #f2f6f1; } .lane .wc.ex { background: var(--exam-tint); } .lane .wc.has { cursor: pointer; } .lane .wc.has:hover { background: #f0f4f8; }
   .lane .wc b { width: var(--sz); height: var(--sz); border-radius: 50%; background: var(--fill); box-shadow: 0 0 0 2px var(--ringc, transparent); color: #fff; font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
   .lanes .end { border-top: 1px solid var(--line-3); }
 
@@ -257,7 +257,7 @@
     box-shadow: inset 0 2px 0 var(--top, transparent); transition: box-shadow .12s ease; }
   .day:hover { box-shadow: inset 0 0 0 1px var(--sky); }
   .day.out { background: var(--surface); cursor: default; box-shadow: none; }
-  .day.wknd { background: var(--surface); } .day.hol { background: var(--holiday); } .day.exam { background: var(--sky-tint); } .day.key { background: var(--gold-cell); }
+  .day.wknd { background: var(--surface); } .day.hol { background: var(--holiday); } .day.exam { background: var(--exam-tint); --top: var(--sky); } .day.key { background: var(--gold-cell); }
   .day.today { box-shadow: inset 0 2px 0 var(--top, transparent), inset 0 0 0 2px var(--sky); }
   .day .num { font-weight: 700; color: var(--ink); display: flex; justify-content: space-between; gap: 6px; }
   .day.wknd .num { color: var(--faint-2); }
@@ -695,10 +695,10 @@ function renderYear(main, evs) {
       const p = perOf(iso), ex = isExam(iso), h = holOf(iso), de = byDate[iso] || [], isT = iso === today;
       const kl = (de.map(KEY).find(Boolean)) || '';
       const c = el('div', 'ycell' + (kl ? ' key' : ex ? ' exam' : h ? ' hol' : we ? ' wknd' : '') + (isT ? ' today' : ''));
-      if (p) c.style.setProperty('--top', PC[p.id]);
+      if (p && !(ex && !kl)) c.style.setProperty('--top', PC[p.id]);
       if (isT) c.style.setProperty('--ring', '#0e71bb'); else if (kl) c.style.setProperty('--ring', '#af6500');
       c.title = fmtDw(iso) + (h ? ' · ' + h.label : '') + (de.length ? ' · ' + de.length + ' deadline' + (de.length > 1 ? 's' : '') : '');
-      c.innerHTML = `<span class="n">${i + 1}</span><span class="dw${kl ? ' key' : isT ? ' today' : wd === 1 ? ' mon' : ''}">${kl || (isT ? 'Today' : wd === 1 ? 'W' + isoWeek(iso) : 'SMTWTFS'[wd])}</span>` +
+      c.innerHTML = `<span class="n">${i + 1}</span><span class="dw${kl ? ' key' : isT ? ' today' : wd === 1 ? ' mon' : ex ? ' exam' : ''}">${kl || (isT ? 'Today' : wd === 1 ? 'W' + isoWeek(iso) + (ex ? ' Ex' : '') : ex && !we ? 'Exam' : 'SMTWTFS'[wd])}</span>` +
         `<div class="dots">${de.slice(0, 6).map(e => `<i class="${e.status === 'unconfirmed' ? 'unc' : ''}" style="--c:${OC[e.office]}"></i>`).join('')}</div>` +
         (de.some(isDue) ? '<span class="due"></span>' : '');
       clickable(c, () => openPanel({ kind: 'day', iso }));
@@ -709,7 +709,7 @@ function renderYear(main, evs) {
   }
   wrap.appendChild(grid); main.appendChild(wrap);
   main.appendChild(el('div', 'legend',
-    `<span class="lg"><i style="width:14px;height:10px;background:var(--sky-tint);border:1px solid #cfe3f3"></i>Exam week</span>` +
+    `<span class="lg"><i style="width:14px;height:10px;background:var(--exam-tint);box-shadow:inset 0 2px 0 var(--sky)"></i>Exam week</span>` +
     `<span class="lg"><i style="width:14px;height:10px;background:var(--holiday);border:1px solid #d7eadc"></i>Holiday or break</span>` +
     `<span class="lg key"><i style="width:14px;height:12px;background:var(--gold-cell);box-shadow:inset 0 0 0 2px var(--gold)"></i>Key deadline: manual, planning form, exam, grades, archive material</span>` +
     `<span class="lg"><i style="width:14px;height:3px;background:var(--gold)"></i>Academic staff hand something in</span>` +
@@ -847,18 +847,19 @@ function renderLanes(main, evs) {
     `<span class="lg"><i style="width:10px;height:10px;border-radius:50%;background:var(--body-2)"></i>Deadlines that week</span>` +
     `<span class="lg" style="color:var(--gold-txt);font-weight:600"><i style="width:10px;height:10px;border-radius:50%;background:var(--gold)"></i>Key deadline that week</span>` +
     `<span class="lg"><i style="width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid var(--gold)"></i>Includes academic staff hand-in</span>` +
+    `<span class="lg"><i style="width:14px;height:10px;background:var(--exam-tint)"></i>Exam week</span>` +
     `<span class="lg"><i style="width:14px;height:10px;background:var(--sky-week)"></i>This week</span></div>`));
   const wrap = el('div', 'lanewrap'), lanes = el('div', 'lanes'); lanes.style.setProperty('--cols', nWeeks);
   const mh = []; for (const w of weeks) { const l = fmt(w.thu, { month: 'short' }); const last = mh[mh.length - 1]; if (last && last.l === l) last.span++; else mh.push({ l, span: 1 }); }
   lanes.appendChild(el('div', 'lrow months', '<div></div>' + mh.map(m => `<div style="grid-column:span ${m.span}">${m.l}</div>`).join('')));
   lanes.appendChild(el('div', 'lrow period', '<div>Period</div>' + weeks.map(w => `<div class="pw" title="${esc(w.tip)}" style="--pc:${w.p ? (w.ex ? '#0e71bb' : PC[w.p.id]) : 'var(--gap)'}">${w.p ? (w.ex ? 'Ex' : (w.p.start >= w.s && w.p.start <= w.e ? w.p.id : '')) : ''}</div>`).join('')));
-  lanes.appendChild(el('div', 'lrow weeks', '<div>Week</div>' + weeks.map(w => `<div class="wn" style="background:${w.cur ? 'var(--sky-week)' : w.h ? '#f2f6f1' : 'transparent'}">${w.wk}</div>`).join('')));
+  lanes.appendChild(el('div', 'lrow weeks', '<div>Week</div>' + weeks.map(w => `<div class="wn" style="background:${w.cur ? 'var(--sky-week)' : w.ex ? 'var(--exam-tint)' : w.h ? '#f2f6f1' : 'transparent'}">${w.wk}</div>`).join('')));
   for (const k of Object.keys(OFFICES).filter(k => state.on.has(k))) {
     const mine = evs.filter(e => e.office === k);
     const row = el('div', 'lrow lane', `<div class="ll"><i style="--c:${OC[k]}"></i>${OFFICES[k]}<small>${mine.length}</small></div>`);
     for (const w of weeks) {
       const list = mine.filter(e => e.date >= w.s && e.date <= w.e), n = list.length;
-      const cell = el('button', 'wc' + (w.cur ? ' cur' : w.h ? ' hol' : '') + (n ? ' has' : ''));
+      const cell = el('button', 'wc' + (w.cur ? ' cur' : w.ex ? ' ex' : w.h ? ' hol' : '') + (n ? ' has' : ''));
       cell.title = n ? n + ' deadline' + (n > 1 ? 's' : '') + ', week ' + w.wk : w.tip;
       cell.style.setProperty('--sz', n ? Math.min(8 + n * 3, 20) + 'px' : '0px');
       cell.style.setProperty('--fill', list.some(KEY) ? '#af6500' : n ? OC[k] : 'transparent');
@@ -892,9 +893,10 @@ function renderGrid(main, evs) {
       const iso = `${ym}-${String(d).padStart(2, '0')}`, dow = (firstDow + d - 1) % 7, de = byDay[iso] || [];
       const p = perOf(iso), h = holOf(iso), kl = de.map(KEY).find(Boolean);
       const cell = el('div', 'day' + (kl ? ' key' : isExam(iso) ? ' exam' : h ? ' hol' : dow >= 5 ? ' wknd' : '') + (iso === today ? ' today' : ''));
-      if (p) cell.style.setProperty('--top', PC[p.id]);
+      const exd = isExam(iso);
+      if (p && !(exd && !kl)) cell.style.setProperty('--top', PC[p.id]);
       if (h) cell.title = h.label;
-      cell.innerHTML = `<div class="num"><span>${d}</span>${iso === today ? '<small>Today</small>' : dow === 0 ? `<small title="ISO week ${isoWeek(iso)}">W${isoWeek(iso)}</small>` : ''}</div>`;
+      cell.innerHTML = `<div class="num"><span>${d}</span>${iso === today ? '<small>Today</small>' : dow === 0 ? `<small title="ISO week ${isoWeek(iso)}">W${isoWeek(iso)}${exd ? ' · Exam' : ''}</small>` : exd && dow < 5 ? '<small>Exam</small>' : ''}</div>`;
       for (const e of de) {
         const b = el('button', 'ev' + (e.status === 'unconfirmed' ? ' unc' : ''), esc(e.title));
         b.style.setProperty('--c', OC[e.office]); b.title = e.title;
