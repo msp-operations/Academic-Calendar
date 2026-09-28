@@ -1,6 +1,6 @@
 ﻿# MSP staff deadline events - single source of truth. AY 2026-27.
 # One event per "- " block, flat key: value lines only (see build.mjs header for the `when` grammar).
-# offices: exams | btr | boe | scheduling | esd | alumni | general
+# offices: exams | btr | boe | scheduling | esd | general
 # staff:  academic | support | both  (who has to ACT on it; omitted = both)
 # status: confirmed | unconfirmed  (unconfirmed renders flagged on the site, excluded from ics)
 # Sources: KB harvest 30 Jul 2026 + official Calendarium 2026-2027 (verified 30 Jul, in Context\).
@@ -1159,14 +1159,6 @@
   owner: Management (Linzi Hall, Gerco Onderwater)
 
 # ---------- Alumni ----------
-
-- id: alumni-intranet-deadline
-  title: Intranet Alumni / After-MSP pages refresh deadline
-  office: alumni
-  when: "2026-08-21"
-  staff: support
-  audience: Martijn (owner of record, IPO register)
-  status: confirmed
 
 # ==================================================================================
 # IPO layer - harvested 3 Aug 2026 from "Project IPO Overview.xlsx Eva.xlsx"

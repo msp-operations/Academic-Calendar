@@ -26,7 +26,7 @@
     --rail-w: 220px; --rail-txt: #b9c6d9; --rail-lab: #8ea4c6; --rail-div: rgba(255,255,255,.12); --rail-hover: rgba(255,255,255,.06);
     --gold: #af6500; --gold-txt: #8a4f00; --gold-bg: #fffaf1; --gold-bd: #ecd9b8; --gold-cell: #fdefd6; --gold-tag: #fbeed6;
     --p1: #001c3d; --p2: #2d5a8a; --p3: #9aabbf; --p4: #001c3d; --p5: #2d5a8a; --p6: #9aabbf;
-    --exams: #0e71bb; --esd: #15817e; --scheduling: #b8741a; --btr: #2e7d5b; --boe: #6a50a7; --alumni: #b03f6e; --general: #66778b;
+    --exams: #0e71bb; --esd: #15817e; --scheduling: #b8741a; --btr: #2e7d5b; --boe: #6a50a7; --general: #66778b;
     --scrim: rgba(0,28,61,.18); --panel-shadow: 0 0 40px rgba(0,28,61,.18);
     --r: 4px; --r-s: 3px;
   }
@@ -379,8 +379,8 @@
    KEY DEADLINES: the three hand-ins that get the gold treatment are matched on
    the event id in KEY() below. Full guide: EDITING-INSTRUCTIONS.md.
    ========================================================================== */
-const OFFICES = { exams: 'Exams', esd: 'ESD', scheduling: 'Scheduling', btr: 'BTR', boe: 'BoE', alumni: 'Alumni', general: 'General' };
-const OC = { exams: '#0e71bb', esd: '#15817e', scheduling: '#b8741a', btr: '#2e7d5b', boe: '#6a50a7', alumni: '#b03f6e', general: '#66778b' };
+const OFFICES = { exams: 'Exams', esd: 'ESD', scheduling: 'Scheduling', btr: 'BTR', boe: 'BoE', general: 'General' };
+const OC = { exams: '#0e71bb', esd: '#15817e', scheduling: '#b8741a', btr: '#2e7d5b', boe: '#6a50a7', general: '#66778b' };
 const PC = { P1: '#001c3d', P2: '#2d5a8a', P3: '#9aabbf', P4: '#001c3d', P5: '#2d5a8a', P6: '#9aabbf' };
 const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
 const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
@@ -395,7 +395,7 @@ const VIEW_DESC = {
 const FEEDS = {
   'msp-all.ics': 'All offices', 'msp-academic-staff.ics': 'Academic staff', 'msp-support-staff.ics': 'Support staff',
   'msp-exams.ics': 'Exams', 'msp-esd.ics': 'ESD', 'msp-scheduling.ics': 'Scheduling', 'msp-btr.ics': 'BTR',
-  'msp-boe.ics': 'BoE', 'msp-alumni.ics': 'Alumni', 'msp-general.ics': 'General',
+  'msp-boe.ics': 'BoE', 'msp-general.ics': 'General',
 };
 const KEY = (e) => e.key ? (e.key.charAt(0).toUpperCase() + e.key.slice(1)) :
   /^exam-submit-/.test(e.id) ? 'Exam' : /^(project-)?grades-due-/.test(e.id) ? 'Grade' : /^sched-planning-forms-.+-due$/.test(e.id) ? 'Plan' : '';

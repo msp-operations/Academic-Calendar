@@ -941,22 +941,6 @@
       "owner": ""
     },
     {
-      "id": "alumni-intranet-deadline",
-      "title": "Intranet Alumni / After-MSP pages refresh deadline",
-      "office": "alumni",
-      "staff": "support",
-      "date": "2026-08-21",
-      "end": "2026-08-21",
-      "audience": "Martijn (owner of record, IPO register)",
-      "notes": "",
-      "link": "",
-      "submit": false,
-      "status": "confirmed",
-      "confirmedBy": "",
-      "confirmedOn": "",
-      "owner": ""
-    },
-    {
       "id": "intranet-canvas-refresh",
       "title": "Intranet + Canvas full new-year refresh deadline (all sections)",
       "office": "general",
