@@ -121,7 +121,9 @@
   .ybseg .bar { position: relative; height: 8px; border-radius: 1px; background: var(--c, var(--gap)); overflow: hidden; }
   .ybseg .bar i { position: absolute; top: 0; bottom: 0; background: var(--sky); }
   .ybseg .lab { font-size: 11px; font-weight: 700; color: var(--navy); }
-  .ybtoday { position: absolute; top: -4px; height: 16px; width: 2px; background: var(--gold); }
+  .ybtoday { position: absolute; top: -6px; height: 20px; width: 3px; background: var(--gold); }
+  .ybtoday b { position: absolute; top: -17px; left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
+  .ybtoday.late b { left: auto; right: 6px; }
   .ybticks { position: relative; height: 14px; margin-top: -2px; }
   .ybticks span { position: absolute; top: 0; font-size: 10px; color: var(--faint); padding-left: 4px; border-left: 1px solid var(--line-in); line-height: 14px; }
   .ybstatus { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; font-size: 12px; color: var(--muted); }
@@ -163,9 +165,10 @@
   .ycell.out { background: transparent; cursor: default; box-shadow: none; } .ycell.out:hover { box-shadow: none; }
   .ycell.wknd { background: var(--surface); } .ycell.hol { background: var(--holiday); } .ycell.exam { background: var(--sky-tint); } .ycell.key { background: var(--gold-cell); }
   .ycell .n { flex-shrink: 0; align-self: flex-start; font-size: 12px; font-weight: 700; line-height: 1.1; padding: 1px 3px; margin: -1px -3px 0; border-radius: 2px; color: var(--ink); }
-  .ycell.wknd .n { color: var(--faint-2); } .ycell.today .n { color: var(--sky); } .ycell.key .n { color: #fff; background: var(--gold); }
+  .ycell.wknd .n { color: var(--faint-2); } .ycell.key .n { color: #fff; background: var(--gold); }
+  .ycell.today:not(.key) { background: var(--sky-week); } .ycell.today:not(.key) .n { color: #fff; background: var(--sky); }
   .ycell .dw { flex-shrink: 0; font-size: 9px; line-height: 1.2; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; overflow: hidden; margin: 0 -4px; padding: 0 2px 0 4px; color: var(--faint-2); }
-  .ycell .dw.mon { color: var(--sky); } .ycell .dw.key { color: var(--gold-txt); }
+  .ycell .dw.mon, .ycell .dw.today { color: var(--sky); } .ycell .dw.today { font-weight: 700; } .ycell .dw.key { color: var(--gold-txt); }
   .ycell .dots { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; max-height: 16px; overflow: hidden; }
   .ycell .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--c); border: 1.5px solid var(--c); }
   .ycell .dots i.unc { background: transparent; }
@@ -252,7 +255,8 @@
   .day.wknd { background: var(--surface); } .day.hol { background: var(--holiday); } .day.exam { background: var(--sky-tint); } .day.key { background: var(--gold-cell); }
   .day.today { box-shadow: inset 0 2px 0 var(--top, transparent), inset 0 0 0 2px var(--sky); }
   .day .num { font-weight: 700; color: var(--ink); display: flex; justify-content: space-between; gap: 6px; }
-  .day.wknd .num { color: var(--faint-2); } .day.today .num { color: var(--sky); }
+  .day.wknd .num { color: var(--faint-2); }
+  .day.today:not(.key) { background: var(--sky-week); } .day.today:not(.key) .num > span { color: #fff; background: var(--sky); padding: 1px 6px; margin: -1px -6px; border-radius: 2px; }
   .day .num small { font-size: 10px; font-weight: 700; color: var(--sky); }
   .day .ev { display: block; margin-top: 4px; padding: 2px 6px; border-radius: var(--r-s); box-shadow: inset 3px 0 0 var(--c); background: var(--surface); color: var(--ink);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; font-size: 12px; border: 0; width: 100%; text-align: left; }
@@ -390,8 +394,9 @@
      4. Add its feed file to FEEDS (build.mjs generates msp-<key>.ics).
      5. Run  node build.mjs  and push.
 
-   KEY DEADLINES: the three hand-ins that get the gold treatment are matched on
-   the event id in KEY() below. Full guide: EDITING-INSTRUCTIONS.md.
+   KEY DEADLINES: the hand-ins that get the gold treatment (the four from the
+   28 Aug coordinator talk plus the planning form) are matched on the event id
+   in KEY() below. Full guide: EDITING-INSTRUCTIONS.md.
    ========================================================================== */
 const OFFICES = { exams: 'Exams', esd: 'ESD', scheduling: 'Scheduling', btr: 'BTR', boe: 'BoE', general: 'General' };
 const OC = { exams: '#0e71bb', esd: '#15817e', scheduling: '#b8741a', btr: '#2e7d5b', boe: '#6a50a7', general: '#66778b' };
@@ -412,8 +417,10 @@ const FEEDS = {
   'msp-boe.ics': 'BoE', 'msp-general.ics': 'General',
 };
 const KEY = (e) => e.key ? (e.key.charAt(0).toUpperCase() + e.key.slice(1)) :
-  /^exam-submit-/.test(e.id) ? 'Exam' : /^(project-)?grades-due-/.test(e.id) ? 'Grade' : /^sched-planning-forms-.+-due$/.test(e.id) ? 'Plan' : '';
-const KEYL = { Exam: 'Exam to the Exams office', Grade: 'Grades to the Exams office', Plan: 'Planning form to Scheduling' };
+  /^assessment-announced-/.test(e.id) ? 'Manual' : /^exam-submit-/.test(e.id) ? 'Exam' : /^(project-)?grades-due-/.test(e.id) ? 'Grade' :
+  /^sched-planning-forms-.+-due$/.test(e.id) ? 'Plan' : /^accreditation-deadline-/.test(e.id) ? 'Archive' : '';
+const KEYL = { Manual: 'Course manual on Canvas, with the assessment format', Exam: 'Exam to the Exams office', Grade: 'Grades to the Exams office',
+  Plan: 'Planning form to Scheduling', Archive: 'Exam material for the archive' };
 const CONTACT = 'msp-exams@maastrichtuniversity.nl';
 
 /* ==========================================================================
@@ -575,7 +582,7 @@ function buildYearBar() {
     row.appendChild(s);
     cur = p.end;
   }
-  if (today >= yS && today <= yE) { const t = el('span', 'ybtoday'); t.style.left = (diff(yS, today) / total * 100) + '%'; t.title = 'Today, ' + fmtDw(today); row.appendChild(t); }
+  if (today >= yS && today <= yE) { const pct = diff(yS, today) / total * 100; const t = el('span', 'ybtoday' + (pct > 85 ? ' late' : ''), '<b>Today · ' + fmt(today) + '</b>'); t.style.left = pct + '%'; t.title = 'Today, ' + fmtDw(today); row.appendChild(t); }
   bar.appendChild(row);
   const ticks = el('div', 'ybticks');
   let m = new Date(Date.UTC(+yS.slice(0, 4), +yS.slice(5, 7), 1));
@@ -642,7 +649,7 @@ function renderYear(main, evs) {
       if (p) c.style.setProperty('--top', PC[p.id]);
       if (isT) c.style.setProperty('--ring', '#0e71bb'); else if (kl) c.style.setProperty('--ring', '#af6500');
       c.title = fmtDw(iso) + (h ? ' · ' + h.label : '') + (de.length ? ' · ' + de.length + ' deadline' + (de.length > 1 ? 's' : '') : '');
-      c.innerHTML = `<span class="n">${i + 1}</span><span class="dw${kl ? ' key' : wd === 1 ? ' mon' : ''}">${kl || (wd === 1 ? 'W' + isoWeek(iso) : 'SMTWTFS'[wd])}</span>` +
+      c.innerHTML = `<span class="n">${i + 1}</span><span class="dw${kl ? ' key' : isT ? ' today' : wd === 1 ? ' mon' : ''}">${kl || (isT ? 'Today' : wd === 1 ? 'W' + isoWeek(iso) : 'SMTWTFS'[wd])}</span>` +
         `<div class="dots">${de.slice(0, 6).map(e => `<i class="${e.status === 'unconfirmed' ? 'unc' : ''}" style="--c:${OC[e.office]}"></i>`).join('')}</div>` +
         (de.some(isDue) ? '<span class="due"></span>' : '');
       clickable(c, () => openPanel({ kind: 'day', iso }));
@@ -655,7 +662,7 @@ function renderYear(main, evs) {
   main.appendChild(el('div', 'legend',
     `<span class="lg"><i style="width:14px;height:10px;background:var(--sky-tint);border:1px solid #cfe3f3"></i>Exam week</span>` +
     `<span class="lg"><i style="width:14px;height:10px;background:var(--holiday);border:1px solid #d7eadc"></i>Holiday or break</span>` +
-    `<span class="lg key"><i style="width:14px;height:12px;background:var(--gold-cell);box-shadow:inset 0 0 0 2px var(--gold)"></i>Key deadline: planning form, exam or grades</span>` +
+    `<span class="lg key"><i style="width:14px;height:12px;background:var(--gold-cell);box-shadow:inset 0 0 0 2px var(--gold)"></i>Key deadline: manual, planning form, exam, grades, archive material</span>` +
     `<span class="lg"><i style="width:14px;height:3px;background:var(--gold)"></i>Academic staff hand something in</span>` +
     `<span class="lg"><i style="width:7px;height:7px;border-radius:50%;border:1.5px solid var(--muted)"></i>Unconfirmed</span>`));
   const up = evs.filter(e => e.date >= today && !KEY(e)).slice(0, 6);
@@ -837,7 +844,7 @@ function renderGrid(main, evs) {
       const cell = el('div', 'day' + (kl ? ' key' : isExam(iso) ? ' exam' : h ? ' hol' : dow >= 5 ? ' wknd' : '') + (iso === today ? ' today' : ''));
       if (p) cell.style.setProperty('--top', PC[p.id]);
       if (h) cell.title = h.label;
-      cell.innerHTML = `<div class="num"><span>${d}</span>${dow === 0 ? `<small title="ISO week ${isoWeek(iso)}">W${isoWeek(iso)}</small>` : ''}</div>`;
+      cell.innerHTML = `<div class="num"><span>${d}</span>${iso === today ? '<small>Today</small>' : dow === 0 ? `<small title="ISO week ${isoWeek(iso)}">W${isoWeek(iso)}</small>` : ''}</div>`;
       for (const e of de) {
         const b = el('button', 'ev' + (e.status === 'unconfirmed' ? ' unc' : ''), esc(e.title));
         b.style.setProperty('--c', OC[e.office]); b.title = e.title;
@@ -970,7 +977,7 @@ function init() {
   syncState(); render();
   const evId = _params.get('event');
   if (evId && byId[evId]) openPanel({ kind: 'event', id: evId });
-  if ((state.view === 'timeline' || state.view === 'grid') && today > yS) setTimeout(() => { const t = document.querySelector('.today-rule, .day.today'); if (t) t.scrollIntoView({ block: 'center', behavior: 'auto' }); }, 200);
+  if ((state.view === 'timeline' || state.view === 'grid') && today > yS) setTimeout(() => { const t = document.querySelector('.today-rule, .day.today'); if (t) t.scrollIntoView({ block: 'center', behavior: 'instant' }); }, 200);
 }
 window.onerror = (msg) => { document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${esc(msg)}</p>`; };
 if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); }
