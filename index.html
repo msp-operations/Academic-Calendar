@@ -80,8 +80,8 @@
   .railitem.on .ring { border-color: #fff; } .railitem.on .ring::after { background: #fff; }
   .railspring { flex: 1 1 auto; min-height: 24px; }
   .railsub { margin: 0 22px; padding-top: 20px; border-top: 1px solid var(--rail-div); display: flex; flex-direction: column; gap: 10px; }
-  .subscribe { display: block; background: var(--sky); border-radius: var(--r); padding: 10px 0; text-align: center; font-size: 13px; font-weight: 600;
-    color: #fff; text-decoration: none; border: 0; cursor: pointer; width: 100%; transition: background .15s ease, color .15s ease; }
+  .subscribe { display: block; background: transparent; border-radius: var(--r); padding: 9px 0; text-align: center; font-size: 13px; font-weight: 600;
+    color: var(--rail-txt); text-decoration: none; border: 1px solid rgba(255,255,255,.3); cursor: pointer; width: 100%; transition: background .15s ease, color .15s ease, border-color .15s ease; }
   .subscribe:hover { background: #fff; color: var(--navy); }
   .railsub small { font-size: 11px; line-height: 1.5; color: var(--rail-lab); }
   /* Collapsed rail: phones, and a manual choice anywhere */
@@ -249,6 +249,9 @@
   .lanes .end { border-top: 1px solid var(--line-3); }
 
   /* ---------- Month grid (kept, restyled) ---------- */
+  .pastlink { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .pastlink button { background: none; border: 0; padding: 0; font: inherit; color: var(--sky); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+  .pastlink button:hover { color: var(--navy); }
   .month { margin-top: 26px; scroll-margin-top: 16px; } main.grid .month:first-child, main.timeline .month:first-child { margin-top: 0; }
   .month h2 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--navy); font-weight: 700; border-bottom: 1px solid var(--line); padding-bottom: 7px; }
   .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--line-2); border: 1px solid var(--line-2); }
@@ -430,13 +433,13 @@ const OC = { exams: '#0e71bb', esd: '#15817e', scheduling: '#b8741a', btr: '#2e7
 const PC = { P1: '#001c3d', P2: '#2d5a8a', P3: '#9aabbf', P4: '#001c3d', P5: '#2d5a8a', P6: '#9aabbf' };
 const ROLES = { all: 'All staff', academic: 'Academic', support: 'Support' };
 const STAFF_LABEL = { academic: 'Academic staff', support: 'Support staff', both: 'Academic + support staff' };
-const VIEWS = { year: 'Year planner', chains: 'Key deadlines', lanes: 'By office', grid: 'Month grid', timeline: 'Timeline' };
+const VIEWS = { grid: 'Month grid', year: 'Year planner', chains: 'Key deadlines', lanes: 'By office', timeline: 'Timeline' };
 const VIEW_DESC = {
   year: 'The full academic year at a glance. Click any day for its deadlines.',
   chains: 'What you hand in, and what happens to it after.',
   lanes: 'What each office owes and waits on, week by week.',
-  grid: 'One month at a time, every deadline in its day.',
-  timeline: 'Every deadline in date order.',
+  grid: 'This month and the months ahead, every deadline in its day. Click a day for its deadlines.',
+  timeline: 'Every deadline from today on, in date order.',
 };
 const FEEDS = {
   'msp-all.ics': 'All offices', 'msp-academic-staff.ics': 'Academic staff', 'msp-support-staff.ics': 'Support staff',
@@ -458,7 +461,8 @@ let DB = null;
 
 // ---------- state: URL params win, then localStorage, then defaults ----------
 const _params = new URLSearchParams(location.search);
-const _saved = (() => { try { return JSON.parse(localStorage.getItem('mspcal') || '{}'); } catch (_) { return {}; } })();
+const _saved = (() => { try { return JSON.parse(localStorage.getItem('mspcal2') || '{}'); } catch (_) { return {}; } })();
+const DEFAULT_VIEW = window.innerWidth < 720 ? 'timeline' : 'grid';
 const _pick = (v, allowed, fb) => allowed.includes(v) ? v : fb;
 const VIEW_KEYS = Object.keys(VIEWS);
 const PERIODS = ['', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6'];
@@ -466,18 +470,18 @@ const _offParam = _params.get('office');
 const _initOn = _offParam ? _offParam.split(',').filter(k => OFFICES[k]) : (Array.isArray(_saved.on) ? _saved.on.filter(k => OFFICES[k]) : []);
 const state = {
   on: new Set(_initOn.length ? _initOn : Object.keys(OFFICES)),
-  view: _pick(_params.get('view'), VIEW_KEYS, _pick(_saved.view, VIEW_KEYS, window.innerWidth < 720 ? 'timeline' : 'year')),
+  view: _pick(_params.get('view'), VIEW_KEYS, _pick(_saved.view, VIEW_KEYS, DEFAULT_VIEW)),
   role: _pick(_params.get('role'), Object.keys(ROLES), _pick(_saved.role, Object.keys(ROLES), 'all')),
   period: _pick((_params.get('period') || '').toUpperCase(), PERIODS, _pick(_saved.period, PERIODS, '')),
-  q: '', panel: null, mineOnly: false,
+  q: '', panel: null, mineOnly: false, showPast: false,
 };
 function syncState() {
-  try { localStorage.setItem('mspcal', JSON.stringify({ on: [...state.on], view: state.view, role: state.role, period: state.period })); } catch (_) {}
+  try { localStorage.setItem('mspcal2', JSON.stringify({ on: [...state.on], view: state.view, role: state.role, period: state.period })); } catch (_) {}
   const p = new URLSearchParams();
   if (state.on.size < Object.keys(OFFICES).length) p.set('office', [...state.on].join(','));
   if (state.role !== 'all') p.set('role', state.role);
   if (state.period) p.set('period', state.period);
-  if (state.view !== 'year') p.set('view', state.view);
+  if (state.view !== DEFAULT_VIEW) p.set('view', state.view);
   if (state.panel && state.panel.kind === 'event') p.set('event', state.panel.id);
   const qs = p.toString();
   try { history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '')); } catch (_) {}
@@ -591,9 +595,9 @@ function buildRail() {
   rail.appendChild(lp);
   rail.appendChild(el('div', 'railspring'));
   const sw = el('div', 'railsub');
-  const sub = el('button', 'subscribe', 'Subscribe in Outlook');
+  const sub = el('button', 'subscribe', 'Get this in Outlook');
   sub.onclick = (ev) => { ev.stopPropagation(); showSubscribeCard(state.role === 'academic' ? 'msp-academic-staff.ics' : state.role === 'support' ? 'msp-support-staff.ics' : 'msp-all.ics'); };
-  sw.appendChild(sub); sw.appendChild(el('small', '', 'Updates reach your calendar automatically.'));
+  sw.appendChild(sub); sw.appendChild(el('small', '', 'Optional. The site is the calendar; Outlook subscribers get updates automatically.'));
   rail.appendChild(sw);
 }
 
@@ -672,14 +676,28 @@ function keyCard(e, cls) {
   return c;
 }
 
+function renderKeyCards(main, evs) {
+  const keys = evs.filter(e => e.date >= today && KEY(e)).slice(0, 4);
+  if (!keys.length) return;
+  const wrap = el('div', 'keyblock', '<div class="eyebrow gold">Key deadlines ahead</div>');
+  const g = el('div', 'keygrid'); for (const e of keys) g.appendChild(keyCard(e, 'keycard'));
+  wrap.appendChild(g); main.appendChild(wrap);
+}
+// "Show earlier" link for the views that start at today
+function pastLink(main, hiddenLabel) {
+  const row = el('div', 'pastlink');
+  if (state.showPast) row.innerHTML = 'Earlier deadlines are shown. <button type="button">Hide them</button>';
+  else row.innerHTML = esc(hiddenLabel) + ' <button type="button">Show them</button>';
+  row.querySelector('button').onclick = () => {
+    state.showPast = !state.showPast; render();
+    if (state.showPast) { const t = document.querySelector('.today-rule, .day.today'); if (t) t.scrollIntoView({ block: 'center', behavior: 'instant' }); }
+  };
+  main.appendChild(row);
+}
+
 function renderYear(main, evs) {
   const byDate = {}; for (const e of evs) (byDate[e.date] = byDate[e.date] || []).push(e);
-  const keys = evs.filter(e => e.date >= today && KEY(e)).slice(0, 4);
-  if (keys.length) {
-    const wrap = el('div', 'keyblock', '<div class="eyebrow gold">Key deadlines ahead</div>');
-    const g = el('div', 'keygrid'); for (const e of keys) g.appendChild(keyCard(e, 'keycard'));
-    wrap.appendChild(g); main.appendChild(wrap);
-  }
+  renderKeyCards(main, evs);
   const wrap = el('div', 'ywrap'), grid = el('div', 'ygrid');
   let y = +yS.slice(0, 4), mo = +yS.slice(5, 7) - 1;
   for (let k = 0; k < 12; k++) {
@@ -874,11 +892,20 @@ function renderLanes(main, evs) {
   wrap.appendChild(lanes); main.appendChild(wrap);
 }
 
-function gotoMonth(ym) { const sec = document.getElementById('m-' + ym); if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+function gotoMonth(ym) {
+  let sec = document.getElementById('m-' + ym);
+  if (!sec && !state.showPast) { state.showPast = true; render(); sec = document.getElementById('m-' + ym); }
+  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 function renderGrid(main, evs) {
+  renderKeyCards(main, evs);
   const byDay = {}; for (const e of evs) (byDay[e.date] = byDay[e.date] || []).push(e);
-  const first = evs[0].date < yS ? evs[0].date : yS, last = evs[evs.length - 1].date > yE ? evs[evs.length - 1].date : yE;
+  const earliest = evs[0].date < yS ? evs[0].date : yS, last = evs[evs.length - 1].date > yE ? evs[evs.length - 1].date : yE;
+  const thisMonth = today.slice(0, 7) + '-01';
+  const canHidePast = thisMonth > earliest && today <= last;
+  const first = (canHidePast && !state.showPast) ? thisMonth : earliest;
+  if (canHidePast) pastLink(main, 'Months before ' + monthKey(thisMonth) + ' are hidden.');
   let y = +first.slice(0, 4), m = +first.slice(5, 7);
   const endY = +last.slice(0, 4), endM = +last.slice(5, 7);
   while (y < endY || (y === endY && m <= endM)) {
@@ -912,7 +939,11 @@ function renderGrid(main, evs) {
   }
 }
 
-function renderTimeline(main, evs) {
+function renderTimeline(main, all) {
+  const past = all.filter(e => e.date < today);
+  const evs = (state.showPast || !past.length) ? all : all.filter(e => e.date >= today);
+  if (past.length) pastLink(main, past.length + ' earlier deadline' + (past.length > 1 ? 's are' : ' is') + ' hidden.');
+  if (!evs.length) { main.appendChild(el('p', 'empty', 'Nothing left this year for this selection.')); return; }
   let cur = null, sec = null, todayDrawn = today < evs[0].date;
   for (const e of evs) {
     const mk = monthKey(e.date);
@@ -1059,7 +1090,6 @@ function init() {
   const entered = (() => { try { return localStorage.getItem('mspcal_entered'); } catch (_) { return null; } })();
   const deepLink = ['role', 'event', 'view', 'office', 'period'].some(k => _params.has(k));
   if (!entered && !deepLink) showLanding();
-  if ((state.view === 'timeline' || state.view === 'grid') && today > yS) setTimeout(() => { const t = document.querySelector('.today-rule, .day.today'); if (t) t.scrollIntoView({ block: 'center', behavior: 'instant' }); }, 200);
 }
 window.onerror = (msg) => { document.getElementById('main').innerHTML = `<p class="empty">Sorry, something went wrong loading the calendar. Please let us know: ${esc(msg)}</p>`; };
 if (window.MSP_EVENTS) { DB = window.MSP_EVENTS; init(); }
