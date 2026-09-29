@@ -706,24 +706,26 @@
   title: Course switch deadline
   office: scheduling
   when: "2026-07-31"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P1. All switch/withdraw deadlines are Fridays 17:00"
   status: confirmed
 - id: switch-p2
   title: Course switch deadline
   office: scheduling
-  when: "2026-09-25"
-  staff: support
-  audience: students, Academic Advising, ESD
-  notes: "P2, Fri 25 Sep 17:00. NB the official switch/withdraw PDF says 'Friday September 29' but 29 Sep 2026 is a Tuesday - the LAS deadline ladder (Kessels, Feb 2026) and the Friday rule give Fri 25 Sep. Fix the PDF/intranet form | Severine 26 Sep 2026 marked the date wrong and entered '1 Sep 2029', which reads as 29-9 typed into Excel, i.e. Tue 29 Sep as printed in the PDF. So 25 Sep (LAS ladder) vs 29 Sep (PDF, Severine). Settle with Severine and Linzi before AY27-28"
-  status: unconfirmed
+  when: "2026-09-29"
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
+  notes: "P2, Tue 29 Sep 2026 17:00, per the official switch and withdrawal table and Severine (confirmation round, 26 Sep 2026). The table prints it as Friday September 29: the weekday is the misprint, the date is right. The LAS ladder Friday 25 Sep was the earlier working assumption. Class lists are final after this date"
+  status: confirmed
+  confirmed_by: Severine Dufour
+  confirmed_on: 2026-09-26
 - id: switch-p4
   title: Course switch deadline
   office: scheduling
   when: "2027-01-08"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P4"
   status: confirmed
   confirmed_by: Severine Dufour
@@ -732,8 +734,8 @@
   title: Course switch deadline
   office: scheduling
   when: "2027-03-05"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P5"
   status: confirmed
   confirmed_by: Severine Dufour
@@ -743,8 +745,8 @@
   title: Course withdraw deadline
   office: scheduling
   when: "2026-09-04"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P1"
   status: confirmed
   confirmed_by: Severine Dufour
@@ -753,8 +755,8 @@
   title: Course withdraw deadline
   office: scheduling
   when: "2026-10-30"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P2"
   status: confirmed
   confirmed_by: Severine Dufour
@@ -763,8 +765,8 @@
   title: Course withdraw deadline
   office: scheduling
   when: "2027-01-29"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P4"
   status: confirmed
   confirmed_by: Severine Dufour
@@ -773,8 +775,8 @@
   title: Course withdraw deadline
   office: scheduling
   when: "2027-04-02"
-  staff: support
-  audience: students, Academic Advising, ESD
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD
   notes: "P5"
   status: confirmed
   confirmed_by: Severine Dufour
@@ -2276,8 +2278,8 @@
   title: Course switch / late enrolment deadline (P3)
   office: general
   when: "2026-11-27"
-  staff: support
-  audience: students, Academic Advising, ESD, Linzi Hall (adoption)
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD, Linzi Hall (adoption)
   notes: "Fri 27 Nov 2026, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Management/Linzi, not Scheduling"
   status: unconfirmed
   owner: Management (Linzi Hall)
@@ -2285,8 +2287,8 @@
   title: Course switch / late enrolment deadline (P6)
   office: general
   when: "2027-04-30"
-  staff: support
-  audience: students, Academic Advising, ESD, Linzi Hall (adoption)
+  staff: both
+  audience: course coordinators, students, Academic Advising, ESD, Linzi Hall (adoption)
   notes: "Fri 30 Apr 2027, late enrolment, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Management/Linzi, not Scheduling"
   status: unconfirmed
   owner: Management (Linzi Hall)
@@ -2294,8 +2296,8 @@
   title: Course withdraw deadline (P3)
   office: esd
   when: "2027-01-08"
-  staff: support
-  audience: Project Committee (Heather Obmann), students, Academic Advising
+  staff: both
+  audience: course coordinators, Project Committee (Heather Obmann), students, Academic Advising
   notes: "Fri 8 Jan 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Project Committee/Heather, not Scheduling"
   status: unconfirmed
   owner: Project Committee (Heather Obmann)
@@ -2303,8 +2305,8 @@
   title: Course withdraw deadline (P6)
   office: esd
   when: "2027-05-28"
-  staff: support
-  audience: Project Committee (Heather Obmann), students, Academic Advising
+  staff: both
+  audience: course coordinators, Project Committee (Heather Obmann), students, Academic Advising
   notes: "Fri 28 May 2027, withdrawal, from the LAS MSP/UCM/UCV ladder (Kessels, 26 Feb 2026 16:01). Rules: late enrolment is the Friday two weeks before the schedule-publication week except P4, withdrawal is the Friday of the first education week. The mail went to Linzi and Richard Vos (UCM) cc fse-edu-support and closed by asking whether the 2026-2027 deadlines could be agreed. No reply found anywhere. ADOPTION IS LINZI TO CONFIRM, not Severine: she only ever received it forwarded as a bare FYI on 11 Mar 2026 | Severine 26 Sep 2026: Project Committee/Heather, not Scheduling"
   status: unconfirmed
   owner: Project Committee (Heather Obmann)
